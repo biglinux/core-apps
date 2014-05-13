@@ -1,4 +1,4 @@
-core-apps
+Kaiana Core Apps
 =========
 
-Kaiana Core Apps
+Applications designed for Kaiana Linux.
