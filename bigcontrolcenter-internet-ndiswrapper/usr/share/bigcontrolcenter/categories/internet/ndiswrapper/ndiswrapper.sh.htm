@@ -1,0 +1,67 @@
+#!/bin/bash
+
+#Ndiswrapper
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-internet-ndiswrapper
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Wireless com driver Windows (Ndiswrapper)"
+apply=$"Aplicar"
+close=$"Sair"
+tip_dns=$"Saber mais sobre DNS"
+tip_automatico=$"Se o seu provedor possuir servidores de qualidade pode ser a melhor alternativa"
+tip_opendns=$"Servidor gratuito reconhecido por ser um dos mais rapidos e seguros"
+tip_bind=$"Utilize o servidor diretamente em seu computador, utiliza um pouco de memoria RAM e processamento, porem possui a navegacao mais rapida"
+tip_manual=$"Caso tennha preferencia por um servidor especifico preencha com o IP correspondente"
+#title
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Utilizar driver do Windows para placa Wireless."
+close_header
+
+#body
+if [ -e "/etc/init.d/bigndiswrapper" ]
+then
+  ndiswrapper_check="checked"
+fi
+
+
+#O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#Quando se utiliza aspas duplas o sistema executa algumas partes do codigo antes de passar a resposta, entre essas execucoes inclui a interpretacao de variaveis
+#Para incluir textos a serem exibidos ao usuario utilize aspas duplas com $ antes, para que funcione o sistema de tradução, exemplo: $"texto"
+#No exemplo abaixo o memso comando echo foi aberto e fechado diversas vezes de acordo com a necessidade, aspas simples, duplas e duplas com traducao.
+echo '<center><table width=95%><tr><td>'
+echo $"O Ndiswrapper utiliza driver Wireless feito para Windows em sistemas Linux, para isso e necessario indicar o arquivo .inf do driver."
+echo '<p>'
+echo $"Para um melhor funcionamento e recomendado copiar os arquivos do driver, incluindo o arquivo .inf para a particao principal do seu sistema, por exemplo a pasta pessoal do seu usuario."
+echo "<p>"
+echo "<form action=submit.sh.htm method=get><p><br>"
+echo "<INPUT TYPE=checkbox ID=enable NAME=enable VALUE=yes $ndiswrapper_check><label for=enable>" $"Ndiswrapper ativo"'</label>'
+
+
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

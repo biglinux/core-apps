@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: BigLinux\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2013-10-10 02:27-0300\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+msgid   "Navegador Chromium"
+msgstr  ""
+
+msgid   "Aplicar"
+msgstr  ""
+
+msgid   "Sair"
+msgstr  ""
+
+msgid   "Voltar para tela de configuracao"
+msgstr  ""
+
+msgid   "Defina suas preferencias."
+msgstr  ""
+
+msgid   "Configuracao aplicada."
+msgstr  ""
+
+msgid   "Opcoes avancadas para o navegador Chromium"
+msgstr  ""
+
+msgid   "Desativar a aceleracao por GPU faz a exibicao de animacoes 3D perder "
+        "desempenho, mas torna o navegador mais compativel"
+msgstr  ""
+
+msgid   "Em computadores com menos de 1 GB de memoria RAM reduz um pouco o "
+        "uso da memoria.<br>Recomendado para esse computador."
+msgstr  ""
+
+msgid   "Em computadores com menos de 1 GB de memoria RAM reduz um pouco o "
+        "uso da memoria, mas nao e o caso desse computador."
+msgstr  ""
+
+msgid   "Utilizando o Kdesktop Lite ou o Ldesktop o Chromium utilizara outro "
+        "perfil.<br>Por padrao nao tera extensoes o que economiza "
+        "aproximadamente 40 MB de memoria RAM."
+msgstr  ""
+
+msgid   "Por padrao o Chromium cria um processo para cada aba, com essa opcao "
+        "ativa, abas acessando um mesmo site utilizam o mesmo processo. Isso "
+        "contribuir para reduzir o uso de memoria"
+msgstr  ""
+
+msgid   "Identificação padrão"
+msgstr  ""
+
+msgid   "Alternativa para sites que fazem checagem para evitar o uso do "
+        "navegador Chromium mas permitem o Firefox"
+msgstr  ""
+
+msgid   "Alternativa para sites que fazem checagem para evitar o uso do "
+        "navegador Chromium mas permitem o Internet Explorer"
+msgstr  ""
+
+msgid   "A maior parte dos foruns que necessitam efetuar login para leitura "
+        "do conteudo deixam o conteudo aberto para o Google Bot, porem em "
+        "diversos sites isso remove recursos"
+msgstr  ""
+
+msgid   "Desativar aceleracao por GPU."
+msgstr  ""
+
+msgid   "Economizar memoria se necessario."
+msgstr  ""
+
+msgid   "Utilizar perfil diferente para Kdesktop Lite e Ldesktop."
+msgstr  ""
+
+msgid   "Utilizar processo por site."
+msgstr  ""
+
+msgid   "Identificar como Chromium"
+msgstr  ""
+
+msgid   "Identificar como Firefox 4.0 (Recomendado)"
+msgstr  ""
+
+msgid   "Identificar como Internet Explorer 6"
+msgstr  ""
+
+msgid   "Identificar como Internet Explorer 7"
+msgstr  ""
+
+msgid   "Identificar como Internet Explorer 8"
+msgstr  ""
+
+msgid   "Identificar como Google Bot"
+msgstr  ""
+
+msgid   "O navegador Chromium nao esta instalado.\n"
+        "\n"
+        "Devo instalar agora?"
+msgstr  ""
+
+msgid   "O plugin do Flash nao esta instalado, seu uso\n"
+        "e importante em diversos sites, inclusive no Youtube.\n"
+        "\n"
+        "Deseja instalar o plugin do Flash agora?"
+msgstr  ""
+
+msgid   "A instalacao do plugin do Flash falhou.\n"
+        "Verifique a conexao com a internet."
+msgstr  ""
+
+msgid   "Plugin do Flash instalado!\n"
+        "\n"
+        "Finalize e abra novamente os navegadores\n"
+        "para que o uso do plugin seja iniciado."
+msgstr  ""
+
+msgid   "Plugin do Flash instalado!"
+msgstr  ""

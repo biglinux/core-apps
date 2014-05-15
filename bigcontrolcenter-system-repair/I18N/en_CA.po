@@ -1,0 +1,615 @@
+# Spanish translations for PACKAGE package.
+# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BigLinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2010-08-15 08:01+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-08-16 06:40+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Reparar ou limpar o sistema"
+msgstr ""
+
+msgid ""
+"Problemas podem ocorrer e precisamos repara-los ou liberar espaco em disco "
+"removendo arquivos temporarios"
+msgstr ""
+
+msgid "Limpar pasta do usuario $USER"
+msgstr ""
+
+msgid "Aplicar"
+msgstr ""
+
+msgid "Sair"
+msgstr ""
+
+msgid ""
+"Pasta com arquivos de Cache de diversos programas. Esvaziar essa pasta pode "
+"liberar um bom espaco em disco e tambem melhorar o desempenho de alguns "
+"programas."
+msgstr ""
+
+msgid "Pasta com miniaturas geradas pelo gerenciador de arquivos."
+msgstr ""
+
+msgid ""
+"Remove somente a cache, ou seja, mantem historico, favoritos e todas as "
+"configuracoes do Firefox."
+msgstr ""
+
+msgid "Esvazia a lixeira."
+msgstr ""
+
+msgid ""
+"Remove a cache, porem e recomendado remover apenas se nao for utilizar mais "
+"o Nepomuk/Strigi. Caso contrario sera necessario bastante tempo de "
+"processamento para gerar novamente."
+msgstr ""
+
+msgid "Libere espaco no HD."
+msgstr ""
+
+msgid "Remover"
+msgstr ""
+
+msgid "Espaco utilizado"
+msgstr ""
+
+msgid "Pasta .cache"
+msgstr ""
+
+msgid "Pasta .thumbnails"
+msgstr ""
+
+msgid "Cache do Nepomuk/Strigi"
+msgstr ""
+
+msgid "Cache do Firefox"
+msgstr ""
+
+msgid "Arquivos da lixeira"
+msgstr ""
+
+msgid "Limpar o sistema"
+msgstr ""
+
+msgid "Voltar para tela de configuracao"
+msgstr ""
+
+msgid "Configuracao aplicada."
+msgstr ""
+
+msgid "Restaurar o sistema"
+msgstr ""
+
+msgid "Voltar"
+msgstr ""
+
+msgid "Restaure sistema instalado em outra particao."
+msgstr ""
+
+msgid "Operacao executada."
+msgstr ""
+
+msgid "É recomendado estar conectado a internet para efetuar essa operacao"
+msgstr ""
+
+msgid "Se disponivel abre o Centro de Controle Big"
+msgstr ""
+
+msgid "Executa o comando desejado, tambem pode ser util para abrir programas"
+msgstr ""
+
+msgid "Se o sistema nao estiver iniciando, talvez essa seja a solucao"
+msgstr ""
+
+msgid ""
+"Ao instalar outro sistema operacional geralmente se perde a forma de acessar "
+"sua distribuicao favorita. Utilize essa opcao para recuperar o gerenciador "
+"de boot e tenha acesso ao sistema que desejar"
+msgstr ""
+
+msgid "Execute comandos no terminal"
+msgstr ""
+
+msgid ""
+"Se disponivel abre o Synaptic para gerenciar pacotes. Pode ajudar tambem a "
+"corrigir uma atualizacao corrompida"
+msgstr ""
+
+msgid ""
+"Para evitar problemas e recomendado fechar a particao apos efetuar as "
+"operacoes desejadas"
+msgstr ""
+
+msgid "Gerencie os arquivos do sistema instalado na particao $p_part"
+msgstr ""
+
+msgid "Geralmente o correto e /dev/sda"
+msgstr ""
+
+msgid ""
+"Cuidado, para corrigir a particao pode haver perda de arquivos e essas "
+"alteracoes nao irao pedir confirmacao"
+msgstr ""
+
+msgid ""
+"Alteracoes que podem levar a perca de arquivos necessitarao de confirmacao"
+msgstr ""
+
+msgid "Restaurar sistema da particao $p_part"
+msgstr ""
+
+msgid ""
+"Lembre que as operacoes executadas a partir dessa tela terao os poderes "
+"administrativos do usuario root, irao efetuar alteracoes na particao <b>"
+"$p_part</b> e lembre de fechar a particao apos efetuar as modificacoes "
+"desejadas."
+msgstr ""
+
+msgid "Apt-get/Dpkg (Corrigir atualizacao corrompida)"
+msgstr ""
+
+msgid "Big Control Center (Centro de controle do BigLinux)"
+msgstr ""
+
+msgid "Dolphin (Gerenciar arquivos)"
+msgstr ""
+
+msgid "Executar comando"
+msgstr ""
+
+msgid "Comando:"
+msgstr ""
+
+msgid "Fsck (Corrigir particao corrompida)"
+msgstr ""
+
+msgid "Automatico."
+msgstr ""
+
+msgid "Manual."
+msgstr ""
+
+msgid "Grub (Reinstalar o gerenciador de boot)"
+msgstr ""
+
+msgid "Selecione o dispositivo:"
+msgstr ""
+
+msgid "Initrd (Atualizar initrd)"
+msgstr ""
+
+msgid "Konsole (Terminal)"
+msgstr ""
+
+msgid "Synaptic (Gerenciador de pacotes)"
+msgstr ""
+
+msgid "* Fechar a particao (Importante)"
+msgstr ""
+
+msgid "Restaurar programas"
+msgstr ""
+
+msgid ""
+"Restaura para a configuracao padrao da distribuicao quando possivel."
+"<br><br>Caso a distribuicao nao efetue uma configuracao especial sera "
+"restaurado para o padrao do programa."
+msgstr ""
+
+msgid "Restaura para a configuracao padrao do programa."
+msgstr ""
+
+msgid "Nao serao feitas modificacoes nesse programa."
+msgstr ""
+
+msgid "<hr><br>Serao modificados arquivos e pastas a seguir:<br><br>"
+msgstr ""
+
+msgid "Restaure a configuracao padrao dos programas."
+msgstr ""
+
+msgid ""
+"Atencao, ao restaurar um programa serao perdidas as configuracoes "
+"personalizadas e historicos para que seja restaurada a configuracao padrao."
+msgstr ""
+
+msgid "Programa"
+msgstr ""
+
+msgid "Opcao"
+msgstr ""
+
+msgid "Amsn"
+msgstr ""
+
+msgid "Avidemux"
+msgstr ""
+
+msgid "Arora"
+msgstr ""
+
+msgid "Blender"
+msgstr ""
+
+msgid "BrOffice"
+msgstr ""
+
+msgid "Dolphin"
+msgstr ""
+
+msgid "Firefox"
+msgstr ""
+
+msgid "Okular"
+msgstr ""
+
+msgid "Gimp"
+msgstr ""
+
+msgid "Gwenview"
+msgstr ""
+
+msgid "Inkscape"
+msgstr ""
+
+msgid "Kalarm"
+msgstr ""
+
+msgid "OpenOffice"
+msgstr ""
+
+msgid "Zsnes"
+msgstr ""
+
+msgid "qBittorrent"
+msgstr ""
+
+msgid "Ktorrent"
+msgstr ""
+
+msgid "Emesene"
+msgstr ""
+
+msgid "Pidgin"
+msgstr ""
+
+msgid "Kmess"
+msgstr ""
+
+msgid "Kate"
+msgstr ""
+
+msgid "Plasma"
+msgstr ""
+
+msgid "Kwin"
+msgstr ""
+
+msgid "K3b"
+msgstr ""
+
+msgid "Rekonq"
+msgstr ""
+
+msgid "Konqueror"
+msgstr ""
+
+msgid "Wine"
+msgstr ""
+
+msgid "PlayOnLinux"
+msgstr ""
+
+msgid "SMPlayer"
+msgstr ""
+
+msgid "MPlayer"
+msgstr ""
+
+msgid "Totem"
+msgstr ""
+
+msgid "Vlc"
+msgstr ""
+
+msgid "Cheese"
+msgstr ""
+
+msgid "Audacity"
+msgstr ""
+
+msgid "Kooka"
+msgstr ""
+
+msgid "Clementine"
+msgstr ""
+
+msgid "Pcmanfm"
+msgstr ""
+
+msgid "Ldesktop/LXDE/Openbox"
+msgstr ""
+
+msgid ""
+"Atencao, isso ira limpar a configuracao de todos os aplicativos do Ldesktop/"
+"LXDE/Openbox, utilize apenas se souber o que esta fazendo."
+msgstr ""
+
+msgid "XFCE4"
+msgstr ""
+
+msgid ""
+"Atencao, isso ira limpar a configuracao de todos os aplicativos do KDE, "
+"utilize apenas se souber o que esta fazendo."
+msgstr ""
+
+msgid "KDE"
+msgstr ""
+
+msgid "Kdesktop"
+msgstr ""
+
+msgid ""
+"Atencao, isso ira limpar a configuracao de todos os aplicativos do Kdesktop, "
+"utilize apenas se souber o que esta fazendo."
+msgstr ""
+
+msgid "Thunderbird"
+msgstr ""
+
+msgid "Kmail"
+msgstr ""
+
+msgid "Audacious"
+msgstr ""
+
+msgid "Empathy"
+msgstr ""
+
+msgid "Exaile"
+msgstr ""
+
+msgid "Vinagre"
+msgstr ""
+
+msgid "Nepomuk/Strigi"
+msgstr ""
+
+msgid "Nautilus"
+msgstr ""
+
+msgid "Blueman"
+msgstr ""
+
+msgid "Amarok"
+msgstr ""
+
+msgid "Chromium"
+msgstr ""
+
+msgid ""
+"1 - Ao atualizar o sistema podem ficar instaladas diferentes versoes de "
+"kernel. Essas versoes sao apresentadas para escolha logo apos ligar o "
+"computador.<br><br>2 - No momento o sistema esta utilizando o Kernel $(uname "
+"-r). Por questoes de seguranca o mesmo nao esta disponivel na lista para "
+"remocao.<br><br>3 - Manter duas versoes de Kernel instaladas pode trazer um "
+"pouco mais de confianca no sistema, pois se um for danificado tera outro "
+"disponivel, porem possuir uma quantidade maior costuma somente utilizar "
+"espaco em excesso."
+msgstr ""
+
+msgid ""
+"Arquivos de instalacao e atualizacao que ja foram utilizados e podem ser "
+"removidos com seguranca."
+msgstr ""
+
+msgid ""
+"Arquivos temporarios. Nao e recomendado apaga-los, mas se estiver utilizando "
+"espaco em excesso pode ser conveniente."
+msgstr ""
+
+msgid "Esvazia a lixeira de todos usuarios."
+msgstr ""
+
+msgid "Pasta /var/cache/apt/archives"
+msgstr ""
+
+msgid "Pasta /tmp"
+msgstr ""
+
+msgid "Pasta .cache de todos os usuarios"
+msgstr ""
+
+msgid "Pasta .thumbnails de todos os usuarios"
+msgstr ""
+
+msgid "Cache do Nepomuk/Strigi de todos os usuarios"
+msgstr ""
+
+msgid "Cache do Firefox de todos os usuarios"
+msgstr ""
+
+msgid "Arquivos da lixeira de todos os usuarios"
+msgstr ""
+
+msgid ""
+"Esse painel ira auxiliar a fazer reparos em sistemas Linux instalados em "
+"outras particoes."
+msgstr ""
+
+msgid "Nao foi detectada uma instalacao Linux na particao: $p_part"
+msgstr ""
+
+msgid "Selecione a particao onde esta instalado o sistema a ser reparado:"
+msgstr ""
+
+msgid ""
+"* Para efetuar a configuracao dessa particao qualquer programa que estiver "
+"acessando-a perdera o acesso"
+msgstr ""
+
+msgid ""
+"Restaure configuracoes importantes como: video, impressoras, audio, boot..."
+msgstr ""
+
+msgid ""
+"Restaure um sistema Linux instalado em outra particao, recupere o sistema de "
+"boot, sistema de arquivos, pacotes..."
+msgstr ""
+
+msgid ""
+"Restaure a configuracao de programas do usuario $USER. Por exemplo: Firefox, "
+"Amsn, Smplayer, Amarok..."
+msgstr ""
+
+msgid "Libere espaco no HD removendo arquivos temporarios do usuario $USER"
+msgstr ""
+
+msgid ""
+"Libere espaco no HD removendo arquivos temporarios de todos os usuarios do "
+"sistema ou instalacoes de kernel que nao estao em uso"
+msgstr ""
+
+msgid "Correcoes para o sistema com a facilidade de um clique."
+msgstr ""
+
+msgid "Restaurar configuracoes do sistema"
+msgstr ""
+
+msgid "Restaurar sistema instalado em outra particao"
+msgstr ""
+
+msgid "Restaurar configuracao de programas"
+msgstr ""
+
+msgid "Limpar arquivos temporarios do usuario"
+msgstr ""
+
+msgid "Limpar todo o sistema"
+msgstr ""
+
+msgid "Para uma conexao mais rapida e estavel."
+msgstr ""
+
+msgid "Restaura a configuracao do driver de som e do sistema Pulseaudio"
+msgstr ""
+
+msgid "Restaura a configuracao do servidor Apache"
+msgstr ""
+
+msgid ""
+"Tenta resolver os problemas mais comuns do gerenciador de pacotes Apt-get"
+msgstr ""
+
+msgid ""
+"Restaura a configuracao do sistema de gerenciamento de dispositivos bluetooth"
+msgstr ""
+
+msgid "Restaura a configuracao do sistema de impressao"
+msgstr ""
+
+msgid "Tenta resolver os problemas mais comuns do gerenciador de pacotes Dpkg"
+msgstr ""
+
+msgid ""
+"Gera novamente o initird de todas as versoes de kernel instaladas, caso "
+"alguma versao de kernel nao esteja efetuando boot tente essa opcao."
+msgstr ""
+
+msgid "Gera nova configuracao da tela de boot"
+msgstr ""
+
+msgid ""
+"Instala novamente o Grub, geralmente necessario apos a instalacao de outro "
+"sistema operacional"
+msgstr ""
+
+msgid "Se estiver com problemas na tela de login teste essa opcao"
+msgstr ""
+
+msgid "Restaura a configuracao do modo grafico"
+msgstr ""
+
+msgid "Na maioria dos casos o recomendado e escolher /dev/sda ou /dev/sdb"
+msgstr ""
+
+msgid "Restaura a configuracao da conexao com a internet"
+msgstr ""
+
+msgid "Restaura a configuracao do compartilhamento de arquivos na rede"
+msgstr ""
+
+msgid "Restaure a configuracao do sistema."
+msgstr ""
+
+msgid "Alsa/Pulseaudio (Gerenciador de audio)"
+msgstr ""
+
+msgid "Apache (Servidor WEB)"
+msgstr ""
+
+msgid "Apt-get (Gerenciador de pacotes)"
+msgstr ""
+
+msgid "Bluetooth (Gerenciador de dispositivos bluetooth)"
+msgstr ""
+
+msgid "Cups (Gerenciador de impressoras)"
+msgstr ""
+
+msgid "Dpkg (Gerenciador de pacotes)"
+msgstr ""
+
+msgid "Grub (Gerenciador de boot)"
+msgstr ""
+
+msgid "Grub Install (Gerenciador de boot)"
+msgstr ""
+
+msgid "Selecione onde deve ser instalado o Grub:"
+msgstr ""
+
+msgid "Initrd (Inicio do boot)"
+msgstr ""
+
+msgid "KDM (Gerenciador de login)"
+msgstr ""
+
+msgid "Network (Conexao com a internet)"
+msgstr ""
+
+msgid "Samba (Compartilhamento de arquivos na rede)"
+msgstr ""
+
+msgid "Xorg (Modo grafico)"
+msgstr ""
+
+msgid ""
+"Ativa a criacao dos icones: Lixeira, Computador e Rede a cada login e "
+"personaliza para que funcionem adequadamente no Ldesktop e no Kdesktop."
+msgstr ""
+
+msgid ""
+"Desativa a criacao dos icones: Lixeira, Computador e Rede a cada login, "
+"porem isso gera conflitos ao alternar entre o Ldesktop e o Kdesktop."
+msgstr ""
+
+msgid "Desativar a criacao de icones no desktop a cada login"
+msgstr ""
+
+msgid "Ativar a criacao de icones no desktop a cada login"
+msgstr ""

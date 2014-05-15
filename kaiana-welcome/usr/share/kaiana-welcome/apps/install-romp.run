@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ksudo add-apt-repository ppa:nilarimogard/webupd8
+ksudo apt-get update
+software-center rosa-media-player

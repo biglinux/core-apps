@@ -1,0 +1,79 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-optimizes
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Montar particoes"
+apply=$"Aplicar"
+close=$"Sair"
+tip_partition=$"Recomendado para a maioria das situacoes."
+tip_nobarrier=$"A opcao nobarrier aumenta a chance de corrompimento de arquivos caso ocorra falha no fornecimento de energia, porem aumenta muito a velocidade de leitura e gravacao no HD.<br>Em nossos testes nao ocorreram problemas utilizando a opcao nobarrier."
+
+  if [ ! -e "/etc/bigmountall-no" ]
+  then
+      partition_check="checked"
+  fi
+
+  if [ "$(grep "nobarrier" /etc/fstab)" != "" ]
+  then
+      nobarrier_check="checked"
+  fi
+
+
+
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Defina suas preferencias."
+close_header
+
+
+#O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#Quando se utiliza aspas duplas o sistema executa algumas partes do codigo antes de passar a resposta, entre essas execucoes inclui a interpretacao de variaveis
+#Para incluir textos a serem exibidos ao usuario utilize aspas duplas com $ antes, para que funcione o sistema de tradução, exemplo: $"texto"
+#No exemplo abaixo o memso comando echo foi aberto e fechado diversas vezes de acordo com a necessidade, aspas simples, duplas e duplas com traducao.
+echo '<center><table width=95%><tr><td>'
+echo '<form action=partition_submit.sh.htm method=get>'
+
+echo "<br><br><table width=95%>"
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=partition NAME=partition VALUE=yes $mouseover_open $tip_partition $mouseover_close $partition_check><label for=partition $mouseover_open $tip_partition $mouseover_close>" $"Montar automaticamente as particoes dos HDs internos ao ligar o computador." '</td></tr>'
+
+  if [ "$(grep "ext4" /etc/fstab)" != "" ]
+  then
+      echo "<tr><td><INPUT TYPE=checkbox ID=nobarrier NAME=nobarrier VALUE=yes $mouseover_open $tip_nobarrier $mouseover_close $nobarrier_check><label for=nobarrier $mouseover_open $tip_nobarrier $mouseover_close>" $"Utilizar a opcao nobarrier nas particoes ext4 listadas no arquivo /etc/fstab." '</td></tr>'
+  fi
+
+
+
+    echo "</table>"
+
+
+
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

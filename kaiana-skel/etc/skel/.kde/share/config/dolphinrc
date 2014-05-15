@@ -1,0 +1,52 @@
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAC6AAABzfwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAgBAAAF+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAzAAABzQAAAFABAAAFAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAACAEAAAUAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAgBAAAFAAABvQAAAc0AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+Width 1024=750
+
+[AdditionalInfoDialog]
+Height 768=275
+Width 1366=277
+
+[CompactMode]
+FontWeight=50
+
+[DetailsMode]
+FontWeight=50
+
+[General]
+GlobalViewProps=true
+ShowSpaceInfo=true
+ShowToolTips=true
+Version=200
+ViewPropsTimestamp=2014,1,25,16,13,24
+
+[IconsMode]
+FontWeight=50
+IconSize=48
+
+[MainWindow]
+Height 1050=648
+Height 768=508
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAC6AAACU/wCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAgBAAAF+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAA1AAACUwAAAFABAAAFAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAACAEAAAUAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAgBAAAFAAAClAAAAlMAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Width 1024=750
+Width 1366=900
+Width 1680=849
+
+[Open-with settings]
+CompletionMode=5
+History=okular
+
+[PreviewSettings]
+Plugins=gsthumbnail,rawthumbnail,comicbookthumbnail,words_rtf_thumbnail,words_msword_thumbnail,words_docx_thumbnail,windowsexethumbnail,imagethumbnail,exrthumbnail,jpegthumbnail,svgthumbnail,windowsimagethumbnail,openofficeorgthumbnail,words_odt_thumbnail,kffmpegthumbnailer
+
+[SettingsDialog]
+Height 1050=361
+Height 768=349
+Width 1366=603
+Width 1680=668
+
+[Toolbar mainToolBar]
+ToolButtonStyle=IconOnly
+
+[ViewPropertiesDialog]
+Height 768=414
+Width 1366=449

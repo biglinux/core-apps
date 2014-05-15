@@ -1,0 +1,148 @@
+#!/bin/bash
+
+#Manage Apache
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+#Check permission
+if test $(id -u) != 0
+then
+    echo "Need root permission"
+    exit 0
+fi
+
+
+#Options
+case "$1" in
+
+    --start-apache)
+	/etc/init.d/apache2 start
+	exit 0
+    ;;
+
+    --stop-apache)
+	/etc/init.d/apache2 stop
+	exit 0
+    ;;
+
+    --restart-apache)
+	/etc/init.d/apache2 restart
+	exit 0
+    ;;
+
+    --autostart-apache)
+	update-rc.d -f apache2 defaults
+        exit 0
+    ;;
+
+    --disable-autostart-apache)
+      update-rc.d -f apache2 remove
+      exit 0
+    ;;
+
+    --start-mysql)
+	/etc/init.d/mysql start 2> /dev/null
+	exit 0
+    ;;
+
+    --stop-mysql)
+	/etc/init.d/mysql stop 2> /dev/null
+	exit 0
+    ;;
+
+    --autostart-mysql)
+	update-rc.d -f mysql defaults 2> /dev/null
+	dpkg-divert --package biglamp --rename --remove /etc/init/mysql.conf
+        exit 0
+    ;;
+
+    --disable-autostart-mysql)
+      update-rc.d -f mysql remove 2> /dev/null
+      if [ "$(dpkg-divert --list /etc/init/mysql.conf)" = "" ]
+      then
+          dpkg-divert --package biglamp --divert /etc/init/mysql.conf.distrib --rename /etc/init/mysql.conf
+      fi
+
+      exit 0
+    ;;
+
+    --install-apache)
+	bigsynaptic-autoclose --install apache2
+        exit 0
+    ;;
+
+    --remove-apache)
+	biginstall --remove apache2.2-common apache2.2-bin apache2.2-common apache2
+        exit 0
+    ;;
+
+    --install-php)
+	bigsynaptic-autoclose --install php5 php5-mysql phpmyadmin php5-pgsql libpq-dev php-pear php5-xsl
+	a2enmod rewrite
+	/etc/init.d/apache2 restart
+        exit 0
+    ;;
+
+    --remove-php)
+	biginstall --remove php5 php5-mysql phpmyadmin php5-pgsql libpq-dev php-pear php5-xsl php5-common
+	a2enmod rewrite
+	/etc/init.d/apache2 restart
+        exit 0
+    ;;
+
+    --install-mysql)
+      bigsynaptic-autoclose --install mysql-server
+      exit 0
+    ;;
+
+    --remove-mysql)
+      biginstall --remove mysql-server-5.0 mysql-server-5.1 mysql-server-5.2
+      exit 0
+    ;;
+
+    --mysql-root-pass)
+      dpkg-reconfigure -f gnome $(dpkg -S /usr/bin/mysqld_safe | sed 's|: .*||g')
+      exit 0
+    ;;
+
+
+    --apache-port)
+      sed -i "s/^Listen .*/Listen $2/" /etc/apache2/ports.conf
+      sed -i "s/NameVirtualHost \*:.*/NameVirtualHost *:$2/" /etc/apache2/ports.conf
+      sed -i "s/<VirtualHost \*:.*>/<VirtualHost *:$2>/" /etc/apache2/sites-available/default
+      /etc/init.d/apache2 restart
+        exit 0
+    ;;
+
+    *)
+
+echo -e '\033[31m'Manage Apache'.\033[0m'
+
+        echo "
+--start-apache
+--stop-apache
+--restart-apache
+--autostart-apache
+--disable-autostart-apache
+--start-mysql
+--stop-mysql
+--autostart-mysql
+--disable-autostart-mysql
+--install-apache		Need internet
+--install-mysql			Need internet
+--install-php			Need internet
+--remove-apache
+--remove-mysql
+--remove-php
+--mysql-root-pass
+--apache-port			Example: --port 80
+"
+
+    ;;
+
+esac

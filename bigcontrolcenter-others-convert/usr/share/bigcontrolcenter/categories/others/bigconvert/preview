@@ -1,0 +1,26 @@
+#! /bin/bash
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+##############
+#####Translation
+##############
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-others-bigconvert
+
+
+ORI_IFS=$IFS
+IFS=$'\n'
+
+kdialog --title $"Big Converter" --menu $"Selecione o video a ser utilizado na previsao." $(sed 'p' ~/.bigconvert/videos)
+
+IFS=$ORI_IFS
+
+kdialog --title $"Big Converter" --menu $"Selecione quantos segundos deve ter a previsao.
+
+A previsao precisa ser completamente gerada antes de ser iniciada, dessa forma quanto mais segundos for escolhido mais tempo ira demorar para a previsao ser iniciada." $(sed 'p' ~/.bigconvert/videos)

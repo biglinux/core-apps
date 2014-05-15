@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-hardware-printer
+
+kdialog --yesno $"O monitor de fila de impressão deve aparecer
+automaticamente como um ícone na área de
+notificação ao utilizar a impressora?"
+resposta=$?
+if [ "$resposta" = "0" ]; then
+    touch "$HOME/.big_printer_applet"
+    killall system-config-printer-applet
+else
+    rm -f ~/.kde/Autostart/printer-applet
+    rm -f "$HOME/.big_printer_applet"
+    system-config-printer-applet
+fi
+

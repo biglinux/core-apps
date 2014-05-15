@@ -1,0 +1,62 @@
+#! /bin/bash
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Traducao
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-others-bigconvert
+
+#Inicia o dialogo de progresso
+dcopRef=$(kdialog --title "BigMencoder" --progressbar $"Iniciando..." 12)
+echo $dcopRef
+qdbus $dcopRef org.freedesktop.DBus.Properties.Set org.kde.kdialog.ProgressDialog maximum 100
+qdbus $dcopRef org.kde.kdialog.ProgressDialog.showCancelButton true
+
+
+#Executa o mencoder
+mencoder meio.avi -ovc lavc -lavcopts vcodec=wmv2 -oac lavc -lavcopts acodec=wmav2:abitrate=080 -o  meio.wmv > /tmp/bigmencoder-log$$ 2> /dev/null &
+
+#Aguarda 5 segundos para assegurar que o log ja foi criado
+sleep 5
+
+#Loop para manter a checagem da barra de progresso
+  while true
+   do
+      #Confere se o botao cancelar foi clicado ou a janela de progresso foi fechada, se positivo encerra o loop
+      if [ "$(qdbus $dcopRef org.kde.kdialog.ProgressDialog.wasCancelled)" != "false" ]; then
+	  #Mata o mencoder, precisa ser melhorado utilizando pid para nao afetar outra execucao do mencoder
+	  killall -9 mencoder
+	  qdbus $dcopRef org.kde.kdialog.ProgressDialog.close
+	  kdialog --msgbox $"Conversao cancelada."
+	  break
+      fi
+
+      #Confere se a conversao do arquivo foi concluida, se positivo encerra o loop.
+      if [ "$(sed '$!d' /tmp/bigmencoder-log$$ | grep fps)" != "" ]; then
+
+	  #Adiciona mais dados sobre a barra de progresso
+	  qdbus $dcopRef org.kde.kdialog.ProgressDialog.setLabelText " Convertendo, aguarde por favor.
+
+ $(sed '$!d;s/(.*)//;s/A.*//;s/V//' /tmp/bigmencoder-log$$)"
+
+
+	  #Faz a leitura do Log e atualiza a barra de progresso
+	  qdbus $dcopRef org.freedesktop.DBus.Properties.Set org.kde.kdialog.ProgressDialog value $(sed '$!d;s/.*(//; s/%.*//' /tmp/bigmencoder-log$$)
+
+      else
+	  qdbus $dcopRef org.kde.kdialog.ProgressDialog.close
+	  kdialog --msgbox $"Conversao concluida."
+	  break
+      fi
+
+  #Aguarda 3 segundos para refazer o loop
+  sleep 3
+  done
+
+  #Remove o arquivo de log
+  rm -f /tmp/bigmencoder-log$$
+

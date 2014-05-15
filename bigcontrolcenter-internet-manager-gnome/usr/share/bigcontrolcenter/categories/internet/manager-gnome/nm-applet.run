@@ -1,0 +1,49 @@
+#!/bin/bash
+
+#Gnome Network Manager start
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-internet-manager-gnome
+
+#Confere se NetworkManager esta ativo
+if [ "$(bigconnect-default --check-network-manager)" = "fail" ]; then
+
+    #Confere se wicd esta ativo
+    if [ "$(bigconnect-default --check-wicd)" = "ok" ]; then
+      kdialog --yesno $"O Gnome Network Manager e utilizado por esse painel, mas nao esta ativo, devo ativa-lo agora?
+Atencao: Isso ira desativar o gerenciador em uso: Wicd."
+    else
+
+	#Confere se BigConnect esta ativo
+	if [ "$(bigconnect-default --check-bigconnect)" = "ok" ]; then
+	  kdialog --yesno $"O Gnome Network Manager e utilizado por esse painel, mas nao esta ativo, devo ativa-lo agora?
+Atencao: Isso ira desativar o gerenciador em uso: BigConnect."
+	else
+	  kdialog --yesno $"O Gnome Network Manager e utilizado por esse painel, mas nao esta ativo, devo ativa-lo agora?"
+	fi
+    fi
+
+	#Se requerido ativa o Network Manager e desativa o BigConnect e wicd
+	if [ $? = "0" ]; then
+	  bigsudo bigconnect-default --network-manager
+	else
+	  exit 0
+	fi
+
+fi
+
+#Mata o applet do wicd caso esteja aberto
+killall wicd-client
+
+#Abre o editor de conexoes
+nm-connection-editor &
+
+#Ativa o applet do network-manager-gnome
+nm-applet --sm-disable &

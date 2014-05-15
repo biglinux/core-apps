@@ -1,0 +1,23 @@
+[Desktop Entry]
+Categories=Network;FileTransfer
+Comment[pt_BR]=
+Comment=
+Exec=jdownloader
+GenericName=Download Manager
+GenericName[pt]=Gerenciador de Downloads
+GenericName[es]=Download Manager
+Icon=/usr/share/pixmaps/jdownloader.png
+MimeType=
+Name=JDownloader
+Name[pt]=JDownloader
+Name[es]=JDownloader
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-StartupNotify=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=

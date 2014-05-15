@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-themes-windowborder
+
+	    kdialog --title $"Configuracao do Compiz" --radiolist $"Selecione a configuracao a ser utilizada." 1 $"1 - Muitos efeitos." on 2 $"2 - Poucos efeitos." off > "$HOME/.config/bigwincheck5"
+
+mkdir "$HOME/.config/compiz" 2> /dev/null > /dev/null
+mkdir "$HOME/.config/compiz" 2> /dev/null > /dev/null
+
+	    if [ "$(cat "$HOME/.config/bigwincheck5")" = "1" ]
+	    then
+		cp -f /usr/share/bigcontrolcenter/categories/themes/windowborder/compizconfig/complete/config "$HOME/.config/compiz/compizconfig/config"
+		cp -f /usr/share/bigcontrolcenter/categories/themes/windowborder/compizconfig/complete/Default.ini "$HOME/.config/compiz/compizconfig/Default.ini"
+	    fi
+
+	    if [ "$(cat "$HOME/.config/bigwincheck5")" = "2" ]
+	    then
+		cp -f /usr/share/bigcontrolcenter/categories/themes/windowborder/compizconfig/simple/config "$HOME/.config/compiz/compizconfig/config"
+		cp -f /usr/share/bigcontrolcenter/categories/themes/windowborder/compizconfig/simple/Default.ini "$HOME/.config/compiz/compizconfig/Default.ini"
+	    fi
+
+  

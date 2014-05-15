@@ -1,0 +1,13 @@
+Package: empathy-chat-themes
+Version: 1.0.0-1kaiana2
+Section: Gnome Desktop Environment
+Priority: optional
+Homepage: www.ubuntu.com
+Architecture: all
+Essential: no
+Installed-Size: 16056
+Maintainer: juancarlospaco <juancarlospaco@gmail.com>
+Depends: empathy, adium-theme-ubuntu
+Description: Chat Themes for Empathy
+ +65 Chat Themes for Empathy Multi-Protocol IM Client, with JavaScript animation effects and transparency, designed for Ubuntu, BSD licensed. 
+

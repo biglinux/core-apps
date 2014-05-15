@@ -1,0 +1,26 @@
+# Brazilian Portuguese translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-04-08 04:56-0300\n"
+"PO-Revision-Date: 2010-09-13 14:36+0000\n"
+"Last-Translator: Matheus de Araújo <Unknown>\n"
+"Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-14 04:47+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: /home/bruno/svn/biglinux/karmic/bigcontrolcenter-system-desktops/usr/share/bigcontrolcenter/categories/system/desktops/description.sh.htm:15
+msgid "Defina o numero de desktops"
+msgstr "Defina o número de desktops"
+
+#: /home/bruno/svn/biglinux/karmic/bigcontrolcenter-system-desktops/usr/share/bigcontrolcenter/categories/system/desktops/description.sh.htm:16
+msgid "Utilize desktops separados de acordo com sua preferencia..."
+msgstr "Utilize desktops separados de acordo com sua preferência..."

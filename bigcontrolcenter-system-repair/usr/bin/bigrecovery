@@ -1,0 +1,142 @@
+#!/bin/bash
+
+#Restore system
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+
+
+#Options
+case "$1" in
+
+
+
+#######################
+## SYSTEM
+#######################
+    --apt)
+	rm -f /var/lib/apt/lists/lock
+	apt-get -f install
+	exit 0
+    ;;
+
+
+    --dpkg)
+	rm /var/lib/dpkg/lock
+	dpkg --configure -a
+	mv /var/lib/dpkg/status /var/lib/dpkg/status-bkp-$(date +%d-%m-%Y-%H-%M-%S)
+	recovery-dpkg-status
+	cp -f /tmp/status.new /var/lib/dpkg/status
+	exit 0
+    ;;
+
+
+    --xorg)
+	mv -f /etc/X11/xorg.conf /etc/X11/xorg.conf-restore-copy
+	cp -f /etc/bigrepair/X11/xorg.conf.failsafe /etc/X11/xorg.conf.failsafe
+	rm -f /etc/X11/xorg.conf
+	dpkg-reconfigure xserver-xorg
+        exit 0
+    ;;
+
+
+    --samba)
+	rm -Rf /etc/samba/*
+	cp -f /usr/share/samba/smb.conf /etc/samba/smb.conf
+	sed -i 's/Samba, Ubuntu/Samba, BigLinux/g' /etc/samba/smb.conf
+	echo 'bt
+quit' > /etc/samba/gdbcommands
+	echo "" > /etc/samba/dhcp.conf
+        exit 0
+    ;;
+
+
+    --cups)
+	cp -Rf /etc/bigrepair/cups/* /etc/cups
+        exit 0
+    ;;
+
+    --network)
+	cp -f /etc/bigrepair/network/interfaces /etc/network/interfaces
+	cp -f /etc/bigrepair/NetworkManager/nm-system-settings.conf /etc/NetworkManager/nm-system-settings.conf
+	cp -Rf /etc/bigrepair/wicd/* /etc/wicd/
+	rm -f /etc/ppp
+	cp -Rf /etc/bigrepair/ppp /etc/ppp
+        exit 0
+    ;;
+
+    --apache)
+      rm -Rf /etc/apache2
+      cp -Rf /etc/bigrepair/apache2 /etc/apache2
+      exit 0
+    ;;
+
+
+    --bluetooth)
+      cp -Rf /etc/bigrepair/bluetooth/* /etc/bluetooth
+      exit 0
+    ;;
+
+
+    --grub)
+      update-grub
+      exit 0
+    ;;
+
+
+    --grub-install)
+      update-grub
+      grub-install --root-directory=/ $2
+      exit 0
+    ;;
+
+    --initrd)
+      update-initramfs -u -k all
+      exit 0
+    ;;
+
+
+    --kdm)
+      rm -Rf /etc/kde4/kdm
+      cp -Rf /etc/bigrepair/kde4/kdm /etc/kde4/kdm
+      exit 0
+    ;;
+
+    --alsapulse)
+      cp -f /etc/bigrepair/modprobe.d/alsa-base.conf /etc/modprobe.d/alsa-base.conf
+      rm -Rf /etc/pulse/
+      cp -Rf /etc/bigrepair/pulse/ /etc/pulse
+      exit 0
+    ;;
+
+
+
+
+
+    *)
+        echo "Restore system
+
+--apt 			Fix apt-get
+--dpkg			Fix dpkg
+--alsapulse		Clear Alsa and Pulseaudio Configuration
+--xorg			Clear Xorg Configuration
+--samba			Clear Samba (File share) Configuration
+--cups			Clear Cups (Printer) Configuration
+--network		Clear Network Configuration
+--apache		Clear Apache Configuration
+--bluetooth		Clear Bluetooth Configuration
+--grub			Update Grub Configuration
+--grub-install		Install Grub, example: --grub-install /dev/sda
+--initrd		Update and fix initrd
+--kdm 			Clear KDM Configuration
+"
+
+    ;;
+
+esac
+

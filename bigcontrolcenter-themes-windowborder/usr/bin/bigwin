@@ -1,0 +1,89 @@
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#killall compiz kwin xfwm4 metacity openbox
+
+/usr/bin/bigwin2
+
+    if [ ! -e "$HOME/.emerald" ]
+    then
+	mkdir "$HOME/.emerald"
+	cp -f "/usr/share/bigcontrolcenter/categories/themes/windowborder/emerald/settings.ini" "$HOME/.emerald/settings.ini"
+	cp -f "/usr/share/bigcontrolcenter/categories/themes/windowborder/emerald/theme" "$HOME/.emerald/theme"
+    fi
+
+    if [ ! -e "$HOME/.config/compiz/compizconfig" ]
+    then
+	mkdir "$HOME/.config/compiz" 2> /dev/null
+	mkdir "$HOME/.config/compiz/compizconfig" 2> /dev/null
+
+	cp -f "/usr/share/bigcontrolcenter/categories/themes/windowborder/compizconfig/complete/config" "$HOME/.config/compiz/compizconfig/config"
+	cp -f "/usr/share/bigcontrolcenter/categories/themes/windowborder/compizconfig/complete/Default.ini" "$HOME/.config/compiz/compizconfig/Default.ini"
+    fi
+
+if [ "$(cat "$HOME/.config/bigwin" | grep compiz)" != "" ]
+then
+  echo "Compiz" > $HOME/.config/bigwincheck2
+    compiz-legacy decoration  --replace --sm-client-id $DESKTOP_AUTOSTART_ID
+fi
+
+if [ "$(cat "$HOME/.config/bigwin" | grep kwin)" != "" ]
+then
+  echo "Kwin" > $HOME/.config/bigwincheck2  
+  kwin --replace
+fi
+
+if [ "$(cat "$HOME/.config/bigwin" | grep xfwm)" != "" ]
+then
+  echo "XFWM" > $HOME/.config/bigwincheck2
+  xfwm4 --sm-client-disable --replace
+fi
+  
+
+
+if [ "$(cat "$HOME/.config/bigwin")" = "" ]
+then
+
+  if [ $(glxinfo 2>/dev/null | grep GLX_EXT_texture_from_pixmap -c) -gt 2 ]; then
+    TFP=OK
+  elif [ $(LIBGL_ALWAYS_INDIRECT=1 glxinfo 2>/dev/null | grep GLX_EXT_texture_from_pixmap -c) -gt 2 ]; then
+    TFP=OK
+  else
+    TFP=$FAIL
+  fi
+
+  if [ "$(lsmod | grep nouveau)" = "" ]
+  then
+    if [ $(glxinfo | grep -c Slow) -gt 40 ]; then
+	TFP=$FAIL
+    fi
+  fi
+
+    if [ "$(echo $KDEHOME | grep kdesktop-lite$)" != "" ]
+    then
+	echo "XFWM" > $HOME/.config/bigwincheck2
+	xfwm4 --sm-client-disable  --replace
+
+    else
+
+	if [ "$(grep MemTotal: /proc/meminfo | awk '{print $2}')" -lt "700000" ]
+	then
+	    echo "XFWM" > $HOME/.config/bigwincheck2
+	    xfwm4 --sm-client-disable  --replace
+	    
+	else
+	    if [ "$TFP" = "OK" ]
+	    then
+		echo "Compiz" > $HOME/.config/bigwincheck2
+		compiz-legacy  --replace
+	    else
+		echo "Kwin" > $HOME/.config/bigwincheck2
+		kwin  --replace
+
+	    fi
+	fi
+    fi
+fi

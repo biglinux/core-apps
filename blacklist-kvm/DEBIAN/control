@@ -1,0 +1,9 @@
+Package: blacklist-kvm
+Version: 1.0.0-0kaiana0
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Priority: optional
+Description: Desativa o carregamento automativo dos modulos de virtualizacao, kvm
+

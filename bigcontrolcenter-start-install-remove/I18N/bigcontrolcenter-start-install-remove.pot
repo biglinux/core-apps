@@ -1,0 +1,251 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: BigLinux\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2013-10-10 02:27-0300\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+msgid   "Configurar DNS"
+msgstr  ""
+
+msgid   "Aplicar"
+msgstr  ""
+
+msgid   "Sair"
+msgstr  ""
+
+msgid   "Voltar para tela de configuracao"
+msgstr  ""
+
+msgid   "Para uma conexao mais rapida e estavel."
+msgstr  ""
+
+msgid   "Configuracao aplicada."
+msgstr  ""
+
+msgid   "Instalar ou Remover programas"
+msgstr  ""
+
+msgid   "Instale e remova programas de forma facil e pratica"
+msgstr  ""
+
+msgid   "Central de Programas"
+msgstr  ""
+
+msgid   "Voltar"
+msgstr  ""
+
+msgid   "Dicas para instalar programas."
+msgstr  ""
+
+msgid   "Sempre que disponivel instale o programa desejado utilizando a <a "
+        "href=softwarecenter.sh.htm>Central de Programas</a> ou o <a "
+        "href=synaptic.sh.htm>Synaptic</a>."
+msgstr  ""
+
+msgid   "É recomendado que o programa a ser instalado seja compativel com o "
+        "$DISTRIB_ID $DISTRIB_RELEASE ou o Ubuntu $DISTRIB_CODENAME. Caso o "
+        "programa nao esteja disponivel para ambas as distribuicoes confira a "
+        "disponibilidade para Debian, pois sua compatibilidade nao e total, "
+        "mas ainda e bastante eficiente."
+msgstr  ""
+
+msgid   "De preferencia a arquivos com a extensao .deb pois e o padrao "
+        "adotado pelo $DISTRIB_ID. Nesse caso basta clicar duas vezes sobre o "
+        "arquivo que o instalador e iniciado."
+msgstr  ""
+
+msgid   "Arquivos .run e .sh necessitam que se clique sobre o mesmo com o "
+        "botao direito, acesse as propriedades, permissoes e marque como "
+        "executavel."
+msgstr  ""
+
+msgid   "Arquivos .rar, .zip, .tar, .gz, 7z, bz e lzma são arquivos "
+        "compactados, clique sobre o mesmo com o botao direito, mande extrair "
+        "e verifique o formato que foi criado apos a descompactacao."
+msgstr  ""
+
+msgid   "Arquivos .rpm sao pouco compativeis com o $DISTRIB_ID, recomendo que "
+        "procure por um arquivo .deb."
+msgstr  ""
+
+msgid   "Arquivos .exe e .msi devem ser instalados com o programa Wine, mas "
+        "sua compatibilidade e estabilidade nao e muito boa."
+msgstr  ""
+
+msgid   "A forma mais simples de instalar e remover programas."
+msgstr  ""
+
+msgid   "Abrir a Central de Programas"
+msgstr  ""
+
+msgid   "Para instalar novos programas o download e feito automaticamente, "
+        "portanto e importante o PC estar conectado a internet."
+msgstr  ""
+
+msgid   "Ao abrir o programa digite o que deseja ou escolha a categoria."
+msgstr  ""
+
+msgid   "Ao encontrar o programa desejado de dois cliques sobre o mesmo para "
+        "obter mais informacoes. Para prosseguir com a instalacao clique no "
+        "botao instalar."
+msgstr  ""
+
+msgid   "Para remover programas faca o mesmo processo escrito acima, porem no "
+        "lugar do botao instalar estara o botao remover."
+msgstr  ""
+
+msgid   "Se o programa desejado não for encontrado na busca tente efetua-la "
+        "em ingles, por exemplo: burn cd no lugar de gravar cd."
+msgstr  ""
+
+msgid   "Wine"
+msgstr  ""
+
+msgid   "Configurar o Wine."
+msgstr  ""
+
+msgid   "Configurador do Wine"
+msgstr  ""
+
+msgid   "Abrir pasta com arquivos do Wine"
+msgstr  ""
+
+msgid   "Editor de registros Regedit"
+msgstr  ""
+
+msgid   "Gerenciador de arquivos do Wine"
+msgstr  ""
+
+msgid   "Simular que o Windows esta sendo reiniciado"
+msgstr  ""
+
+msgid   "Apagar arquivos pessoais do Wine"
+msgstr  ""
+
+msgid   "As alteracoes feitas nesse painel afetam os programas instalados no "
+        "Wine, mas nao incluenciam os instalados utilizando o PlayOnLinux."
+msgstr  ""
+
+msgid   "Synaptic"
+msgstr  ""
+
+msgid   "Facilidade e opcoes avancadas no mesmo local."
+msgstr  ""
+
+msgid   "Abrir Synaptic"
+msgstr  ""
+
+msgid   "O botao Recarregar sincroniza a lista de programas do seu PC com a "
+        "lista de programas disponiveis nos servidores, se voce for instalar "
+        "algum programa recomendo que antes recarregue a lista para checar se "
+        "nao foi inserida uma nova versao, mas nao e necessario recarregar a "
+        "cada programa que vai se instalar, lembre que isso serve apenas para "
+        "checar se o programa que esta no servidor nao e uma versao mais "
+        "nova, entao usar esse botao uma vez a cada semana costuma ser "
+        "suficiente."
+msgstr  ""
+
+msgid   "Apos recarregar basta encontrar o programa, voce pode procurar na "
+        "lista a esquerda por categoria ou usar o botao procurar."
+msgstr  ""
+
+msgid   "Ao encontrar o programa desejado basta clicar duas vezes sobre o "
+        "programa que o mesmo ficara marcado."
+msgstr  ""
+
+msgid   "Apos marcar os programas clique em aplicar que o download e a "
+        "instalacao sera feita automaticamente."
+msgstr  ""
+
+msgid   "Reiniciado."
+msgstr  ""
+
+msgid   "Concluida a simulacao de reinicio do Wine."
+msgstr  ""
+
+msgid   "Wine/PlayOnLinux"
+msgstr  ""
+
+msgid   "Como instalar programas feitos para Windows no Linux."
+msgstr  ""
+
+msgid   "Abrir Painel Wine"
+msgstr  ""
+
+msgid   "Instalar Wine"
+msgstr  ""
+
+msgid   "Abrir PlayOnLinux"
+msgstr  ""
+
+msgid   "Instalar PlayOnLinux"
+msgstr  ""
+
+msgid   "Com o Wine e possivel utilizar programas do Windows no Linux."
+msgstr  ""
+
+msgid   "Sua compatibilidade nao e muito boa, recomendo que tente utilizar "
+        "apenas se nao encontrar programa similar feito para Linux."
+msgstr  ""
+
+msgid   "Um dos usos mais comuns do Wine e para rodar jogos."
+msgstr  ""
+
+msgid   "Clique aqui para conferir a lista oficial de programas compativeis "
+        "com o Wine."
+msgstr  ""
+
+msgid   "O PlayOnLinux faz configuracoes especificas para tornar o Wine "
+        "compativel com diversos programas e jogos."
+msgstr  ""
+
+msgid   "Diversos programas que constam na lista do PlayOnLinux são baixados "
+        "automaticamente da internet."
+msgstr  ""
+
+msgid   "Para evitar que a configuracao de um programa interfira no "
+        "funcionamento de outro o PlayOnLinux faz instalacoes separadas do "
+        "Wine para cada programa."
+msgstr  ""
+
+msgid   "Devo realmente apagar os arquivos pessoais do Wine?\n"
+        "Isso ira remover os programas instalados pelo Wine, mas nao pelo "
+        "PlayOnLinux."
+msgstr  ""
+
+msgid   "Remocao concluida."
+msgstr  ""
+
+msgid   "Instalar ou remover programas"
+msgstr  ""
+
+msgid   "Se o programa ou jogo que voce deseja nao possui versao para Linux "
+        "experimente utiliza-lo com o Wine"
+msgstr  ""
+
+msgid   "Instalar e remover programas nunca foi tao facil."
+msgstr  ""
+
+msgid   "Instalar ou remover simples<br>(Central de Programas)"
+msgstr  ""
+
+msgid   "Instalar ou remover avancado<br>(Synaptic)"
+msgstr  ""
+
+msgid   "Instalar programas feitos para Windows"
+msgstr  ""
+
+msgid   "Instalar programas diretamente de arquivos"
+msgstr  ""

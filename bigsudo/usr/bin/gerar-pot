@@ -1,0 +1,30 @@
+#!/bin/bash
+
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+ORI_IFS=$IFS
+IFS=$'\n'
+
+rm -f $2
+rm -f $2-corrigido
+
+
+for i in $(find $1 -name "*.sh.htm"); do
+    bash --dump-po-strings $i >> $2
+echo "biglinux - $1"
+done
+
+for i in $(find $1 -name "*.run"); do
+    bash --dump-po-strings $i >> $2
+done
+
+
+xgettext -L PO -o $2-corrigido -i $2
+mv $2-corrigido $2
+
+IFS=$ORI_IFS

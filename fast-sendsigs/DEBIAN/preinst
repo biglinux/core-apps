@@ -1,0 +1,29 @@
+#! /bin/sh
+
+set -e
+
+package_name=fast-sendsigs
+mkdir -p /usr/share/dpkgdivert/
+
+if [ -z "$package_name" ]; then
+    print >&2 "Internal Error. Please report a bug."
+    exit 1;
+fi
+
+case "$1" in
+  install)
+    dpkg-divert --package $package_name --divert /usr/share/dpkgdivert/sendsigs --rename /etc/init.d/sendsigs
+    ;;
+  upgrade)
+        if [ "$(dpkg-divert --list /etc/init.d/sendsigs)" = "" ]
+        then
+	    dpkg-divert --package $package_name --divert /usr/share/dpkgdivert/sendsigs --rename /etc/init.d/sendsigs
+	fi
+;;
+  abort-upgrade)
+    ;;
+  *) echo "$0: didn't understand being called with \`$1'" 1>&2
+     exit 0;;
+esac
+
+exit 0

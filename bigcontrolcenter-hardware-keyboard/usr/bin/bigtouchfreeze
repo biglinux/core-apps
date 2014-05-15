@@ -1,0 +1,25 @@
+#!/bin/bash
+
+  killall syndaemon
+
+  if [ ! -e "$HOME/.config/bigtouchfreeze_time" ]
+  then
+      time="-i 1.0"
+  else
+      time="-i $(cat $HOME/.config/bigtouchfreeze_time)"
+  fi
+
+  if [ ! -e "$HOME/.config/bigtouchfreeze_tap" ]
+  then
+      tap="-t"
+  fi
+
+  if [ ! -e "$HOME/.config/bigtouchfreeze_keys" ]
+  then
+      keys="-K"
+  fi
+
+  if [ ! -e "$HOME/.config/bigtouchfreeze_disable" ]
+  then
+      syndaemon -d $keys $tap $time
+  fi

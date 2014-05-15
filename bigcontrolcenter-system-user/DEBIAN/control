@@ -1,0 +1,9 @@
+Package: bigcontrolcenter-system-user
+Version: 1.0.1-1kaiana4
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: kdepasswd, bigcontrolcenter
+Section: admin
+Priority: optional
+Description: Configure your user details and password

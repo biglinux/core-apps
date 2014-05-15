@@ -1,0 +1,11 @@
+Package: graphic-tools-service-menu-kaiana
+Version: 1.0.0-0kaiana0
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Replaces: konq-plugins
+Depends: kde-baseapps-bin, imagemagick
+Priority: optional
+Description: Resize images service menu, based in http://kde-apps.org/content/show.php/kde-services?content=147065
+

@@ -1,0 +1,97 @@
+/*************
+ * Scrollbar *
+ *************/
+.scrollbar {
+    -GtkScrollbar-has-backward-stepper: 0;
+    -GtkScrollbar-has-forward-stepper: 0;
+    -GtkRange-slider-width: 11px;
+
+    border-radius:  2px;
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
+                                           from (shade (@bg_color, 0.74)),
+                                           to (shade (@bg_color, 0.74)));
+}
+
+.scrollbar.trough,
+.scrollbar.trough.vertical {
+    background-image: -gtk-gradient (linear, left top, right top,
+                                     from (shade (@bg_color, 0.9)),
+                                     to (shade (@bg_color, 0.95)));
+    
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;                                 
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
+                                           from (shade (@bg_color, 0.74)),
+                                           to (shade (@bg_color, 0.74)));
+}
+
+.scrollbar.trough.horizontal {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@bg_color, 0.9)),
+                                     to (shade (@bg_color, 0.95)));
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
+                                           from (shade (@bg_color, 0.74)),
+                                           to (shade (@bg_color, 0.74)));
+}
+
+.scrollbar.slider,
+.scrollbar.slider:hover,
+.scrollbar.button,
+.scrollbar.slider.vertical,
+.scrollbar.slider.vertical:hover,
+.scrollbar.button.vertical {
+    background-image: -gtk-gradient (linear, left top, right top,
+                                     from (shade (@bg_color, 1.08)),
+                                     to (shade (@bg_color, 0.92)));
+    
+    border-style: solid;
+    border-width: 1px;                                 
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, right top,
+                                           from (shade (@bg_color, 0.74)),
+                                           to (shade (@bg_color, 0.74)));
+    -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, right top,
+                                                 from (shade (@bg_color, 1.2)),
+                                                 to (shade (@bg_color, 1.0)));
+    -unico-inner-stroke-width: 1px;
+}
+
+.scrollbar.slider.horizontal,
+.scrollbar.slider.horizontal:hover,
+.scrollbar.button.horizontal {                                   
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@bg_color, 1.08)),
+                                     to (shade (@bg_color, 0.92)));
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
+                                           from (shade (@bg_color, 0.74)),
+                                           to (shade (@bg_color, 0.74)));
+    -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
+                                                 from (shade (@bg_color, 1.16)),
+                                                 to (shade (@bg_color, 1.0)));
+}
+
+.scrollbar.button,
+.scrollbar.button:insensitive {
+    -unico-outer-stroke-width: 0;
+}
+
+/* overlay scrollbar */
+OsThumb:selected,
+OsScrollbar:selected {
+    background-color: @selected_bg_color; 
+}
+
+OsThumb:active,
+OsScrollbar:active {
+    background-color: shade (@bg_color, 0.6);
+}
+
+OsThumb:insensitive,
+OsScrollbar:insensitive {
+    background-color: shade (@bg_color, 0.85);
+}

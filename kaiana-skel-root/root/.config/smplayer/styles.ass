@@ -1,0 +1,7 @@
+[Script Info]
+ScriptType: v4.00+
+Collisions: Normal
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, BackColour, OutlineColour, Bold, Italic, Alignment, BorderStyle, Outline, Shadow, MarginL, MarginR, MarginV
+Style: Default,Liberation Sans,22,&H0000ffff,&H00000000,&H00272727,-1,0,2,1,1,0.7,20,20,8

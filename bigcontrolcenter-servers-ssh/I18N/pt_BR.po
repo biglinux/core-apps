@@ -1,0 +1,138 @@
+# Brazilian Portuguese translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-13 22:37-0300\n"
+"PO-Revision-Date: 2010-09-14 07:14+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-15 04:57+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "SSH"
+msgstr "SSH"
+
+msgid "Aplicar"
+msgstr "Aplicar"
+
+msgid "Sair"
+msgstr "Sair"
+
+msgid "A porta padrao dos servidores SSH e 22"
+msgstr "A porta padrão dos servidores SSH e 22"
+
+msgid ""
+"Com essa opcao ativada e possivel apos acessar o terminal executar programas "
+"em modo grafico remotamente<p>Programas executados dessa forma sao "
+"processados no servidor e exibidos no cliente."
+msgstr ""
+"Com essa opção ativada é possível após acessar o terminal executar programas "
+"em modo gráfico remotamente<p>Programas executados dessa forma são "
+"processados no servidor e exibidos no cliente."
+
+msgid "Acesso remoto seguro e de qualidade."
+msgstr "Acesso remoto seguro e de qualidade."
+
+msgid ""
+"Com essa opcao ativada e possivel apos acessar o terminal executar programas "
+"em modo grafico remotamente<p>Programas executados dessa forma sao "
+"processados no servidor e exibidos no cliente<p>* Essa opcao funciona apenas "
+"para acesso via terminal<br>* O servidor tambem necessita estar com essa "
+"opcao ativa"
+msgstr ""
+"Com essa opção ativada é possível após acessar o terminal executar programas "
+"em modo gráfico remotamente<p>Programas executados dessa forma são "
+"processados no servidor e exibidos no cliente<p>* Essa opção funciona apenas "
+"para acesso via terminal<br>* O servidor também necessita estar com essa "
+"opção ativa"
+
+msgid "Em alguns locais e informado como login"
+msgstr "Em alguns locais é informado como login"
+
+msgid ""
+"Endereco do servidor. Pode ser especificado como nome de dominio ou ip"
+msgstr ""
+"Endereço do servidor. Pode ser especificado como nome de domínio ou ip"
+
+msgid "Porta padrao para o ssh e 22"
+msgstr "Porta padrão para o ssh é 22"
+
+msgid "Exibe os arquivos do servidor no gerenciador de arquivos Dolphin"
+msgstr "Exibe os arquivos do servidor no gerenciador de arquivos Dolphin"
+
+msgid "Efetua login no terminal do servidor utilizando o Konsole"
+msgstr "Efetua login no terminal do servidor utilizando o Konsole"
+
+msgid "Preencha os dados referentes ao servidor que deseja acessar:"
+msgstr "Preencha os dados referentes ao servidor que deseja acessar:"
+
+msgid "Acessar terminal"
+msgstr "Acessar terminal"
+
+msgid "Gerenciar arquivos"
+msgstr "Gerenciar arquivos"
+
+msgid "Usuario:"
+msgstr "Usuário:"
+
+msgid "Habilitar X11"
+msgstr "Habilitar X11"
+
+msgid "Endereco:"
+msgstr "Endereço:"
+
+msgid "Porta:"
+msgstr "Porta:"
+
+msgid "Acesso remoto seguro e de qualidade"
+msgstr "Acesso remoto seguro e de qualidade"
+
+msgid "Configuracao aplicada."
+msgstr "Configuração aplicada."
+
+msgid "Inicia automaticamente ao ligar o PC"
+msgstr "Inicia automaticamente ao ligar o PC"
+
+msgid ""
+"Esse servidor permite acesso remoto via terminal e transferencia de arquivos "
+"em modo grafico."
+msgstr ""
+"Esse servidor permite acesso remoto via terminal e transferência de arquivos "
+"em modo gráfico."
+
+msgid "Ativo"
+msgstr "Ativo"
+
+msgid "Iniciar automaticamente"
+msgstr "Iniciar automaticamente"
+
+msgid ""
+"Configure esse computador para que seja possivel acessa-lo remotamente"
+msgstr ""
+"Configure esse computador para que seja possível acessa-lo remotamente"
+
+msgid "Acesse servidores SSH"
+msgstr "Acesse servidores SSH"
+
+msgid "Configurar servidor"
+msgstr "Configurar servidor"
+
+msgid "Acessar servidor"
+msgstr "Acessar servidor"
+
+msgid "Configurar DNS"
+msgstr "Configurar DNS"
+
+msgid "Voltar para tela de configuracao"
+msgstr "Voltar para tela de configuração"
+
+msgid "Para uma conexao mais rapida e estavel."
+msgstr "Para uma conexão mais rápida e estável."

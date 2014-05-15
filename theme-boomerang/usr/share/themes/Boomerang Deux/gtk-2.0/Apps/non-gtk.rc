@@ -1,0 +1,12 @@
+# ==============================================================================
+#                NON-GTK APPS
+#  This affects QT-based apps, MozillaGtkWidget and LibreOffice
+# ==============================================================================
+
+
+widget "GtkWindow.GtkFixed.*GtkToolbar*"                        style "toolbar"
+widget_class "GtkWindow.GtkFixed.*GtkMenuBar*"                  style:highest "menubar"
+widget_class "GtkWindow.GtkFixed.*GtkMenuBar*GtkMenuItem*"      style:highest "menubar_item"
+
+
+

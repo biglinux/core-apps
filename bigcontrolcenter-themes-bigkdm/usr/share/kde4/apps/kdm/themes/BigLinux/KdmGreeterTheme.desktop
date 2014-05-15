@@ -1,0 +1,8 @@
+[KdmGreeterTheme]
+Greeter=biglinux.xml
+Name=BigLinux
+Description=Theme based in NewEssence 2 KDM-Theme
+Author=Codicem, and modified for Bruno Gonvalves.
+Copyright=
+Screenshot=screenshot.png
+

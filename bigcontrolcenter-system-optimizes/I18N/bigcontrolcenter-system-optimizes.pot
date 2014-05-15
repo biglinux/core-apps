@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: BigLinux\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2013-10-10 02:27-0300\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=CHARSET\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+msgid   "Otimizacoes e facilidades"
+msgstr  ""
+
+msgid   "Equilibre o desempenho do sistema e os recursos disponiveis de "
+        "acordo com o uso do computador"
+msgstr  ""
+
+msgid   "Montar particoes"
+msgstr  ""
+
+msgid   "Aplicar"
+msgstr  ""
+
+msgid   "Sair"
+msgstr  ""
+
+msgid   "Voltar para tela de configuracao"
+msgstr  ""
+
+msgid   "Defina suas preferencias."
+msgstr  ""
+
+msgid   "Configuracao aplicada."
+msgstr  ""
+
+msgid   "Gerenciamento do processador"
+msgstr  ""
+
+msgid   "Desligamento rapido."
+msgstr  ""
+
+msgid   "Firefox"
+msgstr  ""
+
+msgid   "Aumente o desempenho do Firefox."
+msgstr  ""
+
+msgid   "Gerenciamento de memoria"
+msgstr  ""
+
+msgid   "Configurar uso de memoria Swap."
+msgstr  ""
+
+msgid   "Desligar o computador de forma rapida, opcao recomendada apenas para "
+        "desktops, nao para servidores."
+msgstr  ""
+
+msgid   "Utilizar o Prelink"
+msgstr  ""
+
+msgid   "Otimizar o sistema com Prelink."
+msgstr  ""
+
+msgid   "O historico, favoritos e algumas outras partes do Firefox ficam "
+        "armazenadas em um banco de dados Sqlite.<br>Otimizar esse banco de "
+        "dados torna a abertura e uso do Firefox mais rapidos.<br>Lembre de "
+        "nao efetuar essa operacao se o Firefox estiver em uso, feche-o "
+        "primeiro."
+msgstr  ""
+
+msgid   "Otimizar o banco de dados do Firefox (Nunca utilize essa opcao caso "
+        "o Firefox esteja em uso, feche-o primeiro)."
+msgstr  ""
+
+msgid   "Ativar/Desativar Akonadi"
+msgstr  ""
+
+msgid   "Defina sua preferencia."
+msgstr  ""
+
+msgid   "O Akonadi e utilizado por alguns programas do KDE para integrar "
+        "informacoes do usuario, mas seu uso aumenta o consumo de memoria e "
+        "processamento.<br>O Akonadi e desativado por padrao no BigLinux."
+msgstr  ""
+
+msgid   "Desativar Akonadi."
+msgstr  ""
+
+msgid   "Recomendado para a maioria das situacoes."
+msgstr  ""
+
+msgid   "A opcao nobarrier aumenta a chance de corrompimento de arquivos caso "
+        "ocorra falha no fornecimento de energia, porem aumenta muito a "
+        "velocidade de leitura e gravacao no HD.<br>Em nossos testes nao "
+        "ocorreram problemas utilizando a opcao nobarrier."
+msgstr  ""
+
+msgid   "Montar automaticamente as particoes dos HDs internos ao ligar o "
+        "computador."
+msgstr  ""
+
+msgid   "Utilizar a opcao nobarrier nas particoes ext4 listadas no arquivo /"
+        "etc/fstab."
+msgstr  ""
+
+msgid   "Notificar atualizacoes"
+msgstr  ""
+
+msgid   "Mostrar icone na barra de ferramentas."
+msgstr  ""
+
+msgid   "Por padrao o kernel Linux utiliza 60 como valor fixo para a "
+        "configuracao de Swap.<br>O valor pode variar de 0 a 100 e na maioria "
+        "dos casos o valor automatico e o mais eficiente."
+msgstr  ""
+
+msgid   "Ajuste automatico que oscila de acordo com o uso do computador."
+msgstr  ""
+
+msgid   "Prioridade de swap fixa."
+msgstr  ""
+
+msgid   "Valor:"
+msgstr  ""
+
+msgid   "Exibir um icone na barra de tarefas quando existirem atualizacoes "
+        "disponiveis."
+msgstr  ""
+
+msgid   "Mostrar um icone na barra de tarefas quando existirem atualizacoes "
+        "disponiveis.<p>* Essa operacao afeta apenas esse usuario."
+msgstr  ""
+
+msgid   "Ativar ou desativar montar particoes automaticamente e otimizar "
+        "particoes ext4.<p>* Essa operacao afeta TODOS os usuarios do sistema."
+msgstr  ""
+
+msgid   "Otimizar o sistema com Prelink.<p>* Essa operacao afeta TODOS os "
+        "usuarios do sistema."
+msgstr  ""
+
+msgid   "Ativar ou Desativar o servidor Akonadi.<br>Utilizado por alguns "
+        "programas do KDE para integrar informacoes do usuario, desativado "
+        "por padrao no BigLinux.<p>* Essa operacao afeta TODOS os usuarios do "
+        "sistema."
+msgstr  ""
+
+msgid   "Configurar uso de memoria Swap.<p>* Essa operacao afeta TODOS os "
+        "usuarios do sistema."
+msgstr  ""
+
+msgid   "Configurar o servidor Nepomuk.<br>Utilizado pelo KDE para efetuar "
+        "buscas no sistema, desativado por padrao no BigLinux.<p>* Essa "
+        "operacao afeta apenas esse usuario."
+msgstr  ""
+
+msgid   "Selecione o que deve ser iniciado junto com o KDE.<p>* Essa operacao "
+        "afeta apenas esse usuario."
+msgstr  ""
+
+msgid   "Selecione os servicos que o KDE deve iniciar automaticamente.<p>* "
+        "Essa operacao afeta apenas esse usuario."
+msgstr  ""
+
+msgid   "Selecione a forma de gerenciar a sessao no KDE.<p>* Essa operacao "
+        "afeta apenas esse usuario."
+msgstr  ""
+
+msgid   "Acelerar a finzalizacao de processos.<p>* Essa operacao afeta TODOS "
+        "os usuarios do sistema."
+msgstr  ""
+
+msgid   "Se o desktop do KDE estiver lento experimente o modo raster.<p>* "
+        "Essa operacao afeta TODOS os usuarios do sistema."
+msgstr  ""
+
+msgid   "Apos muito tempo de uso otimizar o banco de dados do Firefox pode "
+        "aumentar o desempenho do programa.<p>* Essa operacao afeta apenas "
+        "esse usuario."
+msgstr  ""
+
+msgid   "Equilibre o desempenho do sistema e os recursos disponiveis."
+msgstr  ""
+
+msgid   "Configurar gerenciamento de memoria"
+msgstr  ""
+
+msgid   "Desligamento rapido"
+msgstr  ""
+
+msgid   "Gerenciador de inicio automatico do KDE"
+msgstr  ""
+
+msgid   "Gerenciador de servicos do KDE"
+msgstr  ""
+
+msgid   "Gerenciador de sessao do KDE"
+msgstr  ""
+
+msgid   "Configurar o servidor Nepomuk"
+msgstr  ""
+
+msgid   "Desktop do KDE (Plasma)"
+msgstr  ""
+
+msgid   "Processando, aguarde por favor..."
+msgstr  ""
+
+msgid   "A cada 14 dias gera uma nova otimizacao do Prelink (Recomendado)."
+msgstr  ""
+
+msgid   "Se a opcao de atualizar automaticamente nao estiver ativa pode ser "
+        "util efetuar uma atualizacao manual do Prelink."
+msgstr  ""
+
+msgid   "Quando programas sao instalados ou atualizados perdem as otimizacoes "
+        "feitas pelo prelink.<br>Com essa opcao ativa a instalacao de "
+        "programas se torna um pouco mais lenta, mas logo apos instalados os "
+        "programas ja sao otimizados (Recomendado)."
+msgstr  ""
+
+msgid   "Gerar nova base do Prelink a cada 14 dias."
+msgstr  ""
+
+msgid   "Atualizar base do Prelink automaticamente sempre que instalar ou "
+        "atualizar um programa."
+msgstr  ""
+
+msgid   "Atualizar base do Prelink agora."
+msgstr  ""
+
+msgid   "Desktop do KDE"
+msgstr  ""
+
+msgid   "Otimize o Plasma Desktop."
+msgstr  ""
+
+msgid   "Finalize a sessao e faca login novamente para o desktop utilizar a "
+        "nova configuracao."
+msgstr  ""
+
+msgid   "O modo raster utiliza o processador para renderizar o plasma-desktop "
+        "e nao a placa de video. Em alguns casos isso torna o desktop mais "
+        "rapido."
+msgstr  ""
+
+msgid   "Utilizar modo raster para renderizar o desktop do KDE."
+msgstr  ""

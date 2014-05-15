@@ -1,0 +1,8 @@
+Package: kaiana-desktop-theme
+Version: 1.0.2-0kaiana2
+Architecture: all
+Maintainer: Paulo Giovanni Pereira <www.unialivre.com>
+Installed-Size: 39000
+Section: admin
+Priority: optional
+Description: Install desktop theme to Kaiana

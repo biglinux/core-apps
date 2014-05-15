@@ -1,0 +1,49 @@
+#!/bin/bash
+
+#WEB panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-servers-apache
+
+echo '
+<script language="JavaScript">
+window.resizeTo(400,240);
+function NoResize(){
+  window.resizeTo(400,240);
+}
+</script>
+'
+
+title=$"IP"
+close=$"Sair"
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>'
+close_header
+
+
+
+#Exibir resposta para o usuario
+echo "<table><tr><td valign=center>"
+echo $"IP da rede interna:" "$(/sbin/ifconfig | sed -n '2 p' | awk '{print $3}')<p>"
+echo '</td></tr></table><table><tr><td valign=center>' $"IP da internet:"
+
+echo '</td><td valign=top><iframe src="http://automation.whatismyip.com/n09230945.asp" heigth="100%" width="300" height="30" scrolling="no" frameborder="0"></iframe></td></tr></table>'
+echo "</font><br><br><center><button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></td></tr></table></center></div></body>"
+
+
+

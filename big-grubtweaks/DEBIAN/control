@@ -1,0 +1,9 @@
+Package: big-grubtweaks
+Version: 1.0.4-0kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Priority: optional
+Description: Melhora a configuração do Grub
+

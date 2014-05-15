@@ -1,0 +1,10 @@
+Package: libreoffice-dic-tematicos
+Version: 2:2009-11-26
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: libreoffice-common
+Section: admin
+Priority: optional
+Description: Dicionarios tematicos do Br-Office
+

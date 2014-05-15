@@ -1,0 +1,11 @@
+Package: bigcontrolcenter-system-optimizes
+Version: 1.0.1-1kaiana2
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: bigcontrolcenter, update-notifier, bigpartition, prelink, sqlite3, aptdaemon, python-aptdaemon-gtk
+Conflicts: bigcontrolcenter-system-autostart, bigswap
+Section: admin
+Priority: optional
+Description: Optimizes for BigLinux
+

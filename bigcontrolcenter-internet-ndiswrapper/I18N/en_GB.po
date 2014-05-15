@@ -1,0 +1,102 @@
+# English (United Kingdom) translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-13 04:50-0300\n"
+"PO-Revision-Date: 2010-08-24 05:42+0000\n"
+"Last-Translator: Sergio <ikisham@gmail.com>\n"
+"Language-Team: English (United Kingdom) <en_GB@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-08-25 03:51+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Wireless com driver Windows (Ndiswrapper)"
+msgstr "Wireless with Windows driver (NDISwrapper)"
+
+msgid "Aplicar"
+msgstr "Apply"
+
+msgid "Sair"
+msgstr "Quit"
+
+msgid "Voltar para tela de configuracao"
+msgstr "Go back to the configuration window"
+
+msgid "Utilizar driver do Windows para placa Wireless."
+msgstr "Use Windows driver for wireless card."
+
+msgid ""
+"Driver Ndiswrapper ativado, va ao configurador de conexao e tente "
+"estabelecer uma conexao, caso nao funcione tente utilizar um driver para "
+"outra versao de Windows, em geral o driver para a versao 2000 funciona "
+"melhor no Ndiswrapper."
+msgstr ""
+"NDISwrapper driver enabled, go to the Internet connection configuration tool "
+"and try to establish a connection. In case it doesn't work, try using a "
+"driver made for a different Windows version, usually drivers made for "
+"Windows 2000 work better in NDISwrapper."
+
+msgid ""
+"O driver Ndiswrapper desativado, para que o sistema volte a utilizar o "
+"driver nativo recomendo que reinicie o computador."
+msgstr ""
+"NDISwrapper driver disabled, for the system to use again its native driver I "
+"recommend to restart the computer."
+
+msgid "Saber mais sobre DNS"
+msgstr "Know more about DNS"
+
+msgid ""
+"Se o seu provedor possuir servidores de qualidade pode ser a melhor "
+"alternativa"
+msgstr ""
+"If your Internet provider has quality servers, can be the best alternative"
+
+msgid "Servidor gratuito reconhecido por ser um dos mais rapidos e seguros"
+msgstr "Free server known to be one of the fastest and safest"
+
+msgid ""
+"Utilize o servidor diretamente em seu computador, utiliza um pouco de "
+"memoria RAM e processamento, porem possui a navegacao mais rapida"
+msgstr ""
+"Use the server directly on your computer, uses some RAM and CPU processing "
+"but has the fastest browsing speed"
+
+msgid ""
+"Caso tennha preferencia por um servidor especifico preencha com o IP "
+"correspondente"
+msgstr "In case you prefer a specific server, fill in the corresponding IP"
+
+msgid ""
+"O Ndiswrapper utiliza driver Wireless feito para Windows em sistemas Linux, "
+"para isso e necessario indicar o arquivo .inf do driver."
+msgstr ""
+"NDISwrapper uses wireless drivers made for Windows in the Linux system, for "
+"that it's necessary to point to the driver's .inf file."
+
+msgid ""
+"Para um melhor funcionamento e recomendado copiar os arquivos do driver, "
+"incluindo o arquivo .inf para a particao principal do seu sistema, por "
+"exemplo a pasta pessoal do seu usuario."
+msgstr ""
+"For it to work better it's recommended to copy the driver files, including "
+"the .inf file, to your system's main partition, the user's home folder for "
+"instance."
+
+msgid "Ndiswrapper ativo"
+msgstr "NDISwrapper enabled"
+
+msgid ""
+"Caso o driver para a placa wireless nao esteja funcionando corretamente, "
+"tente utilizar o driver do Windows pelo ndiswrapper..."
+msgstr ""
+"In case the driver for the wireless card isn't working properly, try using "
+"the Windows driver for it through NDISwrapper..."

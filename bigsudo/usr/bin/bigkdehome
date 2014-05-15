@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ "$KDEHOME" = "" ]
+then
+echo "$HOME/.kde"
+else
+echo "$KDEHOME"
+fi

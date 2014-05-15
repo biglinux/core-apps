@@ -1,0 +1,2 @@
+cd /usr/share/bigscanner/
+bbv 'execute$/usr/share/bigscanner/scan.sh' -i /usr/share/bigscanner/icone.png

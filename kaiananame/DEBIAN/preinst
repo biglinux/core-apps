@@ -1,0 +1,45 @@
+#! /bin/sh
+
+set -e
+
+package_name=kaiananame
+
+if [ -z "$package_name" ]; then
+    print >&2 "Internal Error. Please report a bug."
+    exit 1;
+fi
+
+case "$1" in
+  install)
+    dpkg-divert --package $package_name --divert /etc/legal.distrib --rename /etc/legal
+    dpkg-divert --package $package_name --divert /etc/issue.distrib --rename /etc/issue
+    dpkg-divert --package $package_name --divert /etc/issue.net.distrib --rename /etc/issue.net
+    dpkg-divert --package $package_name --divert /etc/lsb-release.distrib --rename /etc/lsb-release
+    ln  -sf /usr/share/python-apt/templates/Ubuntu.info /usr/share/python-apt/templates/BigLinux.info
+    ln  -sf /usr/share/python-apt/templates/Ubuntu.info /usr/share/python-apt/templates/Kaiana.info
+    ;;
+  upgrade)
+    ln  -sf /usr/share/python-apt/templates/Ubuntu.info /usr/share/python-apt/templates/BigLinux.info
+    ln  -sf /usr/share/python-apt/templates/Ubuntu.info /usr/share/python-apt/templates/Kaiana.info
+    if [ "$(dpkg-divert --list /etc/motd)" = "" ]
+        then
+	    dpkg-divert --package $package_name --divert /etc/motd.distrib --rename /etc/motd
+	fi
+
+        if [ "$(dpkg-divert --list /etc/motd.tail)" = "" ]
+        then
+	    dpkg-divert --package $package_name --divert /etc/motd.tail.distrib --rename /etc/motd.tail
+	fi
+
+        if [ "$(dpkg-divert --list /etc/legal)" = "" ]
+        then
+	    dpkg-divert --package $package_name --divert /etc/legal.distrib --rename /etc/legal
+	fi
+    ;;
+  abort-upgrade)
+    ;;
+  *) echo "$0: didn't understand being called with \`$1'" 1>&2
+     exit 0;;
+esac
+
+exit 0

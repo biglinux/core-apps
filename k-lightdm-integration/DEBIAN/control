@@ -1,0 +1,10 @@
+Package: k-lightdm-integration
+Version: 1.0.0-1kaiana3
+Architecture: all
+Maintainer: lunimare <www.biglinux.com.br>
+Installed-Size: 100
+Depends: unity-greeter
+Section: admin
+Priority: optional
+Description: Fix user wallpaper in unity-greeter using KDE
+

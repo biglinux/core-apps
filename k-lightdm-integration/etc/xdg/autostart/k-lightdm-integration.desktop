@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=k-lightdm-integration
+Comment=Fix wallpaper unity-greeter in kde
+Exec=ln -sf /usr/bin/k-lightdm-integration ~/.kde/shutdown/k-lightdm-integration
+Terminal=false
+Type=Application

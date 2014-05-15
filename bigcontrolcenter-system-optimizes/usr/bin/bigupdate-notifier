@@ -1,0 +1,10 @@
+if [ -e "/rofs" ]
+then
+exit
+fi
+
+if [ ! -e "$HOME/.big_no_update_notifier" ]
+then
+    sleep 30
+    update-notifier --force-use-gksu
+fi

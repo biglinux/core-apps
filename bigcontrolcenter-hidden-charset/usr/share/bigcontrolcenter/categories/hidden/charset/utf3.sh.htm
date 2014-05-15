@@ -1,0 +1,43 @@
+#!/bin/bash
+
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-hidden-charset
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Converter para UTF-8"
+apply=$"Converter"
+close=$"Sair"
+
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Resolver problemas com acentos."
+close_header
+
+#body
+echo '<center><br><br><br><br><br><br>'
+
+echo "<b>" $"Aguarde esse processo pode demorar..."
+
+echo '<meta http-equiv="Refresh" content="0; url=utf-submit.sh.htm">'

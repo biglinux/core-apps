@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<!DOCTYPE greeter SYSTEM "greeter.dtd">
+<greeter>
+        <item type="pixmap" id="background" background="true">
+		<normal file="/usr/share/wallpapers/BigLinux.jpg"/>
+		<pos anchor="c" x="50%" y="50%" width="100%" height="100%"/>
+	</item>
+
+  <!-- MAIN BOX -->
+  <item type="pixmap">
+    <normal file="mainbox.png"/>
+    <pos y="50%" x="50%" width="550" height="280" anchor="c"/>
+    <box orientation="vertical">
+      <item type="rect">
+        <pos width="100%" height="224"/>
+        <fixed>
+          <item type="rect">
+            <pos x="50%" height="50" width="100%" anchor="n"/>
+            <fixed>
+              <item type="label">
+                <pos x="50%" y="55%" anchor="c"/>
+                <normal color="#FFFFFF" font="Sans medium 12"/>
+                <!-- Stock label for: Welcome to %h -->
+                <stock type="welcome-label"/>
+              </item>
+            </fixed>
+          </item>
+	  <item type="pixmap">
+		<normal file="entry.png"/>
+		<pos x="56" y="-127" width="157" height="28"/>
+	  </item>
+	  <item type="pixmap">
+		<normal file="entry.png"/>
+		<pos x="56" y="-69" width="157" height="28"/>
+	  </item>
+          <item type="rect">
+            <pos anchor="n" x="60%" y="40" width="100%" height="200"/>
+            <!--            <normal color="#FF0000" alpha="0.5"/>-->
+            <fixed>
+	      <item type="pixmap">
+		  <normal file="userbox.png"/>
+		  <pos x="250" y="-5%" width="40%" height="110%"/>
+	      </item>
+              <item type="rect" id="userlist-background">
+                <!-- 16 pixel per user in list -->
+                <pos x="263" width="35%" height="100%"/>
+                <normal color="#ffffff" alpha="0.4"/>
+                <fixed>
+                  <item type="list" id="userlist">
+                    <pos height="100%" width="100%"/>
+		  </item>
+                </fixed>
+              </item>
+              <!-- the login box contents, positioned freely -->
+              <item type="rect">
+                <pos width="box" height="box" x="32%" y="45%" anchor="e"/>
+                <box orientation="vertical" spacing="8" xpadding="22">
+                  <!-- Stock label for: Username: -->
+                  <item type="label">
+                    <pos anchor="nw" x="0"/>
+                    <normal color="#FFFFFF" font="Sans medium 12"/>
+                    <stock type="username-label"/>
+                  </item>
+                  <!-- user entry -->
+                  <item type="entry" id="user-entry"> 
+                    <pos height="22" width="150"/>
+                </item>
+		
+                <!-- Stock label for: Password: -->
+                  <item type="label">
+                    <pos anchor="nw" x="0"/>
+                    <normal color="#FFFFFF" font="Sans  medium 12"/>
+                    <stock type="password-label"/>
+                  </item>
+                  <!-- user entry -->
+                  <item type="entry" id="pw-entry">
+                    <pos height="22" width="150"/>
+                </item>
+                <item type="rect">
+                    <pos anchor="n" width="100%" height="100%"/>
+                    <fixed>
+		      <item type="pixmap" id="login_button" button="true">
+			<normal file="key_enter.png" element="button-normal"/>
+			<prelight file="key_enter2.png" element="button-over"/>
+			<active file="key_enter.png" element="button-enter"/>
+			<pos anchor="n" y="-65" x="185%" width="64" height="64"/>
+		      </item>
+                    </fixed>
+                  </item>
+
+                </box>
+              </item>
+            </fixed>
+          </item>
+        </fixed>
+      </item>
+	     <item type="label" id="pam-error">
+		<pos anchor="c" x="23%" y="-25" expand="false"/>
+		<normal color="#ffffff" font="Sans Bold 9"/>
+		<text/>
+	     </item>
+	     <item type="label" id="caps-lock-warning">
+	   	<pos anchor="c" x="25%" y="-25" expand="false"/>
+	        <normal color="#ffffff" font="Sans Bold 9"/>
+		<stock type="caps-lock-warning"/>
+	     </item>
+      
+    </box>
+  </item>
+  <!-- bottom bar and session buttons -->
+	<item type="rect" id="footer">
+		<pos anchor="c" x="50%" y="98%" width="100%" height="60"/>
+		<fixed>
+			<item type="pixmap">
+				<normal file="box.png"/>
+				<pos width="100%" height="70"/>
+			</item>
+		</fixed>
+		<box orientation="horizontal" spacing="0" xpadding="0">
+			<item type="label" id="clock" with="100%" >
+				<pos x="75%" y="50%" anchor="c" />
+				<normal color="#dddddd" font="Sans Bold 11"/>
+				<text>%c</text>
+			</item>
+		</box>
+		<box orientation="horizontal" spacing="0" xpadding="0">
+			<item type="rect" id="session_button" button="true">
+				<pos x="250%" y="50%" anchor="e" width="175" height="box"/>
+				<box orientation="horizontal" spacing="10" xpadding="15">
+				        <item type="svg" id="system" button="true">
+						<normal file="system.svg" element="systemnormal"/>
+						<prelight file="system.svg" element="systemlight"/>
+						<active file="system.svg" element="systemlight"/>
+						<pos width="150" height="46"/>
+					</item>
+				</box>
+			</item>
+			<item type="rect" id="session_button" button="true">
+				<pos x="180%" y="50%" anchor="e" width="175" height="box"/>
+				<box orientation="horizontal" spacing="10" xpadding="15">
+					<item type="label">
+						<normal color="#dddddd" font="Sans Bold 9"/>
+						<prelight color="#ffffff" font="Sans Bold 9"/>
+						<active color="#ffffff" font="Sans Bold 9"/>
+						<stock type="session"/>
+						<pos y="50%" anchor="w"/>
+					</item>
+				</box>
+			</item>
+			<item type="rect" id="system_button" button="true">
+				<show modes="console" type="system"/>
+				<pos x="250%" y="50%" anchor="e" width="175" height="box"/>
+				<box orientation="horizontal" spacing="10" xpadding="15">
+					<item type="svg" id="menu_button" button="true">
+						<normal file="menu.svg" element="menunormal"/>
+						<prelight file="menu.svg" element="menuLight"/>
+						<active file="menu.svg" element="menuLight"/>
+						<pos width="150" height="46"/>
+					</item>
+				</box>
+			</item>
+			<item type="rect" id="system_button" button="true">
+				<show modes="console" type="system"/>
+				<pos x="180%" y="50%" anchor="e" width="175" height="box"/>
+				<box orientation="horizontal" spacing="10" xpadding="15">
+					<item type="label">
+						<normal color="#dddddd" font="Sans Bold 9"/>
+						<prelight color="#ffffff" font="Sans Bold 9"/>
+						<active color="#ffffff" font="Sans Bold 9"/>
+						<stock type="system"/>
+						<pos y="50%" anchor="w"/>
+					</item>
+				</box>
+			</item>
+		</box>
+	</item>
+  <!-- timer -->
+  <item type="rect" id="timed-rect">
+    <show type="timed"/>
+    <normal color="#FFFFFF" alpha="0"/>
+    <pos anchor="n" x="50%" y="68%" width="box" height="box"/>
+    <box orientation="vertical" min-width="400" xpadding="10" ypadding="5" spacing="0">
+      <item type="label" id="timed-label">
+        <normal color="#ffffff" font="Sans 12"/>
+        <pos x="50%" anchor="n"/>
+        <!-- Stock label for: User %s will login in %d seconds -->
+        <stock type="timed-label"/>
+      </item>
+    </box>
+  </item>
+  
+</greeter>

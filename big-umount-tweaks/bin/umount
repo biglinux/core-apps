@@ -1,0 +1,48 @@
+#!/bin/sh
+
+OIFS=$IFS
+IFS='\'
+
+############
+#Check for removable
+#Checa se eh removivel
+############
+if [ "$(cat /sys/block/$(df "$*" | cut -f1 -d" " | grep "/" | sed 's|/dev/||g;s|[1-9].*||g')/removable)" = "1" ];
+then
+    forcehup=y
+fi
+
+############
+#Check for usb
+#Checa se eh usb
+############
+
+if [ "$(udisksctl info -b $(df "$*" | cut -f1 -d" " | grep "/" | sed 's|[1-9].*||g') | grep -e "-usb-")" != "" ];
+then
+    forcehup=y
+fi
+
+
+if [ "$forcehup" = "y" ];
+then
+    ##########
+    # HUP SIGNAL and sync files
+    # Envia o sinal de desconexao HUP e sincroniza os arquivos
+    ##########
+    fuser -k -m -HUP "$*"
+    sync
+    /bin/umount.distrib -l $*
+    IFS=$OIFS
+else
+    /bin/umount.distrib $*
+    IFS=$OIFS
+fi
+
+
+###########
+#Debug
+###########
+# echo "$forcehup" > /tmp/checagem
+# echo "$(udisksctl info -b $(df "$*" | cut -f1 -d" " | grep "/" | sed 's|[1-9].*||g') | grep -e "-usb-")" > /tmp/checagem2
+# echo "$*" > /home/bruno/tmp3
+# echo "$(cat /sys/block/$(df "$*" | cut -f1 -d" " | grep "/" | sed 's|/dev/||g;s|[1-9].*||g')/removable)" > /tmp4

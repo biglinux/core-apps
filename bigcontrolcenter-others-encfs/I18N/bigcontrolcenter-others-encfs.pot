@@ -1,0 +1,195 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: BigLinux\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2013-10-10 02:27-0300\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=CHARSET\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+msgid   "Criptografia de pastas"
+msgstr  ""
+
+msgid   "Proteja seus arquivos com o Encfs"
+msgstr  ""
+
+msgid   "Criar pasta criptografada"
+msgstr  ""
+
+msgid   "Aplicar"
+msgstr  ""
+
+msgid   "Sair"
+msgstr  ""
+
+msgid   "Escolha uma senha."
+msgstr  ""
+
+msgid   "Lembre da senha utilizada, pois a mesma nao podera ser recuperada:"
+msgstr  ""
+
+msgid   "Similar ao nome de usuario"
+msgstr  ""
+
+msgid   "Muito pequena"
+msgstr  ""
+
+msgid   "Muito simples"
+msgstr  ""
+
+msgid   "Simples"
+msgstr  ""
+
+msgid   "Boa"
+msgstr  ""
+
+msgid   "Muito boa"
+msgstr  ""
+
+msgid   "Preencha esse campo"
+msgstr  ""
+
+msgid   "Repita a senha"
+msgstr  ""
+
+msgid   "Repita a senha corretamente"
+msgstr  ""
+
+msgid   "Senha"
+msgstr  ""
+
+msgid   "Confirme a senha"
+msgstr  ""
+
+msgid   "Insira a senha"
+msgstr  ""
+
+msgid   "Proteja seus arquivos com o Encfs."
+msgstr  ""
+
+msgid   "1 - Para utilizar pastas criptografadas utilize o gerenciador de "
+        "arquivos Dolphin."
+msgstr  ""
+
+msgid   "2 - Crie uma pasta e deixe-a vazia."
+msgstr  ""
+
+msgid   "3 - Clique com o botao direito sobre a mesma, selecione a opcao "
+        "criptografafia e clica em Criar."
+msgstr  ""
+
+msgid   "4 - Pastas criptografadas podem ser utilizadas onde desejar, "
+        "inclusive em pendrives."
+msgstr  ""
+
+msgid   "5 - Sempre que reiniciar o sistema sera necessario ativar novamente "
+        "a pasta criptografada para ter acesso a seus dados."
+msgstr  ""
+
+msgid   "6 - Quando a pasta estiver inativa nao adicione arquivos na mesma, "
+        "caso tenha feito, remova-os para que a pasta possa ser ativada "
+        "novamente."
+msgstr  ""
+
+msgid   "Nao foi possivel criar a pasta criptografada, tente utilizar outro "
+        "nome de pasta ou outra senha."
+msgstr  ""
+
+msgid   "O conteudo adicionado na pasta $p_dir sera criptografado e os "
+        "arquivos criptografados serao salvos em $dir_base$dir_nameenc"
+msgstr  ""
+
+msgid   "$dir_base$dir_nameenc ja existe, tente utilizar outro nome de pasta."
+msgstr  ""
+
+msgid   "A pasta $p_dir nao esta vazia.<br>Para criar uma pasta criptografada "
+        "e necessario que a mesma esteja vazia."
+msgstr  ""
+
+msgid   "O usuario $USER nao possui permissao para\n"
+        "criar pastas criptografadas.\n"
+        "\n"
+        "Permitir o usuario $USER utilizar pastas criptografadas?"
+msgstr  ""
+
+msgid   "A pasta $dir_name nao esta vazia.\n"
+        "Esvazie-a para que a mesma possa ser ativada e apresente os arquivos "
+        "criptografados."
+msgstr  ""
+
+msgid   "Bigencfs"
+msgstr  ""
+
+msgid   "Nao foi possivel ativar a pasta criptografada, provavelmente a senha "
+        "esta errada."
+msgstr  ""
+
+msgid   "Pasta criptografada $2 esta ativa.\n"
+        "Se necessario clique em recarregar no gerenciador de arquivos."
+msgstr  ""
+
+msgid   "Pasta criptografada nao encontrada, antes de ativar e necessario "
+        "cria-la."
+msgstr  ""
+
+msgid   "Essa pasta ja esta ativa."
+msgstr  ""
+
+msgid   "A pasta $dir_name nao esta vazia.\n"
+        "Para criar uma pasta criptografada e necessario que a mesma esteja "
+        "vazia."
+msgstr  ""
+
+msgid   "Essa pasta aparenta ja estar criptografada."
+msgstr  ""
+
+msgid   "Pasta criptografada $2 foi desativada."
+msgstr  ""
+
+msgid   "Essa pasta nao esta ativa."
+msgstr  ""
+
+msgid   "Essa pasta nao esta criptografada."
+msgstr  ""
+
+msgid   "Pastas criptografadas ativas:"
+msgstr  ""
+
+msgid   "A pasta $dir_name nao esta vazia.\n"
+        "Esvazie-a para que possa ser feito o backup dos arquivos "
+        "criptografados."
+msgstr  ""
+
+msgid   "Escolha onde salvar o backup."
+msgstr  ""
+
+msgid   "Backup salvo!"
+msgstr  ""
+
+msgid   "A pasta esta em uso, desative-a antes de efetuar o backup."
+msgstr  ""
+
+msgid   "Pasta criptografada nao encontrada."
+msgstr  ""
+
+msgid   "Cuidado ao restaurar um backup, ele pode sobrepor uma pasta atual."
+msgstr  ""
+
+msgid   "Deseja realmente restaurar a pasta $(tar ztf \"$2\" 2> /dev/null | "
+        "head -1 | sed 's|/$||g')?"
+msgstr  ""
+
+msgid   "Escolha onde restaurar o backup."
+msgstr  ""
+
+msgid   "Pasta restaurada."
+msgstr  ""

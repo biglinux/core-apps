@@ -1,0 +1,11 @@
+[Desktop Entry]
+X-KDE-Solid-Predicate=Camera.supportedDrivers == 'gphoto'
+Type=Service
+Actions=open;
+
+[Desktop Action open]
+Exec=gwenview_importer camera:/
+Icon=gwenview
+Name=Download Photos with Gwenview
+Name[pt_BR]=Baixar Fotos com Gwenview
+X-Ubuntu-Gettext-Domain=desktop_kdegraphics

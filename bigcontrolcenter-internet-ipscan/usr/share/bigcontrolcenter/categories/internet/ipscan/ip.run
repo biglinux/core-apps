@@ -1,0 +1,38 @@
+#!/bin/bash
+
+
+#Confere se um ip foi selecionado
+if [ "$p_ip" = "" ]; then
+
+    kdialog --msgbox $"Nenhum dispositivo foi selecionado." --title $"Atenção!"
+    exit
+fi
+
+
+#Confere se porta foi especificada manualmente
+if [ "$p_porta" = "0" ]; then
+    acessar_ip=$p_ip
+else
+    acessar_ip=$p_ip:$p_porta
+fi
+
+#Abre o serviço escolhido
+if [ "$p_menu" = "web" ]; then
+    xdg-open "http://$(echo "$acessar_ip")"
+fi
+
+if [ "$p_menu" = "samba" ]; then
+    xdg-open "smb://$acessar_ip"
+fi
+
+if [ "$p_menu" = "fish" ]; then
+    xdg-open "fish://$acessar_ip"
+fi
+
+if [ "$p_menu" = "ftp" ]; then
+    xdg-open "ftp://$acessar_ip"
+fi
+
+if [ "$p_menu" = "ssh" ]; then
+    xdg-open "ssh://$acessar_ip"
+fi

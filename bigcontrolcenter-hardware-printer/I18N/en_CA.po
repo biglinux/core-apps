@@ -1,0 +1,89 @@
+# Spanish translations for PACKAGE package.
+# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BigLinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2010-08-15 08:01+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-08-16 06:40+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Impressora"
+msgstr ""
+
+msgid "Adicionar, configurar, calibrar, niveis de tinta..."
+msgstr ""
+
+msgid "Aplicar"
+msgstr ""
+
+msgid "Sair"
+msgstr ""
+
+msgid ""
+"Configurador recomendado para a maioria dos casos.<br>Adicionar, remover, "
+"calibrar, nivel de tinta..."
+msgstr ""
+
+msgid "Configurador oficial do sistema de impressao CUPS"
+msgstr ""
+
+msgid "Configurador nao oficial para impressoras EPSON"
+msgstr ""
+
+msgid "Configurador oficial para impressoras HP"
+msgstr ""
+
+msgid ""
+"Para conferir os modelos de impressora suportados visite o site:<br>http://"
+"libinklevel.sourceforge.net/#supported<br><br>* Em muitos casos outro "
+"monitor de nivel de tinta pode ser acessado no Adicionar ou Configurar "
+"impressoras"
+msgstr ""
+
+msgid ""
+"Exibe um icone na barra de tarefas para verificar a fila de impressao sempre "
+"que existirem arquivos na fila"
+msgstr ""
+
+msgid "Configuracoes para impressoras."
+msgstr ""
+
+msgid "Adicionar ou configurar impressoras"
+msgstr ""
+
+msgid "Adicionar ou configurar impressoras (Avancado)"
+msgstr ""
+
+msgid "Configurador especial para impressoras Epson"
+msgstr ""
+
+msgid "Configurador especial para impressoras HP"
+msgstr ""
+
+msgid "Monitor de nivel de tinta"
+msgstr ""
+
+msgid "Fila de impressao"
+msgstr ""
+
+msgid ""
+"Para visualizar o nivel de tinta clique no icone do inkblot na area de "
+"notificacao."
+msgstr ""
+
+msgid ""
+"O monitor de fila de impressão deve aparecer\n"
+"automaticamente como um ícone na área de\n"
+"notificação ao utilizar a impressora?"
+msgstr ""

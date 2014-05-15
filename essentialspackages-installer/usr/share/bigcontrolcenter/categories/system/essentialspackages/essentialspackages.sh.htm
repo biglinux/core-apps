@@ -1,0 +1,103 @@
+#!/bin/bash
+
+# Autores:
+# Paulo Giovanni Pereira
+# License: GPLv2 or later
+#
+# Sigam me os bons!
+#################################################
+
+#################
+# Adiciona arquivo que gera o tema básico
+#################
+. /usr/share/bigcontrolcenter/biglinux/theme-categories.sh.htm
+
+#################
+# Adiciona arquivo de tradução, caso necessário
+#################
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-themes-kaianasplash
+
+#################
+# Alguns nomes foram colocados como variaveis para facilitar a criação de novos painéis
+#################
+title=$"Instalador de Pacotes Essenciais do Kaiana"
+apply=$"Aplicar"
+close=$"Sair"
+mouseover_preview=$"Clique aqui para ver uma previsão desse tema."
+
+#################
+# Adiciona o título
+#################
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#################
+# Adiciona parte superior do painel
+#################
+open_header
+echo "$title" '</font><br>' $"Selecione o que deseja instalar."
+close_header
+
+
+
+
+#################
+# Até aqui foram adicionadas as configurações de nomes e endereços básicos,
+# onde todos os painéis seguem um mesmo padrão, a partir dessa linha inicia
+# realmente o script funcional.
+#################
+
+
+
+
+
+#################
+#
+#DICAS GERAIS PARA A CRIAÇÃO DA INTERFACE
+#
+#
+# 1 - O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#
+# 2 - O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#
+# 3 - Quando se utiliza aspas duplas o sistema executa algumas partes do código
+# antes de passar a resposta, entre essas execuções está a interpretação de variáveis,
+# ou seja as palavras iniciadas com o símbolo $
+#
+# 4 - Para incluir textos a serem exibidos ao usuário utilize aspas duplas com $ antes,
+# para que funcione o sistema de tradução, exemplo: $"texto"
+#
+# 5 - Em uma mesma linha o comando echo pode ser aberto e fechado diversas vezes de
+# acordo com a necessidade, aspas simples, duplas e duplas para tradução.
+#
+#################
+
+#################
+# Estabelece parte do design e uma frase na parte superior do painel
+#################
+echo '<center><table width=95%><tr><td>'
+
+
+#################
+# Inicia o formulário utilizando o método get, para ao clicar em aplicar as opções
+# aqui definidas sejam encaminhadas para o arquivo submit.sh.htm
+#################
+echo "<form action=submit.sh.htm method=get><p><br>"
+
+
+#################
+# Adiciona a linha que especifica se o kaiana splash será ativo no boot e define
+# se é para abrir marcado utilizando a variável gerada algumas linhas acima
+# a variável é: ativo_check
+#################
+echo "<img src="the_internet.png" height="32" width="32">"
+echo "<INPUT TYPE=checkbox ID=proprietario NAME=proprietario VALUE=yes><LABEL FOR=proprietario>"$"Instale Google Chrome, plugin do Flash, plugin do Google Talk e Skype."
+echo "<br>""(Estes aplicativos são proprietários e por isso não podem vir pré-instalados no Kaiana, mas é recomendável que você os instale caso necessite assistir vídeos na internet, falar com amigos e familiares usando VOIP ou navegar na internet utilizando o popular navegador da Google.)" "</LABEL><br><br>"
+echo "<img src="java.png" height="32" width="32">"
+echo "<INPUT TYPE=checkbox ID=proprietario NAME=proprietario VALUE=yes><LABEL FOR=proprietario>"$"Instale o Java da Oracle (tm)." "<br>""(Alguns sites, especialmente os de bancos utilizam o java em suas aplicações e para acesso do internet bank, porém nem todos funcionam corretamente com o Java aberto sendo necessário a instalação do aplicativo proprietário nesses casos. Se esse é seu caso basta marcar esse aplicativo para instalá-lo.)" "</LABEL>"
+
+
+#################
+# Adiciona o rodapé com as opções Aplicar e Sair
+#################
+echo "</div><div id=rodape><button type=submit value= $apply  >   <img src='/usr/share/bigcontrolcenter/default/images/ok.png' style='vertical-align:top'>  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src='/usr/share/bigcontrolcenter/default/images/cancel.png' style='vertical-align:top'>  $close     </button></div>"

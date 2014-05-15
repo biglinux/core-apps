@@ -1,0 +1,77 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-biguser
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+tip_restore="Usuario marcado para ser restaurado a cada login"
+title=$"Fixar configuracao do usuario"
+apply=$"Aplicar"
+close=$"Voltar"
+#title
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Salve a configuracao atual de um usuario para que ela seja sempre restaurada."
+close_header
+
+
+#O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#Quando se utiliza aspas duplas o sistema executa algumas partes do codigo antes de passar a resposta, entre essas execucoes inclui a interpretacao de variaveis
+#Para incluir textos a serem exibidos ao usuario utilize aspas duplas com $ antes, para que funcione o sistema de tradução, exemplo: $"texto"
+#No exemplo abaixo o memso comando echo foi aberto e fechado diversas vezes de acordo com a necessidade, aspas simples, duplas e duplas com traducao.
+
+echo '<center><table width=95%><tr><td>'
+echo $"Em locais publicos, por exemplo, em lan houses e escolas pode ser util desfazer as alteracoes e logs criados pelos usuarios, para isso basta configurar o desktop da forma desejada e utilizar esse aplicativo para gerar uma copia da configuracao atual que sera restaurada automaticamente a cada login:"
+echo "<p><b>" $"* Essa funcao funciona apenas para o KDesktop e o Ldesktop." "</b><br>"
+echo '<form action=submit-restore.sh.htm name="usuario" id="signupform" method="get">'
+echo '<p><center><table width=30%><tr>'
+coluna="0"
+for i in $(bigusersmanager --list-users | sed 's/^root$//g'| sort); do
+if [ "$coluna" = "2" ]; then
+echo '</tr><tr>'
+coluna="0"
+fi
+coluna=$[$coluna + 1]
+
+echo "<td>"
+
+
+if [ -d /usr/share/bigrestoreuser/$i ]
+then
+  echo $"<font color=#AE0002>"
+  echo "<input type=\"radio\" name=\"username\" id=\"$i\" value=\"$i\" $mouseover_open $tip_restore $mouseover_close><label for=$i $mouseover_open $tip_restore $mouseover_close>$i</label>" 
+else
+  echo "<input type=\"radio\" name=\"username\" id=\"$i\" value=\"$i\"><label for=$i>$i</label>" 
+fi
+
+done
+
+echo '</td></tr></table></center>'
+
+echo "</div><div id=\"rodape\"><button type=submit id=\"signupsubmit\" value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='bigusers.sh.htm'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

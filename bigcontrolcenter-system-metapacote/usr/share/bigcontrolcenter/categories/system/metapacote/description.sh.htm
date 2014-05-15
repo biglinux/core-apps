@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-metapacote
+
+name_application=$"Instalar programas essênciais"
+description_application=$"Alguns conjuntos de programas são essenciais a determinados usos, aqui separamos os principais para facilitar a configuração inicial do computador."
+exec_application="/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/system/metapacote/metapacote.sh.htm -i /usr/share/bigcontrolcenter/categories/system/metapacote/icon.png"
+icon_application="/usr/share/bigcontrolcenter/categories/system/metapacote/icon.png"

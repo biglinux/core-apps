@@ -1,0 +1,151 @@
+#!/bin/bash
+
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-others-bigconvert
+
+#Criar diretorio para configuracoes
+mkdir ~/.bigconvert 2> /dev/null
+#Remover video da lista
+sed -i "s|^$p_removelist$||g;/^$/d" ~/.bigconvert/videos
+
+if [ "$p_addvideo" = "yes" ]
+then
+kdialog --multiple --separate-output --getopenfilename ~ '*.3gp *.amv *.asx *.avi *.flv *.m2v *.mkv *.mp4 *.mpeg *.mpg *.ogg *.ogv *.vob *.wmv *.rm *.rmvb' >> ~/.bigconvert/videos
+sort ~/.bigconvert/videos | uniq > ~/.bigconvert/videos2
+mv ~/.bigconvert/videos2 ~/.bigconvert/videos
+fi
+
+if [ "$p_clearlist" = "yes" ]
+then
+rm -f ~/.bigconvert/videos
+fi
+
+if [ "$p_savein" = "yes" ]
+then
+kdialog --getexistingdirectory ~ > ~/.bigconvert/save2
+  if [ "$(cat ~/.bigconvert/save2)" != "" ]
+  then
+      if [ -w "$(cat ~/.bigconvert/save2)" ]
+      then
+          mv -f ~/.bigconvert/save2 ~/.bigconvert/save
+      else
+	  kdialog --msgbox $"Selecione outra pasta pois seu usuario nao possui permissao de escrita na selecionada." --title $"Big Converter Video" 
+      fi
+
+  fi
+fi
+
+if [ "$(cat ~/.bigconvert/save)" = "" ]
+then
+echo "$HOME" > ~/.bigconvert/save
+fi
+savein="$(cat ~/.bigconvert/save)"
+
+
+if [ "$p_nenhum" = "video" ]
+then
+kdialog --msgbox $"Nenhum video foi selecionado para conversao, adicione-o antes de prosseguir." $"Big Converter Video"
+fi
+
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+buttonaddvideo=$"Adicionar videos"
+buttonclearlist=$"Esvaziar lista"
+buttonsavein=$"Alterar destino"
+title=$"Big Converter Video"
+apply=$"Avancar"
+back=$"Voltar"
+close=$"Sair"
+tip_remove_list=$"Remover da lista"
+tip_play=$"Reproduzir"
+tip_info=$"Ver informacoes"
+tip_perfil=$"Ao clicar aqui o Big Converter Video sera configurado para gerar videos a serem reproduzidos nesse dispositivo."
+tip_destino=$"Onde serao salvos os videos ou audios convertidos"
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+echo '<link rel="stylesheet" href="demo/dialog.css" media="screen" />'
+
+#header
+open_header
+echo "$title" '</font><br>' $"Converta videos ou extraia audio."
+close_header
+
+#body
+
+
+#O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#Quando se utiliza aspas duplas o sistema executa algumas partes do codigo antes de passar a resposta, entre essas execucoes inclui a interpretacao de variaveis
+#Para incluir textos a serem exibidos ao usuario utilize aspas duplas com $ antes, para que funcione o sistema de tradução, exemplo: $"texto"
+#No exemplo abaixo o memso comando echo foi aberto e fechado diversas vezes de acordo com a necessidade, aspas simples, duplas e duplas com traducao.
+echo '<center><table width=98% valign=top><tr><td width=50%>'
+echo '<div id="demo"><div class="dialog">
+ <div class="content">
+  <div class="t"></div>
+  <center><p style="margin: 4px 4px 4px 0px;"><font size=+1>' $"Dicas" '</font></center><div id="lista" style="height: 310px; overflow:auto;">'
+
+
+echo $"<li>As opcoes MP4 Portatil e 3GP sao para uso em equipamentos portateis, principalmente celulares. MP4 possui melhor qualidade, enquanto o 3GP e suportado por uma variedade maior de aparelhos.
+<p><li>MP4 (264) possui possui otimizacoes nao suportadas pela opcao portatil, mas para assistir no computador e a melhor opcao.
+<p><li>XVID possui compactacao melhor que o DIVX e costuma funcionar bem em equipamentos que suportam DIVX, principalmente DVD Players.
+<p><li>As opcoes Audio MP3 e audio M4A extraem somente o audio do arquivo de video, util principalmente para ouvir em seu MP3 Player, sendo o MP3 compativel com mais aparelhos e o M4A com mais qualidade.
+<p><li>Para obter a melhor qualidade confira no manual do equipamento onde ira reproduzir o conteudo convertido qual a recomendacao do fabricante para formato e resolucao.
+<p><li>Lembre que conversoes sempre possuem perda de qualidade, portanto converter um video da baixa qualidade para um formato de melhor qualidade nao tera melhorias na imagem.
+<p><li>A resolucao otimizada para DVD mantem a resolucao original ate a largura de 720 pixels que e o limite dos DVD Players, caso a resolucao original seja maior, sera reduzida para 720 pixels."
+
+
+echo '
+</div>
+</div>
+ <div class="b"><div></div></div>
+</div>
+</div>
+</td><td width=50% valign=top>'
+
+
+echo '<div id="demo"><div class="dialog">
+ <div class="content">
+  <div class="t"></div>
+  <center><p style="margin: 4px 4px 4px 0px;"><font size=+1>' $"Configuracoes automaticas" '</font></center><div id="lista2" style="height: 310px; overflow:auto;">'
+
+echo '<li><a href="simples.sh.htm?format=3gp.sh.htm" '"$mouseover_open $tip_perfil $mouseover_close"'>' $"Celular simples, com suporte a 3GP." '</a><p>'
+echo '<li><a href="simples.sh.htm?format=mp4celularvbr.sh.htm" '"$mouseover_open $tip_perfil $mouseover_close"'>' $"Celular intermediario, com suporte a MP4." '</a><p>'
+echo '<li><a href="simples.sh.htm?format=mp4celularvbr.sh.htm&fps=0" '"$mouseover_open $tip_perfil $mouseover_close"'>' $"Celular moderno, com suporte a MP4." '</a><p>'
+echo '<li><a href="simples.sh.htm?format=xvid.sh.htm&resize=dvd" '"$mouseover_open $tip_perfil $mouseover_close"'>' $"DVD Player, com suporte a XVID." '</a><p>'
+echo '<li><a href="simples.sh.htm?format=divx.sh.htm&resize=dvd" '"$mouseover_open $tip_perfil $mouseover_close"'>' $"DVD Player, com suporte a DIVX." '</a><p>'
+echo '<li><a href="simples.sh.htm?format=m4a.sh.htm" '"$mouseover_open $tip_perfil $mouseover_close"'>' $"iPOD somente audio." '</a><p>'
+echo '<li><a href="simples.sh.htm?format=mp4celularvbr.sh.htm&resize=320x240&canaisaudio=2&fps=0" '"$mouseover_open $tip_perfil $mouseover_close"'>' $"iPOD video." '</a><p>'
+echo '<li><a href="simples.sh.htm?format=mp4celularvbr.sh.htm&resize=480x272&canaisaudio=2&fps=0" '"$mouseover_open $tip_perfil $mouseover_close"'>' $"PSP Sony." '</a><p>'
+echo '<li><a href="simples.sh.htm?format=mp4.sh.htm" '"$mouseover_open $tip_perfil $mouseover_close"'>' $"Playstation 3." '</a><p>'
+echo '<li><a href="simples.sh.htm?format=mp4.sh.htm" '"$mouseover_open $tip_perfil $mouseover_close"'>' $"XBOX 360." '</a><p>'
+
+
+
+echo '
+</div>
+</div>
+ <div class="b"><div></div></div>
+</div>
+</div>'
+
+
+echo "</div><div id=\"rodape\"><button value= $apply onClick= parent.location='/usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm'>   <img src=\"/usr/share/bigcontrolcenter/categories/others/bigconvert/back.png\" style=\"vertical-align:top\" />  $back   </button> </div>"

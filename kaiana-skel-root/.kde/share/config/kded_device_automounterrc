@@ -1,0 +1,17 @@
+[Devices][/org/freedesktop/UDisks2/block_devices/loop0]
+EverMounted=true
+Icon=drive-harddisk
+LastNameSeen=Dispositivo virtual
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sdb1]
+EverMounted=true
+Icon=drive-removable-media-usb
+LastNameSeen=KINGSTON
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sr0]
+EverMounted=true
+Icon=media-optical-data
+LastNameSeen=Kaiana
+LastSeenMounted=true

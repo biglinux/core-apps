@@ -1,0 +1,161 @@
+# Portuguese translations for PACKAGE package.
+# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BigLinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2010-09-14 07:02+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-15 04:57+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "BigConnect"
+msgstr "BigConnect"
+
+msgid "Aplicar"
+msgstr "Aplicar"
+
+msgid "Sair"
+msgstr "Sair"
+
+msgid "Gerenciador de conexao alternativo."
+msgstr "Gestor alternativo de ligações."
+
+msgid "Configuracao aplicada."
+msgstr "Configuração aplicada."
+
+msgid "Conectar a internet utilizando BigConnect"
+msgstr "Ligar à internet utilizando o BigConnect"
+
+msgid "Gerenciador de conexao alternativo.<br>Cabo, DHCP, Wireless e IP Fixo"
+msgstr "Gestor alternativo de ligações.<br>Cabo, DHCP, Wireless e IP Fixo"
+
+msgid "Conexao Wireless com senha WEP, WPA ou sem senha (Nao suporta 3G)."
+msgstr "Ligação sem fios com senha WEP, WPA ou sem senha (sem suporte a 3G)."
+
+msgid "Conexao DHCP ou IP fixo."
+msgstr "Ligação DHCP ou IP fixo."
+
+msgid ""
+"Esse e um configurador de conexao que utiliza apenas as ferramentas basicas "
+"do sistema e funciona para conexoes por cabo Ethernet e Wireless. "
+"<p><br>Veja em que situacoes e mais recomendado:"
+msgstr ""
+"Este é um configurador de ligações que apenas utiliza as ferramentas básicas "
+"do sistema e funciona para ligações por cabo Ethernet e para redes sem fio. "
+"<p><br>Veja em que situações deve ser utilizado:"
+
+msgid ""
+"- Computadores antigos, pois reduz o consumo de memoria e processamento.\n"
+"<br> - Locais onde os usuarios nao devem ter acesso para alterar as "
+"configuracoes da conexao.\n"
+"<br> - Computadores que serao utilizados sem modo grafico.\n"
+"<br> - Caso os outros configuradores falhem."
+msgstr ""
+"- Computadores antigos, pois reduz o consumo de memória e processamento.\n"
+"<br> - Locais onde os utilizadores não devem ter acesso para alterar as "
+"configurações da ligação.\n"
+"<br> - Computadores que serão utilizados em modo de texto.\n"
+"<br> - Na eventualidade da falha de outros configuradores."
+
+msgid "Escolha o tipo de conexao:"
+msgstr "Escolha o tipo de ligação:"
+
+msgid "Sem fio (Wireless)."
+msgstr "Sem fio (Wireless)."
+
+msgid "Cabo de rede Ethernet."
+msgstr "Cabo de rede Ethernet."
+
+msgid "Nome"
+msgstr "Nome"
+
+msgid "Qualidade do sinal"
+msgstr "Qualidade do sinal"
+
+msgid "Tipo de senha"
+msgstr "Tipo de senha"
+
+msgid ""
+"O BigConnect e utilizado por esse painel, mas nao esta ativo, devo ativa-lo "
+"agora?\n"
+"Atencao: Isso ira desativar o gerenciador em uso: Network Manager."
+msgstr ""
+"O BigConnect é utilizado por este painel, mas não esta activo. Activar "
+"agora?\n"
+"Atenção: Se activar o BigConect, irá desactivar o Network Manager."
+
+msgid ""
+"O BigConnect e utilizado por esse painel, mas nao esta ativo, devo ativa-lo "
+"agora?\n"
+"Atencao: Isso ira desativar o gerenciador em uso: Wicd."
+msgstr ""
+"O BigConnect é utilizado por este painel, mas não esta activo. Activar "
+"agora?\n"
+"Atenção: Se activar o BigConect, irá desactivar o Wicd."
+
+msgid ""
+"O BigConnect e utilizado por esse painel, mas nao esta ativo, devo ativa-lo "
+"agora?"
+msgstr ""
+"O BigConnect é utilizado por este painel, mas não esta activo. Activar agora?"
+
+msgid "Selecione a interface a ser utilizada para estabelecer conexao:"
+msgstr "Seleccione a interface na qual pretende estabelecer a ligação:"
+
+msgid "Interface:"
+msgstr "Interface:"
+
+msgid "Nome da rede:"
+msgstr "Nome da rede:"
+
+msgid " Clique aqui para procurar redes disponiveis."
+msgstr " Clique aqui para procurar redes disponíveis."
+
+msgid "Tipo de senha:"
+msgstr "Tipo de senha:"
+
+msgid "Nenhuma"
+msgstr "Nenhuma"
+
+msgid "WPA"
+msgstr "WPA"
+
+msgid "WEP"
+msgstr "WEP"
+
+msgid "Digite a senha:"
+msgstr "Indique a senha:"
+
+msgid "Obter IP:"
+msgstr "Obter IP:"
+
+msgid "DHCP"
+msgstr "DHCP"
+
+msgid "IP Fixo"
+msgstr "IP Fixo"
+
+msgid "IP:"
+msgstr "IP:"
+
+msgid "Mascara de rede:"
+msgstr "Máscara de rede:"
+
+msgid "Gateway:"
+msgstr "'Gateway':"
+
+msgid "DNS 1:"
+msgstr "DNS 1:"
+
+msgid "DNS 2:"
+msgstr "DNS 2:"

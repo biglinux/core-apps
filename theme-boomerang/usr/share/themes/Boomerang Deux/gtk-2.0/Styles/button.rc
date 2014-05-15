@@ -1,0 +1,304 @@
+style "button" 
+{
+	xthickness = 3
+	ythickness = 3
+
+	bg[NORMAL] = @button_bg_color
+	bg[PRELIGHT] = shade (1.04, @button_bg_color)
+	bg[ACTIVE] = shade (0.85, @button_bg_color)
+	bg[INSENSITIVE] = mix (0.25, @button_bg_color, "#e2e1e1")
+	fg[INSENSITIVE] = "#9c9c9c"
+	bg[SELECTED]    = shade (1.0, @selected_bg_color) 
+
+	engine "murrine" {
+		border_shades 			        = {1.3, 1.1}
+		contrast			            = 1.10
+		gradient_shades		            = {1.30,1.01,0.98,0.98}
+		lightborderstyle		        = 1
+		textstyle			            = 1
+        glazestyle		                = 0
+		roundness                       = 3
+	}
+}
+
+style "toolbar_button" 
+{
+	xthickness = 3
+	ythickness = 3
+
+	bg[NORMAL] = @bg_color
+	bg[PRELIGHT] = shade (1.04, @bg_color)
+	bg[ACTIVE] = shade (1.04, "#CCCCCC")
+	bg[INSENSITIVE] = mix (0.25, @bg_color, "#e2e1e1")
+	fg[INSENSITIVE] = "#9c9c9c"
+
+	engine "murrine" {
+		#contrast = 1.0
+		border_shades = {1.3, 1.1}
+		textstyle = 1
+		gradient_shades   = {1.10,1.10,1.10,1.10}
+		#glowstyle = 5
+		glow_shade = 1.1
+		#text_shade = 1.04
+		roundness = 2
+	}
+}
+
+style "togglebutton"				= "button"
+{
+	engine "pixmap"
+	{
+
+	}
+}
+
+style "radiocheck" {
+	
+	xthickness 				= 3
+	ythickness 				= 3
+	
+    fg[ACTIVE] = @fg_color
+
+	engine "pixmap" 
+	{
+		image 
+		{
+			function 		= FOCUS
+			recolorable 	= TRUE
+			file 			= "Check-Radio/highlight.png"
+			border 			= { 20, 0, 0, 2}
+			stretch 		= TRUE
+		}
+		# Unchecked
+		image 
+		{
+			function 		    = CHECK
+			recolorable 	    = TRUE
+			state 			    = NORMAL
+			shadow 			    = OUT
+			overlay_file 		= "Check-Radio/checkbox-unchecked.png"
+			overlay_stretch 	= FALSE
+		}
+		# Unchecked (Hover)
+		image 
+		{
+			function 		    = CHECK
+			recolorable 		= TRUE
+			state 			    = PRELIGHT
+			shadow 			    = OUT
+			overlay_file 		= "Check-Radio/checkbox-unchecked.png"
+			overlay_stretch 	= FALSE
+		}
+		# Unchecked
+		image 
+		{
+			function        	= CHECK
+			recolorable     	= TRUE
+			state 			    = ACTIVE
+			shadow          	= OUT
+			overlay_file   		= "Check-Radio/checkbox-unchecked.png"
+			overlay_stretch 	= FALSE
+		}
+		# Unchecked 
+		image 
+		{
+			function        	= CHECK
+			recolorable     	= TRUE
+			state 			    = INSENSITIVE
+			shadow          	= OUT
+			overlay_file    	= "Check-Radio/checkbox-unchecked-insensitive.png"
+			overlay_stretch 	= FALSE
+		}
+		# Checked
+		image 
+		{
+			function        	= CHECK
+			recolorable    		= TRUE
+			state 			    = NORMAL
+			shadow          	= IN
+			overlay_file    	= "Check-Radio/checkbox-checked.png"
+			overlay_stretch 	= FALSE
+		}
+		# Checked (Hover)
+		image 
+		{
+			function        	= CHECK
+			recolorable     	= TRUE
+			state 			    = PRELIGHT
+			shadow         		= IN
+			overlay_file    	= "Check-Radio/checkbox-checked.png"
+			overlay_stretch 	= FALSE
+		}
+		# Checked
+		image 
+		{
+			function        	= CHECK
+			recolorable     	= TRUE
+			state 			    = ACTIVE
+			shadow          	= IN
+			overlay_file    	= "Check-Radio/checkbox-checked.png"
+			overlay_stretch 	= FALSE
+		}
+		image
+		{
+			function			= CHECK
+			recolorable			= TRUE
+			state				= SELECTED
+			shadow				= IN
+			overlay_file		= "Check-Radio/checkbox-checked.png"
+			overlay_stretch		= FALSE
+		}
+		# Unchecked
+		image 
+		{
+			function        	= CHECK
+			recolorable     	= TRUE
+			state			    = INSENSITIVE
+			shadow          	= IN
+			overlay_file    	= "Check-Radio/checkbox-checked-insensitive.png"
+			overlay_stretch 	= FALSE
+		}
+		#Use this image to draw the highlight when a line with a check box
+		#is moused over.
+		image 
+		{
+			function        	= FLAT_BOX
+			recolorable     	= TRUE
+			stretch			    = TRUE
+			file           		= "Check-Radio/highlight.png"
+			border			    = { 2, 2, 2, 2 }
+		}
+		# Not selected
+		image 
+		{
+			function        	= OPTION
+			recolorable     	= TRUE
+			state			    = NORMAL
+			shadow          	= OUT
+			overlay_file    	= "Check-Radio/radio-unselected.svg"
+			overlay_stretch 	= FALSE
+		}
+		# Not selected (Hover)
+		image 
+		{
+			function        	= OPTION
+			recolorable     	= TRUE
+			state 			    = PRELIGHT
+			shadow         		= OUT
+			overlay_file    	= "Check-Radio/radio-unselected.svg"
+			overlay_stretch 	= FALSE
+		}
+		# Unselected
+		image 
+		{
+			function        	= OPTION
+			recolorable    		= TRUE
+			state 			    = ACTIVE
+			shadow          	= OUT
+			overlay_file    	= "Check-Radio/radio-unselected.svg"
+			overlay_stretch 	= FALSE
+		}
+		# Unselected Insensitive
+		image 
+		{
+			function        	= OPTION
+			recolorable     	= TRUE
+			state 			    = INSENSITIVE
+			shadow          	= OUT
+			overlay_file    	= "Check-Radio/radio-unselected-insensitive.svg"
+			overlay_stretch 	= FALSE
+		}
+		# Selected
+		image 
+		{
+			function        	= OPTION
+			recolorable     	= TRUE
+			state 			= NORMAL
+			shadow          	= IN
+			overlay_file    	= "Check-Radio/radio-selected.svg"
+			overlay_stretch 	= FALSE
+		}
+		# Selected (Hover)
+		image 
+		{
+			function        	= OPTION
+			recolorable     	= TRUE
+			state 			= PRELIGHT
+			shadow          	= IN
+			overlay_file    	= "Check-Radio/radio-selected.svg"
+			overlay_stretch 	= FALSE
+		}
+		# Selected
+		image 
+		{
+			function        	= OPTION
+			recolorable     	= TRUE
+			state 			= ACTIVE
+			shadow          	= IN
+			overlay_file    	= "Check-Radio/radio-selected.svg"
+			overlay_stretch 	= FALSE
+		}
+		# Selected Insensitive
+		image 
+		{
+			function        	= OPTION
+			recolorable     	= TRUE
+			state 			= INSENSITIVE
+			shadow          	= IN
+			overlay_file    	= "Check-Radio/radio-selected-insensitive.svg"
+			overlay_stretch 	= FALSE
+		}
+		#Use this image to draw the highlight when a line with a radiobutton
+		#is moused over.
+		image 
+		{
+			function        	= FLAT_BOX
+			recolorable     	= TRUE
+			stretch			    = TRUE
+			file            	= "Check-Radio/highlight.png"
+			border          	= { 2, 2, 2, 2 }
+		}
+		image
+		{
+			function		= BOX
+			state			= NORMAL
+			file			= "Button/button-normal.png"
+			border			= { 3, 3, 3, 3}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= BOX
+			state			= PRELIGHT
+			shadow			= OUT
+			file			= "Button/button-prelight.png"
+			border			= { 3, 3, 3, 3}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= BOX
+			state			= ACTIVE
+			file			= "Button/button-pressed.png"
+			border			= { 6, 4, 6, 4}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= BOX
+			state			= PRELIGHT
+			shadow			= IN
+			file			= "Button/button-pressed-prelight.png"
+			border			= { 6, 4, 6, 4}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= BOX
+			state			= INSENSITIVE
+			file			= "Button/button-insensitive.png"
+			border			= { 5, 3, 5, 3}
+			stretch			= TRUE
+		}
+	}
+}

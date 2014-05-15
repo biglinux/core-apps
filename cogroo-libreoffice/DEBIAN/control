@@ -1,0 +1,11 @@
+Package: cogroo-libreoffice
+Version: 4.0.0-0kaiana1
+Architecture: all
+Maintainer: Paulo Giovanni Pereira <paulusiohannes@gmail.com>
+Installed-Size: 1400
+Depends: libreoffice-java-common, default-jre
+Section: admin
+Priority: optional
+Description: Instala o corretor ortográfico cogroo e suas dependências para o libreoffice .
+
+

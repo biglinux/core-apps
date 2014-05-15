@@ -1,0 +1,10 @@
+Package: preload-tweak
+Version: 1.0.0-0kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Depends: preload
+Priority: optional
+Description: tweak preload configuration
+

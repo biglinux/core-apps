@@ -1,0 +1,22 @@
+[Desktop Entry]
+Encoding=UTF-8
+ServiceTypes=KonqPopupMenu/Plugin,image/*
+TryExec=converseen
+Type=Service
+Actions=converseenImport;
+X-KDE-Priority=TopLevel
+TryExec=convert
+
+[Desktop Action converseenImport]
+Name=Import
+Name[pt]=Converter ou redimensionar essa imagem.
+Name[pt_BR]=Converter ou redimensionar essa imagem.
+Name[en]=Convert or resize the image.
+Name[es]=Convertir o cambiar el tamaño de la imagen.
+Icon=converseen
+Exec=find %U>$HOME/.converseen_list.txt && converseen --list $HOME/.converseen_list.txt
+X-KDE-Priority=TopLevel
+
+
+
+

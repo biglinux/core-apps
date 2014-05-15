@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-region
+
+name_application=$"Regional e idioma"
+description_application=$"Configuracao de idioma, teclado..."
+exec_application="/usr/share/bigbashview/run.run?kcmshell4 language"
+icon_application="/usr/share/bigcontrolcenter/categories/system/region/icon.png"

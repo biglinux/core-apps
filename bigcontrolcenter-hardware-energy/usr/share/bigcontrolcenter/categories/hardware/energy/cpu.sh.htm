@@ -1,0 +1,233 @@
+#!/bin/bash
+
+#DNS panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-internet-dns
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Gerenciador de energia"
+apply=$"Aplicar"
+close=$"Sair"
+tip_ondemand=$"Recomendado para quando o computador estiver ligado na tomada, gerencia automaticamente a velocidade do processador priorizando o desempenho."
+tip_conservative=$"Recomendado para utilizar o computador na bateria, gerencia automaticamente a velocidade do processador priorizando a economia de energia."
+tip_performance=$"Utiliza sempre a velocidade máxima do processador, porém aumenta consideravelmente o consumo de energia."
+tip_powersave=$"Utiliza sempre a velocidade mínima do processador, maior economia de energia."
+tip_usb0=$"Mantem as portas USB sempre ativas."
+tip_usb1=$"*Opção recomendada.<br>Ativa as portas USB sempre que um dispositivo estiver inserido."
+tip_usb2=$"Desativa portas USB com dispositivos ociosos, maior economia de energia, mas causa conflitos principalmente com mouses USB."
+tip_som0=$"Não economizar energia da placa de som."
+tip_som1=$"Economizar energia da placa de som, mas não desativa-la."
+tip_som2=$"*Opção recomendada.<br>Maior economia de energia, desativa a placa de som quando não estiver em uso, porém pode causar alguns ruídos e interferências quando estiver desativada."
+tip_ethernet0=$"Nunca desativar a porta de rede (ethernet)."
+tip_ethernet1=$"Desativar a porta de rede sempre que o notebook for desligado da tomada, ou seja quando estiver utilizando apenas a bateria.<br><br>Uma boa opção para aumentar em alguns minutos a duração da carga da bateria."
+tip_ethernet2=$"Desativar sempre a porta de rede."
+tip_hd0=$"Essa opção desativa o HD quando o notebook está em uso somente pela bateria, ajuda a economizar bateria, porém apresenta um pouco de lentidão quando é necessário ativar novamente o HD.<br><br>Uma boa opção é desativar o HD com o tempo em 60 segundos."
+tip_hd_time=$"Valor recomendado: 60<br><br>O valor é determinado em segundos."
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Definições de economia de energia."
+close_header
+
+
+if [ "$(grep ondemand /etc/bigpower_governor)" != "" ]
+then
+  ondemand_check="checked"
+fi
+
+if [ "$(grep conservative /etc/bigpower_governor)" != "" ]
+then
+  conservative_check="checked"
+fi
+
+if [ "$(grep powersave /etc/bigpower_governor)" != "" ]
+then
+  powersave_check="checked"
+fi
+
+if [ "$(grep performance /etc/bigpower_governor)" != "" ]
+then
+  performance_check="checked"
+fi
+
+
+
+if [ "$(grep ondemand /etc/bigpower_governor_battery)" != "" ]
+then
+  ondemand_check_battery="checked"
+fi
+
+if [ "$(grep conservative /etc/bigpower_governor_battery)" != "" ]
+then
+  conservative_check_battery="checked"
+fi
+
+if [ "$(grep powersave /etc/bigpower_governor_battery)" != "" ]
+then
+  powersave_check_battery="checked"
+fi
+
+if [ "$(grep performance /etc/bigpower_governor_battery)" != "" ]
+then
+  performance_check_battery="checked"
+fi
+
+
+
+if [ "$(cat /etc/bigpower_usb)" = "" ]
+then
+  usb0_check="checked"
+fi
+
+if [ "$(grep 1 /etc/bigpower_usb)" != "" ]
+then
+  usb1_check="checked"
+fi
+
+if [ "$(grep 2 /etc/bigpower_usb)" != "" ]
+then
+  usb2_check="checked"
+fi
+
+if [ "$(cat /etc/bigpower_ethernet)" = "" ]
+then
+  ethernet0_check="checked"
+fi
+
+if [ "$(grep 1 /etc/bigpower_ethernet)" != "" ]
+then
+  ethernet1_check="checked"
+fi
+
+if [ "$(grep 2 /etc/bigpower_ethernet)" != "" ]
+then
+  ethernet2_check="checked"
+fi
+
+if [ "$(cat /etc/bigpower_som)" = "" ]
+then
+  som0_check="checked"
+fi
+
+if [ "$(grep 1 /etc/bigpower_som)" != "" ]
+then
+  som1_check="checked"
+fi
+
+if [ "$(grep 2 /etc/bigpower_som)" != "" ]
+then
+  som2_check="checked"
+fi
+
+if [ "$(grep 1 /etc/bigpower_hd)" != "" ]
+then
+  hd_check="checked"
+fi
+
+
+#O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#Quando se utiliza aspas duplas o sistema executa algumas partes do codigo antes de passar a resposta, entre essas execucoes inclui a interpretacao de variaveis
+#Para incluir textos a serem exibidos ao usuario utilize aspas duplas com $ antes, para que funcione o sistema de tradução, exemplo: $"texto"
+#No exemplo abaixo o memso comando echo foi aberto e fechado diversas vezes de acordo com a necessidade, aspas simples, duplas e duplas com traducao.
+echo '<center><table width=95%><tr><td>'
+
+echo $"Passe o mouse sobre as alternativas abaixo e descubra as vantagens de cada uma, lembre que as opções para som e usb são válidas apenas quando o computador estiver funcionando pela bateria:"
+
+echo "<form action=submit.sh.htm method=get><p>"
+
+#Processador
+echo "<table width=100% align=center style=\"border-width: 1px; border-style: solid; border-color: #9F9F9F; \"><tr><td><b>" $"Gerenciamento do processador:" "</b>
+<table width=100% align=center><tr><td>
+<table align=center style=\"border-width: 1px; border-style: dotted; border-color: #9F9F9F; \"><tr><td><u>" $"Apenas na bateria" "</u><p>
+<input type=radio name=bateria id=1 value=ondemand $mouseover_open $tip_ondemand $mouseover_close $ondemand_check_battery><label for=1 $mouseover_open $tip_ondemand $mouseover_close>" $"Ondemand""</label>
+<br>
+<input type=radio name=bateria id=2 value=conservative $mouseover_open $tip_conservative $mouseover_close $conservative_check_battery><label for=2 $mouseover_open $tip_conservative $mouseover_close>" $"Conservative""</label>
+<br>
+<input type=radio name=bateria id=3 value=performance $mouseover_open $tip_performance $mouseover_close $performance_check_battery><label for=3 $mouseover_open $tip_performance $mouseover_close>" $"Performance""</label>
+<br>
+<input type=radio name=bateria id=4 value=powersave $mouseover_open $tip_powersave $mouseover_close $powersave_check_battery><label for=4 $mouseover_open $tip_powersave $mouseover_close>" $"Powersave""</label>
+
+</table>
+</td><td>
+<table align=center style=\"border-width: 1px; border-style: dotted; border-color: #9F9F9F; \"><tr><td><u>" $"Ligado na tomada" "</u><p>
+
+<input type=radio name=tomada id=5 value=ondemand $mouseover_open $tip_ondemand $mouseover_close $ondemand_check><label for=5 $mouseover_open $tip_ondemand $mouseover_close>" $"Ondemand""</label>
+<br>
+<input type=radio name=tomada id=6 value=conservative $mouseover_open $tip_conservative $mouseover_close $conservative_check><label for=6 $mouseover_open $tip_conservative $mouseover_close>" $"Conservative""</label>
+<br>
+<input type=radio name=tomada id=7 value=performance $mouseover_open $tip_performance $mouseover_close $performance_check><label for=7 $mouseover_open $tip_performance $mouseover_close>" $"Performance""</label>
+<br>
+<input type=radio name=tomada id=8 value=powersave $mouseover_open $tip_powersave $mouseover_close $powersave_check><label for=8 $mouseover_open $tip_powersave $mouseover_close>" $"Powersave""</label>
+</table>
+</td></tr></table>
+</td></tr></table>"
+
+
+#USB
+echo "<table width=100% align=center style=\"border-width: 1px; border-style: solid; border-color: #9F9F9F; \"><tr><td><b>" $"Modo de economia das portas USB:" "</b>
+<table width=100% align=center><tr><td align=center>
+<input type=radio name=usb id=0usb value=0 $mouseover_open $tip_usb0 $mouseover_close $usb0_check><label for=0usb $mouseover_open $tip_usb0 $mouseover_close>" $"Desativada""</label>
+</td><td>
+<input type=radio name=usb id=1usb value=1 $mouseover_open $tip_usb1 $mouseover_close $usb1_check><label for=1usb $mouseover_open $tip_usb1 $mouseover_close>" $"Média""</label>
+</td><td>
+<input type=radio name=usb id=2usb value=2 $mouseover_open $tip_usb2 $mouseover_close $usb2_check><label for=2usb $mouseover_open $tip_usb2 $mouseover_close>" $"Alta""</label>
+</table>
+</td></tr></table>"
+
+#SOM
+echo "<table width=100% align=center style=\"border-width: 1px; border-style: solid; border-color: #9F9F9F; \"><tr><td><b>" $"Modo de economia da placa de som:" "</b>
+<table width=100% align=center><tr><td align=center>
+<input type=radio name=som id=0som value=0 $mouseover_open $tip_som0 $mouseover_close $som0_check><label for=0som $mouseover_open $tip_som0 $mouseover_close>" $"Desativada""</label>
+</td><td>
+<input type=radio name=som id=1som value=1 $mouseover_open $tip_som1 $mouseover_close $som1_check><label for=1som $mouseover_open $tip_som1 $mouseover_close>" $"Média""</label>
+</td><td>
+<input type=radio name=som id=2som value=2 $mouseover_open $tip_som2 $mouseover_close $som2_check><label for=2som $mouseover_open $tip_som2 $mouseover_close>" $"Alta""</label>
+</table>
+</td></tr></table>"
+
+#REDE ETHERNET
+echo "<table width=100% align=center style=\"border-width: 1px; border-style: solid; border-color: #9F9F9F; \"><tr><td><b>" $"Modo de economia das portas Ethernet (Placa de rede):" "</b>
+<table width=100% align=center><tr><td align=center>
+<input type=radio name=ethernet id=0ethernet value=0 $mouseover_open $tip_ethernet0 $mouseover_close $ethernet0_check><label for=0ethernet $mouseover_open $tip_ethernet0 $mouseover_close>" $"Desativada""</label>
+</td><td>
+<input type=radio name=ethernet id=1ethernet value=1 $mouseover_open $tip_ethernet1 $mouseover_close $ethernet1_check><label for=1ethernet $mouseover_open $tip_ethernet1 $mouseover_close>" $"Média""</label>
+</td><td>
+<input type=radio name=ethernet id=2ethernet value=2 $mouseover_open $tip_ethernet2 $mouseover_close $ethernet2_check><label for=2ethernet $mouseover_open $tip_ethernet2 $mouseover_close>" $"Alta""</label>
+</table>
+</td></tr></table>"
+
+#HD
+echo "<table width=100% align=center style=\"border-width: 1px; border-style: solid; border-color: #9F9F9F; \"><tr><td><b>" $"Desativar o HD após alguns segundos ocioso:" "</b>
+<table width=100% align=center><tr><td style='text-align:center;vertical-align:bottom;'>
+<input type=checkbox name=hd id=0hd value=1 $mouseover_open $tip_hd0 $mouseover_close $hd_check><label for=0hd $mouseover_open $tip_hd0 $mouseover_close>" $"Desativar o HD quando ocioso.""</label>
+</td><td style='text-align:center;vertical-align:bottom;'><label for=hd_time $mouseover_open $tip_hd_time $mouseover_close>" $"Segundos para desativar:" "</label><input $mouseover_open $tip_hd_time $mouseover_close value=\"$(cat /etc/bigpower_hd_time)\"type=text size=4 name=hd_time>
+</table>
+</td></tr></table>
+</td></tr></table>"
+
+
+
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

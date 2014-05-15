@@ -1,0 +1,66 @@
+#!/bin/bash
+
+#Manage Chroot
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+#Check permission
+if test $(id -u) != 0
+then                 
+    echo "Need root permission"
+    exit 0                     
+fi      
+
+
+case "$1" in
+
+    --mount)
+	    chroot $2 mount -t proc /proc proc
+	    chroot $2 mount -t sysfs sys /sys
+	    chroot $2 mount -t devpts /dev/pts /dev/pts
+    ;;
+
+    --umount)
+	    chroot $2 umount -l /dev/pts
+	    chroot $2 umount -l /sys
+	    chroot $2 umount -l /proc
+	    rm -f $2/usr/bin/bigchrootxephyr
+	    rm -f $2/usr/bin/bigchrootxephyr2
+    ;;
+
+    --xephyr)
+
+	    echo "#!/bin/bash
+
+$4" > $2/usr/bin/bigchrootxephyr2
+
+	    echo "#!/bin/bash
+
+export DISPLAY=:4
+su $3 /usr/bin/bigchrootxephyr2" > $2/usr/bin/bigchrootxephyr
+	    chmod +x $2/usr/bin/bigchrootxephyr
+	    chmod +x $2/usr/bin/bigchrootxephyr2
+	    Xephyr -ac :4 &
+	    sleep 5
+            chroot $2 bigchrootxephyr
+	    rm -f $2/usr/bin/bigchrootxephyr
+	    rm -f $2/usr/bin/bigchrootxephyr2
+    ;;
+
+
+    *)
+	    echo "Manage chroot
+
+--mount		Mount core				example: --mount /media/hdxy
+--umount	Umount core				example: --umount /media/hdxy
+--xephyr	Open chrooted with xephyr 		example: --xephyr /media/hdxy user \"kwin & synaptic\"
+"
+    ;;
+
+esac
+

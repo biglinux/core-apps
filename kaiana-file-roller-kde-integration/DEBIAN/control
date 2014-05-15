@@ -1,0 +1,8 @@
+Package: kaiana-file-roller-kde-integration
+Version: 0.0.2-1kaiana1
+Architecture: all
+Maintainer: Rafael Neri <rafepel@gmail.com>
+Priority: optional
+Depends: file-roller, p7zip-full, p7zip-rar, zip, unzip, rar, unrar, tar, gzip, xz-utils, bzip2
+Description: Archive Manager.
+ File Roller Archive Manager To Compress and Decompress Files.

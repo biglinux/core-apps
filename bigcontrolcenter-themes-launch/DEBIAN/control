@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-themes-launch
+Version: 1.0.1-1kaiana4
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: kdebase-workspace-bin | kde-workspace-bin, bigcontrolcenter
+Section: admin
+Priority: optional
+Description: Configure kdelaunch
+

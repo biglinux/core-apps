@@ -1,0 +1,9 @@
+Package: transparent-hugepage-debug-disable
+Version: 1.0.0-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 100
+Section: admin
+Priority: optional
+Description: Disable hugepage debug
+

@@ -1,0 +1,4 @@
+cd "$HOME/Desktop"
+lxshortcut -o "$$"
+chmod +x "$$"
+mv "$$" "$(grep ^Name=  "$$" | sed 's|^Name=||g').desktop"

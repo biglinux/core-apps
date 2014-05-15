@@ -1,0 +1,26 @@
+<!doctype html>
+    <head>        
+        <title>Centro de Controle Kaiana</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/bootstrap.min.css') }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}"/>
+    </head>
+    <body>    
+        <section id="page">
+            <header class="page-header">
+                <h1>Centro de Controle Kaiana</h1>
+            </header>
+            <section id="main">
+                {% block body %}{% endblock %}
+            </section>
+        </section>
+        
+        <!-- scripts -->
+        <script type="text/javascript" src="{{ url_for('static', filename='scripts/jquery-2.1.0.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='scripts/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+    </body>
+</html>

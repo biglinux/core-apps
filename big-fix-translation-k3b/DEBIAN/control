@@ -1,0 +1,9 @@
+Package: big-fix-translation-k3b
+Version: 1.0.0-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Replaces: k3b-data
+Depends: k3b-data
+Section: x11
+Priority: optional
+Description: For best translation

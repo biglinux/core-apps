@@ -1,0 +1,54 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-internet-bigconnect
+
+echo '
+<script language="JavaScript">
+window.resizeTo(500,300);
+function NoResize(){
+  window.resizeTo(500,300);
+}
+</script>
+'
+
+title=$"BigConnect"
+apply=$"Aplicar"
+close=$"Sair"
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Gerenciador de conexao alternativo."
+close_header
+
+#body
+echo '<center><table width=95%><tr><td>'
+echo '<table width=100% align=center><tr><td width=43%><u>' $"Nome" '</u></td><td width=29%><u>' $"Qualidade do sinal" '</u></td><td width=29%><u>' $"Tipo de senha" '</u></td></tr>'
+
+ifconfig $p_interface up
+OIFS=$IFS
+IFS=$'\n'
+  for i in $(bigconnect --scan-wireless $p_interface)
+  do
+      echo "<tr><td>$(echo "$i" | sed "s|name:||g;s|   quality:|</td><td>|g;s|     password:|</td><td>|g")</td></tr>"
+  done
+IFS=$OIFS
+
+echo "</table>"
+echo "</div><div id=\"rodape\"><button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

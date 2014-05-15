@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-internet-bigconnect
+Version: 1.0.0-1kaiana7
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: bigconnect, bigcontrolcenter
+Section: admin
+Priority: optional
+Description: Configure connection ethernet or wireless
+

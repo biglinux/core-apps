@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#Esse script desativa a placa de rede
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Gera pasta de trabalho
+mkdir -p /usr/share/powertop/
+
+#Salva o modulo utilizado pela placa de rede
+
+if [ "$(lspci -k | grep -A 2 Ethernet | grep "Kernel driver in use" | cut -d":" -f2)" != "" ]
+then
+    echo $(lspci -k | grep -A 2 Ethernet | grep "Kernel driver in use" | cut -d":" -f2) > /usr/share/powertop/ethernet_module
+fi
+#Desativa o modulo utilizado pela placa de rede
+rmmod $(cat /usr/share/powertop/ethernet_module)
+

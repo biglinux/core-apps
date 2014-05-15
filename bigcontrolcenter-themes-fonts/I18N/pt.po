@@ -1,0 +1,175 @@
+# Portuguese translations for PACKAGE package.
+# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BigLinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2010-10-09 14:15+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-10-10 04:55+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#, fuzzy
+msgid "Configurar ou instalar fontes"
+msgstr "Configurar tipos de letra"
+
+#, fuzzy
+msgid "Escolha as fontes a serem utilizadas, nitidez e instale novas fontes"
+msgstr "Escolha os tipos de letra utilizados no sistema (Sans, Mono, Serif...)"
+
+msgid "Aplicar"
+msgstr ""
+
+msgid "Sair"
+msgstr ""
+
+msgid "Voltar para tela de configuracao"
+msgstr ""
+
+msgid "Selecione a configuracao de fonte preferida."
+msgstr ""
+
+msgid "Configuracao aplicada."
+msgstr ""
+
+msgid "Nitidez muito alta, melhor compatibilidade com sites e contraste alto."
+msgstr ""
+
+msgid "Nitidez muito alta e a melhor compatibilidade com sites."
+msgstr ""
+
+msgid ""
+"Nitidez alta e espacamento de fontes melhorado.<p>Proporciona melhor "
+"espacamento entre as letras e torna a leitura agradavel, porem pode "
+"desorganizar o design de alguns sites."
+msgstr ""
+
+msgid "Nitidez reduzida e boa compatibilidade com sites."
+msgstr ""
+
+msgid "Nitidez baixa e boa compatibilidade com sites."
+msgstr ""
+
+msgid "Nitidez padrao do sistema de fontes, sem configuracoes personalizadas."
+msgstr ""
+
+msgid "Um bom equilibrio entre nitizes e suavidade."
+msgstr ""
+
+msgid ""
+"A fonte Liberation Sans e muito precida com a Arial e possui melhor "
+"compatibilidade com o navegador Chromium, caso utilize outro navegador deixe "
+"essa opcao desativada."
+msgstr ""
+
+msgid ""
+"A configuracao de fontes do sistema e responsavel por uma leitura agradavel, "
+"mas tambem para melhorar a compatibilidade com sites.<p>Apos aplicar, os "
+"programas que forem abertos utilizarao a nova configuracao de fontes."
+msgstr ""
+
+msgid "Muito Nitido"
+msgstr ""
+
+msgid "Nitido"
+msgstr ""
+
+msgid "Equilibrado"
+msgstr ""
+
+msgid "Suave"
+msgstr ""
+
+msgid "Muito Suave"
+msgstr ""
+
+msgid "Otimizado"
+msgstr ""
+
+msgid "Padrao"
+msgstr ""
+
+msgid "Substituir Arial por Liberation Sans."
+msgstr ""
+
+msgid ""
+"Defina as suas fontes preferidas para utilizar no sistema.<p>Essa operacao "
+"afeta apenas esse usuario."
+msgstr ""
+
+msgid "Uma forma simples de instalar e remover fontes."
+msgstr ""
+
+msgid ""
+"Defina a configuracao de nitidez mais agradavel.<p>* Essa operacao afeta "
+"apenas esse usuario."
+msgstr ""
+
+msgid ""
+"Instala para todos os usuarios do sistema fontes muito utilizadas:<br>* "
+"Webdings<br>* Andale Mono<br>* Verdana<br>* Arial<br>* Trebuchet<br>* Comic "
+"Sans MS<br>* Times New Roman<br>* Courier New<br>* Impact<br>* Georgia"
+msgstr ""
+
+msgid ""
+"Remove do sistema fontes muito utilizadas:<br>* Webdings<br>* Andale "
+"Mono<br>* Verdana<br>* Arial<br>* Trebuchet<br>* Comic Sans MS<br>* Times "
+"New Roman<br>* Courier New<br>* Impact<br>* Georgia"
+msgstr ""
+
+msgid ""
+"No navegador Firefox o espacamento entre linhas que utilizam fontes pequenas "
+"e muito grande e danifica a aparencia dos sites, ativar essa opcao "
+"geralmente soluciona esse problema."
+msgstr ""
+
+msgid "Essa configuração torna as fontes mais cheias e agradaveis."
+msgstr ""
+
+#, fuzzy
+msgid "Escolha as fontes a serem utilizadas, nitidez e instale novas fontes."
+msgstr "Escolha os tipos de letra utilizados no sistema (Sans, Mono, Serif...)"
+
+#, fuzzy
+msgid "Selecionar fontes utilizadas no sistema"
+msgstr "Escolha os tipos de letra utilizados no sistema (Sans, Mono, Serif...)"
+
+msgid "Instalar ou remover fontes"
+msgstr ""
+
+#, fuzzy
+msgid "Configurar nitidez das fontes"
+msgstr "Configurar tipos de letra"
+
+msgid "Remover fontes MS"
+msgstr ""
+
+msgid "Instalar fontes MS"
+msgstr ""
+
+msgid "Desativar melhoria para o Firefox"
+msgstr ""
+
+msgid "Ativar melhoria para o Firefox"
+msgstr ""
+
+msgid "Desativar melhoria para o Chromium"
+msgstr ""
+
+msgid "Ativar melhoria para o  Chromium"
+msgstr ""
+
+msgid "Desativar melhoria para o Google Chrome"
+msgstr ""
+
+msgid "Ativar melhoria para o Google Chrome"
+msgstr ""

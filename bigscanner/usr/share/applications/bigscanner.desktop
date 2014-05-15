@@ -1,0 +1,9 @@
+[Desktop Entry]
+Exec=cd /usr/share/bigscanner/; bbv 'execute$/usr/share/bigscanner/scan.sh' -i /usr/share/bigscanner/icone.png
+Icon=scanner
+Categories=Graphics;Scanning;
+Name=BigScanner
+Comment=Interface de automação para digitalização
+Terminal=false
+Type=Application
+StartupNotify=true

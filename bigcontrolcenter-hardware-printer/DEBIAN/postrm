@@ -1,0 +1,29 @@
+#! /bin/sh
+
+set -e
+
+package_name=bigcontrolcenter-hardware-printer
+
+if [ -z "$package_name" ]; then
+    print >&2 "Internal Error. Please report a bug."
+    exit 1;
+fi
+
+case "$1" in
+  remove)
+    dpkg-divert --package $package_name --rename --remove /usr/share/autostart/printer-applet.desktop
+    dpkg-divert --package $package_name --rename --remove /usr/share/applications/hplip-kubuntu.desktop
+    dpkg-divert --package $package_name --rename --remove /usr/share/applications/inkblot.desktop
+    dpkg-divert --package $package_name --rename --remove /usr/share/applications/mtinkc.desktop
+    dpkg-divert --package $package_name --rename --remove /usr/share/applications/mtink.desktop
+    dpkg-divert --package $package_name --rename --remove /etc/xdg/autostart/print-applet.desktop
+    ;;
+  purge)
+    ;;
+  upgrade)
+    ;;
+  *) echo "$0: didn't understand being called with \`$1'" 1>&2
+     exit 0;;
+esac
+
+exit 0

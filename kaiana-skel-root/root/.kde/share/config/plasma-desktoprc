@@ -1,0 +1,44 @@
+[BackgroundConfigDialog]
+Height 768=706
+Width 1024=905
+
+[KFileDialog Settings]
+Height 768=450
+Recent Files[$e]=kaiana-kmenu.png,/usr/share/icons/kaiana/kaiana-kmenu.png
+Recent URLs[$e]=/usr/share/icons/kaiana/,/usr/share/icons/kaiana/
+Width 1024=720
+Width 1366=816
+
+[KPropertiesDialog]
+Height 768=396
+Width 1366=420
+
+[PlasmaViews][3]
+panelVisibility=0
+
+[PlasmaViews][3][Sizes]
+lastsize=1366
+
+[Updates]
+performed=/usr/share/kde4/apps/plasma-desktop/updates/02-add-print-manager.js,/usr/share/kde4/apps/plasma-desktop/updates/addShowActivitiesManagerPlasmoid.js,/usr/share/kde4/apps/plasma-desktop/updates/set-hidden-single-vd-pager.js,/usr/share/kde4/apps/plasma-desktop/updates/systray-to-notifications-widget.js
+
+[ViewIds]
+1=1
+20=2
+21=3
+8=2
+
+[setBrightness]
+__file=
+brightness=10
+
+[stopSuppressingScreenPowerManagement]
+__file=
+cookie=-1
+
+[stopSuppressingSleep]
+__file=
+cookie=-1
+
+[updateFreespace]
+__file=

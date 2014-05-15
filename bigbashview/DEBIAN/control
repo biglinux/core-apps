@@ -1,0 +1,11 @@
+Package: bigbashview
+Version: 2.2.2-1kaiana0
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: libqt4-webkit, python-qt4, python-webpy
+Recommends: python-chameleon
+Section: admin
+Priority: optional
+Description: Graphical interface for bash with webkit engine.
+

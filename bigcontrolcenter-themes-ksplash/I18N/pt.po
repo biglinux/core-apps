@@ -1,0 +1,74 @@
+# Portuguese translations for PACKAGE package.
+# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BigLinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2010-10-09 14:51+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-10-10 04:55+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Ksplash BigLinux"
+msgstr "Ksplash BigLinux"
+
+msgid "Sair"
+msgstr "Sair"
+
+msgid "Aplicar"
+msgstr "Aplicar"
+
+msgid ""
+"Altere a imagem de fundo que aparece na ultima etapa de carregamento do "
+"sistema, logo apos o login."
+msgstr ""
+"Altere a imagem de fundo que aparece na última etapa de carregamento do "
+"sistema, logo após o login."
+
+msgid "Selecione a imagem"
+msgstr "Seleccione a imagem"
+
+msgid "Alteracao aplicada."
+msgstr "Alteração aplicada."
+
+msgid "Tela de abertura do KDE (Ksplash)"
+msgstr ""
+
+msgid "Escolha o seu tema preferido para o Ksplash"
+msgstr ""
+
+msgid "Selecione seu tema favorito."
+msgstr ""
+
+msgid "Utilize sua imagem favorita como fundo para o tema BigLinux"
+msgstr ""
+
+msgid "Escolha o seu tema preferido para o Ksplash."
+msgstr ""
+
+msgid "Escolher tema do Ksplash"
+msgstr ""
+
+msgid "Alterar fundo de tela do tema BigLinux"
+msgstr ""
+
+msgid "Selecionar nova imagem"
+msgstr "Seleccionar nova imagem"
+
+msgid "Restaurar imagem padrao"
+msgstr "Restaurar imagem padrão"
+
+msgid "Altere a imagem de fundo que aparece apos o login."
+msgstr "Altere a imagem de fundo que aparece após o login."
+
+msgid "Imagem atual"
+msgstr "Imagem actual"

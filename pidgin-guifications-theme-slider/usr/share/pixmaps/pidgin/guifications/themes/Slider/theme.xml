@@ -1,0 +1,450 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<guifications>
+	<theme api='1'>
+		<info>
+			<name>Slider</name>
+			<version>1.0</version>
+			<summary>Gnome themed notifications</summary>
+			<description>Gnome 2 Slider theme</description>
+			<author>Donald Broatch &lt;donaldbroatch@googlemail.com&gt;</author>
+			<website>http://dontsurfinthenude.blogspot.com/</website>
+		</info>
+		<options>
+			<date_format>%x</date_format>
+			<time_format>%X</time_format>
+			<warning>N/A</warning>
+			<ellipsis>...</ellipsis>
+		</options>
+		<notification type='sign-on' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='buddy' size='big'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='%n' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='Entrou' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+		</notification>
+		<notification type='sign-off' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='buddy' size='big'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='%n' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='Saiu' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+		</notification>
+		<notification type='away' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='buddy' size='big'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='%n' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38'/>
+				<text format='Está ausente' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+		</notification>
+		<notification type='back' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='buddy' size='big'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='%n' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='Retornou' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+		</notification>
+		<notification type='idle' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='buddy' size='big'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='%n' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='Está inativo' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+		</notification>
+		<notification type='unidle' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='buddy' size='big'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='%n' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='Está ativo' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+		</notification>
+		<notification type='im-message' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='buddy' size='big'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='%n' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='Enviou uma mensagem' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+		</notification>
+		<notification type='chat-message' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='buddy' size='big'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='%n' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='Mensagem %c' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+		</notification>
+		<notification type='nick-highlight' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='buddy' size='big'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='%n' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-middle' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='Falou seu nome' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='58%'/>
+				<text format='in %c' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+		</notification>
+		<notification type='chat-join' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='buddy' size='big'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='%n' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='Entrou %c' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='276'/>
+			</item>
+		</notification>
+		<notification type='chat-part' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='buddy' size='big'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='%n' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='Saiu %c' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='276'/>
+			</item>
+		</notification>
+		<notification type='chat-invite' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='buddy' size='big'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='%n convidou' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='você para %X' font='Sans 10'  color='#ffffffffffff' clipping='ellipsis-end' width='276'/>
+			</item>
+		</notification>
+		<notification type='typing' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='buddy' size='big'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='%n' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='está escrevendo' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+		</notification>
+		<notification type='typing-stopped' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='buddy' size='big'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='%n' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='Parou de escrever' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+		</notification>
+		<notification type='warned' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='protocol' size='little'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='%W' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='Alertou você' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+		</notification>
+		<notification type='topic-changed' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='buddy' size='big'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='%n tópico alterado' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='de %C para' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='58%'/>
+				<text format='%r' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+		</notification>
+		<notification type='file-remote-cancel' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='buddy' size='big'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='%n cancelado' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='Transferência de arquivo' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20'/>
+				<v_offset value='58'/>
+				<text format='&quot;%X&quot;' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='276'/>
+			</item>
+		</notification>
+		<notification type='file-recv-complete' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='buddy' size='big'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='Você recebeu' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='&quot;%X&quot;' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-middle' width='276'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='de %n' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='276'/>
+			</item>
+		</notification>
+		<notification type='file-send-complete' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='east'/>
+				<h_offset value='-3%'/>
+				<v_offset value='0%'/>
+				<icon type='buddy' size='big'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='Transferência de' font='Sans Bold 10' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='&quot;%X&quot; completo.' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-middle' width='276'/>
+			</item>
+		</notification>
+		<notification type='new-email' use_gtk='1' background='background.png' width='410' height='92'>
+			<item type='icon'>
+				<position value='south-east'/>
+				<h_offset value='-2%'/>
+				<v_offset value='-5%'/>
+				<icon type='protocol' size='little'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='14%'/>
+				<text format='Novo e-mail' font='Sans 10 Bold' color='#ffffffffffff' clipping='ellipsis-end' width='0'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='38%'/>
+				<text format='Assunto: %X' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='290'/>
+			</item>
+			<item type='text'>
+				<position value='north-west'/>
+				<h_offset value='20%'/>
+				<v_offset value='58%'/>
+				<text format='De: %c' font='Sans 10' color='#ffffffffffff' clipping='ellipsis-end' width='276'/>
+			</item>
+		</notification>
+	</theme>
+</guifications>

@@ -1,0 +1,10 @@
+Package: disable-tty-autostart
+Version: 1.0.0-0kaiana0
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Depends: upstart
+Priority: optional
+Description: Desativa o inicio automatico dos tty 3, 4, 5, 6
+

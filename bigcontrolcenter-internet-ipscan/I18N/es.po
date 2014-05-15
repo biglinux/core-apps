@@ -1,0 +1,132 @@
+# Spanish translations for BigLinux package.
+# Copyright (C) 2013 THE BigLinux'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the BigLinux package.
+# Automatically generated, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BigLinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-29 18:34-0200\n"
+"PO-Revision-Date: 2013-11-29 18:34-0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Procurar dispositivos/portas na rede"
+msgstr ""
+
+msgid ""
+"Encontre dispositivos conectados na rede local, portas abertas ou ainda em "
+"IPs especificados manualmente."
+msgstr ""
+
+msgid "Nenhum dispositivo foi selecionado."
+msgstr ""
+
+msgid "Atenção!"
+msgstr ""
+
+msgid "Identificar IPs ativos na rede"
+msgstr ""
+
+msgid "Confira todos os dispositivos conectados na mesma rede."
+msgstr ""
+
+msgid "Selecione onde salvar o arquivo"
+msgstr ""
+
+msgid "Aguarde, procurando por dispositivos conectados na rede..."
+msgstr ""
+
+msgid "Serviço:"
+msgstr ""
+
+msgid "Web"
+msgstr ""
+
+msgid "Samba"
+msgstr ""
+
+msgid "Fish (sftp)"
+msgstr ""
+
+msgid "Ftp"
+msgstr ""
+
+msgid "Ssh"
+msgstr ""
+
+msgid "Porta:"
+msgstr ""
+
+msgid ""
+"Deixe o valor 0 (zero) para que seja utilizada a porta padrão do serviço, ou "
+"especifique a porta desejada."
+msgstr ""
+
+msgid "Dispositivos:"
+msgstr ""
+
+msgid "Arquivo gerado em: "
+msgstr ""
+
+msgid "Relatório de rede."
+msgstr ""
+
+msgid ""
+"Gerado pelo nmap através da interface gráfica do projeto União Livre, "
+"utilizando BigBashView."
+msgstr ""
+
+msgid "Voltar"
+msgstr ""
+
+msgid "Acessar serviço"
+msgstr ""
+
+msgid "Fechar"
+msgstr ""
+
+msgid "Procurar portas ativas entre as mil mais utilizadas."
+msgstr ""
+
+msgid "Procurar em todas as portas, processo demorado."
+msgstr ""
+
+msgid "Não procurar portas, apenas IPs, processo rápido."
+msgstr ""
+
+msgid "Definir manualmente os parametros do nmap."
+msgstr ""
+
+msgid "Parâmetros do nmap:"
+msgstr ""
+
+msgid "Insira os parâmetros aqui."
+msgstr ""
+
+msgid "Procurar todos os dispositivos conectados na rede local."
+msgstr ""
+
+msgid "Definir manualmente um ou mais IPs/domínios para serem verificados."
+msgstr ""
+
+msgid "Insira um IP por linha"
+msgstr ""
+
+msgid "Escreva aqui os IPs/domínios que deseja verificar."
+msgstr ""
+
+msgid "O resultado não será exibido na tela, mas salvo em um arquivo."
+msgstr ""
+
+msgid "Gerar relatório da rede em arquivo html."
+msgstr ""
+
+msgid "Avançar"
+msgstr ""

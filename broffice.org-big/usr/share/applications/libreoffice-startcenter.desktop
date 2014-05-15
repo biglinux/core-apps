@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Icon=libreoffice-startcenter
+Type=Application
+Categories=Office;
+Exec=libreoffice %U
+MimeType=application/vnd.openofficeorg.extension;
+Name=LibreOffice 
+Name[pt_BR]=BrOffice.org
+GenericName=Office 
+GenericName[en]=Office
+Comment=The office productivity suite compatible to the open and standardized ODF document format. Supported by The Document Foundation.
+Comment[en]=The office productivity suite compatible to the open and standardized ODF document format. Supported by The Document Foundation.

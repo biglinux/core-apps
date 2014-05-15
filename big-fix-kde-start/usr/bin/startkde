@@ -1,0 +1,33 @@
+#!/bin/sh
+
+export QT_NO_GLIB=1
+export KDE_IS_PRELINKED=1
+export KDE_MALLOC=1
+
+if [ -e "/usr/share/bigcontrolcenter/categories/themes/kaianasplash/xprofile" ]
+then
+
+    if ! [ -e "$HOME/.config/kaianasplash/selecionados" ]
+    then
+	mkdir -p "$HOME/.config/kaianasplash/"
+	echo 'kaiana_splash_blocktube
+kaiana_splash_boxfit
+kaiana_splash_carousel
+kaiana_splash_fadeplot
+kaiana_splash_flipscreen3d
+kaiana_splash_fluidballs
+kaiana_splash_flurry
+kaiana_splash_glmatrix
+kaiana_splash_glschool
+kaiana_splash_lockward
+kaiana_splash_munch
+kaiana_splash_noof
+kaiana_splash_piecewise' > "$HOME/.config/kaianasplash/selecionados"
+    fi
+
+    /usr/share/bigcontrolcenter/categories/themes/kaianasplash/xprofile &
+
+fi
+
+
+/usr/bin/startkde.distrib

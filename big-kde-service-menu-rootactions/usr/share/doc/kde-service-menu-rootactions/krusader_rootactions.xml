@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE KrusaderUserActions>
+<KrusaderUserActions>
+ 
+ <action name="rootactions_open_as_text" >
+  <title>Open as Text</title>
+  <tooltip>Open in a text editor as root</tooltip>
+  <icon>accessories-text-editor</icon>
+  <category>Root Actions</category>
+  <description>Edit a file as root in a text editor</description>
+  <command>rootactions-servicemenu.pl open_with defaultte %aList("Selected")%</command>
+  <defaultshortcut></defaultshortcut>
+ </action>
+ <action name="rootactions_open_with_custom" >
+  <title>Open with ...</title>
+  <tooltip>Open with a program of your choice as root</tooltip>
+  <icon>system-run</icon>
+  <category>Root Actions</category>
+  <description>Edit a file as root in a program if your choice</description>
+  <command>rootactions-servicemenu.pl custom_open_with %aList("Selected")%</command>
+  <defaultshortcut></defaultshortcut>
+ </action>
+ <action name="rootactions_open_in_filemanager" >
+  <title>Open in File Manager</title>
+  <tooltip>Open in a file manager as root</tooltip>
+  <icon>system-file-manager</icon>
+  <category>Root Actions</category>
+  <description>Open a directory as root in a file manager</description>
+  <command>rootactions-servicemenu.pl open_with defaultfm %aList("Selected")%</command>
+  <defaultshortcut></defaultshortcut>
+ </action>
+ <action name="rootactions_open_in_terminal" >
+  <title>Open Terminal Here</title>
+  <tooltip>Open in a terminal as root</tooltip>
+  <icon>utilities-terminal</icon>
+  <category>Root Actions</category>
+  <description>Open a root terminal in the directory</description>
+  <command>rootactions-servicemenu.pl root_konsole_here konsole %aList("Selected")%</command>
+  <defaultshortcut></defaultshortcut>
+ </action>
+ <action name="rootactions_copy" >
+  <title>Copy</title>
+  <tooltip>Copy target as root</tooltip>
+  <icon>edit-copy</icon>
+  <category>Root Actions</category>
+  <description>Copy target files/directories as root</description>
+  <command>rootactions-servicemenu.pl root_copy %aList("Selected")%</command>
+  <defaultshortcut></defaultshortcut>
+ </action>
+ <action name="rootactions_rename" >
+  <title>Move/Rename</title>
+  <tooltip>Move or rename target as root</tooltip>
+  <icon>edit-rename</icon>
+  <category>Root Actions</category>
+  <description>Move or rename target files/directories as root</description>
+  <command>rootactions-servicemenu.pl root_rename krename %aList("Selected")%</command>
+  <defaultshortcut></defaultshortcut>
+ </action>
+  <action name="rootactions_compress" >
+  <title>Compress</title>
+  <tooltip>Compress target as root</tooltip>
+  <icon>utilities-file-archiver</icon>
+  <category>Root Actions</category>
+  <description>Compress target files/directories as root</description>
+  <command>rootactions-servicemenu.pl root_compress %aList("Selected")%</command>
+  <defaultshortcut></defaultshortcut>
+ </action>
+ <action name="rootactions_delete" >
+  <title>Delete</title>
+  <tooltip>Delete target as root</tooltip>
+  <icon>edit-delete</icon>
+  <category>Root Actions</category>
+  <description>Delete target files/directories as root</description>
+  <command>rootactions-servicemenu.pl root_delete %aList("Selected")%</command>
+  <defaultshortcut></defaultshortcut>
+ </action>
+ <action name="rootactions_change_root" >
+  <title>Ownership to Root</title>
+  <tooltip>Change target ownership to root:root</tooltip>
+  <icon>preferences-desktop-user-password</icon>
+  <category>Root Actions</category>
+  <description>Change ownership of target files/directories to root:root</description>
+  <command>rootactions-servicemenu.pl root_ownership %aList("Selected")%</command>
+  <defaultshortcut></defaultshortcut>
+ </action>
+ <action name="rootactions_change_user" >
+  <title>Ownership to Active User</title>
+  <tooltip>Change target ownership to current user and primary group</tooltip>
+  <icon>preferences-desktop-user</icon>
+  <category>Root Actions</category>
+  <description>Change ownership of target files/directories to current user and primary group</description>
+  <command>rootactions-servicemenu.pl user_ownership %aList("Selected")%</command>
+  <defaultshortcut></defaultshortcut>
+ </action>
+ <action name="rootactions_change_custom" >
+  <title>Ownership to ...</title>
+  <tooltip>Change target ownership to user and group of your choice</tooltip>
+  <icon>user-properties</icon>
+  <category>Root Actions</category>
+  <description>Change ownership of target files/directories to user and group of your choice</description>
+  <command>rootactions-servicemenu.pl custom_ownership %aList("Selected")%</command>
+  <defaultshortcut></defaultshortcut>
+ </action>
+ <action name="rootactions_change_permissions" >
+  <title>Change permissions</title>
+  <tooltip>Change target permissions</tooltip>
+  <icon>folder-locked</icon>
+  <category>Root Actions</category>
+  <description>Change permissions of target files/directories</description>
+  <command>rootactions-servicemenu.pl root_permissions %aList("Selected")%</command>
+  <defaultshortcut></defaultshortcut>
+ </action>
+ 
+</KrusaderUserActions>

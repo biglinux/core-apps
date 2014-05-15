@@ -1,0 +1,105 @@
+#!/bin/bash
+
+#Manage users
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Check permission
+if test $(id -u) != 0
+then
+    echo "Need root permission"
+    exit 0
+fi
+
+
+case "$1" in
+
+    --add-user)
+	user=$2
+	pass=$3
+	grep "^$2" /etc/passwd >/dev/null
+	if [ $? -eq 0 ]; then
+		echo "$user exists!"
+		exit 1
+	else
+		pass=$(perl -e 'print crypt($ARGV[0], "password")' $pass)
+		useradd -s /bin/bash -m -p $pass $user
+		[ $? -eq 0 ] && echo "ok" || echo "fail"
+		adduser $user adm
+		adduser $user dialout
+		adduser $user cdrom
+		adduser $user www-data
+		adduser $user plugdev
+		adduser $user lpadmin
+		adduser $user sambashare
+	fi
+    ;;
+
+    --add-user-groups)
+	for i in $3
+	do
+	      addgroup $2 $i
+	done
+    ;;
+
+
+    --remove-user)
+	deluser --remove-home $2
+	rm -Rf /usr/share/bigrestoreuser/$2
+    ;;
+
+
+    --remove-user-groups)
+	for i in $3
+	do
+	      delgroup $2 $i
+	done
+    ;;
+
+    --list-users)
+	grep bin/bash /etc/passwd | cut -d":" -f1
+    ;;
+
+    --list-groups)
+	cut -d":" -f1 /etc/group
+    ;;
+
+    --list-groups-user)
+	groups $2
+    ;;
+
+    --add-groups)
+	for i in $2
+	do
+	      addgroup $2
+	done
+    ;;
+
+    --del-groups)
+	for i in $2
+	do
+	      delgroup $2
+	done
+    ;;
+
+    *)
+        echo "Manage Users
+
+--add-user                   --add-user user password
+--add-user-groups	     --add-user-groups user \"group1 group2 group3\"
+--remove-user		     --remove-user user
+--remove-user-groups	     --remove-user-groups user \"group1 group2 group3\"
+--list-users
+--list-groups
+--list-groups-user	     --list-groups-user user
+--add-groups		     --add-groups \"group1 group2 group3\"
+--del-groups		     --del-groups \"group1 group2 group3\"
+"
+
+    ;;
+
+esac

@@ -1,0 +1,9 @@
+Package: big-fix-translation-ark
+Version: 1.0.0-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Replaces: ark
+Depends: ark
+Section: x11
+Priority: optional
+Description: For best translation

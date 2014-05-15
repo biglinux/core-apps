@@ -1,0 +1,9 @@
+Package: big-apt-force-yes-confnew
+Version: 1.0.0-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Section: admin
+Priority: optional
+Description: Reduz o numero de perguntas do apt-get, facilitando a instalacao e atualizacao de programas, caso exista uma configuracao anterior sera automaticamente substituida pela nova configuracao do pacote atualizado.
+
+

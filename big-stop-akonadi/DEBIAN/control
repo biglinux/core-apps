@@ -1,0 +1,9 @@
+Package: big-stop-akonadi
+Version: 1.0.0-0kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Priority: optional
+Description: Desativa o akonadi quando o mesmo não é necessário
+

@@ -1,0 +1,1087 @@
+# English (United Kingdom) translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-13 04:50-0300\n"
+"PO-Revision-Date: 2010-08-31 12:38+0000\n"
+"Last-Translator: Sergio <ikisham@gmail.com>\n"
+"Language-Team: English (United Kingdom) <en_GB@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-01 03:55+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "AAC"
+msgstr "AAC"
+
+msgid "MP3"
+msgstr "MP3"
+
+msgid "Manter resolucao original"
+msgstr "Keep original resolution"
+
+msgid "1920x1080 Full HD WideScreen"
+msgstr "1920x1080 Full HD WideScreen"
+
+msgid "1280x720 HD WideScreen"
+msgstr "1280x720 HD WideScreen"
+
+msgid "1024x768 4:3"
+msgstr "1024x768 4:3"
+
+msgid "960x600 WideScreen"
+msgstr "960x600 WideScreen"
+
+msgid "800x600 4:3"
+msgstr "800x600 4:3"
+
+msgid "720x576 DVD PAL-M WideScreen"
+msgstr "720x576 DVD PAL-M WideScreen"
+
+msgid "720x480 DVD NTSC WideScreen"
+msgstr "720x480 DVD NTSC WideScreen"
+
+msgid "680x384 WideScreen"
+msgstr "680x384 WideScreen"
+
+msgid "640x480 4:3"
+msgstr "640x480 4:3"
+
+msgid "520x576 PAL-M 4:3"
+msgstr "520x576 PAL-M 4:3"
+
+msgid "440x486 NTSC 4:3"
+msgstr "440x486 NTSC 4:3"
+
+msgid "480x272 PSP"
+msgstr "480x272 PSP"
+
+msgid "400x300 4:3"
+msgstr "400x300 4:3"
+
+msgid "352x288 CIF 4:3"
+msgstr "352x288 CIF 4:3"
+
+msgid "320x240 QVGA 4:3"
+msgstr "320x240 QVGA 4:3"
+
+msgid "320x180 QVGA WideScreen"
+msgstr "320x180 QVGA WideScreen"
+
+msgid "160x120 SQVGA WideScreen"
+msgstr "160x120 SQVGA WideScreen"
+
+msgid "160x90 SQVGA 4:3"
+msgstr "160x90 SQVGA 4:3"
+
+msgid "Otimizado para DVD"
+msgstr "Optimized for DVD"
+
+msgid "Definir outro valor"
+msgstr "Set another value"
+
+msgid "640x480 4:3 (Maior)"
+msgstr "640x480 4:3 (Bigger)"
+
+msgid "176x144 QCIF"
+msgstr "176x144 QCIF"
+
+msgid "160x90 SQVGA 4:3 (Menor)"
+msgstr "160x90 SQVGA 4:3 (Smaller)"
+
+msgid "BigMencoder"
+msgstr "BigMencoder"
+
+msgid "Iniciando..."
+msgstr "Starting..."
+
+msgid "Conversao cancelada."
+msgstr "Conversion canceled."
+
+msgid "Big Converter"
+msgstr "Big Converter"
+
+msgid "Conversao de $i concluida."
+msgstr "$i conversion finished."
+
+msgid "Big Mencoder"
+msgstr "Big Mencoder"
+
+msgid "Visualizar previsao"
+msgstr "Preview"
+
+msgid "Sair"
+msgstr "Quit"
+
+msgid "Iniciar conversao"
+msgstr "Start conversion"
+
+msgid "Converta videos ou extraia audio."
+msgstr "Convert videos or extract audio"
+
+msgid "Selecione o arquivo a ser utilizado na previsao"
+msgstr "Choose file to be used for preview"
+
+msgid "(hh:mm:ss)"
+msgstr "(hh:mm:ss)"
+
+msgid "2.0 (Maximo)"
+msgstr "2.0 (Maximum)"
+
+msgid "1.8"
+msgstr "1.8"
+
+msgid "1.6"
+msgstr "1.6"
+
+msgid "1.4"
+msgstr "1.4"
+
+msgid "1.2"
+msgstr "1.2"
+
+msgid "1.0 (Manter original)"
+msgstr "1.0 (Keep original)"
+
+msgid "0.8"
+msgstr "0.8"
+
+msgid "0.6"
+msgstr "0.6"
+
+msgid "0.4"
+msgstr "0.4"
+
+msgid "0.2"
+msgstr "0.2"
+
+msgid "0.0"
+msgstr "0.0"
+
+msgid "-0.2"
+msgstr "-0.2"
+
+msgid "-0.4"
+msgstr "-0.4"
+
+msgid "-0.6"
+msgstr "-0.6"
+
+msgid "-0.8"
+msgstr "-0.8"
+
+msgid "-1.0"
+msgstr "-1.0"
+
+msgid "-1.2"
+msgstr "-1.2"
+
+msgid "-1.4"
+msgstr "-1.4"
+
+msgid "-1.6"
+msgstr "-1.6"
+
+msgid "-1.8"
+msgstr "-1.8"
+
+msgid "-2.0 (Minimo)"
+msgstr "-2.0 (Minimum)"
+
+msgid "21 (Maximo)"
+msgstr "21 (Maximum)"
+
+msgid "18"
+msgstr "18"
+
+msgid "15"
+msgstr "15"
+
+msgid "12"
+msgstr "12"
+
+msgid "9"
+msgstr "9"
+
+msgid "6"
+msgstr "6"
+
+msgid "3"
+msgstr "3"
+
+msgid "0 (Padrao)"
+msgstr "0 (Default)"
+
+msgid "-3"
+msgstr "-3"
+
+msgid "-6"
+msgstr "-6"
+
+msgid "-9"
+msgstr "-9"
+
+msgid "-12"
+msgstr "-12"
+
+msgid "-15"
+msgstr "-15"
+
+msgid "-18"
+msgstr "-18"
+
+msgid "-21 (Minimo)"
+msgstr "-21 (Minimum)"
+
+msgid "Avancar"
+msgstr "Forward"
+
+msgid "Prever resultado"
+msgstr "Preview result"
+
+msgid "Voltar"
+msgstr "Back"
+
+msgid "Clique em ajuda para saber o melhor formato para cada situacao."
+msgstr "Click on Help to know about the best format for each case."
+
+msgid ""
+"1 - Independente da resolucao selecionada o video nao ficara distorcido, mas "
+"isso ira torna-lo compativel com dispositivos que utilizam resolucao "
+"padronizada.<br>2 - Resolucoes maiores geram imagens mais nitidas, mas o "
+"tempo para conversao e o tamanho do arquivo gerado tornam se maiores.<br>3 - "
+"Lembre que utilizar resolucao maior que a original nao melhora a qualidade "
+"do video."
+msgstr ""
+"1 - Independent of the selected resolution, the video won't be distorted, "
+"but it may make it compatible with devices that use a standardized "
+"resolution.<br>2 - Bigger resolutions generate sharper images, but the "
+"conversion time and the file size are bigger as well.<br>3 - Remember that "
+"using a resolution bigger than the original doesn't improve the video "
+"quality."
+
+msgid ""
+"1 - Qualidades maiores geram imagens mais nitidas, porem tornam a conversao "
+"mais lenta e o arquivo gerado sera maior.<br>2 - O uso da opcao padrao "
+"costuma ser a melhor relacao entre tamanho e qualidade."
+msgstr ""
+"1 - Better qualities generate sharper images, but the conversion time is "
+"longer and the generated file size is bigger.<br>2 - The default option "
+"usually has the best size/quality ratio."
+
+msgid ""
+"1 - Qualidades maiores possuem menores distorcoes no audio, porem tornam a "
+"conversao mais lenta e o arquivo gerado sera maior.<br>2 - Recomendamos o "
+"uso da opcao padrao ou de qualidade superior."
+msgstr ""
+"1 - Better qualities have less audio distortion, but the conversion time is "
+"longer and the generated file size is bigger.<br>2 - We recommend the "
+"default option or a better quality."
+
+msgid ""
+"1 - Caso o video a ser convertido possua mais de um audio confira no player "
+"de video qual trilha deseja manter.<br>2 - Em geral videos com mais de um "
+"audio sao os que possuem versao original e dublada no mesmo arquivo."
+msgstr ""
+"1 - In case the video to be converted has more than one audio track, check "
+"with the video player which one to keep.<br>2 - Usually videos with more "
+"than one audio track are the ones with the original audio and a dubbed "
+"version in the same file."
+
+msgid ""
+"Para evitar distorcoes mantenha o volume padrao, mas se o video a ser "
+"convertido necessitar de alteracoes utilize essa ferramenta."
+msgstr ""
+"To prevent distortions, keep the default volume, but if the video to be "
+"converted needs changes, use this tool."
+
+msgid "Confira como ficara a conversao do video com a configuracao escolhida"
+msgstr ""
+"Check how the video conversion will turn out with the chosen configuration"
+
+msgid ""
+"1 - Essa opcao permite reduzir a quantidade de canais de audio, mas nao e "
+"possivel aumentar.<br>2 - Caso o equipamento de som a ser utilizado na "
+"reproducao possua menos canais que o equipamento onde sera reproduzido pode "
+"se economizar espaco reduzindo a quantidade de canais."
+msgstr ""
+"1 - This option allows to reduce the audio channels, but not to increase."
+"<br>2 - In case the equipment to be used to reproduce the converted file has "
+"lesser channels this can save space by reducing the audio channel quantity."
+
+msgid ""
+"1 - Estudos dizem que o olho humano consegue captar apenas 24 quadros por "
+"segundo, portanto disponibilizamos somente ate esse valor.<br>2 - A maioria "
+"dos celulares consegue reproduzir apenas 15 quadros por segundo, outros "
+"apenas 12.<br>3 - Videos que serao assistidos no computados ou em DVD "
+"costumam possuir melhor qualidade mantendo o valor original."
+msgstr ""
+"1 - Studies say that the human eye can capture only 24 frames per second, so "
+"we make available conversions only up to this level.<br>2 - Most mobile "
+"phones can reproduce only up to 15 frames per second, some only 12.<br>3 - "
+"Videos that will be watched on the computer or with a DVD usually have a "
+"better quality, keeping the original frame rate value."
+
+msgid ""
+"Um guia pratico que ira auxiliar na escolha do melhor formato para conversao."
+msgstr "A practical guide to help choosing the best conversion format"
+
+msgid ""
+"Com o turbo ativado a conversao pode ser ate 4 vezes mais rapida, porem "
+"possui uma pequena reducao na qualidade da imagem."
+msgstr ""
+"With turbo enabled, the conversion can be up to 4 times quicker. but it has "
+"a slight loss in quality."
+
+msgid "Converter para:"
+msgstr "Convert to:"
+
+msgid "Ajuda"
+msgstr "Help"
+
+msgid "Video"
+msgstr "Video"
+
+msgid "Turbo Ativo."
+msgstr "Turbo Enabled."
+
+msgid "Turbo Inativo."
+msgstr "Turbo Disabled."
+
+msgid "Esse formato nao possui configuracoes de video."
+msgstr "There are no video configurations for this format."
+
+msgid "Resolucao"
+msgstr "Resolution"
+
+msgid "Largura"
+msgstr "Width"
+
+msgid "Altura"
+msgstr "Hight"
+
+msgid "Qualidade"
+msgstr "Quality"
+
+msgid "Bitrate em kbps"
+msgstr "Bitrate in kbps"
+
+msgid "Quadros por segundo"
+msgstr "Frames per second"
+
+msgid "Audio"
+msgstr "Audio"
+
+msgid "Formato de audio"
+msgstr "Audio format"
+
+msgid "Canais"
+msgstr "Channels"
+
+msgid "Trilha"
+msgstr "Track"
+
+msgid "Volume"
+msgstr "Volume"
+
+msgid "Principal"
+msgstr "Main"
+
+msgid "0"
+msgstr "0"
+
+msgid "1"
+msgstr "1"
+
+msgid "2"
+msgstr "2"
+
+msgid "4"
+msgstr "4"
+
+msgid "5"
+msgstr "5"
+
+msgid "7"
+msgstr "7"
+
+msgid "8"
+msgstr "8"
+
+msgid ""
+"Selecione outra pasta pois seu usuario nao possui permissao de escrita na "
+"selecionada."
+msgstr ""
+"Choose another folder since your user doesn't have write permission to the "
+"chosen one."
+
+msgid ""
+"Nenhum video foi selecionado para conversao, adicione-o antes de prosseguir."
+msgstr "No video was selected for conversion, add it before proceeding."
+
+msgid "Adicionar videos"
+msgstr "Add videos"
+
+msgid "Esvaziar lista"
+msgstr "Empty list"
+
+msgid "Alterar destino"
+msgstr "Change destination"
+
+msgid "Remover da lista"
+msgstr "Remove from list"
+
+msgid "Reproduzir"
+msgstr "Play"
+
+msgid "Ver informacoes"
+msgstr "See info"
+
+msgid "Onde serao salvos os videos ou audios convertidos"
+msgstr "Where converted videos and audios will be saved to"
+
+msgid "Videos a converter"
+msgstr "Videos to convert"
+
+msgid "Destino dos videos convertidos"
+msgstr "Destination of converted videos"
+
+msgid "$savein"
+msgstr "$savein"
+
+msgid "1.0 (Maximo)"
+msgstr "1.0 (Maximum)"
+
+msgid "0.9"
+msgstr "0.9"
+
+msgid "0.7"
+msgstr "0.7"
+
+msgid "0.5"
+msgstr "0.5"
+
+msgid "0.3"
+msgstr "0.3"
+
+msgid "0.1"
+msgstr "0.1"
+
+msgid "0.0 (Manter original)"
+msgstr "0.0 (Keep original)"
+
+msgid "-0.1"
+msgstr "-0.1"
+
+msgid "-0.3"
+msgstr "-0.3"
+
+msgid "-0.5"
+msgstr "-0.5"
+
+msgid "-0.7"
+msgstr "-0.7"
+
+msgid "-0.9"
+msgstr "-0.9"
+
+msgid "-1.0 (Minimo)"
+msgstr "-1.0 (Minimum)"
+
+msgid ""
+"Ao clicar aqui o Big Converter sera configurado para gerar videos a serem "
+"reproduzidos nesse dispositivo."
+msgstr ""
+"By clicking here, Big Converter will be configured to generate videos to be "
+"played on this device."
+
+msgid "Dicas"
+msgstr "Tips"
+
+msgid ""
+"<li>As opcoes MP4 Portatil e 3GP sao para uso em equipamentos portateis, "
+"principalmente celulares. MP4 possui melhor qualidade, enquanto o 3GP e "
+"suportado por uma variedade maior de aparelhos.\n"
+"<p><li>MP4 (264) possui possui otimizacoes nao suportadas pela opcao "
+"portatil, mas para assistir no computador e a melhor opcao.\n"
+"<p><li>XVID possui compactacao melhor que o DIVX e costuma funcionar bem em "
+"equipamentos que suportam DIVX, principalmente DVD Players.\n"
+"<p><li>As opcoes Audio MP3 e audio M4A extraem somente o audio do arquivo de "
+"video, util principalmente para ouvir em seu MP3 Player, sendo o MP3 "
+"compativel com mais aparelhos e o M4A com mais qualidade.\n"
+"<p><li>Para obter a melhor qualidade confira no manual do equipamento onde "
+"ira reproduzir o conteudo convertido qual a recomendacao do fabricante para "
+"formato e resolucao.\n"
+"<p><li>Lembre que conversoes sempre possuem perda de qualidade, portanto "
+"converter um video da baixa qualidade para um formato de melhor qualidade "
+"nao tera melhorias na imagem.\n"
+"<p><li>A resolucao otimizada para DVD mantem a resolucao original ate a "
+"largura de 720 pixels que e o limite dos DVD Players, caso a resolucao "
+"original seja maior, sera reduzida para 720 pixels."
+msgstr ""
+"<li>The MP4 and 3GP options are for use in portable devices, mainly mobile "
+"phones. MP4 has a better quality, while 3GP is more widely supported.\n"
+"<p><li>MP4 (264) has optimizations not supported in the portable option, but "
+"is the best option to watch on the computer .\n"
+"<p><li>XVID has a better compression rate than DIVX and usually works well "
+"in equipments that support DIVX, mainly DVD Players.\n"
+"<p><li>The MP3 and M4A audio options extract only the audio from the video "
+"file, useful mainly to listen in your MP3 Player, MP3 being compatible with "
+"more devices and M4A having a better quality.\n"
+"<p><li>To obtain the best quality, check the manual from the equipment on "
+"which the converted content will be reproduced for the manufacturer's "
+"recommendation on format and resolution to use.\n"
+"<p><li>Remember that conversions always ensue in a quality loss, so to "
+"convert a low quality video to a better quality format won't generate any "
+"improvement for the image quality.\n"
+"<p><li>The DVD optimized resolution keeps the original resolution up to a "
+"720 pixel width which is the limit for DVD Players, in case the original "
+"resolution is bigger it will be reduced to 720 pixel."
+
+msgid "Configuracoes automaticas"
+msgstr "Automatic configurations"
+
+msgid "Celular simples, com suporte a 3GP."
+msgstr "Simple mobile, with support for 3GP."
+
+msgid "Celular intermediario, com suporte a MP4."
+msgstr "Intermediate mobile, with support for MP4."
+
+msgid "Celular moderno, com suporte a MP4."
+msgstr "Modern mobile, with support for MP4."
+
+msgid "DVD Player, com suporte a XVID."
+msgstr "DVD Player, with support for XVID."
+
+msgid "DVD Player, com suporte a DIVX."
+msgstr "DVD Player, with support for DIVX."
+
+msgid "iPOD somente audio."
+msgstr "iPOD, only audio."
+
+msgid "iPOD video."
+msgstr "IPOD, video."
+
+msgid "PSP Sony."
+msgstr "PSP Sony."
+
+msgid "Playstation 3."
+msgstr "Playstation 3."
+
+msgid "XBOX 360."
+msgstr "XBOX 360."
+
+msgid "Manter original"
+msgstr "Keep original"
+
+msgid "24"
+msgstr "24"
+
+msgid "23"
+msgstr "23"
+
+msgid "22"
+msgstr "22"
+
+msgid "21"
+msgstr "21"
+
+msgid "20"
+msgstr "20"
+
+msgid "19"
+msgstr "19"
+
+msgid "17"
+msgstr "17"
+
+msgid "16"
+msgstr "16"
+
+msgid "14"
+msgstr "14"
+
+msgid "13"
+msgstr "13"
+
+msgid "11"
+msgstr "11"
+
+msgid "10"
+msgstr "10"
+
+msgid "15 Padrao"
+msgstr "15 Default"
+
+msgid "Conversao concluida."
+msgstr "Conversion finished"
+
+msgid "500 (Maior qualidade)"
+msgstr "500 (Best quality)"
+
+msgid "400"
+msgstr "400"
+
+msgid "300"
+msgstr "300"
+
+msgid "200"
+msgstr "200"
+
+msgid "100"
+msgstr "100"
+
+msgid "90"
+msgstr "90"
+
+msgid "80"
+msgstr "80"
+
+msgid "70"
+msgstr "70"
+
+msgid "60"
+msgstr "60"
+
+msgid "55 (Padrao)"
+msgstr "55 (Default)"
+
+msgid "50"
+msgstr "50"
+
+msgid "40"
+msgstr "40"
+
+msgid "30"
+msgstr "30"
+
+msgid "15 (Menor qualidade)"
+msgstr "15 (Lowest quality)"
+
+msgid "256 kbps (Alta)"
+msgstr "256 kbps (High)"
+
+msgid "192 kbps"
+msgstr "192 kbps"
+
+msgid "128 kbps (Padrao)"
+msgstr "128 kbps (Default)"
+
+msgid "96 kbps"
+msgstr "96 kbps"
+
+msgid "64 kbps (Baixa)"
+msgstr "64 kbps (Low)"
+
+msgid "256 kbps (Maior)"
+msgstr "256 kbps (Best)"
+
+msgid "128 kbps"
+msgstr "128 kbps"
+
+msgid "64 kbps"
+msgstr "64 kbps"
+
+msgid "48 kbps"
+msgstr "48 kbps"
+
+msgid "32 kbps (Padrao)"
+msgstr "32 kbps (Default)"
+
+msgid "24 kbps (Menor)"
+msgstr "24 kbps (Lowest)"
+
+msgid "6 (Padrao)"
+msgstr "6 (Default)"
+
+msgid "7 (Media)"
+msgstr "7 (Average)"
+
+msgid "8 (Alta)"
+msgstr "8 (High)"
+
+msgid "55"
+msgstr "55"
+
+msgid "40 (Padrao)"
+msgstr "40 (Default)"
+
+msgid "24 kbps (Baixa)"
+msgstr "24 kbps (Low)"
+
+#, fuzzy
+msgid "Selecione o video a ser utilizado na previsao."
+msgstr "Choose file to be used for preview"
+
+msgid ""
+"Selecione quantos segundos deve ter a previsao.\n"
+"\n"
+"A previsao precisa ser completamente gerada antes de ser iniciada, dessa "
+"forma quanto mais segundos for escolhido mais tempo ira demorar para a "
+"previsao ser iniciada."
+msgstr ""
+
+msgid ""
+"Tempo indicado para iniciar a previsao ultrapassa o limite do video, gerando "
+"previsao a partir do inicio."
+msgstr ""
+
+msgid ""
+"Os arquivos de legenda devem estar na mesma pasta que o video e com o mesmo "
+"nome, sendo diferenciados apenas pela extensao.<br>Caso existam legendas ."
+"ass e .srt sera utilizada a .ass.<br>Somente legendas .srt obedecem a "
+"formatacao desse configurador."
+msgstr ""
+"The subtitle file must be in the same folder as the video and with the same "
+"name, differing only by the extension.<br>If there are .ass and .srt "
+"subtitles, .ass will be used.<br>Only .srt subtitles obey this configuration "
+"tool's formatting."
+
+msgid ""
+"Insere uma borda escura em torno da fonte que torna a leitura da legenda "
+"muito agradavel."
+msgstr ""
+"Inserts a dark margin around the font making the reading very pleasant."
+
+msgid "Embutir legenda"
+msgstr "Embed subtitles"
+
+msgid "Cor:"
+msgstr "Colour:"
+
+msgid "Adicionar borda"
+msgstr "Add border"
+
+msgid "Extras"
+msgstr "Extras"
+
+msgid "Brilho"
+msgstr "Brightness"
+
+msgid "Contraste"
+msgstr "Contrast"
+
+msgid "Saturacao (Cor)"
+msgstr "Saturation (Colour)"
+
+msgid "6 (Surround 5.1)"
+msgstr "6 (Surround 5.1)"
+
+msgid "5 (Surround 5.0)"
+msgstr "5 (Surround 5.0)"
+
+msgid "4 (Surround 4.0)"
+msgstr "4 (Surround 4.0)"
+
+msgid "2 (Stereo)"
+msgstr "2 (Stereo)"
+
+msgid "1 (Mono)"
+msgstr "1 (Mono)"
+
+msgid "0 (Mudo)"
+msgstr "0 (Mute)"
+
+msgid "3.0 (Maior)"
+msgstr "3.0 (Bigger)"
+
+msgid "2.8"
+msgstr "2.8"
+
+msgid "2.6"
+msgstr "2.6"
+
+msgid "2.4"
+msgstr "2.4"
+
+msgid "2.2"
+msgstr "2.2"
+
+msgid "2.0"
+msgstr "2.0"
+
+msgid "1.8 (Padrao)"
+msgstr "1.8 (Default)"
+
+msgid "1.0"
+msgstr "1.0"
+
+msgid "0.2 (Menor)"
+msgstr "0.2 (Smaller)"
+
+msgid "Video XVID"
+msgstr "Video XVID"
+
+msgid "Video MP4 (264) Portatil"
+msgstr "Video MP4 (264) Portable"
+
+msgid "Video Flash"
+msgstr "Video Flash"
+
+msgid "Audio MP3"
+msgstr "Audio MP3"
+
+msgid "Video DIVX3"
+msgstr "Video DIVX3"
+
+msgid "Video 3GP (263) Portatil"
+msgstr "Video 3GP (263) Portable"
+
+msgid "Video MP4 (264)"
+msgstr "Video MP4 (264)"
+
+msgid "Video DIVX4"
+msgstr "Video DIVX4"
+
+msgid "Audio M4A"
+msgstr "Audio M4A"
+
+msgid "Video MP4 (MPEG4) Portatil"
+msgstr "Video MP4 (MPEG4) Portable"
+
+msgid "1.0 (Maior)"
+msgstr "1.0 (Highest)"
+
+msgid "3.2"
+msgstr "3.2"
+
+msgid "3.4"
+msgstr "3.4"
+
+msgid "3.6 (Padrao)"
+msgstr "3.6 (Default)"
+
+msgid "3.8"
+msgstr "3.8"
+
+msgid "4.0"
+msgstr "4.0"
+
+msgid "4.3"
+msgstr "4.3"
+
+msgid "4.7"
+msgstr "4.7"
+
+msgid "25"
+msgstr "25"
+
+msgid "31 (Menor)"
+msgstr "31 (Lowest)"
+
+msgid "5 (Maior)"
+msgstr "5 (Highest)"
+
+msgid "26"
+msgstr "26"
+
+msgid "27 (Padrao)"
+msgstr "27 (Default)"
+
+msgid "28"
+msgstr "28"
+
+msgid "29"
+msgstr "29"
+
+msgid "32"
+msgstr "32"
+
+msgid "33"
+msgstr "33"
+
+msgid "34"
+msgstr "34"
+
+msgid "35"
+msgstr "35"
+
+msgid "36"
+msgstr "36"
+
+msgid "37"
+msgstr "37"
+
+msgid "38"
+msgstr "38"
+
+msgid "39"
+msgstr "39"
+
+msgid "42"
+msgstr "42"
+
+msgid "43"
+msgstr "43"
+
+msgid "44"
+msgstr "44"
+
+msgid "45"
+msgstr "45"
+
+msgid "46"
+msgstr "46"
+
+msgid "47"
+msgstr "47"
+
+msgid "48"
+msgstr "48"
+
+msgid "49"
+msgstr "49"
+
+msgid "50 (Menor)"
+msgstr "50 (Lowest)"
+
+msgid "300(Padrao)"
+msgstr "300 (Default)"
+
+msgid "500"
+msgstr "500"
+
+msgid "1000(Melhor)"
+msgstr "1000 (Best)"
+
+msgid "6000 (Maior)"
+msgstr "6000 (Highest)"
+
+msgid "5500"
+msgstr "5500"
+
+msgid "5000"
+msgstr "5000"
+
+msgid "4500"
+msgstr "4500"
+
+msgid "4000"
+msgstr "4000"
+
+msgid "3500"
+msgstr "3500"
+
+msgid "3000"
+msgstr "3000"
+
+msgid "2600"
+msgstr "2600"
+
+msgid "2300"
+msgstr "2300"
+
+msgid "2000"
+msgstr "2000"
+
+msgid "1600"
+msgstr "1600"
+
+msgid "1400"
+msgstr "1400"
+
+msgid "1200 (Padrao)"
+msgstr "1200 (Default)"
+
+msgid "1000"
+msgstr "1000"
+
+msgid "800"
+msgstr "800"
+
+msgid "600"
+msgstr "600"
+
+msgid "200 (Menor)"
+msgstr "200 (Lowest)"
+
+msgid "512 (Maior)"
+msgstr "512 (Highest)"
+
+msgid "440"
+msgstr "440"
+
+msgid "320"
+msgstr "320"
+
+msgid "256"
+msgstr "256"
+
+msgid "192"
+msgstr "192"
+
+msgid "160"
+msgstr "160"
+
+msgid "128"
+msgstr "128"
+
+msgid "96"
+msgstr "96"
+
+msgid "72"
+msgstr "72"
+
+msgid "64 (Padrao)"
+msgstr "64 (Default)"
+
+msgid "56"
+msgstr "56"
+
+msgid "24 (Menor)"
+msgstr "24 (Lowest)"
+
+msgid "24 (Padrao)"
+msgstr "24 (Default)"
+
+msgid "27"
+msgstr "27"
+
+msgid "4096 kbps (Muito Alta)"
+msgstr "4096 kbps (Very High)"
+
+msgid "3072 kbps"
+msgstr "3072 kbps"
+
+msgid "2048 kbps"
+msgstr "2048 kbps"
+
+msgid "1536 kbps"
+msgstr "1536 kbps"
+
+msgid "1280 kbps"
+msgstr "1280 kbps"
+
+msgid "1024 kbps (Alta)"
+msgstr "1024 kbps (High)"
+
+msgid "768 kbps"
+msgstr "768 kbps"
+
+msgid "512 kbps"
+msgstr "512 kbps"
+
+msgid "256 kbps"
+msgstr "256 kbps"
+
+msgid "64 kbps (Padrao)"
+msgstr "64 kbps (Default)"
+
+msgid "32 kbps (Baixa)"
+msgstr "32 kbps (Low)"
+
+msgid "3.0 (Maximo)"
+msgstr "3.0 (Maximum)"
+
+msgid "0.0 (Minimo)"
+msgstr "0.0 (Minimum)"
+
+msgid "Converta videos e audios"
+msgstr "Convert videos and audios"

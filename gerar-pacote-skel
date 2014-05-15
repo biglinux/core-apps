@@ -1,0 +1,168 @@
+#!/bin/bash
+# $Id: make_debp,v 1.0.1 2009/01/13 14:34:51 ricardo Exp $
+# Written by Ricardo Carlini Sperandio <rcarlini@gmail.com>.  
+# Modificado por Bruno Goncalves Araujo <www.biglinux.com.br>
+# Distributed under the GNU GPL
+
+pacote=$(echo "$1" | sed "s|/||g")
+
+
+
+cp -a "$pacote" "$pacote-empacotando"
+
+
+
+if [ -e "$pacote/I18N/es.po" ]
+then
+    mkdir $pacote/usr 2> /dev/null
+    mkdir $pacote/usr/share 2> /dev/null
+    mkdir $pacote/usr/share/locale-langpack 2> /dev/null
+    mkdir $pacote/usr/share/locale-langpack/es 2> /dev/null
+    mkdir $pacote/usr/share/locale-langpack/es/LC_MESSAGES 2> /dev/null
+    msgfmt -o $pacote/usr/share/locale-langpack/es/LC_MESSAGES/$pacote.mo $pacote/I18N/es.po
+fi
+
+if [ -e "$pacote/I18N/en_CA.po" ]
+then
+    mkdir $pacote/usr 2> /dev/null
+    mkdir $pacote/usr/share 2> /dev/null
+    mkdir $pacote/usr/share/locale-langpack 2> /dev/null
+    mkdir $pacote/usr/share/locale-langpack/en 2> /dev/null
+    mkdir $pacote/usr/share/locale-langpack/en/LC_MESSAGES 2> /dev/null
+    msgfmt -o $pacote/usr/share/locale-langpack/en/LC_MESSAGES/$pacote.mo $pacote/I18N/en_CA.po
+fi
+
+if [ -e "$pacote/I18N/pt.po" ]
+then
+    mkdir $pacote/usr 2> /dev/null
+    mkdir $pacote/usr/share 2> /dev/null
+    mkdir $pacote/usr/share/locale-langpack 2> /dev/null
+    mkdir $pacote/usr/share/locale-langpack/pt 2> /dev/null
+    mkdir $pacote/usr/share/locale-langpack/pt/LC_MESSAGES 2> /dev/null
+    msgfmt -o $pacote/usr/share/locale-langpack/pt/LC_MESSAGES/$pacote.mo $pacote/I18N/pt.po
+fi
+
+if [ -e "$pacote/I18N/pt_BR.po" ]
+then
+    mkdir $pacote/usr 2> /dev/null
+    mkdir $pacote/usr/share 2> /dev/null
+    mkdir $pacote/usr/share/locale-langpack 2> /dev/null
+    mkdir $pacote/usr/share/locale-langpack/pt_BR 2> /dev/null
+    mkdir $pacote/usr/share/locale-langpack/pt_BR/LC_MESSAGES 2> /dev/null
+    msgfmt -o $pacote/usr/share/locale-langpack/pt_BR/LC_MESSAGES/$pacote.mo $pacote/I18N/pt_BR.po
+fi
+
+chown -R root.root $pacote
+
+if [ $# -lt 1 ]; then
+  echo "Nao foi informado o diretorio base do pacote."
+  exit 1
+fi
+
+if [ ! -d $pacote/DEBIAN ]; then
+  echo "Nao foi possivel encontrar o diretorio $pacote/DEBIAN"
+  exit 1
+fi
+
+if [ ! -f $pacote/DEBIAN/control ]; then
+  echo "Nao foi possivel encontrar o arquivo de controle (control)"
+  exit 1
+fi
+###################################
+# Pega os dados atuais no control #
+###################################
+
+pacoteName=$(cat ${pacote}/DEBIAN/control | grep ^Package: | sed 's/^Package: \(.*\)/\1/' )
+# pega a versao
+versao=$(cat ${pacote}/DEBIAN/control | grep ^Version | sed 's/^Version: \(.*\)/\1/' )
+# pega a arquitetura
+arch=$(cat ${pacote}/DEBIAN/control | grep ^Architecture | sed 's/^Architecture: \(.*\)/\1/' )
+# gera nome do pacote
+nomeRelease=${pacote}_${versao}_${arch}.deb
+
+
+#########################
+# Prepara empacotamento #
+#########################
+# remove os arquivos temporarios (na verdade move para um diretorio trash)
+listaLixo=$(find $pacote -regextype posix-egrep  -iregex '.*(~|\.(tmp|old|bak))' -print0 | xargs -0 )
+
+    rm -f $listaLixo
+
+listaLixo2=$(find $pacote -regextype posix-egrep  -iregex '.*(.(svn))' -print0 | xargs -0 )
+
+    rm -Rf $listaLixo2
+
+# remove arquivos de tradução
+
+    rm -Rf $pacote/I18N
+
+# gera arquivo md5sum
+if [ -f $pacote/DEBIAN/md5sums ]; then
+   rm -f $pacote/DEBIAN/md5sums
+fi
+find $pacote ! -type d -print0 | xargs -0 md5sum > $pacote/DEBIAN/md5sums
+
+# gera instaled size
+size=$(du -s $pacote | cut -f 1)
+sed -i "s/^\(Installed-Size:\) .*/\1 $size/" ${pacote}/DEBIAN/control 
+
+
+######################################
+# Atualiza o control automaticamente #
+######################################
+
+# atualiza o release para as proximas contrucoes
+# linha onde esta o campo Version
+linha=$(grep -n ^Version  ${pacote}/DEBIAN/control | cut -d ":" -f 1)
+# gera o update do debian release
+
+#TODO: pedir confirmacao.
+complemento=$(grep  ^Version $pacote/DEBIAN/control | sed "s/^Version: \(.*\)-\([0-9]\+\)\(.*\)/\3/")
+release=$(grep  ^Version $pacote/DEBIAN/control | sed "s/^Version: \(.*\)-\([0-9]\)\(.*\)/\1/")
+
+releaseDeb=$(grep  ^Version $pacote/DEBIAN/control | sed "s/^Version: \(.*\)-\([0-9]\+\)\(.*\)/\2/")
+
+: $((releaseDeb++))
+
+# echo -n "Deseja atualizar o Debrelease para $releaseDeb? (s/N): "
+# read opcao
+if [ "$opcao"  = "s" ]; then
+   sed -i "$linha s/^Version: .\+/Version: $release-$releaseDeb$complemento/" $pacote/DEBIAN/control
+   versao=$release-$releaseDeb$complemento   
+   nomeRelease=${pacote}_${versao}_${arch}.deb
+fi
+########################
+# constroe o pacote... # 
+########################
+dpkg-deb -Z bzip2 -b $pacoteName $nomeRelease
+
+######################################
+# Atualiza o control automaticamente #
+######################################
+
+# atualiza o release para as proximas contrucoes
+# linha onde esta o campo Version
+linha=$(grep -n ^Version  ${pacote}/DEBIAN/control | cut -d ":" -f 1)
+# gera o update do debian release
+#TODO: pedir confirmacao.
+complemento=$(grep  ^Version $pacote/DEBIAN/control | sed "s/^Version: \(.*\)-\([0-9]\+\)\(.*\)/\3/")
+release=$(grep  ^Version $pacote/DEBIAN/control | sed "s/^Version: \(.*\)-\([0-9]\)\(.*\)/\1/")
+
+releaseDeb=$(grep  ^Version $pacote/DEBIAN/control | sed "s/^Version: \(.*\)-\([0-9]\+\)\(.*\)/\2/")
+
+: $((releaseDeb++))
+
+# echo -n "Deseja atualizar o Debrelease para $releaseDeb?(valido apenas para o proximo pacote) (s/N): "
+# read opcao
+if [ "$opcao"  = "s" ]; then
+   sed -i "$linha s/^Version: .\+/Version: $release-$releaseDeb$complemento/" $pacote/DEBIAN/control
+fi
+
+# remove o md5sums...
+if [ -f $pacote/DEBIAN/md5sums ]; then
+   rm -f $pacote/DEBIAN/md5sums
+fi
+
+rm -Rf $pacote
+mv -f "$pacote-empacotando" "$pacote"

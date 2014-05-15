@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: BigLinux\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2013-10-10 02:27-0300\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=CHARSET\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+msgid   "KDM BigLinux"
+msgstr  ""
+
+msgid   "Sair"
+msgstr  ""
+
+msgid   "Aplicar"
+msgstr  ""
+
+msgid   "Altere a imagem de fundo do tema BigLinux para o KDM."
+msgstr  ""
+
+msgid   "Selecione a imagem"
+msgstr  ""
+
+msgid   "Alteracao aplicada."
+msgstr  ""
+
+msgid   "Tela de Login (KDM)"
+msgstr  ""
+
+msgid   "Configure a tela de login e altere a imagem de fundo do tema "
+        "BigLinux para o KDM."
+msgstr  ""
+
+msgid   "Configuracao completa da tela de login."
+msgstr  ""
+
+msgid   "Utilize sua imagem favorita como fundo de tela do tema BigLinux"
+msgstr  ""
+
+msgid   "Configure a tela de login e altere a imagem de fundo do tema "
+        "BigLinux."
+msgstr  ""
+
+msgid   "Configuracao completa"
+msgstr  ""
+
+msgid   "Alterar fundo de tela do tema BigLinux"
+msgstr  ""
+
+msgid   "Selecionar nova imagem"
+msgstr  ""
+
+msgid   "Restaurar imagem padrao"
+msgstr  ""
+
+msgid   "Imagem atual"
+msgstr  ""

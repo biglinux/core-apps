@@ -1,0 +1,11 @@
+Package: bigcontrolcenter-internet-manager-gnome
+Version: 1.1.1-1kaiana4
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: bigcontrolcenter, network-manager-gnome
+Conflicts: plasma-widget-network-manager, network-manager-kde
+Section: admin
+Priority: optional
+Description: Configure internet with Network Manager Gnome
+

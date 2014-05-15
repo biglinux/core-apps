@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-ksysguard
+
+name_application=$"Monitore o sistema"
+description_application=$"Veja quais programas estao utilizando mais processamento, memoria, trafego na rede..."
+exec_application="/usr/share/bigbashview/run.run?ksysguard"
+icon_application="/usr/share/bigcontrolcenter/categories/system/ksysguard/icon.png"

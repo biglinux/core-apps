@@ -1,0 +1,111 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-repair
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Restaurar o sistema"
+apply=$"Aplicar"
+close=$"Sair"
+
+tip_alsa=$"Restaura a configuracao do driver de som e do sistema Pulseaudio"
+tip_apache=$"Restaura a configuracao do servidor Apache"
+tip_apt=$"Tenta resolver os problemas mais comuns do gerenciador de pacotes Apt-get"
+tip_bluetooth=$"Restaura a configuracao do sistema de gerenciamento de dispositivos bluetooth"
+tip_cups=$"Restaura a configuracao do sistema de impressao"
+tip_dpkg=$"Tenta resolver os problemas mais comuns do gerenciador de pacotes Dpkg"
+tip_initrd=$"Gera novamente o initird de todas as versoes de kernel instaladas, caso alguma versao de kernel nao esteja efetuando boot tente essa opcao."
+tip_grub=$"Gera nova configuracao da tela de boot"
+tip_grub_install=$"Instala novamente o Grub, geralmente necessario apos a instalacao de outro sistema operacional"
+tip_kdm=$"Se estiver com problemas na tela de login teste essa opcao"
+tip_xorg=$"Restaura a configuracao do modo grafico"
+tip_grub_part=$"Na maioria dos casos o recomendado e escolher /dev/sda ou /dev/sdb"
+tip_network=$"Restaura a configuracao da conexao com a internet"
+tip_samba=$"Restaura a configuracao do compartilhamento de arquivos na rede"
+
+
+
+#title
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Restaure a configuracao do sistema."
+close_header
+
+
+#O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#Quando se utiliza aspas duplas o sistema executa algumas partes do codigo antes de passar a resposta, entre essas execucoes inclui a interpretacao de variaveis
+#Para incluir textos a serem exibidos ao usuario utilize aspas duplas com $ antes, para que funcione o sistema de tradução, exemplo: $"texto"
+#No exemplo abaixo o memso comando echo foi aberto e fechado diversas vezes de acordo com a necessidade, aspas simples, duplas e duplas com traducao.
+echo '<center><table width=95%><tr><td>'
+echo '<form action=system_submit.sh.htm method=get>'
+
+echo "<table width=95%>"
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=alsa NAME=alsa VALUE=yes $alsa_check  $mouseover_open $tip_alsa $mouseover_close><label for=alsa $mouseover_open $tip_alsa $mouseover_close>" $"Alsa/Pulseaudio (Gerenciador de audio)" '</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=apache NAME=apache VALUE=yes $apache_check  $mouseover_open $tip_apache $mouseover_close><label for=apache $mouseover_open $tip_apache $mouseover_close>" $"Apache (Servidor WEB)" '</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=apt NAME=apt VALUE=yes $apt_check  $mouseover_open $tip_apt $mouseover_close><label for=apt $mouseover_open $tip_apt $mouseover_close>" $"Apt-get (Gerenciador de pacotes)" '</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=bluetooth NAME=bluetooth VALUE=yes $bluetooth_check  $mouseover_open $tip_bluetooth $mouseover_close><label for=bluetooth $mouseover_open $tip_bluetooth $mouseover_close>" $"Bluetooth (Gerenciador de dispositivos bluetooth)" '</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=cups NAME=cups VALUE=yes $cups_check  $mouseover_open $tip_cups $mouseover_close><label for=cups $mouseover_open $tip_cups $mouseover_close>" $"Cups (Gerenciador de impressoras)" '</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=dpkg NAME=dpkg VALUE=yes $dpkg_check  $mouseover_open $tip_dpkg $mouseover_close><label for=dpkg $mouseover_open $tip_dpkg $mouseover_close>" $"Dpkg (Gerenciador de pacotes)" '</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=grub NAME=grub VALUE=yes $grub_check  $mouseover_open $tip_grub $mouseover_close><label for=grub $mouseover_open $tip_grub $mouseover_close>" $"Grub (Gerenciador de boot)" '</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox onClick=\"Reveal('div-grub', this)\" ID=grub_install NAME=grub_install VALUE=yes $grub_install_check  $mouseover_open $tip_grub_install $mouseover_close><label for=grub_install $mouseover_open $tip_grub_install $mouseover_close>" $"Grub Install (Gerenciador de boot)" '</label></td></tr>'
+
+
+    echo '</table><div id="div-grub" style="display:none"><table align=center><tr><td>'
+
+    echo $"Selecione onde deve ser instalado o Grub:" "<select name=grub_part $mouseover_open $tip_grub_part $mouseover_close>"
+    for i in $(ls /dev/sd* /dev/hd* 2>/dev/null); do
+	echo "<option>$i"
+    done
+    echo '</select>' 
+    echo '<br><br></td></tr></table></div><table width=95%>'
+
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=initrd NAME=initrd VALUE=yes $initrd_check  $mouseover_open $tip_initrd $mouseover_close><label for=initrd $mouseover_open $tip_initrd $mouseover_close>" $"Initrd (Inicio do boot)" '</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=kdm NAME=kdm VALUE=yes $kdm_check  $mouseover_open $tip_kdm $mouseover_close><label for=kdm $mouseover_open $tip_kdm $mouseover_close>" $"KDM (Gerenciador de login)" '</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=network NAME=network VALUE=yes $network_check  $mouseover_open $tip_network $mouseover_close><label for=network $mouseover_open $tip_network $mouseover_close>" $"Network (Conexao com a internet)" '</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=samba NAME=samba VALUE=yes $samba_check  $mouseover_open $tip_samba $mouseover_close><label for=samba $mouseover_open $tip_samba $mouseover_close>" $"Samba (Compartilhamento de arquivos na rede)" '</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=xorg NAME=xorg VALUE=yes $xorg_check  $mouseover_open $tip_xorg $mouseover_close><label for=xorg $mouseover_open $tip_xorg $mouseover_close>" $"Xorg (Modo grafico)" '</label></td></tr>'
+
+    echo "</table>"
+
+
+
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

@@ -1,0 +1,207 @@
+#!/bin/bash
+
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+dir_name="$(echo "$2" | sed 's|/$||g')"
+dir_name2="$(echo "$2" | sed 's|/$||g;s|.*/||g')"
+dir_nameenc="$(echo "$2" | sed 's|/$||g;s|.*/|.encfs_|g')"
+dir_base="$(echo "$2" | sed "s|/$||g;s|$dir_name2||g")"
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-others-encfs
+
+
+
+#Options
+case "$1" in
+
+    --mount)
+
+	if [ "$(groups $USER | grep fuse)" = ""  ]
+	then
+	    kdialog --yesno $"O usuario $USER nao possui permissao para
+criar pastas criptografadas.
+
+Permitir o usuario $USER utilizar pastas criptografadas?"
+	    if [ "$?" -ne 1 ]; then
+		bigsudo adduser "$USER" fuse
+	    else
+		exit
+	    fi
+	fi
+
+	if [ "$(echo "$(grep ^encfs /etc/mtab | cut -f2 -d " " | sed 's|\\040| |g')" | grep "$dir_name")" = ""  ]
+	then
+	    if [ -e "$dir_base$dir_nameenc"  ]
+	    then
+		if [ "$(ls --ignore=.directory "$dir_name")" != "" ]; then
+		    kdialog --msgbox $"A pasta $dir_name nao esta vazia.
+Esvazie-a para que a mesma possa ser ativada e apresente os arquivos criptografados." --title $"Bigencfs"
+		    exit 0
+		fi
+
+		encfs --extpass="/usr/share/bigcontrolcenter/categories/others/encfs/kdialog_password" "$dir_base$dir_nameenc" "$2"
+		if [ $? != 0 ]; then
+		    kdialog --msgbox $"Nao foi possivel ativar a pasta criptografada, provavelmente a senha esta errada." --title $"Bigencfs"
+		else
+		    kdialog --passivepopup $"Pasta criptografada $2 esta ativa.
+Se necessario clique em recarregar no gerenciador de arquivos." --title $"Bigencfs"
+		fi
+	    else
+		kdialog --msgbox $"Pasta criptografada nao encontrada, antes de ativar e necessario cria-la." --title $"Bigencfs"
+	    fi
+	else
+	    kdialog --msgbox $"Essa pasta ja esta ativa." --title $"Bigencfs"
+	fi
+	exit 0
+    ;;
+
+    --make)
+
+	if [ "$(groups $USER | grep fuse)" = ""  ]
+	then
+	    kdialog --yesno $"O usuario $USER nao possui permissao para
+criar pastas criptografadas.
+
+Permitir o usuario $USER utilizar pastas criptografadas?"
+	    if [ "$?" -ne 1 ]; then
+		bigsudo adduser "$USER" fuse
+	    else
+		exit
+	    fi
+	fi
+
+	if [ ! -e "$dir_base$dir_nameenc"  ]
+	then
+	    if [ "$(ls --ignore=.directory -A "$dir_name")" != "" ]; then
+		kdialog --msgbox $"A pasta $dir_name nao esta vazia.
+Para criar uma pasta criptografada e necessario que a mesma esteja vazia." --title $"Bigencfs"
+		exit 0
+	    fi
+
+	    echo "$2" > ~/.bigencfs_folder_selected
+	    bigbashview /usr/share/bigcontrolcenter/categories/others/encfs/make_password.sh.htm?dir="$2"
+	else
+	    kdialog --msgbox $"Essa pasta aparenta ja estar criptografada." --title $"Bigencfs"
+
+	fi
+	exit 0
+    ;;
+
+    --umount)
+	if [ -e "$dir_base$dir_nameenc"  ]
+	then
+	    if [ "$(echo "$(grep ^encfs /etc/mtab | cut -f2 -d " " | sed 's|\\040| |g')" | grep "$dir_name")" != ""  ]
+	    then
+		fusermount -u -z "$2"
+		kdialog --passivepopup $"Pasta criptografada $2 foi desativada." --title $"Bigencfs"
+	    else
+		kdialog --msgbox $"Essa pasta nao esta ativa." --title $"Bigencfs"
+	    fi
+	else
+	    kdialog --msgbox $"Essa pasta nao esta criptografada." --title $"Bigencfs"
+	fi
+	exit 0
+    ;;
+
+    --list)
+      listar=$"Pastas criptografadas ativas:"
+      kdialog --msgbox "$listar
+
+$(grep ^encfs /etc/mtab | cut -f2 -d " " | sed 's|\\040| |g')" --title $"Bigencfs"
+      exit 0
+    ;;
+
+    --make-backup)
+	if [ -e "$dir_base$dir_nameenc"  ]
+	then
+	    if [ "$(echo "$(grep ^encfs /etc/mtab | cut -f2 -d " " | sed 's|\\040| |g')" | grep "$dir_name")" = ""  ]
+	    then
+		if [ "$(ls --ignore=.directory "$dir_name")" != "" ]; then
+		    kdialog --msgbox $"A pasta $dir_name nao esta vazia.
+Esvazie-a para que possa ser feito o backup dos arquivos criptografados." --title $"Bigencfs"
+		    exit 0
+		fi
+		cd "$dir_base"
+		kdialog --passivepopup $"Escolha onde salvar o backup." --title $"Bigencfs" &
+		tar -zcf "$(kdialog --getsavefilename "~/$dir_name2.bigenc" .bigenc)" "$dir_nameenc" "$dir_name2"
+		kdialog --msgbox $"Backup salvo!" --title $"Bigencfs"
+	    else
+		kdialog --msgbox $"A pasta esta em uso, desative-a antes de efetuar o backup." --title $"Bigencfs"
+	    fi
+	else
+	    kdialog --msgbox $"Pasta criptografada nao encontrada." --title $"Bigencfs"
+	fi
+    ;;
+
+    --restore-backup)
+	kdialog $"Cuidado ao restaurar um backup, ele pode sobrepor uma pasta atual." --title $"Bigencfs"
+	kdialog --yesno $"Deseja realmente restaurar a pasta $(tar ztf "$2" 2> /dev/null | head -1 | sed 's|/$||g')?"
+	if [ "$?" -ne 1 ]; then
+	    kdialog --passivepopup $"Escolha onde restaurar o backup." --title $"Bigencfs" &
+	    cd $(kdialog --getexistingdirectory ~)
+	    tar -zxf "$2"
+	    kdialog --msgbox $"Pasta restaurada." --title $"Bigencfs"
+	else
+	    exit 0
+	fi
+    ;;
+
+    --change-passwd)
+	if [ "$(groups $USER | grep fuse)" = ""  ]
+	then
+	    kdialog --yesno $"O usuario $USER nao possui permissao para
+criar pastas criptografadas.
+
+Permitir o usuario $USER utilizar pastas criptografadas?"
+	    if [ "$?" -ne 1 ]; then
+		bigsudo adduser "$USER" fuse
+	    else
+		exit
+	    fi
+	fi
+
+	if [ -e "$dir_base$dir_nameenc"  ]
+	then
+	    konsole --noclose -e encfsctl passwd "$dir_base$dir_nameenc"
+	else
+	    kdialog --msgbox $"Pasta criptografada nao encontrada." --title $"Bigencfs"
+	fi
+    ;;
+
+    --info)
+	if [ -e "$dir_base$dir_nameenc"  ]
+	then
+	    kdialog --msgbox "$(encfsctl info "$dir_base$dir_nameenc")" --title $"Bigencfs"
+	else
+	    kdialog --msgbox $"Pasta criptografada nao encontrada." --title $"Bigencfs"
+	fi
+    ;;
+
+    --help)
+	kdialog --msgbox $"Pasta criptografada nao encontrada." --title $"Bigencfs"
+    ;;
+
+    *)
+        echo "Manage encfs
+
+--make			Example: --make /home/user/encodefs
+--mount			Example: --mount /home/user/encodefs
+--umount		Example: --umount /home/user/encodefs
+--list			Show mounted folders
+--make-backup		Example: --make-backup /home/user/encodefs
+--restore-backup	Example: --restore-backup /home/user/encfs_encodefs.tar.gz
+--change-passwd		Example: --change-passwd /home/user/encodefs
+--info			Example: --info /home/user/encodefs
+"
+
+    ;;
+
+esac
+

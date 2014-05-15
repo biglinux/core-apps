@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-servers-ssh
+Version: 1.0.0-1kaiana5
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: bigssh, bigcontrolcenter (>= 1.0.0-1kaiana16), konsole, dolphin
+Section: admin
+Priority: optional
+Description: Configure SSH
+

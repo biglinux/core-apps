@@ -1,0 +1,62 @@
+if [ ! -e "$HOME/.config/chromium/bigmemory" ]
+then
+    if [ "$(grep MemTotal /proc/meminfo | awk '{print $2}')" -le "1000000" ]
+    then
+	memory='-memory-model=low'
+    fi
+fi
+
+if [ ! -e "$HOME/.config/chromium/biglite" ]
+then
+    if [ "$(echo $KDEHOME | grep kdesktop-lite)" != "" ]
+    then
+	    lite="--user-data-dir=$HOME/.config/chromium-lite"
+    fi
+fi
+
+if [ ! -e "$HOME/.config/chromium/bigsiteprocess" ]
+then
+	siteprocess='-process-per-site'
+fi
+
+if [ ! -e "$HOME/.config/chromium/bigenablegpu" ]
+then
+  composite='--disable-accelerated-compositing'
+fi
+
+if [ -e "/opt/google/chrome/PepperFlash/libpepflashplayer.so" ]
+then
+  composite='--ppapi-flash-path=/opt/google/chrome/PepperFlash/libpepflashplayer.so'
+fi
+
+if [ -e "$HOME/.config/chromium/bigagent" ]
+then
+
+    if [ "$(grep firefox36 ~/.config/chromium/bigagent)" != "" ]
+    then
+	agent='--user-agent="Mozilla/5.0 (X11; Linux i686; rv:2.0.1) Gecko/20110518 Firefox/4.0.1"'
+    fi
+
+    if [ "$(grep ie6 ~/.config/chromium/bigagent)" != "" ]
+    then
+	agent='--user-agent="Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"'
+    fi
+
+    if [ "$(grep ie7 ~/.config/chromium/bigagent)" != "" ]
+    then
+	agent='--user-agent="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"'
+    fi
+
+    if [ "$(grep ie8 ~/.config/chromium/bigagent)" != "" ]
+    then
+	agent='--user-agent="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)"'
+    fi
+
+    if [ "$(grep google ~/.config/chromium/bigagent)" != "" ]
+    then
+	agent='--user-agent="Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"'
+    fi
+
+fi
+
+chromium-browser.distrib -purge-memory-button "$lite" "$agent" $siteprocess $memory $composite ${1+"$@"}

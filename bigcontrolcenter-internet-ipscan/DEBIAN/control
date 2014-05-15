@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-internet-ipscan
+Version: 1.0.0-1kaiana2
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: bigcontrolcenter (>= 1.0.0-1kaiana16), nmap, kde-baseapps-bin, sed, dnsutils
+Section: admin
+Priority: optional
+Description: Nmap gui. IP scan and port scan.
+

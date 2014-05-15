@@ -1,0 +1,107 @@
+style "notebook" {
+	xthickness    		        	= 3
+	ythickness    		        	= 3
+
+	engine "pixmap" 
+	{
+		image
+		{
+			function		= FOCUS
+		}
+	    image 
+		{
+			function		= BOX_GAP
+			recolorable		= TRUE
+			file			= "Notebook/notebook.png" 
+			border			= { 10, 10, 10, 10}
+			stretch			= TRUE
+			gap_file	    = "Notebook/gap-top.png"
+	        gap_border	    = { 10, 10, 10, 10 }
+			gap_side		= TOP
+		}
+		image 
+		{
+			function		= BOX_GAP
+			recolorable		= TRUE
+			file			= "Notebook/notebook-bottom.png" 
+			border			= { 10, 10, 10, 10}
+			stretch			= TRUE
+			gap_file	    = "Notebook/gap-bottom.png"
+	        gap_border	    = { 10, 10, 10, 10 }
+			gap_side		= BOTTOM
+		}
+		image 
+		{
+			function		= BOX_GAP
+			recolorable		= TRUE
+			file			= "Notebook/notebook-left.png" 
+			border			= { 10, 10, 10, 10}
+			stretch			= TRUE
+			gap_file	    = "Notebook/gap-left.png"
+	        gap_border	    = { 10, 10, 10, 10 }
+			gap_side		= LEFT
+		}
+		image 
+		{
+			function		= BOX_GAP
+			recolorable		= TRUE
+			file			= "Notebook/notebook-right.png" 
+			border			= { 10, 10, 10, 10}
+			stretch			= TRUE
+			gap_file	    = "Notebook/gap-right.png"
+	        gap_border	    = { 10, 10, 10, 10 }
+			gap_side		= RIGHT
+		}
+		image 
+		{
+			function		= BOX
+			recolorable		= TRUE
+			file			= "Notebook/notebook.png" 
+			border			= { 10, 10, 10, 10}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= ARROW
+			recolorable		= TRUE
+			overlay_file		= "Arrows/arrow-up.png"
+			overlay_border		= { 0, 0, 0, 0}
+			overlay_stretch		= FALSE
+			arrow_direction		= UP
+		}    
+		image
+		{
+			function		= ARROW
+			recolorable		= TRUE
+			overlay_file		= "Arrows/arrow-down.png"
+			overlay_border		= { 0, 0, 0, 0}
+			overlay_stretch		= FALSE
+			arrow_direction		= DOWN
+		}    
+		image
+		{
+			function		= ARROW
+			recolorable		= TRUE
+			overlay_file		= "Arrows/arrow-left.png"
+			overlay_border		= { 0, 0, 0, 0}
+			overlay_stretch		= FALSE
+			arrow_direction		= LEFT
+		}
+		image
+		{
+			function		= ARROW
+			recolorable		= TRUE
+			overlay_file		= "Arrows/arrow-right.png"
+			overlay_border		= { 0, 0, 0, 0}
+			overlay_stretch		= FALSE
+			arrow_direction		= RIGHT
+		}
+	}
+}
+
+
+style "notebook_bg" {
+    bg[NORMAL] = "#e2e2e2"
+	bg[ACTIVE] = "#e2e2e2"
+	fg[ACTIVE] = mix (0.8, @fg_color, shade (0.97, "#e2e2e2"))
+}

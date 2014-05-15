@@ -1,0 +1,9 @@
+[KSplash Theme: Default]
+Name = Big Spin
+Description = Big Spin
+Version = 1.0
+Author = lunimare
+
+
+# Theme behaviour settings.
+Engine = KSplashX

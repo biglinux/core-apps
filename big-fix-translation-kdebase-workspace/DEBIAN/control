@@ -1,0 +1,9 @@
+Package: big-fix-translation-kdebase-workspace
+Version: 1.0.0-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Replaces: kdebase-workspace-bin, kde-workspace-bin
+Depends: kdebase-workspace-bin | kde-workspace-bin
+Section: x11
+Priority: optional
+Description: For best translation

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Virtual Keyboard
+Comment=Virtual Keyboard
+Exec=bigkvkbd-applet&
+Terminal=false
+Type=Application
+Icon=kvkbd

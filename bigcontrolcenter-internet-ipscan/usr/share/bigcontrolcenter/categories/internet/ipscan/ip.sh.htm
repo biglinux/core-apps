@@ -1,0 +1,235 @@
+#!/bin/bash
+#Control Center for Kaiana
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+# acessa pasta de configuração
+cd ~/.config/bigcontrolcenter/ipscanner
+
+# Importa arquivo que irá definir o tema do painel e algumas outras facilidades.
+# Entre as facilidades está incluso o jquery.
+. /usr/share/bigcontrolcenter/import-theme.htm
+
+# Informe o título.
+big_title=$"Identificar IPs ativos na rede"
+
+# Informe uma descrição curta.
+big_description=$"Confira todos os dispositivos conectados na mesma rede."
+
+# Informe o caminho do ícone, de preferência no tamanho 32x32, também pode ficar em branco.
+big_icon="icon.png"
+
+# Caso esse painél vá ser traduzido especifique o nome que será dado à tradução que ficará na pasta: /usr/share/locale-langpack
+big_translate="bigbashview_formulario"
+
+# Descomente a linha a seguir para desativar a parte superior do painel onde fica o título, ícone e descrição.
+#big_header_disable="1"
+
+# Descomente a linha a seguir para desativar a imagem de fundo.
+#big_bg_color_disable="1"
+
+# Descomente a linha a seguir para desativar a imagem de fundo.
+#big_bg_image_disable="1"
+
+# Adiciona o layout geral do painel e o cabeçalho, onde aparece o título, ícone e descrição.
+big_header
+
+#########################################
+# Até aqui foram preenchidos dados
+# padronizados, portanto a seguir está
+# realmente a parte funcional do painel.
+#########################################
+
+#Corrige um problema de quebra de linha
+cat bloco_ips | tr -d '[\r]' > bloco_ips2
+rm -f bloco_ips
+mv bloco_ips2 bloco_ips
+
+#Início do formulário, informe o arquivo que irá recebe-lo em action.
+echo "<form action=\"ip.run\" method=\"post\">"
+
+
+OIFS=$IFS
+IFS=$'\n'
+
+if [ "$(cat html)" != "1" ]; then
+
+    echo "<br>"
+    echo "<table><tr><td></td><td>"
+    echo "<b>"
+    echo $"Serviço:"
+    echo "</b>"
+
+    #Menu Drop Down.
+    echo "<select name=\"menu\">
+    <option value=\"web\">" $"Web" "</option>
+    <option value=\"samba\">" $"Samba" "</option>
+    <option value=\"fish\">" $"Fish (sftp)" "</option>
+    <option value=\"ftp\">" $"Ftp" "</option>
+    <option value=\"ssh\">" $"Ssh" "</option>
+    </select>"
+
+    echo "<td width=10px></td><td>"
+
+    echo "<b>"
+    echo $"Porta:"
+    echo "</b>"
+
+    #Javascript para evitar que sejam inseridos caracteres que não sejam numéricos
+    echo '<script language=javascript>function isNumber(evt){var charCode = (evt.which) ? evt.which : event.keyCode;if (charCode != 46 && charCode >31 && (charCode < 48 || charCode > 57)) return false; return true;}</script>'
+    #
+    # Campo para números
+    inputnumber_title=$"Deixe o valor 0 (zero) para que seja utilizada a porta padrão do serviço, ou especifique a porta desejada."
+    echo "<input type=\"number\" title=\"$inputnumber_title\" name=\"porta\" value=\"0\" step=\"1\" style=\"width:80px;\" onkeypress=\"return isNumber(event)\"/>"
+
+    echo "</table>"
+    echo "<hr>"
+    echo "<table><tr><td></td><td>"
+
+    echo "<b>"
+    echo $"Dispositivos:"
+    echo "</b>"
+    echo "<br>"
+    echo "<br>"
+
+    #Javascript para exibir e ocultar divs
+cat << EOF
+<script type='text/javascript'>
+\$(window).load(function(){
+\$("div.info").hide();
+
+\$("a").click(function() {
+    \$("div.info").hide();
+    \$("div." + this.className).show();
+});
+});
+</script>
+EOF
+
+else
+
+    echo "<br><br><br><br><br><center>"
+    echo $"Arquivo gerado em: "
+    echo "<a href=\"open_url.run\">$(cat html_url)</a>"
+fi
+
+
+if [ "$(cat html)" = "1" ]; then
+    echo "<body bgcolor=black><font color=white><title>" > $(cat html_url)
+    echo $"Relatório de rede." >> $(cat html_url)
+    echo "</title>" >> $(cat html_url)
+    echo "<br><br><center><b>" >> $(cat html_url)
+    echo $"Gerado pelo nmap através da interface gráfica do projeto União Livre, utilizando BigBashView." >> $(cat html_url)
+    echo "</b><br><br><br><br>" >> $(cat html_url)
+
+fi
+
+for i in $(LANG=C ifconfig | grep "inet addr" | grep -v "127.0.0.1" | sed 's|.*inet addr:||g;s| .*||g;s|\(.*\)\..*|\1.0/24|')
+do
+
+	#Confere se a igualdade é verdadeira
+	if [ "$(cat dispositivos)" = "manual" ]; then
+	    dispositivos="$(cat bloco_ips | sed -e '/^$/d' | sed -e '/^.$/d')"
+	else
+	    dispositivos="localhost
+$(LANG=C nmap -sP $i 2> /dev/null | grep "scan report for" | sed 's|.* ||g;s|(||g;s|)||g')"
+	fi
+
+	for x in $dispositivos
+	do
+	
+	for y in $(LANG=C ifconfig | grep "inet addr" | grep -v "127.0.0.1" | sed 's|.*inet addr:||g;s| .*||g')
+	do
+	    if [ "$(echo "$x" | sed 's|.*(||g;s|)||g')" != "$y" ];
+	    then
+		if [ "$(cat html)" != "1" ]; then
+		    echo "<input type=\"radio\" id=\"$(echo "$x" | sed 's|.*(||g;s|)||g')\" name=\"ip\" value=\"$(echo "$x" | sed 's|.*(||g;s|)||g')\" class=\"$(echo "$x" | sed 's|.*(||g;s|)||g;s|\.||g')\"><label for=\"$(echo "$x" | sed 's|.*(||g;s|)||g')\">"
+		fi
+		#Confere se o hostname foi resolvido, se não foi, tenta resolver com nslookup
+		if [ "$(echo "$x" | grep "(")" = "" ]; then
+		    if [ "$(cat html)" = "1" ]; then
+			echo "<b>" >> $(cat html_url)
+			echo "$(nslookup $x | grep "name = " | sed 's|.*name = ||g') ($x)" >> $(cat html_url)
+			echo "</b><br>" >> $(cat html_url)
+		    else
+			echo "$(nslookup $x | grep "name = " | sed 's|.*name = ||g') ($x)"
+		    fi
+		else
+		    if [ "$(cat html)" = "1" ]; then
+			echo "<b>" >> $(cat html_url)
+			echo "$x" >> $(cat html_url)
+			echo "</b><br>" >> $(cat html_url)
+		    else
+			echo "$x"
+		    fi
+		fi
+		echo "</label>"
+
+		if [ "$(cat html)" != "1" ]; then		
+		    if [ "$(cat parametros_nmap)" != "nenhum" ]; then
+			echo "<a href=\"ip.sh.htm#\" class=\"$(echo "$x" | sed 's|.*(||g;s|)||g;s|\.||g')\">Ver mais</a>"
+		    fi
+		fi
+		echo "<br>"
+		echo "<div class=\"$(echo "$x" | sed 's|.*(||g;s|)||g;s|\.||g') info\" style=\"display:none\">"
+
+		#Campo de texto
+		echo "<textarea rows=\"13\" cols=\"80\">"
+
+
+		if [ "$(cat parametros_nmap)" = "0" ]; then
+		    parametros_nmap=""
+		fi
+
+		if [ "$(cat parametros_nmap)" = "tudo" ]; then
+		    parametros_nmap="-p1-65535"
+		fi
+
+		if [ "$(cat parametros_nmap)" = "manual" ]; then
+		    parametros_nmap="$(cat parametros_nmap_manual)"
+		fi
+
+		if [ "$(cat parametros_nmap)" != "nenhum" ]; then
+		    if [ "$(cat html)" = "1" ]; then
+			echo "<br><textarea rows=\"18\" cols=\"80\">" >> $(cat html_url)
+			nmap $parametros_nmap "$(echo "$x" | sed 's|.*(||g;s|)||g')" >> $(cat html_url)
+			echo "</textarea><br><br><br><br>" >> $(cat html_url)
+		    else
+			nmap $parametros_nmap "$(echo "$x" | sed 's|.*(||g;s|)||g')"
+		    fi
+		fi
+
+		echo "</textarea>"
+		echo "</div>"
+		
+	    fi
+
+	done
+	
+    done
+
+done
+
+
+IFS=$OIFS
+
+
+#########################################
+# A partir daqui inicia o rodapé, onde devem ser colocados os botões, por exemplo, Aplicar, OK e Fechar.
+#########################################
+echo "<div id=\"rodape\">"
+
+# Exemplo de uso: button_link $"Descrição" "arquivo.sh.htm" "icone.png"
+button_link $"Voltar" "ip_start.sh.htm" "/usr/share/bigcontrolcenter/default/images/back.png"
+
+if [ "$(cat html)" != "1" ]; then
+    # Exemplo de uso: button_submit $"Descrição" "icone.png"
+    button_submit $"Acessar serviço"
+fi
+# Exemplo de uso: button_link $"Descrição" "icone.png"
+button_close $"Fechar"
+

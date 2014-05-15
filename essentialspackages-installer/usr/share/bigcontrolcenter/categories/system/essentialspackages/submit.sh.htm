@@ -1,0 +1,70 @@
+#!/bin/bash
+
+# Instalador de Pacotes Essenciais do Kaiana
+#
+# Autores:
+# Paulo Giovanni Pereira paulusiohannes@gmail.com
+#
+# License: GPLv2 or later
+#
+# Sigam me os bons!
+#################################################
+
+#################
+# Adiciona arquivo que gera o tema básico
+#################
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#################
+# Adiciona arquivo de tradução, caso necessário
+#################
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+
+#################
+# Alguns nomes foram colocados como variaveis para facilitar a criação de novos painéis
+#################
+title=$"Instalador de Pacotes Essenciais do Kaiana"
+apply=$"Aplicar"
+back=$"Voltar para tela de configuração"
+close=$"Sair"
+
+#################
+# Adiciona o título
+#################
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#################
+# Adiciona parte superior do painél
+#################
+open_header
+echo "$title" '</font><br>' $"Selecione o que deseja instalar."
+close_header
+
+#################
+
+if [ "$p_proprietario" = "yes" ]
+then
+
+    proprietario="google-chrome skype google-talkplugin flashplugin-installer" 
+
+fi
+
+if [ "$p_javaoracle" = "yes" ]
+then
+
+    javaoracle="oracle-jdk7-installer" 
+
+fi
+
+
+kdesudo "bigsynaptic --update"
+kdesudo "bigsynaptic --install $proprietario $javaoracle "
+
+
+
+#Exibe resposta para o usuário
+echo "<br><br><br><br><br><center><font size=+2>"
+echo $"Configuração aplicada."
+echo "</font></div><div id=rodape><button type=button  onClick=\"parent.location='essentialspackages.sh.htm'\">   <img src='/usr/share/bigcontrolcenter/default/images/ok.png' style='vertical-align:top'>  $back   </button> 
+
+<button type=button onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src='/usr/share/bigcontrolcenter/default/images/cancel.png' style='vertical-align:top'>  $close     </button></form></div></body>"

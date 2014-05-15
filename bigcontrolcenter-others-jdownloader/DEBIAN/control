@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-others-jdownloader
+Version: 1.0.2-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: sun-java7-bin | sun-java8-bin | sun-java6-bin | openjdk-6-jre | openjdk-7-jre | openjdk-8-jre, bigcontrolcenter
+Section: admin
+Priority: optional
+Description: JDownloader installer
+

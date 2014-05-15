@@ -1,0 +1,9 @@
+[KSplash Theme: BigLinux]
+Name = BigLinux Splash Screen
+Description = Based in Air and Ethais Splash Screen
+Version = 1.0
+Author = Modified by Bruno Goncalves <bigbruno@gmail.com> based work of: Nuno Pinheiro <nuno@oxygen-icons.org>, Riccardo Iaconelli <riccardo@kde.org> and Marco Martin <notmart@gmail.com>
+Homepage = http://www.biglinux.com.br
+
+# Theme behaviour settings.
+Engine = KSplashX

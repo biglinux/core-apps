@@ -1,0 +1,1088 @@
+# Estonian translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-13 22:26-0300\n"
+"PO-Revision-Date: 2010-09-04 16:14+0000\n"
+"Last-Translator: lyyser <Unknown>\n"
+"Language-Team: Estonian <et@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-05 04:43+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "3.0 (Maximo)"
+msgstr "3.0 (Maksimaalne)"
+
+msgid "2.8"
+msgstr "2.8"
+
+msgid "2.6"
+msgstr "2.6"
+
+msgid "2.4"
+msgstr "2.4"
+
+msgid "2.2"
+msgstr "2.2"
+
+msgid "2.0"
+msgstr "2.0"
+
+msgid "1.8"
+msgstr "1.8"
+
+msgid "1.6"
+msgstr "1.6"
+
+msgid "1.4"
+msgstr "1.4"
+
+msgid "1.2"
+msgstr "1.2"
+
+msgid "1.0 (Manter original)"
+msgstr "1.0 (Säilita algne)"
+
+msgid "0.8"
+msgstr "0.8"
+
+msgid "0.6"
+msgstr "0.6"
+
+msgid "0.4"
+msgstr "0.4"
+
+msgid "0.2"
+msgstr "0.2"
+
+msgid "0.0 (Minimo)"
+msgstr "0.0 (Miinimum)"
+
+msgid ""
+"Tempo indicado para iniciar a previsao ultrapassa o limite do video, gerando "
+"previsao a partir do inicio."
+msgstr ""
+"Kui märgitud eelvaatluse alustasmise aeg on pikem kui video kestus, alustab "
+"eelvaade algusest peale."
+
+msgid "1.0 (Maior)"
+msgstr "1.0 (Rohkem)"
+
+msgid "3"
+msgstr "3"
+
+msgid "3.2"
+msgstr "3.2"
+
+msgid "3.4"
+msgstr "3.4"
+
+msgid "3.6 (Padrao)"
+msgstr "3.6 (Vaikimisi)"
+
+msgid "3.8"
+msgstr "3.8"
+
+msgid "4.0"
+msgstr "4.0"
+
+msgid "4.3"
+msgstr "4.3"
+
+msgid "4.7"
+msgstr "4.7"
+
+msgid "5"
+msgstr "5"
+
+msgid "6"
+msgstr "6"
+
+msgid "7"
+msgstr "7"
+
+msgid "8"
+msgstr "8"
+
+msgid "9"
+msgstr "9"
+
+msgid "10"
+msgstr "10"
+
+msgid "15"
+msgstr "15"
+
+msgid "20"
+msgstr "20"
+
+msgid "25"
+msgstr "25"
+
+msgid "31 (Menor)"
+msgstr "31 (Väiksem)"
+
+msgid "6000 (Maior)"
+msgstr "6000 (Rohkem)"
+
+msgid "5500"
+msgstr "5500"
+
+msgid "5000"
+msgstr "5000"
+
+msgid "4500"
+msgstr "4500"
+
+msgid "4000"
+msgstr "4000"
+
+msgid "3500"
+msgstr "3500"
+
+msgid "3000"
+msgstr "3000"
+
+msgid "2600"
+msgstr "2600"
+
+msgid "2300"
+msgstr "2300"
+
+msgid "2000"
+msgstr "2000"
+
+msgid "1600"
+msgstr "1600"
+
+msgid "1400"
+msgstr "1400"
+
+msgid "1200 (Padrao)"
+msgstr "1200 (Vaikimisi)"
+
+msgid "1000"
+msgstr "1000"
+
+msgid "800"
+msgstr "800"
+
+msgid "600"
+msgstr "600"
+
+msgid "400"
+msgstr "400"
+
+msgid "200 (Menor)"
+msgstr "200 (Väiksem)"
+
+msgid "512 (Maior)"
+msgstr "512 (Rohkem)"
+
+msgid "440"
+msgstr "440"
+
+msgid "320"
+msgstr "320"
+
+msgid "256"
+msgstr "256"
+
+msgid "192"
+msgstr "192"
+
+msgid "160"
+msgstr "160"
+
+msgid "128"
+msgstr "128"
+
+msgid "96"
+msgstr "96"
+
+msgid "80"
+msgstr "80"
+
+msgid "72"
+msgstr "72"
+
+msgid "64 (Padrao)"
+msgstr "64 (Vaikimisi)"
+
+msgid "56"
+msgstr "56"
+
+msgid "48"
+msgstr "48"
+
+msgid "32"
+msgstr "32"
+
+msgid "24 (Menor)"
+msgstr "24 (Väiksem)"
+
+msgid "5 (Maior)"
+msgstr "5 (Rohkem)"
+
+msgid "12"
+msgstr "12"
+
+msgid "13"
+msgstr "13"
+
+msgid "14"
+msgstr "14"
+
+msgid "16"
+msgstr "16"
+
+msgid "17"
+msgstr "17"
+
+msgid "18"
+msgstr "18"
+
+msgid "19"
+msgstr "19"
+
+msgid "22"
+msgstr "22"
+
+msgid "23"
+msgstr "23"
+
+msgid "24 (Padrao)"
+msgstr "24 (Vaikimisi)"
+
+msgid "26"
+msgstr "26"
+
+msgid "27"
+msgstr "27"
+
+msgid "28"
+msgstr "28"
+
+msgid "29"
+msgstr "29"
+
+msgid "30"
+msgstr "30"
+
+msgid "33"
+msgstr "33"
+
+msgid "34"
+msgstr "34"
+
+msgid "35"
+msgstr "35"
+
+msgid "36"
+msgstr "36"
+
+msgid "37"
+msgstr "37"
+
+msgid "38"
+msgstr "38"
+
+msgid "39"
+msgstr "39"
+
+msgid "40"
+msgstr "40"
+
+msgid "42"
+msgstr "42"
+
+msgid "43"
+msgstr "43"
+
+msgid "44"
+msgstr "44"
+
+msgid "45"
+msgstr "45"
+
+msgid "46"
+msgstr "46"
+
+msgid "47"
+msgstr "47"
+
+msgid "49"
+msgstr "49"
+
+msgid "50 (Menor)"
+msgstr "50 (Väiksem)"
+
+msgid "4096 kbps (Muito Alta)"
+msgstr "4096 kbps (Väga kõrge)"
+
+msgid "3072 kbps"
+msgstr "3072 kbps"
+
+msgid "2048 kbps"
+msgstr "2048 kbps"
+
+msgid "1536 kbps"
+msgstr "1536 kbps"
+
+msgid "1280 kbps"
+msgstr "1280 kbps"
+
+msgid "1024 kbps (Alta)"
+msgstr "1024 kbps (Kõrge)"
+
+msgid "768 kbps"
+msgstr "768 kbps"
+
+msgid "512 kbps"
+msgstr "512 kbps"
+
+msgid "256 kbps"
+msgstr "256 kbps"
+
+msgid "192 kbps"
+msgstr "192 kbps"
+
+msgid "128 kbps"
+msgstr "128 kbps"
+
+msgid "96 kbps"
+msgstr "96 kbps"
+
+msgid "64 kbps (Padrao)"
+msgstr "64 kbps (Vaikimisi)"
+
+msgid "32 kbps (Baixa)"
+msgstr "32 kbps (Alam)"
+
+msgid "24"
+msgstr "24"
+
+msgid "27 (Padrao)"
+msgstr "27 (Padrao)"
+
+msgid "300(Padrao)"
+msgstr "300(Vaikimisi)"
+
+msgid "500"
+msgstr "500"
+
+msgid "1000(Melhor)"
+msgstr "1000(Parim)"
+
+msgid "6 (Surround 5.1)"
+msgstr "6 (Surround 5.1)"
+
+msgid "5 (Surround 5.0)"
+msgstr "5 (Surround 5.0)"
+
+msgid "4 (Surround 4.0)"
+msgstr "4 (Surround 4.0)"
+
+msgid "2 (Stereo)"
+msgstr "2 (Stereo)"
+
+msgid "1 (Mono)"
+msgstr "1 (Mono)"
+
+msgid "0 (Mudo)"
+msgstr "0 (Helitu)"
+
+msgid "Video XVID"
+msgstr "Video XVID"
+
+msgid "Video DIVX3"
+msgstr "Video DIVX3"
+
+msgid "Audio M4A"
+msgstr "Audio M4A"
+
+msgid "Video 3GP (263) Portatil"
+msgstr "3gp video (263) portatiivne"
+
+msgid "Video DIVX4"
+msgstr "Video DIVX4"
+
+msgid "Audio MP3"
+msgstr "Audio MP3"
+
+msgid "Video MP4 (264)"
+msgstr "Video MP4 (264)"
+
+msgid "Video MP4 (MPEG4) Portatil"
+msgstr "Video MP4 (MPEG4) portatiivne"
+
+msgid "Video MP4 (264) Portatil"
+msgstr "Video MP4 (264) portatiivne"
+
+msgid "Video Flash"
+msgstr "Flash video"
+
+msgid "Big Converter"
+msgstr "Suur konverter"
+
+msgid "Visualizar previsao"
+msgstr "Eelvaade"
+
+msgid "Sair"
+msgstr "Välju"
+
+msgid "Iniciar conversao"
+msgstr "Alusta konverteerimist"
+
+msgid "Converta videos ou extraia audio."
+msgstr "Konverteeri videod või eralda heli."
+
+msgid "2.0 (Maximo)"
+msgstr "2.0 (Maksimaalne)"
+
+msgid "0.0"
+msgstr "0.0"
+
+msgid "-0.2"
+msgstr "-0.2"
+
+msgid "-0.4"
+msgstr "-0.4"
+
+msgid "-0.6"
+msgstr "-0.6"
+
+msgid "-0.8"
+msgstr "-0.8"
+
+msgid "-1.0"
+msgstr "-1.0"
+
+msgid "-1.2"
+msgstr "-1.2"
+
+msgid "-1.4"
+msgstr "-1.4"
+
+msgid "-1.6"
+msgstr "-1.6"
+
+msgid "-1.8"
+msgstr "-1.8"
+
+msgid "-2.0 (Minimo)"
+msgstr "-2.0 (Miinimum)"
+
+msgid "Principal"
+msgstr "Põhiline"
+
+msgid "0"
+msgstr "0"
+
+msgid "1"
+msgstr "1"
+
+msgid "2"
+msgstr "2"
+
+msgid "4"
+msgstr "4"
+
+msgid "Converta videos e audios"
+msgstr "Konverteeri videod ja audio"
+
+msgid "256 kbps (Maior)"
+msgstr "256 kbps (Rohkem)"
+
+msgid "64 kbps"
+msgstr "64 kbps"
+
+msgid "48 kbps"
+msgstr "48 kbps"
+
+msgid "32 kbps (Padrao)"
+msgstr "32 kbps (Vaikimisi)"
+
+msgid "24 kbps (Menor)"
+msgstr "24 kbps (Väiksem)"
+
+msgid "500 (Maior qualidade)"
+msgstr "500 (Kõrgema kvaliteediga)"
+
+msgid "300"
+msgstr "300"
+
+msgid "200"
+msgstr "200"
+
+msgid "100"
+msgstr "100"
+
+msgid "90"
+msgstr "90"
+
+msgid "70"
+msgstr "70"
+
+msgid "60"
+msgstr "60"
+
+msgid "55 (Padrao)"
+msgstr "55 (Vaikimisi)"
+
+msgid "50"
+msgstr "50"
+
+msgid "15 (Menor qualidade)"
+msgstr "15 (Madalama kvaliteediga)"
+
+msgid "55"
+msgstr "55"
+
+msgid "40 (Padrao)"
+msgstr "40 (Vaikimisi)"
+
+msgid "256 kbps (Alta)"
+msgstr "256 kbps (Kõrge)"
+
+msgid "128 kbps (Padrao)"
+msgstr "128 kbps (Vaikimisi)"
+
+msgid "64 kbps (Baixa)"
+msgstr "64 kbps (Alam)"
+
+msgid "Definir outro valor"
+msgstr "Sea teisele väärtusele"
+
+msgid "6 (Padrao)"
+msgstr "6 (Vaikimisi)"
+
+msgid "7 (Media)"
+msgstr "7 (Meedia)"
+
+msgid "8 (Alta)"
+msgstr "8 (Kõrge)"
+
+msgid "24 kbps (Baixa)"
+msgstr "24 kbps (Alam)"
+
+msgid "3.0 (Maior)"
+msgstr "3.0 (Rohkem)"
+
+msgid "1.8 (Padrao)"
+msgstr "1.8 (Vaikimisi)"
+
+msgid "1.0"
+msgstr "1.0"
+
+msgid "0.2 (Menor)"
+msgstr "0.2 (Väiksem)"
+
+msgid "Manter original"
+msgstr "Säilita algne"
+
+msgid "21"
+msgstr "21"
+
+msgid "11"
+msgstr "11"
+
+msgid "15 Padrao"
+msgstr "15 (Vaikimisi)"
+
+msgid "AAC"
+msgstr "AAC"
+
+msgid "MP3"
+msgstr "MP3"
+
+msgid ""
+"Selecione outra pasta pois seu usuario nao possui permissao de escrita na "
+"selecionada."
+msgstr "Vali muu kaust, kuna kasutajal ei ole kirjutamis luba valitule."
+
+msgid ""
+"Nenhum video foi selecionado para conversao, adicione-o antes de prosseguir."
+msgstr "Pole videot valitud konvertimiseks, lisa enne jätkamist."
+
+msgid "Adicionar videos"
+msgstr "Lisa videod"
+
+msgid "Esvaziar lista"
+msgstr "Tühi nimekiri"
+
+msgid "Alterar destino"
+msgstr "Muuda sihtkohta"
+
+msgid "Avancar"
+msgstr "Edasijõudnud"
+
+msgid "Voltar"
+msgstr "Tagasta"
+
+msgid "Remover da lista"
+msgstr "Tühista tellimus"
+
+msgid "Reproduzir"
+msgstr "Paljundada"
+
+msgid "Ver informacoes"
+msgstr "Vaata täpsemalt"
+
+msgid ""
+"Ao clicar aqui o Big Converter sera configurado para gerar videos a serem "
+"reproduzidos nesse dispositivo."
+msgstr ""
+"Klikkides siia, Big Converter on konfigureeritud genereerima videoid mida "
+"esitakse selle seadmega."
+
+msgid "Onde serao salvos os videos ou audios convertidos"
+msgstr "Kuhu salvestatakse konvertitud videod või audiod"
+
+msgid "Dicas"
+msgstr "Nõuanded"
+
+msgid ""
+"<li>As opcoes MP4 Portatil e 3GP sao para uso em equipamentos portateis, "
+"principalmente celulares. MP4 possui melhor qualidade, enquanto o 3GP e "
+"suportado por uma variedade maior de aparelhos.\n"
+"<p><li>MP4 (264) possui possui otimizacoes nao suportadas pela opcao "
+"portatil, mas para assistir no computador e a melhor opcao.\n"
+"<p><li>XVID possui compactacao melhor que o DIVX e costuma funcionar bem em "
+"equipamentos que suportam DIVX, principalmente DVD Players.\n"
+"<p><li>As opcoes Audio MP3 e audio M4A extraem somente o audio do arquivo de "
+"video, util principalmente para ouvir em seu MP3 Player, sendo o MP3 "
+"compativel com mais aparelhos e o M4A com mais qualidade.\n"
+"<p><li>Para obter a melhor qualidade confira no manual do equipamento onde "
+"ira reproduzir o conteudo convertido qual a recomendacao do fabricante para "
+"formato e resolucao.\n"
+"<p><li>Lembre que conversoes sempre possuem perda de qualidade, portanto "
+"converter um video da baixa qualidade para um formato de melhor qualidade "
+"nao tera melhorias na imagem.\n"
+"<p><li>A resolucao otimizada para DVD mantem a resolucao original ate a "
+"largura de 720 pixels que e o limite dos DVD Players, caso a resolucao "
+"original seja maior, sera reduzida para 720 pixels."
+msgstr ""
+"<li>MP4 ja 3GP valikud kasutamiseks kaasaskantavate seadmetes peamiselt "
+"mobiiltelefonidel. MP4 on parema kvaliteediga, kuigi 3GP on laiemalt "
+"toetatud.\n"
+"<p><li>MP4 (264) on optimeeritum ja pole toetatud kaasaskantavale "
+"variandile, kuid see on parim võimalus vaadata arvutis.\n"
+"<p><li>XVID on parema kokkusurumisega kui DIVX ja tavaliselt toimib hästi "
+"seadmetes, mis toetavad DIVX, peamiselt DVD-mängijad.\n"
+"<p><li>MP3 ja M4A heli valikus eraldatakse ainult heli videofailist, kuulata "
+" peamiselt oma MP3 mängijaga, MP3 on kasutusul enamikes seadmetes kuigi M4A "
+"on parema kvaliteediga.\n"
+"<p><li>Parima kvaliteedi saamiseks kontrolli seadme manuaali, mis hakkab "
+"konvertima, mis teisendatab vastavalt tootja spetsifikatsioonile vormingus "
+"ja resolutsioonis.\n"
+"<p><li>Pea meeles, et alati iga järgnev konvertimine on halvema "
+"kvaliteediga, et Konvertida madala kvaliteediga video parema kvaliteediga "
+"vormingus ei anna  mitte mingisugust paranemist pildikvaliteetis.\n"
+"<p><li>DVD optimeeritud eraldusvõime sisaldab originaali resolutsioon kuni "
+"720 piksli laiusega, mis on määratletud DVD-mängijas, kui esialgne "
+"resolutsioon on suurem siis vähendatakse 720 pikslini."
+
+msgid "Configuracoes automaticas"
+msgstr "Automaatne seadistus"
+
+msgid "Celular simples, com suporte a 3GP."
+msgstr "Antud lahter, 3GP toetusega."
+
+msgid "Celular intermediario, com suporte a MP4."
+msgstr "Kesktasemega mobiil, mis toetab MP4."
+
+msgid "Celular moderno, com suporte a MP4."
+msgstr "Moodne mobiil, mis toetab MP4."
+
+msgid "DVD Player, com suporte a XVID."
+msgstr "DVD mängija XVIDtoetusega."
+
+msgid "DVD Player, com suporte a DIVX."
+msgstr "DVD mängija DIVX toetusega."
+
+msgid "iPOD somente audio."
+msgstr "iPOD heli ainult."
+
+msgid "iPOD video."
+msgstr "iPOD video."
+
+msgid "PSP Sony."
+msgstr "PSP Sony."
+
+msgid "Playstation 3."
+msgstr "Playstation 3."
+
+msgid "XBOX 360."
+msgstr "XBOX 360."
+
+msgid "BigMencoder"
+msgstr "BigMencoder"
+
+msgid "Iniciando..."
+msgstr "Alustan..."
+
+msgid "Conversao cancelada."
+msgstr "Konverteerimine katkestakse."
+
+msgid "Conversao de $i concluida."
+msgstr "$I konverteerimine lõpetatud."
+
+msgid "Big Mencoder"
+msgstr "Big Mencoder"
+
+msgid "Selecione o arquivo a ser utilizado na previsao"
+msgstr "Valige fail, mida kasutatakse eelvaates"
+
+msgid "(hh:mm:ss)"
+msgstr "(tt:mm:ss)"
+
+msgid "Selecione o video a ser utilizado na previsao."
+msgstr "Vali video mida kasutatakse eelvaates."
+
+msgid ""
+"Selecione quantos segundos deve ter a previsao.\n"
+"\n"
+"A previsao precisa ser completamente gerada antes de ser iniciada, dessa "
+"forma quanto mais segundos for escolhido mais tempo ira demorar para a "
+"previsao ser iniciada."
+msgstr ""
+"Vali, mitu sekundit peaks kestma eelvaade.\n"
+"\n"
+"Eelvaate peab olema enne alustamist täielikult genereeritud, seega pikemaks "
+"eelvaatluseks, kulub alustamiseks rohkem aega."
+
+msgid ""
+"Os arquivos de legenda devem estar na mesma pasta que o video e com o mesmo "
+"nome, sendo diferenciados apenas pela extensao.<br>Caso existam legendas "
+".ass e .srt sera utilizada a .ass.<br>Somente legendas .srt obedecem a "
+"formatacao desse configurador."
+msgstr ""
+"Subtiitri fail peab olema samas kaustas kus video ja sama nimega, erinevad "
+"ainult laiendid. <br>Juhul kui on .ass ja .srt subtiitrid. siis hakatakse "
+"kasutama .ass'i. <br>Ainult .srt subtiitrid kuuletuvad selle konfiguratsioon "
+"tööriista vormindamisele."
+
+msgid ""
+"Insere uma borda escura em torno da fonte que torna a leitura da legenda "
+"muito agradavel."
+msgstr ""
+"Lisab tumeda marginaali ümber kirjafondi mis teeb lugemise meeldivamaks."
+
+msgid "Prever resultado"
+msgstr "Eelvaade tulemus"
+
+msgid "Embutir legenda"
+msgstr "Lisa subtiitrid"
+
+msgid "Cor:"
+msgstr "Värv :"
+
+msgid "Adicionar borda"
+msgstr "Lisa serv"
+
+msgid "Bitrate em kbps"
+msgstr "Bitikiirus on kbps"
+
+msgid "Extras"
+msgstr "Lisad"
+
+msgid "Brilho"
+msgstr "Heledus"
+
+msgid "Contraste"
+msgstr "Kontrast"
+
+msgid "Saturacao (Cor)"
+msgstr "Küllastus (värviline)"
+
+msgid "Clique em ajuda para saber o melhor formato para cada situacao."
+msgstr "Kliki Abi'l et saada teavet parima vormingut iga juhtumi puhul."
+
+msgid ""
+"1 - Independente da resolucao selecionada o video nao ficara distorcido, mas "
+"isso ira torna-lo compativel com dispositivos que utilizam resolucao "
+"padronizada.<br>2 - Resolucoes maiores geram imagens mais nitidas, mas o "
+"tempo para conversao e o tamanho do arquivo gerado tornam se maiores.<br>3 - "
+"Lembre que utilizar resolucao maior que a original nao melhora a qualidade "
+"do video."
+msgstr ""
+"1 - Sõltumatu valitud resolutsiooniga, videot ei moonutata, kuid seda võib "
+"muuta kooskõlas seadmega, mis kasutavad standardiseeritud resolutsioon. "
+"<br>2 - suurem resolutsioonid tekitada teravamat pilti, aga muundamise ajaga "
+"ja faili suurus on suuremad samuti. <br>3 - Pea meeles, et kasutades "
+"resolutsiooni mis on suurem kui originaal ei parane video kvaliteet."
+
+msgid ""
+"1 - Qualidades maiores geram imagens mais nitidas, porem tornam a conversao "
+"mais lenta e o arquivo gerado sera maior.<br>2 - O uso da opcao padrao "
+"costuma ser a melhor relacao entre tamanho e qualidade."
+msgstr ""
+"1 - Parema kvaliteediga tekitada teravamat pildi, aga muundamise aeg on "
+"pikem ja genereeritud faili suurus on suurem. <br>2 - vaikmisi variant on "
+"tavaliselt parima suuruse/kvaliteedi suhtega."
+
+msgid ""
+"1 - Qualidades maiores possuem menores distorcoes no audio, porem tornam a "
+"conversao mais lenta e o arquivo gerado sera maior.<br>2 - Recomendamos o "
+"uso da opcao padrao ou de qualidade superior."
+msgstr ""
+"1 - Parema kvaliteediga on vähem heli moonutamist, vaid muundamise aeg on "
+"pikem ja genereeritud faili suurus on suurem. <br>2 - Soovitame vaikevalik "
+"mis on parema kvaliteediga."
+
+msgid ""
+"1 - Caso o video a ser convertido possua mais de um audio confira no player "
+"de video qual trilha deseja manter.<br>2 - Em geral videos com mais de um "
+"audio sao os que possuem versao original e dublada no mesmo arquivo."
+msgstr ""
+"1 - Kui video konvertitakse on videol mitu heliriba, kontrollige "
+"videopleieril millst neist säilitada.<br>2 - Tavaliselt videod mitu "
+"heliriba, üks on original audio ja teine dubleeritud versioonis sama failil."
+
+msgid ""
+"Para evitar distorcoes mantenha o volume padrao, mas se o video a ser "
+"convertido necessitar de alteracoes utilize essa ferramenta."
+msgstr ""
+"Selleks, et vältida moonutusi, hoia vaikimisi andmemahtu, kuid kui videot on "
+"vaja konverteerida ning vajab muudatusi, kasutage seda tööriista."
+
+msgid "Confira como ficara a conversao do video com a configuracao escolhida"
+msgstr ""
+"Vaata, kuidas video konvertimine lülitub välja koos valitud konfiguatsiooniga"
+
+msgid ""
+"1 - Essa opcao permite reduzir a quantidade de canais de audio, mas nao e "
+"possivel aumentar.<br>2 - Caso o equipamento de som a ser utilizado na "
+"reproducao possua menos canais que o equipamento onde sera reproduzido pode "
+"se economizar espaco reduzindo a quantidade de canais."
+msgstr ""
+"1 - See valik võimaldab vähendada heli kanaleid, kuid mitte suurendada.<br>2 "
+"- Kui seadmes, mida kasutatakse konverdidud faili paljundamiseks on vähem "
+"kanaleid ning see võib säästa ruumi väiksemast helikanali kogusest."
+
+msgid ""
+"1 - Estudos dizem que o olho humano consegue captar apenas 24 quadros por "
+"segundo, portanto disponibilizamos somente ate esse valor.<br>2 - A maioria "
+"dos celulares consegue reproduzir apenas 15 quadros por segundo, outros "
+"apenas 12.<br>3 - Videos que serao assistidos no computados ou em DVD "
+"costumam possuir melhor qualidade mantendo o valor original."
+msgstr ""
+"1 - Uuringud ütlevad, et inimsilm saab näha 24 kaadrit sekundis, mistõttu me "
+"konverdime ainult selle tasemeni.<br>2 - Enamik mobiiltelefonidest võib "
+"reprodutseerida ainult kuni 15 kaadrit sekundis, mõned ainult 12.<br>3 - "
+"Videod, mida vaatad arvutist või DVD'st on tavaliselt parema kvaliteediga, "
+"säilitada algne kaadrisagedust väärtus."
+
+msgid ""
+"Um guia pratico que ira auxiliar na escolha do melhor formato para conversao."
+msgstr "Juhend, mis aitaks valida parima tulemuse vormingus."
+
+msgid ""
+"Com o turbo ativado a conversao pode ser ate 4 vezes mais rapida, porem "
+"possui uma pequena reducao na qualidade da imagem."
+msgstr ""
+"Mis turbo lubatud, muutmine võib olla kuni 4 korda kiiremini. kuid see on "
+"väike kaotus kvaliteedis"
+
+msgid "Converter para:"
+msgstr "Teisenda:"
+
+msgid "Ajuda"
+msgstr "Aitama"
+
+msgid "Video"
+msgstr "Video"
+
+msgid "Turbo Ativo."
+msgstr "Aktiivne Turbo."
+
+msgid "Turbo Inativo."
+msgstr "Turbo režiim."
+
+msgid "Esse formato nao possui configuracoes de video."
+msgstr "Puuduvad video konfiguratsioonid sellele vormingule."
+
+msgid "Resolucao"
+msgstr "Resolutsioon"
+
+msgid "Largura"
+msgstr "Laius"
+
+msgid "Altura"
+msgstr "Kõrgus"
+
+msgid "Qualidade"
+msgstr "Kvaliteet"
+
+msgid "Quadros por segundo"
+msgstr "Kaadrit sekundis"
+
+msgid "Audio"
+msgstr "Audio"
+
+msgid "Formato de audio"
+msgstr "Audio vorming"
+
+msgid "Canais"
+msgstr "Kanalid"
+
+msgid "Trilha"
+msgstr "Jälg"
+
+msgid "Volume"
+msgstr "Helitugevus"
+
+msgid "21 (Maximo)"
+msgstr "21 (Maksimum)"
+
+msgid "0 (Padrao)"
+msgstr "0 (Vaikimisi)"
+
+msgid "-3"
+msgstr "-3"
+
+msgid "-6"
+msgstr "-6"
+
+msgid "-9"
+msgstr "-9"
+
+msgid "-12"
+msgstr "-12"
+
+msgid "-15"
+msgstr "-15"
+
+msgid "-18"
+msgstr "-18"
+
+msgid "-21 (Minimo)"
+msgstr "-21 (Miinimum)"
+
+msgid "1.0 (Maximo)"
+msgstr "1.0 (Maksimaalne)"
+
+msgid "0.9"
+msgstr "0.9"
+
+msgid "0.7"
+msgstr "0.7"
+
+msgid "0.5"
+msgstr "0.5"
+
+msgid "0.3"
+msgstr "0.3"
+
+msgid "0.1"
+msgstr "0.1"
+
+msgid "0.0 (Manter original)"
+msgstr "0.0 (Säilita algne)"
+
+msgid "-0.1"
+msgstr "-0.1"
+
+msgid "-0.3"
+msgstr "-0.3"
+
+msgid "-0.5"
+msgstr "-0.5"
+
+msgid "-0.7"
+msgstr "-0.7"
+
+msgid "-0.9"
+msgstr "-0.9"
+
+msgid "-1.0 (Minimo)"
+msgstr "-1.0 (Miinimum)"
+
+msgid "Manter resolucao original"
+msgstr "Säilita algne resolutsioon"
+
+msgid "1920x1080 Full HD WideScreen"
+msgstr "1920x1080 Full HD laiekraaniga"
+
+msgid "1280x720 HD WideScreen"
+msgstr "1280x720 HD laiekraaniga"
+
+msgid "1024x768 4:3"
+msgstr "1024x768 4:3"
+
+msgid "960x600 WideScreen"
+msgstr "960x600 laiekraaniga"
+
+msgid "800x600 4:3"
+msgstr "800x600 4:3"
+
+msgid "720x576 DVD PAL-M WideScreen"
+msgstr "720x576 DVD PAL-M laiekraaniga"
+
+msgid "720x480 DVD NTSC WideScreen"
+msgstr "720x480 DVD NTSC laiekraaniga"
+
+msgid "680x384 WideScreen"
+msgstr "680x384 laiekraaniga"
+
+msgid "640x480 4:3"
+msgstr "640x480 4:3"
+
+msgid "520x576 PAL-M 4:3"
+msgstr "520x576 PAL-M 4:3"
+
+msgid "440x486 NTSC 4:3"
+msgstr "440x486 NTSC 4:3"
+
+msgid "480x272 PSP"
+msgstr "480x272 PSP"
+
+msgid "400x300 4:3"
+msgstr "400x300 4:3"
+
+msgid "352x288 CIF 4:3"
+msgstr "352x288 CIF 4:3"
+
+msgid "320x240 QVGA 4:3"
+msgstr "320x240 QVGA 4:3"
+
+msgid "320x180 QVGA WideScreen"
+msgstr "320x180 QVGA laiekraaniga"
+
+msgid "160x120 SQVGA WideScreen"
+msgstr "160x120 SQVGA laiekraaniga"
+
+msgid "160x90 SQVGA 4:3"
+msgstr "160x90 SQVGA 4:3"
+
+msgid "Otimizado para DVD"
+msgstr "Optimeeritud DVD"
+
+msgid "640x480 4:3 (Maior)"
+msgstr "640x480 4:3 (Rohkem)"
+
+msgid "176x144 QCIF"
+msgstr "176x144 QCIF"
+
+msgid "160x90 SQVGA 4:3 (Menor)"
+msgstr "160x90 SQVGA 4:3 (Väiksem)"
+
+msgid "Videos a converter"
+msgstr "Konverteeri videod"
+
+msgid "Destino dos videos convertidos"
+msgstr "Konverteeritud videode asukoht"
+
+msgid "$savein"
+msgstr "$savein"
+
+msgid "Conversao concluida."
+msgstr "Lõpetatud konverteerimine."

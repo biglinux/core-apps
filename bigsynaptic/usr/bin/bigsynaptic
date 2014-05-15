@@ -1,0 +1,52 @@
+#!/bin/bash
+
+#Remove/Add with Synaptic
+#           
+#Authors:   
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#  Wilson Pinto Junior <wilson@openlanhouse.org>
+#License: GPLv2 or later                       
+#################################################
+
+#Check permission
+if test $(id -u) != 0
+then                 
+    echo "Need root permission"
+    exit 0                     
+fi 
+
+#Help
+        if [ "$(echo "$*" | grep -e --help)" != "" ]
+        then
+            echo "Use synaptic with terminal
+
+--install
+--remove
+--update
+"
+	exit 0
+	fi
+
+
+#Install
+        if [ "$(echo "$*" | grep -e --install)" != "" ]
+        then
+            echo "$*" | sed 's/$/\ /;s/--install //' | sed 's/\ /\ install\r\n/g' > /tmp/bigsynaptic$$
+	    synaptic --set-selections --non-interactive --hide-main-window < /tmp/bigsynaptic$$
+        fi
+
+
+#Remove
+        if [ "$(echo "$*" | grep -e --remove)" != "" ]
+        then
+            echo "$*" | sed 's/$/\ /;s/--remove //' | sed 's/\ /\ uninstall\r\n/g' > /tmp/bigsynaptic$$
+	    synaptic --set-selections --non-interactive --hide-main-window < /tmp/bigsynaptic$$
+        fi
+
+#Update
+        if [ "$(echo "$*" | grep -e --update)" != "" ]
+        then
+            synaptic --non-interactive --hide-main-window --update-at-startup
+        fi
+
+

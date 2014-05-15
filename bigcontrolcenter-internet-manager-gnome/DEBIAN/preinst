@@ -1,0 +1,42 @@
+#! /bin/sh
+
+set -e
+
+#Nome do pacote
+package_name=bigcontrolcenter-internet-manager-gnome
+
+if [ -z "$package_name" ]; then
+    print >&2 "Internal Error. Please report a bug."
+    exit 1;
+fi
+
+#Troca arquivos de outros pacotes pelos contidos nesse pacote, renomeando o do outro pacote para o mesmo nome com a inclusao da extensao .distrib
+case "$1" in
+  install)
+    dpkg-divert --package $package_name --divert /etc/xdg/autostart/nm-applet.desktop.distrib --rename /etc/xdg/autostart/nm-applet.desktop
+
+    if [ "$(ps -A | grep NetworkManager)" != "" ]
+    then
+
+	echo '[Desktop Entry]
+Name=Network Manager
+Comment=Control your network connections
+Icon=nm-device-wireless
+Exec=nm-applet --sm-disable
+Terminal=false
+Type=Application' > /etc/xdg/autostart/big-nm-applet.desktop
+	chmod 644 /etc/xdg/autostart/big-nm-applet.desktop
+
+    fi
+;;
+
+  upgrade)
+        if [ "$(dpkg-divert --list /etc/xdg/autostart/nm-applet.desktop)" = "" ]
+        then
+	        dpkg-divert --package $package_name --divert /etc/xdg/autostart/nm-applet.desktop.distrib --rename /etc/xdg/autostart/nm-applet.desktop
+	fi
+    ;;
+
+esac
+
+exit 0

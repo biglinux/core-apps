@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ -e "/home/$USER/.kaiana-welcome" ]; then
+	clear;
+else
+	touch ~/.kaiana-welcome;
+	echo 'autostart=1' > ~/.kaiana-welcome;
+fi
+
+source ~/.kaiana-welcome
+
+#read if autostart?
+if [ $autostart -eq 1 ]; then
+
+	cd /usr/share/kaiana-welcome/;
+	bbv -s 870x520 -c -i /usr/share/icons/kaiana/kaiana.svg index.sh.htm 2> /dev/null;
+		
+fi

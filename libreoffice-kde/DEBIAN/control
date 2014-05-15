@@ -1,0 +1,9 @@
+Package: libreoffice-kde
+Version: 1:4.2.2-8ubuntu1
+Architecture: i386
+Maintainer: Paulo Giovanni <paulusiohannes@gmail.com>
+Installed-Size: 1
+Section: admin
+Priority: optional
+Description: Make the integration of the Libreoffice with the KDE/qt
+

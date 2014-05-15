@@ -1,0 +1,12 @@
+[Desktop Entry]
+X-KDE-Solid-Predicate=OpticalDisc.availableContent & 'Audio'
+Type=Service
+Actions=Play;
+X-KDE-Priority=TopLevel
+
+[Desktop Action Play]
+Name=Play Audio CD with Amarok
+Name[pt_BR]=Tocar CD de Audio com Amarok
+Icon=amarok
+Exec=amarok --cdplay %f
+X-Ubuntu-Gettext-Domain=desktop_extragear-multimedia_amarok

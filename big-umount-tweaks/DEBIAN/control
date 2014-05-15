@@ -1,0 +1,10 @@
+Package: big-umount-tweaks
+Version: 1.2.0-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 100
+Depends: sed, psmisc, udisks2
+Section: admin
+Priority: optional
+Description: Move /bin/umount to /bin/umount.distrib and add shellscript /bin/umount to force umount if device in use. \n Move o /bin/umount para /bin/umount.distrib e adiciona o script /bin/umount para desmontar forcadamente dispositivos em uso.
+

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-internet-knemo
+
+name_application=$"Monitor de rede"
+description_application=$"Monitore o trafego da rede..."
+exec_application="/usr/share/bigbashview/run.run?kcmshell4 kcm_knemo"
+icon_application="/usr/share/bigcontrolcenter/categories/internet/knemo/icon.png"

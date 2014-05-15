@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#!/bin/bash
+IFS="
+"
+for i in $(ls)
+do
+if [ -d "$i" ]
+then
+./gerar-pot $i
+fi
+done

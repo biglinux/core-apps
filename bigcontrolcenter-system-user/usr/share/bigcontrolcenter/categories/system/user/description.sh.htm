@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-user
+
+name_application=$"Meu usuario"
+description_application=$"Alterar senha, nome completo..."
+exec_application="/usr/share/bigbashview/run.run?kcmshell4 kcm_useraccount"
+icon_application="/usr/share/bigcontrolcenter/categories/system/user/icon.png"

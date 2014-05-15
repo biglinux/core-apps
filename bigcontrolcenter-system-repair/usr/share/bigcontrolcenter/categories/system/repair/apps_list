@@ -1,0 +1,70 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-repair
+
+bigkdehome=$(bigkdehome | sed "s|^$HOME/||g")
+
+################
+# Para restaurar programas adicione o ID, nome do programa, arquivos ou pastas a serem apagados ou substituidos pelo conteudo da pasta /etc/skel separados por ponto e virgula e adicione o campo final caso necessario.
+################
+
+
+
+#####   NAME  #### 		#### ID	 #### FOLDER ##### SPECIAL
+
+echo $"Amsn"			'|''0001''|''.amsn/''|'"null"
+echo $"Avidemux"		'|''0002''|''.avidemux/''|'"null"
+echo $"Arora"			'|''0003''|''.config/arora-browser.org/''|'"null"
+echo $"Blender"			'|''0004''|''.blender/''|'"null"
+echo $"BrOffice"		'|''0005''|''.broffice.org/''|'"null"
+echo $"Dolphin"			'|''0006''|'"$bigkdehome"'/share/config/dolphinrc;'"$bigkdehome"'/share/apps/dolphin/''|'"null"
+echo $"Firefox"			'|''0007''|''.mozilla/firefox''|'"null"
+echo $"Okular"			'|''0008''|'"$bigkdehome"'/share/config/okularpartrc;'"$bigkdehome"'/share/config/okularrc;'"$bigkdehome"'/share/apps/okular/''|'"null"
+echo $"Gimp"			'|''0009''|''.gimp-*''|'"null"
+echo $"Gwenview"		'|''0010''|'"$bigkdehome"'/share/config/gwenviewrc;'"$bigkdehome"'/share/apps/gwenview/''|'"null"
+echo $"Inkscape"		'|''0011''|''.config/inkscape''|'"null"
+echo $"Kalarm"			'|''0012''|'"$bigkdehome"'/share/config/kalarmrc;'"$bigkdehome"'/share/apps/kalarm/''|'"null"
+echo $"OpenOffice"		'|''0013''|''.openoffice.org/''|'"null"
+echo $"Zsnes"			'|''0014''|''.zsnes/''|'"null"
+echo $"qBittorrent"		'|''0015''|''.config/qBittorrent/''|'"null"
+echo $"Ktorrent"		'|''0016''|'"$bigkdehome"'/share/config/ktorrentrc;'"$bigkdehome"'/share/apps/ktorrent/''|'"null"
+echo $"Emesene"			'|''0017''|''.config/emesene/''|'"null"
+echo $"Pidgin"			'|''0018''|''.purple/''|'"null"
+echo $"Kalarm"			'|''0019''|'"$bigkdehome"'/share/config/kalarmrc;'"$bigkdehome"'/share/apps/kalarm/''|'"null"
+echo $"Kmess"			'|''0020''|'"$bigkdehome"'/share/config/kmessrc;'"$bigkdehome"'/share/apps/kmess/''|'"null"
+echo $"Kate"			'|''0021''|'"$bigkdehome"'/share/config/katepartpluginsrc;'"$bigkdehome"'/share/config/katerc;'"$bigkdehome"'/share/apps/katepart/katepartui.rc;'"$bigkdehome"'/share/config/katepartscriptrc;'"$bigkdehome"'/share/apps/katepart;'"$bigkdehome"'/share/apps/katefindinfilesplugin;'"$bigkdehome"'/share/config/katesyntaxhighlightingrc;'"$bigkdehome"'/share/apps/kate/''|'"null"
+echo $"Plasma"			'|''0022''|'"$bigkdehome"'/share/apps/plasma_*;'"$bigkdehome"'/share/config/plasma-*;'"$bigkdehome"'/share/apps/plasma-*;'"$bigkdehome"'/share/config/plasmarc;'"$bigkdehome"'/share/apps/plasma/''|'"null"
+echo $"Kwin"			'|''0023''|'"$bigkdehome"'/share/config/kwin*;'"$bigkdehome"'/share/config/session/kwin*''|'"null"
+echo $"K3b"			'|''0024''|'"$bigkdehome"'/share/config/k3brc;'"$bigkdehome"'/share/apps/k3b/''|'"null"
+echo $"Rekonq"			'|''0025''|'"$bigkdehome"'/share/config/rekonqrc;'"$bigkdehome"'/share/apps/rekonq/''|'"null"
+echo $"Konqueror"		'|''0026''|'"$bigkdehome"'/share/config/konquerorrc;'"$bigkdehome"'/share/apps/konqueror/''|'"null"
+echo $"Wine"			'|''0027''|''.wine/''|'"null"
+echo $"PlayOnLinux"		'|''0028''|''.PlayOnLinux/''|'"null"
+echo $"SMPlayer"		'|''0029''|''.config/smplayer/''|'"null"
+echo $"MPlayer"			'|''0030''|''.mplayer/''|'"null"
+echo $"Totem"			'|''0031''|''.gconf/apps/totem;.config/totem/;.local/share/totem/''|'"null"
+echo $"Vlc"			'|''0032''|''.config/vlc/;.local/share/vlc''|'"null"
+echo $"Cheese"			'|''0033''|''.gconf/apps/cheese/''|'"null"
+echo $"Avidemux"		'|''0034''|''.avidemux/''|'"null"
+echo $"Audacity"		'|''0035''|''.audacity-data/''|'"null"
+echo $"Kooka"			'|''0036''|'"$bigkdehome"'/share/config/kookarc;'"$bigkdehome"'/share/apps/kooka/''|'"null"
+echo $"Clementine"		'|''0037''|''.config/Clementine/''|'"null"
+echo $"Pcmanfm"			'|''0038''|''.config/pcmanfm/''|'"null"
+echo $"Ldesktop/LXDE/Openbox"	'|''0039''|''.config/lxde;.config/lxpanel;.config/lxsession;.config/openbox''|'$"Atencao, isso ira limpar a configuracao de todos os aplicativos do Ldesktop/LXDE/Openbox, utilize apenas se souber o que esta fazendo."
+echo $"XFCE4"			'|''0040''|''.config/xfce4''|'$"Atencao, isso ira limpar a configuracao de todos os aplicativos do KDE, utilize apenas se souber o que esta fazendo."
+echo $"KDE"			'|''0041''|''.kde''|'$"Atencao, isso ira limpar a configuracao de todos os aplicativos do KDE, utilize apenas se souber o que esta fazendo."
+echo $"Kdesktop"		'|''0042''|''.kdesktop''|'$"Atencao, isso ira limpar a configuracao de todos os aplicativos do Kdesktop, utilize apenas se souber o que esta fazendo."
+echo $"Thunderbird"		'|''0043''|''.thunderbird/''|'"null"
+echo $"Kmail"			'|''0044''|'"$bigkdehome"'/share/config/kmailrc*;'"$bigkdehome"'/share/apps/kmail/''|'"null"
+echo $"Audacious"		'|''0045''|''.config/audacious/;.local/share/audacious/''|'"null"
+echo $"Empathy"			'|''0046''|''.config/Empathy/;.gconf/apps/empathy/;.local/share/Empathy/''|'"null"
+echo $"Exaile"			'|''0047''|''.config/exaile/;.cache/exaile/;.local/share/exaile/''|'"null"
+echo $"Vinagre"			'|''0048''|''.gconf/apps/vinagre/;.gconf/apps/vinagre/''|'"null"
+echo $"Nepomuk/Strigi"		'|''0049''|'"$bigkdehome"'/share/config/nepomukstrigirc;'"$bigkdehome"'/share/config/nepomukserverrc;'"$bigkdehome"'/share/apps/nepomuk/''|'"null"
+echo $"Nautilus"		'|''0050''|''.gnome2/nautilus-scripts/;.gconf/apps/nautilus/;.gnome2/accels/nautilus''|'"null"
+echo $"Blueman"			'|''0051''|''.gconf/apps/blueman/''|'"null"
+echo $"Amarok"			'|''0052''|'"$bigkdehome"'/share/config/amarok*;'"$bigkdehome"'/share/apps/amarok/''|'"null"
+echo $"Chromium"			'|''0053''|''.config/chromium/''|'"null"
+

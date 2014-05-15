@@ -1,0 +1,13 @@
+[$Version]
+update_info=oxygen.upd:1
+
+[ActiveShadow]
+InnerColor=0,0,0
+OuterColor=114,114,114
+ShadowSize=50
+
+[InactiveShadow]
+ShadowSize=26
+
+[Windeco]
+FrameBorder=BorderNoSide

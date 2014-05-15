@@ -1,0 +1,11 @@
+Package: biglamp
+Version: 1.0.0-1kaiana5
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Suggests: php5, mysql-server, apache2
+Depends:  biginstall, bigcontrolcenter
+Section: admin
+Priority: optional
+Description: Lamp manager, Linux, Apache, MySQL, PHP.
+

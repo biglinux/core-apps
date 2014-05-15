@@ -1,0 +1,10 @@
+#! /bin/sh
+# Fix partition names and mount all
+case "$1" in
+  start)
+	/usr/bin/bigmount
+	;;
+
+esac
+
+:

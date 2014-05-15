@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-themes-plasma
+
+name_application=$"Desktop do KDE (Plasma)"
+description_application=$"Barra de tarefas, menu, relogio..."
+exec_application="/usr/share/bigbashview/run.run?kcmshell4 desktoptheme"
+icon_application="/usr/share/bigcontrolcenter/categories/themes/plasma/icon.png"

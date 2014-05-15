@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+cd ~/.config/bigcontrolcenter/ipscanner
+
+xdg-open $(cat html_url)

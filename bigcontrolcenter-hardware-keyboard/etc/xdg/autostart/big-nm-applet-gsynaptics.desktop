@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Touchpad
+Comment=Set your touchpad preferences
+Exec=gsynaptics-init --sm-disable&
+Terminal=false
+Type=Application
+Icon=touchpad

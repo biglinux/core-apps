@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-internet-manager-gnome
+
+name_application=$"Conectar a internet utilizando Network Manager"
+description_application=$"3G, ADSL, Cabo, DHCP, Wireless, IP Fixo..."
+exec_application="/usr/share/bigbashview/run.run?/usr/share/bigcontrolcenter/categories/internet/manager-gnome/nm-applet.run"
+icon_application="/usr/share/bigcontrolcenter/categories/internet/manager-gnome/icon.png"

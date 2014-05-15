@@ -1,0 +1,4 @@
+#!/bin/bash
+echo 'autostart=0' > ~/.kaiana-welcome;
+
+kdialog --title $"Kaiana"  --msgbox  $" The kaiana-welcome will not initialize with the system";

@@ -1,0 +1,159 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-hardware-keyboard
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(630,480);
+function NoResize(){
+  window.resizeTo(630,480);
+}
+</script>
+'
+
+title=$"Teclado, mouse e touchpad"
+apply=$"Aplicar"
+close=$"Sair"
+tip_abnt=$"Padrao utilizado por quase todos os computadores vendidos no Brasil"
+tip_usa=$"Padrao dos Estados Unidos para idiomas que nao utilizam acentos"
+tip_usaint=$"Padrao dos Estados Unidos com suporte a acentos, em geral notebooks importados.<p>* Recomendado ativar a opcao utilizar cedilha com acento agudo + C."
+tip_es=$"Padrao na Espanha"
+tip_pt=$"Padrao em Portugal"
+tip_auto=$"Em geral durante a instalacao ja e especificado o modelo correto"
+tip_manual=$"Informe o comando setxkbmap especifico para seu teclado"
+
+
+
+###############
+# Apply options
+###############
+
+
+################
+# AUTO
+################
+  if [ "$p_escolha" = "auto" ]
+  then
+      rm -f /etc/X11/Xsession.d/84big-keyboard-layout
+  fi
+
+
+################
+# ABNT_PADRAO
+################
+  if [ "$p_escolha" = "abnt" ]
+  then
+      echo '#/bin/sh
+
+# ABNT_PADRAO
+setxkbmap -model pc105 -layout br -variant' > /etc/X11/Xsession.d/84big-keyboard-layout
+setxkbmap -model pc105 -layout br -variant 2> /dev/null > /dev/null
+  fi
+
+
+################
+# USA_PADRAO
+################
+  if [ "$p_escolha" = "usa" ]
+  then
+      echo '#/bin/sh
+
+# USA_PADRAO
+setxkbmap -model pc105 -layout us -variant' > /etc/X11/Xsession.d/84big-keyboard-layout
+setxkbmap -model pc105 -layout us -variant 2> /dev/null > /dev/null
+  fi
+
+
+################
+# USA_INT
+################
+  if [ "$p_escolha" = "usaint" ]
+  then
+      echo '#/bin/sh
+
+# USA_INT
+setxkbmap -model pc105 -layout us -variant intl' > /etc/X11/Xsession.d/84big-keyboard-layout
+setxkbmap -model pc105 -layout us -variant intl 2> /dev/null > /dev/null
+  fi
+
+
+################
+# ES_PADRAO
+################
+  if [ "$p_escolha" = "es" ]
+  then
+      echo '#/bin/sh
+
+# ES_PADRAO
+setxkbmap -model pc105 -layout es -variant' > /etc/X11/Xsession.d/84big-keyboard-layout
+setxkbmap -model pc105 -layout es -variant 2> /dev/null > /dev/null
+  fi
+
+
+################
+# PT_PADRAO
+################
+  if [ "$p_escolha" = "pt" ]
+  then
+      echo '#/bin/sh
+
+# PT_PADRAO
+setxkbmap -model pc105 -layout pt -variant' > /etc/X11/Xsession.d/84big-keyboard-layout
+setxkbmap -model pc105 -layout pt -variant 2> /dev/null > /dev/null
+  fi
+
+
+################
+# MANUAL_PADRAO
+################
+  if [ "$p_escolha" = "manual" ]
+  then
+      echo "#/bin/sh
+
+# MANUAL
+$p_setxkbmap" > /etc/X11/Xsession.d/84big-keyboard-layout
+$p_setxkbmap 2> /dev/null > /dev/null
+  fi
+
+
+################
+# CEDILLA
+################
+  if [ "$p_cedilla" = "yes" ]
+  then
+      echo "#!/bin/sh
+
+export GTK_IM_MODULE=cedilla
+export QT_IM_MODULE=cedilla" > /etc/X11/Xsession.d/85big-cedilla-fix
+
+      else
+
+      rm -f /etc/X11/Xsession.d/85big-cedilla-fix
+  fi
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Layout de teclado, velocidade e ate controlar o mouse com a webcam."
+close_header
+
+#body#Exibir resposta para o usuario
+echo "<br><br><br><br><br><center><font size=+2>"
+echo $"Configuracao aplicada."
+echo "</font></div><div id=\"rodape\"><button type=button onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></form></div></body>"

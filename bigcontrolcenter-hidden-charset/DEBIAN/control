@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-hidden-charset
+Version: 1.0.0-1kaiana4
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: bigcontrolcenter (>= 1.0.0-1kaiana16), convmv, dolphin
+Section: admin
+Priority: optional
+Description: Convert all to utf-8 service menu
+

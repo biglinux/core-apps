@@ -1,0 +1,9 @@
+Package: kaiana-skel
+Version: 14.04-1kaiana8
+Architecture: all
+Maintainer: Kaiana <paulusiohannes@gmail.com>
+Installed-Size: 3133
+Priority: optional
+Homepage: http://www.uniaolivre.com
+Description: Kaiana Skel
+ The configuration for the Kaiana System.

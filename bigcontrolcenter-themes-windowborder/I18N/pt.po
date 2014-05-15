@@ -1,0 +1,207 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# BigLinux.com.br <BigLinux.com.br>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2010-10-09 14:33+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: bigconvert <kde-i18n-doc@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-10-10 04:55+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid ""
+"Alterar a borda de janelas agora?\n"
+"\n"
+"Se optar por nao alterar agora a borda sera alterada apos reiniciar o "
+"sistema."
+msgstr ""
+
+#, fuzzy
+msgid "Configurar borda de janelas"
+msgstr "Bordas de janelas"
+
+msgid "Aplicar"
+msgstr ""
+
+msgid "Sair"
+msgstr ""
+
+msgid "O sistema tenta definir a melhor opcao automaticamente"
+msgstr ""
+
+msgid "Grande quantidade de efeitos para o desktop."
+msgstr ""
+
+msgid ""
+"Gerenciador de janelas do KDE, boa quantidade de recursos e a melhor "
+"integracao com o Kdesktop."
+msgstr ""
+
+msgid ""
+"Gerenciador de janelas do XFCE, leve e rápido, recomendado para computadores "
+"obsoletos e netbooks."
+msgstr ""
+
+msgid "Altere o tema utilizado para a borda de janelas."
+msgstr ""
+
+msgid "Configure os efeitos do desktop."
+msgstr ""
+
+msgid "Configuracoes de foco e opcoes avancadas"
+msgstr ""
+
+msgid "Defina ocoes ao passar o mouse nas extremidades da tela"
+msgstr ""
+
+msgid "Configure a forma de alternar entre as janelas"
+msgstr ""
+
+msgid "Ajustes para o tema, controle de foco e opcoes avancadas"
+msgstr ""
+
+msgid "Diversas configuracoes para o XFWM"
+msgstr ""
+
+msgid "Defina o numero de desktops virtuais que deseja utilizar"
+msgstr ""
+
+msgid "Configurador para efeitos e comportamento do Compiz"
+msgstr ""
+
+#, fuzzy
+msgid "Altere o tema das bordas de janelas"
+msgstr "Bordas de janelas"
+
+msgid "Utilize uma das configuracoes recomendadas pela distribuicao BigLinux"
+msgstr ""
+
+msgid ""
+"Passe o mouse sobre as opcoes e veja qual atende melhor suas necessidades."
+msgstr ""
+
+msgid "id=\\\"div-compiz\\\" style=\\\"display:yes\\\""
+msgstr ""
+
+msgid "id=\\\"div-kwin\\\" style=\\\"display:none\\\""
+msgstr ""
+
+msgid "id=\\\"div-xfwm\\\" style=\\\"display:none\\\""
+msgstr ""
+
+msgid "id=\\\"div-compiz\\\" style=\\\"display:none\\\""
+msgstr ""
+
+msgid "id=\\\"div-kwin\\\" style=\\\"display:yes\\\""
+msgstr ""
+
+msgid "id=\\\"div-xfwm\\\" style=\\\"display:yes\\\""
+msgstr ""
+
+msgid "Desconhecido"
+msgstr ""
+
+msgid "Ativo no momento:"
+msgstr ""
+
+#, fuzzy
+msgid "Gerenciador de janelas:"
+msgstr "Bordas de janelas"
+
+msgid "Automatico"
+msgstr ""
+
+msgid "Compiz"
+msgstr ""
+
+msgid "Kwin"
+msgstr ""
+
+msgid "XFWM"
+msgstr ""
+
+msgid "Configuracao do Compiz"
+msgstr ""
+
+msgid "Configuracoes gerais"
+msgstr ""
+
+#, fuzzy
+msgid "Tema das bordas de janelas"
+msgstr "Bordas de janelas"
+
+msgid "Selecionar configuracao padronizada do BigLinux"
+msgstr ""
+
+msgid "Configuracao do Kwin"
+msgstr ""
+
+msgid "Efeitos para o desktop"
+msgstr ""
+
+#, fuzzy
+msgid "Comportamento das janelas"
+msgstr "Bordas de janelas"
+
+msgid "Contornos da tela"
+msgstr ""
+
+msgid "Mudanca de tarefas"
+msgstr ""
+
+msgid "Configuracao do XFWM"
+msgstr ""
+
+msgid "Temas das bordas de janelas e configuracoes gerais"
+msgstr ""
+
+msgid "Configuracoes especiais e efeitos no desktop"
+msgstr ""
+
+msgid "Quantidade de areas de trabalho"
+msgstr ""
+
+#, fuzzy
+msgid "Bordas de janelas e efeitos no desktop"
+msgstr "Bordas de janelas"
+
+msgid "Janelas bonitas e eficientes, de acordo com sua preferencia"
+msgstr "Janelas bonitas e eficientes, de acordo com a sua preferência"
+
+msgid "Selecione a configuracao a ser utilizada."
+msgstr ""
+
+msgid "1 - Muitos efeitos."
+msgstr ""
+
+msgid "2 - Poucos efeitos."
+msgstr ""
+
+#, fuzzy
+msgid "Borda das janelas"
+msgstr "Bordas de janelas"
+
+msgid ""
+"O gerenciador de borda de janelas $(cat $HOME/.config/bigwincheck2) falhou, "
+"selecione qual deve ser utilizada."
+msgstr ""
+
+msgid "1 - Automatico."
+msgstr ""
+
+msgid "2 - Compiz."
+msgstr ""
+
+msgid "3 - Kwin."
+msgstr ""
+
+msgid "4 - XFWM."
+msgstr ""

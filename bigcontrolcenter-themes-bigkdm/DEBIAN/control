@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-themes-bigkdm
+Version: 1.0.0-1kaiana6
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: kdebase-bin, bigcontrolcenter, kdm, imagemagick
+Section: admin
+Priority: optional
+Description: BigLinux theme for KDM
+

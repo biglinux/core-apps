@@ -1,0 +1,69 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-optimizes
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+
+title=$"Notificar atualizacoes"
+apply=$"Aplicar"
+close=$"Sair"
+back=$"Voltar para tela de configuracao"
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Mostrar icone na barra de ferramentas."
+close_header
+
+
+
+#confere as variaveis que sao traduzidar com um p_ antes do nome
+
+
+##########
+# update
+##########
+if [ "$p_update" = "yes" ]
+then
+    rm -f $HOME/.big_no_update_notifier 2> /dev/null
+else
+    touch $HOME/.big_no_update_notifier 2> /dev/null
+fi
+
+
+
+
+#Exibir resposta para o usuario
+echo "<br><br><br><br><br><center><font size=+2>"
+echo $"Configuracao aplicada."
+
+
+
+echo "</font></div><div id=\"rodape\"><button type=button  onClick=\"parent.location='update.sh.htm'\">   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $back   </button> 
+
+<button type=button onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></form></div></body>"

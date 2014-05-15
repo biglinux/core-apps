@@ -1,0 +1,35 @@
+#! /bin/sh
+
+set -e
+
+#Nome do pacote
+package_name=bigcontrolcenter-system-optimizes
+
+if [ -z "$package_name" ]; then
+    print >&2 "Internal Error. Please report a bug."
+    exit 1;
+fi
+
+#Troca arquivos de outros pacotes pelos contidos nesse pacote, renomeando o do outro pacote para o mesmo nome com a inclusao da extensao .distrib
+case "$1" in
+  install)
+    dpkg-divert --package $package_name --divert /etc/xdg/autostart/update-notifier.desktop.distrib --rename /etc/xdg/autostart/update-notifier.desktop
+    dpkg-divert --package $package_name --divert /usr/share/autostart/akonaditray.desktop.distrib --rename /usr/share/autostart/akonaditray.desktop
+
+  ;;
+  upgrade)
+        if [ "$(dpkg-divert --list /etc/xdg/autostart/update-notifier.desktop)" = "" ]
+        then
+	        dpkg-divert --package $package_name --divert /etc/xdg/autostart/update-notifier.desktop.distrib --rename /etc/xdg/autostart/update-notifier.desktop
+	fi
+
+        if [ "$(dpkg-divert --list /usr/share/autostart/akonaditray.desktop)" = "" ]
+        then
+	        dpkg-divert --package $package_name --divert /usr/share/autostart/akonaditray.desktop.distrib --rename /usr/share/autostart/akonaditray.desktop
+	fi
+
+  ;;
+
+esac
+
+exit 0

@@ -1,0 +1,86 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-internet-bigconnect
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"BigConnect"
+apply=$"Aplicar"
+close=$"Sair"
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Gerenciador de conexao alternativo."
+close_header
+
+#body
+#Confere se o resolv.conf esta desbloqueado
+
+
+bigconnect --clear-interface $p_interface
+
+####################
+###  Wireless
+####################
+if [ "$p_connect" = "wireless" ]; then
+
+    if [ "$p_pass" = "off" ]; then
+	bigconnect --no-password $p_interface $p_essid 2> /dev/null > /dev/null &
+    fi
+
+    if [ "$p_pass" = "wpa" ]; then
+	bigconnect --wpa-password $p_interface $p_essid $p_password 2> /dev/null > /dev/null &
+    fi
+
+    if [ "$p_pass" = "wep" ]; then
+	bigconnect --wep-password $p_interface $p_essid $p_password 2> /dev/null > /dev/null &
+    fi
+fi
+
+
+####################
+###  Connect
+####################
+sleep 2
+
+if [ "$p_dhcp" = "dhcp" ]; then
+
+    bigconnect --ip-dhcp $p_interface 2> /dev/null > /dev/null &
+
+else
+
+    bigconnect --ip-add $p_interface $p_ip $p_netmask $p_gateway $p_dns1 $p_dns2 2> /dev/null > /dev/null &
+
+fi
+sleep 2
+bigconnect --enable-autostart
+
+
+echo '<center><table width=95%><tr><td>'
+echo "<br><br><br><br><br><center><font size=+2>"
+echo $"Configuracao aplicada."
+echo "</font></div><div id=\"rodape\"><button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

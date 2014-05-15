@@ -1,0 +1,47 @@
+#!/bin/bash
+
+#File Manager
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#dolphin
+if [ "$(ps -A | grep plasma-desktop)" != "" ]
+then
+      if [ "$(which dolphin)" != "" ];
+      then
+	dolphin $*
+	exit 0
+      fi
+fi
+
+#nautilus
+      if [ "$(which nautilus)" != "" ];
+      then
+	nautilus $*
+	exit 0
+      fi
+
+#konqueror
+      if [ "$(which konqueror)" != "" ];
+      then
+	konqueror $*
+	exit 0
+      fi
+
+#thunar
+      if [ "$(which thunar)" != "" ];
+      then
+	thunar $*
+	exit 0
+      fi
+
+#pcmanfm
+      if [ "$(which pcmanfm)" != "" ];
+      then
+	pcmanfm $*
+	exit 0
+      fi

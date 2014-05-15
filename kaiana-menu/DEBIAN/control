@@ -1,0 +1,8 @@
+Package: kaiana-menu
+Version: 1.0.0-0kaiana2
+Architecture: all
+Maintainer: Paulo Giovanni Pereira <www.unialivre.com>
+Installed-Size: 92
+Section: admin
+Priority: optional
+Description: Install Kaiana icon to kmenu

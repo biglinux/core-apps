@@ -1,0 +1,80 @@
+#!/bin/bash
+
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-hidden-charset
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Converter para UTF-8"
+apply=$"Converter"
+close=$"Sair"
+tip_format=$"Em geral a opcao correta e iso-8859-1."
+
+
+if [ "$p_format" = "" ]
+then
+    if [ "$(cat ~/.bigcharset_format_to_utf)" = "" ]
+    then
+	p_format="iso-8859-1"
+    else
+	p_format="$(cat ~/.bigcharset_format_to_utf)"
+    fi
+else
+    echo "$p_format" > ~/.bigcharset_format_to_utf
+fi
+
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Resolver problemas com acentos."
+close_header
+
+#body
+echo '<center><table width=95%><tr><td>'
+echo $"1 - Existem diversos padroes para codificar letras, porem os sistemas atuais utilizam o padrao <b>utf-8</b>." "<p>"
+echo $"2 - Todos os nomes de arquivos e pastas inclusos na pasta selecionada e que necessitam de correcoes estao listados, confira o resultado abaixo e altere o formato atual se necessario." "<p>"
+echo $"Formato atual: "
+echo "<select onchange=\"location.replace('utf.sh.htm?pasta=$p_pasta&format='+ this.options[this.selectedIndex].value)\" $mouseover_open $tip_format $mouseover_close>"
+ORI_IFS=$IFS
+IFS=$'\n'
+  for i in $(cat /usr/share/bigcontrolcenter/categories/hidden/charset/formats.txt)
+  do
+	if [ "$p_format" = "$i" ]
+	then
+	    echo "<option value='$i' selected>$i</option>"
+	else
+	    echo "<option value='$i'>$i</option>"
+	fi
+  done
+IFS=$ORI_IFS
+echo '</select><center>'
+
+echo '<textarea cols=82 rows=12 wrap=off>'
+
+convmv --nosmart --qto --qfrom -r  -f $p_format -t utf8 "$(cat ~/.biglinux_iso_to_utf)" 2> /dev/null |   awk -F'"' '{print $4 ; }'
+
+echo '</textarea></center>'
+
+
+echo "<div id=\"rodape\"><button type=button value= $apply  onClick= parent.location='utf3.sh.htm'>   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

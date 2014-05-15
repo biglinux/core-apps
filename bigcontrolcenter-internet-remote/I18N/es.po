@@ -1,0 +1,165 @@
+# Spanish translations for PACKAGE package.
+# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BigLinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2010-10-12 06:18+0000\n"
+"Last-Translator: Paco Molinero <paco@byasl.com>\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-10-13 04:56+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Acesso remoto"
+msgstr "Acceso remoto"
+
+msgid "Aplicar"
+msgstr "Aplicar"
+
+msgid "Sair"
+msgstr "Salir"
+
+msgid "Configure esse computador para que seja possivel acessa-lo remotamente"
+msgstr ""
+
+msgid "Acesse servidores SSH"
+msgstr ""
+
+msgid ""
+"Utilize o Krfb para permitir que conectem a esse computador utilizando o "
+"protocolo VNC."
+msgstr ""
+
+msgid ""
+"Utilize o Krdc para conectar a computadores utilizando o protocolo VNC ou "
+"RDP."
+msgstr ""
+
+msgid ""
+"Compartilhe ou acesse computadores sem se preocupar com roteamento e firewall"
+msgstr ""
+
+msgid ""
+"Nao se trata exatamente de um desktop remoto e sim de um ambiente "
+"colaborativo.<p>Um site onde voce pode compartilhar a tela do seu desktop, "
+"apresentacoes, desenhar como em um quadro negro...<p>Ainda conta com chato "
+"por voz e texto, uma boa ferramenta para fornecer cursos online"
+msgstr ""
+
+msgid "As melhores solucoes para acessar computadores a distancia."
+msgstr ""
+
+msgid "Servidor SSH"
+msgstr "Servidor SSH"
+
+msgid "Cliente SSH"
+msgstr "Cliente SSH"
+
+msgid "Compartilhe o computador por VNC"
+msgstr ""
+
+msgid "Acesse computadores por VNC ou RDP"
+msgstr ""
+
+msgid "TeamViewer"
+msgstr "TeamViewer"
+
+msgid "Vyew.com um ambiente de compartilhamento"
+msgstr ""
+
+msgid "Configurar DNS"
+msgstr "Configurar DNS"
+
+msgid "Voltar para tela de configuracao"
+msgstr ""
+
+msgid "Para uma conexao mais rapida e estavel."
+msgstr "Para una conexión más rápida y estable."
+
+msgid "Configuracao aplicada."
+msgstr "Configuración aplicada."
+
+msgid "As melhores solucoes para acessar computadores a distancia"
+msgstr ""
+
+msgid "Instalador do TeamViewer"
+msgstr "Instalador de TeamViewer"
+
+msgid "Clique aqui para utilizar o TeamViewer."
+msgstr ""
+
+msgid "Assistencia remota facil e rapida."
+msgstr ""
+
+msgid "Aplicando alterações."
+msgstr ""
+
+msgid "Confirma a remocao do TeamViewer?"
+msgstr ""
+
+msgid ""
+"Clique aqui para iniciar a instalacao, e preciso estar conectado a internet."
+"<br>Sera feito um download proximo de 16 MB."
+msgstr ""
+
+msgid "Clique aqui para remover o TeamViewer."
+msgstr ""
+
+msgid ""
+"Esse programa pode ser comparado ao VNC, porem com mais velocidade e sem "
+"precisar se preocupar com roteamentos ou configuracao de firewall."
+msgstr ""
+
+msgid ""
+"Entretanto e um software proprietario e seu uso e gratuito apenas para "
+"usuarios nao comerciais."
+msgstr ""
+
+msgid ""
+"Clique aqui</a> para visitar o site oficial e obter mais informacoes sobre "
+"esse programa."
+msgstr ""
+
+msgid "Remover TeamViewer"
+msgstr ""
+
+msgid "Executar TeamViewer"
+msgstr ""
+
+msgid "Instalar TeamViewer"
+msgstr "Instalar TeamViewer"
+
+msgid "SSH"
+msgstr "SSH"
+
+msgid "A porta padrao dos servidores SSH e 22"
+msgstr ""
+
+msgid ""
+"Com essa opcao ativada e possivel apos acessar o terminal executar programas "
+"em modo grafico remotamente<p>Programas executados dessa forma sao "
+"processados no servidor e exibidos no cliente."
+msgstr ""
+
+msgid "Acesso remoto seguro e de qualidade."
+msgstr "Acceso remoto seguro y de calidad."
+
+msgid "Instalando o TeamViwer, aguarde um momento..."
+msgstr ""
+
+msgid ""
+"A instalacao falhou!\n"
+"\n"
+"Confira se a conexao com a internet esta funcionando.\n"
+"\n"
+"Se estiver utilizando o instalador de programas Synaptic ou apt-get, feche-o "
+"e tente novamente."
+msgstr ""

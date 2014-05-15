@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-others-falar-frase
+Version: 1.0.0-0kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: bigcontrolcenter (>=1.1.1-1kaiana1), kate
+Section: admin
+Priority: optional
+Description: Pacote bastante especifico para acessibilidade, necessita da instalação do lianetts, porem nao esta nas dependencias pois o mesmo geralmente esta em formato .tar.gz
+

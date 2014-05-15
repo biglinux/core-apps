@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Xfwm4 (XFCE)
+Exec=xfwm4
+TryExec=xfwm4
+X-KDE-WindowManagerRestartArgument=--replace --sm-client-disable
+X-Ubuntu-Gettext-Domain=desktop_kdebase-runtime

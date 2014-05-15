@@ -1,0 +1,58 @@
+#!/bin/bash
+
+# Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-themes-ksplash
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Ksplash BigLinux"
+apply=$"Selecionar nova imagem"
+close=$"Sair"
+default=$"Restaurar imagem padrao"
+
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Altere a imagem de fundo que aparece apos o login."
+close_header
+
+if [ ! -e "$(echo "$(bigkdehome)/share/apps/ksplash/Themes/BigLinux/1680x1050/background.png")" ]; then
+    mkdir $(bigkdehome)/share 2> /dev/null
+    mkdir $(bigkdehome)/share/apps 2> /dev/null
+    mkdir $(bigkdehome)/share/apps/ksplash 2> /dev/null
+    mkdir $(bigkdehome)/share/apps/ksplash/Themes 2> /dev/null
+    cp -Rf /usr/share/ksplash-biglinux $(bigkdehome)/share/apps/ksplash/Themes/BigLinux
+    convert -resize 1680x1050! "/usr/share/wallpapers/BigLinux.jpg" "$(bigkdehome)/share/apps/ksplash/Themes/BigLinux/1680x1050/background.png" 2> /dev/null > /dev/null
+fi
+
+#body
+echo '<center><table width=95%><tr><td>'
+echo "<center><b>"
+echo $"Imagem atual" "</b><br>"
+
+echo "<img width=400 src=\"$(bigkdehome)/share/apps/ksplash/Themes/BigLinux/1680x1050/background.png\"></center>"
+
+
+echo "</div><div id=\"rodape\"><button onClick=\"parent.location='submit.sh.htm?default=yes'\" value= $default  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $default   </button>   <button onClick=\"parent.location='submit.sh.htm'\" value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"

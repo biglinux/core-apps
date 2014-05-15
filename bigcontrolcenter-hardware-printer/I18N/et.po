@@ -1,0 +1,92 @@
+# Estonian translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-13 21:22-0300\n"
+"PO-Revision-Date: 2010-08-29 08:26+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: Estonian <et@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-08-30 03:54+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid ""
+"O monitor de fila de impressao deve aparecer\n"
+"automaticamente ao utilizar a impressora?"
+msgstr ""
+"Kui jälgida tööjärjekorra automaatselt\n"
+"näitab millal kasutab printerit?"
+
+msgid "Impressora"
+msgstr "Printer"
+
+msgid "Adicionar, configurar, calibrar, niveis de tinta..."
+msgstr "Lisa, seadista, kalibreeri, tindi tase..."
+
+msgid "Aplicar"
+msgstr "Rakenda"
+
+msgid "Sair"
+msgstr "Välju"
+
+msgid ""
+"Configurador recomendado para a maioria dos casos.<br>Adicionar, remover, "
+"calibrar, nivel de tinta..."
+msgstr ""
+"Soovituslik seadistusvahend enamikel juhtudel. <br> Lisamine, eemaldamine "
+"kalibreerimiseks, tindi taseme..."
+
+msgid "Configurador oficial do sistema de impressao CUPS"
+msgstr "Ametlik seadistus CUPS trükkimisele"
+
+msgid "Configurador nao oficial para impressoras EPSON"
+msgstr "Mitteametlik seadistus EPSON printerile"
+
+msgid "Configurador oficial para impressoras HP"
+msgstr "Mitteametlik seadistus HP printerile"
+
+msgid ""
+"Para conferir os modelos de impressora suportados visite o "
+"site:<br>http://libinklevel.sourceforge.net/#supported<br><br>* Em muitos "
+"casos outro monitor de nivel de tinta pode ser acessado no Adicionar ou "
+"Configurar impressoras"
+msgstr ""
+"Et näha toetatud printerimudelit külastage "
+"<br>http://libinklevel.sourceforge.net/#supported<br><br>* Paljudel juhtudel "
+"tindi taset jälgimist saab kasutada kasutades Lisa või Seadistaa printerid"
+
+msgid "Confira o status da impressao"
+msgstr "Trükkimise olek"
+
+msgid "Configuracoes para impressoras."
+msgstr "Printeri konfiguratsioon"
+
+msgid "Adicionar ou configurar impressoras"
+msgstr "Lisa või seadistada printereid"
+
+msgid "Adicionar ou configurar impressoras (Avancado)"
+msgstr "Lisa või seadistada printereid (edasijõudnud)"
+
+msgid "Configurador especial para impressoras Epson"
+msgstr "Eriliselt seadistada Epson printerid"
+
+msgid "Configurador especial para impressoras HP"
+msgstr "Eriliselt seadistada HP printerid"
+
+msgid "Monitor de nivel de tinta"
+msgstr "Tindi tasandi jälgidmine"
+
+msgid "Fila de impressao"
+msgstr "Tööjärjekord"
+
+msgid ""
+"Para visualizar o nivel de tinta clique no icone do inkblot na area de "
+"notificacao."
+msgstr "Kliki inkblot sümbolit olekualal vaatamiseks tindi tasandit."

@@ -1,0 +1,70 @@
+#!/bin/bash
+
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+sleep 5
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-internet-chromium
+
+
+if [ -e "/usr/lib/adobe-flashplugin/libflashplayer.so" ]
+then
+    adobe_flash=installed
+fi
+
+if [ -e "/usr/lib/xulrunner-addons/plugins/flashplugin-alternative.so" ]
+then
+    adobe_flash=installed
+fi
+
+
+if [ "$adobe_flash" != "installed" ]
+then
+
+kdialog  --title "Plugin do Flash" --yesno $"O plugin do Flash nao esta instalado, seu uso
+e importante em diversos sites, inclusive no Youtube.
+
+Deseja instalar o plugin do Flash agora?"
+  resposta=$?
+  if [ "$resposta" = "0" ]; then
+	bigsudo bigsynaptic-autoclose --install adobe-flashplugin
+  else
+	exit 0
+  fi
+
+fi
+
+
+
+if [ -e "/usr/lib/adobe-flashplugin/libflashplayer.so" ]
+then
+    adobe_flash=installed
+fi
+
+if [ -e "/usr/lib/xulrunner-addons/plugins/flashplugin-alternative.so" ]
+then
+    adobe_flash=installed
+fi
+
+
+if [ "$adobe_flash" != "installed" ]
+then
+kdialog --title "Plugin do Flash" --error $"A instalacao do plugin do Flash falhou.
+Verifique a conexao com a internet."
+else
+
+	    if [ "$(ps -A -U $USER | grep \ chromium-browse | grep -v $$)" != "" ]
+	    then
+		kdialog --title "Plugin do Flash" --msgbox $"Plugin do Flash instalado!
+
+Finalize e abra novamente os navegadores
+para que o uso do plugin seja iniciado."
+	    else
+		kdialog --title "Plugin do Flash" --msgbox $"Plugin do Flash instalado!"
+	    fi
+
+fi

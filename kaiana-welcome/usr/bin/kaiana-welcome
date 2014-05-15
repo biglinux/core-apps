@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /usr/share/kaiana-welcome/;
+bbv -s 870x520 -c -i /usr/share/icons/kaiana/kaiana.svg index.sh.htm 2> /dev/null;

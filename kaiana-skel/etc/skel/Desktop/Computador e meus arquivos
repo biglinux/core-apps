@@ -1,0 +1,7 @@
+[Desktop Entry]
+URL[$e]=file://$HOME
+Icon=computer.png
+Terminal=false
+Type=Link
+X-KDE-StartupNotify=false
+X-KDE-SubstituteUID=false

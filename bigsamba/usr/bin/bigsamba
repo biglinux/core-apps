@@ -1,0 +1,99 @@
+#!/bin/bash
+
+#Manage SSH
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+
+
+#Options
+case "$1" in
+
+    --checkenable)
+      if [ "$(ps -A | grep smbd)" = "" ]
+      then
+	  echo "no"
+      else
+	  echo "yes"
+      fi
+
+      exit 0
+    ;;
+
+
+    --enable)
+      start smbd
+      exit 0
+    ;;
+
+
+    --disable)
+      stop smbd
+      exit 0
+    ;;
+
+    --write)
+	sed -i 's|writable = no|writable = yes|g' /usr/lib/kde4/libexec/fileshareset
+	touch /etc/bigfixsamba-yes
+	exit 0
+    ;;
+
+    --no-write)
+	sed -i 's|writable = yes|writable = no|g' /usr/lib/kde4/libexec/fileshareset
+	rm -f /etc/bigfixsamba-yes
+    ;;
+
+    --check-write)
+      if [ "$(grep "writable = yes" /usr/lib/kde4/libexec/fileshareset)" != "" ]
+      then
+	  echo "yes"
+    else
+	  echo "no"
+    fi
+    ;;
+
+    --autostart)
+      if [ -e "/etc/init/smbd.conf" ]
+      then
+	  echo "yes"
+      else
+	  echo "no"
+      fi
+      exit 0
+    ;;
+
+
+    --enable-autostart)
+      dpkg-divert --package bigsamba --rename --remove /etc/init/smbd.conf
+      exit 0
+    ;;
+
+
+    --disable-autostart)
+      if [ "$(dpkg-divert --list /etc/init/smbd.conf)" = "" ]
+      then
+	  dpkg-divert --package bigsamba --divert /etc/init/smbd.conf.distrib --rename /etc/init/smbd.conf
+      fi
+      exit 0
+    ;;
+
+
+    *)
+        echo "Manage Samba
+
+--enable		Start Samba server
+--disable		Stop Samba server
+--autostart		View autostart enabled
+--enable-autostart	Samba automatic start on boot
+--disable-autostart	Samba no automatic start on boot
+"
+
+    ;;
+
+esac
+

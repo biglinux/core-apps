@@ -1,0 +1,37 @@
+msgid "Kdesktop"
+msgstr ""
+
+msgid "Evitando conflitos com a configuracao do KDE"
+msgstr ""
+
+msgid "Aplicar"
+msgstr ""
+
+msgid "Sair"
+msgstr ""
+
+msgid "Adiciona a opcao KDE no gerenciador de login"
+msgstr ""
+
+msgid "Remove a opcao KDE do gerenciador de login"
+msgstr ""
+
+msgid "Evitando conflitos com a configuracao do KDE."
+msgstr ""
+
+msgid ""
+"O BigLinux utiliza como desktop principal o KDE. Para evitar conflitos com o "
+"Kubuntu, no BigLinux e utilizada a pasta .kdesktop e a identificacao "
+"Kdesktop no gerenciador de login."
+msgstr ""
+
+msgid ""
+"Para facilitar melhorar o uso em computadores com hardware obsoleto tambem e "
+"adicionado o kdesktop-lite ao gerenciador de login."
+msgstr ""
+
+msgid "Remover a opcao KDE no gerenciador de login"
+msgstr ""
+
+msgid "Adicionar a opcao KDE no gerenciador de login"
+msgstr ""

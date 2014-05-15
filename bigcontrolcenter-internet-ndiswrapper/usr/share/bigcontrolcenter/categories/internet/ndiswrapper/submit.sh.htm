@@ -1,0 +1,57 @@
+#!/bin/bash
+
+#Ndiswrapper
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter 
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+
+
+title=$"Wireless com driver Windows (Ndiswrapper)"
+apply=$"Aplicar"
+close=$"Sair"
+back=$"Voltar para tela de configuracao"
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Utilizar driver do Windows para placa Wireless."
+close_header
+
+#Exibir resposta para o usuario
+echo "<br><br><br><br><br>"
+
+if [ "$p_enable" = "yes" ]
+then
+bigsudo bigndiswrapper --enable $(kdialog --getopenfilename ~ *.inf) 2> /dev/null > /dev/null
+echo $"Driver Ndiswrapper ativado, va ao configurador de conexao e tente estabelecer uma conexao, caso nao funcione tente utilizar um driver para outra versao de Windows, em geral o driver para a versao 2000 funciona melhor no Ndiswrapper."
+else
+bigsudo bigndiswrapper --disable  2> /dev/null > /dev/null
+echo $"O driver Ndiswrapper desativado, para que o sistema volte a utilizar o driver nativo recomendo que reinicie o computador."
+fi
+
+echo "</font></div><div id=\"rodape\"><button type=button  onClick=\"parent.location='ndiswrapper.sh.htm'\">   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $back   </button> 
+
+<button type=button onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></form></div></body>"

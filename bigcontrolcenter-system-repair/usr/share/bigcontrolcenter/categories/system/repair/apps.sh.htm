@@ -1,0 +1,85 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-repair
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+
+title=$"Restaurar programas"
+apply=$"Aplicar"
+close=$"Sair"
+tip_distro=$"Restaura para a configuracao padrao da distribuicao quando possivel.<br><br>Caso a distribuicao nao efetue uma configuracao especial sera restaurado para o padrao do programa."
+tip_default=$"Restaura para a configuracao padrao do programa."
+tip_no=$"Nao serao feitas modificacoes nesse programa."
+back=$"Voltar para tela de configuracao"
+modificar=$"<hr><br>Serao modificados arquivos e pastas a seguir:<br><br>"
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Restaure a configuracao padrao dos programas."
+close_header
+
+
+
+#O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#Quando se utiliza aspas duplas o sistema executa algumas partes do codigo antes de passar a resposta, entre essas execucoes inclui a interpretacao de variaveis
+#Para incluir textos a serem exibidos ao usuario utilize aspas duplas com $ antes, para que funcione o sistema de tradução, exemplo: $"texto"
+#No exemplo abaixo o memso comando echo foi aberto e fechado diversas vezes de acordo com a necessidade, aspas simples, duplas e duplas com traducao.
+
+echo '<center><table width=95%><tr><td>'
+echo $"Atencao, ao restaurar um programa serao perdidas as configuracoes personalizadas e historicos para que seja restaurada a configuracao padrao."
+echo '</table>'
+
+echo '<center><table width=95%><tr><td>'
+echo '<form action=apps_submit.sh.htm method=get>'
+
+echo "<table width=95%><tr><td align=center>" "<b>" $"Programa" "</td><td align=center>" "<b>" $"Opcao" "</td></tr><tr>"
+
+OIFS=$IFS
+IFS=$'\n'
+  for i in $(/usr/share/bigcontrolcenter/categories/system/repair/apps_list | sort)
+  do
+
+      if [ "$(echo "$i" | cut -f4 -d"|")" != "null" ]; then
+	  atencao="<font color=red><br><br>$(echo "$i" | cut -f4 -d"|")</font>"
+      else
+	  atencao=""
+      fi
+
+      echo "<td width=80%>" "$(echo "$i" | cut -f1 -d"|")" "</td><td width=200 align=center><input type=radio name=\"$(echo "$i" | cut -f2 -d"|")\" id=\"$(echo "$i" | cut -f2 -d"|")\" value=\"distro\" $mouseover_open $tip_distro$atencao<br><br>$modificar$HOME/$(echo "$i" | cut -f3 -d"|" | sed "s|;|<br>$HOME/|g") $mouseover_close>   <input type=radio name=\"$(echo "$i" | cut -f2 -d"|")\" id=\"$(echo "$i" | cut -f2 -d"|")_default\" value=\"default\" $mouseover_open $tip_default$atencao<br><br>$modificar$HOME/$(echo "$i" | cut -f3 -d"|" | sed "s|;|<br>$HOME/|g") $mouseover_close>   <input type=radio name=\"$(echo "$i" | cut -f2 -d"|")\" id=\"$(echo "$i" | cut -f2 -d"|")\" value=\"\" $mouseover_open $tip_no $mouseover_close checked></td></tr><tr>"
+      echo "<td><hr></td><td><hr></td></tr><tr>"
+  done
+IFS=$OIFS
+
+    echo "</table>"
+
+
+
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

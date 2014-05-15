@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-hardware-energy
+Version: 1.1.0-1kaiana3
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: bigcontrolcenter, laptop-mode-tools, ethtool
+Section: admin
+Priority: optional
+Description: Power Manager
+

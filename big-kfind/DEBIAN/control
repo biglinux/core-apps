@@ -1,0 +1,9 @@
+Package: big-kfind
+Version: 1.0.0-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Replaces: kfind
+Depends: kfind
+Section: x11
+Priority: optional
+Description: Service Menu for kfind

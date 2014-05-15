@@ -1,0 +1,26 @@
+# Spanish translations for PACKAGE package.
+# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BigLinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2010-10-12 06:18+0000\n"
+"Last-Translator: Paco Molinero <paco@byasl.com>\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-10-13 04:56+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Estilo dos aplicativos GTK"
+msgstr "Estilo de aplicaciones GTK"
+
+msgid "Defina como serao exibidas as janelas GTK (Firefox, GIMP, Abiword...)"
+msgstr ""
+"Determinar cómo se mostrarán las ventanas GTK (Firefox, GIMP, Abiword...)"

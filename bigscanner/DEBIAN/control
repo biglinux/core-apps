@@ -1,0 +1,11 @@
+Package: bigscanner
+Version: 1.0.0-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 100
+Depends: sane-utils
+Recommends: kde-baseapps-bin
+Section: admin
+Priority: optional
+Description: Interface para automatizar o processo de digitalização de imagens.
+

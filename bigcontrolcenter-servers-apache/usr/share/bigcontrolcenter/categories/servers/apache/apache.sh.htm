@@ -1,0 +1,145 @@
+#!/bin/bash
+
+#LAMP panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-servers-apache
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Configurar servidor WEB"
+apply=$"Aplicar"
+close=$"Sair"
+mysql_pass=$"Alterar a senha do administrador do MySQL"
+port_help=$"Por padrao se utiliza a porta 80"
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Disponibilize informacao na WEB diretamente do seu computador."
+close_header
+
+#body
+#Confere se o apache esta em execucao
+if [ "$(ps -A | grep apache2)" != "" ]
+then
+  apache_check="checked"
+fi
+
+#Confere se o apache esta para iniciar no boot
+if [ -e "/etc/rc2.d/S91apache2" ]
+then
+  auto_apache_check="checked"
+fi
+
+#Confere se o mysql esta em execucao
+if [ "$(ps -A | grep mysqld)" != "" ]
+then
+  mysql_check="checked"
+fi
+
+#Confere se o mysql esta para iniciar no boot
+if [ -e "/etc/init/mysql.conf" ]
+then
+  auto_mysql_check="checked"
+fi
+
+
+#O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#Quando se utiliza aspas duplas o sistema executa algumas partes do codigo antes de passar a resposta, entre essas execucoes inclui a interpretacao de variaveis
+#Para incluir textos a serem exibidos ao usuario utilize aspas duplas com $ antes, para que funcione o sistema de tradução, exemplo: $"texto"
+#No exemplo abaixo o memso comando echo foi aberto e fechado diversas vezes de acordo com a necessidade, aspas simples, duplas e duplas com traducao.
+echo '<center><table width=95%><tr><td>'
+echo $"O Apache e o servidor WEB mais utilizado no mundo, funciona muito bem com o banco de dados MySQL e possui diversos programas escritos em PHP prontos para download na internet."
+
+echo "<p><table width=100%><tr><td valign=top><form action=submit.sh.htm method=get>"
+
+if [ -e "/usr/sbin/apache2" ]
+then
+echo "<INPUT TYPE=checkbox ID=start_apache NAME=start_apache VALUE=yes $apache_check><label for=start_apache>" $"Apache ativo"'</label>'
+echo "<br><INPUT TYPE=checkbox ID=autostart_apache NAME=autostart_apache VALUE=yes $auto_apache_check><label for=autostart_apache>" $"Ativar Apache ao ligar o PC"'</label>'
+echo "<br>" $"Porta do Apache" "<INPUT $mouseover_open $port_help $mouseover_close type=text name=apache_port value=$(grep ^Listen /etc/apache2/ports.conf | cut -d" " -f2) size=5 maxlength=5><p>"
+fi
+
+if [ -e "/usr/bin/mysqld_safe" ]
+then
+echo "<INPUT TYPE=checkbox ID=start_mysql NAME=start_mysql VALUE=yes $mysql_check><label for=start_mysql>" $"MySQL ativo"'</label>'
+echo "<br><INPUT TYPE=checkbox ID=autostart_mysql NAME=autostart_mysql VALUE=yes $auto_mysql_check><label for=autostart_mysql>" $"Ativar MySQL ao ligar o PC"'</label>'
+echo "<br><INPUT TYPE=checkbox ID=pass_mysql NAME=pass_mysql VALUE=yes><label for=pass_mysql>" $"Alterar senha do administrador do MySQL"'</label><p>'
+fi
+
+if [ -e "/usr/sbin/apache2" ]
+then
+echo '<INPUT TYPE=checkbox ID=remove_apache NAME=remove_apache VALUE=yes><label for=remove_apache>' $"Desinstalar Apache"'</label><br>'
+else
+echo '<INPUT TYPE=checkbox ID=install_apache NAME=install_apache VALUE=yes><label for=install_apache>' $"Instalar Apache"'</label><br>'
+fi
+
+if [ -e "/usr/bin/mysqld_safe" ]
+then
+echo '<INPUT TYPE=checkbox ID=remove_mysql NAME=remove_mysql VALUE=yes><label for=remove_mysql>' $"Desinstalar Mysql"'</label><br>'
+else
+echo '<INPUT TYPE=checkbox ID=install_mysql NAME=install_mysql VALUE=yes><label for=install_mysql>' $"Instalar MySQL"'</label><br>'
+fi
+
+
+if ! [ -e "/usr/lib/php5/maxlifetime" ]
+then
+echo '<INPUT TYPE=checkbox ID=install_php NAME=install_php VALUE=yes><label for=install_php>' $"Instalar PHP e PHPMyAdmin"'</label><br>'
+else
+echo '<INPUT TYPE=checkbox ID=remove_php NAME=remove_php VALUE=yes><label for=remove_php>' $"Desinstalar PHP e PHPMyAdmin"'</label><br>'
+fi
+
+echo "</td><td valign=top align=right>"
+echo '<a href="/usr/share/bigbashview/run.run?bigbashview -s 400x240 /usr/share/bigcontrolcenter/categories/servers/apache/ip.sh.htm">' $"Detectar IP da rede interna e Internet" '</a><p>'
+
+if [ -e "/etc/phpmyadmin/config.inc.php" ]
+then
+echo "<a href=\"/usr/share/bigbashview/run.run?xdg-open http://127.0.0.1:$(grep ^Listen /etc/apache2/ports.conf | cut -d" " -f2)/phpmyadmin\">" $"Abrir o gerenciador de MySQL PHPMyAdmin" '</a><p>'
+fi
+
+if [ -e "/usr/sbin/apache2" ]
+then
+echo "<a href=\"/usr/share/bigbashview/run.run?xdg-open http://127.0.0.1:$(grep ^Listen /etc/apache2/ports.conf | cut -d" " -f2)\">" $"Abrir navegador na raiz do seu servidor WEB" '</a><p>'
+echo '<a href="/usr/share/bigbashview/run.run?bigsudo bigfile /var/www">' $"Abrir pasta com os arquivos do Apache" '</a><p>'
+echo '<a href="/usr/share/bigbashview/run.run?bigsudo bigedit /etc/apache2/apache2.conf">' $"Configuracoes avancadas do Apache" '</a><p>'
+fi
+
+if [ -e "/usr/bin/mysqld_safe" ]
+then
+echo '<a href="/usr/share/bigbashview/run.run?bigsudo bigedit /etc/mysql/my.cnf">' $"Configuracoes avancadas do MySQL" '</a><p>'
+fi
+
+if [ -e "/usr/lib/php5/maxlifetime" ]
+then
+echo '<a href="/usr/share/bigbashview/run.run?bigsudo bigedit /etc/php5/apache2/php.ini">' $"Configuracoes avancadas do PHP" '</a><p>'
+fi
+
+if [ -e "/usr/sbin/apache2" ]
+then
+echo $"Logs do Apache:" '<a href="/usr/share/bigbashview/run.run?xdg-open /var/log/apache2/">' $"Ver" "</a> - " '<a href="/usr/share/bigbashview/run.run?bigterminal -e tail -f /var/log/apache2/access.log">' $"Monitorar" "</a><p>"
+fi
+
+
+echo "</td></tr></table>"
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"

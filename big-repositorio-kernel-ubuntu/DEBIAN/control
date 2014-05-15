@@ -1,0 +1,10 @@
+Package: big-repositorio-kernel-ubuntu
+Version: 1.0.0-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Depends: xterm, zenity-common, wget
+Priority: optional
+Description: Automatiza a instalação de kernel ubuntu
+

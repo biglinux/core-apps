@@ -1,0 +1,163 @@
+# Estonian translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-13 21:30-0300\n"
+"PO-Revision-Date: 2010-09-08 08:29+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: Estonian <et@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-09 04:42+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "BigConnect"
+msgstr "BigConnect"
+
+msgid "Aplicar"
+msgstr "Rakenda"
+
+msgid "Sair"
+msgstr "Välju"
+
+msgid "Conexao Wireless com senha WEP, WPA ou sem senha (Nao suporta 3G)."
+msgstr "Wireless ühendus WEP'iga, WPA või ilma paroolita (ei toeta 3G)."
+
+msgid "Conexao DHCP ou IP fixo."
+msgstr "DHCP või fikseeritud IP-ühendus."
+
+msgid "Gerenciador de conexao alternativo."
+msgstr "Alternatiivne võrguühenduse haldur."
+
+msgid ""
+"Esse e um configurador de conexao que utiliza apenas as ferramentas basicas "
+"do sistema e funciona para conexoes por cabo Ethernet e Wireless. "
+"<p><br>Veja em que situacoes e mais recomendado:"
+msgstr ""
+"See on võrguühenduse seadistamise tööriist, mis kasutab ainult põhilisi "
+"süsteem tööriistu ja töötab Ethernet kaabli-ja traadita ühendustega. "
+"<p><br>Vaata millistel juhtul on soovitatav:"
+
+msgid ""
+"- Computadores antigos, pois reduz o consumo de memoria e processamento.\n"
+"<br> - Locais onde os usuarios nao devem ter acesso para alterar as "
+"configuracoes da conexao.\n"
+"<br> - Computadores que serao utilizados sem modo grafico.\n"
+"<br> - Caso os outros configuradores falhem."
+msgstr ""
+"- Vanad arvutid, sest see vähendab mälu ja protsessor kasutamist.\n"
+"<br> - Kohad, kus kasutajatel ei peaks olema juurdepääs muuta võrguühenduse "
+"konfiguratsioonisi.\n"
+"<br> - Arvutid, mida kasutatakse ilma graafika režiimita.\n"
+"<br> - Kui muude konfiguratsiooni tööriistad ebaõnnestuvad."
+
+msgid "Escolha o tipo de conexao:"
+msgstr "Vali võrguühenduse tüüp:"
+
+msgid "Sem fio (Wireless)."
+msgstr "Wireless.(Juhtmeta)"
+
+msgid "Cabo de rede Ethernet."
+msgstr "Interneti võrgukaabel."
+
+msgid "Selecione a interface a ser utilizada para estabelecer conexao:"
+msgstr "Valige liidest mida kasutada, et luua ühendus:"
+
+msgid "Interface:"
+msgstr "Liides:"
+
+msgid "Nome da rede:"
+msgstr "Võrgu nimi:"
+
+msgid " Clique aqui para procurar redes disponiveis."
+msgstr " Vajuta siia, et otsida saadaolevaid võrke."
+
+msgid "Tipo de senha:"
+msgstr "Parooli tüüp:"
+
+msgid "Nenhuma"
+msgstr "Ei"
+
+msgid "WPA"
+msgstr "WPA"
+
+msgid "WEP"
+msgstr "WEP"
+
+msgid "Digite a senha:"
+msgstr "Sisesta parool:"
+
+msgid "Obter IP:"
+msgstr "Hangi IP:"
+
+msgid "DHCP"
+msgstr "DHCP"
+
+msgid "IP Fixo"
+msgstr "Fikseeritud IP"
+
+msgid "IP:"
+msgstr "IP:"
+
+msgid "Mascara de rede:"
+msgstr "Võrgumask:"
+
+msgid "Gateway:"
+msgstr "Lüüs:"
+
+msgid "DNS 1:"
+msgstr "DNS 1:"
+
+msgid "DNS 2:"
+msgstr "DNS 2:"
+
+msgid "Nome"
+msgstr "Nome"
+
+msgid "Qualidade do sinal"
+msgstr "Signaali kvaliteet"
+
+msgid "Tipo de senha"
+msgstr "Salasõna tüüp"
+
+msgid "Conectar a internet utilizando BigConnect"
+msgstr "Ühenda internetiga kasutades BigConnect'i"
+
+msgid "Gerenciador de conexao alternativo.<br>Cabo, DHCP, Wireless e IP Fixo"
+msgstr ""
+"Alternatiivsed võrguühenduse seadistamise tööriist. <br>Kaabel, DHCP, "
+"juhtmeta ja fikseeritud IP."
+
+msgid "Configuracao aplicada."
+msgstr "Konfiguratsioon rakendatud."
+
+msgid ""
+"O BigConnect e utilizado por esse painel, mas nao esta ativo, devo ativa-lo "
+"agora?\n"
+"Atencao: Isso ira desativar o gerenciador em uso: Network Manager."
+msgstr ""
+"BigConnect kasutatakse selle paneelil, kuid ei ole aktiivne, peaksin ma "
+"lubama seda?\n"
+"Hoiatus: see keelab praegu kasutusel halduri: Võrgu haldur."
+
+msgid ""
+"O BigConnect e utilizado por esse painel, mas nao esta ativo, devo ativa-lo "
+"agora?\n"
+"Atencao: Isso ira desativar o gerenciador em uso: Wicd."
+msgstr ""
+"BigConnect kasutatakse selle paneeli, kuid ei ole aktiivne, peaksin ma seda "
+"lubama nüüd?\n"
+"Hoiatus: see keelab praegu kasutusel oleva halduri: Wicd"
+
+msgid ""
+"O BigConnect e utilizado por esse painel, mas nao esta ativo, devo ativa-lo "
+"agora?"
+msgstr ""
+"BigConnect kasutatakse sellel paneelil, kuid ei ole aktiivne, peaksin ma "
+"lubama sedas nüüd?"

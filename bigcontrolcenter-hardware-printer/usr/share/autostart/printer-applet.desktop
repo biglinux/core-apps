@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Printer Applet
+Comment=System tray icon for managing print jobs
+Exec=
+Terminal=false
+Type=Application
+Icon=printer
+OnlyShowIn=KDE;
+X-KDE-autostart-phase=2
+X-Ubuntu-Gettext-Domain=desktop_kdeutils

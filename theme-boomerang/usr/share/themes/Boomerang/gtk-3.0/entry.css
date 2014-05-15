@@ -1,0 +1,111 @@
+/*********
+ * Entry *
+ *********/
+.entry {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@base_color, 0.96)),
+                                     to (@base_color));
+    border-top-color: shade (@bg_color, 0.64);
+    border-right-color: shade (@bg_color, 0.76);
+    border-bottom-color: shade (@bg_color, 0.82);
+    border-left-color: shade (@bg_color, 0.76);
+    border-radius: 2.5px;
+    border-style: solid;
+    padding: 3px 5px 3px 5px;
+    
+    color: @text_color;
+
+    -unico-border-gradient: none;
+    -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
+                                                 from (alpha (shade (@bg_color, 0.05), 0.04)),
+                                                 to (alpha (shade (@bg_color, 0.05), 0.02)));
+    -unico-inner-stroke-width: 1px;
+}
+
+.entry:backdrop {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (mix (shade (@base_color, 0.98), @bg_color, 0.4)),
+                                     to (mix (@base_color, @bg_color, 0.4)));
+    border-top-color: shade (@bg_color, 0.72);
+    border-right-color: shade (@bg_color, 0.82);
+    border-bottom-color: shade (@bg_color, 0.88);
+    border-left-color: shade (@bg_color, 0.82);
+
+    color: mix (@fg_color, @base_color, 0.2);
+
+    -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
+                                                 from (alpha (shade (@bg_color, 0.05), 0.02)),
+                                                 to (alpha (shade (@bg_color, 0.05), 0.01)));
+}
+
+.entry:selected,
+.entry:selected:focused {
+    background-color: @selected_bg_color;
+
+    color: @selected_fg_color;
+}
+
+.entry:selected:backdrop,
+.entry:selected:focused:backdrop {
+    background-color: @backdrop_selected_bg_color;
+
+    color: @selected_fg_color;
+}
+
+.entry:focused {
+    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
+                                           from (shade (@selected_bg_color, 0.75)),
+                                           to (shade (@selected_bg_color, 0.8)));
+    -unico-inner-stroke-color: alpha (@selected_bg_color, 0.3);
+    -unico-inner-stroke-gradient: none;
+}
+
+.entry:focused:backdrop {
+    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
+                                           from (shade (@backdrop_selected_bg_color, 0.75)),
+                                           to (shade (@backdrop_selected_bg_color, 0.8)));
+    -unico-inner-stroke-color: alpha (@backdrop_selected_bg_color, 0.3);
+    -unico-inner-stroke-gradient: none;
+}
+
+.entry:insensitive {
+    background-color: shade (@bg_color, 0.96);
+    background-image: none;
+    
+    color: mix (@text_color, @base_color, 0.4);
+
+    -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
+                                                 from (alpha (shade (@bg_color, 0.05), 0.04)),
+                                                 to (alpha (shade (@bg_color, 0.05), 0.02)));
+}
+
+.entry:insensitive:backdrop {
+    background-color: shade (@bg_color, 0.98);
+    background-image: none;
+
+    color: mix (@text_color, @base_color, 0.5);
+
+    -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
+                                                 from (alpha (shade (@bg_color, 0.05), 0.02)),
+                                                 to (alpha (shade (@bg_color, 0.05), 0.01)));
+}
+
+.primary-toolbar .toolbar .entry.progressbar,
+.primary-toolbar.toolbar .entry.progressbar,
+.entry.progressbar {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@selected_bg_color, 0.8)),
+                                     color-stop (0.1, shade (@selected_bg_color, 0.9)),
+                                     to (shade (@selected_bg_color, 1.1)));
+    border-radius: 2.5px;
+    border-width: 0;
+
+    color: @selected_fg_color;
+
+    -unico-outer-stroke-width: 0;
+}
+
+.primary-toolbar .entry.progressbar:backdrop,
+.primary-toolbar .entry.progressbar:backdrop,
+.entry.progressbar:backdrop {
+}

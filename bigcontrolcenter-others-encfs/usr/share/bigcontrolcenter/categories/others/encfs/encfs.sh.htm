@@ -1,0 +1,57 @@
+#!/bin/bash
+
+#DNS panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-others-encfs
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Criptografia de pastas"
+apply=$"Aplicar"
+close=$"Sair"
+#title
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Proteja seus arquivos com o Encfs."
+close_header
+
+#body
+
+#O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#Quando se utiliza aspas duplas o sistema executa algumas partes do codigo antes de passar a resposta, entre essas execucoes inclui a interpretacao de variaveis
+#Para incluir textos a serem exibidos ao usuario utilize aspas duplas com $ antes, para que funcione o sistema de tradução, exemplo: $"texto"
+#No exemplo abaixo o memso comando echo foi aberto e fechado diversas vezes de acordo com a necessidade, aspas simples, duplas e duplas com traducao.
+echo '<center><table width=95%><tr><td>'
+echo $"1 - Para utilizar pastas criptografadas utilize o gerenciador de arquivos Dolphin." "<p>"
+echo $"2 - Crie uma pasta e deixe-a vazia." "<p>"
+echo $"3 - Clique com o botão direito sobre a mesma, selecione a opcão ações, criptografar pasta e clique em "Criar"." "<p>"
+echo $"4 - Pastas criptografadas podem ser utilizadas onde desejar, inclusive em pendrives." "<p>"
+echo $"5 - Sempre que reiniciar o sistema sera necessario ativar novamente a pasta criptografada para ter acesso a seus dados." "<p>"
+echo $"6 - Quando a pasta estiver inativa não adicione arquivos na mesma, caso tenha feito, remova-os para que a pasta possa ser ativada novamente." "<p>"
+
+
+echo "</div><div id=\"rodape\"><button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

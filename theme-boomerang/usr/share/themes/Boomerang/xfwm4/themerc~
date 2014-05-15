@@ -1,0 +1,16 @@
+# Name: Boomerang xfwm4 theme
+# Author: Muhammad Nabil <ghogaru.deviantart.com>
+# License: GPL
+# Date: June 2012
+
+active_text_color=#777777
+active_text_shadow_color=#F9F7F6
+inactive_text_color=#A7A6A7
+inactive_text_shadow_color=#FBFBFA
+title_shadow_active=true
+title_shadow_inactive=true
+full_width_title=true
+title_vertical_offset_active=2
+title_vertical_offset_inactive=2
+button_offset=4
+button_spacing=2

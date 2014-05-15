@@ -1,0 +1,22 @@
+#!/bin/bash
+
+
+    if which rpmbuild; then 
+      kdialog --title $"OpenMandriva"  --msgbox  $" RPM Packaging Suite are already installed.";
+	else 
+	    if [ "$(uname -m)" = "i686" ]; then
+		gurpmi rpmbuild; 
+		if which rpmbuild; then
+		kdialog --title $"OpenMandriva"  --msgbox  $" RPM Packaging Suite successfully installed.";
+		    else
+		kdialog --title $"OpenMandriva"  --msgbox  $" RPM Packaging Suite not installed.";
+		fi
+	    else
+		gurpmi rpmbuild;
+		if which rpmbuild; then
+		kdialog --title $"OpenMandriva"  --msgbox  $" RPM Packaging Suite successfully installed.";
+		    else
+		kdialog --title $"OpenMandriva"  --msgbox  $" RPM Packaging Suite not installed.";
+		fi
+	    fi
+    fi

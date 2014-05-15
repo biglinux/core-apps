@@ -1,0 +1,189 @@
+# Brazilian Portuguese translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-13 22:36-0300\n"
+"PO-Revision-Date: 2010-09-14 06:57+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-15 04:57+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "SSH"
+msgstr "SSH"
+
+msgid "Aplicar"
+msgstr "Aplicar"
+
+msgid "Sair"
+msgstr "Sair"
+
+msgid "A porta padrao dos servidores SSH e 22"
+msgstr "A porta padrão dos servidores SSH e 22"
+
+msgid ""
+"Com essa opcao ativada e possivel apos acessar o terminal executar programas "
+"em modo grafico remotamente<p>Programas executados dessa forma sao "
+"processados no servidor e exibidos no cliente."
+msgstr ""
+"Com essa opção ativada é possível após acessar o terminal executar programas "
+"em modo gráfico remotamente<p>Programas executados dessa forma são "
+"processados no servidor e exibidos no cliente."
+
+msgid "Acesso remoto seguro e de qualidade."
+msgstr "Acesso remoto seguro e de qualidade."
+
+msgid "Instalando o TeamViwer, aguarde um momento..."
+msgstr "Instalando o TeamViwer, aguarde um momento..."
+
+msgid "TeamViewer"
+msgstr "TeamViewer"
+
+msgid ""
+"A instalacao falhou!\n"
+"\n"
+"Confira se a conexao com a internet esta funcionando.\n"
+"\n"
+"Se estiver utilizando o instalador de programas Synaptic ou apt-get, feche-o "
+"e tente novamente."
+msgstr ""
+"A instalação falhou!\n"
+"\n"
+"Confira se a conexão com a internet está funcionando.\n"
+"\n"
+"Se estiver utilizando o instalador de programas Synaptic ou apt-get, feche-o "
+"e tente novamente."
+
+msgid "Acesso remoto"
+msgstr "Acesso remoto"
+
+msgid "As melhores solucoes para acessar computadores a distancia"
+msgstr "As melhores soluções para acessar computadores à distância"
+
+msgid "Confirma a remocao do TeamViewer?"
+msgstr "Confirma a remoção do TeamViewer?"
+
+msgid "Instalador do TeamViewer"
+msgstr "Instalador do TeamViewer"
+
+msgid ""
+"Clique aqui para iniciar a instalacao, e preciso estar conectado a "
+"internet.<br>Sera feito um download proximo de 16 MB."
+msgstr ""
+"Clique aqui para iniciar a instalação, é preciso estar conectado a "
+"internet.<br>Sera feito um download próximo de 16 MB."
+
+msgid "Clique aqui para remover o TeamViewer."
+msgstr "Clique aqui para remover o TeamViewer."
+
+msgid "Clique aqui para utilizar o TeamViewer."
+msgstr "Clique aqui para utilizar o TeamViewer."
+
+msgid "Assistencia remota facil e rapida."
+msgstr "Assistência remota fácil e rápida."
+
+msgid ""
+"Esse programa pode ser comparado ao VNC, porem com mais velocidade e sem "
+"precisar se preocupar com roteamentos ou configuracao de firewall."
+msgstr ""
+"Esse programa pode ser comparado ao VNC, porém com mais velocidade e sem "
+"precisar se preocupar com roteamentos ou configuração de firewall."
+
+msgid ""
+"Entretanto e um software proprietario e seu uso e gratuito apenas para "
+"usuarios nao comerciais."
+msgstr ""
+"Entretanto é um software proprietário e seu uso e gratuito apenas para "
+"usuários nao comerciais."
+
+msgid ""
+"Clique aqui</a> para visitar o site oficial e obter mais informacoes sobre "
+"esse programa."
+msgstr ""
+"Clique aqui</a> para visitar o site oficial e obter mais informações sobre "
+"esse programa."
+
+msgid "Remover TeamViewer"
+msgstr "Remover TeamViewer"
+
+msgid "Executar TeamViewer"
+msgstr "Executar TeamViewer"
+
+msgid "Instalar TeamViewer"
+msgstr "Instalar TeamViewer"
+
+msgid "Configuracao aplicada."
+msgstr "Configuração aplicada."
+
+msgid ""
+"Configure esse computador para que seja possivel acessa-lo remotamente"
+msgstr ""
+"Configure esse computador para que seja possível acessa-lo remotamente"
+
+msgid "Acesse servidores SSH"
+msgstr "Acesse servidores SSH"
+
+msgid ""
+"Utilize o Krfb para permitir que conectem a esse computador utilizando o "
+"protocolo VNC."
+msgstr ""
+"Utilize o Krfb para permitir que conectem a esse computador utilizando o "
+"protocolo VNC."
+
+msgid ""
+"Utilize o Krdc para conectar a computadores utilizando o protocolo VNC ou "
+"RDP."
+msgstr ""
+"Utilize o Krdc para conectar a computadores utilizando o protocolo VNC ou "
+"RDP."
+
+msgid ""
+"Compartilhe ou acesse computadores sem se preocupar com roteamento e firewall"
+msgstr ""
+"Compartilhe ou acesse computadores sem se preocupar com roteamento e firewall"
+
+msgid ""
+"Nao se trata exatamente de um desktop remoto e sim de um ambiente "
+"colaborativo.<p>Um site onde voce pode compartilhar a tela do seu desktop, "
+"apresentacoes, desenhar como em um quadro negro...<p>Ainda conta com chato "
+"por voz e texto, uma boa ferramenta para fornecer cursos online"
+msgstr ""
+"Não se trata exatamente de um desktop remoto e sim de um ambiente "
+"colaborativo.<p>Um site onde você pode compartilhar a tela do seu desktop, "
+"apresentações, desenhar como em um quadro negro...<p>Ainda conta com chat "
+"por voz e texto, uma boa ferramenta para fornecer cursos online"
+
+msgid "As melhores solucoes para acessar computadores a distancia."
+msgstr "As melhores soluções para acessar computadores à distância."
+
+msgid "Servidor SSH"
+msgstr "Servidor SSH"
+
+msgid "Cliente SSH"
+msgstr "Cliente SSH"
+
+msgid "Compartilhe o computador por VNC"
+msgstr "Compartilhe o computador por VNC"
+
+msgid "Acesse computadores por VNC ou RDP"
+msgstr "Acesse computadores por VNC ou RDP"
+
+msgid "Vyew.com um ambiente de compartilhamento"
+msgstr "Vyew.com um ambiente de compartilhamento"
+
+msgid "Configurar DNS"
+msgstr "Configurar DNS"
+
+msgid "Voltar para tela de configuracao"
+msgstr "Voltar para tela de configuração"
+
+msgid "Para uma conexao mais rapida e estavel."
+msgstr "Para uma conexão mais rápida e estável."

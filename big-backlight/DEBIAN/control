@@ -1,0 +1,10 @@
+Package: big-backlight
+Version: 1.0.0-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 100
+Depends: acpi-support
+Section: admin
+Priority: optional
+Description: Fix backlight configuration
+

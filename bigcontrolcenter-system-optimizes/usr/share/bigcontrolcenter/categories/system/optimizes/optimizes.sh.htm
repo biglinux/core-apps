@@ -1,0 +1,119 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-optimizes
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Otimizacoes e facilidades"
+apply=$"Aplicar"
+close=$"Sair"
+tip_update=$"Mostrar um icone na barra de tarefas quando existirem atualizacoes disponiveis.<p>* Essa operacao afeta apenas esse usuario."
+tip_partition=$"Ativar ou desativar montar particoes automaticamente e otimizar particoes ext4.<p>* Essa operacao afeta TODOS os usuarios do sistema."
+tip_prelink=$"Otimizar o sistema com Prelink.<p>* Essa operacao afeta TODOS os usuarios do sistema."
+tip_akonadi=$"Ativar ou Desativar o servidor Akonadi.<br>Utilizado por alguns programas do KDE para integrar informacoes do usuario, desativado por padrao no BigLinux.<p>* Essa operacao afeta TODOS os usuarios do sistema."
+tip_swap=$"Configurar uso de memoria Swap.<p>* Essa operacao afeta TODOS os usuarios do sistema."
+tip_nepomuk=$"Configurar o servidor Nepomuk.<br>Utilizado pelo KDE para efetuar buscas no sistema, desativado por padrao no BigLinux.<p>* Essa operacao afeta apenas esse usuario."
+tip_autostart=$"Selecione o que deve ser iniciado junto com o KDE.<p>* Essa operacao afeta apenas esse usuario."
+tip_kcmkded=$"Selecione os servicos que o KDE deve iniciar automaticamente.<p>* Essa operacao afeta apenas esse usuario."
+tip_kcmsmserver=$"Selecione a forma de gerenciar a sessao no KDE.<p>* Essa operacao afeta apenas esse usuario."
+tip_proc=$"Acelerar a finzalizacao de processos.<p>* Essa operacao afeta TODOS os usuarios do sistema."
+tip_plasma=$"Se o desktop do KDE estiver lento experimente o modo raster.<p>* Essa operacao afeta TODOS os usuarios do sistema."
+tip_firefox=$"Apos muito tempo de uso otimizar o banco de dados do Firefox pode aumentar o desempenho do programa.<p>* Essa operacao afeta apenas esse usuario."
+
+. /usr/share/bigcontrolcenter/default/theme.sh.htm
+
+cat << EOF
+	<script type="text/javascript" src="/usr/share/bigcontrolcenter/default/js/jquery-1.3.2.min.js"></script>
+
+
+	<script type="text/javascript">
+	\$(function() {
+		\$("#tabs").tabs({
+			event: 'mouseover'
+		})
+	});
+
+	if (document.images) {
+	buttonUp = new Image(); buttonUp.src = "/usr/share/bigcontrolcenter/default/images/category-background.png";
+	buttonDown = new Image(); buttonDown.src = "$(echo $HOME)/.bigcontrolcenter/category-background-over.png";
+	}
+
+	function turn_off(cell) {
+	if (document.images != null) {
+	cell.style.backgroundImage = "url('" + buttonUp.src + "')";
+	}
+	}
+
+	function turn_on(cell) {
+	if (document.images != null) {
+	cell.style.backgroundImage = "url('" + buttonDown.src + "')";
+	}
+	}
+
+  </script>
+
+
+EOF
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Equilibre o desempenho do sistema e os recursos disponiveis."
+close_header
+
+
+
+echo "<TABLE align=center><tr><td>"
+    echo "<a href=\"/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/system/optimizes/update.sh.htm -i /usr/share/bigcontrolcenter/categories/system/optimizes/update.png\"" "$mouseover_open" $tip_update "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=update.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Notificar atualizacoes" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?bigsudo bigbashview /usr/share/bigcontrolcenter/categories/system/optimizes/partition.sh.htm -i /usr/share/bigcontrolcenter/categories/system/optimizes/partition.png\"" "$mouseover_open" $tip_partition "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=partition.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Montar particoes" " </font></td></tr></table></a>"
+echo '</td></tr><tr><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?bigsudo bigbashview /usr/share/bigcontrolcenter/categories/system/optimizes/prelink.sh.htm -i /usr/share/bigcontrolcenter/categories/system/optimizes/prelink.png\"" "$mouseover_open" $tip_prelink "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=prelink.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Utilizar o Prelink" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?bigsudo bigbashview /usr/share/bigcontrolcenter/categories/system/optimizes/akonadi.sh.htm -i /usr/share/bigcontrolcenter/categories/system/optimizes/akonadi.png\"" "$mouseover_open" $tip_akonadi "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=akonadi.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Ativar/Desativar Akonadi" " </font></td></tr></table></a>"
+echo '</td></tr><tr><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?bigsudo bigbashview /usr/share/bigcontrolcenter/categories/system/optimizes/swap.sh.htm -i /usr/share/bigcontrolcenter/categories/system/optimizes/swap.png\"" "$mouseover_open" $tip_swap "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=swap.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Configurar gerenciamento de memoria" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?bigsudo bigbashview /usr/share/bigcontrolcenter/categories/system/optimizes/proc.sh.htm -i /usr/share/bigcontrolcenter/categories/system/optimizes/proc.png\"" "$mouseover_open" $tip_proc "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=proc.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Desligamento rapido" " </font></td></tr></table></a>"
+echo '</td></tr><tr><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 autostart\"" "$mouseover_open" $tip_autostart "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=autostart.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Gerenciador de inicio automatico do KDE" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 kcmkded\"" "$mouseover_open" $tip_kcmkded "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=kcmkded.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Gerenciador de servicos do KDE" " </font></td></tr></table></a>"
+echo '</td></tr><tr><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 kcmsmserver\"" "$mouseover_open" $tip_kcmsmserver "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=kcmsmserver.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Gerenciador de sessao do KDE" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 kcm_nepomuk\"" "$mouseover_open" $tip_nepomuk "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=nepomuk.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Configurar o servidor Nepomuk" " </font></td></tr></table></a>"
+echo '</td></tr><tr><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?bigsudo bigbashview /usr/share/bigcontrolcenter/categories/system/optimizes/plasma.sh.htm -i /usr/share/bigcontrolcenter/categories/system/optimizes/plasma.png\"" "$mouseover_open" $tip_plasma "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=plasma.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Desktop do KDE (Plasma)" " </font></td></tr></table></a>"
+if [ -e "/usr/bin/firefox" ]
+then
+    echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/system/optimizes/firefox.sh.htm -i /usr/share/bigcontrolcenter/categories/system/optimizes/firefox.png\"" "$mouseover_open" $tip_firefox "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=firefox.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Firefox" " </font></td></tr></table></a>"
+fi
+echo '</table>'
+
+
+echo "</a></td></tr></table></div><div id=\"rodape\"><button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+GenericName=Welcome to Kaiana
+Name=kaiana-welcome
+Exec=/usr/bin/kaiana-welcome
+X-KDE-StartupNotify=true
+X-KDE-HasTempFileOption=true
+Icon=kaiana
+Type=Application
+Terminal=false
+Categories=Qt;KDE;

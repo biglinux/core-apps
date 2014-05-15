@@ -1,0 +1,76 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-servers-ssh
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"SSH"
+apply=$"Aplicar"
+close=$"Sair"
+tip_port=$"A porta padrao dos servidores SSH e 22"
+tip_x11=$"Com essa opcao ativada e possivel apos acessar o terminal executar programas em modo grafico remotamente<p>Programas executados dessa forma sao processados no servidor e exibidos no cliente."
+
+
+
+. /usr/share/bigcontrolcenter/default/theme.sh.htm
+
+
+if [ "$p_x11" = "" ]
+then
+    touch > ~/.config/bigssh_client_x11_disable
+  else
+    rm -f ~/.config/bigssh_client_x11_disable
+    X11="-X -C"
+fi
+
+echo "$p_user" > ~/.config/bigssh_client_user
+echo "$p_ip" > ~/.config/bigssh_client_ip
+echo "$p_port" > ~/.config/bigssh_client_port
+
+
+if [ "$p_escolha" = "dolphin" ]
+then
+    touch > ~/.config/bigssh_client_dolphin
+    dolphin "fish://$p_user@$p_ip:$p_port" 2> /dev/null > /dev/null &
+  else
+    rm -f ~/.config/bigssh_client_dolphin
+    konsole --noclose -e ssh $p_ip -l $p_user -p $p_port $X11
+fi
+
+
+
+
+
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Acesso remoto seguro e de qualidade."
+close_header
+
+#Exibir resposta para o usuario
+echo '<META http-equiv="refresh" content="0;URL=client.sh.htm">'
+echo "</font></div><div id=\"rodape\"><button type=button onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></form></div></body>"

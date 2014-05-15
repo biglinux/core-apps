@@ -1,0 +1,10 @@
+Package: security-tools-service-menu-kaiana
+Version: 1.0.0-0kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Depends: kde-baseapps-bin, sed, grep, gnupg
+Priority: optional
+Description: Crypt files service menu, based in http://kde-apps.org/content/show.php/kde-services?content=147065
+

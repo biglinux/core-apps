@@ -1,0 +1,333 @@
+# Estonian translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-13 22:54-0300\n"
+"PO-Revision-Date: 2010-09-06 07:08+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: Estonian <et@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-07 04:47+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Central de Programas"
+msgstr "Tarkvara keskus"
+
+msgid "Aplicar"
+msgstr "Rakenda"
+
+msgid "Voltar"
+msgstr "Tagasta"
+
+msgid "Sair"
+msgstr "Välju"
+
+msgid "A forma mais simples de instalar e remover programas."
+msgstr "Lihtsaim viis paigaldada ja eemaldada programme."
+
+msgid "Abrir a Central de Programas"
+msgstr "Avatud tarkvara keskus"
+
+msgid ""
+"Para instalar novos programas o download e feito automaticamente, portanto e "
+"importante o PC estar conectado a internet."
+msgstr ""
+"Kui soovite paigaltad uut tarkvara, allalaadida ja seda automaatselt "
+"paigaltada, on tähtis et arvuti on ühendatud internettiga."
+
+msgid ""
+"Ao abrir o programa digite o que deseja no canto superior direito ou escolha "
+"a categoria."
+msgstr ""
+"Kui avate programmi mida soovid, vali paremas ülanurgas või vali kategooria"
+
+msgid ""
+"Ao encontrar o programa desejado de dois cliques sobre o mesmo e entao sera "
+"aberta uma pagina com a descricao mais completa e em alguns casos uma imagem "
+"de previsao. Para prosseguir com a instalacao clique no botao instalar."
+msgstr ""
+"Kui leiate soovitud programmi topeltklõps ja siis avaneb lehekülg, millel on "
+"suurim täielik kirjeldus ja mõnel juhul eelvade. Pigaldamise jätkamiseks "
+"klõpsake paigaldamis nuppu."
+
+msgid ""
+"Para remover programas faca o mesmo processo escrito acima, porem no lugar "
+"do botao instalar estara o botao remover."
+msgstr ""
+"Rakenduse eemaldamiseks teha nii, nagu eespool öeldud, kuid klõpsa Eemalda "
+"asemel Paigalda."
+
+msgid ""
+"Se o programa desejado não for encontrado na busca do canto superior direito "
+"tente efetua-la em ingles, por exemplo: burn cd no lugar de gravar cd."
+msgstr ""
+
+msgid ""
+"Os programas instalados possuem em seu icone uma bolinha verde com um v na "
+"cor branca."
+msgstr ""
+"Paigaldatud rakendused on üle nende ikoonide väike roheline kera valget "
+"\"v\" sees."
+
+msgid ""
+"A Central de Programas não exibe todos os programas disponiveis ou "
+"instalados, mas exibe praticamente todos que sao de interesse para a maioria "
+"dos usuarios, caso deseje acessar a lista completa utilize o programa "
+"Synaptic."
+msgstr ""
+"Tarkvarakeskus ei näita kõiki olemasolevaid või paigaldtud rakendusi, kuid "
+"see näitab peaaegu kõik, mida võiks pakkuda huvi enamus kasutajatele.Et näha "
+"täieliku loendit rakendustest, kasutage Synaptic paketihaldurit."
+
+msgid "Wine"
+msgstr "Wine"
+
+msgid "Configurar o Wine."
+msgstr "Wine seadistamine."
+
+msgid "Configurador do Wine"
+msgstr "Seadisa Wine"
+
+msgid "Abrir pasta com arquivos do Wine"
+msgstr "Ava Wine failide kaust"
+
+msgid "Editor de registros Regedit"
+msgstr "Regedit registri redaktor"
+
+msgid "Gerenciador de arquivos do Wine"
+msgstr "Wine'i failihaldur"
+
+msgid "Simular que o Windows esta sendo reiniciado"
+msgstr "Simuleeri Windows uuestibootimist"
+
+msgid "Apagar arquivos pessoais do Wine"
+msgstr "Kustuta isiklikud failid Wine'st"
+
+msgid ""
+"As alteracoes feitas nesse painel afetam os programas instalados no Wine, "
+"mas nao incluenciam os instalados utilizando o PlayOnLinux."
+msgstr ""
+"Tehtud muudatusi sellele paneelil mõjutab Wine's paigaldatud rakendustele, "
+"kuid ei mõju, kui need paigaldada kasutades PlayOnLinux'it."
+
+msgid "Reiniciado."
+msgstr "Taaskäivitada."
+
+msgid "Concluida a simulacao de reinicio do Wine."
+msgstr "Wine uuestibootimis simulatsioon on lõppenud."
+
+msgid "Synaptic"
+msgstr "Synaptic"
+
+msgid "Facilidade e opcoes avancadas no mesmo local."
+msgstr "Lihtsad ja edasijõudnud valikud samas kohas."
+
+msgid "Abrir Synaptic"
+msgstr "Ava Synaptic"
+
+msgid ""
+"O botao Recarregar sincroniza a lista de programas do seu PC com a lista de "
+"programas disponiveis nos servidores, se voce for instalar algum programa "
+"recomendo que antes recarregue a lista para checar se nao foi inserida uma "
+"nova versao, mas nao e necessario recarregar a cada programa que vai se "
+"instalar, lembre que isso serve apenas para checar se o programa que esta no "
+"servidor nao e uma versao mais nova, entao usar esse botao uma vez a cada "
+"semana costuma ser suficiente."
+msgstr ""
+
+msgid ""
+"Apos recarregar basta encontrar o programa, voce pode procurar na lista a "
+"esquerda por categoria ou usar o botao procurar."
+msgstr ""
+"Pärast ümberlaadimist, pead vaid leidmaa rakenduse.Te saate otsida "
+"kategooriate nimekirjast vasakule või kasutage nuppu Otsi."
+
+msgid ""
+"Ao encontrar o programa desejado basta clicar duas vezes sobre o programa "
+"que o mesmo ficara marcado."
+msgstr "Kui leiate rakenduse topeltklõpsake seda ning see märgistakse."
+
+msgid ""
+"Apos marcar os programas clique em aplicar que o download e a instalacao "
+"sera feita automaticamente."
+msgstr ""
+"Pärast rakenduse tähistamist, klõpsa nupule Rakenda ja need automaatselt "
+"laetakse alla ja paigaldakse."
+
+msgid "Instalar ou Remover programas"
+msgstr "Paigalda või eemalda progrmmisi"
+
+msgid "Instale e remova programas de forma facil e pratica"
+msgstr "Paigaltada ja eemaldada programme on nii lihtne ja praktiline"
+
+msgid "Wine/PlayOnLinux"
+msgstr "Wine/PlayOnLinux"
+
+msgid "Como instalar programas feitos para Windows no Linux."
+msgstr "Kuidas paigaltada ja näha Windows programme Linuxis."
+
+msgid "Abrir Painel Wine"
+msgstr "Ava Wine paneel"
+
+msgid "Instalar Wine"
+msgstr "Paiaglda Wine"
+
+msgid "Abrir PlayOnLinux"
+msgstr "Ava PlayOnLinux"
+
+msgid "Instalar PlayOnLinux"
+msgstr "Paigalda PlayOnLinux"
+
+msgid "Com o Wine e possivel utilizar programas do Windows no Linux."
+msgstr "Wine'ga on võimalik kasutada Windows rakendusi Linuxis."
+
+msgid ""
+"Sua compatibilidade nao e muito boa, recomendo que tente utilizar apenas se "
+"nao encontrar programa similar feito para Linux."
+msgstr ""
+"See ühilduvus ei ole väga suur, me soovitame kasutada seda ainult siis, kui "
+"te ei leia Linuxile sarnast rakendust, mida soovite kasutada."
+
+msgid "Um dos usos mais comuns do Wine e para rodar jogos."
+msgstr "Üks kõige tavalisem kasutus Wine'le on jooksutada mänge."
+
+msgid ""
+"Clique aqui para conferir a lista oficial de programas compativeis com o "
+"Wine."
+msgstr "Vajuta siia, et näha nimekirja Wine'ga ühilduvatest rakendustest."
+
+msgid ""
+"O PlayOnLinux faz configuracoes especificas para tornar o Wine compativel "
+"com diversos programas e jogos."
+msgstr ""
+"PlayOnLinux on mõned spetsiifilised seaded, mis muudavad Wine kooskõlla "
+"mõnede rakenduste ja mängudega."
+
+msgid ""
+"Diversos programas que constam na lista do PlayOnLinux são baixados "
+"automaticamente da internet."
+msgstr ""
+"Paljud rakendused PlayOnLinux nimekirjast laetakse automaatselt alla "
+"internetist."
+
+msgid ""
+"Para evitar que a configuracao de um programa interfira no funcionamento de "
+"outro o PlayOnLinux faz instalacoes separadas do Wine para cada programa."
+msgstr ""
+"Et vältida selle rakendused konfiguratsiooni segmaist PlayOnLinux paigaldab "
+"iga taotluse eraldi Wine."
+
+msgid "Dicas para instalar programas."
+msgstr "Näpunäiteid rakenduste paigaldamiseks."
+
+msgid ""
+"Sempre que disponivel instale o programa desejado utilizando a <a "
+"href=softwarecenter.sh.htm>Central de Programas</a> ou o <a "
+"href=synaptic.sh.htm>Synaptic</a>."
+msgstr ""
+"Võimalusel paigaldada soovitud rakendus kasutades <a "
+"href=softwarecenter.sh.htm>Tarkvara keskus</a> või <a "
+"href=synaptic.sh.htm>Synaptic</a>."
+
+msgid ""
+"É recomendado que o programa a ser instalado seja compativel com o "
+"$DISTRIB_ID $DISTRIB_RELEASE ou o Ubuntu $DISTRIB_CODENAME. Caso o programa "
+"nao esteja disponivel para ambas as distribuicoes confira a disponibilidade "
+"para Debian, pois sua compatibilidade nao e total, mas ainda e bastante "
+"eficiente."
+msgstr ""
+"On soovitatav, et taotlus tuleb paigaldada on kooskõlas $ DISTRIB_ID $ "
+"DISTRIB_RELEASE või Ubuntu $ DISTRIB_CODENAME. Kui taotlus ei ole saadaval "
+"nii distributsioonid, kontrollige selle saadavust Debian alates selle "
+"ühilduvus ei ole täielik kuid töötab paljudel juhtudel."
+
+msgid ""
+"De preferencia a arquivos com a extensao .deb pois e o padrao adotado pelo "
+"$DISTRIB_ID. Nesse caso basta clicar duas vezes sobre o arquivo que o "
+"instalador e iniciado."
+msgstr ""
+"Eelista faile .deb laiendiga, sest see standard on vastu võetud $DISTRIB_ID. "
+"Sellistel juhtudel lihtsalt topeltklõpsake failil ja paigaldaja käivitatakse."
+
+msgid ""
+"Arquivos .run e .sh necessitam que se clique sobre o mesmo com o botao "
+"direito, acesse as propriedades, permissoes e marque como executavel."
+msgstr ""
+".run ja .sh faile on vaja teha kasutatavaks.Selleks paremklõpsake neile "
+"juurdepääsuks nende omadustele ja õigustele ning märgi need käivitatavaks."
+
+msgid ""
+"Arquivos .rar, .zip, .tar, .gz, 7z, bz e lzma são arquivos compactados, "
+"clique sobre o mesmo com o botao direito, mande extrair e verifique o "
+"formato que foi criado apos a descompactacao."
+msgstr ""
+".Rar .Zip, .Tar .Gz,  .7z, .bz  ja lzma on tihendatud failid, paremklõpsake "
+"neid, paki lahti ja vaata formaati mis loodi peale lahtipakkimist."
+
+msgid ""
+"Arquivos .rpm sao pouco compativeis com o $DISTRIB_ID, recomendo que procure "
+"por um arquivo .deb."
+msgstr ""
+"Arhiiv .rpm on vaevalt kooskõlas $ DISTRIB_ID soovitada otsida faili .deb"
+
+msgid ""
+"Arquivos .exe e .msi devem ser instalados com o programa Wine, mas sua "
+"compatibilidade e estabilidade nao e muito boa."
+msgstr ""
+".exe ja .msi tuleb paigaldada koos programmiga Wine, kuid nende omavaheline "
+"kokkusobivus ning stabiilsuse pole väga hea."
+
+msgid ""
+"Devo realmente apagar os arquivos pessoais do Wine?\n"
+"Isso ira remover os programas instalados pelo Wine, mas nao pelo PlayOnLinux."
+msgstr ""
+"Kas ma tõesti kustutada oma isiklikke faile Wine'ist?\n"
+"See eemaldab paigaldatud rakendused wine'st, kuid mitte neid mis paigaldati "
+"koos PlayOnLinux'iga."
+
+msgid "Remocao concluida."
+msgstr "Eemaldamine valmis"
+
+msgid "Instalar ou remover programas"
+msgstr "Paigalda või eemalda rakendused"
+
+msgid ""
+"Se o programa ou jogo que voce deseja nao possui versao para Linux "
+"experimente utiliza-lo com o Wine"
+msgstr ""
+"Kui soovitud rakendus või mäng mida ei ole Linuxi versioonile, proovige "
+"kasutada neid koos Wine'ga."
+
+msgid "Instalar e remover programas nunca foi tao facil."
+msgstr "Programmde paigaldamine ja eemaldamine pole kunagi olnud nii lihtne."
+
+msgid "Instalar ou remover simples<br>(Central de Programas)"
+msgstr "Lihtne paigaldada ja eemaldada <br> (Tarkvarakeskus)"
+
+msgid "Instalar ou remover avancado<br>(Synaptic)"
+msgstr "Täpsemalt paigaltada või eemaldada<br>(Synaptic)"
+
+msgid "Instalar programas feitos para Windows"
+msgstr "Paigalda rakendus tehtud Winows'ile"
+
+msgid "Instalar programas diretamente de arquivos"
+msgstr "Paigalda rakendused otse failidesse"
+
+msgid "Configurar DNS"
+msgstr "Seadista DNS"
+
+msgid "Voltar para tela de configuracao"
+msgstr "Tagasi ekraani asetusesele"
+
+msgid "Para uma conexao mais rapida e estavel."
+msgstr "Sest kiirem ühendus on stabiilsem."
+
+msgid "Configuracao aplicada."
+msgstr "Konfiguratsioon rakendatud."

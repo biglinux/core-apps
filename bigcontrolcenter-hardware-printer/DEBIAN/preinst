@@ -1,0 +1,58 @@
+#! /bin/sh
+
+set -e
+
+package_name=bigcontrolcenter-hardware-printer
+
+if [ -z "$package_name" ]; then
+    print >&2 "Internal Error. Please report a bug."
+    exit 1;
+fi
+
+case "$1" in
+  install)
+    dpkg-divert --package $package_name --divert /usr/share/autostart/printer-applet.desktop.distrib --rename /usr/share/autostart/printer-applet.desktop
+    dpkg-divert --package $package_name --divert /usr/share/applications/hplip-kubuntu.desktop.distrib --rename /usr/share/applications/hplip-kubuntu.desktop
+    dpkg-divert --package $package_name --divert /usr/share/applications/inkblot.desktop.distrib --rename /usr/share/applications/inkblot.desktop
+    dpkg-divert --package $package_name --divert /usr/share/applications/mtinkc.desktop.distrib --rename /usr/share/applications/mtinkc.desktop
+    dpkg-divert --package $package_name --divert /usr/share/applications/mtink.desktop.distrib --rename /usr/share/applications/mtink.desktop
+    dpkg-divert --package $package_name --divert /etc/xdg/autostart/print-applet.desktop.distrib --rename /etc/xdg/autostart/print-applet.desktop
+    ;;
+  upgrade)
+        if [ "$(dpkg-divert --list /usr/share/autostart/printer-applet.desktop)" = "" ]
+        then
+	    dpkg-divert --package $package_name --divert /usr/share/autostart/printer-applet.desktop.distrib --rename /usr/share/autostart/printer-applet.desktop
+	fi
+
+        if [ "$(dpkg-divert --list /usr/share/applications/hplip-kubuntu.desktop)" = "" ]
+        then
+	    dpkg-divert --package $package_name --divert /usr/share/applications/hplip-kubuntu.desktop.distrib --rename /usr/share/applications/hplip-kubuntu.desktop
+	fi
+
+        if [ "$(dpkg-divert --list /usr/share/applications/inkblot.desktop)" = "" ]
+        then
+	    dpkg-divert --package $package_name --divert /usr/share/applications/inkblot.desktop.distrib --rename /usr/share/applications/inkblot.desktop
+	fi
+
+        if [ "$(dpkg-divert --list /usr/share/applications/mtinkc.desktop)" = "" ]
+        then
+	    dpkg-divert --package $package_name --divert /usr/share/applications/mtinkc.desktop.distrib --rename /usr/share/applications/mtinkc.desktop
+	fi
+
+        if [ "$(dpkg-divert --list /usr/share/applications/mtink.desktop)" = "" ]
+        then
+	    dpkg-divert --package $package_name --divert /usr/share/applications/mtink.desktop.distrib --rename /usr/share/applications/mtink.desktop
+	fi
+
+        if [ "$(dpkg-divert --list /etc/xdg/autostart/print-applet.desktop)" = "" ]
+        then
+	    dpkg-divert --package $package_name --divert /etc/xdg/autostart/print-applet.desktop.distrib --rename /etc/xdg/autostart/print-applet.desktop
+	fi
+    ;;
+  abort-upgrade)
+    ;;
+  *) echo "$0: didn't understand being called with \`$1'" 1>&2
+     exit 0;;
+esac
+
+exit 0

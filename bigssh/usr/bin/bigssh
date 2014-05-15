@@ -1,0 +1,116 @@
+#!/bin/bash
+
+#Manage SSH
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+
+
+#Options
+case "$1" in
+
+    --port)
+	grep "^Port " /etc/ssh/sshd_config | sed 's/Port //g'
+	exit 0
+    ;;
+
+
+    --set-port)
+	sed -i "s/^Port .*/Port $2/g" /etc/ssh/sshd_config
+	exit 0
+    ;;
+
+
+    --X11)
+	grep "^X11Forwarding " /etc/ssh/sshd_config | sed 's/X11Forwarding //g'
+        exit 0
+    ;;
+
+
+    --enable-X11)
+	sed -i "s/^X11Forwarding .*/X11Forwarding yes/g" /etc/ssh/sshd_config
+        exit 0
+    ;;
+
+
+    --disable-X11)
+	sed -i "s/^X11Forwarding .*/X11Forwarding no/g" /etc/ssh/sshd_config
+        exit 0
+    ;;
+
+
+    --checkenable)
+      if [ "$(ps -A | grep sshd)" = "" ]
+      then
+	  echo "no"
+      else
+	  echo "yes"
+      fi
+
+      exit 0
+    ;;
+
+
+    --enable)
+      /etc/init.d/ssh start
+      exit 0
+    ;;
+
+
+    --disable)
+      /etc/init.d/ssh stop
+      killall sshd
+      exit 0
+    ;;
+
+    --autostart)
+      if [ -e "/etc/init/ssh.conf" ]
+      then
+	  echo "yes"
+      else
+	  echo "no"
+      fi
+      exit 0
+    ;;
+
+
+    --enable-autostart)
+      dpkg-divert --package bigssh --rename --remove /etc/init/ssh.conf
+      exit 0
+    ;;
+
+
+    --disable-autostart)
+      if [ "$(dpkg-divert --list /etc/init/ssh.conf)" = "" ]
+      then
+	  dpkg-divert --package bigssh --divert /etc/init/ssh.conf.distrib --rename /etc/init/ssh.conf
+      fi
+      exit 0
+    ;;
+
+
+    *)
+        echo "Manage SSH
+
+--port 			View port for connect
+--set-port		Set another port example: --set-port 22
+--X11			View X11 permission
+--enable-X11		Enable X11 permission
+--disable-X11		Disable X11 permission
+--checkenable		Yes or no
+--enable		Start SSH server
+--disable		Stop SSH server
+--autostart		View autostart enabled
+--enable-autostart	SSH automatic start on boot
+--disable-autostart	SSH no automatic start on boot
+"
+
+    ;;
+
+esac
+

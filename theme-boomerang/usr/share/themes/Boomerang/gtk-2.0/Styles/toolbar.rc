@@ -1,0 +1,78 @@
+style "toolbar" {
+
+    bg[NORMAL]       = @bg_color
+    bg[PRELIGHT]     = shade (1.02, @bg_color)
+    bg[SELECTED]     = @selected_bg_color
+    bg[INSENSITIVE]  = shade (0.95, @bg_color)
+    bg[ACTIVE]       = shade (0.9, @bg_color)
+
+    fg[NORMAL]       = @fg_color
+    fg[PRELIGHT]     = @fg_color
+    fg[SELECTED]     = @selected_fg_color
+    fg[INSENSITIVE]  = darker (@bg_color)
+    fg[ACTIVE]       = @fg_color
+
+    bg[NORMAL] = @bg_color
+
+    engine "murrine"
+    {
+        toolbarstyle    = 1
+        gradient_shades = {1.05, 1.02, 1.02, 0.98}
+    }
+}
+
+style "toolbar-button" = "notebook_button" {
+	engine "murrine" {
+	}
+}
+
+style "toolbar-dark"
+{
+    fg[NORMAL]          = @dark_fg_color
+    fg[PRELIGHT]        = @dark_fg_color
+    fg[ACTIVE]          = @dark_fg_color
+    fg[SELECTED]        = @selected_fg_color
+    fg[INSENSITIVE]     = mix (0.5, @dark_fg_color, @dark_bg_color)
+
+	bg[NORMAL]          = @dark_bg_color
+    bg[PRELIGHT]        = shade (1.02, @dark_bg_color)
+    bg[ACTIVE]          = shade (0.96, @dark_bg_color)
+    bg[SELECTED]        = @selected_bg_color
+    bg[INSENSITIVE]     = shade (0.99, @dark_bg_color)
+
+    text[NORMAL]        = @dark_fg_color
+    text[PRELIGHT]      = @dark_fg_color
+    text[ACTIVE]        = @dark_fg_color
+    text[SELECTED]      = @selected_fg_color
+    text[INSENSITIVE]   = mix (0.5, @dark_fg_color, @dark_bg_color)
+}
+
+style "primary_toolbar_bg" = "toolbar-dark"
+{
+
+    engine "murrine"
+    {
+		contrast			    = 1.13
+		lightborder_shade		= 1.0
+		gradient_shades         = {1.0, 0.94, 0.94, 0.88}
+		toolbarstyle = 1
+    }
+}
+
+style "primary_toolbar" = "primary_toolbar_bg"
+{
+    GtkButton::child-displacement-y	= 0
+
+    engine "murrine"
+    {
+        gradient_shades     = {1.00, 0.98, 0.97, 0.95}
+        border_shades       = {0.96, 0.93}
+        lightborderstyle    = 0
+        lightborder_shade   = 1.1
+        reliefstyle         = 5
+        focusstyle          = 0
+        roundness           = 2
+    }
+}
+
+

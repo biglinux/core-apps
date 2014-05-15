@@ -1,0 +1,65 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-internet-bigconnect
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"BigConnect"
+apply=$"Aplicar"
+close=$"Sair"
+tip_wireless=$"Conexao Wireless com senha WEP, WPA ou sem senha (Nao suporta 3G)."
+tip_ethernet=$"Conexao DHCP ou IP fixo."
+#title
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Gerenciador de conexao alternativo."
+close_header
+
+#body
+#Confere se o resolv.conf esta desbloqueado
+
+if [ -e "/etc/bigconnect/wireless" ]; then
+  wireless_check="checked"
+else
+  ethernet_check="checked"
+fi
+
+echo '<center><table width=95%><tr><td>'
+echo $"Esse e um configurador de conexao que utiliza apenas as ferramentas basicas do sistema e funciona para conexoes por cabo Ethernet e Wireless. <p><br>Veja em que situacoes e mais recomendado:" "<p>"
+echo $"- Computadores antigos, pois reduz o consumo de memoria e processamento.
+<br> - Locais onde os usuarios nao devem ter acesso para alterar as configuracoes da conexao.
+<br> - Computadores que serao utilizados sem modo grafico.
+<br> - Caso os outros configuradores falhem."
+echo "<br><br><br><br>"
+echo $"Escolha o tipo de conexao:"
+
+echo "<p><a href=interface.sh.htm?connect=wireless $mouseover_open $tip_wireless $mouseover_close>" $"Sem fio (Wireless).""</a>
+<p>
+<a href=interface.sh.htm?connect=ethernet $mouseover_open $tip_ethernet $mouseover_close>" $"Cabo de rede Ethernet.""</a>"
+
+echo "</div><div id=\"rodape\"><button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

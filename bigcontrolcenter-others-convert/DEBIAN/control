@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-others-convert
+Version: 1.1.3-0kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: smplayer, mencoder, bigcontrolcenter (>=1.1.1-1kaiana1), mediainfo, gpac, kde-baseapps-bin, uni2ascii
+Section: admin
+Priority: optional
+Description: Gui for mencoder
+

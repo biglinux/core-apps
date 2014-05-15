@@ -1,0 +1,8 @@
+Package: kaiana-color-schemes
+Version: 1.0.0-0kaiana1
+Architecture: all
+Maintainer: Paulo Giovanni Pereira <www.unialivre.com>
+Installed-Size: 3
+Section: admin
+Priority: optional
+Description: Install color schemes to Kaiana

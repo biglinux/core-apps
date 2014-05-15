@@ -1,0 +1,69 @@
+# Portuguese translations for PACKAGE package.
+# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BigLinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2010-08-15 08:01+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-08-16 06:40+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Protetor de tela"
+msgstr ""
+
+msgid "Escolha o tempo de espera e o tema do protetor de tela"
+msgstr ""
+
+msgid "Configurar ou instalar protetor de tela"
+msgstr ""
+
+msgid "Aplicar"
+msgstr ""
+
+msgid "Sair"
+msgstr ""
+
+msgid "Defina as formas de economizar energia."
+msgstr ""
+
+msgid "Configuracoes para o protetor de tela."
+msgstr ""
+
+msgid "Instalar temas para protecao de tela."
+msgstr ""
+
+msgid "Remover temas para protecao de tela."
+msgstr ""
+
+msgid "Selecione o protetor de tela do sistema, ou nao."
+msgstr ""
+
+msgid ""
+"<b>Atencao:</b> o uso de protetor de tela nao e recomendado, pois aumenta o "
+"consumo de energia do sistema. Configurar o sistema de economia de energia "
+"de forma que substitua o protetor de tela reduz o consumo de energia. Lembre "
+"que principalmente em notebooks esse tipo de configuracao aumenta a duracao "
+"da bateria."
+msgstr ""
+
+msgid "Gerenciador de energia"
+msgstr ""
+
+msgid "Configurar protetor de tela"
+msgstr ""
+
+msgid "Remover temas para protecao de tela"
+msgstr ""
+
+msgid "Instalar temas para protecao de tela"
+msgstr ""

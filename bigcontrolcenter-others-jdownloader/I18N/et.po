@@ -1,0 +1,128 @@
+# Estonian translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-13 22:31-0300\n"
+"PO-Revision-Date: 2010-09-05 08:24+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: Estonian <et@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-06 04:58+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "JDownloader"
+msgstr "JDownloader"
+
+msgid ""
+"A instalacao falhou!\n"
+"Confira se o PC esta conectado a internet."
+msgstr ""
+"Paigaldamine ebaõnnestus!\n"
+"Veenduge, et teie arvuti on ühendatud internettiga."
+
+msgid "Instalador do JDownloader"
+msgstr "JDownloader'i paigaldaja"
+
+msgid "Instale o melhor gerenciador de downloads"
+msgstr "Paigalda parim allalaadimis haldur"
+
+msgid ""
+"Confirma a remocao do JDownloader?\n"
+"\n"
+"Lembre que os arquivos baixados que estiverem\n"
+"na pasta JDownloader tambem serao removidos."
+msgstr ""
+"Kinnita JDownloader eemaldamist?\n"
+"\n"
+"Pea meeles, et failid, mis laaditakse\n"
+"JDownloader kausta ka välja jätta."
+
+msgid "Aplicar"
+msgstr "Rakenda"
+
+msgid "Sair"
+msgstr "Välju"
+
+msgid "Utilizar interface de acordo com o Desktop em uso"
+msgstr "Kasutaja liidese vastavlt koos kasutusel oleva töölauaga"
+
+msgid "Melhor integracao com dispositivos, por exemplo CDs e PenDrives"
+msgstr "Paremdatud integratsioon seadmetega, näiteks CD'd ja USB mäluseadmed"
+
+msgid ""
+"Melhor compatiblidade com extensoes e integracao com o tema do sistema"
+msgstr "Parem ühilduvus laiendiga ja integratsioon süsteem teemaga"
+
+msgid ""
+"Clique aqui para iniciar a instalacao, e preciso estar conectado a internet."
+msgstr ""
+"Vajuta siia, et alustada paigaldamist, ja peab olema ka ühendatud "
+"internettiga."
+
+msgid ""
+"Clique aqui para remover o JDownloader, lembre que os arquivos baixados que "
+"estiverem na pasta JDownloader tambem serao removidos."
+msgstr ""
+"Vajuta siia, et eemaldada JDownloader pidage meeles, et failid, mis "
+"laaditakse kausta JDownloader ka eemaldatakse."
+
+msgid ""
+"Instalar a extensao no Firefox torna muito mais facil a utilizacao do "
+"JDownloader, portanto recomendo que instale.<br>Apos a instalacao selecione "
+"os links que deseja baixar, clique com o botao direito e veja as opcoes do "
+"JDownloader no Firefox."
+msgstr ""
+"Firefox laiendi paigaldamine muudab JDownloaderi kasutamise palju "
+"lihtsamaks, mistõttu on soovitatav. <br>Pärast paigaldamist valige lingid "
+"mida soovite alla laadida, paremklõpsuga neil ja valida JDownloader's "
+"võimalus Firefox'is."
+
+msgid "Instale o melhor gerenciador de downloads."
+msgstr "Paigalda parim laadimis haldur."
+
+msgid ""
+"<b>Esse programa possui muitos recursos, entre eles destaco:</b> O "
+"gerenciamento de downloads de sites populares como RapidShare e MegaUpload "
+"com preenchimento automatico dos digitos verificadores e a conversao de "
+"arquivos baixados de sites como o YouTube."
+msgstr ""
+"<b> Sellel rakendus on palju funktsioone, nende hulgas I rõhutada: <b> alla "
+"laadida  populaarsetest lehtetelt nagu RapidShare ja MEGAUPLOAD koos "
+"automaatse täitmise kontrolli ja konvertimist ning faili allalaadida meedia "
+"saidid nagu YouTube."
+
+msgid ""
+"<b>Esse programa tambem possui lados negativos:</b> Utiliza uma quantidade "
+"consideravel de memoria RAM e funciona melhor se cada usuario do computador "
+"possuir sua propria instalacao do JDownloader."
+msgstr ""
+"<b> Sellel rakendusel on ka  negatiivset:</b> kasutab märkimisväärne hulgal "
+"RAM'i ja töötab paremini, kui iga kasutaja arvutis on tema "
+"isklik(registreeritud)  paigaldatud JDownloader."
+
+msgid "Remover JDownloader"
+msgstr "Eemalda JDownloader"
+
+msgid "Instalar extensao no Firefox"
+msgstr "Paigalda Firefoxi laiendus"
+
+msgid "Instalar JDownloader"
+msgstr "Paigalda JDownloader"
+
+msgid ""
+"O processo de instalacao do JDownloader foi iniciado.\n"
+"\n"
+"Deseja instalar a extensao do Firefox para\n"
+"facilitar o uso do JDownloader? (Recomendado)"
+msgstr ""
+"JDownloader paigaldus protsess on alanud.\n"
+"\n"
+"Kas soovite paigaldada JDownloader Firefox\n"
+"llisandi mis kergendab JD kasutamist (Soovituslik)"

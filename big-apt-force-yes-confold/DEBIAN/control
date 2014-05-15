@@ -1,0 +1,10 @@
+Package: big-apt-force-yes-confold
+Version: 1.0.0-1kaiana2
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Section: admin
+Priority: optional
+conflicts: big-apt-force-yes-confnew
+Description: Reduz o numero de perguntas do apt-get, facilitando a instalacao e atualizacao de programas, caso exista uma configuracao anterior sera automaticamente mantida.
+
+

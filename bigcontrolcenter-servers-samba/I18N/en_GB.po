@@ -1,0 +1,144 @@
+# English (United Kingdom) translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-13 04:50-0300\n"
+"PO-Revision-Date: 2010-08-28 06:49+0000\n"
+"Last-Translator: Sergio <ikisham@gmail.com>\n"
+"Language-Team: English (United Kingdom) <en_GB@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-08-29 03:43+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Samba"
+msgstr "Samba"
+
+msgid "Aplicar"
+msgstr "Apply"
+
+msgid "Sair"
+msgstr "Quit"
+
+msgid "Compartilhamento de arquivos e impressoras na rede."
+msgstr "File and printer sharing in the network."
+
+msgid ""
+"1 - Podem ocorrer problemas para encontrar servidores de arquivos na rede, "
+"dessa forma no gerenciador de arquivos Dolphin ou Nautilus insira o ip do "
+"servidor, por exemplo: smb://127.0.0.1"
+msgstr ""
+"1 - Problems can occur when trying to find file servers in the network, for "
+"these cases insert the server's IP in Dolphin or Nautilus file managers, for "
+"instance: smb://127.0.0.1"
+
+msgid ""
+"2 - Se estiver utilizando um sistema Windows e nao estiver encontrando um "
+"servidor Linux no gerenciador de arquivos acesse-o pelo IP, por exemplo: \\\\"
+"\\\\127.0.0.1"
+msgstr ""
+"2 - If you're using Windows and can't find a Linux server in the file "
+"manager, access it through the IP, for instance: \\\\\\\\127.0.0.1"
+
+msgid ""
+"3 - Existem alguns casos que ocorrem erros para encontrar o conteúdo da "
+"pasta raiz de compartilhamento quando se está em uma rede mista com Windows, "
+"ao acessar um compartilhamento em um endereço como smb://127.0.0.1/ e "
+"aparecer escrito erro interno, você terá que acessar diretamente as pastas "
+"desse servidor, por exemplo smb://127.0.0.1/MeusArquivos"
+msgstr ""
+"3 - In some cases errors occur when trying to find with Windows the sharing "
+"root folder's content in a mixed network. If an \"internal error\" message "
+"shows up when accessing an address like smb://127.0.0.1/, you should access "
+"directly folders from that server, for instance smb://127.0.0.1/MyFiles"
+
+msgid "Servidor reiniciado!"
+msgstr "Server restarted!"
+
+msgid "Inicia automaticamente ao ligar o PC"
+msgstr "Starts automatically when turning on the computer"
+
+msgid ""
+"Com essa opcao ativa as pastas compartilhadas terao permissao para escrita."
+"<br>Isso possibilita que usuarios na rede alterem, criem e apaguem arquivos "
+"dessa pasta<p>* Lembre que para isso e necessario que as permissoes da pasta "
+"estejam marcadas com permissao para modificar o conteudo por (Outros)"
+msgstr ""
+"With this option enabled, the shared folders will have write permission."
+"<br>This allows for users in the network to change, create and delete files "
+"in these folders<p>* Remember that for it to work it's necessary that the "
+"folder permissions allow for (Others) to be able to modify its content"
+
+msgid ""
+"Ative o servidor para que outros computadores da rede acessem arquivos e "
+"impressoras disponiblizados.<p>* O sistema de impressao pode compartilhar "
+"impressoras sem necessidade desse servidor e de forma mais simples."
+msgstr ""
+"Enable the server so that other computers in the network may access the "
+"available files and printers.<p>* The printer system can share printers "
+"without the need for this server and in a simpler way."
+
+msgid "Ativo"
+msgstr "Active"
+
+msgid "Iniciar automaticamente"
+msgstr "Start automatically"
+
+msgid "Por padrao compartilhar com permissao a escrita"
+msgstr "Share with write permission by default"
+
+msgid "Configuracao aplicada."
+msgstr "Configuration applied."
+
+msgid "Ativar, desativar, iniciar automaticamente..."
+msgstr "Enable, disable, start automatically..."
+
+msgid "Acesse arquivos de outros servidores"
+msgstr "Acces other server's files"
+
+msgid "Dicas para acessar seus arquivos na rede"
+msgstr "Tips for accessing your network files"
+
+msgid "Opcoes basicas para configuracao do servidor"
+msgstr "Basic server configuration options"
+
+msgid ""
+"Opcoes para praticamente qualquer tipo de uso do Samba<P>* Algumas "
+"configuracoes para entrar em acao necessitam que o servidor seja reiniciado"
+msgstr ""
+"Options for almost any kind of Samba usage<P>* Some settings need a server "
+"restart to take effect"
+
+msgid "Reinicia de forma rapida o servidor Samba"
+msgstr "Restarts the Samba server in a quick way"
+
+msgid "Ativar ou desativar o servidor"
+msgstr "Enable or disable the server"
+
+msgid "Acessar arquivos"
+msgstr "Access files"
+
+msgid "Configurador simples para o servidor"
+msgstr "Simple server configuration tool"
+
+msgid "Configurador completo para o servidor"
+msgstr "Complete server configuration tool"
+
+msgid "Reiniciar o servidor"
+msgstr "Restart server"
+
+msgid "Dicas de uso"
+msgstr "Usage tips"
+
+msgid "Samba - Compartilhar arquivos na rede"
+msgstr "Samba - Share files on the network"
+
+msgid "Compartilhamento de arquivos e impressoras na rede"
+msgstr "File and printer sharing in the network"

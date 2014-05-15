@@ -1,0 +1,52 @@
+#!/bin/bash
+#JD Installer/Starter Version 0.2
+#by Jiaz(JD-Team), jiaz@jdownloader.org
+#You need at least:
+#1.) bash (its a bash script ;) )
+#2.) wget 
+#3.) Java Version >= 1.5 (OpenJDK works also in latest Version)
+
+#How to use this?
+#1.) chmod +x jd.sh
+#2.) Place it anywhere you want
+#3.) Running jd.sh for the first time will install and setup JD into JDDIR folder
+#4.) Running jd.sh after the first time will start JDownloader directly
+
+#Parameters
+# update (will perform an update)
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-others-jdownloader
+
+
+
+#JD Installation folder (adjust to your needs)
+JDDIR=~/.jd
+#default path to our install/update tool (DO NOT Change this)
+JDINSTALLER=http://update0.jdownloader.org/jdupdate.jar
+
+    #Confere se esta instalado
+    if [ -e $JDDIR/JDownloader.jar ]
+    then
+    /usr/bin/java -jar $JDDIR/JDownloader.jar "$*"
+    else
+
+mkdir $JDDIR
+cd $JDDIR
+mkdir config
+ln -s $JDDIR/downloads ~/Downloads/Jdownloader
+
+
+
+rm -f $JDDIR/jdupdate.jar
+kde-cp $JDINSTALLER $JDDIR
+java -Xmx512m -jar jdupdate.jar
+
+    if [ ! -e ~/.jd/JDownloader.jar ]
+    then
+    kdialog --title $"JDownloader" --error $"A instalacao falhou!
+Confira se o PC esta conectado a internet."
+    fi
+fi
+

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+if [ "$(cat ~/.bigconvert/avancado)" = "yes" ]
+then
+echo "<body onload= parent.location='/usr/share/bigcontrolcenter/categories/others/bigconvert/avancado.sh.htm'>"
+else
+echo "<body onload= parent.location='/usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm'>"
+fi

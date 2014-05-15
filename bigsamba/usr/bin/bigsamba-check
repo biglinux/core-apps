@@ -1,0 +1,4 @@
+      if [ -e "/etc/bigfixsamba-yes" ]
+      then
+	  bigsamba --write
+      fi

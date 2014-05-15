@@ -1,0 +1,163 @@
+# English (United Kingdom) translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-13 04:50-0300\n"
+"PO-Revision-Date: 2010-08-23 05:11+0000\n"
+"Last-Translator: Sergio <ikisham@gmail.com>\n"
+"Language-Team: English (United Kingdom) <en_GB@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-08-24 03:36+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "BigConnect"
+msgstr "BigConnect"
+
+msgid "Aplicar"
+msgstr "Apply"
+
+msgid "Sair"
+msgstr "Quit"
+
+msgid "Gerenciador de conexao alternativo."
+msgstr "Alternative network connection manager."
+
+msgid "Selecione a interface a ser utilizada para estabelecer conexao:"
+msgstr "Choose the interface to use to establish the connection:"
+
+msgid "Interface:"
+msgstr "Interface:"
+
+msgid "Nome da rede:"
+msgstr "Network name:"
+
+msgid " Clique aqui para procurar redes disponiveis."
+msgstr " Click here to look for available networks."
+
+msgid "Tipo de senha:"
+msgstr "Password type:"
+
+msgid "Nenhuma"
+msgstr "None"
+
+msgid "WPA"
+msgstr "WPA"
+
+msgid "WEP"
+msgstr "WEP"
+
+msgid "Digite a senha:"
+msgstr "Enter the password:"
+
+msgid "Obter IP:"
+msgstr "Get IP:"
+
+msgid "DHCP"
+msgstr "DHCP"
+
+msgid "IP Fixo"
+msgstr "Fixed IP"
+
+msgid "IP:"
+msgstr "IP:"
+
+msgid "Mascara de rede:"
+msgstr "Network mask:"
+
+msgid "Gateway:"
+msgstr "Gateway:"
+
+msgid "DNS 1:"
+msgstr "DNS 1:"
+
+msgid "DNS 2:"
+msgstr "DNS 2:"
+
+msgid "Configuracao aplicada."
+msgstr "Configuration applied."
+
+msgid "Conexao Wireless com senha WEP, WPA ou sem senha (Nao suporta 3G)."
+msgstr "Wireless connection with WEP, WPA or no password (no support for 3G)."
+
+msgid "Conexao DHCP ou IP fixo."
+msgstr "DHCP or fixed IP connection."
+
+msgid ""
+"Esse e um configurador de conexao que utiliza apenas as ferramentas basicas "
+"do sistema e funciona para conexoes por cabo Ethernet e Wireless. "
+"<p><br>Veja em que situacoes e mais recomendado:"
+msgstr ""
+"This is a network connection configuration tool that uses just the basic "
+"system tools and works for Ethernet cable and Wireless connections. "
+"<p><br>See in which cases it's best recommended:"
+
+msgid ""
+"- Computadores antigos, pois reduz o consumo de memoria e processamento.\n"
+"<br> - Locais onde os usuarios nao devem ter acesso para alterar as "
+"configuracoes da conexao.\n"
+"<br> - Computadores que serao utilizados sem modo grafico.\n"
+"<br> - Caso os outros configuradores falhem."
+msgstr ""
+"- Old computers, since it reduces memory and CPU processing usage.\n"
+"<br> - Places where users shouldn't have access to change the network "
+"connection configuration.\n"
+"<br> - Computers that will be used without a graphics mode.\n"
+"<br> - In case the other configuration tools fail."
+
+msgid "Escolha o tipo de conexao:"
+msgstr "Choose the network connection type:"
+
+msgid "Sem fio (Wireless)."
+msgstr "Wireless."
+
+msgid "Cabo de rede Ethernet."
+msgstr "Ethernet cable."
+
+msgid "Nome"
+msgstr "Name"
+
+msgid "Qualidade do sinal"
+msgstr "Signal quality"
+
+msgid "Tipo de senha"
+msgstr "Password type"
+
+msgid "Conectar a internet utilizando BigConnect"
+msgstr "Connect to the Internet using BigConnect"
+
+msgid "Gerenciador de conexao alternativo.<br>Cabo, DHCP, Wireless e IP Fixo"
+msgstr ""
+"Alternative network connection configuration tool.<br>Cable, DHCP, Wireless "
+"and fixed IP."
+
+msgid ""
+"O BigConnect e utilizado por esse painel, mas nao esta ativo, devo ativa-lo "
+"agora?\n"
+"Atencao: Isso ira desativar o gerenciador em uso: Network Manager."
+msgstr ""
+"BigConnect is used from this panel but isn't active, should I enable it "
+"now?\n"
+"Warning: this will disable the manager currently in use: Network Manager."
+
+msgid ""
+"O BigConnect e utilizado por esse painel, mas nao esta ativo, devo ativa-lo "
+"agora?\n"
+"Atencao: Isso ira desativar o gerenciador em uso: Wicd."
+msgstr ""
+"BigConnect is used from this panel but isn't active, should I enable it "
+"now?\n"
+"Warning: this will disable the manager currently in use: Wicd."
+
+msgid ""
+"O BigConnect e utilizado por esse painel, mas nao esta ativo, devo ativa-lo "
+"agora?"
+msgstr ""
+"BigConnect is used from this panel but isn't active, should I enable it now?"

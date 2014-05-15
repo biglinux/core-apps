@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/x-smb-server;
+Actions=smb2rdc;
+
+[Desktop Action smb2rdc]
+Name=Open Remote Desktop Connection to This Machine
+Name[pt_BR]=Abrir Conexão Remota para Esta Maquina
+Exec=krdc %u
+Icon=krdc
+X-Ubuntu-Gettext-Domain=desktop_kdenetwork

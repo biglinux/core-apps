@@ -1,0 +1,153 @@
+#!/bin/bash
+
+#Big Control Center
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+#Options
+case "$1" in
+
+
+############################
+    --network-manager)
+############################
+	#Desativar bigconnect
+	bigconnect --disable-autostart
+
+	#Desativar wicd
+	update-rc.d -f wicd remove
+	/etc/init.d/wicd stop
+	for i in $(ps -ax | grep "python -O /usr/share/wicd" | awk '{print $1}')
+	do
+	  kill -9 $i
+	done
+
+
+	#Ativar Network Manager
+	dpkg-divert --package bigconnect --rename --remove /etc/init/network-manager.conf
+	echo '[Desktop Entry]
+Name=Network Manager
+Comment=Control your network connections
+Icon=nm-device-wireless
+Exec=nm-applet --sm-disable&
+Terminal=false
+Type=Application' > /etc/xdg/autostart/big-nm-applet.desktop
+	chmod 644 /etc/xdg/autostart/big-nm-applet.desktop
+	start network-manager
+
+	exit 0
+    ;;
+
+
+############################
+    --wicd)
+############################
+	#Desativar bigconnect
+	bigconnect --disable-autostart
+
+	#Desativar Network Manager
+	stop network-manager
+	dpkg-divert --package bigconnect --divert /etc/init/network-manager.conf.disabled --rename /etc/init/network-manager.conf
+
+	#Ativar wicd
+	update-rc.d -f wicd defaults
+	/etc/init.d/wicd start
+	echo '[Desktop Entry]
+Name=Wicd Network Manager Tray
+Comment=Display network connection status in the system tray
+Icon=wicd-gtk
+Exec=wicd-gtk&
+Terminal=false
+Type=Application' > /etc/xdg/autostart/big-nm-applet.desktop
+	chmod 644 /etc/xdg/autostart/big-nm-applet.desktop
+
+	exit 0
+    ;;
+
+
+############################
+    --bigconnect)
+############################
+	#Desativar wicd
+	update-rc.d -f wicd remove
+	/etc/init.d/wicd stop
+	rm -f /etc/xdg/autostart/big-wicd-tray.desktop
+	for i in $(ps -ax | grep "python -O /usr/share/wicd" | awk '{print $1}')
+	do
+	  kill -9 $i
+	done
+
+	#Desativar Network Manager
+	stop network-manager
+	dpkg-divert --package bigconnect --divert /etc/init/network-manager.conf.disabled --rename /etc/init/network-manager.conf
+	rm -f /etc/xdg/autostart/big-nm-applet.desktop
+
+	#Ativar bigconnect
+	bigconnect --enable-autostart
+
+        exit 0
+    ;;
+
+
+############################
+    --check-network-manager)
+############################
+	if [ "$(grep nm-applet /etc/xdg/autostart/big-nm-applet.desktop)" != "" ]; then
+	    echo "ok"
+	else
+	    echo "fail"
+	fi
+
+        exit 0
+    ;;
+
+
+############################
+    --check-wicd)
+############################
+	if [ "$(grep wicd /etc/xdg/autostart/big-nm-applet.desktop)" != "" ]; then
+	    echo "ok"
+	else
+	    echo "fail"
+	fi
+
+        exit 0
+    ;;
+
+
+############################
+    --check-bigconnect)
+############################
+	if [ -e "/etc/init/bigconnect.conf" ]; then
+	    echo "ok"
+	else
+	    echo "fail"
+	fi
+
+        exit 0
+    ;;
+
+
+
+
+
+    *)
+        echo "Set and Check Default Connection Manager
+
+--network-manager
+--wicd
+--bigconnect
+--check-network-manager
+--check-wicd
+--check-bigconnect
+"
+
+    ;;
+
+esac
+

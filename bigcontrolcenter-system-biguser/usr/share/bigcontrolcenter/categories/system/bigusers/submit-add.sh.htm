@@ -1,0 +1,62 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-biguser
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Adicionar usuario"
+apply=$"Aplicar"
+close=$"Sair"
+back=$"Voltar para tela de configuracao"
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Adicione usuarios ao sistema."
+close_header
+
+
+
+
+#Exibir resposta para o usuario
+echo "<br><br><br><br><br><center><font size=+1>"
+
+if [ "$(bigusersmanager --list-users | grep ^$p_username$)" = "" ]
+then
+  bigsudo bigusersmanager --add-user "$p_username" "$p_password" 2> /dev/null > /dev/null
+  echo $"Usuario $p_username adicionado."
+  echo "<a href=\"permission2.sh.htm?username=$p_username\"></font><p><br>"
+  echo $"Esse usuario nao possui permissoes de administrador, para alterar as permissoes clique aqui." 
+  echo "</a>"
+else
+echo $"Nome de usuario escolhido ja estava em uso."
+  
+fi
+
+echo "</font></div><div id=\"rodape\"><button type=button  onClick=\"parent.location='bigusers.sh.htm'\">   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $back   </button> 
+
+<button type=button onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></form></div></body>"

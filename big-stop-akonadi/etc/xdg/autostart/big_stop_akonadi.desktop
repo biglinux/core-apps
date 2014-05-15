@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=finaliza o akonadi se nao estiver em uso
+Comment=
+Icon=
+Exec=big_stop_akonadi
+Terminal=false
+Type=Application
+OnlyShowIn=KDE;

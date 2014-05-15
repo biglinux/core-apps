@@ -1,0 +1,70 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-servers-samba
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Samba"
+apply=$"Aplicar"
+close=$"Sair"
+tip_autostart=$"Inicia automaticamente ao ligar o PC"
+tip_write=$"Com essa opcao ativa as pastas compartilhadas terao permissao para escrita.<br>Isso possibilita que usuarios na rede alterem, criem e apaguem arquivos dessa pasta<p>* Lembre que para isso e necessario que as permissoes da pasta estejam marcadas com permissao para modificar o conteudo por (Outros)"
+
+
+
+. /usr/share/bigcontrolcenter/default/theme.sh.htm
+
+
+if [ "$(bigsamba --checkenable)" = "yes" ]
+then
+  enable_checked="checked"
+fi
+
+
+
+
+if [ "$(bigsamba --autostart)" = "yes" ]
+then
+  autostart_checked="checked"
+fi
+
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Compartilhamento de arquivos e impressoras na rede."
+close_header
+
+echo '<center><table width=85%><tr><td>'
+echo $"Ative o servidor para que outros computadores da rede acessem arquivos e impressoras disponiblizados.<p>* O sistema de impressao pode compartilhar impressoras sem necessidade desse servidor e de forma mais simples."
+
+echo "<form action=server_submit.sh.htm method=get><p><br>"
+
+echo "<INPUT TYPE=checkbox ID=enable NAME=enable VALUE=yes $enable_checked><label for=enable>" $"Ativo"'</label><p>'
+echo "<INPUT TYPE=checkbox ID=autostart NAME=autostart VALUE=yes $mouseover_open $tip_autostart $mouseover_close $autostart_checked><label for=autostart $mouseover_open $tip_autostart $mouseover_close>" $"Iniciar automaticamente"'</label><p>'
+
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

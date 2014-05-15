@@ -1,0 +1,98 @@
+#!/bin/bash
+source translation
+#Translation
+cat << EOF
+<html>
+<!--
+	Miniport 2.5 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<!-- #Insira o conteúdo entre os 2 EOF sem se preocupar com aspas -->
+
+	<head>
+		<title>$title</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/style.css" />
+		
+	</head>
+<body>
+EOF
+cat << EOF
+<!-- Nav -->
+	<nav id="nav">
+		<ul class="container">
+			<li><a href="index.sh.htm">$menuindex</a></li>
+			<li><a href="news.sh.htm">$menunews</a></li>
+			<li><a href="conf.sh.htm">$menuconfigure</a></li>
+			<li><a href="apps-office.sh.htm">$menuapps</a></li>
+			<li><a href="community.sh.htm">$menucontribute</a></li>
+			<li><a href="about.sh.htm">$menuabout</a></li>
+		</ul>
+	</nav>
+
+<!-- Home -->
+	<div class="wrapper">			
+		<div id="container">	
+		<p class="titlePage">$cabecalho03 $(lsb_release -d | cut -d":" -f2) $cabecalho04</p>
+		<div id='cssmenu'>
+		    <ul>
+			 <li><a href='apps-office.sh.htm'><span>$menuappsoffice</span></a></li> 
+			 <li class='active'><a href='apps-graphics.sh.htm'><span>$menuappsgraphics</span></a></li>
+			 <li><a href='apps-internet.sh.htm'><span>$menuappsinternet</span></a></li>
+			 <li><a href='apps-multimedia.sh.htm'><span>$menuappsmultimedia</span></a></li>
+			 <li><a href='apps-development.sh.htm'><span>$menuappsdevelopment</span></a></li>
+			 <li><a href='apps-utility.sh.htm'><span>$menuappsutility</span></a></li>
+			 <li><a href='apps-gaming.sh.htm'><span>$menuappsgaming</span></a></li>
+		    </ul>
+		    <br/>
+		</div>
+		<ul id="item-list">
+			<li>
+				<p><a href=./apps/install-gimp.run> <img src="images/gimp.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-gimp.run>$titlegimg</a></span><br/>$descgimp <br/></p>
+			</li>
+			<li>
+				<p><a href=./apps/install-inkscape.run> <img src="/usr/share/icons/oxygen/128x128/apps/inkscape.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-inkscape.run>$titleinkscape</a></span><br/>$descinkscape.</br></br></br></p>
+			</li>
+			<li>
+				<p><a href=./apps/install-blender.run><img src="images/blender.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-blender.run>$titleblender</a></span><br/>$descblender<br/></p>
+			</li>
+			<li>
+				<p><a class="title" href=./apps/install-scribus.run><img src="/usr/share/icons/oxygen/64x64/apps/scribus.png" class="alignleft"/></a>
+				<span><a class="title" href=./apps/install-scribus.run>$titlescribus</a></span><br/>$descscribus</span></p>
+			</li>
+			
+			<li>
+				<p><a class="title" href="./apps/install-tuxpaint.run"><img src="images/tux_paint.png" class="alignleft"/>
+				<span><a class="title" href="./apps/install-tuxpaint.run">$titletuxpaint </a></span><br/>$desctuxpaint.</br></br></p>
+			</li>
+			<li>
+				<p><a href=./apps/install-fotoxx.run><img src="images/fotoxx.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-fotoxx.run>$titlefotoxx</a></span><br/>$descfotoxx<br/></p>
+			</li>
+			<li>
+				<p><a href=./apps/install-pixelize.run><img src="images/pixelize.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-pixelize.run>$titlepixelize</a></span><br/>$descpixelize<br/></p>
+			</li>
+			<li>
+				<p><a href=./apps/install-librecad.run><img src="images/librecad.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-librecad.run>$titlelibrecad</a></span><br/>$desclibrecad<br/></p>
+			</li>		
+			<li>
+				<a class="title" href="./apps/open-software-center.run"><img src="images/getaplications.png" class="alignleft"/>
+				<span><a class="title" href="./apps/open-software-center.run">$titlesoftcenter</a></span><br/>$descsoftcenter</p>
+			</li>
+		</ul>
+	</div> 
+	<div id="rodape">
+	<a href="community.sh.htm" class="button">$next</a>
+	</div>
+</body>
+EOF
+</html>

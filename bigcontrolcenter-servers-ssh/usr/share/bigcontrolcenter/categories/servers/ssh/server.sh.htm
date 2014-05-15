@@ -1,0 +1,75 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-servers-ssh
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"SSH"
+apply=$"Aplicar"
+close=$"Sair"
+tip_autostart=$"Inicia automaticamente ao ligar o PC"
+tip_port=$"A porta padrao dos servidores SSH e 22"
+tip_x11=$"Com essa opcao ativada e possivel apos acessar o terminal executar programas em modo grafico remotamente<p>Programas executados dessa forma sao processados no servidor e exibidos no cliente."
+
+
+
+. /usr/share/bigcontrolcenter/default/theme.sh.htm
+
+
+if [ "$(bigssh --checkenable)" = "yes" ]
+then
+  enable_checked="checked"
+fi
+
+if [ "$(bigssh --X11)" = "yes" ]
+then
+  x11_checked="checked"
+fi
+
+if [ "$(bigssh --autostart)" = "yes" ]
+then
+  autostart_checked="checked"
+fi
+
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Acesso remoto seguro e de qualidade."
+close_header
+
+echo '<center><table width=85%><tr><td>'
+echo $"Esse servidor permite acesso remoto via terminal e transferencia de arquivos em modo grafico."
+
+echo "<form action=server_submit.sh.htm method=get><p><br>"
+echo "<INPUT TYPE=checkbox ID=enable NAME=enable VALUE=yes $enable_checked><label for=enable>" $"Ativo"'</label><p>'
+echo "<INPUT TYPE=checkbox ID=autostart NAME=autostart VALUE=yes $mouseover_open $tip_autostart $mouseover_close $autostart_checked><label for=autostart $mouseover_open $tip_autostart $mouseover_close>" $"Iniciar automaticamente"'</label><p>'
+echo "<INPUT TYPE=checkbox ID=x11 NAME=x11 VALUE=yes $mouseover_open $tip_x11 $mouseover_close $x11_checked><label for=x11 $mouseover_open $tip_x11 $mouseover_close>" $"Habilitar X11"'</label><p>'
+echo $"Porta:" "<INPUT TYPE=TEXT NAME=port VALUE=\"$(bigssh --port)\" SIZE=5 $mouseover_open $tip_port $mouseover_close><p>"
+
+
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

@@ -1,0 +1,13 @@
+#!/bin/sh
+
+caminho="$(awk -F= '/wallpaper=/ { print $2; exit }' ~/.kde/share/config/plasma-desktop-appletsrc)"
+if [ -d "$caminho" ];
+then
+  dbus-send --system --print-reply --dest=org.freedesktop.Accounts /org/freedesktop/Accounts/User$(id -u) org.freedesktop.Accounts.User.SetBackgroundFile string:"$(find "$caminho"/contents/images -name "*jpg*" -o -name "*png*" -o -name "*jpeg*" -o -name "*svg*" | sort -nr | head -1)"
+
+else 
+  dbus-send --system --print-reply --dest=org.freedesktop.Accounts /org/freedesktop/Accounts/User$(id -u) org.freedesktop.Accounts.User.SetBackgroundFile string:"$caminho"
+
+fi
+
+

@@ -1,0 +1,130 @@
+#!/bin/bash
+
+#DNS panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-themes-fonts
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Configurar ou instalar fontes"
+apply=$"Aplicar"
+close=$"Sair"
+
+
+tip_nitidolcd=$"Nitidez muito alta, melhor compatibilidade com sites e contraste alto."
+tip_nitido=$"Nitidez muito alta e a melhor compatibilidade com sites."
+tip_otimizado=$"Nitidez alta e espacamento de fontes melhorado.<p>Proporciona melhor espacamento entre as letras e torna a leitura agradavel, porem pode desorganizar o design de alguns sites."
+tip_suave=$"Nitidez reduzida e boa compatibilidade com sites."
+tip_muitosuave=$"Nitidez baixa e boa compatibilidade com sites."
+tip_padrao=$"Nitidez padrao do sistema de fontes, sem configuracoes personalizadas."
+tip_equilibrado=$"Um bom equilibrio entre nitizes e suavidade."
+tip_liberation=$"A fonte Liberation Sans e muito precida com a Arial e possui melhor compatibilidade com o navegador Chromium, caso utilize outro navegador deixe essa opcao desativada."
+
+
+#title
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Selecione a configuracao de fonte preferida."
+close_header
+
+#body
+#Confere se o resolv.conf esta desbloqueado
+if [ "$(grep "#nitido#" ~/.config/fontconfig/fonts.conf)" != "" ]
+then
+  nitido_check="checked"
+  naopadrao="1"
+fi
+
+if [ "$(grep "#nitidolcd#" ~/.config/fontconfig/fonts.conf)" != "" ]
+then
+  nitidolcd_check="checked"
+  naopadrao="1"
+fi
+
+if [ "$(grep "#otimizado#" ~/.config/fontconfig/fonts.conf)" != "" ]
+then
+  otimizado_check="checked"
+  naopadrao="1"
+fi
+
+if [ "$(grep "#equilibrado#" ~/.config/fontconfig/fonts.conf)" != "" ]
+then
+  equilibrado_check="checked"
+  naopadrao="1"
+fi
+
+if [ "$(grep "#suave#" ~/.config/fontconfig/fonts.conf)" != "" ]
+then
+  suave_check="checked"
+  naopadrao="1"
+fi
+
+if [ "$(grep "#muitosuave#" ~/.config/fontconfig/fonts.conf)" != "" ]
+then
+  muitosuave_check="checked"
+  naopadrao="1"
+fi
+
+if [ "$naopadrao" = "" ]
+then
+  padrao_check="checked"
+fi
+
+if [ -e "~/.config/fontconfig/fonts.conf.d/90-liberation.conf" ]
+then
+  liberation_check="checked"
+fi
+
+
+#O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#Quando se utiliza aspas duplas o sistema executa algumas partes do codigo antes de passar a resposta, entre essas execucoes inclui a interpretacao de variaveis
+#Para incluir textos a serem exibidos ao usuario utilize aspas duplas com $ antes, para que funcione o sistema de tradução, exemplo: $"texto"
+#No exemplo abaixo o memso comando echo foi aberto e fechado diversas vezes de acordo com a necessidade, aspas simples, duplas e duplas com traducao.
+echo '<center><table width=95%><tr><td>'
+echo $"A configuracao de fontes do sistema e responsavel por uma leitura agradavel, mas tambem para melhorar a compatibilidade com sites.<p>Apos aplicar, os programas que forem abertos utilizarao a nova configuracao de fontes."
+
+echo "
+<form action=big-submit.sh.htm method=get><p>
+
+<input type=radio name=escolha id=6 value=nitido $mouseover_open $tip_nitido $mouseover_close $nitido_check><label for=6 $mouseover_open $tip_nitido $mouseover_close>" $"Muito Nitido""</label>
+<p>
+<input type=radio name=escolha id=7 value=nitidolcd $mouseover_open $tip_nitidolcd $mouseover_close $nitidolcd_check><label for=7 $mouseover_open $tip_nitidolcd $mouseover_close>" $"Nitido""</label>
+<p>
+<input type=radio name=escolha id=8 value=equilibrado $mouseover_open $tip_equilibrado $mouseover_close $equilibrado_check><label for=8 $mouseover_open $tip_equilibrado $mouseover_close>" $"Equilibrado""</label>
+<p>
+<input type=radio name=escolha id=1 value=suave $mouseover_open $tip_suave $mouseover_close $suave_check><label for=1 $mouseover_open $tip_suave $mouseover_close>" $"Suave""</label>
+<p>
+<input type=radio name=escolha id=2 value=muitosuave $mouseover_open $tip_muitosuave $mouseover_close $muitosuave_check><label for=2 $mouseover_open $tip_muitosuave $mouseover_close>" $"Muito Suave""</label>
+<p>
+<input type=radio name=escolha id=4 value=otimizado $mouseover_open $tip_otimizado $mouseover_close $otimizado_check><label for=4 $mouseover_open $tip_otimizado $mouseover_close>" $"Otimizado""</label>
+<p>
+<input type=radio name=escolha id=5 value=padrao $mouseover_open $tip_padrao $mouseover_close $padrao_check><label for=5 $mouseover_open $tip_padrao $mouseover_close>" $"Padrao""</label>
+<p>"
+
+  echo "<INPUT TYPE=checkbox ID=liberation NAME=liberation VALUE=yes $mouseover_open $tip_liberation $mouseover_close $liberation_check><label for=liberation $mouseover_open $tip_liberation $mouseover_close>" $"Substituir Arial por Liberation Sans."'</label><br>'
+
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

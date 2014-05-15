@@ -1,0 +1,9 @@
+Package: big-fix-translation-konsole
+Version: 1.0.0-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Replaces: kde-service-menu-konsole-there, konsole
+Depends: kde-service-menu-konsole-there, konsole
+Section: x11
+Priority: optional
+Description: For best translation

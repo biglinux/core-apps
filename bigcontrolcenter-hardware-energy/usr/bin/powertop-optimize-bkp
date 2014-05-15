@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#Esse script aplica automaticamente as recomendacoes de otimizacao
+#do consumo de energia do powertop
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Cria pasta para trabalhar
+mkdir -p /usr/share/powertop
+
+#Gera o arquivo powertop.csv que contem as otimizacoes do powertop
+powertop --csv=/usr/share/powertop/powertop.csv --time=0 --iteration=1
+
+#Filtra o arquivo powertop.csv para filtrar os comandos de otimizacao, porem remove os que regulam a economia de energia das portas usb e dos hds, essas funcoes funcionam melhor utilizando o laptop-mode-tools, gera o arquivo powertop.sh com os comandos
+grep "';\"" /usr/share/powertop/powertop.csv | cut -d ";" -f2-9 | sed "s|';\"|'|g;s|^\"||g" | grep -v "/sys/bus/usb.*power/control'" | grep -v /proc/sys/vm/dirty_writeback_centisecs | grep -v "/sys/class/scsi_host/host.*/link_power_management_policy" > /usr/share/powertop/powertop.sh
+
+#Torna o arquivo powertop.sh executavel
+chmod +x /usr/share/powertop/powertop.sh
+
+#Executa o powertop.sh e aplica a economia de energia recomendada pelo powertop
+/usr/share/powertop/powertop.sh

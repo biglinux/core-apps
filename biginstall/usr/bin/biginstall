@@ -1,0 +1,72 @@
+#!/bin/bash
+
+#Manage install apps
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+#Check permission
+	if test $(id -u) != 0
+	  then
+	   echo "Need root permission"
+	   exit 0
+	fi
+
+#Options, remove, purge, install, noninteractive
+        if [ "$(echo "$*" | grep -e --remove)" != "" ]
+        then
+            option=remove
+        fi
+
+        if [ "$(echo "$*" | grep -e --purge)" != "" ]
+        then
+            option=purge
+        fi
+
+        if [ "$(echo "$*" | grep -e --install)" != "" ]
+        then
+            option=install
+        fi
+
+        if [ "$(echo "$*" | grep -e --y)" != "" ]
+        then
+            noninteractive=-y
+        fi
+
+#Filter apps
+	apps=$(echo "$*" | sed 's/--install //;s/--remove //;s/--purge //;s/--y //;s/--help//')
+
+#Check var
+        if [ "$*" != "" ]
+        then
+#Detect Xorg
+      WIDTH=`xwininfo -root | grep Width`
+
+
+	    if [ "$WIDTH"  != "" ];
+	    then
+	    bigsynaptic --$option $apps
+	    exit 0
+
+	    else
+
+	    apt-get $option $noninteractive $apps
+	    exit 0
+	    fi
+        fi
+
+#Help
+        if [ "$(echo "$*" | grep -e --help)" != "" ]
+        then
+        echo "Manage BigInstall
+
+--install
+--remove
+--purge
+--y		Assume yes for all (noninteractive)
+"
+        fi

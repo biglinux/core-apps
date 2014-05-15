@@ -1,0 +1,52 @@
+[1]
+Description=Configurações de aplicativo para kaiana-splash
+noborder=true
+noborderrule=2
+opacityactive=80
+opacityactiverule=2
+opacityinactive=80
+opacityinactiverule=2
+wmclass=kaiana_splash_*
+wmclasscomplete=true
+wmclassmatch=3
+
+[2]
+Description=(Padrão) Desativa prevenção de roubo de foco para o XV
+fsplevel=0
+fsplevelrule=2
+wmclass=^xv .*
+wmclasscomplete=true
+wmclassmatch=3
+
+[Directories-default]
+prefixes[$d]
+
+[Emoticons]
+emoticonsTheme[$d]
+
+[General]
+BrowserApplication[$d]
+XftHintStyle[$d]
+count=2
+desktopFont[$d]
+font[$d]
+menuFont[$d]
+smallestReadableFont[$d]
+taskbarFont[$d]
+toolBarFont[$d]
+widgetStyle[$d]
+
+[KDE-Global GUI Settings]
+GraphicEffectsLevel[$d]
+
+[Notification Messages]
+:confirmNewSession[$d]
+
+[PreviewSettings]
+UseFileThumbnails[$d]
+
+[Toolbar style]
+ToolButtonStyle[$d]
+
+[WM]
+activeFont[$d]

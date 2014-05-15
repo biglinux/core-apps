@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Update Notifier
+Comment=Update Notifier
+Icon=update-notifier
+Exec=bigupdate-notifier&
+Terminal=false
+Type=Application

@@ -1,0 +1,60 @@
+<!DOCTYPE Menu PUBLIC '-//freedesktop//DTD Menu 1.0//EN' 'http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd'>
+<Menu>
+ <Menu>
+  <Name>Office</Name>
+  <Layout>
+   <Merge type="files"/>
+   <Filename>libreoffice-calc.desktop</Filename>
+   <Filename>libreoffice-draw.desktop</Filename>
+   <Filename>libreoffice-impress.desktop</Filename>
+   <Filename>libreoffice-startcenter.desktop</Filename>
+   <Filename>libreoffice-writer.desktop</Filename>
+   <Filename>kde4-okular.desktop</Filename>
+   <Separator/>
+   <Merge type="menus"/>
+   <Menuname>More</Menuname>
+  </Layout>
+  <Exclude>
+   <Filename>hp-fab.desktop</Filename>
+   <Filename>hp-sendfax.desktop</Filename>
+   <Filename>kde4-KMail2.desktop</Filename>
+  </Exclude>
+ </Menu>
+ <Menu>
+  <Name>Graphics</Name>
+  <Layout>
+   <Merge type="files"/>
+   <Filename>kde4-gwenview.desktop</Filename>
+   <Filename>kde4-kamoso.desktop</Filename>
+   <Filename>kde4-ksnapshot.desktop</Filename>
+   <Filename>libreoffice-draw.desktop</Filename>
+   <Filename>kde4-okular.desktop</Filename>
+   <Filename>kde4-skanlite.desktop</Filename>
+   <Separator/>
+   <Merge type="menus"/>
+   <Menuname>More</Menuname>
+  </Layout>
+  <Exclude>
+   <Filename>kde4-dngconverter.desktop</Filename>
+   <Filename>kde4-photolayoutseditor.desktop</Filename>
+   <Filename>display.im6.desktop</Filename>
+   <Filename>kde4-panoramagui.desktop</Filename>
+   <Filename>kde4-expoblending.desktop</Filename>
+   <Filename>kde4-scangui.desktop</Filename>
+  </Exclude>
+ </Menu>
+ <Menu>
+  <Name>.hidden</Name>
+  <Include>
+   <Filename>hp-fab.desktop</Filename>
+   <Filename>hp-sendfax.desktop</Filename>
+   <Filename>kde4-KMail2.desktop</Filename>
+   <Filename>kde4-dngconverter.desktop</Filename>
+   <Filename>kde4-photolayoutseditor.desktop</Filename>
+   <Filename>display.im6.desktop</Filename>
+   <Filename>kde4-panoramagui.desktop</Filename>
+   <Filename>kde4-expoblending.desktop</Filename>
+   <Filename>kde4-scangui.desktop</Filename>
+  </Include>
+ </Menu>
+</Menu>

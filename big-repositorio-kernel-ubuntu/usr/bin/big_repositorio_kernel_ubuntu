@@ -1,0 +1,47 @@
+#!/bin/bash
+
+rm -Rf "$HOME/.repositorio_kernel_ubuntu"
+mkdir -p "$HOME/.repositorio_kernel_ubuntu"
+cd "$HOME/.repositorio_kernel_ubuntu"
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/
+tac index.html | grep v3. | sed 's|.*href="||g;s|/">.*||g' > lista
+
+
+zenity --list --title="Escolha a versão do kernel" --column="Kernel" $(cat lista) > versao
+
+wget -c http://kernel.ubuntu.com/~kernel-ppa/mainline/$(cat versao) -O kernel.html
+
+if [ "$(uname -m)" = "x86_64" ];
+then
+    arquitetura=amd64
+else
+    arquitetura=i386
+fi
+
+if [ -e "/usr/bin/gksudo" ];
+then
+    chamar_sudo=gksudo
+else
+    chamar_sudo=kdesudo
+fi
+
+grep $arquitetura kernel.html | sed 's|.*href="||g;s|">.*||g' > "kernel_selecionado"
+grep all kernel.html | sed 's|.*href="||g;s|">.*||g' >> "kernel_selecionado"
+
+echo "dpkg -i *.deb" > xterm_sudo_fix
+chmod +x xterm_sudo_fix
+
+echo "#!/bin/bash" > xterm
+
+for i in $(cat kernel_selecionado)
+do
+    echo "wget -c http://kernel.ubuntu.com/~kernel-ppa/mainline/$(cat "versao")/$i" >> xterm
+done
+
+echo "$chamar_sudo ./xterm_sudo_fix" >> xterm
+
+chmod +x xterm
+
+xterm -e ./xterm
+
+zenity --info --text="Instalação concluída ou falha, estou com preguiça de gerar uma checagem, reinicie o computador e confira você mesmo."

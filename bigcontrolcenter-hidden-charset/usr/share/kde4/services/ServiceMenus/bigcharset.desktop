@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=inode/directory;
+Actions=utf;
+
+[Desktop Action utf]
+Name=Correct accents
+Name[es]=Corregir acentos
+Name[pt]=Corrigir acentos
+Name[pt_BR]=Corrigir acentos
+Icon=fontforge
+Exec=bigbashview /usr/share/bigcontrolcenter/categories/hidden/charset/utf.sh.htm?pasta="%F" -i /usr/share/bigcontrolcenter/categories/hidden/charset/icon.png

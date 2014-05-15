@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-start-install-remove
+
+name_application=$"Instalar ou Remover programas"
+description_application=$"Instale e remova programas de forma facil e pratica"
+exec_application="/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/start/install-remove/install-remove.sh.htm -i /usr/share/bigcontrolcenter/categories/start/install-remove/icon.png"
+icon_application="/usr/share/bigcontrolcenter/categories/start/install-remove/icon.png"

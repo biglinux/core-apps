@@ -1,0 +1,6 @@
+[kde4_session]
+backend = ini
+profile = 
+integration = true
+plugin_list_autosort = true
+

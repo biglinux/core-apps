@@ -1,0 +1,10 @@
+Package: disable-hpsystray-autostart
+Version: 1.0.0-0kaiana0
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Depends: hplip-gui
+Priority: optional
+Description: Desativa o inicio automatico da systray hplip e economiza 20mb de ram
+

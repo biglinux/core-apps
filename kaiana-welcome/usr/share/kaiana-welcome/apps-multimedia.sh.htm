@@ -1,0 +1,98 @@
+#!/bin/bash
+source translation
+#Translation
+cat << EOF
+<html>
+<!--
+	Miniport 2.5 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<!-- #Insira o conteúdo entre os 2 EOF sem se preocupar com aspas -->
+
+	<head>
+		<title>$title</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/style.css" />
+		
+	</head>
+<body>
+EOF
+cat << EOF
+<!-- Nav -->
+	<nav id="nav">
+		<ul class="container">
+			<li><a href="index.sh.htm">$menuindex</a></li>
+			<li><a href="news.sh.htm">$menunews</a></li>
+			<li><a href="conf.sh.htm">$menuconfigure</a></li>
+			<li><a href="apps-office.sh.htm">$menuapps</a></li>
+			<li><a href="community.sh.htm">$menucontribute</a></li>
+			<li><a href="about.sh.htm">$menuabout</a></li>
+		</ul>
+	</nav>
+
+<!-- Home -->
+	<div class="wrapper">			
+		<div id="container">	
+		<p class="titlePage">$cabecalho03 $(lsb_release -d | cut -d":" -f2) $cabecalho04</p>
+		<div id='cssmenu'>
+		    <ul>
+			 <li><a href='apps-office.sh.htm'><span>$menuappsoffice</span></a></li> 
+			 <li><a href='apps-graphics.sh.htm'><span>$menuappsgraphics</span></a></li>
+			 <li><a href='apps-internet.sh.htm'><span>$menuappsinternet</span></a></li>
+			 <li  class='active'><a href='apps-multimedia.sh.htm'><span>$menuappsmultimedia</span></a></li>
+			 <li><a href='apps-development.sh.htm'><span>$menuappsdevelopment</span></a></li>
+			 <li><a href='apps-utility.sh.htm'><span>$menuappsutility</span></a></li>
+			 <li><a href='apps-gaming.sh.htm'><span>$menuappsgaming</span></a></li>
+		    </ul>
+		<br/>    
+		</div>
+		<ul id="item-list">
+			<li>
+				<p><a href=./apps/install-codecs.run><img src="images/codec.png" class="alignleft" />
+				<span><a class="title" href=./apps/install-codecs.run>$titlecodecs</br></a></span>$desccodecs</p>
+			</li>
+			<li>
+				<a class="title" href=./apps/install-smplayer.run><img src="images/smplayer.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-smplayer.run>$titlesmplayer</br></a></span>$descsmplayer</p>
+			</li>
+			<li>
+				<a class="title" href=./apps/install-romp.run><img src="images/romp.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-romp.run>$titleromp</br></a></span>$descromp</p>
+			</li>
+			<li>
+				<a class="title" href=./apps/install-miro.run><img src="images/miro.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-miro.run>$titlemiro</br></a></span>$descmiro</p>
+			</li>
+			<li>
+				<a class="title" href=./apps/install-bino.run><img src="images/bino.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-bino.run>$titlebino</br></a></span>$descbino</p>
+			</li>
+			<li>
+				<a class="title" href=./apps/install-audacity.run><img src="/images/audacity.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-audacity.run>$titleaudacity</br></a></span>$descaudacity</p>
+			</li>
+			<li>
+				<a class="title" href=./apps/install-kdenlive.run><img src="/images/kdenlive.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-kdenlive.run>$titlekdenlive</br></a></span>$desckdenlive</span></p>
+			</li>
+			
+			<li>
+				<a class="title" href=./apps/install-devede.run><img src="images/devede.png" class="alignleft"/>
+				<span><a class="title" href="./apps/install-devede.run">$titledevede</br></a></span>$descdevede</p>
+			</li>
+			<li>
+				<a class="title" href="./apps/open-software-center.run"><img src="images/getaplications.png" class="alignleft"/>
+				<span><a class="title" href="./apps/open-software-center.run">$titlesoftcenter</a></span><br/>$descsoftcenter</p>
+			</li>
+		</ul>
+	</div> 
+	<div id="rodape">
+	<a href="community.sh.htm" class="button">$next</a>
+	</div>
+</body>
+EOF
+</html>

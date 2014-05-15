@@ -1,0 +1,51 @@
+style "menubar" = "dark" {
+	engine "murrine" {
+		textstyle = 2
+		text_shade = 0.33
+		gradient_shades = {1.0, 1.0, 1.0, 1.0}
+		lightborder_shade = 1.0
+	}
+}
+
+style "menu" = "dark" {
+	xthickness = 0
+	ythickness = 0
+
+	bg[NORMAL] = shade (1.08, @dark_bg_color)
+	bg[INSENSITIVE] = shade (1.08, @dark_bg_color)
+	fg[INSENSITIVE]   = shade (0.54, @dark_bg_color)
+
+	engine "murrine"
+	{
+		roundness = 0
+	}
+}
+
+style "menu_item" = "menu" {
+	xthickness = 2
+	ythickness = 3
+	
+    bg[SELECTED] = shade (1.05, @selected_bg_color) 
+	fg[PRELIGHT] = @selected_fg_color
+
+	engine "murrine"
+	{
+		glowstyle = 5
+		glow_shade = 1.2
+		border_shades = {1.30, 0.98}
+		gradient_shades  = {1.18, 1.10, 1.10, 0.95}
+	}
+}
+
+style "menubar_item" {
+	bg[PRELIGHT] = @dark_bg_color
+	fg[PRELIGHT] = @dark_fg_color
+
+	engine "murrine" {
+		border_shades = { 1.0, 0.8 }
+		glow_shade = 1.00
+		gradient_shades = {1.0, 0.95, 0.95, 0.85}
+		roundness = 0
+		contrast = .0 
+	}
+}

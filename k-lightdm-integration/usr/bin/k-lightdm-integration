@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+caminho="$(grep -m 1 wallpaper= ~/.kde/share/config/plasma-desktop-appletsrc | cut -d"=" -f2)"
+
+#Detectando se o caminho eh uma imagem ou uma pasta
+if [ "$(file -i "$caminho" | grep inode/directory; 2>/dev/null)" != "" ];
+then
+    #Do find ao image data filtra todos os arquivos de imagem, o sort e o tail separam a imagem que possui o maior tamanho em pixels, e o sed limpa os dados para restar apenas o endereco da imagem
+    dbus-send --system --print-reply --dest=org.freedesktop.Accounts /org/freedesktop/Accounts/User$(id -u) org.freedesktop.Accounts.User.SetBackgroundFile string:"$(find $caminho -type f -print0 | xargs -0 file | grep 'image data, ' | sort -gk 5 | tail -1 | sed 's|: .*||g;')"
+else
+    #Detecta que eh um arquivo e exibe-o
+    dbus-send --system --print-reply --dest=org.freedesktop.Accounts /org/freedesktop/Accounts/User$(id -u) org.freedesktop.Accounts.User.SetBackgroundFile string:"$caminho"
+fi

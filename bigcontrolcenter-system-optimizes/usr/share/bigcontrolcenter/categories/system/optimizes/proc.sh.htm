@@ -1,0 +1,80 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-optimizes
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Gerenciamento do processador"
+apply=$"Aplicar"
+close=$"Sair"
+tip_shutdown=$"Desligar o computador de forma rapida, opcao recomendada apenas para desktops, nao para servidores."
+
+if [ -e "/etc/init/bigproc.conf" ]
+then
+    desktop_check="checked"
+else
+    default_check="checked"
+fi
+
+
+if [ "$(grep BigLinux /etc/init.d/sendsigs)" != "" ]
+then
+   shutdown_check="checked"
+fi
+
+
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Desligamento rapido."
+close_header
+
+
+#O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#Quando se utiliza aspas duplas o sistema executa algumas partes do codigo antes de passar a resposta, entre essas execucoes inclui a interpretacao de variaveis
+#Para incluir textos a serem exibidos ao usuario utilize aspas duplas com $ antes, para que funcione o sistema de tradução, exemplo: $"texto"
+#No exemplo abaixo o memso comando echo foi aberto e fechado diversas vezes de acordo com a necessidade, aspas simples, duplas e duplas com traducao.
+echo '<center><table width=95%><tr><td>'
+echo '<form action=proc_submit.sh.htm method=get>'
+
+
+echo "<table width=95%>"
+
+echo "<tr><td>" 
+
+#echo "<input type=radio name=escolha id=1 value=default $default_check><label for=1>" $"Ajuste padrao.""</label>
+#<br>
+#<input type=radio name=escolha id=2 value=desktop $desktop_check><label for=2>" $"Otimizado para desktop.""</label><p>"
+
+echo "<INPUT TYPE=checkbox ID=shutdown NAME=shutdown VALUE=yes $mouseover_open $tip_shutdown $mouseover_close $shutdown_check><label for=shutdown $mouseover_open $tip_shutdown $mouseover_close>" $"Desligamento rapido."
+
+echo "</table>"
+
+
+
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

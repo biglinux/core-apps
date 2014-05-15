@@ -1,0 +1,11 @@
+Package: bigcontrolcenter-internet-knemo
+Version: 1.0.1-1kaiana4
+Architecture: all
+Conflicts: bigcontrolcenter-system-knemo
+Replaces: bigcontrolcenter-system-knemo
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: knemo, bigcontrolcenter
+Section: admin
+Priority: optional
+Description: Network monitor

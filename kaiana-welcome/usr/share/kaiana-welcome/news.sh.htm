@@ -1,0 +1,132 @@
+#!/bin/bash
+source translation
+#Translation
+cat << EOF
+<html>
+<!--
+	Miniport 2.5 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<!-- #Insira o conteúdo entre os 2 EOF sem se preocupar com aspas -->
+
+	<head>
+		<title>$title</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery.sliderkit.1.9.2.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/sliderkit-core.css" media="screen, projection" />
+		<link rel="stylesheet" type="text/css" href="css/sliderkit-demos.css" media="screen, projection" />
+		<script type="text/javascript">
+			jQuery(window).load(function(){
+				jQuery(".newslider-vertical").sliderkit({
+					verticalnav:true,
+					navitemshover:true,
+					circular:true
+				});
+			});	
+		</script>
+	</head>
+<body>
+
+<!-- Nav -->
+	<nav id="nav">
+		<ul class="container">
+			<li><a href="index.sh.htm">$menuindex</a></li>
+			<li><a href="news.sh.htm">$menunews</a></li>
+			<li><a href="conf.sh.htm">$menuconfigure</a></li>
+			<li><a href="apps-office.sh.htm">$menuapps</a></li>
+			<li><a href="community.sh.htm">$menucontribute</a></li>
+			<li><a href="about.sh.htm">$menuabout</a></li>
+		</ul>
+	</nav>
+<!-- Home -->
+	<div class="wrapper">
+		<article class="articles">
+			<h1 class="titlePage">$newfeature</h1>
+			<p>$releasepreambule</p>
+		 </article>
+		<!-- Start newslider-vertical -->
+		<div class="sliderkit newslider-vertical">
+			<div class="sliderkit-nav">
+				<div class="sliderkit-nav-clip">
+					<ul>
+						<li><a>Kernel Ubuntu 3.13.0.24</a></li>
+						<li><a>KDE 4.13.0</a></li>
+						<li><a>LibreOffice 4.2.4</a></li>
+						<li><a>$controlcenter</a></li>
+						<li><a>EFI Boot</a></li>
+						<li><a>$freshpackages</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="sliderkit-panels">
+				<div class="sliderkit-panel">
+					<div class="sliderkit-news">
+						<div class="logo">
+							<img src="images/tux.png"/>
+						 </div>
+						<h3 class="titlePage">Kernel 3.13.11 NRJ-QL</h3>
+						<p>$kerneldesc</p>
+					</div>
+				</div>
+				<div class="sliderkit-panel">
+					<div class="sliderkit-news">
+						<h3 class="titlePage">KDE 4.12.4</h3>
+						<div class="logo">
+							<img src="images/kde4.png"/>
+						 </div>
+						<p>$kdedesc</p>
+					</div>
+				</div>
+				<div class="sliderkit-panel">
+					<div class="sliderkit-news">
+						<h3 class="titlePage">LibreOffice 4.2.4</h3>
+						<div class="logo">
+							<img src="images/libreoffice.png"/>
+						 </div>
+						<p>$libreofficedesc</p>
+					</div>
+				</div>
+				<div class="sliderkit-panel">
+					<div class="sliderkit-news">
+						<h3 class="titlePage">Big Control Center</h3>
+						<div class="logo">
+							<img src="images/bigcontrolcenter.png"/>
+						 </div>
+						<p>
+						$bccconfdesc
+						</p>
+					</div>
+				</div>
+				<div class="sliderkit-panel">
+					<div class="sliderkit-news">
+						<h3 class="titlePage">EFI Boot</h3>
+						<p>
+						$efibootdesc
+						</p>
+					</div>
+				</div>
+				<div class="sliderkit-panel">
+					<div class="sliderkit-news">
+						<h3 class="titlePage">Fresh Packages</h3>
+						<p>
+						$freshpackagedesc
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="rodape">
+	<a href="conf.sh.htm" class="button">$next</a>
+	</div>
+</body>
+	
+</html>
+EOF

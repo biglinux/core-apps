@@ -1,0 +1,73 @@
+# Brazilian Portuguese translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-14 23:17-0300\n"
+"PO-Revision-Date: 2010-09-14 07:11+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-15 04:57+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Ksplash BigLinux"
+msgstr "Ksplash BigLinux"
+
+msgid "Selecionar nova imagem"
+msgstr "Selecionar nova imagem"
+
+msgid "Sair"
+msgstr "Sair"
+
+msgid "Restaurar imagem padrao"
+msgstr "Restaurar imagem padrão"
+
+msgid "Altere a imagem de fundo que aparece apos o login."
+msgstr "Altere a imagem de fundo que aparece após o login."
+
+msgid "Imagem atual"
+msgstr "Imagem atual"
+
+msgid "Tela de abertura do KDE (Ksplash)"
+msgstr "Tela de abertura do KDE (Ksplash)"
+
+msgid "Escolha o seu tema preferido para o Ksplash"
+msgstr "Escolha o seu tema preferido para o Ksplash"
+
+msgid "Aplicar"
+msgstr "Aplicar"
+
+msgid "Selecione seu tema favorito."
+msgstr "Selecione seu tema favorito."
+
+msgid "Utilize sua imagem favorita como fundo para o tema BigLinux"
+msgstr "Utilize sua imagem favorita como fundo para o tema BigLinux"
+
+msgid "Escolha o seu tema preferido para o Ksplash."
+msgstr "Escolha o seu tema preferido para o Ksplash."
+
+msgid "Escolher tema do Ksplash"
+msgstr "Escolher tema do Ksplash"
+
+msgid "Alterar fundo de tela do tema BigLinux"
+msgstr "Alterar fundo de tela do tema BigLinux"
+
+msgid ""
+"Altere a imagem de fundo que aparece na ultima etapa de carregamento do "
+"sistema, logo apos o login."
+msgstr ""
+"Altere a imagem de fundo que aparece na última etapa de carregamento do "
+"sistema, logo após o login."
+
+msgid "Selecione a imagem"
+msgstr "Selecione a imagem"
+
+msgid "Alteracao aplicada."
+msgstr "Alteração aplicada."

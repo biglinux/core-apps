@@ -1,0 +1,41 @@
+#!/bin/bash
+
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-themes-windowborder
+
+  if [ -e "$HOME/.config/bigwincheck1" ]
+  then
+	if [ "$[$(date +%y%m%d%H%M%S) - $(cat "$HOME/.config/bigwincheck1")]" -lt "15" ]
+	then
+	    kdialog --title $"Borda das janelas" --radiolist $"O gerenciador de borda de janelas $(cat $HOME/.config/bigwincheck2) falhou, selecione qual deve ser utilizada." 1 $"1 - Automatico." on 2 $"2 - Compiz." off 3 $"3 - Kwin." off 4 $"4 - XFWM." off > "$HOME/.config/bigwincheck3"
+
+	    if [ "$(cat "$HOME/.config/bigwincheck3")" = "1" ]
+	    then
+		rm -f "$HOME/.config/bigwin"
+	    fi
+
+	    if [ "$(cat "$HOME/.config/bigwincheck3")" = "2" ]
+	    then
+		echo "compiz" > "$HOME/.config/bigwin"
+	    fi
+
+	    if [ "$(cat "$HOME/.config/bigwincheck3")" = "3" ]
+	    then
+		echo "kwin" > "$HOME/.config/bigwin"
+	    fi
+
+	    if [ "$(cat "$HOME/.config/bigwincheck3")" = "4" ]
+	    then
+		echo "xfwm" > "$HOME/.config/bigwin"
+	    fi  
+	fi
+  fi
+
+date +%y%m%d%H%M%S > "$HOME/.config/bigwincheck1"

@@ -1,0 +1,11 @@
+Package: theme-boomerang
+Version: 1:5.0.0-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Depends: gtk3-engines-unico
+Section: x11
+Priority: optional
+Description: Theme Boomerang http://ghogaru.deviantart.com/art/Boomerang-189180645
+
+
+

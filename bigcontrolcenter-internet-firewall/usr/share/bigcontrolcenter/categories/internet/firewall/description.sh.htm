@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-internet-firewall
+
+name_application=$"Firewall"
+description_application=$"Torne mais segura a conexao com a internet"
+exec_application="/usr/share/bigbashview/run.run?bigsudo gufw"
+icon_application="/usr/share/bigcontrolcenter/categories/internet/firewall/icon.png"

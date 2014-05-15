@@ -1,0 +1,9 @@
+Package: bigpartition
+Version: 1.3.2-1kaiana3
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Depends: util-linux, mount, udisks2
+Priority: optional
+Description: Tweeks partitions for BigLinux

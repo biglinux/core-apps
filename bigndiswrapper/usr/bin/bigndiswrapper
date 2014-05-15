@@ -1,0 +1,69 @@
+#!/bin/bash
+
+#Manage wireless ndiswrapper
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+#Check permission
+if test $(id -u) != 0
+then
+    echo "Need root permission"
+    exit 0
+fi
+
+
+#Options
+case "$1" in
+
+    --enable)
+
+for i in $(ndiswrapper -l | grep ": driver" | cut -f1 -d" "); do
+ndiswrapper -r $i
+done
+
+rmmod -f ndiswrapper
+#cp -f "$2" /etc/ndiswrapper/wire.inf
+ndiswrapper -i $2
+depmod -a
+echo 'rmmod ohci_hcd bcm203x  bcm3510  bcm5974 b43 b43legacy b44 ath5k ath9k ath_hal ath_pci ath_rate_amrr ath_rate_minstrel ath_rate_onoe ath_rate_sample adm8211 r8169 orinoco orinoco_cs orinoco_nortel orinoco_pci orinoco_plx orinoco_tmd ipw ipw2100 ipw2200 ipwireless rt2400pci rt2860sta rt2x00pci rt73usb rt2500pci rt2870sta rt2x00usb rt2500usb rt2x00lib rt61pci ssb 2> /dev/null
+
+modprobe ndiswrapper
+modprobe ssb' > /etc/init.d/bigndiswrapper
+
+	chmod +x /etc/init.d/bigndiswrapper
+	update-rc.d -f bigndiswrapper defaults
+	/etc/init.d/bigndiswrapper start
+
+	exit 0
+    ;;
+
+
+    --disable)
+
+rm -f /etc/init.d/bigndiswrapper
+rmmod ndiswrapper
+ndiswrapper -r /etc/ndiswrapper/wire.inf
+    ;;
+
+    --list)
+
+ndiswrapper -l
+
+    ;;
+
+    *)
+        echo "Manage wireless ndiswrapper
+
+--enable      	example:  --enable /home/biglinux/driver.inf
+--list
+--disable
+"
+
+    ;;
+
+esac

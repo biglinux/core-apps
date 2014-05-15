@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+Actions=WriteCdImage;
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/x-iso;application/x-cd-image;inode/ISO-image;
+
+[Desktop Action WriteCdImage]
+Exec=k3b --image %F
+Name=Write image to disc with K3b
+Name[pt_BR]=Gravar Imagem com K3b
+Icon=k3b
+X-Ubuntu-Gettext-Domain=desktop_extragear-multimedia_k3b

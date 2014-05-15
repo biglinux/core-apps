@@ -1,0 +1,130 @@
+/***********
+ * Sidebar *
+ ***********/
+.sidebar,
+.sidebar.view {
+    background-color: @bg_color;
+    border-radius: 0;
+}
+
+.sidebar:backdrop,
+.sidebar.view:backdrop {
+    background-color: shade (@bg_color, 1.02);
+}
+
+.sidebar {
+    -GtkTreeView-horizontal-separator:          1;
+    -GtkTreeView-vertical-separator:            1;
+}
+
+.sidebar .frame {
+    border-width: 0;
+}
+
+.sidebar.view:selected {
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+    -unico-inner-stroke-width: 1px 0 1px 0;
+
+    background-image: -gtk-gradient (linear,
+                    left top,
+                    left bottom,
+                    from (shade (@selected_bg_color, 1.30)),
+                    to (shade (@selected_bg_color, 0.98)));
+
+    -unico-border-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (shade (@selected_bg_color, 1.05)),
+                    to (shade (@selected_bg_color, 0.88)));
+
+    -unico-inner-stroke-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (alpha (#fff, 0.30)),
+                    to (alpha (#fff, 0.06)));
+}
+
+.sidebar.view:selected:backdrop {
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+    -unico-inner-stroke-width: 1px 0 1px 0;
+
+    background-image: -gtk-gradient (linear,
+                    left top,
+                    left bottom,
+                    from (shade (@backdrop_selected_bg_color, 1.02)),
+                    to (shade (@backdrop_selected_bg_color, 0.90)));
+
+    -unico-border-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (shade (@backdrop_selected_bg_color, 0.93)),
+                    to (shade (@backdrop_selected_bg_color, 0.80)));
+
+    -unico-inner-stroke-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (alpha (#fff, 0.30)),
+                    to (alpha (#fff, 0.06)));
+}
+
+.sidebar row:selected:backdrop {
+    text-shadow: 0 -1 shade (@backdrop_selected_bg_color, 0.80);
+}
+
+/*
+.sidebar row:hover {
+	color: @selected_bg_color;
+}
+*/
+
+/*
+.sidebar.view:prelight {
+    color: @selected_bg_color;
+}
+*/
+
+GtkHCollapsablePaned,
+SourceList.pane-separator {
+    border-width:            0;
+    -GtkPaned-handle-size:    1;
+}
+
+.sidebar-pane-separator,
+.sidebar-pane-separator:prelight,
+.sidebar-pane-separator:selected,
+VarkaWidgetsHCollapsiblePaned,
+VarkaWidgetsHCollapsiblePaned.pane-separator,
+VarkaWidgetsHCollapsiblePaned.pane-separator:prelight,
+VarkaWidgetsHCollapsiblePaned.pane-separator:selected {
+    border-width:            0;
+    -GtkPaned-handle-size:    1;
+    background-image: none;
+    background-color: shade (@bg_color, 0.75);
+}
+
+.sidebar-pane-separator:backdrop,
+.sidebar-pane-separator:prelight:backdrop,
+.sidebar-pane-separator:selected:backdrop,
+VarkaWidgetsHCollapsiblePaned:backdrop,
+VarkaWidgetsHCollapsiblePaned.pane-separator:backdrop,
+VarkaWidgetsHCollapsiblePaned.pane-separator:prelight:backdrop,
+VarkaWidgetsHCollapsiblePaned.pane-separator:selected:backdrop {
+    border-width:            0;
+    -GtkPaned-handle-size:    1;
+    background-image: none;
+    background-color: shade (@bg_color, 0.90);
+}
+
+GtkHCollapsablePaned.pane-separator,
+GtkHCollapsablePaned.pane-separator:prelight,
+GtkHCollapsablePaned.pane-separator:selected,
+SourceList.pane-separator {
+    background-image: none;
+    background-color: shade (@bg_color, 0.75);
+}
+
+GtkHCollapsablePaned.pane-separator:backdrop,
+GtkHCollapsablePaned.pane-separator:prelight:backdrop,
+GtkHCollapsablePaned.pane-separator:selected:backdrop,
+SourceList.pane-separator {
+    background-image: none;
+    background-color: shade (@bg_color, 0.90);
+}

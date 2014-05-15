@@ -1,0 +1,62 @@
+#!/bin/bash
+
+#Terminal
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#kde-konsole
+if [ "$(ps -A | grep plasma-desktop)" != "" ]
+then
+      if [ "$(which konsole)" != "" ];
+      then
+	konsole $*
+	exit 0
+      fi
+fi
+
+#gnome-terminal
+      if [ "$(which gnome-terminal)" != "" ];
+      then
+	gnome-terminal $*
+	exit 0
+      fi
+
+#xfce-terminal
+      if [ "$(which xfterm4)" != "" ];
+      then
+	xfterm4 $*
+	exit 0
+      fi
+
+#lxde-terminal
+      if [ "$(which lxterm)" != "" ];
+      then
+	lxterm $*
+	exit 0
+      fi
+
+#xterm
+      if [ "$(which xterm)" != "" ];
+      then
+	xterm $*
+	exit 0
+      fi
+
+
+#eterm
+      if [ "$(which eterm)" != "" ];
+      then
+	eterm $*
+	exit 0
+      fi
+
+#aterm
+      if [ "$(which aterm)" != "" ];
+      then
+	aterm $*
+	exit 0
+      fi

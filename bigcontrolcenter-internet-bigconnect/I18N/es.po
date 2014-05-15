@@ -1,0 +1,159 @@
+# Spanish translations for PACKAGE package.
+# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BigLinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2010-09-22 07:18+0000\n"
+"Last-Translator: Ricardo A. Hermosilla Carrillo <ra.hermosillac@gmail.com>\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-24 04:41+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "BigConnect"
+msgstr "BigConnect"
+
+msgid "Aplicar"
+msgstr "Aplicar"
+
+msgid "Sair"
+msgstr "Salir"
+
+msgid "Gerenciador de conexao alternativo."
+msgstr "Administrador alternativo de conexiones."
+
+msgid "Configuracao aplicada."
+msgstr "Configuración aplicada."
+
+msgid "Conectar a internet utilizando BigConnect"
+msgstr "Conectar a internet utilizando BigConnect"
+
+msgid "Gerenciador de conexao alternativo.<br>Cabo, DHCP, Wireless e IP Fixo"
+msgstr ""
+"Administrador alternativo de conexiones.<br>Cableada, DHCP, Inalámbrica e IP "
+"fija."
+
+msgid "Conexao Wireless com senha WEP, WPA ou sem senha (Nao suporta 3G)."
+msgstr ""
+"Conexión inalámbrica con la contraseña WEP, WPA o sin contraseña (no soporta "
+"3G)."
+
+msgid "Conexao DHCP ou IP fixo."
+msgstr "Conexión DHCP o IP fija."
+
+msgid ""
+"Esse e um configurador de conexao que utiliza apenas as ferramentas basicas "
+"do sistema e funciona para conexoes por cabo Ethernet e Wireless. "
+"<p><br>Veja em que situacoes e mais recomendado:"
+msgstr ""
+"Este es un configurador de conexión que utiliza las herramientas básicas del "
+"sistema y funciona para las conexiones por cable Ethernet e Inalámbricas."
+"<p><br>Ver en qué situaciones es más recomendado:"
+
+msgid ""
+"- Computadores antigos, pois reduz o consumo de memoria e processamento.\n"
+"<br> - Locais onde os usuarios nao devem ter acesso para alterar as "
+"configuracoes da conexao.\n"
+"<br> - Computadores que serao utilizados sem modo grafico.\n"
+"<br> - Caso os outros configuradores falhem."
+msgstr ""
+"- Ordenadores antiguos, ya que reduce el consumo de memoria y "
+"procesamiento.\n"
+"<br> - Lugares donde los usuarios no deberían tener acceso para cambiar las "
+"configuraciones de conexión.\n"
+"<br> - Ordenadores que son utilizados sin modo gráfico.\n"
+"<br> - En caso de que otras configuraciones fallen."
+
+msgid "Escolha o tipo de conexao:"
+msgstr "Seleccione el tipo de configuración:"
+
+msgid "Sem fio (Wireless)."
+msgstr "Sin cables (Inalámbrica)."
+
+msgid "Cabo de rede Ethernet."
+msgstr "Cable de red Ethernet."
+
+msgid "Nome"
+msgstr "Nombre"
+
+msgid "Qualidade do sinal"
+msgstr "calidad de señal"
+
+msgid "Tipo de senha"
+msgstr "Tipo de contraseña"
+
+msgid ""
+"O BigConnect e utilizado por esse painel, mas nao esta ativo, devo ativa-lo "
+"agora?\n"
+"Atencao: Isso ira desativar o gerenciador em uso: Network Manager."
+msgstr ""
+
+msgid ""
+"O BigConnect e utilizado por esse painel, mas nao esta ativo, devo ativa-lo "
+"agora?\n"
+"Atencao: Isso ira desativar o gerenciador em uso: Wicd."
+msgstr ""
+
+msgid ""
+"O BigConnect e utilizado por esse painel, mas nao esta ativo, devo ativa-lo "
+"agora?"
+msgstr ""
+
+msgid "Selecione a interface a ser utilizada para estabelecer conexao:"
+msgstr "Seleccione una interfaz a ser utilizada para establecer la conexión:"
+
+msgid "Interface:"
+msgstr "Interfaz:"
+
+msgid "Nome da rede:"
+msgstr "Nombre de la Red"
+
+msgid " Clique aqui para procurar redes disponiveis."
+msgstr " Presione aquí para buscar las redes disponibles"
+
+msgid "Tipo de senha:"
+msgstr "Tipo de contraseña:"
+
+msgid "Nenhuma"
+msgstr ""
+
+msgid "WPA"
+msgstr "WPA"
+
+msgid "WEP"
+msgstr "WEP"
+
+msgid "Digite a senha:"
+msgstr "Escriba una contraseña:"
+
+msgid "Obter IP:"
+msgstr "Obtener IP:"
+
+msgid "DHCP"
+msgstr "DHCP"
+
+msgid "IP Fixo"
+msgstr "IP fija"
+
+msgid "IP:"
+msgstr "IP:"
+
+msgid "Mascara de rede:"
+msgstr "Máscara de Red:"
+
+msgid "Gateway:"
+msgstr "Puerta de enlace:"
+
+msgid "DNS 1:"
+msgstr "DNS 1:"
+
+msgid "DNS 2:"
+msgstr "DNS 2:"

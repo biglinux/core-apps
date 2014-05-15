@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Touchfreeze
+Comment=Touchpad freeze
+Exec=bigtouchfreeze&
+Terminal=false
+Type=Application
+Icon=touchpad

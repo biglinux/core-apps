@@ -1,0 +1,108 @@
+#!/bin/bash
+
+mkdir -p ~/.config/bigcontrolcenter/falar-frase
+cd ~/.config/bigcontrolcenter/falar-frase
+
+#Confere se a igualdade é verdadeira
+if [ "$(cat frases.txt)" = "" ]; then
+    echo "Esse aplicativo permite que seja utilizado um arquivo de texto, para criar frases que são lidas pelo lianetts.
+Cada linha é exibida como um texto clicável nessa interface.
+Seu principal uso é para facilitar a acessibilidade de casos de uso bastante específicos." > frases.txt
+fi
+
+
+if [ "$(cat fonte.txt)" = "" ]; then
+    echo "cor=red
+tamanho=16" > fonte.txt
+fi
+
+# Importa configuração de fontes
+. fonte.txt
+
+# Linha para evitar erro em acentos.
+echo '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">'
+
+echo '<title>' $"Falar frases" '</title>'
+
+cat << EOF
+
+<style type="text/css">
+
+* {color: $cor;
+font-family: ubuntu, sans;
+font-size: $tamanho;
+}
+
+body {background: #feffff; /* Old browsers */
+background: -moz-linear-gradient(top, #feffff 0%, #d2ebf9 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(100%,#d2ebf9)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #feffff 0%,#d2ebf9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #feffff 0%,#d2ebf9 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #feffff 0%,#d2ebf9 100%); /* IE10+ */
+background: linear-gradient(to bottom, #feffff 0%,#d2ebf9 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#d2ebf9',GradientType=0 ); /* IE6-9 */}
+
+table {border: 1px solid #696;
+padding: 0px 0;
+text-align: center; width: 200px;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+-webkit-box-shadow: #666 0px 2px 3px;
+-moz-box-shadow: #666 0px 2px 3px;
+box-shadow: #666 0px 2px 3px;
+background: #EEFF99;
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#EEFF99), to(#66EE33));
+background: -webkit-linear-gradient(#EEFF99, #66EE33);
+background: -moz-linear-gradient(#EEFF99, #66EE33);
+background: -ms-linear-gradient(#EEFF99, #66EE33);
+background: -o-linear-gradient(#EEFF99, #66EE33);
+background: linear-gradient(#EEFF99, #66EE33);
+width: 100%;
+text-align: left;
+}
+
+.rodape a, .rodape{color: black !important;
+text-decoration: none !important;} 
+
+</style>
+
+EOF
+
+
+
+
+echo '<body>'
+
+#Altera a variável IFS para quebra de linha.
+#IFS é uma variável usada por vários comandos, entre eles o for, como forma de delimitador, onde normalmente é utilizado quebra de linha ou espaço em branco, nesse exemplo será considerado apenas a quebra de linha.
+OIFS=$IFS
+IFS=$'\n'
+
+#Lê as linhas do arquivo frases.txt e exibe na tela
+
+for i  in  $(cat frases.txt); do
+    let CONTADOR=CONTADOR+1;
+    echo "<a href=falar.run?falar=$CONTADOR><table><tr><td><img src=icone.png></td><td valign=middle width=100%>$i</td></tr></table></a>"
+    echo "<br><br>"
+done
+
+#Restaura variável IFS para o padrão do sistema.
+IFS=$OIFS
+
+
+echo "<br><br><br><br><br><br><br><br><br><br><br><br><center>"
+echo '<div class=rodape>'
+echo '<a href="/usr/bin/run.run?kate ~/.config/bigcontrolcenter/falar-frase/frases.txt">'
+echo $"Editar texto a ser exibido."
+echo '</a> ------ '
+
+echo '<a href="/usr/bin/run.run?kate ~/.config/bigcontrolcenter/falar-frase/fonte.txt">'
+echo $"Editar tamanho e cor da fonte."
+echo '</a> ------ '
+
+echo '<a href="/usr/share/bigcontrolcenter/categories/others/falar-frase/falar.sh.htm">'
+echo $"Recarregar o texto."
+echo '</a>'
+
+echo '</div></body>'

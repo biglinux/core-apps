@@ -1,0 +1,255 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: BigLinux\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2013-10-10 02:27-0300\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=CHARSET\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+msgid   "Gerenciar usuarios"
+msgstr  ""
+
+msgid   "Adicionar, remover e alterar permissoes de usuarios"
+msgstr  ""
+
+msgid   "Fixar configuracao do usuario"
+msgstr  ""
+
+msgid   "Aplicar"
+msgstr  ""
+
+msgid   "Voltar"
+msgstr  ""
+
+msgid   "Salve a configuracao atual de um usuario para que ela seja sempre "
+        "restaurada."
+msgstr  ""
+
+msgid   "Em locais publicos, por exemplo, em lan houses e escolas pode ser "
+        "util desfazer as alteracoes e logs criados pelos usuarios, para isso "
+        "basta configurar o desktop da forma desejada e utilizar esse "
+        "aplicativo para gerar uma copia da configuracao atual que sera "
+        "restaurada automaticamente a cada login:"
+msgstr  ""
+
+msgid   "* Essa funcao funciona apenas para o KDesktop e o Ldesktop."
+msgstr  ""
+
+msgid   "<font color=#AE0002>"
+msgstr  ""
+
+msgid   "Limite os horarios que cada usuario pode utilizar o computador."
+msgstr  ""
+
+msgid   "Limitar tempo de uso"
+msgstr  ""
+
+msgid   "* Por enquanto essa funcao esta funcionando somente no Desktop KDE4."
+msgstr  ""
+
+msgid   "Adicionar usuario"
+msgstr  ""
+
+msgid   "Adicione usuarios ao sistema."
+msgstr  ""
+
+msgid   "Preencha os campos abaixo:"
+msgstr  ""
+
+msgid   "Similar ao nome de usuario"
+msgstr  ""
+
+msgid   "Muito pequena"
+msgstr  ""
+
+msgid   "Muito simples"
+msgstr  ""
+
+msgid   "Simples"
+msgstr  ""
+
+msgid   "Boa"
+msgstr  ""
+
+msgid   "Muito boa"
+msgstr  ""
+
+msgid   "Preencha esse campo"
+msgstr  ""
+
+msgid   "Repita a senha"
+msgstr  ""
+
+msgid   "Repita a senha corretamente"
+msgstr  ""
+
+msgid   "Usuario"
+msgstr  ""
+
+msgid   "Senha"
+msgstr  ""
+
+msgid   "Confirme a senha"
+msgstr  ""
+
+msgid   "Alterar permissoes do usuario"
+msgstr  ""
+
+msgid   "Defina o que cada usuario pode fazer."
+msgstr  ""
+
+msgid   "Arquivo /etc/sudoers configurado de acordo com o padrao desse "
+        "programa."
+msgstr  ""
+
+msgid   "Trocar senha"
+msgstr  ""
+
+msgid   "Escolha uma nova senha."
+msgstr  ""
+
+msgid   "Selecione o usuario a ter sua senha alterada:"
+msgstr  ""
+
+msgid   "Sair"
+msgstr  ""
+
+msgid   "Voltar para tela de configuracao"
+msgstr  ""
+
+msgid   "Usuario $p_username adicionado."
+msgstr  ""
+
+msgid   "Esse usuario nao possui permissoes de administrador, para alterar as "
+        "permissoes clique aqui."
+msgstr  ""
+
+msgid   "Nome de usuario escolhido ja estava em uso."
+msgstr  ""
+
+msgid   "Remover usuario"
+msgstr  ""
+
+msgid   "Remova usuarios do sistema."
+msgstr  ""
+
+msgid   "Selecione um usuario"
+msgstr  ""
+
+msgid   "Deseja realmente remover o usuario"
+msgstr  ""
+
+msgid   "Lembre que os arquivos pessoais desse usuario serao apagados."
+msgstr  ""
+
+msgid   "Administrador sem necessidade de confirmacao de senha."
+msgstr  ""
+
+msgid   "Administrador com confirmacao de senha para cada acao administrativa."
+msgstr  ""
+
+msgid   "Usuario sem permissoes administrativas."
+msgstr  ""
+
+msgid   "Atencao a configuracao do arquivo /etc/sudoers nao esta de acordo "
+        "com o padrao utilizado por esse programa, clique aqui para que a "
+        "configuracao seja alterada, se optar por manter a configuracao atual "
+        "as opcoes podem nao funcionar corretamente."
+msgstr  ""
+
+msgid   "Selecione o usuario:"
+msgstr  ""
+
+msgid   "<font color=#0000FF>"
+msgstr  ""
+
+msgid   "<font color=#006600>"
+msgstr  ""
+
+msgid   "Usuario <b>$p_username</b> removido!"
+msgstr  ""
+
+msgid   "O usuario <b>$p_username</b> nao foi removido, confira se o mesmo "
+        "nao esta logado no momento."
+msgstr  ""
+
+msgid   "Usuario <b>$p_username</b> nao sera mais restaurado."
+msgstr  ""
+
+msgid   "Usuario <b>$p_username</b> sera restaurado a cada boot."
+msgstr  ""
+
+msgid   "Crie novos usuarios."
+msgstr  ""
+
+msgid   "Apague usuarios."
+msgstr  ""
+
+msgid   "Escolha qual usuario sera administrador."
+msgstr  ""
+
+msgid   "Altere a senha de qualquer usuario."
+msgstr  ""
+
+msgid   "Torne a configuracao de um usuario fixa, util para computadores de "
+        "uso publico, por exemplo, em escolas."
+msgstr  ""
+
+msgid   "Criar, remover e editar usuarios."
+msgstr  ""
+
+msgid   "Configuracao basica."
+msgstr  ""
+
+msgid   "Configuracao avancada."
+msgstr  ""
+
+msgid   "Alterar permissoes"
+msgstr  ""
+
+msgid   "Fixar configuracao"
+msgstr  ""
+
+msgid   "Editar usuarios utilizando User Config"
+msgstr  ""
+
+msgid   "Editar usuarios utilizando Kuser"
+msgstr  ""
+
+msgid   "Gerenciar permissoes utilizando PolicyKit Gnome"
+msgstr  ""
+
+msgid   "Gerenciar permissoes utilizando PolicyKit KDE"
+msgstr  ""
+
+msgid   "Senha do usuario"
+msgstr  ""
+
+msgid   "alterada."
+msgstr  ""
+
+msgid   "Selecione o usuario a ser removido:"
+msgstr  ""
+
+msgid   "Permissao do usuario"
+msgstr  ""
+
+msgid   "Selecione o tipo de permissao do usuario"
+msgstr  ""
+
+msgid   "* Usuarios com poderes administrativos podem efetuar qualquer "
+        "operacao no computador, enquanto usuarios sem esses poderes ficam "
+        "restritos a alteracoes e configuracoes em sua pasta pessoal, ou "
+        "seja, ficam impossibilitados de efetuar alteracoes no sistema que "
+        "afetem outros usuarios."
+msgstr  ""

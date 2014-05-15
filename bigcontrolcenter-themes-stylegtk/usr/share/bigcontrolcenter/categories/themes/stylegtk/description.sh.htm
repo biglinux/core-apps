@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-themes-stylegtk
+
+name_application=$"Estilo dos aplicativos GTK"
+description_application=$"Defina como serao exibidas as janelas GTK (Firefox, GIMP, Abiword...)"
+exec_application="/usr/share/bigbashview/run.run?kcmshell4 kde-gtk-config"
+icon_application="/usr/share/bigcontrolcenter/categories/themes/stylegtk/icon.png"

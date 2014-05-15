@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-hardware-sysinfo
+
+name_application=$"Hardware Sistema e Performance"
+description_application=$"Mostra detalhadamente hardware/sistema/performance"
+exec_application="/usr/share/bigbashview/run.run?hardinfo"
+icon_application="/usr/share/bigcontrolcenter/categories/hardware/sysinfo/icon.png"

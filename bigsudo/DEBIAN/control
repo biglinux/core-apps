@@ -1,0 +1,10 @@
+Package: bigsudo
+Version: 1.1.2-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 5
+Depends: sudo, nano, x11-utils
+Section: admin
+Priority: optional
+Description: ShellScript for manage sudo permissions, select editor and terminal
+

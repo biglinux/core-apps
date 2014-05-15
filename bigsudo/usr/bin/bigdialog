@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#Dialog
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#kdialog
+      if [ "$(which kdialog)" != "" ];
+      then
+	kdialog $*
+	exit 0
+      fi
+
+#gdialog
+      if [ "$(which gdialog)" != "" ];
+      then
+	gdialog $*
+	exit 0
+      fi
+

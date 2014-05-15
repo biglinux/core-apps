@@ -1,0 +1,10 @@
+Package: biglinux-themes
+Version: 1.0.0-1kaiana4
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: kde-style-qtcurve, kwin-style-qtcurve, gtk2-engines-qtcurve
+Section: admin
+Priority: optional
+Description: Themes for BigLinux
+

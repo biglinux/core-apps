@@ -1,0 +1,52 @@
+TO_INSTALL:
+
+
+
+Put the scripts in :
+
+
+	Windows Vista/7)
+	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+	or
+	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+	
+	
+	Windows XP
+	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+	or
+	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+    
+	
+	Linux
+	/home/yourname/.gimp-2.8/scripts  
+	
+	
+	Linux system-wide
+	/usr/share/gimp/2.0/scripts
+
+
+
+
+Put the Gimpressionist presets in :
+
+
+	Windows Vista/7
+	C:\Program Files\GIMP 2\share\gimp\2.0\gimpressionist\preset
+	or
+	C:\Users\YOUR-NAME\.gimp-2.8\gimpressionist\presets
+	
+	
+	Windows XP
+	C:\Program Files\GIMP 2\share\gimp\2.0\gimpressionist\preset
+	or
+	C:\Documents and Settings\yourname\.gimp-2.8\gimpressionist\presets  
+    
+	
+	Linux
+	/home/yourname/.gimp-2.8/gimpressionist/presets 
+	
+	
+	Linux - system-wide
+	/usr/share/gimp/2.0/gimpressionist/Presets 
+
+     

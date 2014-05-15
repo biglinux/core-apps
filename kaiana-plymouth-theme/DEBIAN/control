@@ -1,0 +1,15 @@
+Package: kaiana-plymouth-theme
+Version: 1.0.0-0kaiana0
+Architecture: all
+Maintainer: Paulo Giovanni Pereira <paulusiohannes@gmail.com>
+Installed-Size: 145
+Depends: plymouth, plymouth-label
+Provides: plymouth-theme
+Section: kde
+Priority: optional
+Description: graphical boot animation and logger - kaiana-plymouth theme
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the default kaiana-plymouth theme.

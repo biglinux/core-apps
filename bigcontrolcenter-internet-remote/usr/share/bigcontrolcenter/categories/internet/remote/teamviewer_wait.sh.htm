@@ -1,0 +1,105 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-internet-remote
+
+
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Instalador do TeamViewer"
+apply=$"Aplicar"
+close=$"Sair"
+tip_executar=$"Clique aqui para utilizar o TeamViewer."
+
+
+. /usr/share/bigcontrolcenter/default/theme.sh.htm
+
+cat << EOF
+	<script type="text/javascript" src="/usr/share/bigcontrolcenter/default/js/jquery-1.3.2.min.js"></script>
+
+
+	<script type="text/javascript">
+	\$(function() {
+		\$("#tabs").tabs({
+			event: 'mouseover'
+		})
+	});
+
+	if (document.images) {
+	buttonUp = new Image(); buttonUp.src = "/usr/share/bigcontrolcenter/default/images/category-background.png";
+	buttonDown = new Image(); buttonDown.src = "$(echo $HOME)/.bigcontrolcenter/category-background-over.png";
+	}
+
+	function turn_off(cell) {
+	if (document.images != null) {
+	cell.style.backgroundImage = "url('" + buttonUp.src + "')";
+	}
+	}
+
+	function turn_on(cell) {
+	if (document.images != null) {
+	cell.style.backgroundImage = "url('" + buttonDown.src + "')";
+	}
+	}
+
+  </script>
+
+
+
+
+
+EOF
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Assistencia remota facil e rapida."
+close_header
+echo "<center><table width=95%><tr><td>"
+
+
+if [ "$p_teamviewer" = "remover" ]
+then
+
+    echo '<META http-equiv="refresh" content="0;URL=teamviewer.sh.htm?teamviewer=remover">'
+
+fi
+
+
+if [ "$p_teamviewer" = "instalar" ]
+then
+
+    echo '<META http-equiv="refresh" content="0;URL=teamviewer_install.sh.htm">'
+
+fi
+
+echo '<center><b><br><br>' $"Aplicando alterações." '</center>'
+
+
+
+echo "</td></tr></table></center>"
+
+echo "</div><div id=\"rodape\"></div>"
+

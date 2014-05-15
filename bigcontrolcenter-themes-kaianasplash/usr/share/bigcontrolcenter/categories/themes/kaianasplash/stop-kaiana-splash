@@ -1,0 +1,5 @@
+#!/bin/bash
+
+killall xteddy
+sleep 1
+killall -r kaiana_splash

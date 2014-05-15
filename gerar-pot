@@ -1,0 +1,60 @@
+#!/bin/bash
+
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+ORI_IFS=$IFS
+IFS=$'\n'
+
+rm -f $1/I18N/$(echo "$1" | sed "s|/||g").pot
+rm -f $1/I18N/$(echo "$1" | sed "s|/||g").pot-corrigido
+
+mkdir $1/I18N 2> /dev/null
+
+for i in $(find $1); do
+    bash --dump-po-strings $i >> $1/I18N/$(echo "$1" | sed "s|/||g").pot
+echo "biglinux - $1"
+done
+
+
+
+xgettext --package-name=Kaiana --no-location -L PO -o $1/I18N/$(echo "$1" | sed "s|/||g").pot-corrigido -i $1/I18N/$(echo "$1" | sed "s|/||g").pot
+mv $1/I18N/$(echo "$1" | sed "s|/||g").pot-corrigido $1/I18N/$(echo "$1" | sed "s|/||g").pot
+
+
+if [ -e "$1/I18N/pt.po" ]
+then
+     msgmerge -o $1/I18N/pt.po $1/I18N/pt.po $1/I18N/$(echo "$1" | sed "s|/||g").pot
+else
+     msginit --no-translator -l pt -i $1/I18N/$(echo "$1" | sed "s|/||g").pot -o $1/I18N/pt.po
+     sed -i 's|Content-Type: text/plain; charset=ASCII|Content-Type: text/plain; charset=utf-8|g' $1/I18N/pt.po
+fi
+
+
+if [ -e "$1/I18N/es.po" ]
+then
+     msgmerge -o $1/I18N/es.po $1/I18N/es.po $1/I18N/$(echo "$1" | sed "s|/||g").pot
+else
+     msginit --no-translator -l es -i $1/I18N/$(echo "$1" | sed "s|/||g").pot -o $1/I18N/es.po
+     sed -i 's|Content-Type: text/plain; charset=ASCII|Content-Type: text/plain; charset=utf-8|g' $1/I18N/es.po
+fi
+
+
+if [ -e "$1/I18N/en_CA.po" ]
+then
+     msgmerge -o $1/I18N/en_CA.po $1/I18N/en_CA.po $1/I18N/$(echo "$1" | sed "s|/||g").pot
+else
+     msginit --no-translator -l es -i $1/I18N/$(echo "$1" | sed "s|/||g").pot -o $1/I18N/en_CA.po
+     sed -i 's|Content-Type: text/plain; charset=ASCII|Content-Type: text/plain; charset=utf-8|g' $1/I18N/en_CA.po
+fi
+
+if [ "$(cat $1/I18N/pt.po)" = "" ]
+then
+    rm -Rf $1/I18N
+fi
+
+IFS=$ORI_IFS

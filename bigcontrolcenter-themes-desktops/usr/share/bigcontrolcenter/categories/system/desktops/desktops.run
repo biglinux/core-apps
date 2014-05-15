@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ "$(ps -U $USER | grep "xfwm4$")" != "" ]
+then
+    xfwm4-workspace-settings
+else
+    kcmshell4 desktop
+fi

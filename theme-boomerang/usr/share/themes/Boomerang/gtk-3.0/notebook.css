@@ -1,0 +1,126 @@
+/************
+ * Notebook *
+ ************/
+.notebook {
+    background-color: @notebook_bg_color;
+    background-image: none;
+    border-radius: 2.5px;
+    padding: 2.5px;
+    border-style: solid;
+
+    -unico-focus-outer-stroke: @transparent;
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
+                                           from (shade (@bg_color, 0.7)),
+                                           to (shade (@bg_color, 0.7)));
+    
+    -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
+                                                 from (shade (@bg_color, 0.9)),
+                                                 to (shade (@bg_color, 0.9)));                                            
+}
+
+.notebook:backdrop {
+    background-color: shade (@notebook_bg_color, 1.01);
+}
+
+.notebook tab {
+    background-color: shade (@bg_color, 1.01);
+    border-radius: 2px;
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
+                                           from (shade (@bg_color, 0.85)),
+                                           to (shade (@bg_color, 0.67)));
+    
+    -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
+                                                 from (shade (@bg_color, 1.16)),
+                                                 to (shade (@bg_color, 1.015)));
+    -unico-inner-stroke-width: 1;
+}
+
+.notebook tab:backdrop {
+    background-color: shade (@bg_color, 1.04);
+    border-radius: 2px;
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
+                                           from (shade (@bg_color, 0.9)),
+                                           to (shade (@bg_color, 0.69)));
+}
+
+.notebook tab:active {
+    background-color: @notebook_bg_color;
+    border-radius: 2px;
+
+    -unico-focus-outer-stroke: @transparent;
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
+                                           from (shade (@bg_color, 0.7)),
+                                           to (shade (@bg_color, 0.7)));
+
+    -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
+                                                 from (shade (@bg_color, 0.9)),
+                                                 to (shade (@bg_color, 0.9)));
+}
+
+.notebook tab:active:backdrop {
+    background-color: shade (@notebook_bg_color, 1.02);
+    border-radius: 2px;
+    
+    -unico-focus-outer-stroke: @transparent;
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
+                                           from (shade (@bg_color, 0.78)),
+                                           to (shade (@bg_color, 0.76)));
+                                           
+    -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
+                                                 from (shade (@bg_color, 0.9)),
+                                                 to (shade (@bg_color, 0.9)));                                       
+}
+
+.notebook tab:active {
+    color: @fg_color;
+}
+
+.notebook tab {
+    color: shade (@bg_color, 0.48);
+}
+
+.notebook tab.top:active {
+    padding: 6px 7px 1px 7px;
+}
+
+.notebook tab.top {
+    padding: 3px 7px 1px 7px;
+}
+
+.notebook tab.right:active {
+    padding: 4px 6px 4px 1px;
+}
+
+.notebook tab.right {
+    padding: 4px 3px 4px 1px;
+}
+
+.notebook tab.bottom:active {
+    padding: 1px 7px 6px 7px;
+}
+
+.notebook tab.bottom {
+    padding: 1px 7px 3px 7px;
+}
+
+.notebook tab.left:active {
+    padding: 4px 1px 4px 6px;
+}
+
+.notebook tab.left {
+    padding: 4px 1px 4px 3px;
+}
+
+.notebook tab .button {
+    padding: 0;
+}
+
+.notebook GtkDrawingArea {
+    background-color: @notebook_bg_color;
+    background-image: none;
+}

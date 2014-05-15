@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-internet-remote
+Version: 1.0.0-1kaiana7
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: bigsynaptic, bigcontrolcenter (>= 1.0.0-1kaiana16), krfb, krdc, kdebase-bin, bigcontrolcenter-servers-ssh
+Section: admin
+Priority: optional
+Description: Remote Desktop
+

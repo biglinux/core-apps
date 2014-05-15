@@ -1,0 +1,24 @@
+[Desktop Entry]
+Categories=Qt;KDE;Utility;X-KDE-Utilities-Desktop;
+Comment[pt_BR]=
+Comment=
+Exec=kfind %u
+GenericName[pt_BR]=
+GenericName=
+Icon=kfind
+MimeType=
+Name[pt_BR]=Procurar Arquivos/Pastas
+Name=Search Files/Folders
+OnlyShowIn=KDE;
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-DocPath=kfind/index.html
+X-KDE-StartupNotify=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+X-Ubuntu-Gettext-Domain=desktop_kdebase

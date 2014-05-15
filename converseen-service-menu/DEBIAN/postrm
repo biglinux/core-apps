@@ -1,0 +1,24 @@
+#! /bin/sh
+
+set -e
+
+package_name=converseen-service-menu
+
+if [ -z "$package_name" ]; then
+    print >&2 "Internal Error. Please report a bug."
+    exit 1;
+fi
+
+case "$1" in
+  remove)
+    dpkg-divert --package $package_name --rename --remove /usr/share/kde4/services/ServiceMenus/converseen_import.desktop
+    ;;
+  purge)
+    ;;
+  upgrade)
+    ;;
+  *) echo "$0: didn't understand being called with \`$1'" 1>&2
+     exit 0;;
+esac
+
+exit 0

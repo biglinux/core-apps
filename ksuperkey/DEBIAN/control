@@ -1,0 +1,10 @@
+Package: ksuperkey
+Version: 1.0.0-0kaiana0
+Architecture: all
+Maintainer: Paulo Giovanni Pereira <paulusiohannes@gmail.com>
+Installed-Size: 161
+Section: admin
+Priority: optional
+Description: Install the k super key  .
+
+

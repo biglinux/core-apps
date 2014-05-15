@@ -1,0 +1,135 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-repair
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Restaurar o sistema"
+apply=$"Aplicar"
+close=$"Sair"
+
+tip_apt=$"É recomendado estar conectado a internet para efetuar essa operacao"
+tip_bcc=$"Se disponivel abre o Centro de Controle Big"
+tip_cmd=$"Executa o comando desejado, tambem pode ser util para abrir programas"
+tip_fsck=$"Se o sistema nao estiver iniciando, talvez essa seja a solucao"
+tip_grub=$"Ao instalar outro sistema operacional geralmente se perde a forma de acessar sua distribuicao favorita. Utilize essa opcao para recuperar o gerenciador de boot e tenha acesso ao sistema que desejar"
+tip_initrd=$"Se o sistema nao estiver iniciando, talvez essa seja a solucao"
+tip_konsole=$"Execute comandos no terminal"
+tip_synaptic=$"Se disponivel abre o Synaptic para gerenciar pacotes. Pode ajudar tambem a corrigir uma atualizacao corrompida"
+tip_close=$"Para evitar problemas e recomendado fechar a particao apos efetuar as operacoes desejadas"
+tip_dolphin=$"Gerencie os arquivos do sistema instalado na particao $p_part"
+tip_grub_dev=$"Geralmente o correto e /dev/sda"
+tip_fsck_yes=$"Cuidado, para corrigir a particao pode haver perda de arquivos e essas alteracoes nao irao pedir confirmacao"
+tip_fsck_no=$"Alteracoes que podem levar a perca de arquivos necessitarao de confirmacao"
+
+pasta="/var/big_chroot"
+
+
+#Mounting
+if [ "$p_mount" = "yes" ]
+then
+    umount -l $p_part 2> /dev/null
+    sleep 1
+    umount -l $p_part 2> /dev/null
+    mkdir $pasta 2> /dev/null
+    mount $p_part $pasta
+    mount --bind /dev $pasta/dev
+    mount --bind /proc $pasta/proc
+    mount --bind /sys $pasta/sys
+    /etc/init.d/bind9 start 2> /dev/null
+fi
+
+if [ ! -e "/var/big_chroot/usr/bin" ]
+then
+
+    echo "<body onload=parent.location='chroot.sh.htm?part=$p_part'>"
+    umount -l $pasta/sys    
+    umount -l $pasta/proc
+    umount -l $pasta/dev
+    umount -l $pasta
+    exit 0
+fi
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Restaurar sistema da particao $p_part"
+close_header
+
+
+#O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#Quando se utiliza aspas duplas o sistema executa algumas partes do codigo antes de passar a resposta, entre essas execucoes inclui a interpretacao de variaveis
+#Para incluir textos a serem exibidos ao usuario utilize aspas duplas com $ antes, para que funcione o sistema de tradução, exemplo: $"texto"
+#No exemplo abaixo o memso comando echo foi aberto e fechado diversas vezes de acordo com a necessidade, aspas simples, duplas e duplas com traducao.
+echo '<center><table width=95%><tr><td>'
+echo '<form action=chroot_submit.sh.htm method=get>'
+echo "<table width=95%><tr><td>"
+echo $"Lembre que as operacoes executadas a partir dessa tela terao os poderes administrativos do usuario root, irao efetuar alteracoes na particao <b>$p_part</b> e lembre de fechar a particao apos efetuar as modificacoes desejadas."
+echo "<input type=\"hidden\" name=\"part\" value=\"$p_part\" />"
+echo "<p>
+<table width=95%><tr><td>
+<input type=radio name=escolha id=1 value=apt onClick=\"Hide('div-comando', this);Hide('div-grub', this);Hide('div-fsck', this)\" $mouseover_open $tip_apt $mouseover_close $apt_check><label for=1 $mouseover_open $tip_apt $mouseover_close>" $"Apt-get/Dpkg (Corrigir atualizacao corrompida)""</label>
+</td></tr><tr><td>
+<input type=radio name=escolha id=2 value=bcc onClick=\"Hide('div-comando', this);Hide('div-grub', this);Hide('div-fsck', this)\" $mouseover_open $tip_bcc $mouseover_close $bcc_check><label for=2 $mouseover_open $tip_bcc $mouseover_close>" $"Big Control Center (Centro de controle do BigLinux)""</label>
+</td></tr><tr><td>
+<input type=radio name=escolha id=5 value=dolphin onClick=\"Hide('div-comando', this);Hide('div-grub', this);Hide('div-fsck', this)\" $mouseover_open $tip_dolphin $mouseover_close $dolphin_check><label for=5 $mouseover_open $tip_dolphin $mouseover_close>" $"Dolphin (Gerenciar arquivos)""</label>
+</td></tr><tr><td>
+<input type=radio name=escolha id=3 value=cmd onClick=\"Reveal('div-comando', this);Hide('div-grub', this);Hide('div-fsck', this)\" $mouseover_open $tip_cmd $mouseover_close $cmd_check><label for=3 $mouseover_open $tip_cmd $mouseover_close>" $"Executar comando""</label>"
+    echo '<div id="div-comando" style="display:none"><center><hr>'
+    echo $"Comando:" '<INPUT TYPE=TEXT NAME="comando" SIZE=35>'
+    echo '<hr></center></div>
+</td></tr><tr><td>'
+echo "<input type=radio name=escolha id=4 value=fsck onClick=\"Hide('div-comando', this);Hide('div-grub', this);Reveal('div-fsck', this)\" $mouseover_open $tip_fsck $mouseover_close $fsck_check><label for=4 $mouseover_open $tip_fsck $mouseover_close>" $"Fsck (Corrigir particao corrompida)""</label>"
+    echo '<div id="div-fsck" style="display:none"><center><hr>'
+
+echo "<input type=radio name=fsck_auto id=fsck_yes value=yes $mouseover_open $tip_fsck_yes $mouseover_close  checked><label for=fsck_yes $mouseover_open $tip_fsck_yes $mouseover_close>" $"Automatico.""</label>"
+echo "<input type=radio name=fsck_auto id=fsck_no value=no $mouseover_open $tip_fsck_no $mouseover_close><label for=fsck_no $mouseover_open $tip_fsck_no $mouseover_close>" $"Manual.""</label>"
+
+    echo '<hr></center></div>
+</td></tr><tr><td>'
+echo "<input type=radio name=escolha id=10 value=grub onClick=\"Hide('div-comando', this);Reveal('div-grub', this);Hide('div-fsck', this)\" $mouseover_open $tip_grub $mouseover_close $grub_check><label for=10 $mouseover_open $tip_grub $mouseover_close>" $"Grub (Reinstalar o gerenciador de boot)""</label>"
+    echo '<div id="div-grub" style="display:none"><center><hr>'
+    echo $"Selecione o dispositivo:" "<select name=grub_dev $mouseover_open $tip_grub_dev $mouseover_close>"
+    for i in $(ls /dev/sd* /dev/hd* 2>/dev/null); do
+	echo "<option>$i"
+    done
+    echo '</select>'
+    echo '<hr></center></div>
+</td></tr><tr><td>'
+echo "<input type=radio name=escolha id=9 value=initrd onClick=\"Hide('div-comando', this);Hide('div-grub', this);Hide('div-fsck', this)\" $mouseover_open $tip_initrd $mouseover_close $initrd_check><label for=9 $mouseover_open $tip_initrd $mouseover_close>" $"Initrd (Atualizar initrd)""</label>
+</td></tr><tr><td>
+<input type=radio name=escolha id=6 value=konsole onClick=\"Hide('div-comando', this);Hide('div-grub', this);Hide('div-fsck', this)\" $mouseover_open $tip_konsole $mouseover_close $konsole_check><label for=6 $mouseover_open $tip_konsole $mouseover_close>" $"Konsole (Terminal)""</label>
+</td></tr><tr><td>
+<input type=radio name=escolha id=7 value=synaptic onClick=\"Hide('div-comando', this);Hide('div-grub', this);Hide('div-fsck', this)\" $mouseover_open $tip_synaptic $mouseover_close $synaptic_check><label for=7 $mouseover_open $tip_synaptic $mouseover_close>" $"Synaptic (Gerenciador de pacotes)""</label>
+</td></tr><tr><td>
+<input type=radio name=escolha id=8 value=close onClick=\"Hide('div-comando', this);Hide('div-grub', this);Hide('div-fsck', this)\" $mouseover_open $tip_close $mouseover_close $close_check><label for=8 $mouseover_open $tip_close $mouseover_close>" $"* Fechar a particao (Importante)""</label>
+</td></tr></table>"
+
+
+
+
+
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

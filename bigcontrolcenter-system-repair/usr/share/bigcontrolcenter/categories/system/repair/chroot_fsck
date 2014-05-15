@@ -1,0 +1,19 @@
+#!/bin/bash
+
+    pasta="/var/big_chroot"
+    sync
+    umount -l $pasta
+    sleep 2
+    umount -l $pasta
+
+	if [ "$2" = "yes" ]
+	then
+	    fsck -p $1
+	else
+	    fsck $1
+	fi
+    #Mounting
+    mount $1 $pasta
+    mount --bind /dev $pasta/dev
+    mount --bind /proc $pasta/proc
+    mount --bind /sys $pasta/sys

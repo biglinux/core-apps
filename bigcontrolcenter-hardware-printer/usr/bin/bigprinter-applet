@@ -1,0 +1,6 @@
+#!/bin/bash
+
+  if [ -e "$HOME/.big_printer_applet" ]
+  then
+      sleep 30; system-config-printer-applet
+  fi

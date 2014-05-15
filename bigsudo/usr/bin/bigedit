@@ -1,0 +1,40 @@
+#!/bin/bash
+
+#Editor
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#kate
+if [ "$(ps -A | grep plasma-desktop)" != "" ]
+then
+      if [ "$(which kate)" != "" ];
+      then
+	kate $*
+	exit 0
+      fi
+fi
+
+#gedit
+      if [ "$(which gedit)" != "" ];
+      then
+	gedit $*
+	exit 0
+      fi
+
+#xfce-edit
+      if [ "$(which mousepad)" != "" ];
+      then
+	mousepad $*
+	exit 0
+      fi
+
+#lxde-edit
+      if [ "$(which leafpad)" != "" ];
+      then
+	leafpad $*
+	exit 0
+      fi

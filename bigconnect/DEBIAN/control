@@ -1,0 +1,9 @@
+Package: bigconnect
+Version: 1.0.1-1kaiana6
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Priority: optional
+Description: Wireless and ethernet configurator
+

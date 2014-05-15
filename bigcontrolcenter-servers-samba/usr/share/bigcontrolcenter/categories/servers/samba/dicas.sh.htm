@@ -1,0 +1,58 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-servers-samba
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Samba"
+apply=$"Aplicar"
+close=$"Sair"
+
+
+
+. /usr/share/bigcontrolcenter/default/theme.sh.htm
+
+
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Compartilhamento de arquivos e impressoras na rede."
+close_header
+
+echo '<center><table width=85%><tr><td>'
+
+echo $"1 - Podem ocorrer problemas para encontrar servidores de arquivos na rede, dessa forma no gerenciador de arquivos Dolphin ou Nautilus insira o ip do servidor, por exemplo: smb://127.0.0.1" "<P>"
+
+echo $"2 - Se estiver utilizando um sistema Windows e nao estiver encontrando um servidor Linux no gerenciador de arquivos acesse-o pelo IP, por exemplo: \\\\127.0.0.1" "<P>"
+
+echo $"3 - Existem alguns casos que ocorrem erros para encontrar o conteúdo da pasta raiz de compartilhamento quando se está em uma rede mista com Windows, ao acessar um compartilhamento em um endereço como smb://127.0.0.1/ e aparecer escrito erro interno, você terá que acessar diretamente as pastas desse servidor, por exemplo smb://127.0.0.1/MeusArquivos" "<P>"
+
+
+
+
+echo "</div><div id=\"rodape\"><button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

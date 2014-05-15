@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-themes-screensaver
+
+name_application=$"Protetor de tela"
+description_application=$"Escolha o tempo de espera e o tema do protetor de tela"
+exec_application="/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/themes/screensaver/screensaver.sh.htm -i /usr/share/bigcontrolcenter/categories/themes/screensaver/icon.png"
+icon_application="/usr/share/bigcontrolcenter/categories/themes/screensaver/icon.png"

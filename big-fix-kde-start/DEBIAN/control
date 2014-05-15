@@ -1,0 +1,9 @@
+Package: big-fix-kde-start
+Version: 1.0.0-0kaiana2
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Priority: optional
+Description: Fix kde start
+

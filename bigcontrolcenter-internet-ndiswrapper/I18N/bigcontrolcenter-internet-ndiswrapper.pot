@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: BigLinux\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2013-10-10 02:27-0300\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=CHARSET\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+msgid   "Wireless com driver Windows (Ndiswrapper)"
+msgstr  ""
+
+msgid   "Aplicar"
+msgstr  ""
+
+msgid   "Sair"
+msgstr  ""
+
+msgid   "Voltar para tela de configuracao"
+msgstr  ""
+
+msgid   "Utilizar driver do Windows para placa Wireless."
+msgstr  ""
+
+msgid   "Driver Ndiswrapper ativado, va ao configurador de conexao e tente "
+        "estabelecer uma conexao, caso nao funcione tente utilizar um driver "
+        "para outra versao de Windows, em geral o driver para a versao 2000 "
+        "funciona melhor no Ndiswrapper."
+msgstr  ""
+
+msgid   "O driver Ndiswrapper desativado, para que o sistema volte a utilizar "
+        "o driver nativo recomendo que reinicie o computador."
+msgstr  ""
+
+msgid   "Caso o driver para a placa wireless nao esteja funcionando "
+        "corretamente, tente utilizar o driver do Windows pelo ndiswrapper..."
+msgstr  ""
+
+msgid   "Saber mais sobre DNS"
+msgstr  ""
+
+msgid   "Se o seu provedor possuir servidores de qualidade pode ser a melhor "
+        "alternativa"
+msgstr  ""
+
+msgid   "Servidor gratuito reconhecido por ser um dos mais rapidos e seguros"
+msgstr  ""
+
+msgid   "Utilize o servidor diretamente em seu computador, utiliza um pouco "
+        "de memoria RAM e processamento, porem possui a navegacao mais rapida"
+msgstr  ""
+
+msgid   "Caso tennha preferencia por um servidor especifico preencha com o IP "
+        "correspondente"
+msgstr  ""
+
+msgid   "O Ndiswrapper utiliza driver Wireless feito para Windows em sistemas "
+        "Linux, para isso e necessario indicar o arquivo .inf do driver."
+msgstr  ""
+
+msgid   "Para um melhor funcionamento e recomendado copiar os arquivos do "
+        "driver, incluindo o arquivo .inf para a particao principal do seu "
+        "sistema, por exemplo a pasta pessoal do seu usuario."
+msgstr  ""
+
+msgid   "Ndiswrapper ativo"
+msgstr  ""

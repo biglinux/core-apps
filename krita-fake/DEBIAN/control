@@ -1,0 +1,10 @@
+Package: krita-fake
+Version: 1.0.0-0kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Priority: optional
+Provides: krita
+Description: Fake package for complete dependencies of calligra
+

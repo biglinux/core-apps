@@ -1,0 +1,131 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# BigLinux.com.br <BigLinux.com.br>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-08-13 22:45-0300\n"
+"PO-Revision-Date: 2010-08-15 12:49+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: bigconvert <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-08-16 06:40+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Configurar servidor WEB"
+msgstr ""
+
+msgid "Aplicar"
+msgstr ""
+
+msgid "Sair"
+msgstr ""
+
+msgid "Alterar a senha do administrador do MySQL"
+msgstr ""
+
+msgid "Por padrao se utiliza a porta 80"
+msgstr "Por padrão se utiliza a porta 80"
+
+msgid "Disponibilize informacao na WEB diretamente do seu computador."
+msgstr "Disponibilize informação na WEB diretamente do seu computador."
+
+msgid ""
+"O Apache e o servidor WEB mais utilizado no mundo, funciona muito bem com o "
+"banco de dados MySQL e possui diversos programas escritos em PHP prontos "
+"para download na internet."
+msgstr ""
+"O Apache é o servidor WEB mais utilizado no mundo, funciona muito bem com o "
+"banco de dados MySQL e possui diversos programas escritos em PHP prontos "
+"para download na internet."
+
+msgid "Apache ativo"
+msgstr ""
+
+msgid "Ativar Apache ao ligar o PC"
+msgstr ""
+
+msgid "Porta do Apache"
+msgstr ""
+
+msgid "MySQL ativo"
+msgstr ""
+
+msgid "Ativar MySQL ao ligar o PC"
+msgstr ""
+
+msgid "Alterar senha do administrador do MySQL"
+msgstr ""
+
+msgid "Desinstalar Apache"
+msgstr ""
+
+msgid "Instalar Apache"
+msgstr ""
+
+msgid "Desinstalar Mysql"
+msgstr ""
+
+msgid "Instalar MySQL"
+msgstr ""
+
+msgid "Instalar PHP e PHPMyAdmin"
+msgstr ""
+
+msgid "Desinstalar PHP e PHPMyAdmin"
+msgstr ""
+
+msgid "Detectar IP da rede interna e Internet"
+msgstr ""
+
+msgid "Abrir o gerenciador de MySQL PHPMyAdmin"
+msgstr ""
+
+msgid "Abrir navegador na raiz do seu servidor WEB"
+msgstr ""
+
+msgid "Abrir pasta com os arquivos do Apache"
+msgstr ""
+
+msgid "Configuracoes avancadas do Apache"
+msgstr "Configurações avançadas do Apache"
+
+msgid "Configuracoes avancadas do MySQL"
+msgstr "Configurações avançadas do MySQL"
+
+msgid "Configuracoes avancadas do PHP"
+msgstr "Configurações avançadas do PHP"
+
+msgid "Logs do Apache:"
+msgstr ""
+
+msgid "Ver"
+msgstr ""
+
+msgid "Monitorar"
+msgstr ""
+
+msgid "Servidor WEB, MySQL e PHP"
+msgstr ""
+
+msgid "Servidor WEB completo, Apache, MySQL e PHP"
+msgstr ""
+
+msgid "IP"
+msgstr ""
+
+msgid "IP da rede interna:"
+msgstr ""
+
+msgid "IP da internet:"
+msgstr ""
+
+msgid "Voltar para tela de configuracao"
+msgstr "Voltar para tela de configuração"
+
+msgid "Configuracao aplicada."
+msgstr "Configuração aplicada."

@@ -1,0 +1,10 @@
+Package: essentialspackages-installer
+Version: 1.2.0-0kaiana0
+Architecture: all
+Maintainer: Paulo Giovanni Pereira <paulusiohannes@gmail.com>
+Installed-Size: 110
+Depends: bigcontrolcenter (>= 1.0.0-1kaiana1), bigsynaptic, kdesudo
+Section: admin
+Priority: optional
+Description: Instalador de conjuntos de pacotes essenciais.
+

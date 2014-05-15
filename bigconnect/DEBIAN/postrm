@@ -1,0 +1,31 @@
+#! /bin/sh
+
+set -e
+
+#Nome do pacote
+package_name=bigconnect
+
+if [ -z "$package_name" ]; then
+    print >&2 "Internal Error. Please report a bug."
+    exit 1;
+fi
+
+#Troca arquivos de outros pacotes pelos contidos nesse pacote, renomeando o do outro pacote para o mesmo nome com a inclusao da extensao .distrib
+case "$1" in
+  remove)
+    dpkg-divert --package $package_name --rename --remove /etc/init/network-manager.conf
+    ;;
+  *) echo "$0: didn't understand being called with \`$1'" 1>&2
+     exit 0;;
+esac
+
+exit 0
+
+
+
+
+
+
+
+
+

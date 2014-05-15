@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Esse script ativa a placa de rede que foi desativada pelo big-ethernet-disable
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Desativa o modulo utilizado pela placa de rede
+modprobe $(cat /usr/share/powertop/ethernet_module)
+

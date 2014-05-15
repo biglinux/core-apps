@@ -1,0 +1,131 @@
+# Estonian translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-13 22:37-0300\n"
+"PO-Revision-Date: 2010-10-04 06:53+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: Estonian <et@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-10-05 04:56+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "SSH"
+msgstr "SSH"
+
+msgid "Aplicar"
+msgstr "Rakenda"
+
+msgid "Sair"
+msgstr "Välju"
+
+msgid "A porta padrao dos servidores SSH e 22"
+msgstr "Vaikimisi SSH port servereis on 22."
+
+msgid ""
+"Com essa opcao ativada e possivel apos acessar o terminal executar programas "
+"em modo grafico remotamente<p>Programas executados dessa forma sao "
+"processados no servidor e exibidos no cliente."
+msgstr ""
+"See seade võimaldab võimaliku eemalt käivitamis rakenduse graafilise režiimi "
+"peale ligipäsu terminalgai<p>rakendused töötavad sellisel viisil töödeldakse "
+"serveris ja näidatakse kliendile."
+
+msgid "Acesso remoto seguro e de qualidade."
+msgstr "Ohutu ja kvaliteetne kaugjuurdepääs."
+
+msgid ""
+"Com essa opcao ativada e possivel apos acessar o terminal executar programas "
+"em modo grafico remotamente<p>Programas executados dessa forma sao "
+"processados no servidor e exibidos no cliente<p>* Essa opcao funciona apenas "
+"para acesso via terminal<br>* O servidor tambem necessita estar com essa "
+"opcao ativa"
+msgstr ""
+
+msgid "Em alguns locais e informado como login"
+msgstr "Mõni koht on kujutatud logimine"
+
+msgid ""
+"Endereco do servidor. Pode ser especificado como nome de dominio ou ip"
+msgstr "Serveri aadress.Võib määratleda kui domeeni nimena või IP'na"
+
+msgid "Porta padrao para o ssh e 22"
+msgstr "Vaikimisi port ssh, 22."
+
+msgid "Exibe os arquivos do servidor no gerenciador de arquivos Dolphin"
+msgstr "Näitab faile Dolphin failihalduri serveris"
+
+msgid "Efetua login no terminal do servidor utilizando o Konsole"
+msgstr "Siseneda serveri terminali kasutades Konsoli"
+
+msgid "Preencha os dados referentes ao servidor que deseja acessar:"
+msgstr "Täitke andmed Severis kui soovid juurdepääsu:"
+
+msgid "Acessar terminal"
+msgstr "Juurdepääs terminalile"
+
+msgid "Gerenciar arquivos"
+msgstr "Failihaldus"
+
+msgid "Usuario:"
+msgstr "Kasutaja:"
+
+msgid "Habilitar X11"
+msgstr "Luba X11"
+
+msgid "Endereco:"
+msgstr "Aadress:"
+
+msgid "Porta:"
+msgstr "Port:"
+
+msgid "Acesso remoto seguro e de qualidade"
+msgstr "Ohutu ja kvaliteetne kaugjuurdepääs"
+
+msgid "Configuracao aplicada."
+msgstr "Konfiguratsioon rakendatud."
+
+msgid "Inicia automaticamente ao ligar o PC"
+msgstr "Avab automaatselt kui arvuti käivitub"
+
+msgid ""
+"Esse servidor permite acesso remoto via terminal e transferencia de arquivos "
+"em modo grafico."
+msgstr ""
+"See server võimaldab kaugjuurdepääsu terminali kaudu ja failiedastused "
+"graafilises režiimis."
+
+msgid "Ativo"
+msgstr "Aktiivne"
+
+msgid "Iniciar automaticamente"
+msgstr "Alusta automaatselt"
+
+msgid ""
+"Configure esse computador para que seja possivel acessa-lo remotamente"
+msgstr "Seadista see arvuti nii et saab eemalt ligi"
+
+msgid "Acesse servidores SSH"
+msgstr "Juurdepääs SSH servereitele"
+
+msgid "Configurar servidor"
+msgstr "Seadista serverit"
+
+msgid "Acessar servidor"
+msgstr "Ligipääs serverile"
+
+msgid "Configurar DNS"
+msgstr "Seadista DNS"
+
+msgid "Voltar para tela de configuracao"
+msgstr "Tagasi ekraani asetusesele"
+
+msgid "Para uma conexao mais rapida e estavel."
+msgstr "Sest kiirem ühendus on stabiilsem."

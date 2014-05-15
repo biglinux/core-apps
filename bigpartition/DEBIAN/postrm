@@ -1,0 +1,10 @@
+#! /bin/sh
+
+set -e
+
+rm -f /etc/rc5.d/S99bigfixpartition
+rm -f /etc/rc4.d/S99bigfixpartition
+rm -f /etc/rc3.d/S99bigfixpartition
+rm -f /etc/rc2.d/S99bigfixpartition
+
+exit 0

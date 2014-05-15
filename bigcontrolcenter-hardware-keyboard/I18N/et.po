@@ -1,0 +1,333 @@
+# Estonian translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-13 03:21-0300\n"
+"PO-Revision-Date: 2010-10-04 06:52+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: Estonian <et@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-10-05 04:56+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Teclado, mouse e touchpad"
+msgstr "Klaviatuur, hiir ja puuteplaat"
+
+msgid "Aplicar"
+msgstr "Rakenda"
+
+msgid "Sair"
+msgstr "Välju"
+
+msgid ""
+"Pasta /etc/kde4/kdm/autostart nao encontrada, instale o pacote big-kdminit "
+"para ser possivel iniciar o teclado virtual na tela de login."
+msgstr ""
+"Kausta /etc/kde4/kdm/autostart ei leitud, paigalda big-kdminit võimalik "
+"alustada virtuaalse klaviatuuri logimis kuvaniga"
+
+msgid "Atencao!"
+msgstr "Tähelepanu!"
+
+msgid "Layout de teclado, velocidade e ate controlar o mouse com a webcam."
+msgstr ""
+"Klaviatuuri paigutus, kiiruse ja isegi kontrolli hiirt ja veebikaamerat."
+
+msgid "Configuracao aplicada."
+msgstr "Konfiguratsioon rakendatud."
+
+msgid "Padrao utilizado por quase todos os computadores vendidos no Brasil"
+msgstr "Standard mida kasutavad kõik arvutid, mida müüakse Brasiilias"
+
+msgid "Padrao dos Estados Unidos para idiomas que nao utilizam acentos"
+msgstr "USA standard keeles, mis ei kasuta aktsente"
+
+msgid ""
+"Padrao dos Estados Unidos com suporte a acentos, em geral notebooks "
+"importados.<p>* Recomendado ativar a opcao utilizar cedilha com acento agudo "
+"+ C."
+msgstr ""
+"Vaikimisi USAs toetades aktsendid, tavaliselt imporditud vihikutesse. <p> * "
+"Soovitatav on võimalik variant cedii ägeda aktsendiga + C."
+
+msgid "Padrao na Espanha"
+msgstr "Vaikimisi Hispaania"
+
+msgid "Padrao em Portugal"
+msgstr "Vaikimisi Portugali"
+
+msgid "Em geral durante a instalacao ja e especificado o modelo correto"
+msgstr "Tavaliselt õige mudel on juba määratud paigaldamise ajal"
+
+msgid "Informe o comando setxkbmap especifico para seu teclado"
+msgstr "Sisestage õige setxkbmap käsk klaviatuuril"
+
+msgid ""
+"Todos os usuarios terao o recurso de movimento do mouse com a webcam "
+"disponivel desde a tela de login"
+msgstr ""
+"Kõikide kasutajate hiire liikumine veebikaamera funktsioon on saadaval kohe "
+"sisselogimisdialoogiga"
+
+msgid ""
+"O recurso de movimento do mouse com a webcam sera iniciado automaticamente "
+"apos o login apenas para esse usuario"
+msgstr ""
+"Hiire liikumise ja veebikaamera funktsioon käivitub automaatselt peale "
+"kasutaja sisse logimist ainult"
+
+msgid ""
+"O eViacam permite que o cursor do mouse seja movimentado com movimentos da "
+"cabeca captados pela webcam."
+msgstr ""
+"Hiire liikumine koos veebikaamera funktsiooniga käivitub automaatselt ainult "
+"peale kasutaja sisse logimist"
+
+msgid ""
+"Para executa-lo <a href=/usr/share/bigbashview/run.run?eviacam>clique "
+"aqui</a>."
+msgstr ""
+"Et kasutada seda  <a href=/usr/share/bigbashview/run.run?eviacam>kliki "
+"siia</a>."
+
+msgid "Utilize as opcoes abaixo para automatizar o uso:"
+msgstr "Katsu alltoodud seadest automatiseerida selle kasutamist:"
+
+msgid "Executa-lo na tela de login."
+msgstr "Käivita see logimis kuvas."
+
+msgid "Executa-lo apos o login."
+msgstr "Jooksuta peale logimist"
+
+msgid ""
+"Se for detectado um touchpad as configuracoes abaixo sao ativadas "
+"automaticamente ao ligar o computador."
+msgstr ""
+"Kui touchpad ei tuvasta, et seadeid saab lubada automaatselt kui arvuti on "
+"sisse lülitatud."
+
+msgid "Teclas como Ctrl e Alt nao bloqueiam os toques no touchpad"
+msgstr "Klahvid nagu Ctrl ja Alt ei blokeeri puudutusi puuteplaadil"
+
+msgid "Mantem a movimentacao do cursor e os cliques nos botoes"
+msgstr "Jätkage kursori liigutamist ja hiirenupule klõpsamist"
+
+msgid ""
+"Tempo que os toques no touchpad devem ser ignorados apos utilizar o "
+"teclado.<p>1.0 igual 1 segundo<br>2.0 igual 2 segundos<br> 0.5 igual meio "
+"segundo"
+msgstr ""
+"Aeg peale klaviatuuri, kui touchpad ignoreeritakse.<p>1.0 on võrdne 1 "
+"teine<br>2.0 on võrdne 2 sekundit<br>0.5 on võrdne poole sekundiga"
+
+msgid ""
+"Uma dificuldade comum ao utilizar notebooks e causada por toques acidentais "
+"no touchpad. Utilize as opcoes abaixo para tornar o uso mais confortavel:"
+msgstr ""
+"Vältimaks raskust notebooki kasutamisel juhusliku touchpad puudutust. Kasuta "
+"alltoodud valikutest muuta selle kasutamine mugavamaks:"
+
+msgid "Iniciar automaticamente."
+msgstr "Käivita automaatselt"
+
+msgid "Nao bloquear o mouse ao utilizar teclas modificadoras."
+msgstr "Ärge blokeerige hiirt kui kasutate redigeerimis võtmeid."
+
+msgid "Desativar somente toques acidentais."
+msgstr "Keela ainult juhuslik puudutus."
+
+msgid "Tempo de espera:"
+msgstr "Oota viivitust:"
+
+msgid ""
+"Pasta /etc/kde4/kdm/autostart nao encontrada, instale o pacote big-kdminit "
+"para ser possivel iniciar o recurso de controle do mouse com a webcam na "
+"tela de login."
+msgstr ""
+"Kaust  /etc/kde4/kdm/autostart ei leitud, paigalda pakett big-kdminit et "
+"saaks alustada hiire kontrolli koos veebikaamera funktsiooniga logimis kuval."
+
+msgid ""
+"Padrao dos Estados Unidos com suporte a acentos, em geral notebooks "
+"importados.<p>* Recomendado ativar a opcao utilizar cedilha com acento agudo "
+"+ C"
+msgstr ""
+"Vaikimis USA-st, mis toetab aktsendid, tavaliselt imporditud sülearvutid. "
+"<p>* On soovitatav lubada võimalust cedii ägeda aktsendiga +C"
+
+msgid "Exemplo de comando: setxkbmap -model pc105 -layout br -variant"
+msgstr "Näide käsk: setxkbmap-model pc105 paigutusega br-variandil"
+
+msgid ""
+"Importante principalmente em Notebooks com teclado USA Internacional.<p>* "
+"Para essa opcao entrar em operacao e necessario reiniciar o computador ou "
+"encerrar a sessao e efetuar login novamente"
+msgstr ""
+"Tähtis on spetsiaalsel sülearvutid USA rahvusvahelise klaviatuuriga. <p>* "
+"See variant oleks aktiivne, siis on vaja taaskäivitada arvuti või lõpetada "
+"praegune seanss ja uuesti sisse logida"
+
+msgid ""
+"Esse configurador estipula a configuracao do teclado para todos os ambientes "
+"graficos do sistema."
+msgstr ""
+"tema klaviatuuri tööriista komplekti konfiguratsioon määrab konfiguratsiooni "
+"kõigi graafilise keskkonna süsteemis."
+
+msgid "Reconhecer C com acento agudo como cedilha."
+msgstr ""
+
+msgid "Modelo especificado na instalacao do sistema"
+msgstr "Määratletud mudeli paigaldustööd"
+
+msgid "Brasil Padrao ABNT"
+msgstr "Brasiilia ABNT"
+
+msgid "USA Padrao"
+msgstr "USA  vaikimisi"
+
+msgid "USA Internacional (Com teclas acentuaveis)"
+msgstr "USA Rahvusvaheline (koos täpitähed võtmed)"
+
+msgid "Espanha Padrao"
+msgstr "Hispaania vaikimsi"
+
+msgid "Portugal Padrao"
+msgstr "Portugali vaikimisi"
+
+msgid "Especificar outro"
+msgstr "Täpsustage muud"
+
+msgid "Comando:"
+msgstr "Käsk:"
+
+msgid ""
+"* Para encontrar o comando de forma facil <a href=\\"
+"\"/usr/share/bigbashview/run.run?kcmshell4=keyboard_layout\\\">clique "
+"aqui</a> para abrir o seletor de layout de teclado do KDE.<p>* Apos "
+"selecionar a configuracao desejada copie o comando que esta na parte "
+"inferior da janela e cole no espaco especificado nesse configurador."
+msgstr ""
+
+msgid ""
+"Clique unico ou duplo, velocidade, tema, mover o ponteiro do mouse com o "
+"teclado numerico...<p>* Funciona somente no ambiente Kde"
+msgstr ""
+
+msgid ""
+"Ativar automaticamente o NumLock e configurar taxa de repeticao do "
+"teclado<p>* Funciona somente no ambiente Kde"
+msgstr ""
+"Automaatselt võimaldada NumLock ja konfigureerida klaviatuuri kordussagedus "
+"<p> * toimib ainult KDE keskkonda"
+
+msgid ""
+"Configure o modelo de teclado, se letras ou acentos nao estao funcionando "
+"corretamente utilize essa opcao<p>* Funciona somente no ambiente Kde"
+msgstr ""
+"Seadista klaviatuuri mudel. Kasuta seda valikut, kui tähted ja märgid ei "
+"tööta <p>* Toimib ainult KDE keskkonnas"
+
+msgid ""
+"Configure as teclas de atalho de diversos programas<p>* Funciona somente no "
+"ambiente Kde"
+msgstr ""
+"Seadistada kiirklahve erinevaks otstarbe kasutuseks <p>* Töötab ainult KDE "
+"keskkonnas"
+
+msgid ""
+"Configure teclas de atalho padronizadas, por exemplo: imprimir e salvar "
+"arquivo<p>* Funciona somente no ambiente Kde"
+msgstr ""
+"Seadista kohanda kiirklahve, näiteks: trükkida ja salvestada faili <p>* "
+"toimib ainult KDE keskkonda"
+
+msgid "Confira o status da impressao"
+msgstr "Trükkimise olek"
+
+msgid ""
+"Configure o modelo de teclado, opcao similar ao Layout de teclado, porem a "
+"configuracao e aplicada para todos os usuarios e em todos os ambientes "
+"graficos"
+msgstr ""
+"Seadista klaviatuuri mudel, mis sarnaneb klaviatuuriga kuid mida rakendakse "
+"kõikidele kasutajatele graafilises keskkonnas"
+
+msgid "Digite com cliques no mouse usando o teclado virtual"
+msgstr ""
+
+msgid ""
+"Ajuste as preferencias de sensibilidade e comportamento da barra de rolagem"
+msgstr ""
+"Reguleeritakse seadme tundlikkuse eelistusi ja käitumist kerimisribal"
+
+msgid ""
+"Especifica regras para desativar o touchpad enquanto o teclado esta sendo "
+"utilizado"
+msgstr ""
+"Määratlleb eeskirjad touchpadi väljalülitamiseks kui klaviatuur on kasutusel"
+
+msgid ""
+"Metodo que facilita o uso do computador por pessoas que nao conseguem "
+"movimentar o mouse<p>Tambem utilizado como uma nova forma de interagir com "
+"jogos"
+msgstr ""
+
+msgid "Modelo de teclado"
+msgstr "Klaviatuuri mudel"
+
+msgid "Layout de teclado"
+msgstr "Klaviatuuri paigutus"
+
+msgid "Teclado virtual"
+msgstr "Virtuaalne klavaituur"
+
+msgid "Configuracao de atalhos de teclado padrao"
+msgstr "Vaikimisi klaviatuuri kiirklahvide konfiguratsioonid"
+
+msgid "Atalhos de teclado globais"
+msgstr "Üldised kiirklahvid"
+
+msgid "Evitar toques acidentais no touchpad"
+msgstr "Vältida juhuslikku puudutust puuteplaadil"
+
+msgid "Sensibilidade do touchpad"
+msgstr "Puuteplaadi tundlikkus"
+
+msgid "Mouse"
+msgstr "Hiir"
+
+msgid "Controlar o mouse com a webcam"
+msgstr ""
+
+msgid ""
+"Todos os usuarios terao o teclado virtual disponivel desde a tela de login"
+msgstr ""
+
+msgid ""
+"O teclado virtual sera iniciado automaticamente apos o login apenas para "
+"esse usuario"
+msgstr ""
+
+msgid ""
+"O teclado virtual possui melhor compatibilidade com o modelo de teclado USA "
+"Internacional, porem essa opcao pode nao ser a mais compativel com o seu "
+"teclado<p>* Marque essa opcao "
+msgstr ""
+
+msgid ""
+"O teclado virtual permite que os textos sejam digitados utilizando o mouse."
+msgstr ""
+
+msgid ""
+"Para executa-lo <a href=/usr/share/bigbashview/run.run?kvkbd>clique aqui</a>."
+msgstr ""
+"Et kasutada seda <a href=/usr/share/bigbashview/run.run?kvkbd>kliki "
+"siini</a>."

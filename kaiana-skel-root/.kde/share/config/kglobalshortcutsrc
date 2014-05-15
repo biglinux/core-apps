@@ -1,0 +1,230 @@
+[$Version]
+update_info=konsole_remove_background_mode.upd:2.11.0-remove-background-mode,kscreenlocker_locksession-shortcut.upd:4.9-locksession-shortcut,ksmserver_shortcuts.upd:kde4.10,ksmserver_shortcuts.upd:kde4.10-remove-group-kscreenlocker,plasma-to-plasmadesktop-shortcuts.upd:4.3plasma-desktop-shortcuts
+
+[KDE Keyboard Layout Switcher]
+Switch to Next Keyboard Layout=Ctrl+Alt+K,Ctrl+Alt+K,Mudar para o próximo leiaute de teclado
+_k_friendly_name=Seletor de leiautes do teclado para o KDE
+
+[kded]
+Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Reduzir a iluminação do teclado
+Decrease Screen Brightness=Monitor Brightness Down,Monitor Brightness Down,Reduzir o brilho da tela
+Hibernate=Hibernate,Hibernate,Hibernar
+Increase Keyboard Brightness=Keyboard Brightness Up,Keyboard Brightness Up,Aumentar a iluminação do teclado
+Increase Screen Brightness=Monitor Brightness Up,Monitor Brightness Up,Aumentar o brilho da tela
+PowerOff=Power Off,Power Off,
+Sleep=Sleep,Sleep,Suspender
+Toggle Keyboard Backlight=Keyboard Light On/Off,Keyboard Light On/Off,Alternar a iluminação do teclado
+_k_friendly_name=Serviço do KDE
+
+[khotkeys]
+_k_friendly_name=khotkeys
+{02faa822-f64e-443e-b244-9dae81d2dc9b}=Print,none,PrintScreen
+{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=Search,none,Pesquisar
+
+[klipper]
+_k_friendly_name=Klipper
+clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Habilitar ações da área de transferência
+cycleNextAction=none,none,Próximo item do histórico
+cyclePrevAction=none,none,Item anterior do histórico
+edit_clipboard=none,none,Editar conteúdo...
+repeat_action=Ctrl+Alt+R,Ctrl+Alt+R,Invocar ação manualmente sobre a área de transferência atual
+show-barcode=none,none,Mostrar o código de barras...
+show-on-mouse-pos=none,none,Abrir o Klipper na posição do mouse
+
+[kmix]
+_k_friendly_name=KMix
+decrease_volume=Volume Down,Volume Down,Diminuir volume
+increase_volume=Volume Up,Volume Up,Aumentar volume
+mute=Volume Mute,Volume Mute,Mudo
+
+[krunner]
+PowerDevil=none,none,Executar um comando (somente a execução "PowerDevil")
+Run Command=Alt+F2,Alt+F2,Executar comando
+Run Command on clipboard contents=Alt+Shift+F2,Alt+Shift+F2,Executar comando no conteúdo da área de transferência
+Show System Activity=Ctrl+Esc,Ctrl+Esc,Mostrar a atividade do sistema
+Switch User=Ctrl+Alt+Ins,Ctrl+Alt+Ins,Trocar usuário
+_k_friendly_name=Interface de execução de comandos
+bookmarks=none,none,Executar um comando (somente a execução "Favoritos")
+desktopsessions=none,none,Executar um comando (somente a execução "Sessões da área de trabalho")
+locations=none,none,Executar um comando (somente a execução "Localizações")
+nepomuksearch=none,none,Executar um comando (somente a execução "Pesquisa no desktop do Nepomuk")
+org.kde.activities=none,none,Executar um comando (somente a execução "Atividades")
+org.kde.windowedwidgets=none,none,Executar um comando (somente a execução "Widgets em janelas")
+recentdocuments=none,none,Executar um comando (somente a execução "Documentos recentes")
+services=none,none,Executar um comando (somente a execução "Aplicativos")
+shell=none,none,Executar um comando (somente a execução "Linha de comando")
+solid=none,none,Executar um comando (somente a execução "Dispositivos")
+webshortcuts=none,none,Executar um comando (somente a execução "Atalhos da Web")
+windows=none,none,Executar um comando (somente a execução "Janelas")
+
+[ksmserver]
+Halt Without Confirmation=Ctrl+Alt+Shift+PgDown,Ctrl+Alt+Shift+PgDown,Encerrar sem confirmação
+Lock Session=Ctrl+Alt+L,Ctrl+Alt+L,Lock Session
+Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Encerrar sessão
+Log Out Without Confirmation=Ctrl+Alt+Shift+Del,Ctrl+Alt+Shift+Del,Sair sem confirmação
+Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,Ctrl+Alt+Shift+PgUp,Reiniciar sem confirmação
+_k_friendly_name=O gerenciador de sessões do KDE
+
+[kwin]
+Activate Window Demanding Attention=Ctrl+Alt+A,Ctrl+Alt+A,Ativar janela que demanda atenção
+Decrease Opacity=none,none,Diminuir a opacidade da janela ativa em 5%
+Expose=Ctrl+F9,Ctrl+F9,Alternar as janelas presentes (área de trabalho atual)
+ExposeAll=Ctrl+F10,Ctrl+F10,Alternar as janelas presentes (todas as áreas de trabalho)
+ExposeClass=Ctrl+F7,Ctrl+F7,Alternar as janelas presentes (classe de janelas)
+Increase Opacity=none,none,Aumentar a opacidade da janela ativa em 5%
+Invert Screen Colors=none,none,Inverter cores da tela
+Kill Window=Ctrl+Alt+Esc,Ctrl+Alt+Esc,Matar janela
+MoveMouseToCenter=Meta+F6,Meta+F6,Mover o mouse para o centro
+MoveMouseToFocus=Meta+F5,Meta+F5,Mover o mouse para o foco
+MoveZoomDown=Meta+Down,Meta+Down,Mover a área ampliada para baixo
+MoveZoomLeft=Meta+Left,Meta+Left,Mover a área ampliada para a esquerda
+MoveZoomRight=Meta+Right,Meta+Right,Mover a área ampliada para a direita
+MoveZoomUp=Meta+Up,Meta+Up,Mover a área ampliada para cima
+Remove Window From Group=none,none,Remover a janela do grupo
+Setup Window Shortcut=none,none,Configurar atalhos para a janela
+Show Desktop=none,none,Exibir a área de trabalho
+ShowDesktopGrid=Ctrl+F8,Ctrl+F8,Mostrar a grade da área de trabalho
+Suspend Compositing=Alt+Shift+F12,Alt+Shift+F12,Suspender composição
+Switch One Desktop Down=none,none,
+Switch One Desktop Up=none,none,
+Switch One Desktop to the Left=none,none,
+Switch One Desktop to the Right=none,none,
+Switch Window Down=Meta+Alt+Down,Meta+Alt+Down,Mudar para a janela abaixo
+Switch Window Left=Meta+Alt+Left,Meta+Alt+Left,Mudar para a janela à esquerda
+Switch Window Right=Meta+Alt+Right,Meta+Alt+Right,Mudar para a janela à direita
+Switch Window Up=Meta+Alt+Up,Meta+Alt+Up,Mudar para a janela acima
+Switch to Desktop 1=Ctrl+F1,Ctrl+F1,Mudar para a área de trabalho 1
+Switch to Desktop 10=none,none,Mudar para a área de trabalho 10
+Switch to Desktop 11=none,none,Mudar para a área de trabalho 11
+Switch to Desktop 12=none,none,Mudar para a área de trabalho 12
+Switch to Desktop 13=none,none,Mudar para a área de trabalho 13
+Switch to Desktop 14=none,none,Mudar para a área de trabalho 14
+Switch to Desktop 15=none,none,Mudar para a área de trabalho 15
+Switch to Desktop 16=none,none,Mudar para a área de trabalho 16
+Switch to Desktop 17=none,none,Mudar para a área de trabalho 17
+Switch to Desktop 18=none,none,Mudar para a área de trabalho 18
+Switch to Desktop 19=none,none,Mudar para a área de trabalho 19
+Switch to Desktop 2=Ctrl+F2,Ctrl+F2,Mudar para a área de trabalho 2
+Switch to Desktop 20=none,none,Mudar para a área de trabalho 20
+Switch to Desktop 3=Ctrl+F3,Ctrl+F3,Mudar para a área de trabalho 3
+Switch to Desktop 4=Ctrl+F4,Ctrl+F4,Mudar para a área de trabalho 4
+Switch to Desktop 5=none,none,Mudar para a área de trabalho 5
+Switch to Desktop 6=none,none,Mudar para a área de trabalho 6
+Switch to Desktop 7=none,none,Mudar para a área de trabalho 7
+Switch to Desktop 8=none,none,Mudar para a área de trabalho 8
+Switch to Desktop 9=none,none,Mudar para a área de trabalho 9
+Switch to Next Desktop=none,none,
+Switch to Next Screen=none,none,Mudar para a próxima tela
+Switch to Previous Desktop=none,none,
+Switch to Previous Screen=none,none,Mudar para a tela anterior
+Switch to Screen 0=none,none,Mudar para a tela 0
+Switch to Screen 1=none,none,Mudar para a tela 1
+Switch to Screen 2=none,none,Mudar para a tela 2
+Switch to Screen 3=none,none,Mudar para a tela 3
+Switch to Screen 4=none,none,Mudar para a tela 4
+Switch to Screen 5=none,none,Mudar para a tela 5
+Switch to Screen 6=none,none,Mudar para a tela 6
+Switch to Screen 7=none,none,Mudar para a tela 7
+Toggle Window Raise/Lower=none,none,Alternar entre elevar/diminuir janela
+Walk Through Desktop List=none,none,Passear pela lista de áreas de trabalho
+Walk Through Desktop List (Reverse)=none,none,Passear pela lista de áreas de trabalho (reverso)
+Walk Through Desktops=none,none,Passear pelas áreas de trabalho
+Walk Through Desktops (Reverse)=none,none,Passear pelas áreas de trabalho (reverso)
+Walk Through Window Tabs=none,none,Passear pelas abas das janelas
+Walk Through Window Tabs (Reverse)=none,none,Passear pelas abas das janelas (sentido inverso)
+Walk Through Windows=Alt+Tab,Alt+Tab,Passear pelas janelas
+Walk Through Windows (Reverse)=Alt+Shift+Backtab,Alt+Shift+Backtab,Passear pelas janelas (sentido inverso)
+Walk Through Windows Alternative=none,none,Passear pelas janelas alternativo
+Walk Through Windows Alternative (Reverse)=none,none,Passear pelas janelas alternativo (reverso)
+Walk Through Windows of Current Application=Alt+`,Alt+`,Passear pelas janelas do aplicativo atual
+Walk Through Windows of Current Application (Reverse)=Alt+~,Alt+~,Passear pelas janelas do aplicativo atual (reverso)
+Walk Through Windows of Current Application Alternative=none,none,Passear pelas janelas do aplicativo atual alternativo
+Walk Through Windows of Current Application Alternative (Reverse)=none,none,Passear pelas janelas do aplicativo atual alternativo (reverso)
+Window Above Other Windows=none,none,Manter acima das outras
+Window Below Other Windows=none,none,Manter abaixo das outras
+Window Close=Alt+F4,Alt+F4,Fechar janela
+Window Fullscreen=none,none,Janela em tela cheia
+Window Grow Horizontal=none,none,Janela aumenta na horizontal
+Window Grow Vertical=none,none,Janela aumenta na vertical
+Window Lower=none,none,Diminuir Janela
+Window Maximize=none,none,Maximizar janela
+Window Maximize Horizontal=none,none,Maximizar janela horizontalmente
+Window Maximize Vertical=none,none,Maximizar janela verticalmente
+Window Minimize=none,none,Minimizar janela
+Window Move=none,none,Mover janela
+Window No Border=none,none,Ocultar borda da janela
+Window On All Desktops=none,none,Manter janela em todas as áreas de trabalho
+Window One Desktop Down=none,none,Janela em uma área de trabalho abaixo
+Window One Desktop Up=none,none,Janela em uma área de trabalho acima
+Window One Desktop to the Left=none,none,Janela em uma área de trabalho à esquerda
+Window One Desktop to the Right=none,none,Janela em uma área de trabalho à direita
+Window Operations Menu=Alt+F3,Alt+F3,Menu de operações de janela
+Window Pack Down=none,none,Janela para baixo
+Window Pack Left=none,none,Encostar a janela à esquerda
+Window Pack Right=none,none,Encostar a janela à direita
+Window Pack Up=none,none,Janela para cima
+Window Quick Tile Bottom Left=none,none,Colocar a janela lado a lado na parte inferior à esquerda
+Window Quick Tile Bottom Right=none,none,Colocar a janela lado a lado na parte inferior à direita
+Window Quick Tile Left=none,none,Colocar a janela lado a lado à esquerda
+Window Quick Tile Right=none,none,Colocar a janela lado a lado à direita
+Window Quick Tile Top Left=none,none,Colocar a janela lado a lado parte superior à esquerda
+Window Quick Tile Top Right=none,none,Colocar a janela lado a lado na parte de cima à direita
+Window Raise=none,none,Elevar janela
+Window Resize=none,none,Redimensionar janela
+Window Shade=none,none,Sombrear janela
+Window Shrink Horizontal=none,none,Janela encolhe na horizontal
+Window Shrink Vertical=none,none,Janela encolhe na vertical
+Window to Desktop 1=none,none,Janela para a área de trabalho 1
+Window to Desktop 10=none,none,Janela para a área de trabalho 10
+Window to Desktop 11=none,none,Janela para a área de trabalho 11
+Window to Desktop 12=none,none,Janela para a área de trabalho 12
+Window to Desktop 13=none,none,Janela para a área de trabalho 13
+Window to Desktop 14=none,none,Janela para a área de trabalho 14
+Window to Desktop 15=none,none,Janela para a área de trabalho 15
+Window to Desktop 16=none,none,Janela para a área de trabalho 16
+Window to Desktop 17=none,none,Janela para a área de trabalho 17
+Window to Desktop 18=none,none,Janela para a área de trabalho 18
+Window to Desktop 19=none,none,Janela para a área de trabalho 19
+Window to Desktop 2=none,none,Janela para a área de trabalho 2
+Window to Desktop 20=none,none,Janela para a área de trabalho 20
+Window to Desktop 3=none,none,Janela para a área de trabalho 3
+Window to Desktop 4=none,none,Janela para a área de trabalho 4
+Window to Desktop 5=none,none,Janela para a área de trabalho 5
+Window to Desktop 6=none,none,Janela para a área de trabalho 6
+Window to Desktop 7=none,none,Janela para a área de trabalho 7
+Window to Desktop 8=none,none,Janela para a área de trabalho 8
+Window to Desktop 9=none,none,Janela para a área de trabalho 9
+Window to Next Desktop=none,none,Janela para a próxima área de trabalho
+Window to Next Screen=none,none,Janela para a próxima tela
+Window to Previous Desktop=none,none,Janela para a área de trabalho anterior
+Window to Previous Screen=none,none,Janela para a tela anterior
+Window to Screen 0=none,none,Janela para a tela 0
+Window to Screen 1=none,none,Janela para a tela 1
+Window to Screen 2=none,none,Janela para a tela 2
+Window to Screen 3=none,none,Janela para a tela 3
+Window to Screen 4=none,none,Janela para a tela 4
+Window to Screen 5=none,none,Janela para a tela 5
+Window to Screen 6=none,none,Janela para a tela 6
+Window to Screen 7=none,none,Janela para a tela 7
+_k_friendly_name=KWin
+view_actual_size=Meta+0,Meta+0,Tamanho real
+view_zoom_in=Meta+=,Meta+=,Ampliar
+view_zoom_out=Meta+-,Meta+-,Reduzir
+
+[plasma-desktop]
+Next Activity=Meta+Tab,Meta+Tab,Próxima atividade
+Previous Activity=Meta+Shift+Tab,Meta+Shift+Tab,Atividade anterior
+Show Dashboard=Ctrl+F12,Ctrl+F12,Mostrar painel
+Stop Activity=Meta+S,Meta+S,Parar a atividade atual
+SystemTray-Klipper-6=Ctrl+Alt+V,Ctrl+Alt+V,
+_k_friendly_name=Shell da área de trabalho do Plasma
+manage activities=Meta+Q,Meta+Q,Atividades...
+
+[wacomtablet]
+Map to fullscreen=Meta+Ctrl+F,Meta+Ctrl+F,Mapear tudo em tela cheia
+Map to screen 1=Meta+Ctrl+1,Meta+Ctrl+1,Mapear para tela 1
+Map to screen 2=Meta+Ctrl+2,Meta+Ctrl+2,Mapear para tela 2
+Toggle screen map selection=Meta+Ctrl+M,Meta+Ctrl+M,Alternar entre todas as telas
+Toggle stylus mode=Meta+Ctrl+S,Meta+Ctrl+S,Comutar a ferramenta da caneta para relativa/absoluta
+Toggle touch tool=Meta+Ctrl+T,Meta+Ctrl+T,Ativar/Desativar a ferramenta de Toque
+_k_friendly_name=Servidor de configuração da mesa digitalizadora gráfica

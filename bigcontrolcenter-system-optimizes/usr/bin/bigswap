@@ -1,0 +1,14 @@
+if [ -e "/etc/bigautoswap.conf" ]
+then
+    /usr/bin/adjust-swappiness.sh
+else
+
+    if [ "$(cat /etc/bigswap.conf)" = "" ]
+    then
+	echo "60" > /proc/sys/vm/swappiness
+    else
+	echo "$(cat /etc/bigswap.conf)" > /proc/sys/vm/swappiness
+    fi
+
+fi
+

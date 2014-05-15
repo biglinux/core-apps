@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=eViacam
+Comment=eViacam
+Exec=bigeviacam-applet&
+Terminal=false
+Type=Application
+Icon=eviacam

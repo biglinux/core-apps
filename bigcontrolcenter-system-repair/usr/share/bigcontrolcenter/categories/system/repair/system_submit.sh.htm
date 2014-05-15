@@ -1,0 +1,178 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-repair
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+
+title=$"Limpar o sistema"
+apply=$"Aplicar"
+close=$"Sair"
+back=$"Voltar para tela de configuracao"
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Para uma conexao mais rapida e estavel."
+close_header
+
+
+
+#confere as variaveis que sao traduzidar com um p_ antes do nome
+
+
+
+##########
+# alsa
+##########
+if [ "$p_alsa" = "yes" ]
+then
+    bigrecovery --alsapulse
+fi
+
+
+##########
+# apache
+##########
+if [ "$p_apache" = "yes" ]
+then
+    bigrecovery --apache
+fi
+
+
+##########
+# apt
+##########
+if [ "$p_apt" = "yes" ]
+then
+    bigrecovery --apt
+fi
+
+
+#############
+# bluetooth
+#############
+if [ "$p_bluetooth" = "yes" ]
+then
+    bigrecovery --bluetooth
+fi
+
+
+###########
+# cups
+###########
+if [ "$p_cups" = "yes" ]
+then
+    bigrecovery --cups
+fi
+
+
+##########
+# dpkg
+##########
+if [ "$p_dpkg" = "yes" ]
+then
+    bigrecovery --dpkg
+fi
+
+##################
+# grub
+##################
+if [ "$p_grub" = "yes" ]
+then
+    bigrecovery --grub
+fi
+
+
+##################
+# grub_install
+##################
+if [ "$p_grub_install" = "yes" ]
+then
+
+    if [ "$p_grub_part" != "" ]
+    then
+	bigrecovery --grub-install $p_grub_part
+    fi
+fi
+
+##################
+# initrd
+##################
+if [ "$p_initrd" = "yes" ]
+then
+    bigrecovery --initrd
+fi
+
+
+##################
+# kdm
+##################
+if [ "$p_kdm" = "yes" ]
+then
+    bigrecovery --kdm
+fi
+
+
+##################
+# network
+##################
+if [ "$p_network" = "yes" ]
+then
+    bigrecovery --network
+fi
+
+
+##################
+# samba
+##################
+if [ "$p_samba" = "yes" ]
+then
+    bigrecovery --samba
+fi
+
+##################
+# xorg
+##################
+if [ "$p_xorg" = "yes" ]
+then
+    bigrecovery --xorg
+fi
+
+
+
+
+
+#Exibir resposta para o usuario
+echo "<br><br><br><br><br><center><font size=+2>"
+echo $"Configuracao aplicada."
+
+
+
+echo "</font></div><div id=\"rodape\"><button type=button  onClick=\"parent.location='system.sh.htm'\">   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $back   </button> 
+
+<button type=button onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></form></div></body>"

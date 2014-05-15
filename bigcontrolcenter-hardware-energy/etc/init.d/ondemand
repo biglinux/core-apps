@@ -1,0 +1,113 @@
+#! /bin/sh
+### BEGIN INIT INFO
+# Provides:          ondemand
+# Required-Start:    $remote_fs $all
+# Required-Stop:
+# Default-Start:     2 3 4 5
+# Default-Stop:
+# Short-Description: Set the CPU Frequency Scaling governor to "ondemand"
+### END INIT INFO
+
+
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+
+. /lib/init/vars.sh
+. /lib/lsb/init-functions
+
+case "$1" in
+    start)
+    	start-stop-daemon --start --background --exec /etc/init.d/ondemand -- background
+        ;;
+    background)
+
+	if [ "$(cat /etc/bigpower_usb )" = "" ]
+	then
+	    sed -i 's|CONTROL_USB_AUTOSUSPEND=".*|CONTROL_USB_AUTOSUSPEND="0"|g' /etc/laptop-mode/conf.d/usb-autosuspend.conf
+	fi
+
+	if [ "$(cat /etc/bigpower_usb )" = "1" ]
+	then
+	    sed -i 's|CONTROL_USB_AUTOSUSPEND=".*|CONTROL_USB_AUTOSUSPEND="auto"|g;s|^AUTOSUSPEND_USBTYPE_BLACKLIST=".*|AUTOSUSPEND_USBTYPE_BLACKLIST="usbhid usb-storage"|g' /etc/laptop-mode/conf.d/usb-autosuspend.conf
+	fi
+
+	if [ "$(cat /etc/bigpower_usb )" = "2" ]
+	then
+	    sed -i 's|CONTROL_USB_AUTOSUSPEND=".*|CONTROL_USB_AUTOSUSPEND="auto"|g;s|^AUTOSUSPEND_USBTYPE_BLACKLIST=".*|AUTOSUSPEND_USBTYPE_BLACKLIST=""|g' /etc/laptop-mode/conf.d/usb-autosuspend.conf
+	fi
+
+	if [ "$(cat /etc/bigpower_ethernet)" = "" ]
+	then
+	    sed -i "s|BATT_EXEC_COMMAND_1=.*|BATT_EXEC_COMMAND_1=""|g;s|LM_AC_EXEC_COMMAND_1=.*|LM_AC_EXEC_COMMAND_1=""|g;s|NOLM_AC_EXEC_COMMAND_1=.*|NOLM_AC_EXEC_COMMAND_1=""|g" /etc/laptop-mode/conf.d/exec-commands.conf
+	fi
+
+	if [ "$(cat /etc/bigpower_ethernet)" = "1" ]
+	then
+	    sed -i "s|BATT_EXEC_COMMAND_1=.*|BATT_EXEC_COMMAND_1="big-ethernet-disable"|g;s|LM_AC_EXEC_COMMAND_1=.*|LM_AC_EXEC_COMMAND_1="big-ethernet-enable"|g;s|NOLM_AC_EXEC_COMMAND_1=.*|NOLM_AC_EXEC_COMMAND_1="big-ethernet-enable"|g" /etc/laptop-mode/conf.d/exec-commands.conf
+	fi
+
+	if [ "$(cat /etc/bigpower_ethernet)" = "2" ]
+	then
+	    sed -i "s|BATT_EXEC_COMMAND_1=.*|BATT_EXEC_COMMAND_1="big-ethernet-disable"|g;s|LM_AC_EXEC_COMMAND_1=.*|LM_AC_EXEC_COMMAND_1="big-ethernet-disable"|g;s|NOLM_AC_EXEC_COMMAND_1=.*|NOLM_AC_EXEC_COMMAND_1="big-ethernet-disable"|g" /etc/laptop-mode/conf.d/exec-commands.conf
+	fi
+
+	if [ "$(cat /etc/bigpower_som )" = "" ]
+	then
+	    sed -i 's|CONTROL_AC97_POWER=".*|CONTROL_AC97_POWER="0"|g' /etc/laptop-mode/conf.d/ac97-powersave.conf
+	    sed -i 's|CONTROL_INTEL_HDA_POWER=".*|CONTROL_INTEL_HDA_POWER="0"|g' /etc/laptop-mode/conf.d/intel-hda-powersave.conf 
+	fi
+
+	if [ "$(cat /etc/bigpower_som )" = "1" ]
+	then
+	    sed -i 's|CONTROL_AC97_POWER=".*|CONTROL_AC97_POWER="auto"|g' /etc/laptop-mode/conf.d/ac97-powersave.conf
+	    sed -i 's|CONTROL_INTEL_HDA_POWER=".*|CONTROL_INTEL_HDA_POWER="auto"|g;s|INTEL_HDA_DEVICE_CONTROLLER=.*|INTEL_HDA_DEVICE_CONTROLLER=0|g' /etc/laptop-mode/conf.d/intel-hda-powersave.conf 
+	fi
+
+	if [ "$(cat /etc/bigpower_som )" = "2" ]
+	then
+	    sed -i 's|CONTROL_AC97_POWER=".*|CONTROL_AC97_POWER="auto"|g' /etc/laptop-mode/conf.d/ac97-powersave.conf
+	    sed -i 's|CONTROL_INTEL_HDA_POWER=".*|CONTROL_INTEL_HDA_POWER="auto"|g;s|INTEL_HDA_DEVICE_CONTROLLER=.*|INTEL_HDA_DEVICE_CONTROLLER=1|g' /etc/laptop-mode/conf.d/intel-hda-powersave.conf 
+	fi
+
+	if [ "$(cat /etc/bigpower_hd )" = "1" ]
+	then
+	    sed -i 's|CONTROL_HD_IDLE_TIMEOUT=.*|CONTROL_HD_IDLE_TIMEOUT=1|g' /etc/laptop-mode/laptop-mode.conf
+    	    sed -i 's|LM_AC_HD_IDLE_TIMEOUT_SECONDS=.*|LM_AC_HD_IDLE_TIMEOUT_SECONDS=99999|g;s|LM_BATT_HD_IDLE_TIMEOUT_SECONDS=.*|LM_BATT_HD_IDLE_TIMEOUT_SECONDS=$(cat /etc/bigpower_hd_time)|g;s|NOLM_HD_IDLE_TIMEOUT_SECONDS=.*|NOLM_HD_IDLE_TIMEOUT_SECONDS=99999|g' /etc/laptop-mode/laptop-mode.conf
+	else
+	    sed -i 's|CONTROL_HD_IDLE_TIMEOUT=.*|CONTROL_HD_IDLE_TIMEOUT=0|g' /etc/laptop-mode/laptop-mode.conf	
+	fi
+
+	sed -i 's|USE_RELATIME=.*|USE_RELATIME=0|g;s|CONTROL_NOATIME=.*|CONTROL_NOATIME=1|g' /etc/laptop-mode/laptop-mode.conf	
+	
+	
+
+	sed -i "s|BATT_CPU_GOVERNOR=.*|BATT_CPU_GOVERNOR=$(cat /etc/bigpower_governor_battery)|g;s|LM_AC_CPU_GOVERNOR=.*|LM_AC_CPU_GOVERNOR=$(cat /etc/bigpower_governor)|g;s|NOLM_AC_CPU_GOVERNOR=.*|NOLM_AC_CPU_GOVERNOR=$(cat /etc/bigpower_governor)|g" /etc/laptop-mode/conf.d/cpufreq.conf
+
+	sleep 60 # probably enough time for desktop login
+
+	if [ "$(grep off-line /proc/acpi/ac_adapter/AC0/state)" = "" ]
+	then
+	    for CPUFREQ in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+	    do
+		cat /etc/bigpower_governor > $CPUFREQ
+	    done
+	else
+	    for CPUFREQ in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+	    do
+		cat /etc/bigpower_governor_battery > $CPUFREQ
+	    done
+	fi
+	
+	/etc/init.d/laptop-mode reload
+	
+	;;
+    restart|reload|force-reload)
+        echo "Error: argument '$1' not supported" >&2
+        exit 3
+        ;;
+    stop)
+        ;;
+    *)
+        echo "Usage: $0 start|stop" >&2
+        exit 3
+        ;;
+esac

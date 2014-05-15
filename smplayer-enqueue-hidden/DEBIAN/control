@@ -1,0 +1,10 @@
+Package: smplayer-enqueue-hidden
+Version: 1.0.0-0kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Depends: smplayer
+Priority: optional
+Description: Hidden smplayer enqueue in menu / Esconde o smplayer enqueue do menu
+

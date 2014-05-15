@@ -1,0 +1,32 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=all/all;
+Actions=filerollerCompressHere;filerollerCompressAsZip;filerollerCompressAsRar;
+X-KDE-Submenu=Compress
+X-KDE-Submenu[es]=Comprimir
+X-KDE-Submenu[pt_BR]=Compactar
+X-KDE-StartupNotify=false
+X-KDE-Priority=TopLevel
+
+[Desktop Action filerollerCompressHere]
+Name=Compress...
+Name[es]=Comprimir...
+Name[pt_BR]=Compactar...
+Icon=utilities-file-archiver
+Exec=file-roller %U --add
+
+[Desktop Action filerollerCompressAsZip]
+Name=As ZIP Archive
+Name[es]=Como archivo comprimido ZIP
+Name[pt_BR]=Como arquivo ZIP
+Icon=utilities-file-archiver
+Exec=file-roller %U --add-to=%F.zip
+
+[Desktop Action filerollerCompressAsRar]
+Name=As RAR Archive
+Name[es]=Como archivo comprimido RAR
+Name[pt_BR]=Como arquivo RAR
+Icon=utilities-file-archiver
+Exec=file-roller %U --add-to=%F.rar
+

@@ -1,0 +1,9 @@
+vm.dirty_ratio = 20
+
+vm.dirty_background_ratio = 10
+
+vm.vfs_cache_pressure = 100
+
+vm.dirty_expire_centisecs = 33000
+
+vm.swappiness=15

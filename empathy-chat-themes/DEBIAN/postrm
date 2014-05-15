@@ -1,0 +1,8 @@
+#! /bin/bash
+echo " Removing Theme Files . . . "
+rm --verbose --force --recursive $HOME/.local/share/adium/*
+rm --verbose --force $HOME/.local/share/adium
+echo " "
+echo " Please Restart any running Empathy Client . . ."
+echo " "
+echo OK

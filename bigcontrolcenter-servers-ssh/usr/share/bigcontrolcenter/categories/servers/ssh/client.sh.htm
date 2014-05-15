@@ -1,0 +1,90 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-servers-ssh
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"SSH"
+apply=$"Aplicar"
+close=$"Sair"
+tip_port=$"A porta padrao dos servidores SSH e 22"
+tip_x11=$"Com essa opcao ativada e possivel apos acessar o terminal executar programas em modo grafico remotamente<p>Programas executados dessa forma sao processados no servidor e exibidos no cliente<p>* Essa opcao funciona apenas para acesso via terminal<br>* O servidor tambem necessita estar com essa opcao ativa"
+tip_user=$"Em alguns locais e informado como login"
+tip_ip=$"Endereco do servidor. Pode ser especificado como nome de dominio ou ip"
+tip_port=$"Porta padrao para o ssh e 22"
+tip_dolphin=$"Exibe os arquivos do servidor no gerenciador de arquivos Dolphin"
+tip_konsole=$"Efetua login no terminal do servidor utilizando o Konsole"
+
+. /usr/share/bigcontrolcenter/default/theme.sh.htm
+
+
+if [ -e "$HOME/.config/bigssh_client_x11_disable" ]
+then
+    x11_check=""
+  else
+    x11_check="checked"
+fi
+
+if [ -e "$HOME/.config/bigssh_client_dolphin" ]
+then
+    dolphin_check="checked"
+  else
+    konsole_check="checked"
+fi
+
+if [ "$(cat ~/.config/bigssh_client_ip)" = "" ]
+then
+    port="22"
+  else
+    port="$(cat ~/.config/bigssh_client_ip)"
+    X11="-X -C"
+fi
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Acesso remoto seguro e de qualidade."
+close_header
+
+echo '<center><table width=90%><tr><td>'
+echo $"Preencha os dados referentes ao servidor que deseja acessar:"
+echo '</td></tr></table><p><br><br>'
+echo "<form action=client_submit.sh.htm method=get>"
+echo '<center>'
+echo "<input type=radio name=escolha id=1 value=konsole onClick=\"Hide('div-manual', this)\" $mouseover_open $tip_konsole $mouseover_close $konsole_check><label for=1 $mouseover_open $tip_konsole $mouseover_close>" $"Acessar terminal""</label>"
+echo "<input type=radio name=escolha id=2 value=dolphin onClick=\"Hide('div-manual', this)\" $mouseover_open $tip_dolphin $mouseover_close $dolphin_check><label for=2 $mouseover_open $tip_dolphin $mouseover_close>" $"Gerenciar arquivos""</label>"
+
+
+echo '<p><center><table width=90%><tr><td>'
+echo "<table align=center><tr><td valign=middle>"
+echo $"Usuario:" "</td><td valign=middle><INPUT TYPE=TEXT NAME=user VALUE=\"$(cat ~/.config/bigssh_client_user)\" SIZE=20 $mouseover_open $tip_user $mouseover_close></td><td valign=middle>"
+echo "<INPUT TYPE=checkbox ID=x11 NAME=x11 VALUE=yes  $mouseover_open $tip_x11 $mouseover_close $x11_check><label for=x11 $mouseover_open $tip_x11 $mouseover_close>" $"Habilitar X11"'</label></td></tr><tr><td valign=middle>'
+echo $"Endereco:" "</td><td valign=middle><INPUT TYPE=TEXT NAME=ip VALUE=\"$port\" SIZE=30 $mouseover_open $tip_ip $mouseover_close></td><td valign=middle>"
+echo $"Porta:" "<INPUT TYPE=TEXT NAME=port VALUE=\"$(cat ~/.config/bigssh_client_port)\" SIZE=5 $mouseover_open $tip_port $mouseover_close></td></tr></table>"
+
+
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

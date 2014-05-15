@@ -1,0 +1,10 @@
+Package: kdesktop-environment
+Version: 1.0.0-2kaiana6
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: kdebase-workspace-bin | kde-workspace-bin, big-skel, bigcontrolcenter
+Section: admin
+Priority: optional
+Description: Alternative KDE configuration for BigLinux
+

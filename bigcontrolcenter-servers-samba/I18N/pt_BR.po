@@ -1,0 +1,147 @@
+# Brazilian Portuguese translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-13 22:49-0300\n"
+"PO-Revision-Date: 2010-09-14 07:09+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-15 04:57+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Samba"
+msgstr "Samba"
+
+msgid "Aplicar"
+msgstr "Aplicar"
+
+msgid "Sair"
+msgstr "Sair"
+
+msgid "Compartilhamento de arquivos e impressoras na rede."
+msgstr "Compartilhamento de arquivos e impressoras na rede."
+
+msgid ""
+"1 - Podem ocorrer problemas para encontrar servidores de arquivos na rede, "
+"dessa forma no gerenciador de arquivos Dolphin ou Nautilus insira o ip do "
+"servidor, por exemplo: smb://127.0.0.1"
+msgstr ""
+"1 - Podem ocorrer problemas para encontrar servidores de arquivos na rede, "
+"dessa forma no gerenciador de arquivos Dolphin ou Nautilus insira o IP do "
+"servidor, por exemplo: smb://127.0.0.1"
+
+msgid ""
+"2 - Se estiver utilizando um sistema Windows e nao estiver encontrando um "
+"servidor Linux no gerenciador de arquivos acesse-o pelo IP, por exemplo: \\\\"
+"\\\\127.0.0.1"
+msgstr ""
+"2 - Se estiver utilizando um sistema Windows e não estiver encontrando um "
+"servidor Linux no gerenciador de arquivos acesse-o pelo IP, por exemplo: \\\\"
+"\\\\127.0.0.1"
+
+msgid ""
+"3 - Existem alguns casos que ocorrem erros para encontrar o conteúdo da "
+"pasta raiz de compartilhamento quando se está em uma rede mista com Windows, "
+"ao acessar um compartilhamento em um endereço como smb://127.0.0.1/ e "
+"aparecer escrito erro interno, você terá que acessar diretamente as pastas "
+"desse servidor, por exemplo smb://127.0.0.1/MeusArquivos"
+msgstr ""
+"3 - Existem alguns casos que ocorrem erros para encontrar o conteúdo da "
+"pasta raiz de compartilhamento quando se está em uma rede mista com Windows, "
+"ao acessar um compartilhamento em um endereço como smb://127.0.0.1/ e "
+"aparecer escrito erro interno, você terá que acessar diretamente as pastas "
+"desse servidor, por exemplo smb://127.0.0.1/MeusArquivos"
+
+msgid "Ativar, desativar, iniciar automaticamente..."
+msgstr "Ativar, desativar, iniciar automaticamente..."
+
+msgid "Acesse arquivos de outros servidores"
+msgstr "Acesse arquivos de outros servidores"
+
+msgid "Dicas para acessar seus arquivos na rede"
+msgstr "Dicas para acessar seus arquivos na rede"
+
+msgid "Opcoes basicas para configuracao do servidor"
+msgstr "Opções basicas para configuracao do servidor"
+
+msgid ""
+"Opcoes para praticamente qualquer tipo de uso do Samba<P>* Algumas "
+"configuracoes para entrar em acao necessitam que o servidor seja reiniciado"
+msgstr ""
+"Opções para praticamente qualquer tipo de uso do Samba<P>* Algumas "
+"configurações para entrar em ação necessitam que o servidor seja reiniciado"
+
+msgid "Reinicia de forma rapida o servidor Samba"
+msgstr "Reinicia de forma rápida o servidor Samba"
+
+msgid "Ativar ou desativar o servidor"
+msgstr "Ativar ou desativar o servidor"
+
+msgid "Acessar arquivos"
+msgstr "Acessar arquivos"
+
+msgid "Configurador simples para o servidor"
+msgstr "Configurador simples para o servidor"
+
+msgid "Configurador completo para o servidor"
+msgstr "Configurador completo para o servidor"
+
+msgid "Reiniciar o servidor"
+msgstr "Reiniciar o servidor"
+
+msgid "Dicas de uso"
+msgstr "Dicas de uso"
+
+msgid "Samba - Compartilhar arquivos na rede"
+msgstr "Samba - Compartilhar arquivos na rede"
+
+msgid "Compartilhamento de arquivos e impressoras na rede"
+msgstr "Compartilhamento de arquivos e impressoras na rede"
+
+msgid "Configuracao aplicada."
+msgstr "Configuração aplicada."
+
+msgid "Inicia automaticamente ao ligar o PC"
+msgstr "Inicia automaticamente ao ligar o PC"
+
+msgid ""
+"Com essa opcao ativa as pastas compartilhadas terao permissao para "
+"escrita.<br>Isso possibilita que usuarios na rede alterem, criem e apaguem "
+"arquivos dessa pasta<p>* Lembre que para isso e necessario que as permissoes "
+"da pasta estejam marcadas com permissao para modificar o conteudo por "
+"(Outros)"
+msgstr ""
+"Com essa opção ativa as pastas compartilhadas terão permissão para "
+"escrita.<br>Isso possibilita que usuários na rede alterem, criem e apaguem "
+"arquivos dessa pasta<p>* Lembre que para isso é necessário que as permissões "
+"da pasta estejam marcadas com permissão para modificar o conteúdo por "
+"(Outros)"
+
+msgid ""
+"Ative o servidor para que outros computadores da rede acessem arquivos e "
+"impressoras disponiblizados.<p>* O sistema de impressao pode compartilhar "
+"impressoras sem necessidade desse servidor e de forma mais simples."
+msgstr ""
+"Ative o servidor para que outros computadores da rede acessem arquivos e "
+"impressoras disponibilizados.<p>* O sistema de impressão pode compartilhar "
+"impressoras sem necessidade desse servidor e de forma mais simples."
+
+msgid "Ativo"
+msgstr "Ativo"
+
+msgid "Iniciar automaticamente"
+msgstr "Iniciar automaticamente"
+
+msgid "Por padrao compartilhar com permissao a escrita"
+msgstr "Por padrão compartilhar com permissão à escrita"
+
+msgid "Servidor reiniciado!"
+msgstr "Servidor reiniciado!"

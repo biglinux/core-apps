@@ -1,0 +1,22 @@
+[Desktop Entry]
+Categories=Qt;AudioVideo;Video;
+Comment[pt_BR]=
+Comment=
+Exec=bigbashview /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm -i /usr/share/bigcontrolcenter/categories/others/bigconvert/icon.png
+GenericName[pt]=Converta vídeos e extraia áudio
+GenericName[en]=Convert videos and audio extract
+GenericName[es]=Convertir los videos y audio de extracto
+GenericName=Converta vídeos e extraia áudio
+Icon=/usr/share/bigcontrolcenter/categories/others/bigconvert/icon.png
+MimeType=
+Name=Big Converter Vídeo
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-StartupNotify=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=

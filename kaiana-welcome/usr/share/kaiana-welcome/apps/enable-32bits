@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ "$(uname -m)" = "x86_64" ]; then 
+      kdialog --title $"OpenMandriva"  --msgbox  $" Aguarde ... Adcionando suporte repositorios 32bits á sistemas 64bits";
+      /usr/sbin/urpmi.addmedia main32 http://abf-downloads.rosalinux.ru/openmandriva2014.0/repository/i586/media/main/release/
+      /usr/sbin/urpmi.addmedia main32_updates http://abf-downloads.rosalinux.ru/openmandriva2014.0/repository/i586/media/main/updates/
+      /usr/sbin/urpmi.addmedia non-free32 http://abf-downloads.rosalinux.ru/openmandriva2014.0/repository/i586/media/non-free/release/
+      /usr/sbin/urpmi.addmedia non-free32_updates http://abf-downloads.rosalinux.ru/openmandriva2014.0/repository/i586/media/non-free/updates/
+      /usr/sbin/urpmi.addmedia restricted32 http://abf-downloads.rosalinux.ru/openmandriva2014.0/repository/i586/media/restricted/release/
+      /usr/sbin/urpmi.addmedia restricted32_updates http://abf-downloads.rosalinux.ru/openmandriva2014.0/repository/i586/media/restricted/updates/
+      /usr/sbin/urpmi.addmedia contrib32 http://abf-downloads.rosalinux.ru/openmandriva2014.0/repository/i586/media/contrib/release/
+      /usr/sbin/urpmi.addmedia contrib32_updates http://abf-downloads.rosalinux.ru/openmandriva2014.0/repository/i586/media/contrib/updates/
+      kdialog --title $"OpenMandriva"  --msgbox  $" Suporte repositorios 32bits á sistemas 64bits feito com sucesso";
+      
+	else 
+      kdialog --title $"OpenMandriva"  --msgbox  $" Adcionando repositorios 64bits";
+	    fi
+    fi

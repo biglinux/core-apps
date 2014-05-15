@@ -1,0 +1,127 @@
+#!/bin/bash
+
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-livecd
+
+
+
+#Mouse Over theme
+mouseover_open="onmouseover=\"Tip('"
+mouseover_close="', BALLOON, true, ABOVE, true, OFFSETX, -17)\" onmouseout=\"UnTip()\""
+
+
+#Tips
+tip_compiz=$"Se possível ativa o sistema Compiz que gera diversos efeitos gráficos no Desktop."
+tip_xfwm=$"Ambiente altenativo, possui quase todas as facilidades do ambiente mais completo, porém utiliza menos recursos do computador."
+tip_kwin=$"Não ativa efeitos no Desktop por pãdrao e utiliza o sistema Kwin."
+
+tip_instalar=$"Inicia a instalação no HD sem abrir nenhum ambiente de desktop, recomendado para computadores com pouca quantidade de memoria."
+
+
+
+/usr/share/bigbashview/system-css.sh.htm
+
+
+
+
+
+
+
+
+echo '<body><div id="titulo">'
+
+cat << EOF
+<link rel="stylesheet" type="text/css" media="screen, projection" href="demo.css" />
+<script type="text/javascript">
+<!--
+function Reveal (id) {
+var obj=document.getElementById(id);
+document.getElementById(id).style.display ='block';
+}
+
+function Hide (id) {
+var obj=document.getElementById(id);
+document.getElementById(id).style.display ='none';
+}
+//-->
+</script>
+  <script type="text/javascript" src="/usr/share/bigcontrolcenter/default/js/wz_tooltip.js"></script>
+  <script type="text/javascript" src="$HOME/.bigcontrolcenter/tip_balloon.js"></script>
+EOF
+
+
+
+convert -resize $(resolucao)! /usr/share/wallpapers/BigLinux.jpg /tmp/imageliveboot.jpg
+
+
+echo '<table width=100% height=100% valign=middle align=center><tr><td>'
+
+echo '<style type="text/css">
+#titulo {color: #000;
+text-align: center; 
+font-size: 20px;
+font-weight: bold; }
+
+body {
+	background-color: #000;
+        background: url('/tmp/imageliveboot.jpg') no-repeat center center fixed;
+	font-size: 4px;
+}
+</style>'
+
+. /usr/share/bigcontrolcenter/default/theme.sh.htm
+
+title=$"Converter para UTF-8"
+apply=$"Converter"
+close=$"Sair"
+
+echo "<center><br><br><br><br><br><br>"
+echo '<i><font face="URW Palladio L" size=5><b>' $"Seja bem vindo(a) à distribuição $(grep DESCRIPTION /etc/lsb-release | cut -f2 -d \" | cut -f1 -d "(")" '</b></i></font>'
+echo '</center>'
+
+echo '<br><center><table><tr><td height=272 width=480 background=transparencia.png valign=top>'
+
+echo '<center><br><img src=cd.png></center><br>'
+
+echo '<table align=center><tr><td height=115 width=450 valign=top>'
+echo "<center><b>" $"Experimente o sistema sem instalar no HD." "</center>"
+
+echo "<form action=submit.sh.htm method=get><br><input type=radio name=escolha id=1 value=compiz onClick=\"Hide('div-manual', this)\" $mouseover_open $tip_compiz $mouseover_close $compiz_close checked><label for=1 $mouseover_open $tip_compiz $mouseover_close>" $"Com efeitos gráficos.""</label>
+<br>
+<input type=radio name=escolha id=2 value=kwin onClick=\"Hide('div-manual', this)\" $mouseover_open $tip_kwin $mouseover_close $kwin_check><label for=2 $mouseover_open $tip_kwin $mouseover_close>" $"Sem efeitos gráficos.""</label>
+<br>
+<input type=radio name=escolha id=3 value=xfwm onClick=\"Hide('div-manual', this)\" $mouseover_open $tip_xfwm $mouseover_close $xfwm_check><label for=3 $mouseover_open $tip_xfwm $mouseover_close>" $"Otimizado para desempenho.""</label>
+<br>"
+
+echo '</td></tr></table>'
+
+echo '<center><ul id="menu-css"><li><a href="#" onclick="document.forms[0].submit();return false;"><b><font size=3>' $"Experimentar agora!" '</font></b></a></li></ul></center></form>'
+
+echo '</td><td height=272 width=480 background=transparencia.png valign=top>'
+
+echo '<center><br><img src=install.png></center><br>'
+
+echo '<table align=center><tr><td height=115 width=450 valign=top>'
+echo "<center><b>" $"Instalar o sistema no HD." "</center><br>"
+
+echo $"Instale no HD e desfrute de todos os recursos disponíveis, basta seguir alguns passos e em poucos minutos terá a sua disposição um sistema completo e repleto de funcionalidades."
+
+echo '</td></tr></table>'
+
+echo '<center><ul id="menu-css"><li><a href="submit.sh.htm?escolha=instalar"><b><font size=3>' $"Instalar no HD!" '</font></b></a></li></ul></center>'
+
+
+
+echo '</table></center>'
+
+echo '</tr></td></table>'
+
+echo '</body>'

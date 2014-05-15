@@ -1,0 +1,10 @@
+#!/bin/bash
+
+while [ "$(ps -A | grep "kdm_greet$")" = "" ]; do
+sleep 1
+done
+
+sleep 4
+sed -i 's/visible=false/visible=true/g' /root/.kde/share/config/kvkbdrc
+HOME=/root kvkbd
+

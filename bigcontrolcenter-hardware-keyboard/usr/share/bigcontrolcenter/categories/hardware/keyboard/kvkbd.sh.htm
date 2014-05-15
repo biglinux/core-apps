@@ -1,0 +1,86 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-hardware-keyboard
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(630,480);
+function NoResize(){
+  window.resizeTo(630,480);
+}
+</script>
+'
+
+title=$"Teclado, mouse e touchpad"
+apply=$"Aplicar"
+close=$"Sair"
+tip_kdm=$"Todos os usuarios terao o teclado virtual disponivel desde a tela de login"
+tip_xdg=$"O teclado virtual sera iniciado automaticamente apos o login apenas para esse usuario"
+tip_usa=$"O teclado virtual possui melhor compatibilidade com o modelo de teclado USA Internacional, porem essa opcao pode nao ser a mais compativel com o seu teclado<p>* Marque essa opcao "
+
+
+
+###############
+# Apply options
+###############
+
+
+################
+# kdm
+################
+  if [ -e "/etc/kde4/kdm/autostart/S30kvkbd" ]
+  then
+      kdm_check="checked"
+  fi
+
+
+################
+# usuario
+################
+  if [ -e "$HOME/.bigkvkbd" ]
+  then
+      xdg_check="checked"
+  fi
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Layout de teclado, velocidade e ate controlar o mouse com a webcam."
+close_header
+
+#body
+echo '<center><table width=95%><tr><td>'
+echo $"O teclado virtual permite que os textos sejam digitados utilizando o mouse." "<br>"
+echo $"Para executa-lo <a href=/usr/share/bigbashview/run.run?kvkbd>clique aqui</a>." "<BR><BR><BR>"
+echo $"Utilize as opcoes abaixo para automatizar o uso:" "<p>"
+
+
+
+
+echo "<form action=kvkbd_submit.sh.htm method=get><p>"
+
+echo "<INPUT TYPE=checkbox ID=kdm NAME=kdm VALUE=yes $mouseover_open $tip_kdm $mouseover_close $kdm_check><label for=kdm $mouseover_open $tip_kdm $mouseover_close>" $"Executa-lo na tela de login."'</label><P>'
+
+echo "<INPUT TYPE=checkbox ID=xdg NAME=xdg VALUE=yes $mouseover_open $tip_xdg $mouseover_close $xdg_check><label for=xdg $mouseover_open $tip_xdg $mouseover_close>" $"Executa-lo apos o login."'</label><BR><BR><BR><BR><BR><BR><br><br><br><br>'
+
+echo "* O teclado virtual possui melhor compatibilidade com o modelo de teclado USA Internacional, porem pode nao ser o mais compativel com o teclado fisico utilizado nesse computador. Para alterar a configuracao do modelo de teclado <a href=\"/usr/share/bigbashview/run.run?bigsudo bigbashview /usr/share/bigcontrolcenter/categories/hardware/keyboard/xkb.sh.htm\">clique aqui</a>."
+
+
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

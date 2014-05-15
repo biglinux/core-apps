@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-internet-ndiswrapper 
+
+name_application=$"Wireless com driver Windows (Ndiswrapper)"
+description_application=$"Caso o driver para a placa wireless nao esteja funcionando corretamente, tente utilizar o driver do Windows pelo ndiswrapper..."
+exec_application="/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/internet/ndiswrapper/ndiswrapper.sh.htm"
+icon_application="/usr/share/bigcontrolcenter/categories/internet/ndiswrapper/icon.png"

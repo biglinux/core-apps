@@ -1,0 +1,290 @@
+#!/bin/bash
+
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-themes-windowborder
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+if [ "$p_padrao" != "" ]
+then
+    if [ "$p_padrao" = "auto" ]
+    then
+	rm -f "$HOME/.config/bigwin"
+    else
+	echo "$p_padrao" > "$HOME/.config/bigwin"
+    fi
+
+kdialog --yesno $"Alterar a borda de janelas agora?
+
+Se optar por nao alterar agora a borda sera alterada apos reiniciar o sistema."
+  resposta=$?
+  if [ "$resposta" = "0" ]; then
+	  cd ~
+	  rm -f $HOME/.config/bigwincheck1
+	  killall kwin xfwm4 compiz metacity
+	  #bigwinstart 2> /dev/null > /dev/null &
+	  sleep 3
+  fi
+
+
+fi
+
+title=$"Configurar borda de janelas"
+apply=$"Aplicar"
+close=$"Sair"
+tip_automatico=$"O sistema tenta definir a melhor opcao automaticamente"
+tip_compiz=$"Grande quantidade de efeitos para o desktop."
+tip_kwin=$"Gerenciador de janelas do KDE, boa quantidade de recursos e a melhor integracao com o Kdesktop."
+tip_xfwm=$"Gerenciador de janelas do XFCE, leve e rápido, recomendado para computadores obsoletos e netbooks."
+tip_kwindecoration=$"Altere o tema utilizado para a borda de janelas."
+tip_kwincompositing=$"Configure os efeitos do desktop."
+tip_kwinoptions=$"Configuracoes de foco e opcoes avancadas"
+tip_kwinscreenedges=$"Defina ocoes ao passar o mouse nas extremidades da tela"
+tip_kwintabbox=$"Configure a forma de alternar entre as janelas"
+tip_xfwm4settings=$"Ajustes para o tema, controle de foco e opcoes avancadas"
+tip_xfwm4tweakssettings=$"Diversas configuracoes para o XFWM"
+tip_xfwm4workspacesettings=$"Defina o numero de desktops virtuais que deseja utilizar"
+tip_ccsm=$"Configurador para efeitos e comportamento do Compiz"
+tip_emeraldthememanager=$"Altere o tema das bordas de janelas"
+tip_bigcompiz=$"Utilize uma das configuracoes recomendadas pela distribuicao BigLinux"
+
+
+. /usr/share/bigcontrolcenter/default/theme.sh.htm
+
+cat << EOF
+	<script type="text/javascript" src="/usr/share/bigcontrolcenter/default/js/jquery-1.3.2.min.js"></script>
+
+
+	<script type="text/javascript">
+	\$(function() {
+		\$("#tabs").tabs({
+			event: 'mouseover'
+		})
+	});
+
+	if (document.images) {
+	buttonUp = new Image(); buttonUp.src = "/usr/share/bigcontrolcenter/default/images/category-background.png";
+	buttonDown = new Image(); buttonDown.src = "$(echo $HOME)/.bigcontrolcenter/category-background-over.png";
+	}
+
+	function turn_off(cell) {
+	if (document.images != null) {
+	cell.style.backgroundImage = "url('" + buttonUp.src + "')";
+	}
+	}
+
+	function turn_on(cell) {
+	if (document.images != null) {
+	cell.style.backgroundImage = "url('" + buttonDown.src + "')";
+	}
+	}
+
+  </script>
+
+
+EOF
+
+
+#title
+
+
+
+echo "<title>$title</title>"
+
+if [ "$p_start" = "yes" ]
+then
+    echo "<body onResize=\"NoResize();\" onload= parent.location='windowborder.sh.htm'>"
+else
+    echo "<body onResize=\"NoResize();\">"
+fi
+
+
+
+#header
+open_header
+echo "$title" '</font><br>' $"Passe o mouse sobre as opcoes e veja qual atende melhor suas necessidades."
+close_header
+
+#body
+#Confere se o resolv.conf esta desbloqueado
+
+if [ "$(cat "$HOME/.config/bigwin" | grep compiz)" != "" ]
+then
+  compiz_check="checked"
+  divcompiz=$"id=\"div-compiz\" style=\"display:yes\""
+  divkwin=$"id=\"div-kwin\" style=\"display:none\""
+  divxfwm=$"id=\"div-xfwm\" style=\"display:none\""
+fi
+
+if [ "$(cat "$HOME/.config/bigwin" | grep kwin)" != "" ]
+then
+  kwin_check="checked"
+  divcompiz=$"id=\"div-compiz\" style=\"display:none\""
+  divkwin=$"id=\"div-kwin\" style=\"display:yes\""
+  divxfwm=$"id=\"div-xfwm\" style=\"display:none\""
+fi
+
+if [ "$(cat "$HOME/.config/bigwin" | grep xfwm)" != "" ]
+then
+  xfwm_check="checked"
+  divcompiz=$"id=\"div-compiz\" style=\"display:none\""
+  divkwin=$"id=\"div-kwin\" style=\"display:none\""
+  divxfwm=$"id=\"div-xfwm\" style=\"display:yes\""
+fi
+
+
+if [ "$(ps -A -U $USER | grep kwin)" != "" ]
+then
+  ativo="Kwin"
+fi
+
+if [ "$(ps -A -U $USER | grep xfwm4)" != "" ]
+then
+  ativo="XFWM"
+fi
+
+if [ "$(ps -A -U $USER | grep compiz)" != "" ]
+then
+  ativo="Compiz"
+fi
+
+if [ "$ativo" = "" ]
+then
+  ativo=$"Desconhecido"
+fi
+
+  if [ $(glxinfo 2>/dev/null | grep GLX_EXT_texture_from_pixmap -c) -gt 2 ]; then
+    TFP=OK
+  elif [ $(LIBGL_ALWAYS_INDIRECT=1 glxinfo 2>/dev/null | grep GLX_EXT_texture_from_pixmap -c) -gt 2 ]; then
+    TFP=OK
+  else
+    TFP=$FAIL
+  fi
+
+
+if [ "$(cat "$HOME/.config/bigwin")" = "" ]
+then
+  auto_check="checked"
+
+    if [ "$(echo $KDEHOME | grep kdesktop-lite$)" != "" ]
+    then
+	autowin=xfwm
+	divcompiz=$"id=\"div-compiz\" style=\"display:none\""
+	divkwin=$"id=\"div-kwin\" style=\"display:none\""
+	divxfwm=$"id=\"div-xfwm\" style=\"display:yes\""
+    else
+
+	if [ "$(grep MemTotal: /proc/meminfo | awk '{print $2}')" -lt "700000" ]
+	then
+	    autowin=xfwm
+	    divcompiz=$"id=\"div-compiz\" style=\"display:none\""
+	    divkwin=$"id=\"div-kwin\" style=\"display:none\""
+	    divxfwm=$"id=\"div-xfwm\" style=\"display:yes\""
+	else
+	    if [ "$TFP" = "OK" ]
+	    then
+		autowin=compiz
+		divcompiz=$"id=\"div-compiz\" style=\"display:yes\""
+		divkwin=$"id=\"div-kwin\" style=\"display:none\""
+		divxfwm=$"id=\"div-xfwm\" style=\"display:none\""
+	    else
+		autowin=kwin
+		divcompiz=$"id=\"div-compiz\" style=\"display:none\""
+		divkwin=$"id=\"div-kwin\" style=\"display:yes\""
+		divxfwm=$"id=\"div-xfwm\" style=\"display:none\""
+	    fi
+	fi
+    fi
+fi
+
+
+
+#O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#Quando se utiliza aspas duplas o sistema executa algumas partes do codigo antes de passar a resposta, entre essas execucoes inclui a interpretacao de variaveis
+#Para incluir textos a serem exibidos ao usuario utilize aspas duplas com $ antes, para que funcione o sistema de tradução, exemplo: $"texto"
+#No exemplo abaixo o memso comando echo foi aberto e fechado diversas vezes de acordo com a necessidade, aspas simples, duplas e duplas com traducao.
+echo '<center><table width=95%><tr><td>'
+#echo $"Opte por um dos gerenciadores de janela e configure-o da forma que preferir."
+#echo "<br>"
+#echo $"Passe o mouse sobre as alternativas a seguir e descubra as vantagens de cada uma:"
+
+echo "
+<form action=submit.sh.htm method=get><p>
+<center><table width=85%><tr><td align=right>
+" $"Ativo no momento:" "</td><td><b>$ativo</b></td></tr>
+<tr><td align=right>" $"Gerenciador de janelas:""
+</td><td>
+<input type=radio name=escolha id=1 value=automatico  onClick= location.replace('windowborder.sh.htm?padrao=auto') $mouseover_open $tip_automatico $mouseover_close $auto_check><label for=1 $mouseover_open $tip_automatico $mouseover_close>" $"Automatico""</label>
+</td><td>
+<input type=radio name=escolha id=2 value=compiz onClick= location.replace('windowborder.sh.htm?padrao=compiz') $mouseover_open $tip_compiz $mouseover_close $compiz_check><label for=2 $mouseover_open $tip_compiz $mouseover_close>" $"Compiz""</label>
+</td><td>
+<input type=radio name=escolha id=5 value=kwin onClick=location.replace('windowborder.sh.htm?padrao=kwin') $mouseover_open $tip_kwin $mouseover_close $kwin_check><label for=5 $mouseover_open $tip_kwin $mouseover_close>" $"Kwin""</label>
+</td><td>
+<input type=radio name=escolha id=3 value=xfwm onClick= location.replace('windowborder.sh.htm?padrao=xfwm') $mouseover_open $tip_xfwm $mouseover_close $xfwm_check><label for=3 $mouseover_open $tip_xfwm $mouseover_close>" $"XFWM""</label>
+</td></tr></table></center>"
+
+    echo "<div $divcompiz><center><hr><table><tr><td>"
+    echo '<b>' $"Configuracao do Compiz" '</b></table></center>'
+
+
+echo "<TABLE align=center><tr><td>"
+    echo "<a href=\"/usr/share/bigbashview/run.run?ccsm-legacy\"" "$mouseover_open" $tip_ccsm "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=ccsm.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Configuracoes gerais" "</font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?emerald-theme-manager-legacy\"" "$mouseover_open" $tip_emeraldthememanager "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=emeraldthememanager.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Tema das bordas de janelas" " </font></td></tr></table></a>"
+echo '</td></tr><tr><td>'
+    echo "<a href=\"/usr/share/bigcontrolcenter/categories/themes/windowborder/compizconfig.run\"" "$mouseover_open" $tip_bigcompiz "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=bigcompiz.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Selecionar configuracao padronizada do BigLinux" " </font></td></tr></table></a>"
+
+echo '</td><td></table></div>'
+
+
+
+    echo "<div $divkwin><center><hr><table><tr><td>"
+    echo '<b>' $"Configuracao do Kwin" '</b></table></center>'
+
+echo "<TABLE align=center><tr><td>"
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 kwindecoration\"" "$mouseover_open" $tip_kwindecoration "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=kwindecoration.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Tema das bordas de janelas" "</font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 kwincompositing\"" "$mouseover_open" $tip_kwincompositing "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=kwincompositing.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Efeitos para o desktop" " </font></td></tr></table></a>"
+echo '</td></tr><tr><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 kwinoptions\"" "$mouseover_open" $tip_kwinoptions "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=kwinoptions.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Comportamento das janelas" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 kwinscreenedges\"" "$mouseover_open" $tip_kwinscreenedges "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=kwinscreenedges.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Contornos da tela" " </font></td></tr></table></a>"
+echo '</td></tr><tr><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 kwintabbox\"" "$mouseover_open" $tip_kwintabbox "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=kwintabbox.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Mudanca de tarefas" " </font></td></tr></table></a>"
+
+echo '</td><td></table>'
+
+echo '</div>'
+
+    echo "<div $divxfwm><center><hr><table><tr><td>"
+    echo '<b>' $"Configuracao do XFWM" '</b></table></center>'
+
+echo "<TABLE align=center><tr><td>"
+    echo "<a href=\"/usr/share/bigbashview/run.run?xfwm4-settings\"" "$mouseover_open" $tip_xfwm4settings "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=xfwm4settings.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Temas das bordas de janelas e configuracoes gerais" "</font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?xfwm4-tweaks-settings\"" "$mouseover_open" $tip_xfwm4tweakssettings "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=xfwm4tweakssettings.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Configuracoes especiais e efeitos no desktop" " </font></td></tr></table></a>"
+echo '</td></tr><tr><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?xfwm4-workspace-settings\"" "$mouseover_open" $tip_xfwm4workspacesettings "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=xfwm4workspacesettings.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Quantidade de areas de trabalho" " </font></td></tr></table></a>"
+
+echo '</td><td></table>'
+
+
+echo "</div><div id=\"rodape\"><button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

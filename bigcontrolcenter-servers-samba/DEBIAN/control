@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-servers-samba
+Version: 1.0.0-1kaiana6
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: bigsamba, bigcontrolcenter (>= 1.0.0-1kaiana16), dolphin, kdenetwork-filesharing, samba, samba-common-bin, system-config-samba
+Section: admin
+Priority: optional
+Description: Configure Samba
+

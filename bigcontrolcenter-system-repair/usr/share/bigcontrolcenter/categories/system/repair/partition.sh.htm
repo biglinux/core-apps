@@ -1,0 +1,88 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-repair
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Limpar o sistema"
+apply=$"Aplicar"
+close=$"Sair"
+tip_kernel=$"1 - Ao atualizar o sistema podem ficar instaladas diferentes versoes de kernel. Essas versoes sao apresentadas para escolha logo apos ligar o computador.<br><br>2 - No momento o sistema esta utilizando o Kernel $(uname -r). Por questoes de seguranca o mesmo nao esta disponivel na lista para remocao.<br><br>3 - Manter duas versoes de Kernel instaladas pode trazer um pouco mais de confianca no sistema, pois se um for danificado tera outro disponivel, porem possuir uma quantidade maior costuma somente utilizar espaco em excesso."
+tip_apt=$"Arquivos de instalacao e atualizacao que ja foram utilizados e podem ser removidos com seguranca."
+tip_tmp=$"Arquivos temporarios. Nao e recomendado apaga-los, mas se estiver utilizando espaco em excesso pode ser conveniente."
+tip_cache=$"Pasta com arquivos de Cache de diversos programas. Esvaziar essa pasta pode liberar um bom espaco em disco e tambem melhorar o desempenho de alguns programas."
+tip_thumbnail=$"Pasta com miniaturas geradas pelo gerenciador de arquivos."
+tip_firefox=$"Remove somente a cache, ou seja, mantem historico, favoritos e todas as configuracoes do Firefox."
+tip_trash=$"Esvazia a lixeira de todos usuarios."
+tip_nepomuk=$"Remove a cache, porem e recomendado remover apenas se nao for utilizar mais o Nepomuk/Strigi. Caso contrario sera necessario bastante tempo de processamento para gerar novamente."
+
+#title
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Libere espaco no HD."
+close_header
+
+
+#O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#Quando se utiliza aspas duplas o sistema executa algumas partes do codigo antes de passar a resposta, entre essas execucoes inclui a interpretacao de variaveis
+#Para incluir textos a serem exibidos ao usuario utilize aspas duplas com $ antes, para que funcione o sistema de tradução, exemplo: $"texto"
+#No exemplo abaixo o memso comando echo foi aberto e fechado diversas vezes de acordo com a necessidade, aspas simples, duplas e duplas com traducao.
+echo '<center><table width=95%><tr><td>'
+echo '<form action=limpar_root_submit.sh.htm method=get>'
+
+echo "<table width=95%><tr><td align=center>" "<b>" $"Remover" "</td><td align=center>" "<b>" $"Espaco utilizado" "</td><tr>"
+
+  for i in $(dpkg --get-selections | grep linux-image | grep "[0-9]" | grep -v "deinstall" | sed "s/linux-image-$(uname -r)//g;s/\t.*//g;$,/^$/d")
+  do
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=$i NAME=kernel VALUE=\"$i\" $google_check  $mouseover_open $tip_google $mouseover_close><label for=$i $mouseover_open $tip_kernel $mouseover_close>" "$(echo "$i" | sed 's/linux-image-/Kernel /g')" "</td><td align=right>" "Em media 150M"'</label></td></tr>'
+
+  done
+
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=apt NAME=apt VALUE=yes $apt_check  $mouseover_open $tip_apt $mouseover_close><label for=apt $mouseover_open $tip_apt $mouseover_close>" $"Pasta /var/cache/apt/archives" "</td><td align=right>" "$(du -ch /var/cache/apt/archives/ | sed '$!d;s/\t.*//g')"'</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=tmp NAME=tmp VALUE=yes $tmp_check  $mouseover_open $tip_tmp $mouseover_close><label for=tmp $mouseover_open $tip_tmp $mouseover_close>" $"Pasta /tmp" "</td><td align=right>" "$(du -ch /tmp | sed '$!d;s/\t.*//g')"'</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=cache NAME=cache VALUE=yes $cache_check  $mouseover_open $tip_cache $mouseover_close><label for=cache $mouseover_open $tip_cache $mouseover_close>" $"Pasta .cache de todos os usuarios" "</td><td align=right>" "$(du -ch --block-size=M /home/*/.cache /root/.cache | sed '$!d;s/\t.*//g' 2> /dev/null)"'</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=thumbnail NAME=thumbnail VALUE=yes $thumbnail_check  $mouseover_open $tip_thumbnail $mouseover_close><label for=thumbnail $mouseover_open $tip_thumbnail $mouseover_close>" $"Pasta .thumbnails de todos os usuarios" "</td><td align=right>" "$(du -ch --block-size=M /home/*/.thumbnails /root/.thumbnails | sed '$!d;s/\t.*//g' 2> /dev/null)"'</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=nepomuk NAME=nepomuk VALUE=yes $nepomuk_check  $mouseover_open $tip_nepomuk $mouseover_close><label for=nepomuk $mouseover_open $tip_nepomuk $mouseover_close>" $"Cache do Nepomuk/Strigi de todos os usuarios" "</td><td align=right>" "$(du -ch --block-size=M /home/*/.kdesktop/share/apps/nepomuk/ /home/*/.kde/share/apps/nepomuk/ /root/.kde/share/apps/nepomuk/ /root/.kdesktop/share/apps/nepomuk/ | sed '$!d;s/\t.*//g' 2> /dev/null)"'</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=firefox NAME=firefox VALUE=yes $firefox_check  $mouseover_open $tip_firefox $mouseover_close><label for=firefox $mouseover_open $tip_firefox $mouseover_close>" $"Cache do Firefox de todos os usuarios" "</td><td align=right>" "$(du -ch --block-size=M /home/*/.mozilla/firefox/*default/Cache /root/.mozilla/firefox/*default/Cache | sed '$!d;s/\t.*//g' 2> /dev/null)"'</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=trash NAME=trash VALUE=yes $trash_check  $mouseover_open $tip_trash $mouseover_close><label for=trash $mouseover_open $tip_trash $mouseover_close>" $"Arquivos da lixeira de todos os usuarios" "</td><td align=right>" "$(du -ch --block-size=M /home/*/.local/share/Trash/files /root/.local/share/Trash/files | sed '$!d;s/\t.*//g' 2> /dev/null)"'</label></td></tr>'
+
+
+    echo "</table>"
+
+
+
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

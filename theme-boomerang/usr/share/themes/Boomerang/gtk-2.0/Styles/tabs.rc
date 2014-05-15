@@ -1,0 +1,87 @@
+style "tabs" {
+    xthickness    		        	= 3
+	ythickness    		        	= 2
+
+	GtkNotebook::tab-overlap 		= 4
+	GtkNotebook::tab-curvature		= 3
+	
+	engine "pixmap" 
+	{
+		image 
+		{
+			function		= EXTENSION
+			recolorable		= TRUE
+			state			= ACTIVE
+			file			= "Tabs/horizontal-tab-bottom.png"
+			border			= { 8, 8, 6, 5}
+			stretch			= TRUE
+			gap_side		= TOP
+		}
+		image 
+		{
+			function		= EXTENSION
+			recolorable		= TRUE
+			state			= ACTIVE
+			file			= "Tabs/horizontal-tab.png"
+			border			= { 8, 8, 6, 5}
+			stretch			= TRUE
+			gap_side		= BOTTOM
+		}
+		image 
+		{
+			function		= EXTENSION
+			recolorable		= TRUE
+			state			= ACTIVE
+			file			= "Tabs/vertical-tab-left.png"
+			border			= { 6, 6, 9, 7}
+			stretch			= TRUE
+			gap_side		= RIGHT
+		}
+		image 
+		{
+			function		= EXTENSION
+			recolorable		= TRUE
+			state			= ACTIVE
+			file			= "Tabs/vertical-tab-right.png"
+			border			= { 6, 6, 9, 7}
+			stretch			= TRUE
+			gap_side		= LEFT
+		}	
+		image 
+		{
+			function		= EXTENSION
+			recolorable		= TRUE
+			file			= "Tabs/tab-active-top.png"
+			border			= { 14, 14, 15, 11}
+			stretch			= TRUE
+			gap_side		= BOTTOM
+		}
+		image 
+		{
+			function		= EXTENSION
+			recolorable		= TRUE
+			file			= "Tabs/tab-active-bottom.png"
+			border			= { 14, 14, 13, 13}
+			stretch			= TRUE
+			gap_side		= TOP
+		}
+		image 
+		{
+			function		= EXTENSION
+			recolorable		= TRUE
+			file			= "Tabs/tab-active-left.png"
+			border			= {  21, 14, 14, 12}
+			stretch			= TRUE
+			gap_side		= RIGHT
+		}
+		image 
+		{
+			function		= EXTENSION
+			recolorable		= TRUE
+			file			= "Tabs/tab-active-right.png"
+			border			= {  14, 21, 14, 12}
+			stretch			= TRUE
+			gap_side		= LEFT
+		}
+	}
+}

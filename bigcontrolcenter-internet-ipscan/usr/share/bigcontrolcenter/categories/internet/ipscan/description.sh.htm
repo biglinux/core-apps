@@ -1,0 +1,36 @@
+#!/bin/bash
+
+#Control Center for Kaiana
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation / Tradução
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+
+# Translation file - Change name / Escolha o nome do arquivo de tradução
+export TEXTDOMAIN=bigcontrolcenter-internet-ipscan
+
+# Change application name / Escolha o nome do aplicativo
+name_application=$"Procurar dispositivos/portas na rede"
+
+# Change description / Escolha a descrição
+description_application=$"Encontre dispositivos conectados na rede local, portas abertas ou ainda em IPs especificados manualmente."
+
+# Change file for execute / Escolha o arquivo a ser executado
+file_execute="/usr/share/bigcontrolcenter/categories/internet/ipscan/ip_start.sh.htm"
+
+# Change icon / Escolha o ícone desejado
+icon_application="/usr/share/bigcontrolcenter/categories/internet/ipscan/icon.png"
+
+# Window size / Escolha o tamanho da janela
+
+window_size="-s 800x600"
+
+# Don't change / Não altere essa linha
+exec_application="/usr/share/bigbashview/run.run?bigbashview $file_execute -i $icon_application $window_size"
+
+

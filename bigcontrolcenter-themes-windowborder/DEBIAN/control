@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-themes-windowborder
+Version: 1.1.1-1kaiana9
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: kde-window-manager, bigcontrolcenter, xfwm4-themes, compiz-legacy, mesa-utils
+Section: admin
+Priority: optional
+Description: Configure window borders for Kwin, Compiz and XFWM
+

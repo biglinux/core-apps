@@ -1,0 +1,11 @@
+Package: kaiana-wallpaper-optional
+Version: 1.0.0-0kaiana0
+Architecture: all
+Maintainer: Paulo Giovanni Pereira <paulusiohannes@gmail.com>
+Installed-Size: 18.676
+Section: admin
+Priority: optional
+Homepage: http://www.uniaolivre.com
+Description: Optionals Wallpapers for Kaiana.
+ This package constain a personalized wallpaper theme
+ for Kaiana.

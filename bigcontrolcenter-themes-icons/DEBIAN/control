@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-themes-icons
+Version: 1.0.1-1kaiana4
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: bigbashview, kdebase-runtime, bigcontrolcenter
+Section: admin
+Priority: optional
+Description: Configure icons in your system
+

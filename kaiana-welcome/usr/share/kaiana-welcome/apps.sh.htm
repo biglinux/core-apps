@@ -1,0 +1,75 @@
+#!/bin/bash
+source /usr/share/kaiana-welcome/translation
+#Translation
+cat << EOF
+<html>
+<!--
+	Miniport 2.5 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<!-- #Insira o conteúdo entre os 2 EOF sem se preocupar com aspas -->
+
+	<head>
+		<title>$title</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/style.css" />
+		
+	</head>
+<body>
+EOF
+cat << EOF
+<!-- Nav -->
+	<nav id="nav">
+		<ul class="container">
+			<li><a href="index.sh.htm">$menuindex</a></li>
+			<li><a href="news.sh.htm">$menunews</a></li>
+			<li><a href="conf.sh.htm">$menuconfigure</a></li>
+			<li><a href="apps.sh.htm">$menuapps</a></li>
+			<li><a href="community.sh.htm">$menucontribute</a></li>
+			<li><a href="about.sh.htm">$menuabout</a></li>
+		</ul>
+	</nav>
+
+<!-- Home -->
+	<div class="wrapper">			
+		<div id="container">	
+		<p class="titlePage">$cabecalho03 $(lsb_release -d | cut -d":" -f2)</p>
+		<br/>
+		<div id='cssmenu'>
+		    <ul>
+		     <li><a href='apps.sh.htm'><span>$menuappsoffice</span></a></li>
+			 <li><a href='apps-graphics.sh.htm'><span>$menuappsgraphics</span></a></li>
+			 <li><a href='apps-multimedia.sh.htm'><span>$menuappsmultimedia</span></a></li>
+			 <li><a href='apps-utilitarios.sh.htm'><span>$menuappsutility</span></a></li>
+			 <li><a href='apps-gaming.sh.htm'><span>$menuappsgaming</span></a></li>
+		    </ul>
+		    <br/>
+		</div>
+		<ul id="item-list">
+			<li>
+				<p><a href=./apps/install-calibre.run><img src="images/calibre.png" class="alignleft"/></a>
+				<span><a class="title" href=./apps/install-calibre.run>Calibre </a></span><br/>
+				You can convert and manage your e-Book with Calibre.</p>
+			</li>
+			<li>
+				<p><a href=./apps/install-dia.run><img src="images/dia.png" class="alignleft"/></a>
+				<span><a class="title" href=./apps/install-dia.run>Dia </a></span><br/>
+				Easy to create Diagram documents with Dia.</p>
+			</li>
+			<li>
+				<p><a href=./apps/install-gnucash.run><img src="images/gnucash.png" class="alignleft"/></a>
+				<span><a class="title" href=./apps/install-gnucash.run>GNUCash </a></span><br/>
+				Manage and tracks your finances with GNUCash.</p>
+			</li>
+		</ul>
+	</div> 
+	<div id="rodape">
+	<a href="community.sh.htm" class="button">$next</a>
+	</div>
+</body>
+EOF
+</html>

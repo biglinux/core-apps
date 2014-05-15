@@ -1,0 +1,25 @@
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+killall bigwin
+rm -f $HOME/.config/bigwincheck1
+
+while true
+do
+
+if [ "$2" != "" ]
+then
+    if [ "$(ps -A | grep $2)" != "" ]
+    then
+	bigwin
+    else
+	exit 0
+    fi
+else
+    bigwin
+fi
+sleep 1
+done

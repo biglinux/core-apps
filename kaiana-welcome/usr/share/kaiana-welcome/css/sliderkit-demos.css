@@ -1,0 +1,31 @@
+/*---------------------------------
+ *	News slider > Vertical
+ *---------------------------------*/			
+.newslider-vertical{width:820px;height:265px;}
+
+/* Nav */
+.newslider-vertical .sliderkit-nav{width:200px;height:295px;}
+.newslider-vertical .sliderkit-nav-clip li{height:30px;width:190px;margin-bottom:5px;}
+.newslider-vertical .sliderkit-nav-clip li.sliderkit-selected{background:transparent url("images/newslider-arrow.png") no-repeat right center;}
+.newslider-vertical .sliderkit-nav-clip li a{height:25px;width:180px;padding: 5px 0 0 5px;text-align:left;font-size:0.9em;color:#fff;text-decoration:none;background-color:#005C9D;}
+.newslider-vertical .sliderkit-nav-clip li a:hover{background:#E2266E;}
+.newslider-vertical .sliderkit-nav-clip li a:focus{color:#fff;}
+
+/* Panel */
+.newslider-vertical .sliderkit-panels{position:absolute;left:200px;width:780px;height:258px;overflow:hidden;border:1px solid #ccc;}
+.newslider-vertical .sliderkit-panel{left:0;top:0;width:600px;height:238px;padding:10px;background:url(images/bg.png) #e7e7e7;}
+
+/* News block */
+.newslider-vertical .sliderkit-news h3,
+.newslider-vertical .sliderkit-news h3 a{color:#039;font-weight:bold;}
+.newslider-vertical .sliderkit-news h3{font-size:1.2em;margin:0 0 15px;}
+.newslider-vertical .sliderkit-news img{float:right;width:130px;height:auto;margin:0 0 0 10px;overflow:hidden;}
+.newslider-vertical .sliderkit-news p
+{ 
+font-family:Muli, "Droid Sans", Sans;
+font-size:.95em;
+line-height:1.4em;
+text-align:justify;
+text-justify:newspaper;
+}
+.newslider-vertical .sliderkit-news-readmore{position:absolute;right:10px;bottom:10px;}

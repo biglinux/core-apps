@@ -1,0 +1,9 @@
+Package: biglinux-xfwm-theme
+Version: 1.0.0-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Priority: optional
+Description: shiki-colors-xfwm-theme with simple moficiation for BigLinux
+

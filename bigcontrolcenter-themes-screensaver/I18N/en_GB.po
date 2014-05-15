@@ -1,0 +1,25 @@
+# English (United Kingdom) translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-13 04:51-0300\n"
+"PO-Revision-Date: 2010-09-17 07:30+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: English (United Kingdom) <en_GB@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-18 04:51+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Protetor de tela"
+msgstr "Screensaver"
+
+msgid "Escolha o tempo de espera e o tema do protetor de tela"
+msgstr "Choose the waiting time and theme of the screensaver"

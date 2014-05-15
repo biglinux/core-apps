@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-themes-screensaver
+Version: 1.0.1-1kaiana8
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: kdebase-workspace-bin | kde-workspace-bin, bigcontrolcenter, bigcontrolcenter-hardware-energy
+Section: admin
+Priority: optional
+Description: Configure screensaver
+

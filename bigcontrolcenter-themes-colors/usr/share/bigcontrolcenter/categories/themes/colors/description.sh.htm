@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-themes-colors
+
+name_application=$"Cores do sistema"
+description_application=$"Escolha cores para todo o sistema (bordas de janela, fontes, fundo...)"
+exec_application="/usr/share/bigbashview/run.run?kcmshell4 colors"
+icon_application="/usr/share/bigcontrolcenter/categories/themes/colors/icon.png"

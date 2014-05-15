@@ -1,0 +1,88 @@
+#!/bin/bash
+
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+##############
+#####Translation
+##############
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-others-bigconvert
+
+if [ "$(cat ~/.bigconvert/audioformat)" = "aac" ]
+then
+echo "<option value='6'>" $"6 (Surround 5.1)" "</option>"
+echo "<option value='5'>" $"5 (Surround 5.0)" "</option>"
+echo "<option value='4'>" $"4 (Surround 4.0)" "</option>"
+echo "<option value='2'>" $"2 (Stereo)" "</option>"
+echo "<option value='1'>" $"1 (Mono)" "</option>"
+echo "<option value='0'>" $"0 (Mudo)" "</option>"
+fi
+
+if [ "$(cat ~/.bigconvert/audioformat)" = "aacmp4" ]
+then
+echo "<option value='6'>" $"6 (Surround 5.1)" "</option>"
+echo "<option value='5'>" $"5 (Surround 5.0)" "</option>"
+echo "<option value='4'>" $"4 (Surround 4.0)" "</option>"
+echo "<option value='2'>" $"2 (Stereo)" "</option>"
+echo "<option value='1'>" $"1 (Mono)" "</option>"
+echo "<option value='0'>" $"0 (Mudo)" "</option>"
+fi
+
+if [ "$(cat ~/.bigconvert/audioformat)" = "aacaudio" ]
+then
+echo "<option value='6'>" $"6 (Surround 5.1)" "</option>"
+echo "<option value='5'>" $"5 (Surround 5.0)" "</option>"
+echo "<option value='4'>" $"4 (Surround 4.0)" "</option>"
+echo "<option value='2'>" $"2 (Stereo)" "</option>"
+echo "<option value='1'>" $"1 (Mono)" "</option>"
+echo "<option value='0'>" $"0 (Mudo)" "</option>"
+fi
+
+
+if [ "$(cat ~/.bigconvert/audioformat)" = "aaccelularvbr" ]
+then
+echo "<option value='6'>" $"6 (Surround 5.1)" "</option>"
+echo "<option value='5'>" $"5 (Surround 5.0)" "</option>"
+echo "<option value='4'>" $"4 (Surround 4.0)" "</option>"
+echo "<option value='2'>" $"2 (Stereo)" "</option>"
+echo "<option value='1'>" $"1 (Mono)" "</option>"
+echo "<option value='0'>" $"0 (Mudo)" "</option>"
+fi
+
+
+if [ "$(cat ~/.bigconvert/audioformat)" = "3gp" ]
+then
+echo "<option value='6'>" $"6 (Surround 5.1)" "</option>"
+echo "<option value='5'>" $"5 (Surround 5.0)" "</option>"
+echo "<option value='4'>" $"4 (Surround 4.0)" "</option>"
+echo "<option value='2'>" $"2 (Stereo)" "</option>"
+echo "<option value='1'>" $"1 (Mono)" "</option>"
+echo "<option value='0'>" $"0 (Mudo)" "</option>"
+fi
+
+
+if [ "$(cat ~/.bigconvert/audioformat)" = "mp4mpeg" ]
+then
+echo "<option value='2'>" $"2 (Stereo)" "</option>"
+echo "<option value='1'>" $"1 (Mono)" "</option>"
+echo "<option value='0'>" $"0 (Mudo)" "</option>"
+fi
+
+
+if [ "$(cat ~/.bigconvert/audioformat)" = "mp3" ]
+then
+echo "<option value='2'>" $"2 (Stereo)" "</option>"
+echo "<option value='1'>" $"1 (Mono)" "</option>"
+echo "<option value='0'>" $"0 (Mudo)" "</option>"
+fi
+
+if [ "$(cat ~/.bigconvert/audioformat)" = "flvaudio" ]
+then
+echo "<option value='2'>" $"2 (Stereo)" "</option>"
+echo "<option value='1'>" $"1 (Mono)" "</option>"
+echo "<option value='0'>" $"0 (Mudo)" "</option>"
+fi

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-hardware-hdd
+
+name_application=$"Particionar, formatar e analisar discos"
+description_application=$"Gerencie HDs, pen drives e outras midias"
+exec_application="/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/hardware/hdd/hdd.sh.htm -i /usr/share/bigcontrolcenter/categories/hardware/hdd/icon.png"
+icon_application="/usr/share/bigcontrolcenter/categories/hardware/hdd/icon.png"

@@ -1,0 +1,16 @@
+# ==============================================
+#               STYLE FOR BANSHEE
+# ==============================================
+
+style "banshee_toolbar_handle" = "toolbar"
+{
+}
+
+style "banshee_toolbar_handle_2" = "banshee_toolbar_handle"
+{
+}
+
+
+widget_class "__gtksharp_1*Toolbar*Handle*"          style "banshee_toolbar_handle"
+widget       "__gtksharp_1*SeekSlider*Handle*"       style "banshee_toolbar_handle_2"
+

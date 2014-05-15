@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-themes-styleqt
+
+name_application=$"Estilo dos aplicativos QT"
+description_application=$"Defina como serao exibidas as janelas do sistema (Botoes, menus, barras de rolagem...)"
+exec_application="/usr/share/bigbashview/run.run?kcmshell4 style"
+icon_application="/usr/share/bigcontrolcenter/categories/themes/styleqt/icon.png"

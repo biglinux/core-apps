@@ -1,0 +1,94 @@
+# English (United Kingdom) translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-13 04:50-0300\n"
+"PO-Revision-Date: 2010-08-22 05:32+0000\n"
+"Last-Translator: Sergio <ikisham@gmail.com>\n"
+"Language-Team: English (United Kingdom) <en_GB@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-08-23 03:57+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Impressora"
+msgstr "Printer"
+
+msgid "Aplicar"
+msgstr "Apply"
+
+msgid "Sair"
+msgstr "Quit"
+
+msgid ""
+"Configurador recomendado para a maioria dos casos.<br>Adicionar, remover, "
+"calibrar, nivel de tinta..."
+msgstr ""
+"Recommended configuration tool in most cases.<br>Add, remove, calibrate, ink "
+"levels..."
+
+msgid "Configurador oficial do sistema de impressao CUPS"
+msgstr "Official configuration tool for the CUPS printing system"
+
+msgid "Configurador nao oficial para impressoras EPSON"
+msgstr "Unofficial configuration tool for EPSON printers"
+
+msgid "Configurador oficial para impressoras HP"
+msgstr "Official configuration tool for HP printers"
+
+msgid ""
+"Para conferir os modelos de impressora suportados visite o site:<br>http://"
+"libinklevel.sourceforge.net/#supported<br><br>* Em muitos casos outro "
+"monitor de nivel de tinta pode ser acessado no Adicionar ou Configurar "
+"impressoras"
+msgstr ""
+"To check the supported printer models, visit <br>http://libinklevel."
+"sourceforge.net/#supported<br><br>* In many cases, another ink level monitor "
+"may be accessed through Add or Configure printers"
+
+msgid "Confira o status da impressao"
+msgstr "Check the print status"
+
+msgid "Configuracoes para impressoras."
+msgstr "Printer configurations"
+
+msgid "Adicionar ou configurar impressoras"
+msgstr "Add or configure printers"
+
+msgid "Adicionar ou configurar impressoras (Avancado)"
+msgstr "Add or configure printers (advanced)"
+
+msgid "Configurador especial para impressoras Epson"
+msgstr "Special configuration tool for EPSON printers"
+
+msgid "Configurador especial para impressoras HP"
+msgstr "Special configuration tool for HP printers"
+
+msgid "Monitor de nivel de tinta"
+msgstr "Ink level monitor"
+
+msgid "Fila de impressao"
+msgstr "Print queue"
+
+msgid ""
+"O monitor de fila de impressao deve aparecer\n"
+"automaticamente ao utilizar a impressora?"
+msgstr ""
+"Should the print queue monitor be automatically\n"
+"shown when using the printer?"
+
+msgid ""
+"Para visualizar o nivel de tinta clique no icone do inkblot na area de "
+"notificacao."
+msgstr ""
+"Click on inkblot's icon in the notification area to view the ink level."
+
+msgid "Adicionar, configurar, calibrar, niveis de tinta..."
+msgstr "Add, configure, calibrate, ink levels..."

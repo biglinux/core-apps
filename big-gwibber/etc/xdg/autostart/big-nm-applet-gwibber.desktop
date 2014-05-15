@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Gwibber
+X-GNOME-FullName=Gwibber Social Networking
+GenericName=Social Networking
+Comment=Update your microblog and view others' statuses
+Icon=gwibber
+Exec=ps -A -U $USER | grep \ gwibber || grep autostart ~/.gconf/apps/gwibber/preferences/%gconf.xml | grep true && gwibber-service
+NoDisplay=true

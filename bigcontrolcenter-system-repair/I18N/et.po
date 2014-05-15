@@ -1,0 +1,638 @@
+# Estonian translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-14 00:17-0300\n"
+"PO-Revision-Date: 2010-09-17 07:36+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: Estonian <et@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-18 04:51+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Restaurar o sistema"
+msgstr "Süsteemitaaste"
+
+msgid "Aplicar"
+msgstr "Rakenda"
+
+msgid "Sair"
+msgstr "Välju"
+
+msgid "Restaure sistema instalado em outra particao."
+msgstr "Taasta paigaldatud teises partitsioonis."
+
+msgid ""
+"Esse painel ira auxiliar a fazer reparos em sistemas Linux instalados em "
+"outras particoes."
+msgstr "See paneel aitab remontida paigaldatud Linuxit teises partitsoonis"
+
+msgid "Nao foi detectada uma instalacao Linux na particao: $p_part"
+msgstr "Ei tuvastatud Linuxi paigaldaus partitsiooni: $ p_part"
+
+msgid "Selecione a particao onde esta instalado o sistema a ser reparado:"
+msgstr "Vali partitsioon, kuhu süsteem remonditakse:"
+
+msgid ""
+"* Para efetuar a configuracao dessa particao qualquer programa que estiver "
+"acessando-a perdera o acesso"
+msgstr ""
+"* See partitsiooni seade rakendusel millel võib olla juurdepääs võib kaotada "
+" ligipääsu"
+
+msgid "Limpar o sistema"
+msgstr "Puhasta süsteem"
+
+msgid "Voltar para tela de configuracao"
+msgstr "Tagasi ekraani asetusesele"
+
+msgid "Para uma conexao mais rapida e estavel."
+msgstr "Sest kiirem ühendus on stabiilsem."
+
+msgid "Configuracao aplicada."
+msgstr "Konfiguratsioon rakendatud."
+
+msgid "Reparar ou limpar o sistema"
+msgstr "Remondi või puhta süsteem"
+
+msgid ""
+"Restaure configuracoes importantes como: video, impressoras, audio, boot..."
+msgstr "Taastada olulised seaded: video, printerid, heli, alglaadimine..."
+
+msgid ""
+"Restaure um sistema Linux instalado em outra particao, recupere o sistema de "
+"boot, sistema de arquivos, pacotes..."
+msgstr ""
+"Taastada Linuxi süsteemi mis on paigaldatud teise partitsioonile, taastada "
+"alglaadimise süsteemid, failisüsteemid, pakendid..."
+
+msgid ""
+"Restaure a configuracao de programas do usuario $USER. Por exemplo: Firefox, "
+"Amsn, Smplayer, Amarok..."
+msgstr ""
+"Taastada kasutaja $ USER rakenduste seaded. Näiteks: Firefox, aMSN, SMPlayer "
+"Amarok ...\r\n"
+"Kuulake\r\n"
+"Foneetiliselt loetult"
+
+msgid "Libere espaco no HD removendo arquivos temporarios do usuario $USER"
+msgstr "Vabastage kõvakettaruumi, kõrvaldades kasutaja $ USER ajutisi faile"
+
+msgid ""
+"Libere espaco no HD removendo arquivos temporarios de todos os usuarios do "
+"sistema ou instalacoes de kernel que nao estao em uso"
+msgstr ""
+"Vabastage kõvakettaruumi, kõrvaldades ajutised failid kõigi süsteemi "
+"kasutajatelt või kernel paigaldustes, mis ei ole kasutuses"
+
+msgid "Correcoes para o sistema com a facilidade de um clique."
+msgstr "Süsteemi kohandamine lihtsalt ühe klikiga."
+
+msgid "Restaurar configuracoes do sistema"
+msgstr "Taasta süsteemi seaded"
+
+msgid "Restaurar sistema instalado em outra particao"
+msgstr "Taastada süsteem mis on paigaldatud teise partitsiooni"
+
+msgid "Restaurar configuracao de programas"
+msgstr "Taastada programmi konfiguratsioonid"
+
+msgid "Limpar arquivos temporarios do usuario"
+msgstr "Kustuta kasutaja ajutised failid"
+
+msgid "Limpar todo o sistema"
+msgstr "Puhasta kogu süsteem"
+
+msgid "Restaurar programas"
+msgstr "Taasta programmid"
+
+msgid ""
+"Restaura para a configuracao padrao da distribuicao quando "
+"possivel.<br><br>Caso a distribuicao nao efetue uma configuracao especial "
+"sera restaurado para o padrao do programa."
+msgstr ""
+"Taastab distributsiooni vaikimisi konfiguratsiooi kui võimalik. <br> Kui "
+"distributsioon ei ole erikonfiguratsiooniga, ning seejärel rakenduse enda "
+"vaikeväärtused on taastatud."
+
+msgid "Restaura para a configuracao padrao do programa."
+msgstr "Taastab vaikimisi programmi konfiguratsiooni."
+
+msgid "Nao serao feitas modificacoes nesse programa."
+msgstr "Sellele rakendusele pole muudatusi tehtud."
+
+msgid "<hr><br>Serao modificados arquivos e pastas a seguir:<br><br>"
+msgstr "<hr><br>Järgnevad failisi ja kaustasi muudeti:<br><br>"
+
+msgid "Restaure a configuracao padrao dos programas."
+msgstr "Taasta rakenduste vaikeseaded."
+
+msgid ""
+"Atencao, ao restaurar um programa serao perdidas as configuracoes "
+"personalizadas e historicos para que seja restaurada a configuracao padrao."
+msgstr ""
+"Tähelepanu, taastades rakendust, isiklikud seaded ja selle ajalugu kaob ning "
+"asendatakse vaikimisi seadetega."
+
+msgid "Programa"
+msgstr "Programm"
+
+msgid "Opcao"
+msgstr "Valik"
+
+msgid "Limpar pasta do usuario $USER"
+msgstr "Puhasta kasutaja $USER isiklik kaust"
+
+msgid ""
+"Pasta com arquivos de Cache de diversos programas. Esvaziar essa pasta pode "
+"liberar um bom espaco em disco e tambem melhorar o desempenho de alguns "
+"programas."
+msgstr ""
+"Kaust vahemälu failidega mitmele rakendussele. Selle kausta tühjendamine "
+"võib anda vabat ruumi kettale ja ka parandada mõningate rakenduste trööd."
+
+msgid "Pasta com miniaturas geradas pelo gerenciador de arquivos."
+msgstr "Failihalduri poolt tekitaud pisipiltide kaust."
+
+msgid ""
+"Remove somente a cache, ou seja, mantem historico, favoritos e todas as "
+"configuracoes do Firefox."
+msgstr ""
+"Eemalda ainult vahemälu, st hoida ajalugu, järjehoidjad ja kõik Firefoxi "
+"seadeid"
+
+msgid "Esvazia a lixeira."
+msgstr "Tühi prügikast."
+
+msgid ""
+"Remove a cache, porem e recomendado remover apenas se nao for utilizar mais "
+"o Nepomuk/Strigi. Caso contrario sera necessario bastante tempo de "
+"processamento para gerar novamente."
+msgstr ""
+"Eemalda vahemälu, soovitatakse ainult siis, kui Nepomuk/Strigi ei kasutata "
+"enam. Vastasel juhul kulub palju aega taasloomiseks"
+
+msgid "Libere espaco no HD."
+msgstr "Vaba kõvaketta ruum."
+
+msgid "Remover"
+msgstr "Kõrvalda"
+
+msgid "Espaco utilizado"
+msgstr "Kasutatud ruum"
+
+msgid "Pasta .cache"
+msgstr ".cache kaust"
+
+msgid "Pasta .thumbnails"
+msgstr ".thumbnails kaust"
+
+msgid "Cache do Nepomuk/Strigi"
+msgstr "Nepomuk/Strigi vahemälu"
+
+msgid "Cache do Firefox"
+msgstr "Firefoxi vahemälu"
+
+msgid "Arquivos da lixeira"
+msgstr "Failid prügikastis"
+
+msgid ""
+"Problemas podem ocorrer e precisamos repara-los ou liberar espaco em disco "
+"removendo arquivos temporarios"
+msgstr ""
+"Remontimisel võib tekkida probleem ketta vaba ruumiga, ning kõrvaldatakse "
+"ajutised failid"
+
+msgid "Amsn"
+msgstr "Amsn"
+
+msgid "Avidemux"
+msgstr "Avidemux"
+
+msgid "Arora"
+msgstr "Arora"
+
+msgid "Blender"
+msgstr "Blender"
+
+msgid "BrOffice"
+msgstr "BrOffice"
+
+msgid "Dolphin"
+msgstr "Delfiin"
+
+msgid "Firefox"
+msgstr "Firefox"
+
+msgid "Okular"
+msgstr "Okular"
+
+msgid "Gimp"
+msgstr "Gimp"
+
+msgid "Gwenview"
+msgstr "Gwenview"
+
+msgid "Inkscape"
+msgstr "Inkscape"
+
+msgid "Kalarm"
+msgstr "Kalarm"
+
+msgid "OpenOffice"
+msgstr "OpenOffice"
+
+msgid "Zsnes"
+msgstr "Zsnes"
+
+msgid "qBittorrent"
+msgstr "qBittorrent"
+
+msgid "Ktorrent"
+msgstr "Ktorrent"
+
+msgid "Emesene"
+msgstr "Emesene"
+
+msgid "Pidgin"
+msgstr "Pidgin"
+
+msgid "Kmess"
+msgstr "Kmess"
+
+msgid "Kate"
+msgstr "Kate"
+
+msgid "Plasma"
+msgstr "Plasma"
+
+msgid "Kwin"
+msgstr "Kwin"
+
+msgid "K3b"
+msgstr "K3b"
+
+msgid "Rekonq"
+msgstr "Rekonq"
+
+msgid "Konqueror"
+msgstr "Konqueror"
+
+msgid "Wine"
+msgstr "Wine"
+
+msgid "PlayOnLinux"
+msgstr "PlayOnLinux"
+
+msgid "SMPlayer"
+msgstr "SMPlayer"
+
+msgid "MPlayer"
+msgstr "MPlayer"
+
+msgid "Totem"
+msgstr "Tootem"
+
+msgid "Vlc"
+msgstr "Vlc"
+
+msgid "Cheese"
+msgstr "Cheese"
+
+msgid "Audacity"
+msgstr "Audacity"
+
+msgid "Kooka"
+msgstr "Kooka"
+
+msgid "Clementine"
+msgstr "Clementine"
+
+msgid "Pcmanfm"
+msgstr "Pcmanfm"
+
+msgid "Ldesktop/LXDE/Openbox"
+msgstr "Ldesktop/LXDE/Openbox"
+
+msgid ""
+"Atencao, isso ira limpar a configuracao de todos os aplicativos do "
+"Ldesktop/LXDE/Openbox, utilize apenas se souber o que esta fazendo."
+msgstr ""
+"Tähelepanu, see puhastab konfiguratsioon kõik Ldesktop/LXDE/Openbox "
+"rakendused, kasutada ainult siis, kui sa tead, mida sa teed."
+
+msgid "XFCE4"
+msgstr "XFCE4"
+
+msgid ""
+"Atencao, isso ira limpar a configuracao de todos os aplicativos do KDE, "
+"utilize apenas se souber o que esta fazendo."
+msgstr ""
+"Tähelepanu, see puhastab konfiguratsioonist kõik KDE rakendused, kasutage "
+"ainult siis, kui sa tead, mida sa teed."
+
+msgid "KDE"
+msgstr "KDE"
+
+msgid "Kdesktop"
+msgstr "KDesktop"
+
+msgid ""
+"Atencao, isso ira limpar a configuracao de todos os aplicativos do Kdesktop, "
+"utilize apenas se souber o que esta fazendo."
+msgstr ""
+"Tähelepanu, see puhastab konfiguratsioonist kõik KDesktopi rakendused, "
+"kasutada ainult siis, kui sa tead, mida sa teed."
+
+msgid "Thunderbird"
+msgstr "Thunderbird"
+
+msgid "Kmail"
+msgstr "Kmail"
+
+msgid "Audacious"
+msgstr "Audacious"
+
+msgid "Empathy"
+msgstr "Empathy"
+
+msgid "Exaile"
+msgstr "Exaile"
+
+msgid "Vinagre"
+msgstr "Vinagre"
+
+msgid "Nepomuk/Strigi"
+msgstr "Nepomuk/Strigi"
+
+msgid "Nautilus"
+msgstr "Nautilus"
+
+msgid "Voltar"
+msgstr "Tagasta"
+
+msgid "Operacao executada."
+msgstr "Operatsioon tehtud"
+
+msgid "Restaura a configuracao do driver de som e do sistema Pulseaudio"
+msgstr "Taastab ajuri ja helisüsteemi PulseAudio konfiguratsiooni"
+
+msgid "Restaura a configuracao do servidor Apache"
+msgstr "Taastab Apache serveri konfiguratsiooni"
+
+msgid ""
+"Tenta resolver os problemas mais comuns do gerenciador de pacotes Apt-get"
+msgstr "Üritab lahendada sagedasemaid probleeme apt-get paketi halduriga"
+
+msgid ""
+"Restaura a configuracao do sistema de gerenciamento de dispositivos bluetooth"
+msgstr "Taastab konfiguratsioon Bluetooth-seadme juhtimissüsteemis"
+
+msgid "Restaura a configuracao do sistema de impressao"
+msgstr "Taastab trükkimise konfiguratsiooni"
+
+msgid ""
+"Tenta resolver os problemas mais comuns do gerenciador de pacotes Dpkg"
+msgstr "Üritab lahendada sagedasemaid probleeme dpkg paketihalduriga"
+
+msgid ""
+"Gera novamente o initird de todas as versoes de kernel instaladas, caso "
+"alguma versao de kernel nao esteja efetuando boot tente essa opcao."
+msgstr ""
+"Tekitab taas initrd kõikidele paigaldatud kernel versioonidele. Proovi seda, "
+"kui mõned kerneli versioon ei ole alglaadinud."
+
+msgid "Gera nova configuracao da tela de boot"
+msgstr "Tekitab uue konfiguratsiooni algkäivitus kuval"
+
+msgid ""
+"Instala novamente o Grub, geralmente necessario apos a instalacao de outro "
+"sistema operacional"
+msgstr ""
+"Paigalda GRUB uuesti, tavaliselt on vajalik peale mõne teise "
+"operatsioonisüsteemi paigaldamist"
+
+msgid "Se estiver com problemas na tela de login teste essa opcao"
+msgstr "Proovige seda suvandit, kui teil on probleeme sisselogimisdialoogiga"
+
+msgid "Restaura a configuracao do modo grafico"
+msgstr "Taastab graafika režiimi seaded"
+
+msgid "Na maioria dos casos o recomendado e escolher /dev/sda ou /dev/sdb"
+msgstr "Enamikul juhtudel on soovitatav valida /dev/sda või /dev/sdb"
+
+msgid "Restaura a configuracao da conexao com a internet"
+msgstr "Taasta internetiühenduste seadeid"
+
+msgid "Restaura a configuracao do compartilhamento de arquivos na rede"
+msgstr "Taasta võrgu failide jagamise konfiguratsioon"
+
+msgid "Restaure a configuracao do sistema."
+msgstr "Taasta süsteemi seaded."
+
+msgid "Alsa/Pulseaudio (Gerenciador de audio)"
+msgstr "Alsa/Pulseaudio (heli haldur)"
+
+msgid "Apache (Servidor WEB)"
+msgstr "Apache (Weebi server)"
+
+msgid "Apt-get (Gerenciador de pacotes)"
+msgstr "Apt-get (paketihaldur)"
+
+msgid "Bluetooth (Gerenciador de dispositivos bluetooth)"
+msgstr "Bluetooth (Bluetooth seade haldur)"
+
+msgid "Cups (Gerenciador de impressoras)"
+msgstr "CUPS (printeri haldur)"
+
+msgid "Dpkg (Gerenciador de pacotes)"
+msgstr "Dpkg (paketihaldur)"
+
+msgid "Grub (Gerenciador de boot)"
+msgstr "Grub (Alglaaduri haldur)"
+
+msgid "Grub Install (Gerenciador de boot)"
+msgstr "Grub Install (Alglaaduri haldur)"
+
+msgid "Selecione onde deve ser instalado o Grub:"
+msgstr "Vali kuhu paigaldada GRUB:"
+
+msgid "Initrd (Inicio do boot)"
+msgstr "Initrd (alglaaduri algus)"
+
+msgid "KDM (Gerenciador de login)"
+msgstr "KDM (Glogimis haldur)"
+
+msgid "Network (Conexao com a internet)"
+msgstr "Network (Interneti-ühendus)"
+
+msgid "Samba (Compartilhamento de arquivos na rede)"
+msgstr "Samba (võrgu failide jagamine)"
+
+msgid "Xorg (Modo grafico)"
+msgstr "Xorg (graafika režiim)"
+
+msgid "É recomendado estar conectado a internet para efetuar essa operacao"
+msgstr "Soovitatav on ühenduda Internetiga selleks tegevuseks"
+
+msgid "Se disponivel abre o Centro de Controle Big"
+msgstr "Ava Big kontrollkesku kui võimalik"
+
+msgid "Executa o comando desejado, tambem pode ser util para abrir programas"
+msgstr "Käivita soovitud käsk, võib kasutada ka rakenduste avmiseks"
+
+msgid "Se o sistema nao estiver iniciando, talvez essa seja a solucao"
+msgstr "Kui süsteem ei käivitu, võib-olla on see lahendus"
+
+msgid ""
+"Ao instalar outro sistema operacional geralmente se perde a forma de acessar "
+"sua distribuicao favorita. Utilize essa opcao para recuperar o gerenciador "
+"de boot e tenha acesso ao sistema que desejar"
+msgstr ""
+"Kui paigaldad mõne teise operatsioonisüsteemi, mis on tavaliselt nii, et "
+"juurdepääs oma lemmik jaotusele on kadunud. Kasuta seda võimalust taastada "
+"buuthaldur ja omada ligipääs kõigi paigaldatud süsteemidele"
+
+msgid "Execute comandos no terminal"
+msgstr "Terminali käskude täitmine"
+
+msgid ""
+"Se disponivel abre o Synaptic para gerenciar pacotes. Pode ajudar tambem a "
+"corrigir uma atualizacao corrompida"
+msgstr ""
+"Avab Synaptic paketi halduse, kui võimalik. Samuti aitab määratleda rikutud "
+"uuendused"
+
+msgid ""
+"Para evitar problemas e recomendado fechar a particao apos efetuar as "
+"operacoes desejadas"
+msgstr ""
+"Et vältida probleeme on soovitatav sulgeda partitsioon peale soovitud "
+"toimingute tegemist"
+
+msgid "Gerencie os arquivos do sistema instalado na particao $p_part"
+msgstr "Halda süsteemi faile mis on paigaldatatud partitsioonile $p_part"
+
+msgid "Geralmente o correto e /dev/sda"
+msgstr "Tavaliselt on õige /dev/sda"
+
+msgid ""
+"Cuidado, para corrigir a particao pode haver perda de arquivos e essas "
+"alteracoes nao irao pedir confirmacao"
+msgstr ""
+"Hoiatus: mõned failid võivad kaduda partitsiooni määratlemisel ja need "
+"muudatused ei küsi kinntamist"
+
+msgid ""
+"Alteracoes que podem levar a perca de arquivos necessitarao de confirmacao"
+msgstr "Muudatused, mis võivad kaasata faili kadu vajavad kinnitamist"
+
+msgid "Restaurar sistema da particao $p_part"
+msgstr "Taasta süsteemi partitsiooni $p_part"
+
+msgid ""
+"Lembre que as operacoes executadas a partir dessa tela terao os poderes "
+"administrativos do usuario root, irao efetuar alteracoes na particao "
+"<b>$p_part</b> e lembre de fechar a particao apos efetuar as modificacoes "
+"desejadas."
+msgstr ""
+"Pea meeles, et toimingut selles aknas on root kasutaja halduspädevuses, teeb "
+"muudatusi partition <b> $ p_part </ b> ja ärge unustage sulgedal partitsioon "
+"peale soovitud muudatusete tegemist."
+
+msgid "Apt-get/Dpkg (Corrigir atualizacao corrompida)"
+msgstr "apt-get/dpkg (määra rikutud uuendamine)"
+
+msgid "Big Control Center (Centro de controle do BigLinux)"
+msgstr "Big Control Center (BigLinux juhtimiskeskus)"
+
+msgid "Dolphin (Gerenciar arquivos)"
+msgstr "Dolphin (Failihaldus)"
+
+msgid "Executar comando"
+msgstr "Käivitus käsk"
+
+msgid "Comando:"
+msgstr "Käsk:"
+
+msgid "Fsck (Corrigir particao corrompida)"
+msgstr "fsck (Fikseeri korrumpeerunud partitsioon)"
+
+msgid "Automatico."
+msgstr "Automaatne."
+
+msgid "Manual."
+msgstr "Manuaalne"
+
+msgid "Grub (Reinstalar o gerenciador de boot)"
+msgstr "Grub (Bootloaderi tagasipaigaldamine)"
+
+msgid "Selecione o dispositivo:"
+msgstr "Valige seade"
+
+msgid "Initrd (Atualizar initrd)"
+msgstr "Initrd (initrd uuendamine):"
+
+msgid "Konsole (Terminal)"
+msgstr "Konsool (terminal)"
+
+msgid "Synaptic (Gerenciador de pacotes)"
+msgstr "Synaptic (paketi haldur)"
+
+msgid "* Fechar a particao (Importante)"
+msgstr "* Sulge partitsioon (oluline)"
+
+msgid ""
+"1 - Ao atualizar o sistema podem ficar instaladas diferentes versoes de "
+"kernel. Essas versoes sao apresentadas para escolha logo apos ligar o "
+"computador.<br><br>2 - No momento o sistema esta utilizando o Kernel $(uname "
+"-r). Por questoes de seguranca o mesmo nao esta disponivel na lista para "
+"remocao.<br><br>3 - Manter duas versoes de Kernel instaladas pode trazer um "
+"pouco mais de confianca no sistema, pois se um for danificado tera outro "
+"disponivel, porem possuir uma quantidade maior costuma somente utilizar "
+"espaco em excesso."
+msgstr ""
+
+msgid ""
+"Arquivos de instalacao e atualizacao que ja foram utilizados e podem ser "
+"removidos com seguranca."
+msgstr ""
+"Paigaldus ja uuendus faile, mis on juba kasutatud saab ohutult eemaldada."
+
+msgid ""
+"Arquivos temporarios. Nao e recomendado apaga-los, mas se estiver utilizando "
+"espaco em excesso pode ser conveniente."
+msgstr ""
+"Ajutised failid. Neid ei ole soovitatav kustutada, kuid kui te vajate "
+"rohkemruumi, siis võib see olla kasulik."
+
+msgid "Esvazia a lixeira de todos usuarios."
+msgstr "Tühi väli kõikidele kasutajatele."
+
+msgid "Pasta /var/cache/apt/archives"
+msgstr "/var/cache/apt/archives kaustad"
+
+msgid "Pasta /tmp"
+msgstr "/tmp kaust"
+
+msgid "Pasta .cache de todos os usuarios"
+msgstr ".cache kaust kõigi kasutajatele"
+
+msgid "Pasta .thumbnails de todos os usuarios"
+msgstr "thumbnails kaust kõigi kasutajatele"
+
+msgid "Cache do Nepomuk/Strigi de todos os usuarios"
+msgstr "Kõigi kasutajate Nepomuk/Strig vahemälu"
+
+msgid "Cache do Firefox de todos os usuarios"
+msgstr "Kõigi kasutajate Firefoxi vahemälu"
+
+msgid "Arquivos da lixeira de todos os usuarios"
+msgstr "Kõigi kasutajate prügifailid"

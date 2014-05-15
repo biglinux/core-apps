@@ -1,0 +1,15 @@
+#! /bin/sh
+
+set -e
+
+package_name=big-fstab-tweak
+mkdir -p /usr/share/dpkgdivert/
+
+if [ -z "$package_name" ]; then
+    print >&2 "Internal Error. Please report a bug."
+    exit 1;
+fi
+
+    sed -i 's|ext4    errors=remount-ro,noatime,nodiratime,data=writeback,nobh,barrier=0,commit=20 |ext4    errors=remount-ro |g' /etc/fstab 2> /dev/null
+    sed -i 's|ext4    errors=remount-ro,noatime |ext4    errors=remount-ro |g' /etc/fstab 2> /dev/null
+exit 0

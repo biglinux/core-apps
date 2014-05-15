@@ -1,0 +1,9 @@
+#!/bin/sh
+#Script escrito por Bruno Gonçalves, para detecção de resolução no BIG LINUX.
+XWI=xwininfo
+     WIDTH=`$XWI -root | grep Width |\
+	    awk -F: '{ print $2 }' | sed -e 's/ //g'`
+     HEIGHT=`$XWI -root | grep Height |\
+	    awk -F: '{ print $2 }' | sed -e 's/ //g'`
+
+echo "$WIDTH"x"$HEIGHT"

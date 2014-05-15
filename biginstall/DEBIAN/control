@@ -1,0 +1,9 @@
+Package: biginstall
+Version: 1.0.0-2kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Depends: bigsynaptic
+Section: admin
+Priority: optional
+Description: Script para intermediar a instalacao de programas, facilitando a portabilidade dos scripts BigLinux.
+

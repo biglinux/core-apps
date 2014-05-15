@@ -1,0 +1,10 @@
+# ==============================================================================
+# FIREFOX SPECIFIC SETTINGS
+# ==============================================================================
+
+style "ff-default"
+{
+    GtkCheckButton::indicator-size = 14
+}
+
+widget "MozillaGtkWidget*GtkButton*" style "ff-default"

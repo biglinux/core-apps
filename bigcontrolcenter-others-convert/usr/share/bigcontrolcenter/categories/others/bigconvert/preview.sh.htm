@@ -1,0 +1,289 @@
+#!/bin/bash
+
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+###############
+#####Importa o tema
+###############
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+###############
+#####Criar diretorio para configuracoes
+###############
+mkdir ~/.bigconvert 2> /dev/null
+
+##############
+#####Translation
+##############
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-others-bigconvert
+
+################
+#####Confere configuracoes na home do usuario
+################
+
+
+rm -f ~/.bigconvert/primeiro
+
+
+
+if [ "$p_duracao" != "" ]
+then
+    echo "$p_duracao" > ~/.bigconvert/prevduracao
+fi
+
+if [ "$p_hora" != "" ]
+then
+    echo "$p_hora" > ~/.bigconvert/prevhora
+fi
+
+if [ "$p_minuto" != "" ]
+then
+    echo "$p_minuto" > ~/.bigconvert/prevminuto
+fi
+
+if [ "$p_segundo" != "" ]
+then
+    echo "$p_segundo" > ~/.bigconvert/prevsegundo
+fi
+
+if [ "$p_pvideo" != "" ]
+then
+    bigurldecode "$p_pvideo" > ~/.bigconvert/prevvideo
+fi
+
+
+if [ ! -e ~/.bigconvert/prevduracao ]
+then
+    echo "10" > ~/.bigconvert/prevduracao
+fi
+
+if [ ! -e ~/.bigconvert/prevhora ]
+then
+    echo "00" > ~/.bigconvert/prevhora
+fi
+
+if [ ! -e ~/.bigconvert/prevminuto ]
+then
+    echo "01" > ~/.bigconvert/prevminuto
+fi
+
+if [ ! -e ~/.bigconvert/prevsegundo ]
+then
+    echo "00" > ~/.bigconvert/prevsegundo
+fi
+
+
+if [ "$p_prever" = "yes" ]
+then
+    /usr/share/bigcontrolcenter/categories/others/bigconvert/mencoder "$(cat ~/.bigconvert/prevvideo)" prever
+    chmod +x ~/.bigconvert/mencoderprev
+    cd ~/.bigconvert
+
+##############
+## CONVERTENDO
+##############
+
+
+#Inicia o dialogo de progresso
+dcopRef=$(kdialog --title $"BigMencoder" --progressbar $"Iniciando..." 12)
+qdbus $dcopRef org.freedesktop.DBus.Properties.Set org.kde.kdialog.ProgressDialog maximum 100
+qdbus $dcopRef org.kde.kdialog.ProgressDialog.showCancelButton true
+
+
+#Executa o mencoder
+~/.bigconvert/mencoderprev > /tmp/bigmencoder-log$$ 2> /dev/null &
+
+#Aguarda 5 segundos para assegurar que o log ja foi criado
+sleep 5
+
+#Loop para manter a checagem da barra de progresso
+  while true
+   do
+      #Confere se o botao cancelar foi clicado ou a janela de progresso foi fechada, se positivo encerra o loop
+      if [ "$(qdbus $dcopRef org.kde.kdialog.ProgressDialog.wasCancelled)" != "false" ]; then
+	  #Mata o mencoder, precisa ser melhorado utilizando pid para nao afetar outra execucao do mencoder
+	  killall -9 mencoder
+	  cancelado=yes
+	  qdbus $dcopRef org.kde.kdialog.ProgressDialog.close
+	  kdialog --passivepopup $"Conversao cancelada." --title $"Big Converter Video"
+	  sleep 2
+	  killall -9 mencoder
+	  rm -f ~/.bigconvert/videoprevisto.*
+	  break
+      fi
+
+      #Confere se a conversao do arquivo foi concluida, se positivo encerra o loop.
+      if [ "$(sed '$!d' /tmp/bigmencoder-log$$ | grep fps)" != "" ]; then
+
+	  #Adiciona mais dados sobre a barra de progresso
+	  qdbus $dcopRef org.kde.kdialog.ProgressDialog.setLabelText " Convertendo, aguarde por favor.
+
+$i
+ $(sed '$!d;s/(.*)//;s/A.*//;s/V//' /tmp/bigmencoder-log$$)"
+
+
+	  #Faz a leitura do Log e atualiza a barra de progresso
+	  qdbus $dcopRef org.freedesktop.DBus.Properties.Set org.kde.kdialog.ProgressDialog value $(sed '$!d;s/.*(//; s/%.*//' /tmp/bigmencoder-log$$)
+
+      else
+	  #Confere novamente se a conversao do arquivo foi concluida, se positivo encerra o loop.
+	  sleep 3
+	  if [ "$(sed '$!d' /tmp/bigmencoder-log$$ | grep fps)" = "" ]; then
+	      qdbus $dcopRef org.kde.kdialog.ProgressDialog.close
+	      kdialog --passivepopup $"Conversao de $i concluida." --title $"Big Mencoder" &
+	      break
+	  fi
+      fi
+
+  #Aguarda 3 segundos para refazer o loop
+  sleep 3
+  done
+
+  #Remove o arquivo de log
+  rm -f /tmp/bigmencoder-log$$
+  rm -f ~/.bigconvert/videoprevisto.*
+
+
+    if [ -e /usr/bin/smplayer ]
+    then
+	nohup smplayer ~/.bigconvert/videoprevisto 2>/dev/null >/dev/null &
+    else
+        nohup mplayer ~/.bigconvert/videoprevisto 2>/dev/null >/dev/null &
+    fi
+
+fi
+
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,410);
+function NoResize(){
+  window.resizeTo(640,410);
+}
+</script>
+
+<script language="JavaScript">
+function SomenteNumero(e){
+    var tecla=(window.event)?event.keyCode:e.which;
+    if((tecla > 47 && tecla < 58)) return true;
+    else{
+    if (tecla != 8) return false;
+    else return true;
+    }
+}
+</script>
+
+
+'
+
+###############
+#####Variaveis de nomes
+###############
+title=$"Big Converter Video"
+apply=$"Visualizar previsao"
+close=$"Sair"
+converta=$"Iniciar conversao"
+
+
+###############
+#####Titulo
+###############
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+
+###############
+#####Carregar o tema
+###############
+echo '<link rel="stylesheet" href="demo/dialog.css" media="screen" />'
+open_header
+echo "$title" '</font><br>' $"Converta videos ou extraia audio."
+close_header
+
+
+###############
+#####Inicio da exibicao da GUI
+###############
+#O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#Quando se utiliza aspas duplas o sistema executa algumas partes do codigo antes de passar a resposta, entre essas execucoes inclui a interpretacao de variaveis
+#Para incluir textos a serem exibidos ao usuario utilize aspas duplas com $ antes, para que funcione o sistema de tradução, exemplo: $"texto"
+#No exemplo abaixo o memso comando echo foi aberto e fechado diversas vezes de acordo com a necessidade, aspas simples, duplas e duplas com traducao.
+
+
+echo '<form action=preview.sh.htm method=get><center><table width=95%><tr><td>'
+
+echo '<div id="demo"><div class="dialog">
+ <div class="content">
+  <div class="t"></div>
+  <center><p style="margin: 4px 4px 4px 0px;"><font size=+1>' $"Selecione o arquivo a ser utilizado na previsao" '</font></center>'
+echo '<div id="lista" style="height: 100px; overflow:auto;">'
+echo '<table width=100%><tr valign=top><td><table>'
+
+ORI_IFS=$IFS
+IFS=$'\n'
+for i in $(cat ~/.bigconvert/videos); do
+
+if [ "$(cat ~/.bigconvert/prevvideo)" = "$i" ]
+then
+    checked="<img src=marcado.png>"
+    primeiro="1"
+else
+    checked=""
+fi
+
+if [ "$(cat ~/.bigconvert/prevvideo)" = "" ]
+then
+    if [ ! -e ~/.bigconvert/primeiro ]
+    then
+	checked="<img src=marcado.png>"
+	echo "$i" > ~/.bigconvert/prevvideo
+    else
+	checked=""
+    fi
+fi
+
+cat << EOF
+<tr height=26><td>
+<a href="/usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm?pvideo=$(bigurlencode "$i")">$checked $i</a><br>
+</td></tr>
+EOF
+
+if [ "$primeiro" = "" ]
+then
+    echo "1" > ~/.bigconvert/primeiro
+fi
+
+
+
+done
+IFS=$ORI_IFS
+
+echo "</table></td></tr></table></div><br><br>"
+
+
+echo "Duracao da previsao em segundos:"
+echo "<input name=\"duracao\" style='width:4em' value=\"$(cat ~/.bigconvert/prevduracao)\" type=\"number\" onkeypress=\"return SomenteNumero(event)\" onchange=\"location.replace('/usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm?duracao='+this.value)\">"
+echo "<br><br>"
+echo "Iniciar previsao em:"
+echo "<input style='width:4em'  value=\"$(cat ~/.bigconvert/prevhora)\" type=\"number\" onkeypress=\"return SomenteNumero(event)\" onchange=\"location.replace('/usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm?hora='+this.value)\">:<input style='width:3em' value=\"$(cat ~/.bigconvert/prevminuto)\" type=\"number\" onkeypress=\"return SomenteNumero(event)\" onchange=\"location.replace('/usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm?minuto='+this.value)\">:<input style='width:3em' value=\"$(cat ~/.bigconvert/prevsegundo)\" type=\"number\" onkeypress=\"return SomenteNumero(event)\" onchange=\"location.replace('/usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm?segundo='+this.value)\">"
+echo $"(hh:mm:ss)"
+echo "<br><br>"
+
+
+
+
+echo '</div><div class="b"><div></div>
+</div>'
+
+
+
+###############
+#####RODAPE
+###############
+echo "</div><div id=\"rodape\"><button type=button value= $close onClick= location.replace('/usr/share/bigbashview/exemplo2.sh.htm?close=True')>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button>  <button type=button value= $apply onClick= location.replace('/usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm?prever=yes')>   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button></div>"

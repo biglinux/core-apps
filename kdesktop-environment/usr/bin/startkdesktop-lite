@@ -1,0 +1,64 @@
+export KDE_IS_PRELINKED=1
+export KDE_MALLOC=1
+export KDE_FORK_SLAVES=1
+export MOZ_DISABLE_PANGO=1
+export KDE_NO_IPV6=TRUE
+
+if [ -d /usr/share/bigrestoreuser/$USER ]
+ then
+ rm -Rf "$HOME/.*"
+ rm -Rf "$HOME/*"
+ cd "/usr/share/bigrestoreuser/$USER/"
+ cp -Rf .* "$HOME/"
+fi
+
+export GTK2_RC_FILES="$HOME/.gtkrc-2.0-ldesktop"
+export KDEHOME="$HOME/.kdesktop-lite" 
+mkdir "$HOME/.kde" 2> /dev/null
+mkdir "$HOME/.kde/share" 2> /dev/null
+mkdir "$HOME/.kde/share/config" 2> /dev/null
+
+grep StartupCommands "$KDEHOME/share/config/krandrrc" | cut -f2 -d"=" > "$KDEHOME/bigresolutionfix"
+chmod +x "$KDEHOME/bigresolutionfix"
+"$KDEHOME/bigresolutionfix"
+rm-f "$KDEHOME/bigresolutionfix"
+
+if [ ! -e "$KDEHOME" ]; then
+    cp -Rf /etc/skel/.kdesktop-lite "$KDEHOME"
+fi
+
+if [ "$KDEHOME" != "$(cat "$HOME/.lastbigdesktop")" ]; then
+    if [ "$(echo "$KDEHOME" | grep .kdesktop-lite)" != "" ]; then
+	cp -f "$HOME/.config/Trolltech.conf" "$HOME/.config/Trolltech.conf-lite"
+	cp -f "$HOME/.config/Trolltech.conf-normal" "$HOME/.config/Trolltech.conf"
+	rm -Rf "$HOME/.config/qtcurve-lite"
+	cp -Rf "$HOME/.config/qtcurve" "$HOME/.config/qtcurve-lite"
+	rm -Rf "$HOME/.config/qtcurve"
+	cp -Rf "$HOME/.config/qtcurve-normal" "$HOME/.config/qtcurve"
+    else
+	cp -f "$HOME/.config/Trolltech.conf" "$HOME/.config/Trolltech.conf-normal"
+	cp -f "$HOME/.config/Trolltech.conf-lite" "$HOME/.config/Trolltech.conf"
+	rm -Rf "$HOME/.config/qtcurve-normal"
+	cp -Rf "$HOME/.config/qtcurve" "$HOME/.config/qtcurve-normal"
+	rm -Rf "$HOME/.config/qtcurve"
+	cp -Rf "$HOME/.config/qtcurve-lite" "$HOME/.config/qtcurve"
+    fi
+fi
+
+#if [ -e "/usr/bin/bigwinstart"  ]
+#then
+#    export KDEWM=bigwinstart
+#fi
+
+#Checar smooth stasks para o kde 4.8
+if [ ! -e "$KDEHOME/bigfixkde48" ]; then
+    if [ ! -e "/usr/lib/kde4/plasma_applet_smooth-tasks.so" ]; then
+	sed -i 's|MenuBar=Disabled||g' "$KDEHOME/share/config/dolphinrc"
+	sed -i 's|plugin=smooth-tasks|plugin=tasks|g' "$KDEHOME/share/config/plasma-desktop-appletsrc"
+	touch "$KDEHOME/bigfixkde48"
+    fi
+fi
+
+echo "$KDEHOME" > "$HOME/.lastbigdesktop"
+
+/usr/bin/startkde

@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-internet-chromium
+Version: 1.0.1-1kaiana0
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: bigcontrolcenter (>= 1.0.0-1kaiana16), bigsynaptic (>=1.0.1-1kaiana2)
+Section: admin
+Priority: optional
+Description: Configure Chromium Browser
+

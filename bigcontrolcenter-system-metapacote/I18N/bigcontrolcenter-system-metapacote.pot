@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: BigLinux\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2013-10-10 02:27-0300\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+msgid   "Kaiana Meta Pacotes"
+msgstr  ""
+
+msgid   "Aplicar"
+msgstr  ""
+
+msgid   "Voltar para tela de configuração"
+msgstr  ""
+
+msgid   "Sair"
+msgstr  ""
+
+msgid   "Selecione o que deseja instalar."
+msgstr  ""
+
+msgid   "Configuração aplicada."
+msgstr  ""
+
+msgid   "Instalar programas essênciais"
+msgstr  ""
+
+msgid   "Alguns conjuntos de programas são essenciais a determinados usos, "
+        "aqui separamos os principais para facilitar a configuração inicial "
+        "do computador."
+msgstr  ""
+
+msgid   "Clique aqui para ver uma previsão desse tema."
+msgstr  ""
+
+msgid   "Instalar Google Chrome, plugin do Flash, plugin do Google Talk e "
+        "Skype."
+msgstr  ""
+
+msgid   "Instalar Gimp, Inkscape e Blender."
+msgstr  ""

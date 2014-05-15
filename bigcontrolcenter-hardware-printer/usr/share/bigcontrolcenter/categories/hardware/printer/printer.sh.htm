@@ -1,0 +1,102 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-hardware-printer
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Impressora"
+apply=$"Aplicar"
+close=$"Sair"
+tip_printer=$"Configurador recomendado para a maioria dos casos.<br>Adicionar, remover, calibrar, nivel de tinta..."
+tip_cups=$"Configurador oficial do sistema de impressao CUPS"
+tip_epson=$"Configurador nao oficial para impressoras EPSON"
+tip_hp=$"Configurador oficial para impressoras HP"
+tip_inkblot=$"Para conferir os modelos de impressora suportados visite o site:<br>http://libinklevel.sourceforge.net/#supported<br><br>* Em muitos casos outro monitor de nivel de tinta pode ser acessado no Adicionar ou Configurar impressoras"
+tip_applet=$"Exibe um icone na barra de tarefas para verificar a fila de impressao sempre que existirem arquivos na fila"
+
+. /usr/share/bigcontrolcenter/default/theme.sh.htm
+
+cat << EOF
+	<script type="text/javascript" src="/usr/share/bigcontrolcenter/default/js/jquery-1.3.2.min.js"></script>
+
+
+	<script type="text/javascript">
+	\$(function() {
+		\$("#tabs").tabs({
+			event: 'mouseover'
+		})
+	});
+
+	if (document.images) {
+	buttonUp = new Image(); buttonUp.src = "/usr/share/bigcontrolcenter/default/images/category-background.png";
+	buttonDown = new Image(); buttonDown.src = "$(echo $HOME)/.bigcontrolcenter/category-background-over.png";
+	}
+
+	function turn_off(cell) {
+	if (document.images != null) {
+	cell.style.backgroundImage = "url('" + buttonUp.src + "')";
+	}
+	}
+
+	function turn_on(cell) {
+	if (document.images != null) {
+	cell.style.backgroundImage = "url('" + buttonDown.src + "')";
+	}
+	}
+
+  </script>
+
+
+
+
+
+EOF
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Configuracoes para impressoras."
+close_header
+
+
+
+echo "<TABLE align=center><tr><td>"
+    echo "<a href=\"/usr/share/bigbashview/run.run?system-config-printer\"" "$mouseover_open" $tip_printer "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=icon.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Adicionar ou configurar impressoras" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?xdg-open http://localhost:631\"" "$mouseover_open" $tip_cups "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=cups.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Adicionar ou configurar impressoras (Avancado)" " </font></td></tr></table></a>"
+echo '</td></tr><tr><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?bigsudo mtink\"" "$mouseover_open" $tip_epson "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=epson.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Configurador especial para impressoras Epson" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?hp-toolbox\"" "$mouseover_open" $tip_hp "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=hp.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Configurador especial para impressoras HP" " </font></td></tr></table></a>"
+echo '</td></tr><tr><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?/usr/share/bigcontrolcenter/categories/hardware/printer/inkblot\"" "$mouseover_open" $tip_inkblot "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=inkblot.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Monitor de nivel de tinta" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?/usr/share/bigcontrolcenter/categories/hardware/printer/applet\"" "$mouseover_open" $tip_applet "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=applet.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Fila de impressao" " </font></td></tr></table></a>"
+
+echo '</table>'
+
+
+echo "</a></td></tr></table></div><div id=\"rodape\"><button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

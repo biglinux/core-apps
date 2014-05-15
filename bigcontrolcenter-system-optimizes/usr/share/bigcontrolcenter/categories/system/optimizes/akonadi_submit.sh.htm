@@ -1,0 +1,74 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-optimizes
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+
+title=$"Ativar/Desativar Akonadi"
+apply=$"Aplicar"
+close=$"Sair"
+back=$"Voltar para tela de configuracao"
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Defina sua preferencia."
+close_header
+
+
+
+#confere as variaveis que sao traduzidar com um p_ antes do nome
+
+
+if [ "$p_akonadi" = "no" ]
+then
+    dpkg-divert --package bigcontrolcenter-system-optimizes --divert /usr/bin/akonadiserver.distrib --rename /usr/bin/akonadiserver  2> /dev/null > /dev/null
+    dpkg-divert --package bigcontrolcenter-system-optimizes --divert /usr/bin/akonadi_control.distrib --rename /usr/bin/akonadi_control  2> /dev/null > /dev/null
+else
+        if [ "$(dpkg-divert --list /usr/bin/akonadiserver.distrib)" != "" ]
+        then
+	        dpkg-divert --package bigcontrolcenter-system-optimizes --rename --remove /usr/bin/akonadiserver 2> /dev/null  > /dev/null
+	fi
+
+        if [ "$(dpkg-divert --list /usr/bin/akonadi_control.distrib)" != "" ]
+        then
+	        dpkg-divert --package bigcontrolcenter-system-optimizes --rename --remove /usr/bin/akonadi_control 2> /dev/null  > /dev/null
+	fi
+fi
+
+
+
+#Exibir resposta para o usuario
+echo "<br><br><br><br><br><center><font size=+2>"
+echo $"Configuracao aplicada."
+
+
+
+echo "</font></div><div id=\"rodape\"><button type=button  onClick=\"parent.location='akonadi.sh.htm'\">   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $back   </button> 
+
+<button type=button onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></form></div></body>"

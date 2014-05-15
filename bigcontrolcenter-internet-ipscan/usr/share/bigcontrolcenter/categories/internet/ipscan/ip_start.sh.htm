@@ -1,0 +1,145 @@
+#!/bin/bash
+#Control Center for Kaiana
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+# Gera pasta para salvar as configurações
+mkdir -p ~/.config/bigcontrolcenter/ipscanner 2> /dev/null
+cd ~/.config/bigcontrolcenter/ipscanner
+
+# Importa arquivo que irá definir o tema do painel e algumas outras facilidades.
+# Entre as facilidades está incluso o jquery.
+. /usr/share/bigcontrolcenter/import-theme.htm
+
+# Informe o título.
+big_title=$"Identificar IPs ativos na rede"
+
+# Informe uma descrição curta.
+big_description=$"Confira todos os dispositivos conectados na mesma rede."
+
+# Informe o caminho do ícone, de preferência no tamanho 32x32, também pode ficar em branco.
+big_icon="icon.png"
+
+# Caso esse painel vá ser traduzido especifique o nome que será dado à tradução que ficará na pasta: /usr/share/locale-langpack
+big_translate="bigbashview_formulario"
+
+# Descomente a linha a seguir para desativar a parte superior do painel onde fica o título, ícone e descrição.
+#big_header_disable="1"
+
+# Descomente a linha a seguir para desativar a imagem de fundo.
+#big_bg_color_disable="1"
+
+# Descomente a linha a seguir para desativar a imagem de fundo.
+#big_bg_image_disable="1"
+
+# Adiciona o layout geral do painel e o cabeçalho, onde aparece o título, ícone e descrição.
+big_header
+
+#########################################
+# Até aqui foram preenchidos dados
+# padronizados, portanto a seguir está
+# realmente a parte funcional do painel.
+#########################################
+
+if [ "$(cat parametros_nmap)" = "0" ]; then
+    parametros_nmap_1_check="checked"
+fi
+
+if [ "$(cat parametros_nmap)" = "tudo" ]; then
+    parametros_nmap_2_check="checked"
+fi
+
+if [ "$(cat parametros_nmap)" = "nenhum" ]; then
+    parametros_nmap_3_check="checked"
+fi
+
+if [ "$(cat parametros_nmap)" = "manual" ]; then
+    parametros_nmap_3_check="checked"
+fi
+
+
+#Ajusta a margem à esquerda.
+echo "<table><tr><td width=0px></td><td>"
+
+#Início do formulário, informe o arquivo que irá recebe-lo em action.
+echo "<form action=\"ip_load.sh.htm\" method=\"post\">"
+
+#Substitua o id, name e for para o nome desejado.
+echo "<input type=\"radio\" id=\"parametros_nmap_1\" name=\"parametros_nmap\" value=\"0\" onClick=\"Transparent('div-nmap', this)\" $parametros_nmap_1_check><label for=\"parametros_nmap_1\">" $"Procurar portas ativas entre as mil mais utilizadas." "</label>"
+echo "<br>"
+
+echo "<input type=\"radio\" id=\"parametros_nmap_2\" name=\"parametros_nmap\" value=\"tudo\" onClick=\"Transparent('div-nmap', this)\" $parametros_nmap_2_check><label for=\"parametros_nmap_2\">" $"Procurar em todas as portas, processo demorado." "</label>"
+echo "<br>"
+
+echo "<input type=\"radio\" id=\"parametros_nmap_3\" name=\"parametros_nmap\" value=\"nenhum\" onClick=\"Transparent('div-nmap', this)\" $parametros_nmap_3_check><label for=\"parametros_nmap_3\">" $"Não procurar portas, apenas IPs, processo rápido." "</label>"
+echo "<br>"
+
+echo "<input type=\"radio\" id=\"parametros_nmap_4\" name=\"parametros_nmap\" value=\"manual\" onClick=\"Show('div-nmap', this)\" $parametros_nmap_4_check><label for=\"parametros_nmap_4\">" $"Definir manualmente os parametros do nmap." "</label>"
+
+echo '<div id="div-nmap" style="visibility:hidden">'
+
+echo $"Parâmetros do nmap:" "<input type=\"text\" name=\"parametros_nmap_manual\" size=\"17\" value=\"$(cat parametros_nmap_manual)\" placeholder=\"" $"Insira os parâmetros aqui." "\">"
+
+echo "</div>"
+
+
+echo "<br>"
+echo "<br>"
+
+if [ "$(cat dispositivos)" = "auto" ]; then
+    dispositivos_1_check="checked"
+fi
+
+if [ "$(cat dispositivos)" = "manual" ]; then
+    dispositivos_2_check="checked"
+fi
+
+#Substitua o id, name e for para o nome desejado.
+echo "<input type=\"radio\" id=\"1\" name=\"dispositivos\" value=\"auto\" onClick=\"Transparent('div-ip', this)\" $dispositivos_1_check><label for=\"1\">" $"Procurar todos os dispositivos conectados na rede local." "</label>"
+echo "<br>"
+
+echo "<input type=\"radio\" id=\"2\" name=\"dispositivos\" value=\"manual\" onClick=\"Show('div-ip', this)\" $dispositivos_2_check><label for=\"2\">" $"Definir manualmente um ou mais IPs/domínios para serem verificados." "</label>"
+
+if [ "$(cat dispositivos)" = "auto" ]; then
+    echo '<div id="div-ip" style="visibility:hidden">'
+else
+    echo '<div id="div-ip" style="visibility:block">'
+fi
+
+
+#Campo de texto
+textarea_title=$"Insira um IP por linha"
+echo "<textarea title=\"$textarea_title\" rows=\"5\" name=\"bloco_ips\" cols=\"40\" placeholder=\"" $"Escreva aqui os IPs/domínios que deseja verificar." "\">"
+cat bloco_ips
+echo "</textarea>"
+
+echo "</div>"
+
+if [ "$(cat html)" = "1" ]; then
+    html_check="checked"
+fi
+
+#Substitua o id, name e for para o nome desejado, recomendo manter os 3 com o mesmo nome para facilitar a organização.
+checkbox_title=$"O resultado não será exibido na tela, mas salvo em um arquivo."
+echo "<input type=\"checkbox\" title=\"$checkbox_title\" id=\"html\" name=\"html\" value=\"1\" $html_check><label title=\"$checkbox_title\" for=\"html\">" $"Gerar relatório da rede em arquivo html." "</label>"
+
+
+#########################################
+# A partir daqui inicia o rodapé, onde devem ser colocados os botões, por exemplo, Aplicar, OK e Fechar.
+#########################################
+echo "<div id=\"rodape\">"
+
+
+# Exemplo de uso: button_submit $"Descrição" "icone.png"
+button_submit $"Avançar"
+
+# Exemplo de uso: button_link $"Descrição" "icone.png"
+button_close $"Fechar"
+
+ão" "icone.png"
+button_close $"Fechar"
+

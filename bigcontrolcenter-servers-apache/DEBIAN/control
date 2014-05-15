@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-servers-apache
+Version: 1.0.4-1kaiana3
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: biglamp (>= 1.0.0-1kaiana2), bigcontrolcenter (>= 1.0.0-1kaiana16)
+Section: admin
+Priority: optional
+Description: Configure your Apache server
+

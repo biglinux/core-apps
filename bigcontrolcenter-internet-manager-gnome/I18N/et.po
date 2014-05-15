@@ -1,0 +1,49 @@
+# Estonian translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-13 21:42-0300\n"
+"PO-Revision-Date: 2010-08-31 07:53+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: Estonian <et@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-01 03:55+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid ""
+"O Gnome Network Manager e utilizado por esse painel, mas nao esta ativo, "
+"devo ativa-lo agora?\n"
+"Atencao: Isso ira desativar o gerenciador em uso: Wicd."
+msgstr ""
+"Gnome Network Manager kasutab seda paneeli, kuid ei ole aktiivne, peaksin ma "
+"seda lubama?\n"
+"Hoiatus: see lülitabvälja Võrguhalduri mis on praegu kasutusel: Wicd."
+
+msgid ""
+"O Gnome Network Manager e utilizado por esse painel, mas nao esta ativo, "
+"devo ativa-lo agora?\n"
+"Atencao: Isso ira desativar o gerenciador em uso: BigConnect."
+msgstr ""
+"Gnome Network Manager kasutab seda paneeli, kuid ei ole aktiivne, peaksin ma "
+"seda lubama?\n"
+"Hoiatus: see lülitabvälja Võrguhalduri mis on praegu kasutusel: BigConnect."
+
+msgid ""
+"O Gnome Network Manager e utilizado por esse painel, mas nao esta ativo, "
+"devo ativa-lo agora?"
+msgstr ""
+"Gnome võrgu haldur kasutab seda paneeli, kuid ei ole aktiivne, peaksid selle "
+"aktiveerima nüüd?"
+
+msgid "Conectar a internet utilizando Network Manager"
+msgstr "Ühendu internetiga kasutades Võrguhaldurit"
+
+msgid "3G, ADSL, Cabo, DHCP, Wireless, IP Fixo..."
+msgstr "3G, ADSL, Cabo, DHCP, Wireless, IP Fixo..."

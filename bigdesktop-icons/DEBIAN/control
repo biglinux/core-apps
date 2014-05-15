@@ -1,0 +1,9 @@
+Package: bigdesktop-icons
+Version: 1.0.0-1kaiana4
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 308
+Section: admin
+Priority: optional
+Description: Make desktop icons: Trash, Computer and Network.
+

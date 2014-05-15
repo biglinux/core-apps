@@ -1,0 +1,26 @@
+  #!/bin/bash
+  
+  CURDIR=$( pwd )
+  TMPDIR=$( mktemp -d )
+  TMPLST=$( mktemp )
+  
+  DEB="$CURDIR/$1"
+  
+  cd $TMPDIR
+  
+  ar -x "$DEB" control.tar.gz
+  tar -zxvf control.tar.gz | grep -v "./$" > $TMPLST
+  rm -f control.tar.gz
+  cp control control.bak
+  
+  editor control
+  
+  ( diff control control.bak > /dev/null ) || (
+         echo "Found difference -- updating control.tar.gz in $DEB."
+                tar czf control.tar.gz $( cat $TMPLST )
+               ar -r "$DEB" control.tar.gz
+              echo "Done. =)"
+      )
+  
+      rm -rf $TMPDIR $TMPLIST
+      cd $CURDIR

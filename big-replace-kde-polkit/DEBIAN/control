@@ -1,0 +1,10 @@
+Package: big-replace-kde-polkit
+Version: 1.0.0-0kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Priority: optional
+Depends: policykit-1-gnome
+Description: Replace kde polkit for gnome polkit
+

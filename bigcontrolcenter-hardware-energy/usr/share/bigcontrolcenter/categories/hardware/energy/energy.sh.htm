@@ -1,0 +1,88 @@
+#!/bin/bash
+
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-start-connection
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Gerenciador de energia"
+apply=$"Aplicar"
+close=$"Sair"
+tip_kde=$"Configurações gerais para economia de energia do KDE"
+tip_cpu=$"Defina como o processador deve trabalhar com o computador ligado na tomada e apenas com o uso da bateria"
+
+
+. /usr/share/bigcontrolcenter/default/theme.sh.htm
+
+cat << EOF
+	<script type="text/javascript" src="/usr/share/bigcontrolcenter/default/js/jquery-1.3.2.min.js"></script>
+
+
+	<script type="text/javascript">
+	\$(function() {
+		\$("#tabs").tabs({
+			event: 'mouseover'
+		})
+	});
+
+	if (document.images) {
+	buttonUp = new Image(); buttonUp.src = "/usr/share/bigcontrolcenter/default/images/category-background.png";
+	buttonDown = new Image(); buttonDown.src = "$(echo $HOME)/.bigcontrolcenter/category-background-over.png";
+	}
+
+	function turn_off(cell) {
+	if (document.images != null) {
+	cell.style.backgroundImage = "url('" + buttonUp.src + "')";
+	}
+	}
+
+	function turn_on(cell) {
+	if (document.images != null) {
+	cell.style.backgroundImage = "url('" + buttonDown.src + "')";
+	}
+	}
+
+  </script>
+
+
+
+
+
+EOF
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Defina formas de economizar energia."
+close_header
+
+
+
+echo "<div id=\"tabs-$1\"><TABLE align=center><tr><td>"
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 powerdevilglobalconfig powerdevilprofilesconfig\"" "$mouseover_open" $tip_kde "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=kde.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Gerenciador de energia do KDE" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/hardware/energy/cpu.sh.htm\"" "$mouseover_open" $tip_cpu "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=cpu.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Definições de economia de energia" " </font></td></tr></table></a>"
+echo '</td></tr><tr><td>'
+
+echo '</table></div>'
+
+echo "</td></tr></table></div><div id=\"rodape\"><button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

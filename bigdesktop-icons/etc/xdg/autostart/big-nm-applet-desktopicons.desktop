@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Desktop Icons
+Comment=Trash Computer and Network
+Icon=computer
+Exec=bigdesktop-icons
+Terminal=false
+Type=Application

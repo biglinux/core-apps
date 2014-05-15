@@ -1,0 +1,174 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-hardware-keyboard
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(630,480);
+function NoResize(){
+  window.resizeTo(630,480);
+}
+</script>
+'
+
+title=$"Teclado, mouse e touchpad"
+apply=$"Aplicar"
+close=$"Sair"
+tip_abnt=$"Padrao utilizado por quase todos os computadores vendidos no Brasil"
+tip_usa=$"Padrao dos Estados Unidos para idiomas que nao utilizam acentos"
+tip_usaint=$"Padrao dos Estados Unidos com suporte a acentos, em geral notebooks importados.<p>* Recomendado ativar a opcao utilizar cedilha com acento agudo + C"
+tip_es=$"Padrao na Espanha"
+tip_pt=$"Padrao em Portugal"
+tip_manual_example=$"Exemplo de comando: setxkbmap -model pc105 -layout br -variant"
+tip_auto=$"Em geral durante a instalacao ja e especificado o modelo correto"
+tip_manual=$"Informe o comando setxkbmap especifico para seu teclado"
+tip_cedilla=$"Importante principalmente em Notebooks com teclado USA Internacional.<p>* Para essa opcao entrar em operacao e necessario reiniciar o computador ou encerrar a sessao e efetuar login novamente"
+
+
+
+###############
+# Apply options
+###############
+
+
+################
+# Cedilha
+################
+  if [ -e "/etc/X11/Xsession.d/85big-cedilla-fix" ]
+  then
+      cedilla_check="checked"
+  fi
+
+
+################
+# AUTO
+################
+  if [ ! -e "/etc/X11/Xsession.d/84big-keyboard-layout" ]
+  then
+      auto_check="checked"
+  fi
+
+
+################
+# ABNT_PADRAO
+################
+  if [ "$(grep ABNT_PADRAO /etc/X11/Xsession.d/84big-keyboard-layout)" != "" ]
+  then
+     abnt_check="checked"
+  fi
+
+
+################
+# USA_PADRAO
+################
+  if [ "$(grep USA_PADRAO /etc/X11/Xsession.d/84big-keyboard-layout)" != "" ]
+  then
+      usa_check="checked"
+  fi
+
+
+################
+# USA_INT
+################
+  if [ "$(grep USA_INT /etc/X11/Xsession.d/84big-keyboard-layout)" != "" ]
+  then
+      usaint_check="checked"
+  fi
+
+
+################
+# ES_PADRAO
+################
+  if [ "$(grep ES_PADRAO /etc/X11/Xsession.d/84big-keyboard-layout)" != "" ]
+  then
+      es_check="checked"
+  fi
+
+
+################
+# PT_PADRAO
+################
+  if [ "$(grep PT_PADRAO /etc/X11/Xsession.d/84big-keyboard-layout)" != "" ]
+  then
+      pt_check="checked"
+  fi
+
+
+################
+# MANUAL
+################
+  if [ "$(grep "# MANUAL" /etc/X11/Xsession.d/84big-keyboard-layout)" != "" ]
+  then
+      manual_check="checked"
+  fi
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Layout de teclado, velocidade e ate controlar o mouse com a webcam."
+close_header
+
+#body
+echo '<center><table width=95%><tr><td>'
+echo $"Esse configurador estipula a configuracao do teclado para todos os ambientes graficos do sistema."
+
+
+# ABNT   = setxkbmap -model pc105 -layout br -variant 
+# USA    = setxkbmap -model pc105 -layout us -variant 
+# USAINT = setxkbmap -model pc105 -layout us -variant intl
+# ES     = setxkbmap -model pc105 -layout es -variant
+# PT     = setxkbmap -model pc105 -layout es -variant
+
+
+echo "<form action=xkb_submit.sh.htm method=get><p>"
+
+echo "<INPUT TYPE=checkbox ID=cedilla NAME=cedilla VALUE=yes $mouseover_open $tip_cedilla $mouseover_close $cedilla_check><label for=cedilla $mouseover_open $tip_cedilla $mouseover_close>" $"Reconhecer C com acento agudo como cedilha."'</label><P>'
+
+
+echo "<input type=radio name=escolha id=6 value=auto onClick=\"Hide('div-manual', this)\" $mouseover_open $tip_auto $mouseover_close $auto_check><label for=6 $mouseover_open $tip_auto $mouseover_close>" $"Modelo especificado na instalacao do sistema""</label>
+<br>
+<input type=radio name=escolha id=1 value=abnt onClick=\"Hide('div-manual', this)\" $mouseover_open $tip_abnt $mouseover_close $abnt_check><label for=1 $mouseover_open $tip_abnt $mouseover_close>" $"Brasil Padrao ABNT""</label>
+<br>
+<input type=radio name=escolha id=5 value=usa onClick=\"Hide('div-manual', this)\" $mouseover_open $tip_usa $mouseover_close $usa_check><label for=5 $mouseover_open $tip_usa $mouseover_close>" $"USA Padrao""</label>
+<br>
+<input type=radio name=escolha id=2 value=usaint onClick=\"Hide('div-manual', this)\" $mouseover_open $tip_usaint $mouseover_close $usaint_check><label for=2 $mouseover_open $tip_usaint $mouseover_close>" $"USA Internacional (Com teclas acentuaveis)""</label>
+<br>
+<input type=radio name=escolha id=3 value=es onClick=\"Hide('div-manual', this)\" $mouseover_open $tip_es $mouseover_close $es_check><label for=3 $mouseover_open $tip_es $mouseover_close>" $"Espanha Padrao""</label>
+<br>
+<input type=radio name=escolha id=7 value=pt onClick=\"Hide('div-manual', this)\" $mouseover_open $tip_pt $mouseover_close $pt_check><label for=7 $mouseover_open $tip_pt $mouseover_close>" $"Portugal Padrao""</label>
+<br>
+<input type=radio name=escolha id=4 value=manual onClick=\"Reveal('div-manual', this)\" $mouseover_open $tip_manual $mouseover_close $manual_check><label for=4 $mouseover_open $tip_manual $mouseover_close>" $"Especificar outro""</label>
+"
+
+if [ "$manual_check" = "checked" ]
+then
+    echo '<div id="div-manual" style="display:yes"><table><tr><td>'
+else
+    echo '<div id="div-manual" style="display:none"><table><tr><td>'
+fi
+
+echo  $"Comando:"'</td><td><input type=textbox size=50 name="setxkbmap" value="'"$(grep setxkbmap /etc/X11/Xsession.d/84big-keyboard-layout)\" $mouseover_open $tip_manual_example $mouseover_close"'"></td></tr><tr><td>
+</td></tr></table><br>'
+echo $"* Para encontrar o comando de forma facil <a href=\"/usr/share/bigbashview/run.run?kcmshell4=keyboard_layout\">clique aqui</a> para abrir o seletor de layout de teclado do KDE.<p>* Apos selecionar a configuracao desejada copie o comando que esta na parte inferior da janela e cole no espaco especificado nesse configurador."
+echo "</div>"
+
+
+
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

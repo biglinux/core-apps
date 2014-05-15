@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-servers-samba
+
+/usr/share/bigcontrolcenter/categories/servers/samba/restart
+
+  kdialog --msgbox $"Servidor reiniciado!" --title $"Servidor reiniciado!"

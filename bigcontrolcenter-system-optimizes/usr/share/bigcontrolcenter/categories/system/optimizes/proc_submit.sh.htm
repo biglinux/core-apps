@@ -1,0 +1,94 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-optimizes
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+
+title=$"Gerenciamento do processador"
+apply=$"Aplicar"
+close=$"Sair"
+back=$"Voltar para tela de configuracao"
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Desligamento rapido."
+close_header
+
+
+
+#confere as variaveis que sao traduzidar com um p_ antes do nome
+
+
+
+if [ "$p_escolha" = "desktop" ]
+then
+echo '# BigBoot
+
+description	"Tweaks for BigLinux"
+author		"Bruno Goncalves Araujo"
+
+start on (filesystem)
+script
+     echo "400000" > /proc/sys/kernel/sched_min_granularity_ns
+     echo "400000" > /proc/sys/kernel/sched_wakeup_granularity_ns
+     echo "250000" > /proc/sys/kernel/sched_shares_ratelimit
+     echo "600000" > /proc/sys/kernel/sched_latency_ns
+     echo "0" > /proc/sys/kernel/sched_child_runs_first
+
+end script'> /etc/init/bigproc.conf
+fi
+
+if [ "$p_escolha" = "default" ]
+then
+    rm -f /etc/init/bigproc.conf
+fi
+
+if [ "$p_shutdown" = "yes" ]
+then
+        if [ "$(dpkg-divert --list /etc/init.d/sendsigs)" = "" ]
+        then
+	        dpkg-divert --package bigcontrolcenter-system-optimizes --divert /etc/init.d/sendsigs.distrib --rename /etc/init.d/sendsigs 2> /dev/null > /dev/null
+		cp -f /usr/share/bigcontrolcenter/categories/system/optimizes/sendsigs /etc/init.d/sendsigs
+	fi
+else
+	rm -f /etc/init.d/sendsigs
+	dpkg-divert --package bigcontrolcenter-system-optimizes --rename --remove /etc/init.d/sendsigs 2> /dev/null > /dev/null
+fi
+
+touch /etc/init.d/sendsigs
+
+#Exibir resposta para o usuario
+echo "<br><br><br><br><br><center><font size=+2>"
+echo $"Configuracao aplicada."
+
+
+
+echo "</font></div><div id=\"rodape\"><button type=button  onClick=\"parent.location='proc.sh.htm'\">   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $back   </button> 
+
+<button type=button onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></form></div></body>"

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-others-bigconvert
+
+name_application=$"Big Converter Video"
+description_application=$"Converta videos e audios"
+exec_application="/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm -i /usr/share/bigcontrolcenter/categories/others/bigconvert/icon.png"
+icon_application="/usr/share/bigcontrolcenter/categories/others/bigconvert/icon.png"

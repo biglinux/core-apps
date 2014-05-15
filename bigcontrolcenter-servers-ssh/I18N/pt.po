@@ -1,0 +1,189 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# BigLinux.com.br <BigLinux.com.br>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2010-10-12 06:18+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: bigconvert <kde-i18n-doc@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-10-13 04:56+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Configurar DNS"
+msgstr "Configurar DNS"
+
+msgid "Aplicar"
+msgstr "Aplicar"
+
+msgid "Sair"
+msgstr "Sair"
+
+msgid "Voltar para tela de configuracao"
+msgstr "Voltar para tela de configuração"
+
+msgid "Para uma conexao mais rapida e estavel."
+msgstr "Para uma conexão mais rápida e estável."
+
+msgid "Configuracao aplicada."
+msgstr "Configuração aplicada."
+
+msgid "SSH"
+msgstr "SSH"
+
+msgid "Acesso remoto seguro e de qualidade"
+msgstr ""
+
+msgid "Inicia automaticamente ao ligar o PC"
+msgstr ""
+
+msgid "A porta padrao dos servidores SSH e 22"
+msgstr "A porta padrão dos servidores SSH e 22"
+
+msgid ""
+"Com essa opcao ativada e possivel apos acessar o terminal executar programas "
+"em modo grafico remotamente<p>Programas executados dessa forma sao "
+"processados no servidor e exibidos no cliente."
+msgstr ""
+"Com essa opção ativada é possível após acessar o terminal executar programas "
+"em modo gráfico remotamente<p>Programas executados dessa forma são "
+"processados no servidor e exibidos no cliente."
+
+msgid "Acesso remoto seguro e de qualidade."
+msgstr ""
+
+msgid ""
+"Esse servidor permite acesso remoto via terminal e transferencia de arquivos "
+"em modo grafico."
+msgstr ""
+"Esse servidor permite acesso remoto via terminal e transferência de arquivos "
+"em modo gráfico."
+
+msgid "Ativo"
+msgstr ""
+
+msgid "Iniciar automaticamente"
+msgstr ""
+
+msgid "Habilitar X11"
+msgstr ""
+
+msgid "Porta:"
+msgstr ""
+
+msgid "Voltar"
+msgstr ""
+
+msgid "Configure esse computador para que seja possivel acessa-lo remotamente"
+msgstr "Configure esse computador para que seja possível acessa-lo remotamente"
+
+msgid "Acesse servidores SSH"
+msgstr ""
+
+msgid "Configurar servidor"
+msgstr "Configurar servidor"
+
+msgid "Acessar servidor"
+msgstr ""
+
+msgid ""
+"Com essa opcao ativada e possivel apos acessar o terminal executar programas "
+"em modo grafico remotamente<p>Programas executados dessa forma sao "
+"processados no servidor e exibidos no cliente<p>* Essa opcao funciona apenas "
+"para acesso via terminal<br>* O servidor tambem necessita estar com essa "
+"opcao ativa"
+msgstr ""
+"Com essa opção ativada é possível após acessar o terminal executar programas "
+"em modo gráfico remotamente<p>Programas executados dessa forma são "
+"processados no servidor e exibidos no cliente<p>* Essa opção funciona apenas "
+"para acesso via terminal<br>* O servidor tambem necessita estar com essa "
+"opção ativa"
+
+msgid "Em alguns locais e informado como login"
+msgstr "Em alguns locais é informado como login"
+
+msgid "Endereco do servidor. Pode ser especificado como nome de dominio ou ip"
+msgstr "Endereço do servidor. Pode ser especificado como nome de dominio ou ip"
+
+msgid "Porta padrao para o ssh e 22"
+msgstr "Porta padrão para o ssh e 22"
+
+msgid "Exibe os arquivos do servidor no gerenciador de arquivos Dolphin"
+msgstr ""
+
+msgid "Efetua login no terminal do servidor utilizando o Konsole"
+msgstr ""
+
+msgid "Preencha os dados referentes ao servidor que deseja acessar:"
+msgstr ""
+
+msgid "Acessar terminal"
+msgstr ""
+
+msgid "Gerenciar arquivos"
+msgstr ""
+
+msgid "Usuario:"
+msgstr "Usuário:"
+
+msgid "Endereco:"
+msgstr "Endereço:"
+
+#~ msgid "Torne mais rapida e segura sua conexao"
+#~ msgstr "Torne mais rápida e segura sua conexão"
+
+#~ msgid "Servidor gratuito fornecido pela empresa Google, muito rapido."
+#~ msgstr "Servidor gratuito fornecido pela empresa Google, muito rápido."
+
+#~ msgid "Servidor gratuito reconhecido por ser um dos mais rapidos e seguros"
+#~ msgstr "Servidor gratuito reconhecido por ser um dos mais rápidos e seguros"
+
+#~ msgid ""
+#~ "Utilize o servidor diretamente em seu computador, utiliza um pouco de "
+#~ "memoria RAM e processamento, porem possui a menor taxa de erros"
+#~ msgstr ""
+#~ "Utilize o servidor diretamente em seu computador, utiliza um pouco de "
+#~ "memoria RAM e processamento, porém possui a menor taxa de erros"
+
+#~ msgid ""
+#~ "Caso tennha preferencia por um servidor especifico preencha com o IP "
+#~ "correspondente"
+#~ msgstr ""
+#~ "Caso tenha preferência por um servidor específico preencha com o IP "
+#~ "correspondente"
+
+#~ msgid ""
+#~ "Servidor que traduz nomes para os endereços IP e endereços IP para nomes "
+#~ "respectivos, permitindo sua localização."
+#~ msgstr ""
+#~ "Servidor que traduz nomes para os endereços IP e endereços IP para nomes "
+#~ "respectivos, permitindo sua localização."
+
+#~ msgid ""
+#~ "Passe o mouse sobre as alternativas abaixo e descubra as vantagens de "
+#~ "cada uma"
+#~ msgstr ""
+#~ "Passe o mouse sobre as alternativas abaixo e descubra as vantagens de "
+#~ "cada uma"
+
+#~ msgid "Automatico - definido pelo provedor"
+#~ msgstr "Automático - definido pelo provedor"
+
+#~ msgid "Google Public DNS - servico gratuito de DNS"
+#~ msgstr "Google Public DNS - serviço gratuito de DNS"
+
+#~ msgid "OpenDNS - servico gratuito de DNS"
+#~ msgstr "OpenDNS - serviço gratuito de DNS"
+
+#~ msgid "Servidor primario:"
+#~ msgstr "Servidor primário:"
+
+#~ msgid "Servidor secundario:"
+#~ msgstr "Servidor secundário:"

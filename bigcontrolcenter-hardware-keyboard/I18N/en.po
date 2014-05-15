@@ -1,0 +1,291 @@
+# Spanish translations for PACKAGE package.
+# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BigLinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-08-13 03:21-0300\n"
+"PO-Revision-Date: 2010-08-13 09:14+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-08-16 06:39+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Teclado, mouse e touchpad"
+msgstr ""
+
+msgid "Aplicar"
+msgstr ""
+
+msgid "Sair"
+msgstr ""
+
+msgid ""
+"Pasta /etc/kde4/kdm/autostart nao encontrada, instale o pacote big-kdminit "
+"para ser possivel iniciar o teclado virtual na tela de login."
+msgstr ""
+
+msgid "Atencao!"
+msgstr ""
+
+msgid "Layout de teclado, velocidade e ate controlar o mouse com a webcam."
+msgstr ""
+
+msgid "Configuracao aplicada."
+msgstr ""
+
+msgid "Padrao utilizado por quase todos os computadores vendidos no Brasil"
+msgstr ""
+
+msgid "Padrao dos Estados Unidos para idiomas que nao utilizam acentos"
+msgstr ""
+
+msgid ""
+"Padrao dos Estados Unidos com suporte a acentos, em geral notebooks "
+"importados.<p>* Recomendado ativar a opcao utilizar cedilha com acento agudo "
+"+ C."
+msgstr ""
+
+msgid "Padrao na Espanha"
+msgstr ""
+
+msgid "Padrao em Portugal"
+msgstr ""
+
+msgid "Em geral durante a instalacao ja e especificado o modelo correto"
+msgstr ""
+
+msgid "Informe o comando setxkbmap especifico para seu teclado"
+msgstr ""
+
+msgid ""
+"Todos os usuarios terao o recurso de movimento do mouse com a webcam "
+"disponivel desde a tela de login"
+msgstr ""
+
+msgid ""
+"O recurso de movimento do mouse com a webcam sera iniciado automaticamente "
+"apos o login apenas para esse usuario"
+msgstr ""
+
+msgid ""
+"O eViacam permite que o cursor do mouse seja movimentado com movimentos da "
+"cabeca captados pela webcam."
+msgstr ""
+
+msgid ""
+"Para executa-lo <a href=/usr/share/bigbashview/run.run?eviacam>clique "
+"aqui</a>."
+msgstr ""
+
+msgid "Utilize as opcoes abaixo para automatizar o uso:"
+msgstr ""
+
+msgid "Executa-lo na tela de login."
+msgstr ""
+
+msgid "Executa-lo apos o login."
+msgstr ""
+
+msgid ""
+"Se for detectado um touchpad as configuracoes abaixo sao ativadas "
+"automaticamente ao ligar o computador."
+msgstr ""
+
+msgid "Teclas como Ctrl e Alt nao bloqueiam os toques no touchpad"
+msgstr ""
+
+msgid "Mantem a movimentacao do cursor e os cliques nos botoes"
+msgstr ""
+
+msgid ""
+"Tempo que os toques no touchpad devem ser ignorados apos utilizar o "
+"teclado.<p>1.0 igual 1 segundo<br>2.0 igual 2 segundos<br> 0.5 igual meio "
+"segundo"
+msgstr ""
+
+msgid ""
+"Uma dificuldade comum ao utilizar notebooks e causada por toques acidentais "
+"no touchpad. Utilize as opcoes abaixo para tornar o uso mais confortavel:"
+msgstr ""
+
+msgid "Iniciar automaticamente."
+msgstr ""
+
+msgid "Nao bloquear o mouse ao utilizar teclas modificadoras."
+msgstr ""
+
+msgid "Desativar somente toques acidentais."
+msgstr ""
+
+msgid "Tempo de espera:"
+msgstr ""
+
+msgid ""
+"Pasta /etc/kde4/kdm/autostart nao encontrada, instale o pacote big-kdminit "
+"para ser possivel iniciar o recurso de controle do mouse com a webcam na "
+"tela de login."
+msgstr ""
+
+msgid ""
+"Padrao dos Estados Unidos com suporte a acentos, em geral notebooks "
+"importados.<p>* Recomendado ativar a opcao utilizar cedilha com acento agudo "
+"+ C"
+msgstr ""
+
+msgid "Exemplo de comando: setxkbmap -model pc105 -layout br -variant"
+msgstr ""
+
+msgid ""
+"Importante principalmente em Notebooks com teclado USA Internacional.<p>* "
+"Para essa opcao entrar em operacao e necessario reiniciar o computador ou "
+"encerrar a sessao e efetuar login novamente"
+msgstr ""
+
+msgid ""
+"Esse configurador estipula a configuracao do teclado para todos os ambientes "
+"graficos do sistema."
+msgstr ""
+
+msgid "Reconhecer C com acento agudo como cedilha."
+msgstr ""
+
+msgid "Modelo especificado na instalacao do sistema"
+msgstr ""
+
+msgid "Brasil Padrao ABNT"
+msgstr ""
+
+msgid "USA Padrao"
+msgstr ""
+
+msgid "USA Internacional (Com teclas acentuaveis)"
+msgstr ""
+
+msgid "Espanha Padrao"
+msgstr ""
+
+msgid "Portugal Padrao"
+msgstr ""
+
+msgid "Especificar outro"
+msgstr ""
+
+msgid "Comando:"
+msgstr ""
+
+msgid ""
+"* Para encontrar o comando de forma facil <a href=\\"
+"\"/usr/share/bigbashview/run.run?kcmshell4=keyboard_layout\\\">clique "
+"aqui</a> para abrir o seletor de layout de teclado do KDE.<p>* Apos "
+"selecionar a configuracao desejada copie o comando que esta na parte "
+"inferior da janela e cole no espaco especificado nesse configurador."
+msgstr ""
+
+msgid ""
+"Clique unico ou duplo, velocidade, tema, mover o ponteiro do mouse com o "
+"teclado numerico...<p>* Funciona somente no ambiente Kde"
+msgstr ""
+
+msgid ""
+"Ativar automaticamente o NumLock e configurar taxa de repeticao do "
+"teclado<p>* Funciona somente no ambiente Kde"
+msgstr ""
+
+msgid ""
+"Configure o modelo de teclado, se letras ou acentos nao estao funcionando "
+"corretamente utilize essa opcao<p>* Funciona somente no ambiente Kde"
+msgstr ""
+
+msgid ""
+"Configure as teclas de atalho de diversos programas<p>* Funciona somente no "
+"ambiente Kde"
+msgstr ""
+
+msgid ""
+"Configure teclas de atalho padronizadas, por exemplo: imprimir e salvar "
+"arquivo<p>* Funciona somente no ambiente Kde"
+msgstr ""
+
+msgid "Confira o status da impressao"
+msgstr ""
+
+msgid ""
+"Configure o modelo de teclado, opcao similar ao Layout de teclado, porem a "
+"configuracao e aplicada para todos os usuarios e em todos os ambientes "
+"graficos"
+msgstr ""
+
+msgid "Digite com cliques no mouse usando o teclado virtual"
+msgstr ""
+
+msgid ""
+"Ajuste as preferencias de sensibilidade e comportamento da barra de rolagem"
+msgstr ""
+
+msgid ""
+"Especifica regras para desativar o touchpad enquanto o teclado esta sendo "
+"utilizado"
+msgstr ""
+
+msgid ""
+"Metodo que facilita o uso do computador por pessoas que nao conseguem "
+"movimentar o mouse<p>Tambem utilizado como uma nova forma de interagir com "
+"jogos"
+msgstr ""
+
+msgid "Modelo de teclado"
+msgstr ""
+
+msgid "Layout de teclado"
+msgstr ""
+
+msgid "Teclado virtual"
+msgstr ""
+
+msgid "Configuracao de atalhos de teclado padrao"
+msgstr ""
+
+msgid "Atalhos de teclado globais"
+msgstr ""
+
+msgid "Evitar toques acidentais no touchpad"
+msgstr ""
+
+msgid "Sensibilidade do touchpad"
+msgstr ""
+
+msgid "Mouse"
+msgstr ""
+
+msgid "Controlar o mouse com a webcam"
+msgstr ""
+
+msgid ""
+"Todos os usuarios terao o teclado virtual disponivel desde a tela de login"
+msgstr ""
+
+msgid ""
+"O teclado virtual sera iniciado automaticamente apos o login apenas para "
+"esse usuario"
+msgstr ""
+
+msgid ""
+"O teclado virtual possui melhor compatibilidade com o modelo de teclado USA "
+"Internacional, porem essa opcao pode nao ser a mais compativel com o seu "
+"teclado<p>* Marque essa opcao "
+msgstr ""
+
+msgid ""
+"O teclado virtual permite que os textos sejam digitados utilizando o mouse."
+msgstr ""
+
+msgid ""
+"Para executa-lo <a href=/usr/share/bigbashview/run.run?kvkbd>clique aqui</a>."
+msgstr ""

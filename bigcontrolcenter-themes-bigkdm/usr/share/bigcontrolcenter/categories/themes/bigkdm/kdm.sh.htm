@@ -1,0 +1,90 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-themes-bigkdm
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Tela de Login (KDM)"
+apply=$"Aplicar"
+close=$"Sair"
+tip_kdm=$"Configuracao completa da tela de login."
+tip_bigkdm=$"Utilize sua imagem favorita como fundo de tela do tema BigLinux"
+
+. /usr/share/bigcontrolcenter/default/theme.sh.htm
+
+cat << EOF
+	<script type="text/javascript" src="/usr/share/bigcontrolcenter/default/js/jquery-1.3.2.min.js"></script>
+
+
+	<script type="text/javascript">
+	\$(function() {
+		\$("#tabs").tabs({
+			event: 'mouseover'
+		})
+	});
+
+	if (document.images) {
+	buttonUp = new Image(); buttonUp.src = "/usr/share/bigcontrolcenter/default/images/category-background.png";
+	buttonDown = new Image(); buttonDown.src = "$(echo $HOME)/.bigcontrolcenter/category-background-over.png";
+	}
+
+	function turn_off(cell) {
+	if (document.images != null) {
+	cell.style.backgroundImage = "url('" + buttonUp.src + "')";
+	}
+	}
+
+	function turn_on(cell) {
+	if (document.images != null) {
+	cell.style.backgroundImage = "url('" + buttonDown.src + "')";
+	}
+	}
+
+  </script>
+
+
+
+
+
+EOF
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Configure a tela de login e altere a imagem de fundo do tema BigLinux."
+close_header
+
+
+
+echo "<TABLE align=center><tr><td>"
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 kdm\"" "$mouseover_open" $tip_kdm "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=icon.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Configuracao completa" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/themes/bigkdm/bigkdm.sh.htm -i /usr/share/bigcontrolcenter/categories/themes/bigkdm/wall.png\"" "$mouseover_open" $tip_bigkdm "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=wall.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Alterar fundo de tela do tema BigLinux" " </font></td></tr></table></a>"
+echo '</td></tr>'
+echo '</table>'
+
+
+echo "</a></td></tr></table></div><div id=\"rodape\"><button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

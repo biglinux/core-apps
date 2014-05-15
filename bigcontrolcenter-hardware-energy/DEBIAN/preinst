@@ -1,0 +1,46 @@
+#! /bin/bash
+
+package_name=bigcontrolcenter-hardware-energy
+
+case "$1" in
+  install)
+
+if [ ! -e "/etc/bigpower_governor" ]
+then
+    echo "ondemand" > /etc/bigpower_governor
+fi
+
+
+if [ ! -e "/etc/bigpower_governor_battery" ]
+then
+    echo "ondemand" > /etc/bigpower_governor_battery
+fi
+
+
+if [ "$(dpkg-divert --list /etc/init.d/ondemand)" = "" ]
+   then
+   dpkg-divert --package $package_name --divert /etc/init.d/ondemand.distrib --rename /etc/init.d/ondemand
+fi
+
+if [ ! -e "/etc/bigpower_usb" ]
+then
+    echo "1" > /etc/bigpower_usb
+fi
+
+if [ ! -e "/etc/bigpower_som" ]
+then
+    echo "2" > /etc/bigpower_som
+fi
+
+if [ ! -e "/etc/bigpower_hd" ]
+then
+    echo "1" > /etc/bigpower_hd
+fi
+
+if [ ! -e "/etc/bigpower_hd_time" ]
+then
+    echo "60" > /etc/bigpower_hd_time
+fi
+
+;;
+esac

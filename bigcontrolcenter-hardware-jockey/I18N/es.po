@@ -1,0 +1,29 @@
+# Spanish translations for PACKAGE package.
+# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BigLinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-22 13:12-0200\n"
+"PO-Revision-Date: 2010-09-15 07:43+0000\n"
+"Last-Translator: Joan Jimenez <jimenez.donaldson@gmail.com>\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-16 04:59+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Instalar drivers proprietarios"
+msgstr "Instalar controladores propietarios"
+
+msgid ""
+"Instale aqui drivers para aceleracao 3D de placas nVidia e ATI, alem de "
+"alguns drivers para placas Wireless."
+msgstr ""
+"Instale aquí controladores para la aceleración 3D de las tarjetas de nVidia "
+"y ATI, además de algunos controladores de tarjetas inalámbricas."

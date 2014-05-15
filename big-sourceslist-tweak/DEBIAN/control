@@ -1,0 +1,9 @@
+Package: big-sourceslist-tweak
+Version: 1.0.2-0kaiana5
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Priority: optional
+Description: Apos a instalacao melhora a sources.list padrao
+

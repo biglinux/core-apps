@@ -1,0 +1,22 @@
+#! /bin/sh
+
+set -e
+
+package_name=bigcontrolcenter-system-biguser
+
+if [ -z "$package_name" ]; then
+    print >&2 "Internal Error. Please report a bug."
+    exit 1;
+fi
+
+case "$1" in
+  install)
+    dpkg-divert --package $package_name --divert /usr/share/applications/users.desktop.distrib --rename /usr/share/applications/users.desktop
+    ;;
+  abort-upgrade)
+    ;;
+  *) echo "$0: didn't understand being called with \`$1'" 1>&2
+     exit 0;;
+esac
+
+exit 0

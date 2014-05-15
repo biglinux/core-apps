@@ -1,0 +1,18 @@
+#! /bin/sh
+
+set -e
+
+ln -sf /etc/init.d/bigfixpartition /etc/rc5.d/S99bigfixpartition
+ln -sf /etc/init.d/bigfixpartition /etc/rc4.d/S99bigfixpartition
+ln -sf /etc/init.d/bigfixpartition /etc/rc3.d/S99bigfixpartition
+ln -sf /etc/init.d/bigfixpartition /etc/rc2.d/S99bigfixpartition
+
+  if [ ! -e "/etc/pm/config.d/journal-commit" ]
+  then
+      mkdir -p /etc/pm/config.d/
+      echo "JOURNAL_COMMIT_TIME_AC=60" > /etc/pm/config.d/journal-commit
+  fi
+
+
+
+exit 0

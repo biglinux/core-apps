@@ -1,0 +1,98 @@
+#!/bin/bash
+source translation
+#Translation
+cat << EOF
+<html>
+<!--
+	Miniport 2.5 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<!-- #Insira o conteúdo entre os 2 EOF sem se preocupar com aspas -->
+
+	<head>
+		<title>$title</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/style.css" />
+		
+	</head>
+<body>
+EOF
+cat << EOF
+<!-- Nav -->
+	<nav id="nav">
+		<ul class="container">
+			<li><a href="index.sh.htm">$menuindex</a></li>
+			<li><a href="news.sh.htm">$menunews</a></li>
+			<li><a href="conf.sh.htm">$menuconfigure</a></li>
+			<li><a href="apps-office.sh.htm">$menuapps</a></li>
+			<li><a href="community.sh.htm">$menucontribute</a></li>
+			<li><a href="about.sh.htm">$menuabout</a></li>
+		</ul>
+	</nav>
+
+<!-- Home -->
+	<div class="wrapper">			
+		<div id="container">	
+		<p class="titlePage">$cabecalho03 $(lsb_release -d | cut -d":" -f2) $cabecalho04</p>
+		<div id='cssmenu'>
+		     <ul>
+			 <li><a href='apps-office.sh.htm'><span>$menuappsoffice</span></a></li> 
+			 <li><a href='apps-graphics.sh.htm'><span>$menuappsgraphics</span></a></li>
+			 <li><a href='apps-internet.sh.htm'><span>$menuappsinternet</span></a></li>
+			 <li><a href='apps-multimedia.sh.htm'><span>$menuappsmultimedia</span></a></li>
+			 <li><a href='apps-development.sh.htm'><span>$menuappsdevelopment</span></a></li>
+			 <li><a href='apps-utility.sh.htm'><span>$menuappsutility</span></a></li>
+			 <li class='active'><a href='apps-gaming.sh.htm'><span>$menuappsgaming</span></a></li>
+		    </ul>
+		    <br/>
+		</div>
+		<ul id="item-list">
+			<li>
+				<p><a class="title" href=./apps/install-0ad.run><img src="images/0ad.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-0ad.run>$title0ad</a></span><br/>$desc0ad</p>
+			</li>
+			<li>
+				<p><a class="title" href=./apps/install-steam.run><img src="images/steam.png" class="alignleft"/></a>
+				<span><a class="title" href=./apps/install-steam.run>$titlesteam</a></span><br/></span></br>$descsteam</p>
+			</li>
+			
+			<li>
+				<p><a class="title" href="./apps/install-megaglest.run"><img src="images/megaglest.png" class="alignleft"/>
+				<span><a class="title" href="./apps/install-megaglest.run">$titlemegaglest </a></span><br/>$descmegaglest</p>
+			</li>
+			<li>
+				<p><a class="title" href=./apps/install-wesnoth.run><img src="images/wesnoth.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-wesnoth.run>$titlewesnoth</a></span><br/>$descwesnoth</p>
+			</li>
+			<li>
+				<p><a class="title" href=./apps/install-flightgear.run><img src="images/flightgear.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-flightgear.run>$titleflightgear</a></span><br/>$descflightgear</p>
+			</li>	
+			<li>
+				<p><a class="title" href=./apps/install-torcs.run><img src="images/torcs.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-torcs.run>$titletorcs</a></span><br/>$desctorcs</p>
+			</li>
+			<li>
+				<p><a class="title" href=./apps/install-supertux.run><img src="images/supertux.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-supertux.run>$titlesupertux</a></span><br/>$descsupertux</p>
+			</li>
+			<li>
+				<p><a class="title" href=./apps/install-warzone.run><img src="images/warzone.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-warzone.run>$titlewarzone</a></span><br/>$descwarzone</p>
+			</li>
+			<li>
+				<a class="title" href="./apps/open-software-center.run"><img src="images/getaplications.png" class="alignleft"/>
+				<span><a class="title" href="./apps/open-software-center.run">$titlesoftcenter</a></span><br/>$descsoftcenter</p>
+			</li>
+		</ul>
+	</div> 
+	<div id="rodape">
+	<a href="community.sh.htm" class="button">$next</a>
+	</div>
+</body>
+EOF
+</html>

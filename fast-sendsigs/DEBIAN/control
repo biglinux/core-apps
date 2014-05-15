@@ -1,0 +1,10 @@
+Package: fast-sendsigs
+Version: 1.0.0-0kaiana0
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Depends: initscripts
+Priority: optional
+Description: Desliga o computador mais rapido
+

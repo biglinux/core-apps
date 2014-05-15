@@ -1,0 +1,9 @@
+Package: bigcontrolcenter-hardware-printer
+Version: 1.0.2-1kaiana5
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: hplip-gui, bigcontrolcenter, mtink, inkblot, system-config-printer-gnome
+Section: admin
+Priority: optional
+Description: Configure printer

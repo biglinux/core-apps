@@ -1,0 +1,134 @@
+# English (United Kingdom) translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-13 04:50-0300\n"
+"PO-Revision-Date: 2010-08-28 07:14+0000\n"
+"Last-Translator: Sergio <ikisham@gmail.com>\n"
+"Language-Team: English (United Kingdom) <en_GB@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-08-29 03:43+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "SSH"
+msgstr "SSH"
+
+msgid "Aplicar"
+msgstr "Apply"
+
+msgid "Sair"
+msgstr "Quit"
+
+msgid "A porta padrao dos servidores SSH e 22"
+msgstr "The default port for SSH servers is 22"
+
+msgid ""
+"Com essa opcao ativada e possivel apos acessar o terminal executar programas "
+"em modo grafico remotamente<p>Programas executados dessa forma sao "
+"processados no servidor e exibidos no cliente."
+msgstr ""
+"With this option enabled it's possible to remotely run applications in "
+"graphic mode after accessing the terminal<p>Applications run in this way are "
+"processed in the server and shown on the client."
+
+msgid "Acesso remoto seguro e de qualidade."
+msgstr "Safe and quality remote access."
+
+msgid "Configurar DNS"
+msgstr "Configure DNS"
+
+msgid "Voltar para tela de configuracao"
+msgstr "Go back to the configuration window"
+
+msgid "Para uma conexao mais rapida e estavel."
+msgstr "For a faster and stabler connection."
+
+msgid "Configuracao aplicada."
+msgstr "Configuration applied."
+
+msgid "Configure esse computador para que seja possivel acessa-lo remotamente"
+msgstr "Configure this computer so it can be remotely accessed"
+
+msgid "Acesse servidores SSH"
+msgstr "Access SSH servers"
+
+msgid "Configurar servidor"
+msgstr "Configure server"
+
+msgid "Acessar servidor"
+msgstr "Access server"
+
+msgid "Inicia automaticamente ao ligar o PC"
+msgstr "Starts automatically when turning on the computer"
+
+msgid ""
+"Esse servidor permite acesso remoto via terminal e transferencia de arquivos "
+"em modo grafico."
+msgstr ""
+"This server enables remote access via terminal and file transfers in graphic "
+"mode."
+
+msgid "Ativo"
+msgstr "Active"
+
+msgid "Iniciar automaticamente"
+msgstr "Start automatically"
+
+msgid "Habilitar X11"
+msgstr "Enable X11"
+
+msgid "Porta:"
+msgstr "Port:"
+
+msgid ""
+"Com essa opcao ativada e possivel apos acessar o terminal executar programas "
+"em modo grafico remotamente<p>Programas executados dessa forma sao "
+"processados no servidor e exibidos no cliente<p>* Essa opcao funciona apenas "
+"para acesso via terminal<br>* O servidor tambem necessita estar com essa "
+"opcao ativa"
+msgstr ""
+"With this option enabled it's possible to remotely run applications in "
+"graphic mode after accessing the terminal<p>Applications run in this way are "
+"processed in the server and shown on the client<p>* This option works only "
+"for access via terminal<br>* The server also has to have this option enabled"
+
+msgid "Em alguns locais e informado como login"
+msgstr "In some places is shown as login"
+
+msgid "Endereco do servidor. Pode ser especificado como nome de dominio ou ip"
+msgstr "Server address. May be specified as a domain name or IP"
+
+msgid "Porta padrao para o ssh e 22"
+msgstr "Default port for SSH is 22"
+
+msgid "Exibe os arquivos do servidor no gerenciador de arquivos Dolphin"
+msgstr "Shows the files on the server in Dolphin file manager"
+
+msgid "Efetua login no terminal do servidor utilizando o Konsole"
+msgstr "Logs in the server terminal using Konsole"
+
+msgid "Preencha os dados referentes ao servidor que deseja acessar:"
+msgstr "Fill in the data for the sever you would like to access:"
+
+msgid "Acessar terminal"
+msgstr "Acess terminal"
+
+msgid "Gerenciar arquivos"
+msgstr "Manage files"
+
+msgid "Usuario:"
+msgstr "User:"
+
+msgid "Endereco:"
+msgstr "Address:"
+
+msgid "Acesso remoto seguro e de qualidade"
+msgstr "Safe and quality remote access"

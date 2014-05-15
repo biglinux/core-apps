@@ -1,0 +1,27 @@
+#! /bin/sh
+
+set -e
+
+#Nome do pacote
+package_name=bigcontrolcenter-internet-chromium
+
+if [ -z "$package_name" ]; then
+    print >&2 "Internal Error. Please report a bug."
+    exit 1;
+fi
+
+#Troca arquivos de outros pacotes pelos contidos nesse pacote, renomeando o do outro pacote para o mesmo nome com a inclusao da extensao .distrib
+case "$1" in
+  install)
+      dpkg-divert --package $package_name --divert /usr/bin/chromium-browser.distrib --rename /usr/bin/chromium-browser
+;;
+
+  upgrade)
+        if [ "$(dpkg-divert --list /usr/bin/chromium-browser)" = "" ]
+        then
+	        dpkg-divert --package $package_name --divert /usr/bin/chromium-browser.distrib --rename /usr/bin/chromium-browser
+	fi
+    ;;
+esac
+
+exit 0

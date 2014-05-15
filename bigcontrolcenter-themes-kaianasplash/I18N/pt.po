@@ -1,0 +1,54 @@
+# Portuguese translations for BigLinux package.
+# Copyright (C) 2013 THE BigLinux'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the BigLinux package.
+# Automatically generated, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BigLinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2013-10-10 02:27-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Kaiana Splash"
+msgstr ""
+
+msgid "Aplicar"
+msgstr ""
+
+msgid "Voltar para tela de configuração"
+msgstr ""
+
+msgid "Sair"
+msgstr ""
+
+msgid "Defina suas preferências."
+msgstr ""
+
+msgid "Configuração aplicada."
+msgstr ""
+
+msgid "Tela de abertura do KDE (Kaiana Splash)"
+msgstr ""
+
+msgid "Gerencie o kaiana splash"
+msgstr ""
+
+msgid "Clique aqui para ver uma previsão desse tema."
+msgstr ""
+
+msgid "Ativar o Kaiana Splash ao fazer login."
+msgstr ""
+
+msgid ""
+"Os temas marcados abaixo serão reproduzidos aleatoriamente cada vez que o "
+"usuário efetuar login, para encerrar a aleatoriedade deixe somente um tema "
+"marcado:"
+msgstr ""

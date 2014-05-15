@@ -1,0 +1,6 @@
+#!/bin/bash
+
+  if [ -e "$HOME/.bigeviacam" ]
+  then
+      eviacam
+  fi

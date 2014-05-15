@@ -1,0 +1,1863 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# www.biglinux.com.br <www.biglinux.com.br>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-25 06:22-0300\n"
+"PO-Revision-Date: 2010-03-25 07:21-0300\n"
+"Last-Translator: www.biglinux.com.br <www.biglinux.com.br>\n"
+"Language-Team: Português do Brasil <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:40
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm:40
+msgid "Selecione outra pasta pois seu usuario nao possui permissao de escrita na selecionada."
+msgstr "Selecione outra pasta pois seu usuário não possui permissão de escrita na selecionada."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:40
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:55
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:72
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm:139
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm:40
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm:55
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm:72
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:179
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/description.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm:116
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm:191
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/info.sh.htm:46
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/submit.sh.htm:52
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/submit.sh.htm:95
+msgid "Big Converter"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:55
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm:55
+msgid "Nenhum video foi selecionado para conversao, adicione-o antes de prosseguir."
+msgstr "Nenhum vídeo foi selecionado para conversão, adicione-o antes de prosseguir."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:69
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm:69
+msgid "Adicionar videos"
+msgstr "Adicionar vídeos"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:70
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm:70
+msgid "Esvaziar lista"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:71
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm:71
+msgid "Alterar destino"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:73
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm:73
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:180
+msgid "Avancar"
+msgstr "Avançar"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:74
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm:141
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:182
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/submit.sh.htm:54
+msgid "Voltar"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:75
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm:74
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm:193
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/info.sh.htm:48
+msgid "Sair"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:76
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm:75
+msgid "Remover da lista"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:77
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm:76
+msgid "Reproduzir"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:78
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm:77
+msgid "Ver informacoes"
+msgstr "Ver informações"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:79
+msgid "Ao clicar aqui o Big Converter sera configurado para gerar videos a serem reproduzidos nesse dispositivo."
+msgstr "Ao clicar aqui o Big Converter será configurado para gerar vídeos a serem reproduzidos nesse dispositivo."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:80
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm:78
+msgid "Onde serao salvos os videos ou audios convertidos"
+msgstr "Onde serão salvos os vídeos ou áudios convertidos"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:89
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm:155
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm:87
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:207
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm:208
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/info.sh.htm:63
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/submit.sh.htm:150
+msgid "Converta videos ou extraia audio."
+msgstr "Converta vídeos ou extraia áudio."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:104
+msgid "Dicas"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:107
+msgid ""
+"<li>As opcoes MP4 Portatil e 3GP sao para uso em equipamentos portateis, principalmente celulares. MP4 possui melhor qualidade, enquanto o 3GP e suportado por uma variedade maior de aparelhos.\n"
+"<p><li>MP4 (264) possui possui otimizacoes nao suportadas pela opcao portatil, mas para assistir no computador e a melhor opcao.\n"
+"<p><li>XVID possui compactacao melhor que o DIVX e costuma funcionar bem em equipamentos que suportam DIVX, principalmente DVD Players.\n"
+"<p><li>As opcoes Audio MP3 e audio M4A extraem somente o audio do arquivo de video, util principalmente para ouvir em seu MP3 Player, sendo o MP3 compativel com mais aparelhos e o M4A com mais qualidade.\n"
+"<p><li>Para obter a melhor qualidade confira no manual do equipamento onde ira reproduzir o conteudo convertido qual a recomendacao do fabricante para formato e resolucao.\n"
+"<p><li>Lembre que conversoes sempre possuem perda de qualidade, portanto converter um video da baixa qualidade para um formato de melhor qualidade nao tera melhorias na imagem.\n"
+"<p><li>A resolucao otimizada para DVD mantem a resolucao original ate a largura de 720 pixels que e o limite dos DVD Players, caso a resolucao original seja maior, sera reduzida para 720 pixels."
+msgstr ""
+"<li>As opções MP4 Portátil e 3GP são para uso em equipamentos portáteis, principalmente celulares. MP4 possui melhor qualidade, enquanto o 3GP e suportado por uma variedade maior de aparelhos.\n"
+"<p><li>MP4 (264) possui otimizações não suportadas pela opção portátil, mas para assistir no computador e a melhor opção.\n"
+"<p><li>XVID possui compactação melhor que o DIVX e costuma funcionar bem em equipamentos que suportam DIVX, principalmente DVD Players.\n"
+"<p><li>As opções Áudio MP3 e áudio M4A extraem somente o áudio do arquivo de vídeo, útil principalmente para ouvir em seu MP3 Player, sendo o MP3 compatível com mais aparelhos e o M4A com mais qualidade.\n"
+"<p><li>Para obter a melhor qualidade confira no manual do equipamento onde irá reproduzir o conteúdo convertido qual a recomendação do fabricante para formato e resolução.\n"
+"<p><li>Lembre que conversões sempre possuem perda de qualidade, portanto converter um vídeo de baixa qualidade para um formato de melhor qualidade não terá melhorias na imagem.\n"
+"<p><li>A resolução otimizada para DVD mantem a resolução original até a largura de 720 pixels que é o limite dos DVD Players, caso a resolução original seja maior, será reduzida para 720 pixels."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:128
+msgid "Configuracoes automaticas"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:130
+msgid "Celular simples, com suporte a 3GP."
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:131
+msgid "Celular intermediario, com suporte a MP4."
+msgstr "Celular intermediário, com suporte a MP4."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:132
+msgid "Celular moderno, com suporte a MP4."
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:133
+msgid "DVD Player, com suporte a XVID."
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:134
+msgid "DVD Player, com suporte a DIVX."
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:135
+msgid "iPOD somente audio."
+msgstr "iPOD somente áudio."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:136
+msgid "iPOD video."
+msgstr "iPOD vídeo."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:137
+msgid "PSP Sony."
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:138
+msgid "Playstation 3."
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/help.sh.htm:139
+msgid "XBOX 360."
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm:108
+msgid "Os arquivos de legenda devem estar na mesma pasta que o video e com o mesmo nome, sendo diferenciados apenas pela extensao.<br>Caso existam legendas .ass e .srt sera utilizada a .ass.<br>Somente legendas .srt obedecem a formatacao desse configurador."
+msgstr "Os arquivos de legenda devem estar na mesma pasta que o vídeo e com o mesmo nome. Sendo diferenciados apenas pela extensão.<br>Caso existam legendas .ass e .srt será utilizada a .ass.<br>Somente legendas .srt obedecem a formatação desse configurador."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm:110
+msgid "Insere uma borda escura em torno da fonte que torna a leitura da legenda muito agradavel."
+msgstr "Insere uma borda escura em torno da fonte que torna a leitura da legenda muito agradável."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm:140
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:183
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm:194
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/info.sh.htm:49
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/submit.sh.htm:53
+msgid "Iniciar conversao"
+msgstr "Iniciar conversão"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm:142
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:181
+msgid "Prever resultado"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm:195
+msgid "Embutir legenda"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm:231
+msgid "Cor:"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm:238
+msgid "Adicionar borda"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm:253
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:368
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:495
+msgid "Bitrate em kbps"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm:281
+msgid "Extras"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm:287
+msgid "Brilho"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm:313
+msgid "Contraste"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm:338
+msgid "Saturacao (Cor)"
+msgstr "Saturação (Cor)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/saturacao.sh.htm:12
+msgid "3.0 (Maximo)"
+msgstr "3.0 (Máximo)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/saturacao.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/fontsize.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:23
+msgid "2.8"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/saturacao.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/fontsize.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:22
+msgid "2.6"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/saturacao.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/fontsize.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:21
+msgid "2.4"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/saturacao.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/fontsize.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:20
+msgid "2.2"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/saturacao.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/fontsize.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:19
+msgid "2.0"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/saturacao.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:18
+msgid "1.8"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/saturacao.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/fontsize.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:17
+msgid "1.6"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/saturacao.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/fontsize.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:16
+msgid "1.4"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/saturacao.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/fontsize.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:15
+msgid "1.2"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/saturacao.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:17
+msgid "1.0 (Manter original)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/saturacao.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/fontsize.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:14
+msgid "0.8"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/saturacao.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/fontsize.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:16
+msgid "0.6"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/saturacao.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/fontsize.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:18
+msgid "0.4"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/saturacao.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:20
+msgid "0.2"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/saturacao.sh.htm:27
+msgid "0.0 (Minimo)"
+msgstr "0.0 (Mínimo)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/3gp.sh.htm:13
+msgid "Manter resolucao original"
+msgstr "Manter resolução original"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:14
+msgid "1920x1080 Full HD WideScreen"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:15
+msgid "1280x720 HD WideScreen"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:16
+msgid "1024x768 4:3"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:17
+msgid "960x600 WideScreen"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:18
+msgid "800x600 4:3"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:19
+msgid "720x576 DVD PAL-M WideScreen"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:20
+msgid "720x480 DVD NTSC WideScreen"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:21
+msgid "680x384 WideScreen"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:22
+msgid "640x480 4:3"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/3gp.sh.htm:15
+msgid "520x576 PAL-M 4:3"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/3gp.sh.htm:16
+msgid "440x486 NTSC 4:3"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:25
+msgid "480x272 PSP"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:27
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/3gp.sh.htm:17
+msgid "400x300 4:3"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:27
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:27
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:28
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:27
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:27
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:27
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:27
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/3gp.sh.htm:18
+msgid "352x288 CIF 4:3"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:28
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:28
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:29
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:28
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:28
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:28
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:28
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/3gp.sh.htm:19
+msgid "320x240 QVGA 4:3"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:29
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:29
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:30
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:29
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:29
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:29
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:29
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/3gp.sh.htm:20
+msgid "320x180 QVGA WideScreen"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:30
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:30
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:31
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:30
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:30
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:30
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:30
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/3gp.sh.htm:22
+msgid "160x120 SQVGA WideScreen"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:31
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:31
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:32
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:31
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:31
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:31
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:31
+msgid "160x90 SQVGA 4:3"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:32
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:32
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:33
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:32
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:32
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:32
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:32
+msgid "Otimizado para DVD"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx.sh.htm:33
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/divx3.sh.htm:33
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4.sh.htm:34
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/flv.sh.htm:33
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4celularvbr.sh.htm:33
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/mp4mpeg.sh.htm:33
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/xvid.sh.htm:33
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/3gp.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/flvaudio.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/mp3.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/mp4mpeg.sh.htm:21
+msgid "Definir outro valor"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/3gp.sh.htm:14
+msgid "640x480 4:3 (Maior)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/3gp.sh.htm:21
+msgid "176x144 QCIF"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-resize/3gp.sh.htm:23
+msgid "160x90 SQVGA 4:3 (Menor)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/fontsize.sh.htm:13
+msgid "3.0 (Maior)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/fontsize.sh.htm:19
+msgid "1.8 (Padrao)"
+msgstr "1.8 (Padrão)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/fontsize.sh.htm:23
+msgid "1.0"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/fontsize.sh.htm:27
+msgid "0.2 (Menor)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:13
+msgid "Manter original"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:30
+msgid "24"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:29
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:29
+msgid "23"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:28
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:28
+msgid "22"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:17
+msgid "21"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:27
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:27
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:39
+msgid "20"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:26
+msgid "19"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/volume-audio.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:25
+msgid "18"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:24
+msgid "17"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:23
+msgid "16"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/volume-audio.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:38
+msgid "15"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:21
+msgid "14"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:20
+msgid "13"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/volume-audio.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:19
+msgid "12"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:27
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:27
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:27
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:27
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:27
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:27
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:27
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:27
+msgid "11"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:28
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:28
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:28
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:28
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:28
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:28
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:28
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:28
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:37
+msgid "10"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:29
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:29
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:29
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:29
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:29
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:29
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:29
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:29
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/volume-audio.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:36
+msgid "9"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:30
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:30
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:30
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:30
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:30
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:30
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:30
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:30
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:35
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/trilha-audio.sh.htm:24
+msgid "8"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:31
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:31
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:31
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:31
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:31
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:31
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:31
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:31
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:34
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/trilha-audio.sh.htm:23
+msgid "7"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:32
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:32
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:32
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:32
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:32
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:32
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:32
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:32
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/volume-audio.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:33
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/trilha-audio.sh.htm:22
+msgid "6"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:33
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:33
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:33
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:33
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:33
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:33
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:33
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:33
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:32
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/trilha-audio.sh.htm:21
+msgid "5"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:34
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:34
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:34
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:34
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:34
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:34
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:34
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:34
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/trilha-audio.sh.htm:20
+msgid "4"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:35
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:35
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:35
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:35
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:35
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:35
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:35
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:35
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/volume-audio.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/trilha-audio.sh.htm:19
+msgid "3"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:36
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:36
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:36
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:36
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:36
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:36
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:36
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:36
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/trilha-audio.sh.htm:18
+msgid "2"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx.sh.htm:37
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/divx3.sh.htm:37
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4.sh.htm:37
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/flv.sh.htm:37
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:37
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:37
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/xvid.sh.htm:37
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/3gp.sh.htm:37
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/trilha-audio.sh.htm:17
+msgid "1"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4celularvbr.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-fps/mp4mpeg.sh.htm:23
+msgid "15 Padrao"
+msgstr "15 Padrão"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm:102
+msgid "Videos a converter"
+msgstr "Vídeos a converter"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm:139
+msgid "Destino dos videos convertidos"
+msgstr "Destino dos vídeos convertidos"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm:141
+msgid "$savein"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-audio-format/divx.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-audio-format/divx3.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-audio-format/xvid.sh.htm:13
+msgid "AAC"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-audio-format/divx.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-audio-format/divx.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-audio-format/divx3.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-audio-format/divx3.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-audio-format/xvid.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-audio-format/xvid.sh.htm:15
+msgid "MP3"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:27
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:37
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:48
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:59
+msgid "6 (Surround 5.1)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:28
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:38
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:49
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:60
+msgid "5 (Surround 5.0)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:29
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:39
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:50
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:61
+msgid "4 (Surround 4.0)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:30
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:40
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:51
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:62
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:70
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:78
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:85
+msgid "2 (Stereo)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:31
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:41
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:52
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:63
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:71
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:79
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:86
+msgid "1 (Mono)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:32
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:42
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:53
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:64
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:72
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:80
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/canais-audio.sh.htm:87
+msgid "0 (Mudo)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:184
+msgid "Clique em ajuda para saber o melhor formato para cada situacao."
+msgstr "Clique em ajuda para saber o melhor formato para cada situação."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:185
+msgid "1 - Independente da resolucao selecionada o video nao ficara distorcido, mas isso ira torna-lo compativel com dispositivos que utilizam resolucao padronizada.<br>2 - Resolucoes maiores geram imagens mais nitidas, mas o tempo para conversao e o tamanho do arquivo gerado tornam se maiores.<br>3 - Lembre que utilizar resolucao maior que a original nao melhora a qualidade do video."
+msgstr "1 - Independente da resolução selecionada o vídeo não ficara distorcido, mas isso ira torna-lo compatível com dispositivos que utilizam resolução padronizada.<br>2 - Resoluções maiores geram imagens mais nítidas, mas o tempo para conversão e o tamanho do arquivo gerado tornam se maiores.<br>3 - Lembre que utilizar resolução maior que a original não melhora a qualidade do vídeo."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:186
+msgid "1 - Qualidades maiores geram imagens mais nitidas, porem tornam a conversao mais lenta e o arquivo gerado sera maior.<br>2 - O uso da opcao padrao costuma ser a melhor relacao entre tamanho e qualidade."
+msgstr "1 - Qualidades maiores geram imagens mais nítidas, porém tornam a conversão mais lenta e o arquivo gerado será maior.<br>2 - O uso da opção padrão costuma ser a melhor relação entre tamanho e qualidade."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:187
+msgid "1 - Qualidades maiores possuem menores distorcoes no audio, porem tornam a conversao mais lenta e o arquivo gerado sera maior.<br>2 - Recomendamos o uso da opcao padrao ou de qualidade superior."
+msgstr "1 - Qualidades maiores possuem menores distorções no áudio, porém tornam a conversão mais lenta e o arquivo gerado será maior.<br>2 - Recomendamos o uso da opção padrão ou de qualidade superior."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:188
+msgid "1 - Caso o video a ser convertido possua mais de um audio confira no player de video qual trilha deseja manter.<br>2 - Em geral videos com mais de um audio sao os que possuem versao original e dublada no mesmo arquivo."
+msgstr "1 - Caso o vídeo a ser convertido possua mais de um áudio confira no player de vídeo qual trilha deseja manter.<br>2 - Em geral vídeos com mais de um áudio são os que possuem versão original e dublada no mesmo arquivo."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:189
+msgid "Para evitar distorcoes mantenha o volume padrao, mas se o video a ser convertido necessitar de alteracoes utilize essa ferramenta."
+msgstr "Para evitar distorções mantenha o volume padrão, mas se o vídeo a ser convertido necessitar de alterações utilize essa ferramenta."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:190
+msgid "Confira como ficara a conversao do video com a configuracao escolhida"
+msgstr "Confira como ficará a conversão do vídeo com a configuração escolhida"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:191
+msgid "1 - Essa opcao permite reduzir a quantidade de canais de audio, mas nao e possivel aumentar.<br>2 - Caso o equipamento de som a ser utilizado na reproducao possua menos canais que o equipamento onde sera reproduzido pode se economizar espaco reduzindo a quantidade de canais."
+msgstr "1 - Essa opção permite reduzir a quantidade de canais de áudio, mas não é possível aumentar.<br>2 - Caso o equipamento de som a ser utilizado na reprodução possua menos canais que o equipamento onde será reproduzido pode se economizar espaço reduzindo a quantidade de canais."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:192
+msgid "1 - Estudos dizem que o olho humano consegue captar apenas 24 quadros por segundo, portanto disponibilizamos somente ate esse valor.<br>2 - A maioria dos celulares consegue reproduzir apenas 15 quadros por segundo, outros apenas 12.<br>3 - Videos que serao assistidos no computados ou em DVD costumam possuir melhor qualidade mantendo o valor original."
+msgstr "1 - Estudos dizem que o olho humano consegue captar apenas 24 quadros por segundo, portanto disponibilizamos somente até esse valor.<br>2 - A maioria dos celulares consegue reproduzir apenas 15 quadros por segundo, outros apenas 12.<br>3 - Vídeos que serão assistidos no computados ou em DVD costumam possuir melhor qualidade mantendo o valor original."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:193
+msgid "Um guia pratico que ira auxiliar na escolha do melhor formato para conversao."
+msgstr "Um guia prático que irá auxiliar na escolha do melhor formato para conversão."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:194
+msgid "Com o turbo ativado a conversao pode ser ate 4 vezes mais rapida, porem possui uma pequena reducao na qualidade da imagem."
+msgstr "Com o turbo ativado a conversão pode ser até 4 vezes mais rápida, porém possui uma pequena redução na qualidade da imagem."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:223
+msgid "Converter para:"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:247
+msgid "Ajuda"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:266
+msgid "Video"
+msgstr "Vídeo"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:273
+msgid "Turbo Ativo."
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:275
+msgid "Turbo Inativo."
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:285
+msgid "Esse formato nao possui configuracoes de video."
+msgstr "Esse formato não possui configurações de vídeo."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:296
+msgid "Resolucao"
+msgstr "Resolução"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:329
+msgid "Largura"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:329
+msgid "Altura"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:339
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:466
+msgid "Qualidade"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:381
+msgid "Quadros por segundo"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:428
+msgid "Audio"
+msgstr "Áudio"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:438
+msgid "Formato de audio"
+msgstr "Formato de áudio"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:507
+msgid "Canais"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:530
+msgid "Trilha"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm:553
+msgid "Volume"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:12
+msgid "2.0 (Maximo)"
+msgstr "2.0 (Máximo)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:22
+msgid "0.0"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:24
+msgid "-0.2"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:26
+msgid "-0.4"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:28
+msgid "-0.6"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:30
+msgid "-0.8"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:27
+msgid "-1.0"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:28
+msgid "-1.2"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:29
+msgid "-1.4"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:30
+msgid "-1.6"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:31
+msgid "-1.8"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm:32
+msgid "-2.0 (Minimo)"
+msgstr "-2.0 (Mínimo)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/description.sh.htm:16
+msgid "Converta videos e audios"
+msgstr "Converta vídeos e áudios"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/volume-audio.sh.htm:16
+msgid "21 (Maximo)"
+msgstr "21 (Máximo)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/volume-audio.sh.htm:23
+msgid "0 (Padrao)"
+msgstr "0 (Padrão)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/volume-audio.sh.htm:24
+msgid "-3"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/volume-audio.sh.htm:25
+msgid "-6"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/volume-audio.sh.htm:26
+msgid "-9"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/volume-audio.sh.htm:27
+msgid "-12"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/volume-audio.sh.htm:28
+msgid "-15"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/volume-audio.sh.htm:29
+msgid "-18"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/volume-audio.sh.htm:30
+msgid "-21 (Minimo)"
+msgstr "-21 (Mínimo)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/flvaudio.sh.htm:13
+msgid "6 (Padrao)"
+msgstr "6 (Padrão)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/flvaudio.sh.htm:14
+msgid "7 (Media)"
+msgstr "7 (Média)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/flvaudio.sh.htm:15
+msgid "8 (Alta)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aacmp4.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aac.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aaccelularvbr.sh.htm:13
+msgid "500 (Maior qualidade)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aacmp4.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aac.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aaccelularvbr.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx.sh.htm:30
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx3.sh.htm:30
+msgid "400"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aacmp4.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aac.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aaccelularvbr.sh.htm:15
+msgid "300"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aacmp4.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aac.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aaccelularvbr.sh.htm:16
+msgid "200"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aacmp4.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aac.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aaccelularvbr.sh.htm:17
+msgid "100"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aacmp4.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aac.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aaccelularvbr.sh.htm:18
+msgid "90"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aacmp4.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aac.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aaccelularvbr.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/3gp.sh.htm:23
+msgid "80"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aacmp4.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aac.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aaccelularvbr.sh.htm:20
+msgid "70"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aacmp4.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aac.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aaccelularvbr.sh.htm:21
+msgid "60"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aacmp4.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aac.sh.htm:22
+msgid "55 (Padrao)"
+msgstr "55 (Padrão)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aacmp4.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aac.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aaccelularvbr.sh.htm:23
+msgid "50"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aacmp4.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aac.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:45
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:45
+msgid "40"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aacmp4.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aac.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aaccelularvbr.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:36
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:36
+msgid "30"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aacmp4.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aac.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aaccelularvbr.sh.htm:26
+msgid "15 (Menor qualidade)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/mp3.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/mp4mpeg.sh.htm:13
+msgid "256 kbps (Alta)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/mp3.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/mp4mpeg.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/3gp.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4mpeg.sh.htm:23
+msgid "192 kbps"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/mp3.sh.htm:15
+msgid "128 kbps (Padrao)"
+msgstr "128 kbps (Padrão)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/mp3.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/mp4mpeg.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/3gp.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4mpeg.sh.htm:25
+msgid "96 kbps"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/mp3.sh.htm:17
+msgid "64 kbps (Baixa)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/mp4mpeg.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/3gp.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4mpeg.sh.htm:24
+msgid "128 kbps"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/mp4mpeg.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/3gp.sh.htm:18
+msgid "64 kbps"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/mp4mpeg.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/3gp.sh.htm:19
+msgid "48 kbps"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/mp4mpeg.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/3gp.sh.htm:20
+msgid "32 kbps (Padrao)"
+msgstr "32 kbps (Padrão)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/mp4mpeg.sh.htm:20
+msgid "24 kbps (Baixa)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aaccelularvbr.sh.htm:22
+msgid "55"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/aaccelularvbr.sh.htm:24
+msgid "40 (Padrao)"
+msgstr "40 (Padrão)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/3gp.sh.htm:14
+msgid "256 kbps (Maior)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-audio/3gp.sh.htm:21
+msgid "24 kbps (Menor)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples/m4a.sh.htm:13
+msgid "Audio M4A"
+msgstr "Áudio M4A"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples/divx.sh.htm:13
+msgid "Video DIVX4"
+msgstr "Vídeo DIVX4"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples/divx3.sh.htm:13
+msgid "Video DIVX3"
+msgstr "Vídeo DIVX3"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples/mp4.sh.htm:13
+msgid "Video MP4 (264)"
+msgstr "Vídeo MP4 (264)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples/flv.sh.htm:13
+msgid "Video Flash"
+msgstr "Vídeo Flash"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples/mp4celularvbr.sh.htm:13
+msgid "Video MP4 (264) Portatil"
+msgstr "Vídeo MP4 (264) Portátil"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples/mp3.sh.htm:13
+msgid "Audio MP3"
+msgstr "Áudio MP3"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples/mp4mpeg.sh.htm:13
+msgid "Video MP4 (MPEG4) Portatil"
+msgstr "Vídeo MP4 (MPEG4) Portátil"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples/xvid.sh.htm:13
+msgid "Video XVID"
+msgstr "Vídeo XVID"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples/3gp.sh.htm:13
+msgid "Video 3GP (263) Portatil"
+msgstr "Vídeo 3GP (263) Portátil"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm:96
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/submit.sh.htm:72
+msgid "BigMencoder"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm:96
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/submit.sh.htm:72
+msgid "Iniciando..."
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm:116
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/submit.sh.htm:95
+msgid "Conversao cancelada."
+msgstr "Conversão cancelada."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm:141
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/submit.sh.htm:121
+msgid "Conversao de $i concluida."
+msgstr "Conversão de $i concluída."
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm:141
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/submit.sh.htm:121
+msgid "Big Mencoder"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm:192
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/info.sh.htm:47
+msgid "Visualizar previsao"
+msgstr "Visualizar previsão"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm:227
+msgid "Selecione o arquivo a ser utilizado na previsao"
+msgstr "Selecione o arquivo a ser utilizado na previsão"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm:278
+msgid "(hh:mm:ss)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx.sh.htm:14
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx3.sh.htm:14
+msgid "6000 (Maior)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx3.sh.htm:15
+msgid "5500"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx.sh.htm:16
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx3.sh.htm:16
+msgid "5000"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx.sh.htm:17
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx3.sh.htm:17
+msgid "4500"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx.sh.htm:18
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx3.sh.htm:18
+msgid "4000"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx.sh.htm:19
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx3.sh.htm:19
+msgid "3500"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx.sh.htm:20
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx3.sh.htm:20
+msgid "3000"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx.sh.htm:21
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx3.sh.htm:21
+msgid "2600"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx.sh.htm:22
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx3.sh.htm:22
+msgid "2300"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx.sh.htm:23
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx3.sh.htm:23
+msgid "2000"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx.sh.htm:24
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx3.sh.htm:24
+msgid "1600"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx.sh.htm:25
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx3.sh.htm:25
+msgid "1400"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx.sh.htm:26
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx3.sh.htm:26
+msgid "1200 (Padrao)"
+msgstr "1200 (Padrão)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx.sh.htm:27
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx3.sh.htm:27
+msgid "1000"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx.sh.htm:28
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx3.sh.htm:28
+msgid "800"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx.sh.htm:29
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx3.sh.htm:29
+msgid "600"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx.sh.htm:31
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/divx3.sh.htm:31
+msgid "200 (Menor)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:13
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:13
+msgid "5 (Maior)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:30
+msgid "24 (Padrao)"
+msgstr "24 (Padrão)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:31
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:31
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:40
+msgid "25"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:32
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:32
+msgid "26"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:33
+msgid "27"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:34
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:34
+msgid "28"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:35
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:35
+msgid "29"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:37
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:37
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/3gp.sh.htm:28
+msgid "32"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:38
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:38
+msgid "33"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:39
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:39
+msgid "34"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:40
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:40
+msgid "35"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:41
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:41
+msgid "36"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:42
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:42
+msgid "37"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:43
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:43
+msgid "38"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:44
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:44
+msgid "39"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:46
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:46
+msgid "42"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:47
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:47
+msgid "43"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:48
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:48
+msgid "44"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:49
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:49
+msgid "45"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:50
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:50
+msgid "46"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:51
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:51
+msgid "47"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:52
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:52
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/3gp.sh.htm:27
+msgid "48"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:53
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:53
+msgid "49"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4.sh.htm:54
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:54
+msgid "50 (Menor)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/flv.sh.htm:14
+msgid "300(Padrao)"
+msgstr "300 (Padrão)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/flv.sh.htm:15
+msgid "500"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/flv.sh.htm:16
+msgid "1000(Melhor)"
+msgstr "1000 (Melhor)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4celularvbr.sh.htm:33
+msgid "27 (Padrao)"
+msgstr "27 (Padrão)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4mpeg.sh.htm:13
+msgid "4096 kbps (Muito Alta)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4mpeg.sh.htm:14
+msgid "3072 kbps"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4mpeg.sh.htm:15
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4mpeg.sh.htm:16
+msgid "2048 kbps"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4mpeg.sh.htm:17
+msgid "1536 kbps"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4mpeg.sh.htm:18
+msgid "1280 kbps"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4mpeg.sh.htm:19
+msgid "1024 kbps (Alta)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4mpeg.sh.htm:20
+msgid "768 kbps"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4mpeg.sh.htm:21
+msgid "512 kbps"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4mpeg.sh.htm:22
+msgid "256 kbps"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4mpeg.sh.htm:26
+msgid "64 kbps (Padrao)"
+msgstr "64 kbps (Padrão)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/mp4mpeg.sh.htm:27
+msgid "32 kbps (Baixa)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:14
+msgid "1.0 (Maior)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:25
+msgid "3.2"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:26
+msgid "3.4"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:27
+msgid "3.6 (Padrao)"
+msgstr "3.6 (Padrão)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:28
+msgid "3.8"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:29
+msgid "4.0"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:30
+msgid "4.3"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:31
+msgid "4.7"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/xvid.sh.htm:41
+msgid "31 (Menor)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/3gp.sh.htm:15
+msgid "512 (Maior)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/3gp.sh.htm:16
+msgid "440"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/3gp.sh.htm:17
+msgid "320"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/3gp.sh.htm:18
+msgid "256"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/3gp.sh.htm:19
+msgid "192"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/3gp.sh.htm:20
+msgid "160"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/3gp.sh.htm:21
+msgid "128"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/3gp.sh.htm:22
+msgid "96"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/3gp.sh.htm:24
+msgid "72"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/3gp.sh.htm:25
+msgid "64 (Padrao)"
+msgstr "64 (Padrão)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/3gp.sh.htm:26
+msgid "56"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/simples-qualidade-video/3gp.sh.htm:29
+msgid "24 (Menor)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:12
+msgid "1.0 (Maximo)"
+msgstr "1.0 (Máximo)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:13
+msgid "0.9"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:15
+msgid "0.7"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:17
+msgid "0.5"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:19
+msgid "0.3"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:21
+msgid "0.1"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:22
+msgid "0.0 (Manter original)"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:23
+msgid "-0.1"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:25
+msgid "-0.3"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:27
+msgid "-0.5"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:29
+msgid "-0.7"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:31
+msgid "-0.9"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm:32
+msgid "-1.0 (Minimo)"
+msgstr "-1.0 (Mínimo)"
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/trilha-audio.sh.htm:15
+msgid "Principal"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/trilha-audio.sh.htm:16
+msgid "0"
+msgstr ""
+
+#: /usr/share/bigcontrolcenter/categories/others/bigconvert/submit.sh.htm:180
+msgid "Conversao concluida."
+msgstr "Conversão concluída."
+

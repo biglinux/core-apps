@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Boomerang Deux
+Comment=A modern and well polished theme for GNOME desktop 
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Boomerang Deux
+MetacityTheme=Boomerang Deux
+IconTheme=Faience-Azur
+CursorTheme=DMZ-White
+ButtonLayout=close,minimize,maximize:

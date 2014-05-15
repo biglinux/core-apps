@@ -1,0 +1,17 @@
+#! /bin/bash
+
+package_name=bigcontrolcenter-hardware-energy
+
+
+case "$1" in
+  remove)
+dpkg-divert --package $package_name --rename --remove /etc/init.d/ondemand
+rm -f /etc/bigpower_governor
+rm -f /etc/bigpower_governor_battery
+rm -f /etc/bigpower_usb
+rm -f /etc/bigpower_som
+rm -f /etc/bigpower_hd
+rm -f /etc/bigpower_hd_time
+rm -f /etc/bigpower_ethernet
+;;
+esac

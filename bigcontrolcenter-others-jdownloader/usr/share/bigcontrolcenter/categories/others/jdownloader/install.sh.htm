@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+mkdir ~/.bigcontrolcenter 2> /dev/null
+cd ~/.bigcontrolcenter
+nohup jdownloader-install > /dev/null 2> /dev/null &
+
+echo '<META http-equiv="refresh" content="0;URL=/execute close$">'

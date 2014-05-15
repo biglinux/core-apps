@@ -1,0 +1,113 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-others-kdesktop
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+if [ "$p_kdesktop" = "remover" ]
+then
+    dpkg-divert --package kdesktop-environment --divert /usr/share/xsessions/kde-plasma.desktop.distrib --rename /usr/share/xsessions/kde-plasma.desktop 2> /dev/null > /dev/null
+fi
+
+if [ "$p_kdesktop" = "instalar" ]
+then
+    dpkg-divert --package kdesktop-environment --rename --remove /usr/share/xsessions/kde-plasma.desktop 2> /dev/null > /dev/null
+fi
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Kdesktop"
+apply=$"Aplicar"
+close=$"Sair"
+tip_instalar_kde=$"Adiciona a opcao KDE no gerenciador de login"
+tip_remover_kde=$"Remove a opcao KDE do gerenciador de login"
+
+. /usr/share/bigcontrolcenter/default/theme.sh.htm
+
+cat << EOF
+	<script type="text/javascript" src="/usr/share/bigcontrolcenter/default/js/jquery-1.3.2.min.js"></script>
+
+
+	<script type="text/javascript">
+	\$(function() {
+		\$("#tabs").tabs({
+			event: 'mouseover'
+		})
+	});
+
+	if (document.images) {
+	buttonUp = new Image(); buttonUp.src = "/usr/share/bigcontrolcenter/default/images/category-background.png";
+	buttonDown = new Image(); buttonDown.src = "$(echo $HOME)/.bigcontrolcenter/category-background-over.png";
+	}
+
+	function turn_off(cell) {
+	if (document.images != null) {
+	cell.style.backgroundImage = "url('" + buttonUp.src + "')";
+	}
+	}
+
+	function turn_on(cell) {
+	if (document.images != null) {
+	cell.style.backgroundImage = "url('" + buttonDown.src + "')";
+	}
+	}
+
+  </script>
+
+
+EOF
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Evitando conflitos com a configuracao do KDE."
+close_header
+echo "<center><table width=95%><tr><td>"
+echo $"O BigLinux utiliza como desktop principal o KDE. Para evitar conflitos com o Kubuntu, no BigLinux e utilizada a pasta .kdesktop e a identificacao Kdesktop no gerenciador de login." "<p>"
+echo $"Para facilitar melhorar o uso em computadores com hardware obsoleto tambem e adicionado o kdesktop-lite ao gerenciador de login."
+
+echo "<p>"
+    echo "<div id=\"tabs-$1\"><TABLE align=center><tr><td>"
+#Confere se esta instalado
+
+if [ -e "/usr/share/xsessions/kde-plasma.desktop" ]
+then
+    echo "<a href=\"kdesktop.sh.htm?kdesktop=remover\"" "$mouseover_open" $tip_remover_kde "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=remove.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Remover a opcao KDE no gerenciador de login" " </font></td></tr></table></a>"
+    echo '</td></tr><tr><td>'
+else
+    echo "<a href=\"kdesktop.sh.htm?kdesktop=instalar\"" "$mouseover_open" $tip_instalar_kde "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=install.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Adicionar a opcao KDE no gerenciador de login" " </font></td></tr></table></a>"
+    echo '</td></tr><tr><td>'
+fi
+
+    echo '</table></div>'
+
+
+
+
+
+
+echo "</td></tr></table></center>"
+
+echo "</div><div id=\"rodape\"><button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

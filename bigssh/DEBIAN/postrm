@@ -1,0 +1,24 @@
+#! /bin/sh
+
+set -e
+
+package_name=bigssh
+
+case "$1" in
+  remove)
+	dpkg-divert --package bigssh --rename --remove /etc/init/ssh.conf
+    ;;
+  purge)
+    ;;
+  upgrade)
+    ;;
+  *) echo "$0: didn't understand being called with \`$1'" 1>&2
+     exit 0;;
+esac
+
+exit 0
+
+
+
+
+

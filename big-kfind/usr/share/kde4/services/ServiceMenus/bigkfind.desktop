@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin,inode/directory
+Actions=openKfindThere;
+X-KDE-AuthorizeAction=shell_access
+
+[Desktop Action openKfindThere]
+Name=Search Files/Folders
+Name[pt_BR]=Procurar Arquivos/Pastas
+Icon=kfind
+Exec=kfind %f
+X-Ubuntu-Gettext-Domain=desktop_kdebase 

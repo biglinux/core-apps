@@ -1,0 +1,109 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# BigLinux.com.br <BigLinux.com.br>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2010-09-22 07:19+0000\n"
+"Last-Translator: Ricardo A. Hermosilla Carrillo <ra.hermosillac@gmail.com>\n"
+"Language-Team: bigconvert <kde-i18n-doc@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-24 04:41+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Impressora"
+msgstr "Impresora"
+
+msgid "Adicionar, configurar, calibrar, niveis de tinta..."
+msgstr "Adicionar, configurar, calibrar, níveis de tinta..."
+
+msgid "Aplicar"
+msgstr "Aplicar"
+
+msgid "Sair"
+msgstr "Salir"
+
+msgid ""
+"Configurador recomendado para a maioria dos casos.<br>Adicionar, remover, "
+"calibrar, nivel de tinta..."
+msgstr ""
+"Configuración recomendada para la mayoría de los casos. <br> Añadir, "
+"eliminar, calibrar, nivel de tinta ..."
+
+msgid "Configurador oficial do sistema de impressao CUPS"
+msgstr "Configurador oficial do sistema de impressão CUPS"
+
+msgid "Configurador nao oficial para impressoras EPSON"
+msgstr "Configurador não oficial para impressoras EPSON"
+
+msgid "Configurador oficial para impressoras HP"
+msgstr "Configurador oficial para impressoras HP"
+
+msgid ""
+"Para conferir os modelos de impressora suportados visite o site:<br>http://"
+"libinklevel.sourceforge.net/#supported<br><br>* Em muitos casos outro "
+"monitor de nivel de tinta pode ser acessado no Adicionar ou Configurar "
+"impressoras"
+msgstr ""
+"Para comprobar los modelos de impresoras soportados visite: <br> http://"
+"libinklevel.sourceforge.net/#supported * En muchos otros casos, el monitor "
+"de nivel de tinta se puede acceder desde la opción Agregar o configurar "
+"impresoras"
+
+msgid ""
+"Exibe um icone na barra de tarefas para verificar a fila de impressao sempre "
+"que existirem arquivos na fila"
+msgstr ""
+
+msgid "Configuracoes para impressoras."
+msgstr "Configurações para impressoras."
+
+msgid "Adicionar ou configurar impressoras"
+msgstr "Añadir o configurar impresoras"
+
+msgid "Adicionar ou configurar impressoras (Avancado)"
+msgstr "Adicionar ou configurar impressoras (Avançado)"
+
+msgid "Configurador especial para impressoras Epson"
+msgstr "Configurador especial para impressoras Epson"
+
+msgid "Configurador especial para impressoras HP"
+msgstr "Configurador especial para impressoras HP"
+
+msgid "Monitor de nivel de tinta"
+msgstr "Monitor de nível de tinta"
+
+msgid "Fila de impressao"
+msgstr "Fila de impressão"
+
+msgid ""
+"Para visualizar o nivel de tinta clique no icone do inkblot na area de "
+"notificacao."
+msgstr ""
+"Para visualizar o nível de tinta clique no ícone do inkblot na área de "
+"notificação."
+
+#, fuzzy
+msgid ""
+"O monitor de fila de impressão deve aparecer\n"
+"automaticamente como um ícone na área de\n"
+"notificação ao utilizar a impressora?"
+msgstr ""
+"O monitor de fila de impressão deve aparecer\n"
+"automaticamente ao utilizar a impressora?"
+
+#~ msgid "Confira o status da impressao"
+#~ msgstr "Confira o status da impressão"
+
+#~ msgid ""
+#~ "Para visualizar a fila de impressao clique no icone de impresssora na "
+#~ "area de notificacao."
+#~ msgstr ""
+#~ "Para visualizar a fila de impressão clique no ícone de impressora na área "
+#~ "de notificação."

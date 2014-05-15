@@ -1,0 +1,90 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-hardware-keyboard
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(630,480);
+function NoResize(){
+  window.resizeTo(630,480);
+}
+</script>
+'
+
+title=$"Teclado, mouse e touchpad"
+apply=$"Aplicar"
+close=$"Sair"
+tip_auto=$"Se for detectado um touchpad as configuracoes abaixo sao ativadas automaticamente ao ligar o computador."
+tip_keys=$"Teclas como Ctrl e Alt nao bloqueiam os toques no touchpad"
+tip_tap=$"Mantem a movimentacao do cursor e os cliques nos botoes"
+tip_time=$"Tempo que os toques no touchpad devem ser ignorados apos utilizar o teclado.<p>1.0 igual 1 segundo<br>2.0 igual 2 segundos<br> 0.5 igual meio segundo"
+
+
+
+###############
+# Apply options
+###############
+
+
+  if [ ! -e "$HOME/.config/bigtouchfreeze_time" ]
+  then
+      time="1.0"
+  else
+      time="$(cat $HOME/.config/bigtouchfreeze_time)"
+  fi
+
+  if [ ! -e "$HOME/.config/bigtouchfreeze_tap" ]
+  then
+      tap_check="checked"
+  fi
+
+  if [ ! -e "$HOME/.config/bigtouchfreeze_keys" ]
+  then
+      keys_check="checked"
+  fi
+
+  if [ ! -e "$HOME/.config/bigtouchfreeze_disable" ]
+  then
+      auto_check="checked"
+  fi
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Layout de teclado, velocidade e ate controlar o mouse com a webcam."
+close_header
+
+#body
+echo '<center><table width=95%><tr><td>'
+echo $"Uma dificuldade comum ao utilizar notebooks e causada por toques acidentais no touchpad. Utilize as opcoes abaixo para tornar o uso mais confortavel:" "<p><br>"
+
+
+echo "<form action=touchpad_submit.sh.htm method=get><p>"
+
+echo "<INPUT TYPE=checkbox ID=auto NAME=auto VALUE=yes $mouseover_open $tip_auto $mouseover_close $auto_check><label for=auto $mouseover_open $tip_auto $mouseover_close>" $"Iniciar automaticamente."'</label><P>'
+
+echo "<INPUT TYPE=checkbox ID=keys NAME=keys VALUE=yes $mouseover_open $tip_keys $mouseover_close $keys_check><label for=keys $mouseover_open $tip_keys $mouseover_close>" $"Nao bloquear o mouse ao utilizar teclas modificadoras."'</label><P>'
+
+echo "<INPUT TYPE=checkbox ID=tap NAME=tap VALUE=yes $mouseover_open $tip_tap $mouseover_close $tap_check><label for=tap $mouseover_open $tip_tap $mouseover_close>" $"Desativar somente toques acidentais."'</label><P>'
+
+echo $"Tempo de espera:" "<input type=text name=time size=4 MAXLENGHT=4 value= \"$time\" $mouseover_open $tip_time $mouseover_close><p>"
+
+
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-repair
+
+name_application=$"Reparar ou limpar o sistema"
+description_application=$"Problemas podem ocorrer e precisamos repara-los ou liberar espaco em disco removendo arquivos temporarios"
+exec_application="/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/system/repair/repair.sh.htm -i /usr/share/bigcontrolcenter/categories/system/repair/icon.png"
+icon_application="/usr/share/bigcontrolcenter/categories/system/repair/icon.png"

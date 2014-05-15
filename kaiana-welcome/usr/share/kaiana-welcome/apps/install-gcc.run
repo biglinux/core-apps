@@ -1,0 +1,3 @@
+#!/bin/bash
+
+software-center gcc gcc-c++ autoconf make task-c-devel task-c++-devel

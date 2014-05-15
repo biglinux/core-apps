@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: BigLinux\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2013-10-10 02:27-0300\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=CHARSET\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+msgid   "Instalador do JDownloader"
+msgstr  ""
+
+msgid   "Instale o melhor gerenciador de downloads"
+msgstr  ""
+
+msgid   "Confirma a remocao do JDownloader?\n"
+        "\n"
+        "Lembre que os arquivos baixados que estiverem\n"
+        "na pasta JDownloader tambem serao removidos."
+msgstr  ""
+
+msgid   "Aplicar"
+msgstr  ""
+
+msgid   "Sair"
+msgstr  ""
+
+msgid   "Utilizar interface de acordo com o Desktop em uso"
+msgstr  ""
+
+msgid   "Melhor integracao com dispositivos, por exemplo CDs e PenDrives"
+msgstr  ""
+
+msgid   "Melhor compatiblidade com extensoes e integracao com o tema do "
+        "sistema"
+msgstr  ""
+
+msgid   "Clique aqui para iniciar a instalacao, e preciso estar conectado a "
+        "internet."
+msgstr  ""
+
+msgid   "Clique aqui para remover o JDownloader, lembre que os arquivos "
+        "baixados que estiverem na pasta JDownloader tambem serao removidos."
+msgstr  ""
+
+msgid   "Instalar a extensao no Firefox torna muito mais facil a utilizacao "
+        "do JDownloader, portanto recomendo que instale.<br>Apos a instalacao "
+        "selecione os links que deseja baixar, clique com o botao direito e "
+        "veja as opcoes do JDownloader no Firefox."
+msgstr  ""
+
+msgid   "Instale o melhor gerenciador de downloads."
+msgstr  ""
+
+msgid   "<b>Esse programa possui muitos recursos, entre eles destaco:</b> O "
+        "gerenciamento de downloads de sites populares como RapidShare e "
+        "MegaUpload com preenchimento automatico dos digitos verificadores e "
+        "a conversao de arquivos baixados de sites como o YouTube."
+msgstr  ""
+
+msgid   "<b>Esse programa tambem possui lados negativos:</b> Utiliza uma "
+        "quantidade consideravel de memoria RAM e funciona melhor se cada "
+        "usuario do computador possuir sua propria instalacao do JDownloader."
+msgstr  ""
+
+msgid   "Remover JDownloader"
+msgstr  ""
+
+msgid   "Instalar extensao no Firefox"
+msgstr  ""
+
+msgid   "Instalar extensao no Chromium"
+msgstr  ""
+
+msgid   "Instalar JDownloader"
+msgstr  ""
+
+msgid   "O processo de instalacao do JDownloader foi iniciado.\n"
+        "\n"
+        "Deseja instalar a extensao do Firefox para\n"
+        "facilitar o uso do JDownloader? (Recomendado)"
+msgstr  ""
+
+msgid   "JDownloader"
+msgstr  ""
+
+msgid   "A instalacao falhou!\n"
+        "Confira se o PC esta conectado a internet."
+msgstr  ""

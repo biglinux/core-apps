@@ -1,0 +1,37 @@
+#!/bin/bash
+
+#Esse script encerra o akonadi quando o mesmo for irrelevante
+#Com isso existe ganho de memoria RAM disponível
+#
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+# Loop para executar 5 vezes, uma por minuto, para assegurar melhor a finalizacao no pos boot
+for ((i=1; i<=5; i++))
+do
+    # caso nenhum dos aplicativos da lista esteja em execução finaliza o akonadi
+    if [ "$(ps -A | grep -e kmail$ -e kalarm$ -e kaddressbook$ -e kjots$ -e korganizer$)" = "" ]
+    then
+	akonadictl stop
+    fi
+
+    sleep 60
+done
+
+
+# Inicia um loop infinito para fazer a mesma checagem a cada 30 minutos
+while :
+do
+    # caso nenhum dos aplicativos da lista esteja em execução finaliza o akonadi
+    if [ "$(ps -A | grep -e kmail$ -e kalarm$ -e kaddressbook$ -e kjots$ -e korganizer$)" = "" ]
+    then
+	akonadictl stop
+    fi
+
+    sleep 1800
+done

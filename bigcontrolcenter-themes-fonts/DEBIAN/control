@@ -1,0 +1,11 @@
+Package: bigcontrolcenter-themes-fonts
+Version: 1.0.6-1kaiana4
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Conflicts: bigcontrolcenter-themes-fontinst
+Depends: systemsettings, bigcontrolcenter, fonts-liberation, kdebase-workspace-bin | kde-workspace-bin , ttf-bitstream-vera
+Section: admin
+Priority: optional
+Description: Configure fonts in your system
+

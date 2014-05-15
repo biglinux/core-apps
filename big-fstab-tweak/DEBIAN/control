@@ -1,0 +1,10 @@
+Package: big-fstab-tweak
+Version: 1.0.2-0kaiana5
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Priority: optional
+Depends: big-grubtweaks
+Description: Configura o fstab para melhorar o desempenho do hd ou ssd
+

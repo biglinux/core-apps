@@ -1,0 +1,121 @@
+/***************
+ * Progressbar *
+ ***************/
+GtkProgressBar {
+    border-radius: 8;
+    border-width: 0;
+    padding: 0;
+    border-style: solid;
+}
+
+.progressbar,
+.progressbar.horizontal,
+.progressbar row,
+.progressbar row:hover,
+.progressbar row:selected,
+.progressbar row:selected:focused {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                       from (#7DADF0),
+                       color-stop (0.49, #4795F1),
+                       color-stop (0.51, #0B7FDF),
+                       to (#63C1FF));
+    color: @selected_fg_color;
+    text-shadow: 0 -1 shade (@selected_bg_color, 0.8);                   
+                       
+    -unico-inner-stroke-width: 0;
+    -unico-outer-stroke-color: @transparent;
+    -unico-outer-stroke-gradient: none;
+    -unico-outer-stroke-width: 2;
+}
+
+.progressbar:backdrop,
+.progressbar.horizontal:backdrop,
+.progressbar row:backdrop,
+.progressbar row:hover:backdrop,
+.progressbar row:selected:backdrop,
+.progressbar row:selected:focused:backdrop {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                       from (#D5D5D5),
+                       color-stop (0.49, #C9C9C9),
+                       color-stop (0.51, #B7B7B7),
+                       to (#D9D9D9));
+    color: @selected_fg_color;
+    text-shadow: 0 -1 shade (#C9C9C9, 0.88);                  
+                       
+    -unico-inner-stroke-width: 0;
+    -unico-outer-stroke-color: @transparent;
+    -unico-outer-stroke-gradient: none;
+    -unico-outer-stroke-width: 2;
+}
+
+.progressbar.vertical {
+    background-image: -gtk-gradient (linear, left top, right top,
+                       from (#7DADF0),
+                       color-stop (0.49, #4795F1),
+                       color-stop (0.51, #0B7FDF),
+                       to (#63C1FF));
+    color: @selected_fg_color;
+    text-shadow: 0 -1 shade (@selected_bg_color, 0.8);                     
+}
+
+.progressbar.vertical:backdrop {
+    background-image: -gtk-gradient (linear, left top, right top,
+                       from (#D5D5D5),
+                       color-stop (0.49, #C9C9C9),
+                       color-stop (0.51, #B7B7B7),
+                       to (#D9D9D9));
+    color: @selected_fg_color;
+    text-shadow: 0 -1 shade (#C9C9C9, 0.88);                    
+}
+
+.trough,
+.trough row,
+.trough row:hover,
+.trough row:selected,
+.trough row:selected:focused {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@bg_color, 0.92)),
+                                     to (shade (@bg_color, 0.96)));
+    border-width: 1;
+
+    color: @text_color;
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
+                                           from (shade (@bg_color, 0.75)),
+                                           to (shade (@bg_color, 1.05)));
+    -unico-outer-stroke-width: 0;
+}
+
+.trough:backdrop,
+.trough row:backdrop,
+.trough row:hover:backdrop,
+.trough row:selected:backdrop,
+.trough row:selected:focused:backdrop {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@bg_color, 0.94)),
+                                     to (shade (@bg_color, 0.98)));
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
+                                           from (shade (@bg_color, 0.85)),
+                                           to (shade (@bg_color, 1.05)));
+}
+
+.trough.vertical {
+    background-image: -gtk-gradient (linear, left top, right top,
+                                     from (shade (@bg_color, 0.92)),
+                                     to (shade (@bg_color, 0.96)));
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, right top,
+                                          from (shade (@bg_color, 0.75)),
+                                          to (shade (@bg_color, 1.05)));
+}
+
+.trough.vertical:backdrop {
+    background-image: -gtk-gradient (linear, left top, right top,
+                                     from (shade (@bg_color, 0.94)),
+                                     to (shade (@bg_color, 0.98)));
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, right top,
+                                           from (shade (@bg_color, 0.85)),
+                                           to (shade (@bg_color, 1.05)));
+}

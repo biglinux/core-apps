@@ -1,0 +1,9 @@
+Package: bigcontrolcenter-hardware-joystick
+Version: 1.0.1-1kaiana3
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: kdebase-workspace-bin | kde-workspace-bin, bigcontrolcenter
+Section: admin
+Priority: optional
+Description: Configure joystick

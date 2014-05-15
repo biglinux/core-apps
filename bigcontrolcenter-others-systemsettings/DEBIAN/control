@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-others-systemsettings
+Version: 1.0.1-1kaiana3
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: systemsettings, bigcontrolcenter
+Section: admin
+Priority: optional
+Description: KDE SystemSettings
+

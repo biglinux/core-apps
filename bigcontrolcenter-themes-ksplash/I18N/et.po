@@ -1,0 +1,73 @@
+# Estonian translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-14 23:17-0300\n"
+"PO-Revision-Date: 2010-08-31 07:55+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: Estonian <et@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-01 03:55+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Ksplash BigLinux"
+msgstr "Ksplash BigLinux"
+
+msgid "Selecionar nova imagem"
+msgstr "Valige uus pilt"
+
+msgid "Sair"
+msgstr "Välju"
+
+msgid "Restaurar imagem padrao"
+msgstr "Taasta pilt"
+
+msgid "Altere a imagem de fundo que aparece apos o login."
+msgstr "Muuda tausta pilti, mis kuvatakse pärast sisselogimist."
+
+msgid "Imagem atual"
+msgstr "Aktiivne pilt"
+
+msgid "Tela de abertura do KDE (Ksplash)"
+msgstr "KDE käivitusekraan (KSplash)"
+
+msgid "Escolha o seu tema preferido para o Ksplash"
+msgstr "Vali oma lemmik teema KSplash"
+
+msgid "Aplicar"
+msgstr "Rakenda"
+
+msgid "Selecione seu tema favorito."
+msgstr "Vali oma lemmik teema."
+
+msgid "Utilize sua imagem favorita como fundo para o tema BigLinux"
+msgstr "Kasutage oma lemmik pilti BigLinux'i taustaks"
+
+msgid "Escolha o seu tema preferido para o Ksplash."
+msgstr "Vali oma KSplash'i lemmik teema."
+
+msgid "Escolher tema do Ksplash"
+msgstr "Vali KSplash'i teema"
+
+msgid "Alterar fundo de tela do tema BigLinux"
+msgstr "Muuda tapeeti BigLinux teemal"
+
+msgid ""
+"Altere a imagem de fundo que aparece na ultima etapa de carregamento do "
+"sistema, logo apos o login."
+msgstr ""
+"Muuda taustapilti, mis ilmub viimasel etapil süsteemi käivitamiel kohe "
+"pärast sisselogimist."
+
+msgid "Selecione a imagem"
+msgstr "Valige pilt"
+
+msgid "Alteracao aplicada."
+msgstr "Muudatusettepanek rakendatakse."

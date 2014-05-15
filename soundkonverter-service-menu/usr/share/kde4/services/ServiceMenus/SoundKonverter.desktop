@@ -1,0 +1,22 @@
+[Desktop Entry]
+Type=Service
+Icon=soundkonverter
+Actions=SoundKonverterExtract
+X-KDE-Priority=TopLevel
+MimeType=application/ogg;application/x-ogg;application/x-ogm-audio;audio/*;video/x-ms-asf;x-content/audio-player;
+ServiceTypes=KonqPopupMenu/Plugin
+
+[Desktop Action SoundKonverterExtract]
+Exec=soundkonverter %U
+Icon=soundkonverter
+
+Name[pt]=Converter esse áudio
+Name[en]=Convert this audio
+Name[es]=Convertir este audio
+Name=Converter esse áudio
+ServiceTypes=KonqPopupMenu/Plugin
+Type=Service
+X-KDE-StartupNotify=false
+X-KDE-Priority=TopLevel
+
+

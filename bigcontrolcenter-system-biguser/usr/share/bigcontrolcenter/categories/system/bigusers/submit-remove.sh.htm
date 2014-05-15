@@ -1,0 +1,63 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-biguser
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Remover usuario"
+apply=$"Aplicar"
+close=$"Sair"
+back=$"Voltar para tela de configuracao"
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Remova usuarios do sistema."
+close_header
+
+
+
+
+#Exibir resposta para o usuario
+echo "<br><br><br><br><br><center>"
+
+bigusersmanager --remove-user $p_username 2> /dev/null > /dev/null
+
+
+if [ "$(bigusersmanager --list-users | grep ^$p_username$)" = "" ]
+then
+echo $"Usuario <b>$p_username</b> removido!"
+rm -Rf /usr/share/bigrestoreuser/$p_username 2> /dev/null > /dev/null
+rm -Rf /home/$p_username 2> /dev/null > /dev/null
+else
+echo $"O usuario <b>$p_username</b> nao foi removido, confira se o mesmo nao esta logado no momento." 
+fi
+
+
+echo "</font></div><div id=\"rodape\"><button type=button  onClick=\"parent.location='bigusers.sh.htm'\">   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $back   </button> 
+
+<button type=button onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></form></div></body>"

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Instalar outra versão do kernel Ubuntu
+Type=Application
+Comment=Instalar outra versão do kernel Ubuntu
+Exec=big_repositorio_kernel_ubuntu
+Icon=applications-utilities
+Categories=System;
+GenericName=Instalar outra versão do kernel Ubuntu

@@ -1,0 +1,29 @@
+#! /bin/sh
+
+set -e
+
+#Nome do pacote
+package_name=big-umount-tweaks
+
+if [ -z "$package_name" ]; then
+    print >&2 "Internal Error. Please report a bug."
+    exit 1;
+fi
+
+#Troca arquivos de outros pacotes pelos contidos nesse pacote, renomeando o do outro pacote para o mesmo nome com a inclusao da extensao .distrib
+case "$1" in
+  install)
+      dpkg-divert --package $package_name --divert /bin/umount.distrib --rename /bin/umount
+
+;;
+
+  upgrade)
+        if [ "$(dpkg-divert --list /bin/umount)" = "" ]
+        then
+	        dpkg-divert --package $package_name --divert  /bin/umount.distrib --rename  /bin/umount
+	fi
+
+    ;;
+esac
+
+exit 0

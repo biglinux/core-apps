@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xbel>
+<xbel xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks" xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info" xmlns:kdepriv="http://www.kde.org/kdepriv" dbusName="kfilePlaces">
+ <bookmark href="file:///home/kaiana">
+  <title>Pasta do usuário</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="user-home"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1380631331/0</ID>
+    <isSystemItem>true</isSystemItem>
+    <IsHidden>false</IsHidden>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="remote:/">
+  <title>Rede</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="network-workgroup"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1380631331/1</ID>
+    <isSystemItem>true</isSystemItem>
+    <IsHidden>false</IsHidden>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///">
+  <title>Raiz</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="folder-red"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1380631331/2</ID>
+    <isSystemItem>true</isSystemItem>
+    <IsHidden>false</IsHidden>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="trash:/">
+  <title>Lixeira</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="user-trash-full"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1380631331/3</ID>
+    <isSystemItem>true</isSystemItem>
+    <IsHidden>false</IsHidden>
+   </metadata>
+  </info>
+ </bookmark>
+ <separator href="file:///media/sr0">
+  <info>
+   <metadata owner="http://www.kde.org">
+    <UDI>/org/freedesktop/UDisks2/block_devices/sr0</UDI>
+    <isSystemItem>true</isSystemItem>
+    <IsHidden>false</IsHidden>
+   </metadata>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="media-optical-data"/>
+   </metadata>
+  </info>
+  <title>Kaiana</title>
+ </separator>
+ <separator href="file:///rofs">
+  <info>
+   <metadata owner="http://www.kde.org">
+    <UDI>/org/freedesktop/UDisks2/block_devices/loop0</UDI>
+    <isSystemItem>true</isSystemItem>
+    <IsHidden>false</IsHidden>
+   </metadata>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="drive-harddisk"/>
+   </metadata>
+  </info>
+  <title>Dispositivo virtual</title>
+ </separator>
+ <separator href="file:///media/kaiana/KINGSTON">
+  <info>
+   <metadata owner="http://www.kde.org">
+    <UDI>/org/freedesktop/UDisks2/block_devices/sdb1</UDI>
+    <isSystemItem>true</isSystemItem>
+    <IsHidden>false</IsHidden>
+   </metadata>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="drive-removable-media-usb"/>
+   </metadata>
+  </info>
+  <title>KINGSTON</title>
+ </separator>
+</xbel>

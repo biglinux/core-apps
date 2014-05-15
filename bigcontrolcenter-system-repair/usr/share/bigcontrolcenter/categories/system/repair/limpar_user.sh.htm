@@ -1,0 +1,72 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-repair
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Limpar pasta do usuario $USER"
+apply=$"Aplicar"
+close=$"Sair"
+tip_cache=$"Pasta com arquivos de Cache de diversos programas. Esvaziar essa pasta pode liberar um bom espaco em disco e tambem melhorar o desempenho de alguns programas."
+tip_thumbnail=$"Pasta com miniaturas geradas pelo gerenciador de arquivos."
+tip_firefox=$"Remove somente a cache, ou seja, mantem historico, favoritos e todas as configuracoes do Firefox."
+tip_trash=$"Esvazia a lixeira."
+tip_nepomuk=$"Remove a cache, porem e recomendado remover apenas se nao for utilizar mais o Nepomuk/Strigi. Caso contrario sera necessario bastante tempo de processamento para gerar novamente."
+
+#title
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Libere espaco no HD."
+close_header
+
+
+#O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#Quando se utiliza aspas duplas o sistema executa algumas partes do codigo antes de passar a resposta, entre essas execucoes inclui a interpretacao de variaveis
+#Para incluir textos a serem exibidos ao usuario utilize aspas duplas com $ antes, para que funcione o sistema de tradução, exemplo: $"texto"
+#No exemplo abaixo o memso comando echo foi aberto e fechado diversas vezes de acordo com a necessidade, aspas simples, duplas e duplas com traducao.
+echo '<center><table width=95%><tr><td>'
+echo '<form action=limpar_user_submit.sh.htm method=get>'
+
+echo "<table width=95%><tr><td align=center>" "<b>" $"Remover" "</td><td align=center>" "<b>" $"Espaco utilizado" "</td><tr>"
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=cache NAME=cache VALUE=yes $cache_check  $mouseover_open $tip_cache $mouseover_close><label for=cache $mouseover_open $tip_cache $mouseover_close>" $"Pasta .cache" "</td><td align=right>" "$(du -ch --block-size=M /home/$USER/.cache | sed '$!d;s/\t.*//g' 2> /dev/null)"'</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=thumbnail NAME=thumbnail VALUE=yes $thumbnail_check  $mouseover_open $tip_thumbnail $mouseover_close><label for=thumbnail $mouseover_open $tip_thumbnail $mouseover_close>" $"Pasta .thumbnails" "</td><td align=right>" "$(du -ch --block-size=M /home/$USER/.thumbnails | sed '$!d;s/\t.*//g' 2> /dev/null)"'</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=nepomuk NAME=nepomuk VALUE=yes $nepomuk_check  $mouseover_open $tip_nepomuk $mouseover_close><label for=nepomuk $mouseover_open $tip_nepomuk $mouseover_close>" $"Cache do Nepomuk/Strigi" "</td><td align=right>" "$(du -ch --block-size=M $(bigkdehome)/share/apps/nepomuk/ | sed '$!d;s/\t.*//g' 2> /dev/null)"'</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=firefox NAME=firefox VALUE=yes $firefox_check  $mouseover_open $tip_firefox $mouseover_close><label for=firefox $mouseover_open $tip_firefox $mouseover_close>" $"Cache do Firefox" "</td><td align=right>" "$(du -ch --block-size=M /home/$USER/.mozilla/firefox/*default/Cache | sed '$!d;s/\t.*//g' 2> /dev/null)"'</label></td></tr>'
+
+    echo "<tr><td><INPUT TYPE=checkbox ID=trash NAME=trash VALUE=yes $trash_check  $mouseover_open $tip_trash $mouseover_close><label for=trash $mouseover_open $tip_trash $mouseover_close>" $"Arquivos da lixeira" "</td><td align=right>" "$(du -ch --block-size=M /home/$USER/.local/share/Trash/files | sed '$!d;s/\t.*//g' 2> /dev/null)"'</label></td></tr>'
+
+    echo "</table>"
+
+
+
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

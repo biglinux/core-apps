@@ -1,0 +1,34 @@
+#!/bin/bash
+#
+# Autor: Bruno Gonçalves Araujo.
+# Contato: Seu bigbruno@gmail.com.
+# Licença: GPL v2+.
+# Data: Caso ache necessário.
+# Descrição geral da utilidade do painel.
+#########################################
+
+
+#Translation / Tradução
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+
+# Caso esse painel vá ser traduzido especifique o nome que será dado à tradução que ficará na pasta: /usr/share/locale-langpack
+export TEXTDOMAIN=bigcontrolcenter-others-falar-frase
+
+# Change application name / Escolha o nome do aplicativo
+name_application=$"Falar frases"
+
+# Change description / Escolha a descrição
+description_application=$"Aplicativo para ajudar na acessibilidade de casos bastante específicos de uso do computador."
+
+# Change file for execute / Escolha o arquivo a ser executado
+file_execute="/usr/share/bigcontrolcenter/categories/others/falar-frase/falar.sh.htm"
+
+# Change icon / Escolha o ícone desejado
+icon_application="/usr/share/bigcontrolcenter/categories/others/falar-frase/icon.png"
+
+# Window size / Escolha o tamanho da janela
+window_size="-s 800x600"
+
+# Don't change / Não altere essa linha
+exec_application="/usr/share/bigbashview/run.run?bigbashview $file_execute -i $icon_application $window_size"
+

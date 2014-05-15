@@ -1,0 +1,28 @@
+#!/bin/bash
+
+
+bigbashview -w fullscreen /usr/share/bigcontrolcenter/categories/hidden/livecd/livecd.sh.htm
+
+if [ "$(cat /tmp/biglivedesktop)" = "compiz" ]
+then
+    echo "compiz" > "$HOME/.config/bigwin"
+    /usr/bin/startkdesktop
+fi
+
+if [ "$(cat /tmp/biglivedesktop)" = "kwin" ]
+then
+    echo "kwin" > "$HOME/.config/bigwin"
+    /usr/bin/startkdesktop
+fi
+
+if [ "$(cat /tmp/biglivedesktop)" = "xfwm" ]
+then
+    /usr/bin/startkdesktop-lite
+fi
+
+if [ "$(cat /tmp/biglivedesktop)" = "instalar" ]
+then
+    xfwm4 --replace &
+    ubiquity --no-migration-assistant --desktop %k gtk_ui
+fi
+

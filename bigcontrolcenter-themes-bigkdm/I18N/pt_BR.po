@@ -1,0 +1,72 @@
+# Brazilian Portuguese translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-14 00:20-0300\n"
+"PO-Revision-Date: 2010-09-14 07:06+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-15 04:57+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Tela de Login (KDM)"
+msgstr "Tela de Login (KDM)"
+
+msgid ""
+"Configure a tela de login e altere a imagem de fundo do tema BigLinux para o "
+"KDM."
+msgstr ""
+"Configure a tela de login e altere a imagem de fundo do tema BigLinux para o "
+"KDM."
+
+msgid "Aplicar"
+msgstr "Aplicar"
+
+msgid "Sair"
+msgstr "Sair"
+
+msgid "Configuracao completa da tela de login."
+msgstr "Configuração completa da tela de login."
+
+msgid "Utilize sua imagem favorita como fundo de tela do tema BigLinux"
+msgstr "Utilize sua imagem favorita como fundo de tela do tema BigLinux"
+
+msgid ""
+"Configure a tela de login e altere a imagem de fundo do tema BigLinux."
+msgstr ""
+"Configure a tela de login e altere a imagem de fundo do tema BigLinux."
+
+msgid "Configuracao completa"
+msgstr "Configuração completa"
+
+msgid "Alterar fundo de tela do tema BigLinux"
+msgstr "Alterar fundo de tela do tema BigLinux"
+
+msgid "KDM BigLinux"
+msgstr "KDM BigLinux"
+
+msgid "Selecionar nova imagem"
+msgstr "Selecionar nova imagem"
+
+msgid "Restaurar imagem padrao"
+msgstr "Restaurar imagem padrão"
+
+msgid "Altere a imagem de fundo do tema BigLinux para o KDM."
+msgstr "Altere a imagem de fundo do tema BigLinux para o KDM."
+
+msgid "Imagem atual"
+msgstr "Imagem atual"
+
+msgid "Selecione a imagem"
+msgstr "Selecione a imagem"
+
+msgid "Alteracao aplicada."
+msgstr "Alteração aplicada."

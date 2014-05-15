@@ -1,0 +1,7 @@
+CcShellItemView.view {
+    background-color: @bg_color;
+}
+
+CcShellItemView.view:backdrop {
+    background-color: @bg_color;
+}

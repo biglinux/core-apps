@@ -1,0 +1,9 @@
+Package: big-fix-translation-gwenview
+Version: 1.0.0-1kaiana2
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Replaces: gwenview
+Depends: gwenview
+Section: x11
+Priority: optional
+Description: For best translation

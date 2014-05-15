@@ -1,0 +1,98 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-internet-bigconnect
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"BigConnect"
+apply=$"Aplicar"
+close=$"Sair"
+#title
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Gerenciador de conexao alternativo."
+close_header
+
+#body
+echo '<center><table width=95%><tr><td>'
+echo $"Selecione a interface a ser utilizada para estabelecer conexao:" "<p>"
+
+echo '<form action=submit.sh.htm name="conectar">'
+echo "<input type=hidden value=$p_connect name=connect>"
+
+
+echo '<table><tr><td>'
+echo $"Interface:" '</td><td><select name="interface">'
+
+  for i in $(bigconnect --list-interfaces)
+  do
+	  echo "<option value=$i>$i</option>"
+  done
+
+echo '</select></td></tr><tr><td>'
+
+
+
+if [ "$p_connect" = "wireless" ]; then
+    touch /etc/bigconnect/wireless
+
+    echo $"Nome da rede:" '</td><td><input type="text" name="essid" size=18>' "<a href='/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/internet/bigconnect/wireless.sh.htm'>" $" Clique aqui para procurar redes disponiveis." '</a></td></tr><tr><td>'
+
+
+    echo $"Tipo de senha:"
+
+    echo "</td><td><input type=radio name=pass id=2 value=off onClick=\"document.conectar.password.disabled=true\" checked><label for=2>" $"Nenhuma""</label>
+<input type=radio name=pass id=3 value=wpa onClick=\"document.conectar.password.disabled=false\"><label for=3>" $"WPA""</label>
+<input type=radio name=pass id=4 value=wep onClick=\"document.conectar.password.disabled=false\"><label for=4>" $"WEP""</label>
+</td></tr><tr><td>"
+
+    echo $"Digite a senha:" '</td><td><input type="password" name="password" disabled=disabled size=18></td></tr><tr><td>'
+
+else
+    rm -f /etc/bigconnect/wireless
+fi
+
+
+
+echo $"Obter IP:"
+
+echo "</td><td><input type=radio name=dhcp id=dhcp value=dhcp onClick=\"document.conectar.ip.disabled=true;document.conectar.netmask.disabled=true;document.conectar.gateway.disabled=true;document.conectar.dns1.disabled=true;document.conectar.dns2.disabled=true\" checked><label for=dhcp>" $"DHCP""</label>
+<input type=radio name=dhcp id=fixo value=fixo onClick=\"document.conectar.ip.disabled=false;document.conectar.netmask.disabled=false;document.conectar.gateway.disabled=false;document.conectar.dns1.disabled=false;document.conectar.dns2.disabled=false\"><label for=fixo>" $"IP Fixo""</label>
+</td></tr><tr><td>"
+
+echo $"IP:" '</td><td><input type="text" name="ip" size=15 maxlength="15" disabled=disabled></td></tr><tr><td>'
+
+echo $"Mascara de rede:" '</td><td><input type="text" name="netmask" size=15 maxlength="15" disabled=disabled></td></tr><tr><td>'
+
+echo $"Gateway:" '</td><td><input type="text" name="gateway" size=15 maxlength="15" disabled=disabled></td></tr><tr><td>'
+
+echo $"DNS 1:" '</td><td><input type="text" name="dns1" size=15 maxlength="15" disabled=disabled></td></tr><tr><td>'
+
+echo $"DNS 2:" '</td><td><input type="text" name="dns2" size=15 maxlength="15" disabled=disabled></td></tr><tr><td>'
+
+
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

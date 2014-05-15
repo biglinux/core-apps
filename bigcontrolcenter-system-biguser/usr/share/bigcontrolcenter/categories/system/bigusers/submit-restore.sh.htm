@@ -1,0 +1,67 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-biguser
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+back=$"Voltar para tela de configuracao"
+title=$"Trocar senha"
+apply=$"Aplicar"
+close=$"Sair"
+#title
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Escolha uma nova senha."
+close_header
+
+if [ "$p_username" = "" ]
+then
+  echo "<body onLoad=\"alert('" $"Selecione um usuario" "'), history.go(-2)\">"
+else
+
+
+
+#Exibir resposta para o usuario
+echo "<br><br><br><br><br><center>"
+
+mkdir /usr/share/bigrestoreuser 2> /dev/null
+
+if [ -d /usr/share/bigrestoreuser/$p_username ]
+then
+  rm -Rf /usr/share/bigrestoreuser/$p_username
+  echo $"Usuario <b>$p_username</b> nao sera mais restaurado."
+else
+  cp -a /home/$p_username /usr/share/bigrestoreuser/$p_username
+  echo $"Usuario <b>$p_username</b> sera restaurado a cada boot."
+fi
+  
+fi
+echo "</font></div><div id=\"rodape\"><button type=button  onClick=\"parent.location='bigusers.sh.htm'\">   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $back   </button> 
+
+<button type=button onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></form></div></body>"

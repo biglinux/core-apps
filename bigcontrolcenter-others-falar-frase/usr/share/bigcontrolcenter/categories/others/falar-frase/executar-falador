@@ -1,0 +1,4 @@
+#!/bin/bash
+
+bigbashview falar.sh.htm -i icone.png
+

@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-system-ksysguard
+Version: 1.0.1-1kaiana3
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: ksysguard, bigcontrolcenter
+Section: admin
+Priority: optional
+Description: System monitor
+

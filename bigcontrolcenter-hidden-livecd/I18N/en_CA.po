@@ -1,0 +1,77 @@
+# Spanish translations for BigLinux package.
+# Copyright (C) 2011 THE BigLinux'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the BigLinux package.
+# Automatically generated, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BigLinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2011-06-30 00:01-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid ""
+"Se possível ativa o sistema Compiz que gera diversos efeitos gráficos no "
+"Desktop."
+msgstr ""
+
+msgid ""
+"Ambiente altenativo, possui quase todas as facilidades do ambiente mais "
+"completo, porém utiliza menos recursos do computador."
+msgstr ""
+
+msgid "Não ativa efeitos no Desktop por pãdrao e utiliza o sistema Kwin."
+msgstr ""
+
+msgid ""
+"Inicia a instalação no HD sem abrir nenhum ambiente de desktop, recomendado "
+"para computadores com pouca quantidade de memoria."
+msgstr ""
+
+msgid "Converter para UTF-8"
+msgstr ""
+
+msgid "Converter"
+msgstr ""
+
+msgid "Sair"
+msgstr ""
+
+msgid ""
+"Seja bem vindo(a) à distribuição $(grep DESCRIPTION /etc/lsb-release | cut -"
+"f2 -d \\\" | cut -f1 -d \"(\")"
+msgstr ""
+
+msgid "Experimente o sistema sem instalar no HD."
+msgstr ""
+
+msgid "Com efeitos gráficos."
+msgstr ""
+
+msgid "Sem efeitos gráficos."
+msgstr ""
+
+msgid "Otimizado para desempenho."
+msgstr ""
+
+msgid "Experimentar agora!"
+msgstr ""
+
+msgid "Instalar o sistema no HD."
+msgstr ""
+
+msgid ""
+"Instale no HD e desfrute de todos os recursos disponíveis, basta seguir "
+"alguns passos e em poucos minutos terá a sua disposição um sistema completo "
+"e repleto de funcionalidades."
+msgstr ""
+
+msgid "Instalar no HD!"
+msgstr ""

@@ -1,0 +1,11 @@
+Package: bigcontrolcenter-system-biguser
+Version: 1.3.2-1kaiana7
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: bigcontrolcenter, bigsudo, timekpr, userconfig
+Conflicts: bigusersmanager
+Replaces: bigusersmanager
+Section: admin
+Priority: optional
+Description: Add, Remove and Configure users

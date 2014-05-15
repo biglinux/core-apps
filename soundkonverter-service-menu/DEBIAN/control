@@ -1,0 +1,12 @@
+Package: soundkonverter-service-menu
+Version: 2.0.3-0kaiana1
+Architecture: all
+Maintainer: Bruno <bigbruno@gmail.com>
+Installed-Size: 
+Depends: soundkonverter
+Recommends: dolphin
+Section: kde
+Priority: extra
+Description: Facilita o uso do soundkonverter.
+ Facilitates the use of soundKonverter.
+

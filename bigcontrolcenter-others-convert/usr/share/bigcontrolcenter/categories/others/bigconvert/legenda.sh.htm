@@ -1,0 +1,381 @@
+#!/bin/bash
+
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+###############
+#####Importa o tema
+###############
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-others-bigconvert
+
+###############
+#####Criar diretorio para configuracoes
+###############
+mkdir ~/.bigconvert 2> /dev/null
+
+################
+#####Confere configuracoes na home do usuario
+################
+if [ "$p_embutirlegenda" = "true" ]
+then
+  echo "yes" > ~/.bigconvert/embutirlegenda
+fi
+
+if [ "$p_embutirlegenda" = "false" ]
+then
+  echo "no" > ~/.bigconvert/embutirlegenda
+fi
+
+if [ "$(cat ~/.bigconvert/embutirlegenda)" = "" ]
+then
+  echo "no" > ~/.bigconvert/embutirlegenda
+fi
+
+if [ "$p_corlegenda" = "yes" ]
+then
+  kdialog --getcolor | sed 's/#//g' > ~/.bigconvert/corlegenda
+fi
+
+if [ "$(cat ~/.bigconvert/corlegenda)" = "" ]
+then
+  echo "FFFF00" > ~/.bigconvert/corlegenda
+fi
+
+if [ "$p_bordalegenda" = "true" ]
+then
+  echo "yes" > ~/.bigconvert/bordalegenda
+fi
+
+if [ "$p_bordalegenda" = "false" ]
+then
+  echo "no" > ~/.bigconvert/bordalegenda
+fi
+
+if [ "$(cat ~/.bigconvert/bordalegenda)" = "" ]
+then
+  echo "yes" > ~/.bigconvert/bordalegenda
+fi
+
+if [ "$p_brilho" != "" ]
+then
+  echo "$p_brilho" > ~/.bigconvert/brilho
+fi
+
+if [ "$(cat ~/.bigconvert/brilho)" = "" ]
+then
+  echo "0.0" > ~/.bigconvert/brilho
+fi
+
+if [ "$p_contraste" != "" ]
+then
+  echo "$p_contraste" > ~/.bigconvert/contraste
+fi
+
+if [ "$(cat ~/.bigconvert/contraste)" = "" ]
+then
+  echo "1.0" > ~/.bigconvert/contraste
+fi
+
+if [ "$p_saturacao" != "" ]
+then
+  echo "$p_saturacao" > ~/.bigconvert/saturacao
+fi
+
+if [ "$(cat ~/.bigconvert/saturacao)" = "" ]
+then
+  echo "1.0" > ~/.bigconvert/saturacao
+fi
+
+
+if [ "$p_fontsize" != "" ]
+then
+  echo "$p_fontsize" > ~/.bigconvert/fontsize
+fi
+
+if [ "$(cat ~/.bigconvert/fontsize)" = "" ]
+then
+  echo "20" > ~/.bigconvert/fontsize
+fi
+
+
+
+tip_legenda=$"Os arquivos de legenda devem estar na mesma pasta que o video e com o mesmo nome, sendo diferenciados apenas pela extensao.<br>Caso existam legendas .ass e .srt sera utilizada a .ass.<br>Somente legendas .srt obedecem a formatacao desse configurador."
+
+tip_bordalegenda=$"Insere uma borda escura em torno da fonte que torna a leitura da legenda muito agradavel."
+
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+
+<script language="JavaScript">
+function SomenteNumero(e){
+    var tecla=(window.event)?event.keyCode:e.which;
+    if((tecla > 47 && tecla < 58)) return true;
+    else{
+    if (tecla != 8) return false;
+    else return true;
+    }
+}
+</script>
+
+
+'
+
+###############
+#####Variaveis de nomes
+###############
+title=$"Big Converter Video"
+apply=$"Iniciar conversao"
+back=$"Voltar"
+preview=$"Prever resultado"
+
+###############
+#####Titulo
+###############
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+
+###############
+#####Carregar o tema
+###############
+echo '<link rel="stylesheet" href="demo/dialog.css" media="screen" />'
+open_header
+echo "$title" '</font><br>' $"Converta videos ou extraia audio."
+close_header
+
+
+###############
+#####Inicio da exibicao da GUI
+###############
+#O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#Quando se utiliza aspas duplas o sistema executa algumas partes do codigo antes de passar a resposta, entre essas execucoes inclui a interpretacao de variaveis
+#Para incluir textos a serem exibidos ao usuario utilize aspas duplas com $ antes, para que funcione o sistema de tradução, exemplo: $"texto"
+#No exemplo abaixo o memso comando echo foi aberto e fechado diversas vezes de acordo com a necessidade, aspas simples, duplas e duplas com traducao.
+
+##############
+####Converter para
+##############
+
+echo '<center><table width=95%><tr><td>'
+
+
+. /usr/share/bigcontrolcenter/categories/others/bigconvert/simples/$(cat ~/.bigconvert/formatsimples)
+
+###############
+#####LEGENDA
+###############
+
+echo '<div id="demo"><div class="dialog">
+ <div class="content">
+  <div class="t"></div>'
+
+
+
+echo '<center><p style="margin: 4px 4px 4px 0px;">'
+
+
+if [ "$(cat ~/.bigconvert/embutirlegenda)" = "yes" ]
+then
+embutirlegenda_check="checked"
+fi
+
+echo "<INPUT TYPE=checkbox ID=embutirlegenda NAME=embutirlegenda VALUE=yes $embutirlegenda_check onchange=\"location.replace('/usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm?embutirlegenda='+this.checked)\" $mouseover_open $tip_legenda $mouseover_close><label for=embutirlegenda $mouseover_open $tip_legenda $mouseover_close><font size=+1>" $"Embutir legenda"'</font></label>'
+
+
+
+echo '</select>'
+
+echo '</center>'
+echo '<table width=100%><tr valign=top><td align=center width=33%>'
+
+###############
+#####Opcoes da legenda
+###############
+
+echo 'Tamanho:'
+
+echo "<select onchange=\"location.replace('/usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm?fontsize='+this.value)\">"
+
+ORI_IFS=$IFS
+IFS=$'\n'
+
+  for i in $(/usr/share/bigcontrolcenter/categories/others/bigconvert/fontsize.sh.htm)
+  do
+
+if [ "$(cat ~/.bigconvert/fontsize)" = "$(echo "$i" | sed "s/.*value='//g;s/'>.*//g")" ]
+then
+    echo "$(echo "$i" | sed "s/'>/' selected>/g")"
+else
+    echo "$i"
+fi
+
+done
+IFS=$ORI_IFS
+
+echo '</select></td><td width=20></td><td valign=middle align=right>'
+
+
+echo $"Cor:" '</td><td valign=middle><a href="/usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm?corlegenda=yes">' "<table width=20 height=20 bgcolor=$(cat ~/.bigconvert/corlegenda)>"
+
+if [ "$(cat ~/.bigconvert/bordalegenda)" = "yes" ]
+then
+bordalegenda_check="checked"
+fi
+
+echo "<tr><td></td></tr></table></a></td><td valign=middle align=center width=33%><INPUT TYPE=checkbox ID=bordalegenda NAME=bordalegenda VALUE=yes $bordalegenda_check onchange=\"location.replace('/usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm?bordalegenda='+this.checked)\" $mouseover_open $tip_bordalegenda $mouseover_close><label for=bordalegenda $mouseover_open $tip_bordalegenda $mouseover_close>" $"Adicionar borda"'</label>'
+
+
+
+echo '<tr><td></td></tr></table>' 
+
+
+
+
+if [ "$(cat ~/.bigconvert/qualidadevideo)" = "manual" ]
+then
+
+echo '<table><tr align=center><td>'
+echo "<input name=\"largura\" size=\"4\"  \"value=\"$(cat ~/.bigconvert/manual-qualidadevideo)\" type=\"number\" onkeypress=\"return SomenteNumero(event)\" onchange=\"location.replace('/usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm?manualqualidadevideo='+this.value)\"></td>"
+echo '<td></tr><tr><td>'
+echo $"Bitrate em kbps"
+echo '</td></tr></table>'
+
+fi
+
+echo "</div>"
+
+
+
+echo '
+
+
+ <div class="b"><div></div></div>
+</div>
+</div>'
+
+
+
+
+
+
+
+##################
+#    EXTRAS
+##################
+echo '<br><div id="demo"><div class="dialog">
+ <div class="content">
+  <div class="t"></div>
+  <center><p style="margin: 4px 4px 4px 0px;"><font size=+1>' $"Extras" '</font></center>'
+echo '<table width=100%><tr valign=top align=center>'
+
+
+
+
+echo '<td width=33%>' $"Brilho" '<br>'
+
+echo "<select onchange=\"location.replace('/usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm?brilho='+this.value)\">"
+
+ORI_IFS=$IFS
+IFS=$'\n'
+
+  for i in $(/usr/share/bigcontrolcenter/categories/others/bigconvert/brilho.sh.htm)
+  do
+
+if [ "$(cat ~/.bigconvert/brilho)" = "$(echo "$i" | sed "s/.*value='//g;s/'>.*//g")" ]
+then
+    echo "$(echo "$i" | sed "s/'>/' selected>/g")"
+else
+    echo "$i"
+fi
+
+done
+IFS=$ORI_IFS
+
+echo '</select>'
+
+
+
+
+
+echo '</td><td width=33%>' $"Contraste" '<br>'
+
+echo "<select onchange=\"location.replace('/usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm?contraste='+this.value)\">"
+
+ORI_IFS=$IFS
+IFS=$'\n'
+
+  for i in $(/usr/share/bigcontrolcenter/categories/others/bigconvert/contraste.sh.htm)
+  do
+
+if [ "$(cat ~/.bigconvert/contraste)" = "$(echo "$i" | sed "s/.*value='//g;s/'>.*//g")" ]
+then
+    echo "$(echo "$i" | sed "s/'>/' selected>/g")"
+else
+    echo "$i"
+fi
+
+done
+IFS=$ORI_IFS
+
+echo '</select>'
+
+
+
+
+echo '</td><td width=33%>' $"Saturacao (Cor)" '<br>'
+
+echo "<select onchange=\"location.replace('/usr/share/bigcontrolcenter/categories/others/bigconvert/legenda.sh.htm?saturacao='+this.value)\">"
+
+ORI_IFS=$IFS
+IFS=$'\n'
+
+  for i in $(/usr/share/bigcontrolcenter/categories/others/bigconvert/saturacao.sh.htm)
+  do
+
+if [ "$(cat ~/.bigconvert/saturacao)" = "$(echo "$i" | sed "s/.*value='//g;s/'>.*//g")" ]
+then
+    echo "$(echo "$i" | sed "s/'>/' selected>/g")"
+else
+    echo "$i"
+fi
+
+done
+IFS=$ORI_IFS
+
+echo '</select>'
+
+
+
+echo "</td></tr></table></div>"
+
+
+
+echo '
+
+
+ <div class="b"><div></div></div>
+</div>
+</div>'
+
+
+###############
+#####RODAPE
+###############
+
+echo "</div><div id=\"rodape\"><table width=600><tr><td><a href=\"/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/others/bigconvert/preview.sh.htm -i /usr/share/bigcontrolcenter/categories/others/bigconvert/icon.png\"><button value= $apply>   <img src=\"/usr/share/bigcontrolcenter/categories/others/bigconvert/preview.png\" style=\"vertical-align:top\" />  $preview   </button></a></td><td align=right>  
+<button value= $apply onClick= parent.location='/usr/share/bigcontrolcenter/categories/others/bigconvert/simples.sh.htm'>   <img src=\"/usr/share/bigcontrolcenter/categories/others/bigconvert/back.png\" style=\"vertical-align:top\" />  $back   </button>  
+<button value= $apply onClick= parent.location='/usr/share/bigcontrolcenter/categories/others/bigconvert/submit.sh.htm'>   <img src=\"/usr/share/bigcontrolcenter/categories/others/bigconvert/marcado.png\" style=\"vertical-align:top\" />  $apply   </button></div></td></tr></table>"
+

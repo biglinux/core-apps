@@ -1,0 +1,114 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-hardware-keyboard
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Teclado, mouse e touchpad"
+apply=$"Aplicar"
+close=$"Sair"
+tip_mouse=$"Clique unico ou duplo, velocidade, tema, mover o ponteiro do mouse com o teclado numerico...<p>* Funciona somente no ambiente Kde"
+tip_kcm_keyboard=$"Ativar automaticamente o NumLock e configurar taxa de repeticao do teclado<p>* Funciona somente no ambiente Kde"
+tip_keyboard_layout=$"Configure o modelo de teclado, se letras ou acentos nao estao funcionando corretamente utilize essa opcao<p>* Funciona somente no ambiente Kde"
+tip_keys=$"Configure as teclas de atalho de diversos programas<p>* Funciona somente no ambiente Kde"
+tip_standard_actions=$"Configure teclas de atalho padronizadas, por exemplo: imprimir e salvar arquivo<p>* Funciona somente no ambiente Kde"
+tip_applet=$"Confira o status da impressao"
+tip_xkb=$"Configure o modelo de teclado, opcao similar ao Layout de teclado, porem a configuracao e aplicada para todos os usuarios e em todos os ambientes graficos"
+tip_kvkbd=$"Digite com cliques no mouse usando o teclado virtual"
+tip_touchpad=$"Ajuste as preferencias de sensibilidade e comportamento da barra de rolagem"
+tip_freezepad=$"Especifica regras para desativar o touchpad enquanto o teclado esta sendo utilizado"
+tip_eviacam=$"Metodo que facilita o uso do computador por pessoas que nao conseguem movimentar o mouse<p>Tambem utilizado como uma nova forma de interagir com jogos"
+
+
+
+. /usr/share/bigcontrolcenter/default/theme.sh.htm
+
+cat << EOF
+	<script type="text/javascript" src="/usr/share/bigcontrolcenter/default/js/jquery-1.3.2.min.js"></script>
+
+
+	<script type="text/javascript">
+	\$(function() {
+		\$("#tabs").tabs({
+			event: 'mouseover'
+		})
+	});
+
+	if (document.images) {
+	buttonUp = new Image(); buttonUp.src = "/usr/share/bigcontrolcenter/default/images/category-background.png";
+	buttonDown = new Image(); buttonDown.src = "$(echo $HOME)/.bigcontrolcenter/category-background-over.png";
+	}
+
+	function turn_off(cell) {
+	if (document.images != null) {
+	cell.style.backgroundImage = "url('" + buttonUp.src + "')";
+	}
+	}
+
+	function turn_on(cell) {
+	if (document.images != null) {
+	cell.style.backgroundImage = "url('" + buttonDown.src + "')";
+	}
+	}
+
+  </script>
+
+
+
+
+
+EOF
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Layout de teclado, velocidade e ate controlar o mouse com a webcam."
+close_header
+
+
+echo "<TABLE align=center><tr><td>"
+    echo "<a href=\"/usr/share/bigbashview/run.run?bigsudo bigbashview /usr/share/bigcontrolcenter/categories/hardware/keyboard/xkb.sh.htm\"" "$mouseover_open" $tip_xkb "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=xkb.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Modelo de teclado" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 kcm_keyboard\"" "$mouseover_open" $tip_keyboard_layout "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=keyboard_layout.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Layout de teclado" " </font></td></tr></table></a>"
+echo '</td></tr><tr><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/hardware/keyboard/kvkbd.sh.htm\"" "$mouseover_open" $tip_kvkbd "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=kvkbd.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Teclado virtual" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 standard_actions\"" "$mouseover_open" $tip_standard_actions "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=standard_actions.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Configuracao de atalhos de teclado padrao" " </font></td></tr></table></a>"
+echo '</td></tr><tr><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 keys\"" "$mouseover_open" $tip_keys "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=keys.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Atalhos de teclado globais" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/hardware/keyboard/touchpad.sh.htm\"" "$mouseover_open" $tip_freezepad "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=freezepad.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Evitar toques acidentais no touchpad" " </font></td></tr></table></a>"
+echo '</td></tr><tr><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 kcm_synaptiks\"" "$mouseover_open" $tip_touchpad "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=touchpad.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Configurar touchpad" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 mouse\"" "$mouseover_open" $tip_mouse "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=mouse.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Mouse" " </font></td></tr></table></a>"
+echo '</td></tr><tr><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/hardware/keyboard/eviacam.sh.htm\"" "$mouseover_open" $tip_eviacam "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=webcam.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Controlar o mouse com a webcam" " </font></td></tr></table></a>"
+
+echo '</table>'
+
+
+echo "</a></td></tr></table></div><div id=\"rodape\"><button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

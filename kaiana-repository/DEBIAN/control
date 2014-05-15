@@ -1,0 +1,9 @@
+Package: kaiana-repository
+Version: 14.04-1kaiana1
+Architecture: all
+Maintainer: Uniao Livre <www.uniaolivre.com.br>
+Installed-Size: 1
+Section: admin
+Priority: optional
+Description: Uniao Livre repository and key
+

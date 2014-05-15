@@ -1,0 +1,8 @@
+[Favorites]
+FavoriteURLs=/usr/share/applications/firefox.desktop,/usr/share/applications/pidgin.desktop,/usr/share/applications/smplayer.desktop,/usr/lib/libreoffice/share/xdg/startcenter.desktop,/usr/share/applications/kde4/systemsettings.desktop,/usr/share/applications/kde4/Centro de Controle Big.desktop,/usr/share/applications/kde4/dolphin.desktop
+
+[KRunner]
+loadAll=false
+
+[KRunner][PlasmaRunnerManager]
+pluginWhiteList=places,shell,services,bookmarks,recentdocuments,locations

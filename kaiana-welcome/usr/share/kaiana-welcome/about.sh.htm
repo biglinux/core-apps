@@ -1,0 +1,53 @@
+#!/bin/bash
+source translation
+#Translation
+cat << EOF
+<html>
+<!--
+	Miniport 2.5 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<!-- #Insira o conteúdo entre os 2 EOF sem se preocupar com aspas -->
+
+	<head>
+		<title>$title</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+<body>
+<!-- Nav -->
+	<nav id="nav">
+		<ul class="container">
+			<li><a href="index.sh.htm">$menuindex</a></li>
+			<li><a href="news.sh.htm">$menunews</a></li>
+			<li><a href="conf.sh.htm">$menuconfigure</a></li>
+			<li><a href="apps-office.sh.htm">$menuapps</a></li>
+			<li><a href="community.sh.htm">$menucontribute</a></li>
+			<li><a href="about.sh.htm">$menuabout</a></li>
+		</ul>
+	</nav>
+<!-- Home -->
+	<div class="wrapper">
+		<div class="logo">
+			<img src="images/kaiana.png"/>
+		</div>
+		 <article class="articles">
+			<h1 class="titlePage"> $about </h1>
+			<p>Version 0.1.0</p>
+			<p class="titlePage">$license</p>				
+			<p class="blue">$dependency</p>
+			<p class="blue">$bugs <a class="title" href=./apps/open-bugzilla.run> issues.openmandriva.org</a></p>
+			<p class="blue">Fork and Contribute to $om_appsite <a class="title" href=./apps/open-appsite.run> om-welcome Github Repo</a></p>
+			<p class="blue">$kaianadisc</p>
+		</article>
+	</div>	
+	<div id="rodape">
+	<a href="execute close$" class="button">$endapp</a>
+	</div>
+</body>
+</html>
+EOF

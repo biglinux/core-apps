@@ -1,0 +1,93 @@
+#!/bin/bash
+source translation
+source ~/.kaiana-welcome
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=kaiana-welcome
+
+cat << EOF
+<html>
+<!--
+	Miniport 2.5 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<!-- #Insira o conteúdo entre os 2 EOF sem se preocupar com aspas -->
+
+	<head>
+		<title>$title</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/style.css" />
+		<style>
+		@font-face {
+		  font-family: "GoodTimes";
+		  src: url(css/font/good-times.ttf) format("truetype");
+		}
+		</style>
+	</head>
+<body>
+<!-- Nav -->
+	<nav id="nav">
+		<ul class="container">
+			<li><a href="index.sh.htm">$menuindex</a></li>
+			<li><a href="news.sh.htm">$menunews</a></li>
+			<li><a href="conf.sh.htm">$menuconfigure</a></li>
+			<li><a href="apps-office.sh.htm">$menuapps</a></li>
+			<li><a href="community.sh.htm">$menucontribute</a></li>
+			<li><a href="about.sh.htm">$menuabout</a></li>
+		</ul>
+	</nav>
+<!-- Home -->
+	<div class="wrapper">
+		<div class="logo">
+			<img src="images/kaiana2014.png" style="padding-top: 60px;"/>
+		</div>
+		 <article class="articles">
+			<h1 class="titlePage"> $title </h1>
+			<br/>
+			<p>$hi<span class="username"> $USER</span>, </p>
+			<br/>
+			<p>$text</p>
+		 </article>
+		 <br/>
+		 <article class="articles">
+			<p>
+				$you_are_using <span class="bold">$(lsb_release -d | cut -d":" -f2)</span> codename <span class="bold">$(lsb_release -c | cut -d":" -f2)</span>
+				$with_kernel $(uname -r) 
+				$arch $(uname -i).
+			</p>
+		 </article>
+	</div>
+EOF
+
+if [ $autostart -eq 1 ]; then
+
+cat << EOF
+		<div class="nostartauto">
+		<span>
+		 <input type="checkbox" value="./apps/nostart.run" name="checket" onClick="if (this.checked) { window.location = this.value; }"/>
+		 $nostarwithoma </span>
+	<div>
+EOF
+
+else
+	
+cat << EOF
+		<div class="nostartauto">
+		<span>
+		 <input type="checkbox" value="./apps/makestart.run" name="checket" onClick="if (this.checked) { window.location = this.value; }"/>
+		 $makestartwithoma </span>
+	<div>
+EOF
+
+fi
+
+cat << EOF
+	<div id="rodape">
+	  <a href="news.sh.htm" class="button">$next</a>
+	</div>
+</body>
+</html>
+EOF

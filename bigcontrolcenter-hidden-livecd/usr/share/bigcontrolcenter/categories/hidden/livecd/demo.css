@@ -1,0 +1,50 @@
+
+ul {
+	margin-left: -3em;
+}
+
+#menu-css li, #menu-jquery li {
+	display: inline;
+	list-style: none; 
+}
+
+
+/* For CSS Menu */
+	
+#menu-css li a {
+	
+	/* Border Radius */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
+	/* Border Shadow */
+	-webkit-box-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+	-moz-box-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+	box-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+	
+	/* Animation (Webkit, Gecko & Mozilla) */
+	-webkit-transition-duration: 0.20s;
+	-webkit-transition-timing-function: ease-out; 
+	-moz-transition-duration: 0.20s;
+	-moz-transition-timing-function: ease-out; 
+	
+	color: #ffffff;
+	background: rgba(0,0,0,0.3);
+	display: inline-block;
+	padding: 5px 15px;
+	outline: none;
+	text-decoration: none;
+}
+
+	#menu-css li a:hover {
+		background: rgba(0,0,0,0.6);
+		padding: 5px 25px;
+	}
+
+	#menu-css li a:active {
+		background: rgba(0,0,0,0.1);
+		-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+		-moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.4); 
+		box-shadow: 1px 1px 1px rgba(0,0,0,0.4); 
+	}

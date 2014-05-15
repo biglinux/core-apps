@@ -1,0 +1,9 @@
+Package: bigcontrolcenter-themes-desktops
+Version: 1.0.1-1kaiana4
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: kde-window-manager, bigcontrolcenter
+Section: admin
+Priority: optional
+Description: Configure Desktop numbers for Kwin and Xfwm4

@@ -1,0 +1,24 @@
+[1]
+Description=(Padrão) Desativa prevenção de roubo de foco para o XV
+fsplevel=0
+fsplevelrule=2
+wmclass=^xv .*
+wmclasscomplete=true
+wmclassmatch=3
+
+[2]
+Description=kaiana_splash
+clientmachine=kaiana
+clientmachinematch=0
+fullscreen=true
+fullscreenrule=2
+noborder=true
+noborderrule=3
+title=FadePlot: from the XScreenSaver 5.15 distribution (28-Sep-2011.)
+titlematch=0
+wmclass=kaiana_splash_
+wmclasscomplete=true
+wmclassmatch=2
+
+[General]
+count=2

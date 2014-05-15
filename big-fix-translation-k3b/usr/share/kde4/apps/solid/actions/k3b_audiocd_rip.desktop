@@ -1,0 +1,12 @@
+[Desktop Entry]
+X-KDE-Solid-Predicate=[StorageVolume.ignored == false AND OpticalDisc.availableContent == 'Audio']
+Actions=K3bRip;
+Type=Service
+X-KDE-Priority=TopLevel
+
+[Desktop Action K3bRip]
+Name=Extract Digital Audio with K3b
+Name[pt_BR]=Extrair Audio Digital com K3b
+Exec=k3b --cddarip %i
+Icon=k3b
+X-Ubuntu-Gettext-Domain=desktop_extragear-multimedia_k3b

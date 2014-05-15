@@ -1,0 +1,279 @@
+# English (United Kingdom) translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-13 04:51-0300\n"
+"PO-Revision-Date: 2010-09-01 06:31+0000\n"
+"Last-Translator: Sergio <ikisham@gmail.com>\n"
+"Language-Team: English (United Kingdom) <en_GB@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-02 03:50+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Crie novos usuarios."
+msgstr "Create new users."
+
+msgid "Apague usuarios."
+msgstr "Delete users."
+
+msgid "Escolha qual usuario sera administrador."
+msgstr "Choose which user will be an administrator."
+
+msgid "Altere a senha de qualquer usuario."
+msgstr "Change the password for any user."
+
+msgid "Limite os horarios que cada usuario pode utilizar o computador."
+msgstr "Limit to specified hours when each user can use the computer."
+
+msgid ""
+"Torne a configuracao de um usuario fixa, util para computadores de uso "
+"publico, por exemplo, em escolas."
+msgstr ""
+"Freeze some user configuration, useful for public computers like in schools."
+
+msgid "Gerenciar usuarios"
+msgstr "Manage users"
+
+msgid "Aplicar"
+msgstr "Apply"
+
+msgid "Sair"
+msgstr "Quit"
+
+msgid "Criar, remover e editar usuarios."
+msgstr "Create, remove and edit users."
+
+msgid "Configuracao basica."
+msgstr "Basic configuration."
+
+msgid "Configuracao avancada."
+msgstr "Advanced configuration."
+
+msgid "Adicionar usuario"
+msgstr "Add user"
+
+msgid "Remover usuario"
+msgstr "Remove user"
+
+msgid "Alterar permissoes"
+msgstr "Change permissions"
+
+msgid "Trocar senha"
+msgstr "Change password"
+
+msgid "Limitar tempo de uso"
+msgstr "Limit usage time"
+
+msgid "Fixar configuracao"
+msgstr "Freeze configuration"
+
+msgid "Editar usuarios utilizando Users Admin"
+msgstr "Edit users using Users Admin"
+
+msgid "Editar usuarios utilizando Kuser"
+msgstr "Edit users using Kuser"
+
+msgid "Gerenciar permissoes utilizando PolicyKit Gnome"
+msgstr "Manage permissions using PolicyKit Gnome"
+
+msgid "Gerenciar permissoes utilizando PolicyKit KDE"
+msgstr "Manage permissions using PolicyKit KDE"
+
+msgid "Voltar"
+msgstr "Back"
+
+msgid "Remova usuarios do sistema."
+msgstr "Remove users from the system."
+
+msgid "Selecione o usuario a ser removido:"
+msgstr "Choose the user to be removed:"
+
+msgid "Voltar para tela de configuracao"
+msgstr "Go back to the configuration window"
+
+msgid "Adicione usuarios ao sistema."
+msgstr "Add users to the system."
+
+msgid "Usuario $p_username adicionado."
+msgstr "User $p_username added."
+
+msgid ""
+"Esse usuario nao possui permissoes de administrador, para alterar as "
+"permissoes clique aqui."
+msgstr ""
+"This user doesn't have administrator permissions, to change the permissions "
+"click here."
+
+msgid "Nome de usuario escolhido ja estava em uso."
+msgstr "Chosen username was already in use."
+
+msgid "Escolha uma nova senha."
+msgstr "Choose a new password."
+
+msgid "Selecione um usuario"
+msgstr "Select a user"
+
+msgid "Usuario <b>$p_username</b> nao sera mais restaurado."
+msgstr "User <b>$p_username</b> won't be restored anymore."
+
+msgid "Usuario <b>$p_username</b> sera restaurado a cada boot."
+msgstr "User <b>$p_username</b> will be restored at each boot."
+
+msgid "* Por enquanto essa funcao esta funcionando somente no Desktop KDE4."
+msgstr "* Currently this feature is working only in the KDE4 desktop."
+
+msgid "Alterar permissoes do usuario"
+msgstr "Change user permissions"
+
+msgid "Administrador sem necessidade de confirmacao de senha."
+msgstr "Administrator with no need to confirm password."
+
+msgid "Administrador com confirmacao de senha para cada acao administrativa."
+msgstr "Administrator with password confirmation for each administrative task."
+
+msgid "Usuario sem permissoes administrativas."
+msgstr "User without administrative permissions."
+
+msgid "Defina o que cada usuario pode fazer."
+msgstr "Define what each user can do."
+
+msgid ""
+"Atencao a configuracao do arquivo /etc/sudoers nao esta de acordo com o "
+"padrao utilizado por esse programa, clique aqui para que a configuracao seja "
+"alterada, se optar por manter a configuracao atual as opcoes podem nao "
+"funcionar corretamente."
+msgstr ""
+"Warning: the /etc/sudoers layout doesn't match the standard used by this "
+"application, click here for the layout to be changed. If you opt to keep the "
+"current layout, the options might not work properly."
+
+msgid "Selecione o usuario:"
+msgstr "Select user:"
+
+msgid "<font color=#AE0002>"
+msgstr "<font color=#AE0002>"
+
+msgid "<font color=#0000FF>"
+msgstr "<font color=#0000FF>"
+
+msgid "<font color=#006600>"
+msgstr "<font color=#006600>"
+
+msgid "Arquivo /etc/sudoers configurado de acordo com o padrao desse programa."
+msgstr ""
+"/etc/sudoers file configured according with this application's standards."
+
+msgid "Usuario <b>$p_username</b> removido!"
+msgstr "User <b>$p_username</b> removed!"
+
+msgid ""
+"O usuario <b>$p_username</b> nao foi removido, confira se o mesmo nao esta "
+"logado no momento."
+msgstr ""
+"User <b>$p_username</b> wasn't removed, check if it isn't currently logged "
+"in."
+
+msgid "Preencha os campos abaixo:"
+msgstr "Fill the fields below:"
+
+msgid "Similar ao nome de usuario"
+msgstr "Similar to the username"
+
+msgid "Muito pequena"
+msgstr "Very small"
+
+msgid "Muito simples"
+msgstr "Very simple"
+
+msgid "Simples"
+msgstr "Simple"
+
+msgid "Boa"
+msgstr "Good"
+
+msgid "Muito boa"
+msgstr "Very good"
+
+msgid "Preencha esse campo"
+msgstr "Fill in this field"
+
+msgid "Repita a senha"
+msgstr "Repeat the password"
+
+msgid "Repita a senha corretamente"
+msgstr "Repeat the password correctly"
+
+msgid "Usuario"
+msgstr "User"
+
+msgid "Senha"
+msgstr "Password"
+
+msgid "Confirme a senha"
+msgstr "Confirm the password"
+
+msgid "Selecione o tipo de permissao do usuario"
+msgstr "Select the kind of user permission"
+
+msgid ""
+"* Usuarios com poderes administrativos podem efetuar qualquer operacao no "
+"computador, enquanto usuarios sem esses poderes ficam restritos a alteracoes "
+"e configuracoes em sua pasta pessoal, ou seja, ficam impossibilitados de "
+"efetuar alteracoes no sistema que afetem outros usuarios."
+msgstr ""
+"* Users with administrative privileges can perform any operation in the "
+"computer while users without these privileges remain restricted to changes "
+"and settings in their own personal folder, i.e., can't make changes to the "
+"system that would affect other users."
+
+msgid "Senha do usuario"
+msgstr "User password"
+
+msgid "alterada."
+msgstr "changed."
+
+msgid "Permissao do usuario"
+msgstr "User permission"
+
+msgid "Fixar configuracao do usuario"
+msgstr "Fix user configuration"
+
+msgid ""
+"Salve a configuracao atual de um usuario para que ela seja sempre restaurada."
+msgstr ""
+"Save the current configuration for a user so it can be restored any day."
+
+msgid ""
+"Em locais publicos, por exemplo, em lan houses e escolas pode ser util "
+"desfazer as alteracoes e logs criados pelos usuarios, para isso basta "
+"configurar o desktop da forma desejada e utilizar esse aplicativo para gerar "
+"uma copia da configuracao atual que sera restaurada automaticamente a cada "
+"login:"
+msgstr ""
+"In public places like cybercafes and schools it may be useful to undo the "
+"logs and changes made by users. For this just setup the desktop in the "
+"desired way and use this application to generate a copy of that "
+"configuration, which will be restored automatically after each login:"
+
+msgid "* Essa funcao funciona apenas para o KDesktop e o Ldesktop."
+msgstr "* This feature only works for KDesktop and Ldesktop."
+
+msgid "Selecione o usuario a ter sua senha alterada:"
+msgstr "Choose the user to have the password changed:"
+
+msgid "Deseja realmente remover o usuario"
+msgstr "Do you really want to remove user"
+
+msgid "Lembre que os arquivos pessoais desse usuario serao apagados."
+msgstr "Remember that this user's personal files will be deleted."
+
+msgid "Adicionar, remover e alterar permissoes de usuarios"
+msgstr "Add, remove and change user permissions"

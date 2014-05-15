@@ -1,0 +1,73 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=inode/directory;
+Icon=folder-locked
+Actions=make;_SEPARATOR_;mount;umount;_SEPARATOR_;passwd;backup;_SEPARATOR_;info;list;
+Name=Encrypt folder
+Name[es]=Encriptar carpeta
+Name[pt]=Criptografar pasta
+Name[pt_BR]=Criptografar pasta
+X-KDE-Submenu=Encrypt folder
+X-KDE-Submenu[es]=Encriptar carpeta
+X-KDE-Submenu[pt]=Criptografar pasta
+X-KDE-Submenu[pt_BR]=Criptografar pasta
+
+################################################################################
+
+[Desktop Action make]
+Icon=document-encrypt
+Name=Make
+Name[es]=Crear
+Name[pt]=Criar
+Name[pt_BR]=Criar
+Exec=bigencfs --make "%f"
+
+[Desktop Action mount]
+Icon=flag
+Name=Enable
+Name[es]=Activar
+Name[pt]=Ativar
+Name[pt_BR]=Ativar
+Exec=bigencfs --mount "%f"
+
+[Desktop Action umount]
+Icon=flag-black
+Name=Disable
+Name[es]=Desactivar
+Name[pt]=Desativar
+Name[pt_BR]=Desativar
+Exec=bigencfs --umount "%f"
+
+
+[Desktop Action backup]
+Icon=edit-copy
+Name=Make backup
+Name[es]=Generar copia de seguridad
+Name[pt]=Gerar copia de segurança
+Name[pt_BR]=Gerar copia de segurança
+Exec=bigencfs --make-backup "%f"
+
+[Desktop Action passwd]
+Icon=dialog-password
+Name=Change password
+Name[es]=Cambiar contraseña
+Name[pt]=Alterar senha
+Name[pt_BR]=Alterar senha
+Exec=bigencfs --change-passwd "%f"
+
+[Desktop Action info]
+Icon=dialog-information
+Name=Information
+Name[es]=Información
+Name[pt]=Informações
+Name[pt_BR]=Informações
+Exec=bigencfs --info "%f"
+
+[Desktop Action list]
+Icon=format-list-unordered
+Name=View active folders
+Name[es]=Ver directorios activos
+Name[pt]=Exibir pastas ativas
+Name[pt_BR]=Exibir pastas ativas
+Exec=bigencfs --list

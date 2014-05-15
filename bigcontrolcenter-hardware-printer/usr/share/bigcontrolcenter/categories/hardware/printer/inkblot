@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-hardware-printer
+
+bigsudo inkblot &
+kdialog --title "Inkblot" --msgbox $"Para visualizar o nivel de tinta clique no icone do inkblot na area de notificacao."
+

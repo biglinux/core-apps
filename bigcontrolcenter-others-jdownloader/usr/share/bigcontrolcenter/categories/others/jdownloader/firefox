@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-others-jdownloader
+
+kdialog --yesno $"O processo de instalacao do JDownloader foi iniciado.
+
+Deseja instalar a extensao do Firefox para
+facilitar o uso do JDownloader? (Recomendado)"
+  resposta=$?
+  if [ "$resposta" = "0" ]; then
+    rm -Rf /tmp/jdownloader
+    mkdir /tmp/jdownloader
+    cp /usr/share/bigcontrolcenter/categories/others/jdownloader/firefox.xpi /tmp/jdownloader/
+    cd /tmp/jdownloader/
+    unzip firefox.xpi 
+    sed -i "s|jdownloaderPath\", \"\"|jdownloaderPath\", \"$HOME/.jd/JDownloader.jar\"|g;s|javaPath\", \"\"|javaPath\", \"/usr/bin/java\"|g" defaults/preferences/defaults.js
+    rm -f firefox.xpi
+    zip -r firefox.xpi *
+    firefox firefox.xpi
+  fi

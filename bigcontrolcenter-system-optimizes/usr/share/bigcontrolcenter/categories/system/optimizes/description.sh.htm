@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-optimizes
+
+name_application=$"Otimizacoes e facilidades"
+description_application=$"Equilibre o desempenho do sistema e os recursos disponiveis de acordo com o uso do computador"
+exec_application="/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/system/optimizes/optimizes.sh.htm -i /usr/share/bigcontrolcenter/categories/system/optimizes/icon.png"
+icon_application="/usr/share/bigcontrolcenter/categories/system/optimizes/icon.png"

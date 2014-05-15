@@ -1,0 +1,33 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# BigLinux.com.br <BigLinux.com.br>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-08-13 10:52-0300\n"
+"PO-Revision-Date: 2010-08-13 09:19+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: bigconvert <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-08-16 06:39+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Joystick"
+msgstr ""
+
+msgid "Configure o joystick"
+msgstr ""
+
+#~ msgid "Instalar drivers proprietarios"
+#~ msgstr "Instalar drivers proprietários"
+
+#~ msgid ""
+#~ "Instale aqui drivers para aceleracao 3D de placas nVidia e ATI, alem de "
+#~ "alguns drivers para placas Wireless."
+#~ msgstr ""
+#~ "Instale aqui drivers para aceleração 3D de placas nVidia e ATI, além de "
+#~ "alguns drivers para placas Wireless."

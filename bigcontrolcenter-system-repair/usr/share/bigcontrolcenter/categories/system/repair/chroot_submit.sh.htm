@@ -1,0 +1,165 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-repair
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+
+title=$"Restaurar o sistema"
+apply=$"Aplicar"
+close=$"Sair"
+back=$"Voltar"
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Restaure sistema instalado em outra particao."
+close_header
+
+
+
+#confere as variaveis que sao traduzidar com um p_ antes do nome
+
+
+
+##########
+# apt
+##########
+if [ "$p_escolha" = "apt" ]
+then
+    rm -f /var/big_chroot/var/lib/apt/lists/lock
+    rm -f /var/big_chroot/var/lib/apt/lists/lock
+
+    echo 'apt-get update
+dpkg --configure -a
+apt-get -f install
+dpkg --configure -a
+apt-get -f install
+rm -f /big_chroot_apt' > /var/big_chroot/big_chroot_apt
+
+    chmod +x /var/big_chroot/big_chroot_apt
+    konsole -e chroot /var/big_chroot /big_chroot_apt
+fi
+
+
+##########
+# bbc
+##########
+if [ "$p_escolha" = "bcc" ]
+then
+    chroot /var/big_chroot bigcontrolcenter 2> /dev/null > /dev/null &
+fi
+
+
+##########
+# dolphin
+##########
+if [ "$p_escolha" = "dolphin" ]
+then
+    dolphin /var/big_chroot 2> /dev/null > /dev/null &
+fi
+
+
+#############
+# cmd
+#############
+if [ "$p_escolha" = "cmd" ]
+then
+    chroot /var/big_chroot $p_comando 2> /dev/null > /dev/null &
+fi
+
+
+###########
+# fsck
+###########
+if [ "$p_escolha" = "fsck" ]
+then
+    konsole -e /usr/share/bigcontrolcenter/categories/system/repair/chroot_fsck "$p_part" "$p_fsck_auto"
+fi
+
+
+##########
+# grub
+##########
+if [ "$p_escolha" = "grub" ]
+then
+    echo "update-grub
+grub-install --root-directory=$p_grub_dev
+rm -f /big_chroot_grub" > /var/big_chroot/big_chroot_grub
+    chmod +x /var/big_chroot/big_chroot_grub
+    konsole -e chroot /var/big_chroot /big_chroot_grub
+fi
+
+##################
+# konsole
+##################
+if [ "$p_escolha" = "konsole" ]
+then
+    konsole -e chroot /var/big_chroot 2> /dev/null > /dev/null &
+fi
+
+
+##################
+# synaptic
+##################
+if [ "$p_escolha" = "synaptic" ]
+then
+    chroot /var/big_chroot synaptic 2> /dev/null > /dev/null &
+fi
+
+##################
+# initrd
+##################
+if [ "$p_escolha" = "initrd" ]
+then
+    konsole -e chroot /var/big_chroot update-initramfs -u -k all
+fi
+
+
+##################
+# close
+##################
+if [ "$p_escolha" = "close" ]
+then
+    umount -l /var/big_chroot
+    umount -l /var/big_chroot/sys    
+    umount -l /var/big_chroot/proc
+    umount -l /var/big_chroot/dev
+    umount -l /var/big_chroot
+fi
+
+
+
+#Exibir resposta para o usuario
+echo "<br><br><br><br><br><center><font size=+2>"
+echo $"Operacao executada."
+
+
+
+echo "</font></div><div id=\"rodape\"><button type=button  onClick=\"parent.location='chroot2.sh.htm?part=$p_part'\">   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $back   </button> 
+
+<button type=button onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></form></div></body>"

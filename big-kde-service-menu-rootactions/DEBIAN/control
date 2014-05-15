@@ -1,0 +1,21 @@
+Package: big-kde-service-menu-rootactions
+Version: 2.6.92-0big1
+Architecture: all
+Maintainer: Bruno <bigbruno@gmail.com>
+Installed-Size: 136
+Depends: perl, kdesudo | kdebase-runtime, kdebase-bin
+Recommends: dolphin | konqueror, kwrite | kate, xdg-utils, ark
+Suggests: krusader
+Conflicts: servicemenu-rootactions, kde-service-menu-rootactions
+Replaces: servicemenu-rootactions, kde-service-menu-rootactions
+Section: kde
+Priority: extra
+Homepage: http://www.kde-apps.org/content/show.php/Root+Actions+Servicemenu?content=48411
+Description: a Edit-as-root servicemenu for the kubuntu.
+ Root Actions servicemenu is a Edit-as-root servicemenu for the kubuntu.
+ It allows a admin users to perform several root only actions from konqueror,
+ dolphin and krusader via kdesudo (It of course asks for a password).
+ .
+ http://www.kde-apps.org/content/show.php/Root+Actions+Servicemenu?content=48411.
+ Modified for BigLinux.com
+

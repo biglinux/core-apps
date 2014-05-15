@@ -1,0 +1,220 @@
+/*********
+ * Scale *
+ *********/
+
+GtkScale {
+    border-radius: 8;
+    border-width:               1;
+    border-style: solid;
+    -GtkRange-slider-width:     20;
+    -GtkScale-slider-length:     16;
+    -GtkRange-trough-border:    1;
+}
+
+GtkScale.slider {
+    background-image: url("assets/scale-slider.svg");
+}
+
+GtkScale.slider:backdrop {
+    background-image: url("assets/scale-slider-unfocused.svg");
+}
+
+GtkScale.slider:hover {
+    background-image: url("assets/scale-slider-hover.svg");
+}
+
+GtkScale.slider:hover:backdrop {
+    background-image: url("assets/scale-slider-unfocused-hover.svg");
+}
+
+GtkScale.slider:insensitive {
+    background-image: url("assets/scale-slider-insensitive.svg");
+}
+
+GtkScale.slider:insensitive:backdrop {
+    background-image: url("assets/scale-slider-insensitive-unfocused.svg");
+}
+
+GtkScale.slider.vertical {
+    background-image: url("assets/scale-slider-vertical.svg");
+}
+
+GtkScale.slider.vertical:backdrop {
+    background-image: url("assets/scale-slider-vertical-unfocused.svg");
+}
+
+GtkScale.slider.vertical:hover {
+    background-image: url("assets/scale-slider-vertical-hover.svg");
+}
+
+GtkScale.slider.vertical:hover:backdrop {
+    background-image: url("assets/scale-slider-vertical-unfocused-hover.svg");
+}
+
+GtkScale.slider.vertical:insensitive {
+    background-image: url("assets/scale-slider-vertical-insensitive.svg");
+}
+
+GtkScale.slider.vertical:insensitive:backdrop {
+    background-image: url("assets/scale-slider-vertical-insensitive-unfocused.svg");
+}
+
+GtkScale.scale-has-marks-above.slider.horizontal {
+    background-image: url("assets/scale-slider-marks-above-horizontal.svg");
+}
+
+GtkScale.scale-has-marks-above.slider.horizontal:backdrop {
+    background-image: url("assets/scale-slider-marks-above-horizontal-unfocused.svg");
+}
+
+GtkScale.scale-has-marks-above.slider.horizontal:hover {
+    background-image: url("assets/scale-slider-marks-above-horizontal-hover.svg");
+}
+
+GtkScale.scale-has-marks-above.slider.horizontal:hover:backdrop {
+    background-image: url("assets/scale-slider-marks-above-horizontal-unfocused-hover.svg");
+}
+
+GtkScale.scale-has-marks-above.slider.horizontal:insensitive {
+    background-image: url("assets/scale-slider-marks-above-horizontal-insensitive.svg");
+}
+
+GtkScale.scale-has-marks-above.slider.horizontal:insensitive:backdrop {
+    background-image: url("assets/scale-slider-marks-above-horizontal-insensitive-unfocused.svg");
+}
+
+GtkScale.scale-has-marks-above.slider.vertical {
+    background-image: url("assets/scale-slider-marks-above-vertical.svg");
+}
+
+GtkScale.scale-has-marks-above.slider.vertical:backdrop {
+    background-image: url("assets/scale-slider-marks-above-vertical-unfocused.svg");
+}
+
+GtkScale.scale-has-marks-above.slider.vertical:hover {
+    background-image: url("assets/scale-slider-marks-above-vertical-hover.svg");
+}
+
+GtkScale.scale-has-marks-above.slider.vertical:hover:backdrop {
+    background-image: url("assets/scale-slider-marks-above-vertical-unfocused-hover.svg");
+}
+
+GtkScale.scale-has-marks-above.slider.vertical:insensitive {
+    background-image: url("assets/scale-slider-marks-above-vertical-insensitive.svg");
+}
+
+GtkScale.scale-has-marks-above.slider.vertical:insensitive:backdrop {
+    background-image: url("assets/scale-slider-marks-above-vertical-insensitive-unfocused.svg");
+}
+
+GtkScale.scale-has-marks-below.slider.horizontal {
+    background-image: url("assets/scale-slider-marks-below-horizontal.svg");
+}
+
+GtkScale.scale-has-marks-below.slider.horizontal:backdrop {
+    background-image: url("assets/scale-slider-marks-below-horizontal-unfocused.svg");
+}
+
+GtkScale.scale-has-marks-below.slider.horizontal:hover {
+    background-image: url("assets/scale-slider-marks-below-horizontal-hover.svg");
+}
+
+GtkScale.scale-has-marks-below.slider.horizontal:hover:backdrop {
+    background-image: url("assets/scale-slider-marks-below-horizontal-unfocused-hover.svg");
+}
+
+GtkScale.scale-has-marks-below.slider.horizontal:insensitive {
+    background-image: url("assets/scale-slider-marks-below-horizontal-insensitive.svg");
+}
+
+GtkScale.scale-has-marks-below.slider.horizontal:insensitive:backdrop {
+    background-image: url("assets/scale-slider-marks-below-horizontal-insensitive-unfocused.svg");
+}
+
+GtkScale.scale-has-marks-below.slider.vertical {
+    background-image: url("assets/scale-slider-marks-below-vertical.svg");
+}
+
+GtkScale.scale-has-marks-below.slider.vertical:backdrop {
+    background-image: url("assets/scale-slider-marks-below-vertical-unfocused.svg");
+}
+
+GtkScale.scale-has-marks-below.slider.vertical:hover {
+    background-image: url("assets/scale-slider-marks-below-vertical-hover.svg");
+}
+
+GtkScale.scale-has-marks-below.slider.vertical:hover:backdrop {
+    background-image: url("assets/scale-slider-marks-below-vertical-unfocused-hover.svg");
+}
+
+GtkScale.scale-has-marks-below.slider.vertical:insensitive {
+    background-image: url("assets/scale-slider-marks-below-vertical-insensitive.svg");
+}
+
+GtkScale.scale-has-marks-below.slider.vertical:insensitive:backdrop {
+    background-image: url("assets/scale-slider-marks-below-vertical-insensitive-unfocused.svg");
+}
+
+GtkScale.trough,
+GtkScale.trough row,
+GtkScale.trough row:hover,
+GtkScale.trough row:selected,
+GtkScale.trough row:selected:focused {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 0.92)),
+                                     to (shade (@bg_color, 0.96)));
+    border-width: 1;
+
+    color: @text_color;
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
+                                           from (shade (@dark_bg_color, 0.75)),
+                                           to (shade (@bg_color, 1.05)));
+    -unico-outer-stroke-width: 0;
+}
+
+GtkScale.trough:backdrop,
+GtkScale.trough row:backdrop,
+GtkScale.trough row:hover:backdrop,
+GtkScale.trough row:selected:backdrop,
+GtkScale.trough row:selected:focused:backdrop {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 0.94)),
+                                     to (shade (@bg_color, 0.98)));
+    border-width: 1;
+
+    color: @text_color;
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
+                                           from (shade (@dark_bg_color, 0.85)),
+                                           to (shade (@bg_color, 1.05)));
+    -unico-outer-stroke-width: 0;
+}
+
+GtkScale.trough.vertical {
+    background-image: -gtk-gradient (linear, left top, right top,
+                                     from (shade (@dark_bg_color, 0.92)),
+                                     to (shade (@bg_color, 0.96)));
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, right top,
+                                          from (shade (@dark_bg_color, 0.75)),
+                                          to (shade (@bg_color, 1.05)));
+}
+
+GtkScale.trough.vertical:backdrop {
+    background-image: -gtk-gradient (linear, left top, right top,
+                                     from (shade (@dark_bg_color, 0.94)),
+                                     to (shade (@bg_color, 0.98)));
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, right top,
+                                          from (shade (@dark_bg_color, 0.85)),
+                                          to (shade (@bg_color, 1.05)));
+}
+
+GtkScale.mark {
+    border-color: shade (@bg_color, 0.8);
+}
+
+GtkScale.mark:backdrop {
+    border-color: shade (@bg_color, 0.9);
+}

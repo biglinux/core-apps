@@ -1,0 +1,132 @@
+# Brazilian Portuguese translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-13 22:45-0300\n"
+"PO-Revision-Date: 2010-09-14 06:58+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-15 04:57+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Configurar servidor WEB"
+msgstr "Configurar servidor WEB"
+
+msgid "Aplicar"
+msgstr "Aplicar"
+
+msgid "Sair"
+msgstr "Sair"
+
+msgid "Alterar a senha do administrador do MySQL"
+msgstr "Alterar a senha do administrador do MySQL"
+
+msgid "Por padrao se utiliza a porta 80"
+msgstr "Por padrão se utiliza a porta 80"
+
+msgid "Disponibilize informacao na WEB diretamente do seu computador."
+msgstr "Disponibilize informação na WEB diretamente do seu computador."
+
+msgid ""
+"O Apache e o servidor WEB mais utilizado no mundo, funciona muito bem com o "
+"banco de dados MySQL e possui diversos programas escritos em PHP prontos "
+"para download na internet."
+msgstr ""
+"O Apache é o servidor WEB mais utilizado no mundo, funciona muito bem com o "
+"banco de dados MySQL e possui diversos programas escritos em PHP prontos "
+"para download na internet."
+
+msgid "Apache ativo"
+msgstr "Apache ativo"
+
+msgid "Ativar Apache ao ligar o PC"
+msgstr "Ativar Apache ao ligar o PC"
+
+msgid "Porta do Apache"
+msgstr "Porta do Apache"
+
+msgid "MySQL ativo"
+msgstr "MySQL ativo"
+
+msgid "Ativar MySQL ao ligar o PC"
+msgstr "Ativar MySQL ao ligar o PC"
+
+msgid "Alterar senha do administrador do MySQL"
+msgstr "Alterar senha do administrador do MySQL"
+
+msgid "Desinstalar Apache"
+msgstr "Desinstalar Apache"
+
+msgid "Instalar Apache"
+msgstr "Instalar Apache"
+
+msgid "Desinstalar Mysql"
+msgstr "Desinstalar Mysql"
+
+msgid "Instalar MySQL"
+msgstr "Instalar MySQL"
+
+msgid "Instalar PHP e PHPMyAdmin"
+msgstr "Instalar PHP e PHPMyAdmin"
+
+msgid "Desinstalar PHP e PHPMyAdmin"
+msgstr "Desinstalar PHP e PHPMyAdmin"
+
+msgid "Detectar IP da rede interna e Internet"
+msgstr "Detectar IP da rede interna e Internet"
+
+msgid "Abrir o gerenciador de MySQL PHPMyAdmin"
+msgstr "Abrir o gerenciador de MySQL PHPMyAdmin"
+
+msgid "Abrir navegador na raiz do seu servidor WEB"
+msgstr "Abrir navegador na raiz do seu servidor WEB"
+
+msgid "Abrir pasta com os arquivos do Apache"
+msgstr "Abrir pasta com os arquivos do Apache"
+
+msgid "Configuracoes avancadas do Apache"
+msgstr "Configurações avançadas do Apache"
+
+msgid "Configuracoes avancadas do MySQL"
+msgstr "Configurações avançadas do MySQL"
+
+msgid "Configuracoes avancadas do PHP"
+msgstr "Configurações avançadas do PHP"
+
+msgid "Logs do Apache:"
+msgstr "Logs do Apache:"
+
+msgid "Ver"
+msgstr "Ver"
+
+msgid "Monitorar"
+msgstr "Monitorar"
+
+msgid "Servidor WEB, MySQL e PHP"
+msgstr "Servidor WEB, MySQL e PHP"
+
+msgid "Servidor WEB completo, Apache, MySQL e PHP"
+msgstr "Servidor WEB completo, Apache, MySQL e PHP"
+
+msgid "IP"
+msgstr "IP"
+
+msgid "IP da rede interna:"
+msgstr "IP da rede interna:"
+
+msgid "IP da internet:"
+msgstr "IP da internet:"
+
+msgid "Voltar para tela de configuracao"
+msgstr "Voltar para tela de configuração"
+
+msgid "Configuracao aplicada."
+msgstr "Configuração aplicada."

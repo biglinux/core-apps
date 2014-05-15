@@ -1,0 +1,74 @@
+# Spanish translations for PACKAGE package.
+# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BigLinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2010-09-22 07:16+0000\n"
+"Last-Translator: Ricardo A. Hermosilla Carrillo <ra.hermosillac@gmail.com>\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-24 04:41+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Ksplash BigLinux"
+msgstr "Ksplash BigLinux"
+
+msgid "Sair"
+msgstr "Salir"
+
+msgid "Aplicar"
+msgstr "Aplicar"
+
+msgid ""
+"Altere a imagem de fundo que aparece na ultima etapa de carregamento do "
+"sistema, logo apos o login."
+msgstr ""
+"Cambiar la imagen de fondo que aparece en la última etapa de la carga del "
+"sistema, justo después de inicio de sesión."
+
+msgid "Selecione a imagem"
+msgstr "Seleccione una Imagen"
+
+msgid "Alteracao aplicada."
+msgstr "Configuración aplicada."
+
+msgid "Tela de abertura do KDE (Ksplash)"
+msgstr "Pantalla de apertura de KDE (Ksplash)"
+
+msgid "Escolha o seu tema preferido para o Ksplash"
+msgstr "Elige tu tema favorito de Ksplash"
+
+msgid "Selecione seu tema favorito."
+msgstr "Seleccione su tema favorito."
+
+msgid "Utilize sua imagem favorita como fundo para o tema BigLinux"
+msgstr "Utilice su imagen favorita como fondo para el tema de BigLinux"
+
+msgid "Escolha o seu tema preferido para o Ksplash."
+msgstr "Seleccione su tema preferido para Ksplash"
+
+msgid "Escolher tema do Ksplash"
+msgstr "Seleccione un tema para Ksplash"
+
+msgid "Alterar fundo de tela do tema BigLinux"
+msgstr "Configurar fondo de pantalla del tema de BigLinux"
+
+msgid "Selecionar nova imagem"
+msgstr "Selecciona una imagen nueva"
+
+msgid "Restaurar imagem padrao"
+msgstr "Restaurar el patrón de la Imagen"
+
+msgid "Altere a imagem de fundo que aparece apos o login."
+msgstr "Cambiar la imagen de fondo que aparece tras la entrada."
+
+msgid "Imagem atual"
+msgstr "Imagen actual"

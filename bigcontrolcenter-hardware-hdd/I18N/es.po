@@ -1,0 +1,51 @@
+# Spanish translations for BigLinux package.
+# Copyright (C) 2011 THE BigLinux'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the BigLinux package.
+# Automatically generated, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BigLinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2011-06-30 00:01-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Particionar, formatar e analisar discos"
+msgstr ""
+
+msgid "Gerencie HDs, pen drives e outras midias"
+msgstr ""
+
+msgid "Aplicar"
+msgstr ""
+
+msgid "Sair"
+msgstr ""
+
+msgid "Particionar e formatar dispositivos de armazenamento"
+msgstr ""
+
+msgid ""
+"Efetuar testes nos dispositivos de armazenamento e descubrir se estao "
+"funcionando corretamente"
+msgstr ""
+
+msgid "Gerencie HDs, pen drives e outras midias."
+msgstr ""
+
+msgid ""
+"Atencao ao utilizar as ferramentas a seguir para nao haver perda de dados."
+msgstr ""
+
+msgid "Particionar ou formatar"
+msgstr ""
+
+msgid "Analisar discos e particoes"
+msgstr ""

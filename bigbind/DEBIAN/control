@@ -1,0 +1,10 @@
+Package: bigbind
+Version: 1.1.0-1kaiana4
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: bind9
+Section: admin
+Priority: optional
+Description: Dns configurator
+

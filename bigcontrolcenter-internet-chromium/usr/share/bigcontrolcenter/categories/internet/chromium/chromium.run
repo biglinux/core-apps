@@ -1,0 +1,29 @@
+#!/bin/bash
+
+
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-internet-chromium
+
+if [ -e /usr/bin/chromium-browser.distrib ]; then
+
+    bigbashview /usr/share/bigcontrolcenter/categories/internet/chromium/chromium.sh.htm -i /usr/share/bigcontrolcenter/categories/internet/chromium/icon.png
+
+else
+
+    kdialog --yesno $"O navegador Chromium nao esta instalado.
+
+Devo instalar agora?"
+  resposta=$?
+      if [ "$resposta" = "0" ]; then
+	    bigsudo bigsynaptic-autoclose --install chromium-browser-l10n
+	    chromium-browser
+      fi
+
+fi

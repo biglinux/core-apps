@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-servers-ssh
+
+name_application=$"SSH"
+description_application=$"Acesso remoto seguro e de qualidade"
+exec_application="/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/servers/ssh/ssh.sh.htm -i /usr/share/bigcontrolcenter/categories/servers/ssh/icon.png"
+icon_application="/usr/share/bigcontrolcenter/categories/servers/ssh/icon.png"

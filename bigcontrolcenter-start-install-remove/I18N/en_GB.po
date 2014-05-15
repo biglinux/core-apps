@@ -1,0 +1,344 @@
+# English (United Kingdom) translation for biglinux
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the biglinux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-13 04:51-0300\n"
+"PO-Revision-Date: 2010-10-01 11:49+0000\n"
+"Last-Translator: BIGBRUNO <Unknown>\n"
+"Language-Team: English (United Kingdom) <en_GB@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-10-02 05:05+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Wine/PlayOnLinux"
+msgstr "Wine/PlayOnLinux"
+
+msgid "Aplicar"
+msgstr "Apply"
+
+msgid "Voltar"
+msgstr "Back"
+
+msgid "Sair"
+msgstr "Quit"
+
+msgid "Como instalar programas feitos para Windows no Linux."
+msgstr "How to install programs made for Windows on Linux."
+
+msgid "Abrir Painel Wine"
+msgstr "Open Wine's Panel"
+
+msgid "Instalar Wine"
+msgstr "Install Wine"
+
+msgid "Abrir PlayOnLinux"
+msgstr "Open PlayOnLinux"
+
+msgid "Instalar PlayOnLinux"
+msgstr "Install PlayOnLinux"
+
+msgid "Com o Wine e possivel utilizar programas do Windows no Linux."
+msgstr "With Wine it is possible to use Windows applications on Linux."
+
+msgid ""
+"Sua compatibilidade nao e muito boa, recomendo que tente utilizar apenas se "
+"nao encontrar programa similar feito para Linux."
+msgstr ""
+"Its compatibility isn't very high, I recommend that you use it only if you "
+"don't find in Linux a similar application to the one you want to use."
+
+msgid "Um dos usos mais comuns do Wine e para rodar jogos."
+msgstr "One of the most common uses of Wine is for running games."
+
+msgid ""
+"Clique aqui para conferir a lista oficial de programas compativeis com o "
+"Wine."
+msgstr "Click here to check the list of Wine compatible applications."
+
+msgid ""
+"O PlayOnLinux faz configuracoes especificas para tornar o Wine compativel "
+"com diversos programas e jogos."
+msgstr ""
+"PlayOnLinux has some specific settings that make Wine compatible with "
+"several applications and games."
+
+msgid ""
+"Diversos programas que constam na lista do PlayOnLinux são baixados "
+"automaticamente da internet."
+msgstr ""
+"Many applications on the PlayOnLinux list are automatically downloaded from "
+"the Internet."
+
+msgid ""
+"Para evitar que a configuracao de um programa interfira no funcionamento de "
+"outro o PlayOnLinux faz instalacoes separadas do Wine para cada programa."
+msgstr ""
+"To prevent that application configurations interfere with one another, "
+"PlayOnLinux installs each application separately from Wine."
+
+msgid "Central de Programas"
+msgstr "Software Center"
+
+msgid "A forma mais simples de instalar e remover programas."
+msgstr "The simpliest way to install and remove programs."
+
+msgid "Abrir a Central de Programas"
+msgstr "Open the Software Center"
+
+msgid ""
+"Para instalar novos programas o download e feito automaticamente, portanto e "
+"importante o PC estar conectado a internet."
+msgstr ""
+"The applications to be installed are downloaded from the Internet, so the PC "
+"needs to be online."
+
+msgid ""
+"Ao abrir o programa digite o que deseja no canto superior direito ou escolha "
+"a categoria."
+msgstr ""
+"When opening the application, type what you want in the upper right corner "
+"or choose a category."
+
+msgid ""
+"Ao encontrar o programa desejado de dois cliques sobre o mesmo e entao sera "
+"aberta uma pagina com a descricao mais completa e em alguns casos uma imagem "
+"de previsao. Para prosseguir com a instalacao clique no botao instalar."
+msgstr ""
+"When you find the desired application, double-click it and a fuller "
+"description window will be opened, sometimes with a preview shot. To proceed "
+"with the installation, click on the Install button."
+
+msgid ""
+"Para remover programas faca o mesmo processo escrito acima, porem no lugar "
+"do botao instalar estara o botao remover."
+msgstr ""
+"To remove applications do as stated above but click on Remove instead of "
+"Install."
+
+msgid ""
+"Se o programa desejado não for encontrado na busca do canto superior direito "
+"tente efetua-la em ingles, por exemplo: burn cd no lugar de gravar cd."
+msgstr ""
+
+msgid ""
+"Os programas instalados possuem em seu icone uma bolinha verde com um v na "
+"cor branca."
+msgstr ""
+"The installed applications have over their icons a little green ball with a "
+"white \"v\" inside."
+
+msgid ""
+"A Central de Programas não exibe todos os programas disponiveis ou "
+"instalados, mas exibe praticamente todos que sao de interesse para a maioria "
+"dos usuarios, caso deseje acessar a lista completa utilize o programa "
+"Synaptic."
+msgstr ""
+"The Software Center doesn't show all the available or installed "
+"applications, but shows almost all that could be of some interest to the "
+"majority of users. To access the complete list of applications, use Synaptic "
+"package manager."
+
+msgid "Synaptic"
+msgstr "Synaptic"
+
+msgid "Facilidade e opcoes avancadas no mesmo local."
+msgstr "Facility and advanced options in the same place."
+
+msgid "Abrir Synaptic"
+msgstr "Open Synaptic"
+
+msgid ""
+"O botao Recarregar sincroniza a lista de programas do seu PC com a lista de "
+"programas disponiveis nos servidores, se voce for instalar algum programa "
+"recomendo que antes recarregue a lista para checar se nao foi inserida uma "
+"nova versao, mas nao e necessario recarregar a cada programa que vai se "
+"instalar, lembre que isso serve apenas para checar se o programa que esta no "
+"servidor nao e uma versao mais nova, entao usar esse botao uma vez a cada "
+"semana costuma ser suficiente."
+msgstr ""
+"The Reload button synchronizes your PC's application list with the ones "
+"available in the servers. If you're going to install some application, I "
+"recommend that you reload the list beforehand to check if a newer version is "
+"available. But it isn't necessary to reload before each application you "
+"install, remember that this serves only to check if there's a newer version "
+"in the servers so using this button once a week usually is enough."
+
+msgid ""
+"Apos recarregar basta encontrar o programa, voce pode procurar na lista a "
+"esquerda por categoria ou usar o botao procurar."
+msgstr ""
+"After reloading, just locate the application. You can search in the category "
+"list at left or use the Search button."
+
+msgid ""
+"Ao encontrar o programa desejado basta clicar duas vezes sobre o programa "
+"que o mesmo ficara marcado."
+msgstr "When you find the application, double-click it and it will be marked."
+
+msgid ""
+"Apos marcar os programas clique em aplicar que o download e a instalacao "
+"sera feita automaticamente."
+msgstr ""
+"After marking the applications, click on Apply and they will be "
+"automatically downloaded and installed."
+
+msgid "Wine"
+msgstr "Wine"
+
+msgid "Configurar o Wine."
+msgstr "Configure Wine"
+
+msgid "Configurador do Wine"
+msgstr "Wine configuration tool"
+
+msgid "Abrir pasta com arquivos do Wine"
+msgstr "Open the Wine files folder"
+
+msgid "Editor de registros Regedit"
+msgstr "RegEdit registry editor"
+
+msgid "Gerenciador de arquivos do Wine"
+msgstr "Wine's file manager"
+
+msgid "Simular que o Windows esta sendo reiniciado"
+msgstr "Simulate a Windows reboot"
+
+msgid "Apagar arquivos pessoais do Wine"
+msgstr "Delete personal files in Wine"
+
+msgid ""
+"As alteracoes feitas nesse painel afetam os programas instalados no Wine, "
+"mas nao incluenciam os instalados utilizando o PlayOnLinux."
+msgstr ""
+"The changes made in this panel affect the applications installed in Wine but "
+"have no effect on the ones installed using PlayOnLinux."
+
+msgid "Configurar DNS"
+msgstr "Configure DNS"
+
+msgid "Voltar para tela de configuracao"
+msgstr "Go back to the configuration window"
+
+msgid "Para uma conexao mais rapida e estavel."
+msgstr "For a faster and more stable connection."
+
+msgid "Configuracao aplicada."
+msgstr "Configuration applied."
+
+msgid "Reiniciado."
+msgstr "Rebooted."
+
+msgid "Concluida a simulacao de reinicio do Wine."
+msgstr "The Wine reboot simulation is finished."
+
+msgid "Dicas para instalar programas."
+msgstr "Tips for installing applications."
+
+msgid ""
+"Sempre que disponivel instale o programa desejado utilizando a <a "
+"href=softwarecenter.sh.htm>Central de Programas</a> ou o <a href=synaptic.sh."
+"htm>Synaptic</a>."
+msgstr ""
+"Whenever possible, install the desired application using the <a "
+"href=softwarecenter.sh.htm>Software Center</a> or <a href=synaptic.sh."
+"htm>Synaptic</a>."
+
+msgid ""
+"É recomendado que o programa a ser instalado seja compativel com o "
+"$DISTRIB_ID $DISTRIB_RELEASE ou o Ubuntu $DISTRIB_CODENAME. Caso o programa "
+"nao esteja disponivel para ambas as distribuicoes confira a disponibilidade "
+"para Debian, pois sua compatibilidade nao e total, mas ainda e bastante "
+"eficiente."
+msgstr ""
+"It's recommended that the application to be installed is compatible with "
+"$DISTRIB_ID $DISTRIB_RELEASE or Ubuntu $DISTRIB_CODENAME. If the application "
+"isn't available for both distributions, check its availability for Debian "
+"since its compatibility isn't full but works in many cases."
+
+msgid ""
+"De preferencia a arquivos com a extensao .deb pois e o padrao adotado pelo "
+"$DISTRIB_ID. Nesse caso basta clicar duas vezes sobre o arquivo que o "
+"instalador e iniciado."
+msgstr ""
+"Prefer files with the .deb extension since it's the standard adopted by "
+"$DISTRIB_ID. In these cases just double-click the file and the installer "
+"will be launched."
+
+msgid ""
+"Arquivos .run e .sh necessitam que se clique sobre o mesmo com o botao "
+"direito, acesse as propriedades, permissoes e marque como executavel."
+msgstr ""
+".run and .sh files need to made executable. For that, right-click them, "
+"access their properties and permissions and mark them as executable."
+
+msgid ""
+"Arquivos .rar, .zip, .tar, .gz, 7z, bz e lzma são arquivos compactados, "
+"clique sobre o mesmo com o botao direito, mande extrair e verifique o "
+"formato que foi criado apos a descompactacao."
+msgstr ""
+".rar, .zip, .tar, .gz, .7z, .bz and lzma are compressed files, right-click "
+"them, extract and check the format created after the decompression."
+
+msgid ""
+"Arquivos .rpm sao pouco compativeis com o $DISTRIB_ID, recomendo que procure "
+"por um arquivo .deb."
+msgstr ""
+".rpm files are poorly compatible with $DISTRIB_ID, I recommend that you "
+"search for a .deb file."
+
+msgid ""
+"Arquivos .exe e .msi devem ser instalados com o programa Wine, mas sua "
+"compatibilidade e estabilidade nao e muito boa."
+msgstr ""
+".exe and .msi files must be installed with Wine, but their compatibility and "
+"stability aren't very good."
+
+msgid "Instalar ou remover programas"
+msgstr "Install or remove applications"
+
+msgid ""
+"Se o programa ou jogo que voce deseja nao possui versao para Linux "
+"experimente utiliza-lo com o Wine"
+msgstr ""
+"If the desired application or game doesn't have a Linux version, try using "
+"it with Wine."
+
+msgid "Instalar e remover programas nunca foi tao facil."
+msgstr "Installing and removing applications has never been so easy."
+
+msgid "Instalar ou remover simples<br>(Central de Programas)"
+msgstr "Simple install or remove<br>(Software Center)"
+
+msgid "Instalar ou remover avancado<br>(Synaptic)"
+msgstr "Advanced install or remove<br>(Synaptic)"
+
+msgid "Instalar programas feitos para Windows"
+msgstr "Install applications made for Windows"
+
+msgid "Instalar programas diretamente de arquivos"
+msgstr "Install applications directly from files"
+
+msgid ""
+"Devo realmente apagar os arquivos pessoais do Wine?\n"
+"Isso ira remover os programas instalados pelo Wine, mas nao pelo PlayOnLinux."
+msgstr ""
+"Should I really delete your personal files in Wine?\n"
+"This will remove applications installed with Wine but not the ones installed "
+"with PlayOnLinux."
+
+msgid "Remocao concluida."
+msgstr "Removal finished."
+
+msgid "Instalar ou Remover programas"
+msgstr "Install or remove applications"
+
+msgid "Instale e remova programas de forma facil e pratica"
+msgstr "Install and remove applications in an easy and practical way"

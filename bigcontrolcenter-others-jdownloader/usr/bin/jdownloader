@@ -1,0 +1,9 @@
+#!/bin/bash
+
+    #Confere se esta instalado
+    if [ -e ~/.jd/JDownloader.jar ]
+    then
+    /usr/bin/java -jar ~/.jd/JDownloader.jar $(echo "$*" | sed 's|-jar -Xmx512m||g')
+    else
+    bigbashview /usr/share/bigcontrolcenter/categories/others/jdownloader/jdownloader.sh.htm -i /usr/share/bigcontrolcenter/categories/others/jdownloader/icon.png
+    fi

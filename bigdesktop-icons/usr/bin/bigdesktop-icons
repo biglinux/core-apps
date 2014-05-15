@@ -1,0 +1,89 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigdesktop-icons 
+
+
+if ! [ -e "$HOME/.config/disable_auto_desktop_icons" ]
+then
+
+
+    if [ "$(echo $XDG_CURRENT_DESKTOP | grep LXDE)" != "" ]
+    then
+
+
+echo "[Desktop Entry]
+Exec=pcmanfm file://$HOME
+Icon=computer.png
+Terminal=false
+Type=Application
+X-KDE-StartupNotify=false
+X-KDE-SubstituteUID=false" > "$HOME/Desktop/"$"Computador e meus arquivos"
+
+echo '[Desktop Entry]
+Exec=pcmanfm trash:/
+Icon=user-trash.png
+Terminal=false
+Type=Application
+X-KDE-StartupNotify=false
+X-KDE-SubstituteUID=false'  > "$HOME/Desktop/"$"Lixo"
+
+echo '[Desktop Entry]
+Exec=pcmanfm smb:/
+Icon=network-workgroup.png
+Terminal=false
+Type=Application
+X-KDE-StartupNotify=false
+X-KDE-SubstituteUID=false' > "$HOME/Desktop/"$"Rede"
+
+echo '[Desktop Entry]
+Exec=biglxshortcut
+Icon=system-run.png
+Terminal=false
+Type=Application
+X-KDE-StartupNotify=false
+X-KDE-SubstituteUID=false' > "$HOME/Desktop/"$"Criar icone no desktop"
+
+chmod +x "$HOME/Desktop/"$"Criar icone no desktop"
+
+
+    else
+
+
+echo '[Desktop Entry]
+URL[$e]=file://$HOME
+Icon=computer.png
+Terminal=false
+Type=Link
+X-KDE-StartupNotify=false
+X-KDE-SubstituteUID=false' > "$HOME/Desktop/"$"Computador e meus arquivos"
+
+echo '[Desktop Entry]
+URL[$e]=trash:/
+Icon=user-trash.png
+Terminal=false
+Type=Link
+X-KDE-StartupNotify=false
+X-KDE-SubstituteUID=false'  > "$HOME/Desktop/"$"Lixo"
+
+echo '[Desktop Entry]
+URL[$e]=remote:/
+Icon=network-workgroup.png
+Terminal=false
+Type=Link
+X-KDE-StartupNotify=false
+X-KDE-SubstituteUID=false' > "$HOME/Desktop/"$"Rede"
+
+rm -f "$HOME/Desktop/"$"Criar icone no desktop"
+
+
+    fi
+
+
+chmod +x  "$HOME/Desktop/"$"Computador e meus arquivos"
+chmod +x "$HOME/Desktop/"$"Rede"
+chmod +x "$HOME/Desktop/"$"Lixo"
+
+
+fi

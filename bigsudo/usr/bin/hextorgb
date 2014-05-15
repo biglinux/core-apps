@@ -1,0 +1,7 @@
+#!/bin/bash
+HEX24="$1"
+HEX24=`echo $HEX24 | sed 's/#//g'`
+R=`echo $HEX24 | sed 's/../0x&,/g' | awk -F "," '{printf("%d",$1)}'`
+G=`echo $HEX24 | sed 's/../0x&,/g' | awk -F "," '{printf("%d",$2)}'`
+B=`echo $HEX24 | sed 's/../0x&,/g' | awk -F "," '{printf("%d",$3)}'`
+echo "$R.$G.$B"

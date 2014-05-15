@@ -1,0 +1,23 @@
+#! /bin/sh
+
+set -e
+
+package_name=kdesktop-environment
+
+dpkg-divert --package $package_name --rename --remove /usr/share/xsessions/kde.desktop
+
+exit 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+

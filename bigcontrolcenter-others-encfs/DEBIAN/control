@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-others-encfs
+Version: 1.0.0-1kaiana4
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: encfs, bigcontrolcenter, dolphin, konsole
+Section: admin
+Priority: optional
+Description: Encfs ServiceMenu
+

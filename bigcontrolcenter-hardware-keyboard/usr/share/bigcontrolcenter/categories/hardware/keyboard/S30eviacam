@@ -1,0 +1,9 @@
+#!/bin/bash
+
+while [ "$(ps -A | grep "kdm_greet$")" = "" ]; do
+sleep 1
+done
+
+sleep 4
+HOME=/root eviacam &
+

@@ -1,0 +1,11 @@
+Package: bigsynaptic
+Version: 1.0.1-1kaiana2
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: synaptic, libgnome2-perl
+Section: admin
+Priority: optional
+Description: Use Synaptic with terminal
+
+

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-start-install-remove
+
+kdialog --yesno $"Devo realmente apagar os arquivos pessoais do Wine?
+Isso ira remover os programas instalados pelo Wine, mas nao pelo PlayOnLinux."
+  resposta=$?
+  if [ "$resposta" = "0" ]; then
+      rm -Rf ~/.wine
+      kdialog --title $"Remocao concluida." --msgbox $"Remocao concluida."
+  fi

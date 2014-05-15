@@ -1,0 +1,9 @@
+Package: force-lightdm-96-dpi
+Version: 1.0.0-1kaiana2
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Section: admin
+Priority: optional
+Description: Force 96 dpi in lightdm
+
+

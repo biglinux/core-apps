@@ -1,0 +1,180 @@
+#!/bin/bash
+
+#Manage privileges
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#  Thomaz "ThOR27" dos Reis <thor27@ibest.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Localisation 
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigsudo-manager
+
+
+#Check permission
+if test $(id -u) != 0
+then
+    echo "Need root permission"
+    exit 0
+fi
+
+
+#Options
+case "$1" in
+
+    --check-bigsudo-config)
+        if [ "$(grep BigLinux12.04 /etc/sudoers)" = "" ]
+        then
+            echo "Fail"
+        else
+	    if [ "$(cat /etc/group | grep bigsudo)" = "" ]
+            then
+            echo "Fail"
+            else
+            echo "OK"
+            fi
+        fi
+        exit 0
+    ;;
+
+
+    --check-privileges)
+
+        # Check input
+        if [ "$2" = "" ]
+        then
+            echo "Correct usage:
+--check-privileges user"
+            exit 0
+        fi
+
+        if [ "$(groups "$2" | grep bigsudo)" = "" ]
+        then
+            if [ "$(groups "$2" | grep " admin")" = "" ]
+            then
+                echo "no"
+            else
+                echo "admin"
+            fi
+        else
+            echo "bigsudo"
+        fi
+        exit 0
+    ;;
+
+    --list-users-bigsudo)
+        grep ^bigsudo: /etc/group | awk -F":" '{ print $NF }' | sed '/^$/d;s/,/\n/g'
+
+        exit 0
+    ;;
+
+
+    --list-users-admin)
+
+        grep ^admin: /etc/group | awk -F":" '{ print $NF }' | sed '/^$/d;s/,/\n/g' > /tmp/bigsudo-manager$$
+
+        for i in $(grep ^bigsudo: /etc/group | awk -F":" '{ print $NF }' | sed '/^$/d;s/,/\n/g')
+        do
+            sed -i "/^$i$/d" /tmp/bigsudo-manager$$
+        done
+
+        cat /tmp/bigsudo-manager$$
+        rm -f /tmp/bigsudo-manager$$
+
+        exit 0
+    ;;
+
+    --list-users-limited)
+
+        grep :/bin/bash /etc/passwd | awk -F":" '{ print $1 }' > /tmp/bigsudo-manager$$
+
+        for i in $(grep ^bigsudo: /etc/group | awk -F":" '{ print $NF }' | sed '/^$/d;s/,/\n/g')
+        do
+            sed -i "/^$i$/d" /tmp/bigsudo-manager$$
+        done
+
+        for i in $(grep ^admin: /etc/group | awk -F":" '{ print $NF }' | sed '/^$/d;s/,/\n/g')
+        do
+            sed -i "/^$i$/d" /tmp/bigsudo-manager$$
+        done
+        sed -i "/^root$/d" /tmp/bigsudo-manager$$
+        cat /tmp/bigsudo-manager$$
+        rm -f /tmp/bigsudo-manager$$
+
+        exit 0
+    ;;
+
+    --list-users-all)
+
+        grep :/bin/bash /etc/passwd | awk -F":" '{ print $1 }' | sed "/^root$/d"
+
+        exit 0
+    ;;
+
+    --enable-user-bigsudo)
+
+        # Check input
+        if [ "$2" = "" ]
+        then
+            echo "Correct Usage:
+--enable-user-bigsudo user"
+            exit 0
+        fi
+	addgroup bigsudo 2> /dev/null
+        adduser $2 bigsudo 2> /dev/null
+        adduser $2 admin 2> /dev/null
+        exit 0
+    ;;
+
+    --enable-user-admin)
+
+        # Check input
+        if [ "$2" = "" ]
+        then
+            echo "Correct Usage:
+--enable-user-admin user"
+            exit 0
+        fi
+
+        adduser $2 admin
+        deluser $2 bigsudo 2> /dev/null
+        exit 0
+    ;;
+
+    --disable-user-privileges)
+
+        # Check input
+        if [ "$2" = "" ]
+        then
+            echo "Correct Usage:
+--disable-user-privileges user"
+            exit 0
+        fi
+
+        deluser $2 bigsudo
+        deluser $2 admin
+        exit 0
+    ;;
+
+
+    *)
+        echo "Manage user privileges
+
+--check-bigsudo-config
+--check-privileges user
+--enable-user-bigsudo user
+--enable-user-admin user
+--disable-user-privileges user
+--list-users-bigsudo
+--list-users-admin
+--list-users-limited
+--list-users-all
+
+"
+
+    ;;
+
+esac

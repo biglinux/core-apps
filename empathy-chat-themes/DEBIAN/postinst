@@ -1,0 +1,15 @@
+#! /bin/bash
+echo " Creating/Checking Directory Structure . . . "
+mkdir --verbose --parents $HOME/.local/share/adium/message-styles
+echo " "
+echo " Installing Empathy Themes . . . "
+cp --recursive --force /usr/share/empathy-chat-themes/* $HOME/.local/share/adium/message-styles/
+echo " "
+echo " Checking File Permissions . . . "
+chmod --verbose --recursive 777 $HOME/.local/share/adium/message-styles/
+chown --recursive $USER $HOME/.local/share/adium/*
+chown $USER $HOME/.local/share/adium
+echo " "
+echo " Please Restart any running Empathy Client . . ."
+echo " "
+echo OK

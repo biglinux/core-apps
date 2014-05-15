@@ -1,0 +1,56 @@
+#!/bin/bash
+#KaianaSplash by lunimare
+
+ln -sf /usr/share/bigcontrolcenter/categories/themes/kaianasplash/stop-kaiana-splash "$HOME/.kde/Autostart/stop-kaiana-splash"
+
+##########
+# Inicia randomizacao dos screensavers
+#
+
+if [ -e "/rofs" ]
+then
+    sed -n $[1+($RANDOM%$(wc -l "$HOME/.config/kaianasplash/selecionados" | cut -f1 -d" "))]' p;' "$HOME/.config/kaianasplash/selecionados" > "$HOME/.config/kaianasplash/execute"
+else
+
+    #Confere se existe o arquivo informando o ultimo screensaver utilizado, caso nao exista cria com o primeiro da lista
+    if [ "$(cat "$HOME/.config/kaianasplash/last")" = "" ]
+    then
+	mkdir -p $HOME/.config/kaianasplash 2>/dev/null
+	echo kaiana-splash-flipscreen3d > "$HOME/.config/kaianasplash/last"
+    fi
+
+    #Confere se existe uma linha apos o screensaver utilizado anteriormente
+    if [ "$(cat "$HOME/.config/kaianasplash/selecionados" | grep  -A1 $(cat "$HOME/.config/kaianasplash/last") | wc -l)" = "2" ]
+    then
+
+	#Caso o valor seja 2, substitui o arquivo last com o novo valor
+	cat "$HOME/.config/kaianasplash/selecionados" | grep -A1 $(cat "$HOME/.config/kaianasplash/last") | tail -1 > "$HOME/.config/kaianasplash/execute"
+    
+    else
+    
+	#Caso o valor seja diferente de 2, retorna o conteudo do arquivo last para o primeiro screensaver da lista
+	cat "$HOME/.config/kaianasplash/selecionados" | grep -m1 kaiana > "$HOME/.config/kaianasplash/execute"
+    fi
+fi
+    #Substitui o last pelo execute
+    cp -f "$HOME/.config/kaianasplash/execute" "$HOME/.config/kaianasplash/last"
+#
+# Randomizacao dos screensavers concluida
+##########
+
+
+
+#Executa o screensaver
+/usr/lib/xscreensaver/$(cat "$HOME/.config/kaianasplash/execute") -geometry $(xrandr | grep \* | cut -d' ' -f4)+0+0 &
+sleep 2
+
+#Identifica o centro da tela para exibir o nome Kaiana com o xteddy
+ih=$(identify -format "%h \n" /usr/share/bigcontrolcenter/categories/themes/kaianasplash/imagens/ks.gif)
+rh=$(xrandr | grep current | cut -d ' ' -f10 | tr -d ',' | tr -d ' ')
+iw=$(identify -format "%w \n" /usr/share/bigcontrolcenter/categories/themes/kaianasplash/imagens/ks.gif)
+rw=$(xrandr | grep current | cut -d ' ' -f8 | tr -d ',' | tr -d ' ')
+top=$(($rh/2-$ih/2))
+left=$(($rw/2-$iw/2))
+
+#Exibe o nome Kaiana com o xteddy
+xteddy -nocursor -geometry +$left+$top -F /usr/share/bigcontrolcenter/categories/themes/kaianasplash/imagens/ks.gif &

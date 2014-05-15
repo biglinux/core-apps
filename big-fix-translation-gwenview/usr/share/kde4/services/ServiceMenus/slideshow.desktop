@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin,inode/directory
+Actions=slideshow;
+
+[Desktop Action slideshow]
+Name=Start a Slideshow
+Name[pt_BR]=Começar Apresentação de Fotos
+Icon=gwenview
+Exec=gwenview -s %u
+X-Ubuntu-Gettext-Domain=desktop_kdegraphics

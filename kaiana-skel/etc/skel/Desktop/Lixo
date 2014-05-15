@@ -1,0 +1,7 @@
+[Desktop Entry]
+URL[$e]=trash:/
+Icon=user-trash.png
+Terminal=false
+Type=Link
+X-KDE-StartupNotify=false
+X-KDE-SubstituteUID=false

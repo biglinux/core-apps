@@ -1,0 +1,43 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-internet-remote
+
+rm -Rf /tmp/bigteamviewer
+mkdir /tmp/bigteamviewer 2> /dev/null
+cd /tmp/bigteamviewer
+
+if [ "$(uname -m)" = "i686" ]
+then
+    kde-cp http://www.teamviewer.com/download/teamviewer_linux.deb /tmp/bigteamviewer
+else
+    kde-cp http://www.teamviewer.com/download/teamviewer_linux_x64.deb /tmp/bigteamviewer
+fi
+
+kdialog --passivepopup $"Instalando o TeamViwer, aguarde um momento..." --title $"TeamViewer" &
+bigsudo dpkg -i /tmp/bigteamviewer/teamviewer_linux*.deb
+
+if [ -e /usr/bin/teamviewer ]
+then
+
+    nohup teamviewer > /dev/null 2> /dev/null &
+else
+
+    kdialog --msgbox $"A instalacao falhou!
+
+Confira se a conexao com a internet esta funcionando.
+
+Se estiver utilizando o instalador de programas Synaptic ou apt-get, feche-o e tente novamente." --title $"TeamViewer" &
+
+
+fi
+echo '<META http-equiv="refresh" content="0;URL=/execute close$">'

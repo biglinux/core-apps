@@ -1,0 +1,53 @@
+# Spanish translations for BigLinux package.
+# Copyright (C) 2010 THE BigLinux'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the BigLinux package.
+# Automatically generated, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BigLinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2010-09-11 09:44-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Converter para UTF-8"
+msgstr ""
+
+msgid "Converter"
+msgstr ""
+
+msgid "Sair"
+msgstr ""
+
+msgid "Resolver problemas com acentos."
+msgstr ""
+
+msgid "Aguarde esse processo pode demorar..."
+msgstr ""
+
+msgid "Concluido."
+msgstr ""
+
+msgid "Em geral a opcao correta e iso-8859-1."
+msgstr ""
+
+msgid ""
+"1 - Existem diversos padroes para codificar letras, porem os sistemas atuais "
+"utilizam o padrao <b>utf-8</b>."
+msgstr ""
+
+msgid ""
+"2 - Todos os nomes de arquivos e pastas inclusos na pasta selecionada e que "
+"necessitam de correcoes estao listados, confira o resultado abaixo e altere "
+"o formato atual se necessario."
+msgstr ""
+
+msgid "Formato atual: "
+msgstr ""

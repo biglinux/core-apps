@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-others-jdownloader
+
+name_application=$"Instalador do JDownloader"
+description_application=$"Instale o melhor gerenciador de downloads"
+exec_application="/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/others/jdownloader/jdownloader.sh.htm -i /usr/share/bigcontrolcenter/categories/others/jdownloader/icon.png"
+icon_application="/usr/share/bigcontrolcenter/categories/others/jdownloader/icon.png"

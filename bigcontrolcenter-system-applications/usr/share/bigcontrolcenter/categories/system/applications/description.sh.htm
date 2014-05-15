@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-system-applications
+
+name_application=$"Aplicativos padrao"
+description_application=$"Escolha seu cliente de e-mail, navegador..."
+exec_application="/usr/share/bigbashview/run.run?kcmshell4 componentchooser"
+icon_application="/usr/share/bigcontrolcenter/categories/system/applications/icon.png"

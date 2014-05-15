@@ -1,0 +1,97 @@
+style "scale" = "default" {
+
+    GtkScale::slider-length = 16
+    GtkRange::trough-border = 1
+    GtkRange::slider-width = 20
+    GtkRange::stepper-size = 16
+
+	engine "pixmap" 
+	{
+	    image
+		{
+			function		= FOCUS
+		}	
+		image 
+		{
+			function		= BOX
+			recolorable		= TRUE
+			detail			= "trough"
+			file			= "Scale/trough-horizontal.png"
+			border			= {10, 10, 0, 0}
+			stretch			= TRUE
+			orientation		= HORIZONTAL
+		}
+		image 
+		{
+			function		= BOX
+			recolorable		= TRUE
+			detail			= "trough"
+			file			= "Scale/trough-vertical.png"
+			border			= { 0, 0, 10, 10}
+			stretch			= TRUE
+			orientation		= VERTICAL
+		}
+		# the sliders
+		image 
+		{
+			function		= SLIDER
+			recolorable		= TRUE
+			state           = NORMAL
+			file			= "Scale/scale-slider.svg"
+			border			= { 0, 0, 0, 0}
+			stretch			= TRUE
+			orientation		= HORIZONTAL
+		}
+		image 
+		{
+			function		= SLIDER
+			recolorable		= TRUE
+			state           = PRELIGHT
+			file			= "Scale/scale-slider-hover.svg"
+			border			= { 0, 0, 0, 0}
+			stretch			= TRUE
+			orientation		= HORIZONTAL
+		}
+		image 
+		{
+			function		= SLIDER
+			recolorable		= TRUE
+			state           = INSENSITIVE
+			file			= "Scale/scale-slider-insensitive.svg"
+			border			= { 0, 0, 0, 0}
+			stretch			= TRUE
+			orientation		= HORIZONTAL
+		}
+		# vertical
+		image 
+		{
+			function		= SLIDER
+			recolorable		= TRUE
+			state           = NORMAL
+			file			= "Scale/scale-slider-vertical.svg"
+			border			= { 0, 0, 0, 0}
+			stretch			= TRUE
+			orientation		= VERTICAL
+		}
+		image 
+		{
+			function		= SLIDER
+			recolorable		= TRUE
+			state           = PRELIGHT
+			file			= "Scale/scale-slider-vertical-hover.svg"
+			border			= { 0, 0, 0, 0}
+			stretch			= TRUE
+			orientation		= VERTICAL
+		}
+		image 
+		{
+			function		= SLIDER
+			recolorable		= TRUE
+			state           = INSENSITIVE
+			file			= "Scale/scale-slider-vertical-insensitive.svg"
+			border			= { 0, 0, 0, 0}
+ 			stretch			= TRUE
+			orientation		= VERTICAL
+		}
+	}
+}

@@ -1,0 +1,54 @@
+# Portuguese translations for BigLinux package.
+# Copyright (C) 2011 THE BigLinux'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the BigLinux package.
+# Automatically generated, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BigLinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2011-09-30 09:38-0300\n"
+"Last-Translator: Bruno Gonçalves Araujo\n"
+"Language-Team: none\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Particionar, formatar e analisar discos"
+msgstr "Particionar, formatar e analisar discos"
+
+msgid "Gerencie HDs, pen drives e outras midias"
+msgstr "Gerencie HDs, pen drives e outras mídias"
+
+msgid "Aplicar"
+msgstr ""
+
+msgid "Sair"
+msgstr ""
+
+msgid "Particionar e formatar dispositivos de armazenamento"
+msgstr "Particionar e formatar dispositivos de armazenamento"
+
+msgid ""
+"Efetuar testes nos dispositivos de armazenamento e descubrir se estao "
+"funcionando corretamente"
+msgstr ""
+"Efetuar testes nos dispositivos de armazenamento e descobrir se estão "
+"funcionando corretamente"
+
+msgid "Gerencie HDs, pen drives e outras midias."
+msgstr "Gerencie HDs, pen drives e outras mídias."
+
+msgid ""
+"Atencao ao utilizar as ferramentas a seguir para nao haver perda de dados."
+msgstr ""
+"Atenção ao utilizar as ferramentas a seguir para não haver perda de dados."
+
+msgid "Particionar ou formatar"
+msgstr ""
+
+msgid "Analisar discos e particoes"
+msgstr "Analisar discos e partições"

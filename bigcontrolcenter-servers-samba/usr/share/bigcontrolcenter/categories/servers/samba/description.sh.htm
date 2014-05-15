@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-servers-samba
+
+name_application=$"Samba - Compartilhar arquivos na rede"
+description_application=$"Compartilhamento de arquivos e impressoras na rede"
+exec_application="/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/servers/samba/samba.sh.htm -i /usr/share/bigcontrolcenter/categories/servers/samba/icon.png"
+icon_application="/usr/share/bigcontrolcenter/categories/servers/samba/icon.png"

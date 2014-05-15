@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-themes-kde-notify
+Version: 1.0.1-1kaiana4
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: kdebase-runtime, bigcontrolcenter
+Replaces: bigcontrolcenter-system-kde-notify
+Section: admin
+Priority: optional
+Description: Configure notifications for KDE

@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-system-metapacote
+Version: 1.0.0-1kaiana0
+Architecture: all
+Maintainer: Bruno Gonvalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: bigcontrolcenter (>= 1.0.0-1kaiana16), bigsynaptic, kdesudo
+Section: admin
+Priority: optional
+Description: Instalador de conjuntos de pacotes.
+

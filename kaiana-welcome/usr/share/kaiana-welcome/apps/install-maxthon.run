@@ -1,0 +1,4 @@
+#! /bin/bash
+
+wget -O maxthon32.deb http://dl.maxthon.com/linux/deb/packages/i386/maxthon-browser-stable_1.0.0.10_i386.deb
+software-center maxthon*

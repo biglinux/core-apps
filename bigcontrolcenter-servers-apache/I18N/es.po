@@ -1,0 +1,132 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# BigLinux.com.br <BigLinux.com.br>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 02:27-0300\n"
+"PO-Revision-Date: 2010-09-22 07:19+0000\n"
+"Last-Translator: Ricardo A. Hermosilla Carrillo <ra.hermosillac@gmail.com>\n"
+"Language-Team: bigconvert <kde-i18n-doc@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-24 04:41+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+msgid "Configurar servidor WEB"
+msgstr "Configurar servidor WEB"
+
+msgid "Aplicar"
+msgstr "Aplicar"
+
+msgid "Sair"
+msgstr "Salir"
+
+msgid "Voltar para tela de configuracao"
+msgstr "Voltar para tela de configuração"
+
+msgid "Disponibilize informacao na WEB diretamente do seu computador."
+msgstr "Disponibilize informação na WEB diretamente do seu computador."
+
+msgid "Configuracao aplicada."
+msgstr "Configuração aplicada."
+
+msgid "Servidor WEB, MySQL e PHP"
+msgstr "Servidor WEB, MySQL y PHP"
+
+msgid "Servidor WEB completo, Apache, MySQL e PHP"
+msgstr "Servidor WEB completo, Apache, MySQL y PHP"
+
+msgid "Alterar a senha do administrador do MySQL"
+msgstr "Configurar la contraseña del administrador de MySQL"
+
+msgid "Por padrao se utiliza a porta 80"
+msgstr "Por padrão se utiliza a porta 80"
+
+msgid ""
+"O Apache e o servidor WEB mais utilizado no mundo, funciona muito bem com o "
+"banco de dados MySQL e possui diversos programas escritos em PHP prontos "
+"para download na internet."
+msgstr ""
+"O Apache é o servidor WEB mais utilizado no mundo, funciona muito bem com o "
+"banco de dados MySQL e possui diversos programas escritos em PHP prontos "
+"para download na internet."
+
+msgid "Apache ativo"
+msgstr "Apache activado"
+
+msgid "Ativar Apache ao ligar o PC"
+msgstr "Habilitar Apache para conectar su PC"
+
+msgid "Porta do Apache"
+msgstr "Puerto de Apache"
+
+msgid "MySQL ativo"
+msgstr "MySQL activado"
+
+msgid "Ativar MySQL ao ligar o PC"
+msgstr "Activar MySQL para conectar su PC"
+
+msgid "Alterar senha do administrador do MySQL"
+msgstr "Configurar contraseña de administrador de MySQL"
+
+msgid "Desinstalar Apache"
+msgstr "Desinstalar Apache"
+
+msgid "Instalar Apache"
+msgstr "Instalar Apache"
+
+msgid "Desinstalar Mysql"
+msgstr "Desinstalar MySQL"
+
+msgid "Instalar MySQL"
+msgstr "Instalar MySQL"
+
+msgid "Instalar PHP e PHPMyAdmin"
+msgstr "Instalar PHP y PHPMyAdmin"
+
+msgid "Desinstalar PHP e PHPMyAdmin"
+msgstr "Desinstalar PHP y PHPMyAdmin"
+
+msgid "Detectar IP da rede interna e Internet"
+msgstr "Detectar la IP de la red interna e Internet"
+
+msgid "Abrir o gerenciador de MySQL PHPMyAdmin"
+msgstr "Abrir el Administrador de MySQL PHPMyAdmin"
+
+msgid "Abrir navegador na raiz do seu servidor WEB"
+msgstr "Abra su navegador en la raíz de su servidor web"
+
+msgid "Abrir pasta com os arquivos do Apache"
+msgstr "Abrir carpeta con los archivos de Apache"
+
+msgid "Configuracoes avancadas do Apache"
+msgstr "Configurações avançadas do Apache"
+
+msgid "Configuracoes avancadas do MySQL"
+msgstr "Configurações avançadas do MySQL"
+
+msgid "Configuracoes avancadas do PHP"
+msgstr "Configurações avançadas do PHP"
+
+msgid "Logs do Apache:"
+msgstr "Registros de Apache"
+
+msgid "Ver"
+msgstr "Ver"
+
+msgid "Monitorar"
+msgstr "Monitorear"
+
+msgid "IP"
+msgstr "IP"
+
+msgid "IP da rede interna:"
+msgstr "IP de red Interna:"
+
+msgid "IP da internet:"
+msgstr "IP de Internet:"

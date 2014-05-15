@@ -1,0 +1,10 @@
+Package: bigndiswrapper
+Version: 1.0.0-1kaiana5
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: ndiswrapper-utils-1.9
+Section: admin
+Priority: optional
+Description: Script for manage ndiswrapper.
+

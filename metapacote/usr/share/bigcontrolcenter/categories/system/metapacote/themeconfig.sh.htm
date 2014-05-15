@@ -1,0 +1,113 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter 
+
+function open_header()
+{
+mouseover_open='title="'
+mouseover_close='"'
+/usr/share/bigbashview/system-css.sh.htm
+
+cat << EOF
+<style><!--
+.botao a, .botao a:visited {  
+padding:0px;
+text-decoration: none;
+text-align:center;	
+background:  url('/usr/share/bigcontrolcenter/default/images/category-background.png') no-repeat
+center center;	
+width:120px;  
+height:24px;	
+display:block;	
+	}
+
+.botao a:hover { 
+background: url('$HOME/.bigcontrolcenter/category-background-over.png') no-repeat 
+center center;
+
+               }
+#div-text{
+padding:0px;
+text-decoration: italic;
+text-align:left;	
+height:18px;
+}
+
+#div-header{
+
+  background-color: #228b22;
+  height:95px;
+  width: 100%;
+}
+
+ body{
+  margin:0;
+  padding:0 0 100px 0;
+  overflow:hidden;
+
+ } 
+
+ #rodape{
+  position:absolute;
+  bottom:0;
+  right:20;
+  height:40px;
+ }
+
+#div-body{
+  height:100%;
+  overflow:auto;
+ }
+
+
+
+
+
+body { margin-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; background-image: url(/usr/share/kimp/images/bg.jpg); background-attachment:fixed;}
+--></style>
+
+
+<div id="div-header"><table><tr><td width="90" align="center"><img src="/usr/share/icons/hicolor/128x128/apps/metapacote.png" height="90" width="90"></td><td><font size=+2>
+
+<script type="text/javascript">
+<!--
+function Reveal (id) {
+var obj=document.getElementById(id);
+document.getElementById(id).style.display ='block';
+}
+
+function Hide (id) {
+var obj=document.getElementById(id);
+document.getElementById(id).style.display ='none';
+}
+//-->
+</script>
+EOF
+echo '
+
+<link rel="stylesheet" href="/usr/share/bigcontrolcenter/default/css/tooltips.css">
+<script src="/usr/share/bigcontrolcenter/default/js/jquery-1.9.1.min.js"></script>
+<script src="/usr/share/bigcontrolcenter/default/js/tooltips.js"></script>
+<script>
+	$(function() {
+		$("[title]").tooltips();
+	});
+</script>'
+
+}
+
+function close_header()
+{
+echo '</td></tr></table></div>
+<div id="div-body">'
+}

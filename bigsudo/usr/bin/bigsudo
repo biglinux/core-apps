@@ -1,0 +1,71 @@
+#!/bin/bash
+
+#Manage install apps
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Detect Xorg
+      XWI=xwininfo
+      WIDTH=`$XWI -root | grep Width`
+
+      sudoativo=`groups $(whoami) | grep bigsudo`
+
+
+
+
+
+
+#Detect user permission
+      if [ "$WIDTH" != "" ];
+      then
+#	  if [ "$sudoativo" = "" ];
+#	  then
+# 	  admin=`groups $(whoami) | grep admin`
+# 	      if [ "$admin" = "" ];
+# 	      then
+		  if [ -e "/usr/bin/kdesudo" ];
+		  then
+		    sudokde="kdesudo"
+		  else
+		    sudokde="gksu"
+		  fi
+		echo ${1+"$@"} > /tmp/bigsudo$$
+		chmod +x /tmp/bigsudo$$
+		$sudokde /tmp/bigsudo$$
+		rm -f /tmp/bigsudo$$
+# 	    else
+# 		  if [ -e "/usr/bin/gksudo" ];
+# 		  then
+# 		    sudogtk="gksudo"
+# 		  else
+# 		    sudogtk="gksu"
+# 		  fi
+# 		echo ${1+"$@"} > /tmp/bigsudo$$
+# 		chmod +x /tmp/bigsudo$$
+# 		$sudogtk /tmp/bigsudo$$
+# 		rm -f /tmp/bigsudo$$
+# 	    fi
+#	else
+#	    sudo ${1+"$@"}
+#	fi
+
+    else
+
+	  if [ "$sudoativo" = "" ];
+	  then
+	  admin=`groups $(whoami) | grep semi`
+	      if [ "$admin" = "" ];
+	      then
+	      su -c ${1+"$@"}
+	  else
+	      sudo ${1+"$@"}
+	      fi
+	  else
+	      sudo ${1+"$@"}
+	  fi
+
+     fi

@@ -1,0 +1,87 @@
+#!/bin/bash
+#Control Center for Kaiana
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+# Importa arquivo que irá definir o tema do painel e algumas outras facilidades.
+# Entre as facilidades está incluso o jquery.
+. /usr/share/bigcontrolcenter/import-theme.htm
+
+# Informe o título.
+big_title=$"Identificar IPs ativos na rede"
+
+# Informe uma descrição curta.
+big_description=$"Confira todos os dispositivos conectados na mesma rede."
+
+# Informe o caminho do ícone, de preferência no tamanho 32x32, também pode ficar em branco.
+big_icon="icon.png"
+
+# Caso esse painel vá ser traduzido especifique o nome que será dado à tradução que ficará na pasta: /usr/share/locale-langpack
+big_translate="bigbashview_formulario"
+
+# Descomente a linha a seguir para desativar a parte superior do painel onde fica o título, ícone e descrição.
+#big_header_disable="1"
+
+# Descomente a linha a seguir para desativar a imagem de fundo.
+#big_bg_color_disable="1"
+
+# Descomente a linha a seguir para desativar a imagem de fundo.
+#big_bg_image_disable="1"
+
+# Adiciona o layout geral do painel e o cabeçalho, onde aparece o título, ícone e descrição.
+big_header
+
+#########################################
+# Até aqui foram preenchidos dados
+# padronizados, portanto a seguir está
+# realmente a parte funcional do painel.
+#########################################
+
+# Salvar configuração
+cd ~/.config/bigcontrolcenter/ipscanner
+echo "$p_parametros_nmap_manual" > parametros_nmap_manual
+echo "$p_dispositivos" > dispositivos
+echo "$p_bloco_ips" | sed '/^.$/d;/^$/d' > bloco_ips
+echo "$p_parametros_nmap" > parametros_nmap
+
+if [ "$p_parametros_nmap" != "" ]; then
+    echo "$p_html" > html
+fi
+
+
+
+
+if [ "$p_html" = "1" ]; then
+    kdialog --title $"Selecione onde salvar o arquivo" --getsavefilename "$HOME/relatorio_de_rede.html" "*.html" > html_url
+fi
+
+
+
+# Redirecionar automaticamente
+echo "<META http-equiv=\"refresh\" content=\"0;URL=ip.sh.htm\">" 
+
+echo "<center>"
+# Exibir imagem
+echo "<br>"
+echo "<br>"
+echo "<br>"
+echo "<br>"
+echo "<br>"
+echo "<br>"
+echo "<br>"
+echo "<img src=\"loading.gif\">"
+echo "<br>"
+echo "<br>"
+echo $"Aguarde, procurando por dispositivos conectados na rede..."
+echo "</center>"
+
+
+
+echo "</center>"
+
+
+

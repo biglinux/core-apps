@@ -1,0 +1,190 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-themes-fonts
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Configurar ou instalar fontes"
+apply=$"Aplicar"
+close=$"Sair"
+tip_kde=$"Defina as suas fontes preferidas para utilizar no sistema.<p>Essa operacao afeta apenas esse usuario."
+tip_install=$"Uma forma simples de instalar e remover fontes."
+tip_big=$"Defina a configuracao de nitidez mais agradavel.<p>* Essa operacao afeta apenas esse usuario."
+tip_ms=$"Instala para todos os usuarios do sistema fontes muito utilizadas:<br>* Webdings<br>* Andale Mono<br>* Verdana<br>* Arial<br>* Trebuchet<br>* Comic Sans MS<br>* Times New Roman<br>* Courier New<br>* Impact<br>* Georgia"
+tip_rmms=$"Remove do sistema fontes muito utilizadas:<br>* Webdings<br>* Andale Mono<br>* Verdana<br>* Arial<br>* Trebuchet<br>* Comic Sans MS<br>* Times New Roman<br>* Courier New<br>* Impact<br>* Georgia"
+tip_fire=$"No navegador Firefox o espacamento entre linhas que utilizam fontes pequenas e muito grande e danifica a aparencia dos sites, ativar essa opcao geralmente soluciona esse problema."
+tip_chromium=$"Essa configuração torna as fontes mais cheias e agradaveis."
+tip_chrome=$"Essa configuração torna as fontes mais cheias e agradaveis."
+
+. /usr/share/bigcontrolcenter/default/theme.sh.htm
+
+if [ "$p_ms" = "yes" ]
+then
+    bigsudo bigsynaptic --install ttf-mscorefonts-installer 2> /dev/null
+fi
+
+if [ "$p_ms" = "no" ]
+then
+    bigsudo bigsynaptic --remove ttf-mscorefonts-installer 2> /dev/null
+fi
+
+if [ "$p_fire" = "yes" ]
+then
+mkdir "~/.mozilla/firefox/*default/chrome" 2> /dev/null
+
+    echo '* {
+text-shadow: 0px 0px 1px rgba(125,125,140,0.1);
+}
+    html {   
+        line-height: 1.2 !important;
+} 
+
+input, select, textarea {
+        line-height: normal !important;
+}' > $(ls -d ~/.mozilla/firefox/*default/chrome)/userContent.css
+fi
+
+if [ "$p_fire" = "no" ]
+then
+    rm -f ~/.mozilla/firefox/*default/chrome/userContent.css 2> /dev/null
+fi
+
+
+if [ "$p_chromium" = "yes" ]
+then
+    echo '* {
+text-shadow: 0px 0px 1px rgba(125,125,140,0.1);
+-webkit-text-stroke: 0.0001px;
+}' > ~/.config/chromium/Default/User\ StyleSheets/Custom.css
+cp ~/.config/chromium/Default/User\ StyleSheets/Custom.css ~/.config/chromium-lite/Default/User\ StyleSheets/Custom.css
+fi
+
+if [ "$p_chromium" = "no" ]
+then
+    rm -f ~/.config/chromium/Default/User\ StyleSheets/Custom.css 2> /dev/null
+    rm -f ~/.config/chromium-lite/Default/User\ StyleSheets/Custom.css 2> /dev/null
+fi
+
+
+if [ "$p_chrome" = "yes" ]
+then
+    echo '* {
+text-shadow: 0px 0px 1px rgba(125,125,140,0.1);
+-webkit-text-stroke: 0.0001px;
+}' > ~/.config/google-chrome/Default/User\ StyleSheets/Custom.css
+fi
+
+if [ "$p_chrome" = "no" ]
+then
+    rm -f  ~/.config/google-chrome/Default/User\ StyleSheets/Custom.css 2> /dev/null
+fi
+
+
+cat << EOF
+	<script type="text/javascript" src="/usr/share/bigcontrolcenter/default/js/jquery-1.3.2.min.js"></script>
+
+
+	<script type="text/javascript">
+	\$(function() {
+		\$("#tabs").tabs({
+			event: 'mouseover'
+		})
+	});
+
+	if (document.images) {
+	buttonUp = new Image(); buttonUp.src = "/usr/share/bigcontrolcenter/default/images/category-background.png";
+	buttonDown = new Image(); buttonDown.src = "$(echo $HOME)/.bigcontrolcenter/category-background-over.png";
+	}
+
+	function turn_off(cell) {
+	if (document.images != null) {
+	cell.style.backgroundImage = "url('" + buttonUp.src + "')";
+	}
+	}
+
+	function turn_on(cell) {
+	if (document.images != null) {
+	cell.style.backgroundImage = "url('" + buttonDown.src + "')";
+	}
+	}
+
+  </script>
+
+
+EOF
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Escolha as fontes a serem utilizadas, nitidez e instale novas fontes."
+close_header
+
+
+
+echo "<TABLE align=center><tr><td>"
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 fonts\"" "$mouseover_open" $tip_kde "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=kde.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Selecionar fontes utilizadas no sistema" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 fontinst\"" "$mouseover_open" $tip_install "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=install.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Instalar ou remover fontes" " </font></td></tr></table></a>"
+echo '</td></tr><tr><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/themes/fonts/big.sh.htm -i /usr/share/bigcontrolcenter/categories/themes/fonts/big.png\"" "$mouseover_open" $tip_big "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=big.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Configurar nitidez das fontes" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+if [ -e "/usr/share/fonts/truetype/msttcorefonts/Arial.ttf" ]
+then
+    echo "<a href=\"fonts.sh.htm?ms=no\"" "$mouseover_open" $tip_rmms "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=ms.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Remover fontes MS" " </font></td></tr></table></a>"
+else
+    echo "<a href=\"fonts.sh.htm?ms=yes\"" "$mouseover_open" $tip_ms "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=ms.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Instalar fontes MS" " </font></td></tr></table></a>"
+fi
+echo '</td></tr><tr><td>'
+
+if [ -e ~/.mozilla/firefox ]; then
+    if [ "$(cat ~/.mozilla/firefox/*/chrome/userContent.css)" != "" ]
+    then
+	echo "<a href=\"fonts.sh.htm?fire=no\"" "$mouseover_open" $tip_fire "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=fire.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Desativar melhoria para o Firefox" " </font></td></tr></table></a>"
+    else
+	echo "<a href=\"fonts.sh.htm?fire=yes\"" "$mouseover_open" $tip_fire "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=fire.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Ativar melhoria para o Firefox" " </font></td></tr></table></a>"
+    fi
+fi
+
+if [ -e ~/.config/chromium ]; then
+    if [ "$(cat ~/.config/chromium/Default/User\ StyleSheets/Custom.css)" != "" ]
+    then
+	echo "<a href=\"fonts.sh.htm?chromium=no\"" "$mouseover_open" $tip_chromium "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=chromium.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Desativar melhoria para o Chromium" " </font></td></tr></table></a>"
+    else
+	echo "<a href=\"fonts.sh.htm?chromium=yes\"" "$mouseover_open" $tip_chromium "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=chromium.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Ativar melhoria para o  Chromium" " </font></td></tr></table></a>"
+    fi
+fi
+if [ -e ~/.config/google-chrome ]; then
+    if [ "$(cat ~/.config/google-chrome/Default/User\ StyleSheets/Custom.css)" != "" ]
+    then
+	echo "<a href=\"fonts.sh.htm?chrome=no\"" "$mouseover_open" $tip_chrome "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=chromium.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Desativar melhoria para o Google Chrome" " </font></td></tr></table></a>"
+    else
+	echo "<a href=\"fonts.sh.htm?chrome=yes\"" "$mouseover_open" $tip_chrome "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=chromium.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Ativar melhoria para o Google Chrome" " </font></td></tr></table></a>"
+    fi
+fi
+
+echo '</table>'
+
+echo "</a></td></tr></table></div><div id=\"rodape\"><button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=X11 for Root
+Comment=X11 for Root
+Exec=xhost +SI:localuser:root
+Terminal=false
+Type=Application

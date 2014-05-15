@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: BigLinux\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2013-10-10 02:27-0300\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+msgid   "Big Scanner"
+msgstr  ""
+
+msgid   "Selecione o scanner"
+msgstr  ""
+
+msgid   "(Clique aqui para atualizar a lista de scanners)"
+msgstr  ""
+
+msgid   "* Lista Atualizada!"
+msgstr  ""
+
+msgid   "Ano"
+msgstr  ""
+
+msgid   "Mês"
+msgstr  ""
+
+msgid   "Dia"
+msgstr  ""
+
+msgid   "Número"
+msgstr  ""
+
+msgid   "Complemento"
+msgstr  ""
+
+msgid   "Resolução"
+msgstr  ""
+
+msgid   "Cores"
+msgstr  ""
+
+msgid   "Qualidade"
+msgstr  ""
+
+msgid   "Zoom"
+msgstr  ""
+
+msgid   "Selecionar pasta"
+msgstr  ""
+
+msgid   "Digitalizar"
+msgstr  ""
+
+msgid   "Atualizando a lista de scanners..."
+msgstr  ""
+
+msgid   "O arquivo já existe, deseja sobrescrever?"
+msgstr  ""
+
+msgid   "Sim"
+msgstr  ""
+
+msgid   "Não"
+msgstr  ""
+
+msgid   "Digitalizando, aguarde..."
+msgstr  ""

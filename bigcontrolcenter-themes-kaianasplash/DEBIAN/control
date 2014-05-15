@@ -1,0 +1,10 @@
+Package: bigcontrolcenter-themes-kaianasplash
+Version: 1.0.2-1kaiana7
+Architecture: all
+Maintainer: Lunimare <www.biglinux.com.br>
+Installed-Size: 1
+Depends: bigcontrolcenter (>= 1.0.0-1kaiana16), kscreensaver-xsavers, xscreensaver, xscreensaver-gl, xscreensaver-gl-extra, xteddy, big-fix-kde-start
+Section: admin
+Priority: optional
+Description: Kaiana splash for KDE
+

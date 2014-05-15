@@ -1,0 +1,186 @@
+#!/bin/bash
+
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-others-bigconvert
+
+sort "$HOME/.bigconvert/videos" | uniq > "$HOME/.bigconvert/videosuniq" 2> /dev/null
+rm -f "$HOME/.bigconvert/videos" 2> /dev/null
+cp -f "$HOME/.bigconvert/videosuniq" "$HOME/.bigconvert/videos"
+
+#Criar diretorio para configuracoes
+mkdir ~/.bigconvert 2> /dev/null
+#Remover video da lista
+if [ "$p_removelist" != "" ]
+then
+    #kdialog --msgbox "$(bigurldecoderegex "$p_removelist")" 2> /dev/null
+    sed -i "s|^$(bigurldecoderegex "$p_removelist")$||g;/^$/d" ~/.bigconvert/videos
+fi
+
+if [ "$p_addvideo" = "yes" ]
+then
+kdialog --multiple --separate-output --getopenfilename ~ '*.3gp *.amv *.asx *.avi *.flv *.m2v *.mkv *.mp4 *.mpeg *.mpg *.ogg *.ogv *.vob *.wmv *.rm *.rmvb' >> ~/.bigconvert/videos
+sort ~/.bigconvert/videos | uniq > ~/.bigconvert/videos2
+mv ~/.bigconvert/videos2 ~/.bigconvert/videos
+fi
+
+if [ "$p_clearlist" = "yes" ]
+then
+rm -f ~/.bigconvert/videos
+fi
+
+if [ "$p_savein" = "yes" ]
+then
+kdialog --getexistingdirectory ~ > ~/.bigconvert/save2
+  if [ "$(cat ~/.bigconvert/save2)" != "" ]
+  then
+      if [ -w "$(cat ~/.bigconvert/save2)" ]
+      then
+          mv -f ~/.bigconvert/save2 ~/.bigconvert/save
+      else
+	  kdialog --msgbox $"Selecione outra pasta pois seu usuario nao possui permissao de escrita na selecionada." --title $"Big Converter Video" 
+      fi
+
+  fi
+fi
+
+if [ "$(cat ~/.bigconvert/save)" = "" ]
+then
+echo "$HOME" > ~/.bigconvert/save
+fi
+savein="$(cat ~/.bigconvert/save)"
+
+
+if [ "$p_nenhum" = "video" ]
+then
+    kdialog --msgbox $"Nenhum video foi selecionado para conversao, adicione-o antes de prosseguir." $"Big Converter Video"
+fi
+
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+buttonaddvideo=$"Adicionar videos"
+buttonclearlist=$"Esvaziar lista"
+buttonsavein=$"Alterar destino"
+title=$"Big Converter Video"
+apply=$"Avancar"
+close=$"Sair"
+tip_remove_list=$"Remover da lista"
+tip_play=$"Reproduzir"
+tip_info=$"Ver informacoes"
+tip_destino=$"Onde serao salvos os videos ou audios convertidos"
+
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+echo '<link rel="stylesheet" href="demo/dialog.css" media="screen" />'
+
+#header
+open_header
+echo "$title" '</font><br>' $"Converta videos ou extraia audio."
+close_header
+
+echo '
+        <script type="text/javascript">
+            var first_run = true;
+            function verifica_arquivo() {
+               $.get('"\"$HOME/.bigconvert/videos\""', function(data){
+                   if ($("#content").html() != data) {
+                       if (first_run == false) {
+                           location.reload();
+                       } else {
+                           first_run = false;
+                       }
+                       content = data;                       
+                       $("#content").html(content);    
+                   }
+                   setTimeout(verifica_arquivo,500);
+               });
+            }
+            $(document).ready(function(){
+               verifica_arquivo();
+            });
+        </script>
+        <div id="content" style="display:none;"></div>
+'
+
+#body
+
+
+#O uso do echo pode ser separado em diversos pedacoes dentro do mesmo comando
+#O uso de aspas simples faz o sistema exibir exatamente o que esta escrito
+#Quando se utiliza aspas duplas o sistema executa algumas partes do codigo antes de passar a resposta, entre essas execucoes inclui a interpretacao de variaveis
+#Para incluir textos a serem exibidos ao usuario utilize aspas duplas com $ antes, para que funcione o sistema de tradução, exemplo: $"texto"
+#No exemplo abaixo o memso comando echo foi aberto e fechado diversas vezes de acordo com a necessidade, aspas simples, duplas e duplas com traducao.
+echo '<center><table width=95%><tr><td>'
+echo '<div id="demo"><div class="dialog">
+ <div class="content">
+  <div class="t"></div>
+  <center><p style="margin: 4px 4px 4px 0px;"><font size=+1>' $"Videos a converter" '</font></center>'
+echo '<div id="lista" style="height: 100px; width: 600px; overflow:auto;"> <table>'
+
+ORI_IFS=$IFS
+IFS=$'\n'
+for i in $(cat ~/.bigconvert/videos); do
+cat << EOF
+
+<tr height=26><td>
+<a href="/usr/share/bigbashview/run.run?/usr/share/bigcontrolcenter/categories/others/bigconvert/smplayer.run $(bigurlencode "$i")" $mouseover_open $tip_play $mouseover_close><img src=play.png></a></td><td>
+<a href="/usr/share/bigbashview/run.run?/usr/share/bigcontrolcenter/categories/others/bigconvert/info.run $(bigurlencode "$i")" $mouseover_open $tip_info $mouseover_close><img src=info.png></a></td><td>
+<a href="/usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm?removelist=$(bigurlencode "$i")" $mouseover_open $tip_remove_list $mouseover_close><img src=remove-list.png></a></td><td>
+</td><td>$i</td></tr>
+
+EOF
+done
+IFS=$ORI_IFS
+
+echo "</table></div><br>"
+
+echo "<table width=100%><tr><td align=center><button type=submit value= $buttonaddvideo onClick= parent.location='/usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm?addvideo=yes'>   <img src=\"/usr/share/bigcontrolcenter/categories/others/bigconvert/add-video.png\" style=\"vertical-align:top\" />  $buttonaddvideo   </button>"
+
+echo "</td><td align=center><button type=submit value= $buttonclearlist onClick= parent.location='/usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm?clearlist=yes'>   <img src=\"/usr/share/bigcontrolcenter/categories/others/bigconvert/clear-list.png\" style=\"vertical-align:top\" />  $buttonclearlist   </button>"
+
+echo "</td></tr></table>"
+
+echo '
+
+</div>
+ <div class="b"><div></div></div>
+</div>
+</div>'
+
+
+echo '<br><div id="demo"><div class="dialog">
+ <div class="content">
+  <div class="t"></div>
+  <center><p style="margin: 4px 4px 4px 0px;"><font size=+1>' $"Destino dos videos convertidos" '</font></center>'
+
+echo $"$savein"
+
+echo "<br><br><center><button type=submit value= $buttonsavein onClick= parent.location='/usr/share/bigcontrolcenter/categories/others/bigconvert/convert.sh.htm?savein=yes' $mouseover_open $tip_destino $mouseover_close>   <img src=\"/usr/share/bigcontrolcenter/categories/others/bigconvert/savein.png\" style=\"vertical-align:top\" />  $buttonsavein   </button></center>"
+
+
+echo '
+
+</div>
+ <div class="b"><div></div></div>
+</div>
+</div>'
+
+
+echo "</div><div id=\"rodape\"><button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button>  <button value= $apply onClick= parent.location='/usr/share/bigcontrolcenter/categories/others/bigconvert/formato.sh.htm'>   <img src=\"/usr/share/bigcontrolcenter/categories/others/bigconvert/next.png\" style=\"vertical-align:top\" />  $apply   </button> </div>"
