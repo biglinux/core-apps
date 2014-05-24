@@ -7,7 +7,7 @@
 msgid   ""
 msgstr  "Project-Id-Version: Kaiana\n"
         "Report-Msgid-Bugs-To: \n"
-        "POT-Creation-Date: 2014-05-07 22:03-0300\n"
+        "POT-Creation-Date: 2014-05-24 15:53-0300\n"
         "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
         "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
         "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,33 +29,6 @@ msgid   "Kaiana"
 msgstr  ""
 
 msgid   " The kaiana-welcome will initialize with the system"
-msgstr  ""
-
-msgid   " Kaudiocreator are already installed."
-msgstr  ""
-
-msgid   " Kaudiocreator successfully installed."
-msgstr  ""
-
-msgid   " Kaudiocreator not installed."
-msgstr  ""
-
-msgid   " Geany IDE are already installed."
-msgstr  ""
-
-msgid   " Geany IDE successfully installed."
-msgstr  ""
-
-msgid   " Geany IDE not installed."
-msgstr  ""
-
-msgid   " Eclipse IDE are already installed."
-msgstr  ""
-
-msgid   " Eclipse IDE successfully installed."
-msgstr  ""
-
-msgid   " Eclipse IDE not installed."
 msgstr  ""
 
 msgid   " The kaiana-welcome will not initialize with the system"

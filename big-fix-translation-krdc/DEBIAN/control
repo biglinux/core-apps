@@ -1,9 +1,0 @@
-Package: big-fix-translation-krdc
-Version: 1.0.0-1kaiana1
-Architecture: all
-Maintainer: Bruno Goncalves <www.biglinux.com.br>
-Replaces: krdc
-Depends: krdc
-Section: x11
-Priority: optional
-Description: For best translation
