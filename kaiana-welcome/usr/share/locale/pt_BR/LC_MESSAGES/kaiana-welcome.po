@@ -1,0 +1,834 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Alisson Oliveira <linukiss@gmail.com>, 2014
+# junior_mandriva <junior-asl@bol.com.br>, 2014
+# Marcosce.Oliveira <marcosce.kaiana@outlook.com>, 2014
+# paulusiohannes <paulusiohannes@gmail.com>, 2014
+# Rafael Neri <rafepel@gmail.com>, 2014
+# Raul Liota da Rosa <raul.liota@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: Kaiana Welcome\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-05-07 22:03-0300\n"
+"PO-Revision-Date: 2014-05-11 00:58+0000\n"
+"Last-Translator: Rafael Neri <rafepel@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/kaiana-welcome/language/pt_BR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "OpenMandriva"
+msgstr "OpenMandriva"
+
+msgid " Configure your internet."
+msgstr "Configure sua internet."
+
+msgid " Internet Ok!."
+msgstr "Internet Ok!"
+
+msgid "Kaiana"
+msgstr "Kaiana"
+
+msgid " The kaiana-welcome will initialize with the system"
+msgstr "O kaiana-welcome vai iniciar junto com o sistema"
+
+msgid " Kaudiocreator are already installed."
+msgstr "O Kaudiocreator já está instalado."
+
+msgid " Kaudiocreator successfully installed."
+msgstr "O Kaudiocreator foi instalado com sucesso."
+
+msgid " Kaudiocreator not installed."
+msgstr "O Kaudiocreator não está instalado."
+
+msgid " Geany IDE are already installed."
+msgstr "Geany IDE ja está instalado."
+
+msgid " Geany IDE successfully installed."
+msgstr "Geany IDE instalado com sucesso."
+
+msgid " Geany IDE not installed."
+msgstr "Geany IDE não está instalado."
+
+msgid " Eclipse IDE are already installed."
+msgstr "Eclipse IDE já está instalado."
+
+msgid " Eclipse IDE successfully installed."
+msgstr "Eclipse IDE instalado com sucesso."
+
+msgid " Eclipse IDE not installed."
+msgstr "Eclipse IDE não está instalado."
+
+msgid " The kaiana-welcome will not initialize with the system"
+msgstr "O kaiana-welcome não vai iniciar junto com o sistema"
+
+msgid " Aguarde ... Adcionando suporte repositorios 32bits á sistemas 64bits"
+msgstr "Aguarde ... Adicionando suporte à repositórios 32bits a sistemas 64bits"
+
+msgid " Suporte repositorios 32bits á sistemas 64bits feito com sucesso"
+msgstr " Suporte de repositórios 32bits a sistemas 64bits feito com sucesso"
+
+msgid " Adcionando repositorios 64bits"
+msgstr "Adicionando repositórios 64bits"
+
+msgid " Xvidcap are already installed."
+msgstr "Xvidcap já está instalado."
+
+msgid " Xvidcap successfully installed."
+msgstr "Xvidcap instalado com sucesso."
+
+msgid " Xvidcap not installed."
+msgstr "Xvidcap não instalado."
+
+msgid " RPM Packaging Suite are already installed."
+msgstr "Suíte de empacotamento RPM já está instalado."
+
+msgid " RPM Packaging Suite successfully installed."
+msgstr "Suíte de empacotamento RPM instalado com sucesso."
+
+msgid " RPM Packaging Suite not installed."
+msgstr "Suíte de empacotamento RPM não instalados."
+
+msgid "Hi"
+msgstr "Olá"
+
+msgid "Welcome to Kaiana"
+msgstr "Bem-vindo ao Kaiana"
+
+msgid "Welcome"
+msgstr "Bem Vindo"
+
+msgid "Features"
+msgstr "Funcionalidades"
+
+msgid "Configure"
+msgstr "Configurar"
+
+msgid "Contribute"
+msgstr "Contribuir"
+
+msgid "About"
+msgstr "Sobre"
+
+msgid ""
+"Kaiana is the perfect system for your daily activities. It has everything "
+"you are looking for. Smart because it has a nice atmosphere and a polished "
+"interface. He is too full because it supports the most file formats. Safe "
+"because it has a solid and stable base known. Take it consumes few resources"
+" of your computer."
+msgstr "Kaiana é o sistema perfeito para suas atividades diárias. Ele tem tudo que você está procurando. É inteligente pois tem uma atmosfera agradável e uma interface polida. Ele é muito completo, porque ele suporta a maioria dos formatos de arquivo. Seguro porque tem uma base sólida e reconhecidamente estável. Leve pois consome poucos recursos do seu computador."
+
+msgid "Next"
+msgstr "Próxima"
+
+msgid "Applications"
+msgstr "Aplicativos"
+
+msgid "Office"
+msgstr "Office"
+
+msgid "Graphics"
+msgstr "Gráficos"
+
+msgid "Multimedia"
+msgstr "Multimídia"
+
+msgid "Utility"
+msgstr "Utilitários"
+
+msgid "Games"
+msgstr "Jogos"
+
+msgid "Development"
+msgstr "Desenvolvimento"
+
+msgid "Internet"
+msgstr "Internet"
+
+msgid "Before installing the applications on"
+msgstr "Antes de instalar os aplicativos em"
+
+msgid ""
+"you should make some settings, to access various applications, after that "
+"click on the menus below to install some applications."
+msgstr "Você deve fazer algumas configurações, para acessar vários aplicativos, depois que clicar nos menus abaixo para instalar alguns aplicativos."
+
+msgid "Install some extra applications to"
+msgstr "Instale alguns aplicativos extras para"
+
+msgid "to install click the application icon."
+msgstr "para instalar, clique no ícone do aplicativo."
+
+msgid "Add Media"
+msgstr "Adicionar mídias"
+
+msgid ""
+"After installing Kaiana, you can configure repositories to install other "
+"applications and to keep the system updated"
+msgstr "Depois de instalar o Kaiana, você deve configurar os repositórios para poder instalar outros programas e manter o sistema atualizado."
+
+msgid "Update of"
+msgstr "Atualização de"
+
+msgid ""
+"We must always keep the system updates on day to receive the latest "
+"enhancements, bug fixes and stability in the system"
+msgstr "Devemos sempre manter as atualizações do sistema em dia para receber as últimas melhorias, correções de bugs e estabilidade do sistema"
+
+msgid "Video Settings"
+msgstr "Configurações de Vídeo"
+
+msgid ""
+"Set your video card, install the latest drivers, change resolution, etc"
+msgstr "Configure sua placa de vídeo, instale os drivers mais recentes, mude a resolução, etc"
+
+msgid "Configure your printer"
+msgstr "Configure sua impressora"
+
+msgid "Configure your printer like HP, EPSON etc in Kaiana"
+msgstr "Configure sua impressora HP, EPSON e outras no Kaiana"
+
+msgid "Configure the system boot"
+msgstr "Configurar o sistema de boot"
+
+msgid ""
+"During installation Kaiana detects all operating systems installed on your "
+"computer, but if you need to change the boot order of the system or repair "
+"grub2 manually or later add another operating system"
+msgstr "Durante a instalação do Kaiana todos os sistemas operacionais instalados em seu computador serão detectados, mas se você precisar alterar a ordem de inicialização do sistema ou reparar o grub2 manualmente ou mais tarde adicionar outro sistema operacional"
+
+msgid "Configure the network"
+msgstr "Configure sua rede"
+
+msgid ""
+"Kaiana comes with support for various network drivers, but depending on your"
+" network configuration is necessary make some settings, configuring static "
+"IP, PPPoE, 3G etc"
+msgstr "Kaiana vem com suporte para vários drivers de rede, mas dependendo da sua configuração de rede é necessário fazer algumas configurações, configuração de IP estático, PPPoE, 3G etc"
+
+msgid "Big Control Center"
+msgstr "Centro de Controle Big"
+
+msgid ""
+"All the tools settings are available in bigcontrolcenter, including system "
+"settings, network sharing, security, disk partitioning and more."
+msgstr "Todas as configurações de ferramentas estão disponíveis em bigcontrolcenter, incluindo as configurações do sistema, compartilhamento de rede, segurança, particionamento de disco e muito mais."
+
+msgid "Configure Desktop Icons"
+msgstr "Configurar ícones da área de trabalho"
+
+msgid "Change or configure your desktop icons or install your favorite icons"
+msgstr "Mudar ou configurar os ícones da sua área de trabalho ou instalar seus ícones favoritos"
+
+msgid "Configure Screensaver"
+msgstr "Configurar a Proteção de tela"
+
+msgid "Configure or change your desktop screensaver"
+msgstr "Configurar ou alterar a proteção de tela da sua área de trabalho."
+
+msgid "Gimp"
+msgstr "Gimp"
+
+msgid ""
+"Create and edit your images in a professional way with this powerful Open "
+"Source tool."
+msgstr "Criar e editar suas imagens de forma profissional com esta poderosa ferramenta código aberto"
+
+msgid "Inkscape"
+msgstr "Inkscape"
+
+msgid ""
+"A powerful, open source vector drawing tool, for an illustrator or designer"
+msgstr "Uma poderosa ferramenta de código aberto para desenho vetorial, voltada para um ilustradores ou designers"
+
+msgid "Blender"
+msgstr "Blender"
+
+msgid ""
+"Modeling software, offering a unique approach to the world of three "
+"dimensions."
+msgstr "Modelagem de software, oferecendo uma abordagem única para o mundo de três dimensões."
+
+msgid "Scribus"
+msgstr "Scribus"
+
+msgid ""
+"Scribus is a desktop layout Open Source program for producing documents in "
+"PDF and Postscript"
+msgstr "Scribus é um aplicativo de código aberto para produção de documentos em PDF e Postscript"
+
+msgid "Tuxpaint"
+msgstr "Tuxpaint"
+
+msgid ""
+"TuxPaint is a perfect mate to encourage children's creativity using simple "
+"tools, drawings on the computer"
+msgstr "TuxPaint é um companheiro perfeito para incentivar a criatividade das crianças utilizando ferramentas simples de desenhos no computador"
+
+msgid "Install additional applications with software center"
+msgstr "Instalar programas adicionais através da Central de Programas"
+
+msgid ""
+"Find and install more than 20,000 applications available in the repositories"
+msgstr "Localizar e instalar mais de 20.000 aplicações disponíveis nos repositórios"
+
+msgid "Desktop Themes"
+msgstr "Temas para área de trabalho"
+
+msgid "Change or install your favorite KDE themes"
+msgstr "Alterar ou instalar seu tema de KDE favorito"
+
+msgid "Fotoxx"
+msgstr "Fotoxx"
+
+msgid ""
+"Edit image files from a digital camera. Includes color & contrast "
+"enhancement, red-eye removal, noise removal, HDR and panorama image "
+"compositing,"
+msgstr "Editar arquivos de imagem de uma câmera digital. Inclui aprimoramento de cor & contraste, remoção de olhos vermelhos, remoção de ruído, composição de imagem HDR e panorama."
+
+msgid "Pixelize"
+msgstr "Pixelize"
+
+msgid ""
+"Pixelize is a program that will use many scaled down images to try to "
+"duplicate, as closely as possible, another image."
+msgstr "Pixelize é um programa que irá usar muitos reduzidas de imagens para tentar duplicar, tão perto quanto possível, uma outra imagem."
+
+msgid "LibreCAD"
+msgstr "LibreCAD"
+
+msgid ""
+"LibreCAD is a Qt4 application to design 2D cad drawing based on the "
+"community edition of QCad."
+msgstr "LibreCAD é uma aplicação feita em Qt4 para criação de desenhos CAD em 2D e baseada na edição comunitária do QCad."
+
+msgid "Codecs"
+msgstr "Codecs"
+
+msgid ""
+"Necessary codecs to run audio and video files in various formats. Some file "
+"formats are proprietary and restricted in some countries."
+msgstr "Codecs necessários para executar arquivos de áudio e vídeo em vários formatos. Alguns formatos de arquivos são proprietários e restrito em alguns países."
+
+msgid "Audacity"
+msgstr "Audacity"
+
+msgid ""
+"Edit, record and import many sound file formats, like WAV, AIFF, MP3 and "
+"Ogg/Vorbis."
+msgstr "Edita, recorta e importa em muitos formatos de arquivos de som, como WAV, AIFF, MP3 e Ogg/Vorbis."
+
+msgid "Kdenlive"
+msgstr "Kdenlive"
+
+msgid ""
+"Kdenlive is a non-linear video editor for KDE who relies on a separate "
+"renderer, and supports multi track editing."
+msgstr "Kdenlive é um editor de vídeo não-linear para o KDE, que conta com um processador separado, e suporta multi edição de pista."
+
+msgid "Devede"
+msgstr "Devede"
+
+msgid "Create a DVD with your videos with this simple and feature-rich tool."
+msgstr "Criar um DVD com seus vídeos com esta ferramenta simples e cheia de recursos."
+
+msgid "Flash Player"
+msgstr "Flash Player"
+
+msgid ""
+"Play games and flash videos on the internet, with this player from Adobe."
+msgstr "Jogar jogos e ver vídeos em flash na internet, com este player da Adobe."
+
+msgid "Kaudiocreator"
+msgstr "Kaudiocreator"
+
+msgid ""
+"Backup your CDs with KDE tool is, preventing them from scratch and you lose "
+"your songs."
+msgstr "Faça backup de seus CDs com a ferramenta KDE é, impedindo-os a partir do zero e você perde suas músicas."
+
+msgid "SMPlayer"
+msgstr "SMPlayer"
+
+msgid ""
+"SMPlayer is a graphical front-end for MPlayer, cross-platform and support "
+"various audio/video formats."
+msgstr "SMPlayer é um front-end para mplayer, multi-plataforma e com suporte a vários formatos de áudio e vídeo."
+
+msgid "ROSA Media Player"
+msgstr "Rosa Media Player"
+
+msgid ""
+"Watch various video formats, support DVD menu, IPTV and Youtube Video and "
+"also capture video and audio from desktop"
+msgstr "Assista vários formatos de vídeo, menu de suporte DVD, IPTV e vídeo do Youtube e também captura de vídeo e áudio da área de trabalho"
+
+msgid "Miro Player"
+msgstr "Miro Player"
+
+msgid ""
+"Miro is a popular, free, and open internet TV application. It brings video "
+"channels from thousands of sources."
+msgstr "Miro é um popular, livre e open source aplicativos de TV pela internet. Ele traz canais de vídeo de milhares de fonte"
+
+msgid "Bino 3D Video Player"
+msgstr "Bino 3D Vídeo Player"
+
+msgid "Bino is a stereoscopic 3D video player with multi-display support."
+msgstr "Bino é um player de vídeo 3D estereoscópico com suporte a múltiplos monitor."
+
+msgid "OpenJDK"
+msgstr "OpenJDK"
+
+msgid ""
+"Install and configure the OpenJDK to be used to access websites and services"
+" in Java"
+msgstr "Instala e configura o OpenJDK para ser usado para acessar sites e serviços em Java"
+
+msgid "Steam"
+msgstr "Steam"
+
+msgid "Launcher for the Valve's Steam software distribution service."
+msgstr "Lançador para o serviço de distribuição de software Steam da Valve."
+
+msgid "Wine"
+msgstr "Wine"
+
+msgid ""
+"Wine is a program which allows running Microsoft Windows programs (including"
+" DOS, Windows 3.x and Win32 executables) on Unix."
+msgstr "O wine é um programa que permite a execução de programas Microsoft Windows (incluindo DOS, Windows 3.x e executáveis ​​Win32) no Unix."
+
+msgid "Skype"
+msgstr "Skype"
+
+msgid ""
+"By installing this package you will download and install Skype from "
+"skype.com. You must accept the Skype EULA before using it"
+msgstr "Instalando este pacote você irá baixar e instalar o Skype do skype.com. Você deve aceitar o EULA do Skype antes de usá-lo"
+
+msgid "Calibre"
+msgstr "Calibre"
+
+msgid "You can convert and manage your e-Books collection with Calibre."
+msgstr "Você pode converter e gerenciar sua coleção de e-books com Callibre"
+
+msgid "Unrar"
+msgstr "Unrar"
+
+msgid ""
+"Open and create rar files with Ark, the default archive manager of Kaiana"
+msgstr "Abra e crie arquivos rar com o Ark, o gerenciador de arquivos padrão do Kaiana"
+
+msgid "Dia"
+msgstr "Dia"
+
+msgid "Easy to create Diagram documents with Dia."
+msgstr "Crie facilmente diagramas com o Dia"
+
+msgid "Calligra"
+msgstr "Calligra"
+
+msgid "Office applications for the K Desktop Environment."
+msgstr "Aplicativos de escritorios para KDE"
+
+msgid "Semantik"
+msgstr "Semantik"
+
+msgid "A mindmapping and brainstorming tool"
+msgstr "Uma ferramenta de mapa mental e brainstorming"
+
+msgid "Kraft"
+msgstr "Kraft"
+
+msgid "Manage your office documents with Kraft."
+msgstr "Gerencie seus documentos de escritório com o Kraft"
+
+msgid "Zim"
+msgstr "Zim"
+
+msgid "A free and open source desktop wiki and outliner.​"
+msgstr "Um desktop wiki livre e Open Source"
+
+msgid "Poedit"
+msgstr "Poedit"
+
+msgid "Poedit is cross-platform gettext catalogs (.po files) editor."
+msgstr "Poedit é editor de catálogos ( arquivos .po) multiplataforma gettext "
+
+msgid "Homebank"
+msgstr "Homebank"
+
+msgid "Free easy personal accounting for all​"
+msgstr "Ferramenta de gerenciamento financeiro"
+
+msgid "How to collaborate with Kaiana"
+msgstr "Como colaborar com o Kaiana"
+
+msgid ""
+"So do you really like Kaiana and are eager to help? You can contribute in "
+"various ways:"
+msgstr "Então, vocês estão ansiosos para ajudar o Kaiana? Vocês podem ajudar de várias formas:"
+
+msgid "Manual"
+msgstr "Manual"
+
+msgid ""
+"Improve a simple step by step guide for the installation and configuration "
+"of the newly installed Kaiana"
+msgstr "Melhorar um simples passo-a-passo para a instalação e configuração do Kaiana recém-instalado"
+
+msgid "Forums"
+msgstr "Fóruns"
+
+msgid ""
+"Become a member of our forums, answer questions and help others on the "
+"forums"
+msgstr "Torne-se um membro do nosso fórum, responder perguntas e ajudar os outros nos fóruns"
+
+msgid "Translating"
+msgstr "Traduzindo"
+
+msgid "Translate blog posts, wiki pages, applications and stuffs"
+msgstr "Traduza blogs, páginas wikis, aplicativos e materiais"
+
+msgid "Join in the development of Kaiana"
+msgstr "Junte-se no desenvolvimento do Kaiana"
+
+msgid "Cooker is the development distribution for Kaiana"
+msgstr "Contribuir para o desenvolvimento da distribuição Kaiana"
+
+msgid "Artwork"
+msgstr "Artwork"
+
+msgid "Use your talent for create new artwork for Kaiana"
+msgstr "Use seu talento para criar novas artes para o Kaiana"
+
+msgid "Mailing list"
+msgstr "Lista de discussão"
+
+msgid "Join in the discussion list of Kaiana"
+msgstr "Junte-se na lista de discussão do Kaiana"
+
+msgid "Report Bug"
+msgstr "Relatório de Bug"
+
+msgid "Search, report and solve bugs in Kaiana"
+msgstr "Procure, erros e soluções e reporte no Kaiana"
+
+msgid "Join in the IRC channel"
+msgstr "Junte-se no canal de IRC"
+
+msgid "The #uniaolivre is main IRC channel of Uniao Livre and Kaiana"
+msgstr "O #uniaolivre é o principal canal IRC do União Livre e do Kaiana"
+
+msgid "Donation"
+msgstr "Doação"
+
+msgid ""
+"You can give us your love and care by donating your time or money to Kaiana"
+msgstr "Você pode nos dar o seu amor e carinho, doando seu tempo ou dinheiro para o Kaiana"
+
+msgid "No start kaiana-welcome with system"
+msgstr "Não iniciar o kaiana-welcome com o sistema"
+
+msgid "Make kaiana-welcome start with system"
+msgstr "Iniciar o kaiana-welcome com o sistema"
+
+msgid "Finish"
+msgstr "Finalizar"
+
+msgid "are already installed"
+msgstr "Já está instalado"
+
+msgid "not installed"
+msgstr "não instalado"
+
+msgid "About this program"
+msgstr "Sobre esse programa"
+
+msgid ""
+"This software is licensed under the GNU General Public License version 2 "
+"(GPLv2)."
+msgstr "Este software é licenciado sob a GNU General Public License versão 2 (GPLv2)."
+
+msgid "It uses python-qt4-webkit, web.py, and bigbashview."
+msgstr "Ele utiliza python-qt4-webkit, web.py e bigbashview."
+
+msgid "For bugs, suggestions and improvements, please send to "
+msgstr "Erros, sugestões e melhorias, por favor envie-nos"
+
+msgid "The Kaiana-welcome is a fork of the openmandriva-welcome for Kaiana"
+msgstr "O kaiana-welcome é um fork do open-mandriva adaptado para o Kaiana"
+
+msgid "You are using"
+msgstr "Você está usando"
+
+msgid "with kernel"
+msgstr "com o kernel"
+
+msgid "architecture"
+msgstr "Arquitetura"
+
+msgid "KVPNc"
+msgstr "KVpnc"
+
+msgid "KDE frontend to various VPN clients"
+msgstr "KDE frontend para vários clientes VPN"
+
+msgid "0ad"
+msgstr "0ad"
+
+msgid "Cross-platform RTS Game of Ancient Warfare​"
+msgstr "RTS game de guerra antiga multi-plataforma"
+
+msgid "MegaGlest"
+msgstr "Megaglest"
+
+msgid "Open Source 3d real time strategy game"
+msgstr "Open Source 3d jogo de estratégia em tempo real"
+
+msgid "Wesnoth"
+msgstr "Wesnoth"
+
+msgid "Fantasy turn-based strategy game"
+msgstr "Jogo de fantasia e estratégia baseado em turnos "
+
+msgid "FligtGear"
+msgstr "FligtGear"
+
+msgid "FlightGear Flight Simulator for Linux"
+msgstr "FlightGear Flight Simulator para Linux"
+
+msgid "TORCS"
+msgstr "TORCS"
+
+msgid "The Open Racing Car Simulator"
+msgstr "Simulador Open Source de corrida de carro"
+
+msgid "SuperTux"
+msgstr "SuperTux"
+
+msgid ""
+"SuperTux is a classic 2D jump'n run sidescroller game in a similar style "
+"like the original SuperMario games."
+msgstr "SuperTux é um jogo clássico 2D Jump sidescroller, em um estilo similar, como os jogos originais do SuperMario."
+
+msgid "Warzone 2100"
+msgstr "Warzone 2100"
+
+msgid "Postnuclear War realtime strategy games"
+msgstr "Jogo de estrategia em tempo real de guerra pós nuclear "
+
+msgid "Filezilla"
+msgstr "Filezilla"
+
+msgid ""
+"FileZilla is a powerful, free file management tool for FTP access to your "
+"Web site's server"
+msgstr "Filezilla é uma ferramenta de gerenciamento de arquivo poderoso, livre para acesso FTP para o servidor do seu site Web"
+
+msgid "Virtualbox"
+msgstr "Virtualbox"
+
+msgid ""
+"An easy virtualization software package for x86 and AMD64/Intel64-based "
+"computers."
+msgstr "Um pacote de software de virtualização fácil para x86 e AMD64/Intel64 com base em computadores."
+
+msgid "GRsync"
+msgstr "GRsync"
+
+msgid ""
+"Grsync is a GUI for rsync. While it can work with remote hosts, its focus is"
+" to synchronize local directories."
+msgstr "Grsync é um GUI para o rsync. Enquanto ele pode trabalhar com hosts remotos, seu foco é sincronizar diretórios locais."
+
+msgid "New Features and Major Changes"
+msgstr "Novos recursos e maiores mudanças"
+
+msgid ""
+"This is the first release under the Uniao Livre! Over the course of the past"
+" year we've tried to evolve the way you use your desktop with us. Here are "
+"some of the things we've done for 14.04:"
+msgstr "Este é o primeiro lançamento sob a União Livre! Ao longo do ano passado nós tentamos melhorar a maneira como você utiliza o seu desktop conosco. Aqui estão algumas das coisas que fizemos para 14.04:"
+
+msgid "Control Center"
+msgstr "Centro de Controle"
+
+msgid "Fresh Packages"
+msgstr "últimos pacotes"
+
+msgid ""
+"Some fresh packages has been included into this release such as: Homerun "
+"Kicker as default menu launcher, Kamoso (Webcam Viewer), Plasma "
+"NetworkManager applet, Mozilla Firefox 29, Systemd 208 and brand new "
+"Firewall GUFW."
+msgstr "Alguns pacotes recentes foram incluídos nesse lançamento como: Homerun Kicker como menu padrão, Kamoso (Visualizador de Webcam),   o applet Plasma NetworkManager, o Mozilla Firefox 29, Systemd 208 e o Gufw 14.04."
+
+msgid ""
+"The Ubuntu kernel team is pleased to announce that we will be providing "
+"extended stable support for the Linux 3.13 kernel until April 2016 as a "
+"third party effort maintained on our infrastructure."
+msgstr "A equipe do kernel Ubuntu tem o prazer de anunciar que estará fornecendo suporte estável estendido para o kernel do Linux 3.13 até abril de 2016, um esforço de terceiros mantidos em nossa infraestrutura."
+
+msgid ""
+"KDE 4.13.0 provides a clean, unified desktop for Kaiana. It has all the "
+"tools required to be productive whilst providing a pleasant, functional "
+"environment."
+msgstr "KDE 4.13.0 oferece um ambiente de trabalho limpo e unificado para o Kaiana. Ele tem todas as ferramentas necessárias para ser produtivo e proporcionar um ambiente agradável e funcional."
+
+msgid ""
+"LibreOffice 4.2.4 is the newest version available and it is also a Final "
+"(Stable) release, which means you can rely on it not crashing and "
+"compromising your precious data. As usual, there are a lot of minor "
+"improvements for the office suite, and most of them are internal fixes that "
+"are not all that visible for the regular users, but some of them are "
+"actually interesting."
+msgstr "LibreOffice 4.2.4 é a versão mais recente disponível e que também é uma versão final (estável), o que significa que você pode contar com ele sem falhas e sem comprometer seus dados importantes. Como de costume, há uma série de pequenas melhorias para a suíte de escritório, e a maioria delas são correções internas que não são todas visíveis para os usuários regulares, mas algumas delas são realmente interessantes."
+
+msgid ""
+"We also featured our Control Center. Big Control Center is a set of tools to help you configure your system for: <br/>\n"
+"- Software Management<br/>\n"
+"- Hardware<br/>\n"
+"- Network, Internet & Sharing<br/>\n"
+"- Local Disks/Partition Manager<br/>\n"
+"- System Security<br/>\n"
+"- Parental Control<br/>"
+msgstr "Nós também lançamos nosso próprio centro de controle. O Centro de Controle Big é um conjunto de ferramentas para ajudá-lo a configurar seu sistema para: <br/>\n- Gerenciamento de aplicativos<br/>\n- Hardware<br/>\n- Redes, internet e compartilhamento<br/>\n- Gerenciador de discos e partições do Local<br/>\n- Sistema de segurança<br/>\n- Controle parental<br/>"
+
+msgid ""
+"This is the first release of Kaiana that incorporates working support for "
+"EFI booting. We have only been able to perform limited testing on this "
+"feature and would welcome feedback on user experience. It should be possible"
+" to boot the live system on the majority of machines with installation your "
+"mileage will vary. Please file bug reports at uniaolivre.com/forum"
+msgstr "Este é o primeiro lançamento do Kaiana que incorpora suporte a trabalhar com inicialização EFI. Nós só fomos capazes de realizar testes limitados sobre este recurso e gostaríamos de receber feedback sobre a experiência do usuário. Deve ser possível inicializar o sistema livedvd na maioria das máquinas entretanto seus benefícios podem variar. Por favor, enviar relatórios de erros para uniaolivre.com/forum"
+
+msgid "You can contribute to Kaiana on www.kaiana.com.br"
+msgstr "Você pode contribuir com o Kaiana em www.kaiana.com.br"
+
+msgid "C/C++ Compilers Suite "
+msgstr "Suíte de Compiladores C/C++"
+
+msgid ""
+"This is GNU Cross Compiler (GCC) package, including necessary tools for "
+"development like gcc-c++, make, autoconf etc."
+msgstr "Este é o pacote do GNU Cross Compiler (GCC), incluíndo ferramentas necessárias para o desenvolvimento com gcc-c++, make, autoconf, etc."
+
+msgid "KDevelop"
+msgstr "KDevelop"
+
+msgid ""
+"The KDevelop Integrated Development Environment providing a unified "
+"interface to programs like gdb, the C/C++ compiler, and make"
+msgstr "O Ambiente Integrado de Desenvolvimento KDevelop fornece uma interface unificada para programas como gdb, o compilador C/C++, e make"
+
+msgid "Geany IDE"
+msgstr "Geany IDE"
+
+msgid ""
+"Geany is a small C editor using GTK2 with basic features of an integrated "
+"development environment."
+msgstr "Geany é um pequeno editor C usando GTK2 com recursos básicos de um ambiente de desenvolvimento integrado."
+
+msgid "Eclipse IDE"
+msgstr "Eclipse IDE"
+
+msgid ""
+"Eclipse IDE contains a base workspace and an extensible plug-in system, "
+"mostly used by Java Developers"
+msgstr "Eclipse IDE contém um espaço de trabalho base e sistema extensível de plug-ins, muito utilizado por Desenvolvedores Java"
+
+msgid "Qt-Creator"
+msgstr "Qt-Creator"
+
+msgid ""
+"Qt Creator is a lightweight, cross-platform integrated development "
+"environment (IDE)"
+msgstr "Qt Creator é um ambiente integrado de desenvolviment (IDE) leve e multi-plataforma"
+
+msgid "Qt-Designer"
+msgstr "Qt-Designer"
+
+msgid ""
+"The Qt Designer is a visual design tool that makes designing and "
+"implementing user interfaces a lot easier"
+msgstr "O Qt Designer é uma ferramenta de design visual que cria desenhando e implementando interfaces de usuários muito facilmente"
+
+msgid "Lazarus"
+msgstr "Lazarus"
+
+msgid ""
+"Lazarus is an IDE to create  applications with Free Pascal, the (L)GPLed "
+"Pascal and Object Pascal compiler."
+msgstr "Lazarus é uma IDE para criar programas com Free Pascal, o Pascal sob a (L)GPL e o compilador Object Pascal."
+
+msgid "Gambas IDE"
+msgstr "Gambas IDE"
+
+msgid ""
+"Gambas Almost BASIC, designed to build graphical applications programs using"
+" the Qt/GTK+ toolkit with Visual Basic (TM) like workflow"
+msgstr "Gambas Almost BASIC, desenhado para criar programas e aplicações gráficas usando o conjunto de ferramentas Qt/GTK+ com Visual Basic (TM) com fluxo de trabalho "
+
+msgid "Chromium Browser"
+msgstr "Chromium Browser"
+
+msgid ""
+"Chromium serves as a base for Google Chrome, an open-source browser project "
+"that aims to build a safer, faster, and more stable"
+msgstr "Chromium serve de base para o Google Chrome, um projeto open-source que tem objetivo de criar um browser seguro, rápido e muito estável "
+
+msgid "Mozilla Thunderbird"
+msgstr "Mozilla Thunderbird"
+
+msgid ""
+"Thunderbird is a full-featured email, RSS and newsgroup client that makes "
+"emailing safer, faster and easier"
+msgstr "Thunderbird é um cliente de email, RSS e newsgroup cheio de recursos que cria emails seguros, rápidos e facilmente"
+
+msgid "Pidgin"
+msgstr "Pidgin"
+
+msgid ""
+"Pidgin is a graphical, modular instant messaging client capable of using "
+"multiple networks at once."
+msgstr "Pidgin é um cliente de mensagens instantâneas gráfico e modular capaz de usar imediatamente múltiplos serviços de rede. "
+
+msgid "Choqok"
+msgstr "Choqok"
+
+msgid "Choqok is microblogging client for KDE"
+msgstr "Choqok é um cliente de microblogs para KDE"
+
+msgid "FlareGet"
+msgstr "FlareGet"
+
+msgid ""
+"FlareGet is a full featured, multi-threaded and multi-segment download "
+"manager and accelerator"
+msgstr "FlareGet é um gerenciador de download e acelerador cheio de recursos, múltiplos processos e múltiplos segmentos"
+
+msgid "Maxthon Browser"
+msgstr "Maxthon Browser"
+
+msgid ""
+"Cross-platform, fast, and ready to use web browser with Adblock Plus enabled"
+" by default"
+msgstr "Navegador de internet, multi plataforma, rápido e pronto para uso com Adblock Plus habilitado por padrão"
+
+msgid "Dropbox"
+msgstr "Dropbox"
+
+msgid ""
+"Dropbox is a free service that lets you bring your photos, docs, and videos "
+"anywhere and share them easily"
+msgstr "Dropbox é um serviço gratuito que permite que você acesse suas fotos, documentos e vídeos em qualquer lugar e compartilhá-los facilmente"

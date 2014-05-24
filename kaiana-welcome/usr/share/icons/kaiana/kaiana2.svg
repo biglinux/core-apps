@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg3095"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   width="256"
+   height="256"
+   sodipodi:docname="kaiana2.svg">
+  <metadata
+     id="metadata3101">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3099">
+    <linearGradient
+       id="linearGradient3814">
+      <stop
+         style="stop-color:#008b00;stop-opacity:1;"
+         offset="0"
+         id="stop3816" />
+      <stop
+         style="stop-color:#008000;stop-opacity:0;"
+         offset="1"
+         id="stop3818" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3814"
+       id="linearGradient3820"
+       x1="118.73569"
+       y1="252.84773"
+       x2="127.14175"
+       y2="-191.09766"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.98144329,0,0,0.9874477,3.1522749,2.6484416)" />
+    <filter
+       id="filter2987"
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow">
+      <feFlood
+         id="feFlood2989"
+         flood-opacity="0.5"
+         flood-color="rgb(0,0,0)"
+         result="flood" />
+      <feComposite
+         id="feComposite2991"
+         in2="SourceGraphic"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur2993"
+         in="composite"
+         stdDeviation="3"
+         result="blur" />
+      <feOffset
+         id="feOffset2995"
+         dx="4"
+         dy="4"
+         result="offset" />
+      <feComposite
+         id="feComposite2997"
+         in2="offset"
+         in="SourceGraphic"
+         operator="over"
+         result="composite2" />
+    </filter>
+    <filter
+       id="filter2999"
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow">
+      <feFlood
+         id="feFlood3001"
+         flood-opacity="0.5"
+         flood-color="rgb(0,0,0)"
+         result="flood" />
+      <feComposite
+         id="feComposite3003"
+         in2="SourceGraphic"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3005"
+         in="composite"
+         stdDeviation="3"
+         result="blur" />
+      <feOffset
+         id="feOffset3007"
+         dx="4"
+         dy="4"
+         result="offset" />
+      <feComposite
+         id="feComposite3009"
+         in2="offset"
+         in="SourceGraphic"
+         operator="over"
+         result="composite2" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1024"
+     inkscape:window-height="706"
+     id="namedview3097"
+     showgrid="false"
+     inkscape:zoom="1.9033873"
+     inkscape:cx="200.05135"
+     inkscape:cy="132.55637"
+     inkscape:window-x="-1"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3095" />
+  <rect
+     style="fill:url(#linearGradient3820);fill-opacity:1;stroke:none;filter:url(#filter2999)"
+     id="rect3804"
+     width="250.08029"
+     height="247.9791"
+     x="3.1522746"
+     y="4.3433876"
+     ry="21.270161"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
+  <path
+     style="fill:#ffffff;filter:url(#filter2987)"
+     d="m 20.983503,238.50752 c -0.495141,-0.89919 0.142693,-6.73716 1.417542,-12.97325 C 32.821593,174.55826 35.227142,111.75554 28.695523,61.201155 24.926631,32.030117 20.701894,14.063642 18.033883,15.860638 c -1.471979,0.991425 0.536542,-1.257574 1.95901,-3.237263 1.553737,-2.162505 5.898023,-0.486205 37.307782,0.263645 20.612616,0.492089 37.907404,1.379331 38.432851,1.97165 0.525471,0.592319 -0.828526,12.670852 -3.008882,26.841183 -5.508607,35.800978 -7.263239,58.134889 -7.205437,91.714717 0.05514,32.0946 2.775065,61.87603 7.857526,86.03872 1.850308,8.79664 3.003019,17.05031 2.561558,18.34147 -0.630104,1.84292 -8.676432,2.3476 -37.42856,2.3476 -20.389242,0 -37.024974,-0.72475 -37.526141,-1.63484 z m 190.439217,-0.0367 c -21.05993,-0.92237 -23.92142,-1.45531 -32.14252,-5.98647 -16.73382,-9.22308 -40.32631,-37.4419 -65.40766,-78.23371 -10.57716,-17.20249 -15.648374,-26.9968 -15.648374,-30.22258 0,-2.31819 25.617374,-40.932205 42.418754,-63.939377 15.78531,-21.615803 26.14341,-32.228214 33.94131,-34.7746 3.39216,-1.107692 17.83987,-1.655578 35.24413,-1.336524 l 29.4954,0.540706 0.48001,5.52065 c 0.59322,6.822856 -1.05229,8.271138 -13.75188,12.103656 -11.71615,3.535726 -29.03869,12.97609 -42.1948,22.995141 -12.49981,9.519222 -37.80256,35.293298 -37.80256,38.506688 0,3.0842 20.79286,33.58105 39.99362,58.6586 19.56314,25.55083 43.7634,50.97789 54.51475,57.27824 8.82976,5.17431 9.11831,5.57292 8.72927,12.05885 -0.3745,6.24354 -0.75186,6.70787 -5.45355,6.7103 -2.77818,9.3e-4 -6.00674,0.25694 -7.17456,0.56778 -1.16784,0.31083 -12.52645,0.10946 -25.24134,-0.44735 z"
+     id="path3245"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cssscscsssssccssssssscsssssssccs"
+     transform="matrix(0.89237567,0,0,0.92121276,9.8974906,12.804973)"
+     inkscape:export-filename="/home/paulo/Kaiana/kaiana/kaiana-code/packages/kaiana-welcome/usr/share/icons/kaiana/rect3804.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
+</svg>

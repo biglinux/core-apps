@@ -10,13 +10,13 @@ background-image: -webkit-gradient(
 	left bottom,
 	left bottom,
 	color-stop(0, #2E8B57),
-	color-stop(1, #9BCD9B)
+	color-stop(1, #43CD80)
 );
-background-image: -o-linear-gradient(left bottom, #2E8B57 0%, #9BCD9B 100%);
-background-image: -moz-linear-gradient(left bottom, #2E8B57 0%, #9BCD9B 100%);
-background-image: -webkit-linear-gradient(left bottom, #2E8B57 0%, #9BCD9B 100%);
-background-image: -ms-linear-gradient(left bottom, #2E8B57 0%, #9BCD9B 100%);
-background-image: linear-gradient(to left bottom, #2E8B57 0%, #9BCD9B 100%);
+background-image: -o-linear-gradient(left bottom, #2E8B57 0%, #43CD80 100%);
+background-image: -moz-linear-gradient(left bottom, #2E8B57 0%, #43CD80 100%);
+background-image: -webkit-linear-gradient(left bottom, #2E8B57 0%, #43CD80 100%);
+background-image: -ms-linear-gradient(left bottom, #2E8B57 0%, #43CD80 100%);
+background-image: linear-gradient(to left bottom, #2E8B57 0%, #43CD80 100%);
 font-family:'Droid Sans', sans-serif;
 width:750px;
 }
@@ -108,7 +108,7 @@ margin:0 auto;
 }
 
 #nav {
-background-color:#363636;
+background-color:#404040;
 text-align:center;
 position:fixed;
 left:3px;
