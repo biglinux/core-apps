@@ -1,0 +1,9 @@
+#! /bin/sh
+# Fix partition names and mount all
+case "$1" in
+  start)
+sed -i 's|width: theme.defaultFont.mSize.width \* 18|width: theme.defaultFont.mSize.width * 24|g;s|theme.smallIconSize|20|g' /usr/share/kde4/apps/plasma/plasmoids/org.kde.homerun-kicker/contents/ui/ItemListView.qml
+
+esac
+
+:

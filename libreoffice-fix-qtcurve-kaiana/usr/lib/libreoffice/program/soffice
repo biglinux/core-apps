@@ -1,0 +1,31 @@
+#!/bin/bash
+
+#Script confere se está em uso o qtcurve, se esta utilizando a barra de menu com efeito shade e se o texto esta sendo forcado para a cor branca, caso tudo seja positivo faz um hack no firefox, caso seja negativo desfaz
+
+
+if [ "$(grep widgetStyle=qtcurve ~/.kde/share/config/kdeglobals)" != "" ]; then
+
+    if [ "$(grep -c -e customMenuNormTextColor=#FFFFFF -e shadeMenubars=wborder  ~/.config/qtcurve/stylerc)" = "2" ]; then
+
+	if [ "$(grep '<item oor:path="/org.openoffice.Office.Common/Misc"><prop oor:name="PersonaSettings" oor:op="fuse"><value>;;#ffffff</value></prop></item>' ~/.config/libreoffice/4/user/registrymodifications.xcu 2> /dev/null)" = "" ]; then
+	    sed -i '/<\/oor:items>/d' ~/.config/libreoffice/4/user/registrymodifications.xcu
+
+	    if [ "$(grep '<item oor:path="/org.openoffice.Office.Common/Misc"><prop oor:name="Persona" oor:op="fuse">' ~/.config/libreoffice/4/user/registrymodifications.xcu 2> /dev/null)" = "" ]; then
+		echo '<item oor:path="/org.openoffice.Office.Common/Misc"><prop oor:name="Persona" oor:op="fuse"><value>own</value></prop></item>' >> ~/.config/libreoffice/4/user/registrymodifications.xcu
+	    fi
+	    
+	    echo '<item oor:path="/org.openoffice.Office.Common/Misc"><prop oor:name="PersonaSettings" oor:op="fuse"><value>;;#ffffff</value></prop></item>
+</oor:items>' >> ~/.config/libreoffice/4/user/registrymodifications.xcu
+	fi
+
+    else
+	sed -i '/<item oor:path="\/org.openoffice.Office.Common\/Misc"><prop oor:name="PersonaSettings" oor:op="fuse"><value>;;#ffffff<\/value><\/prop><\/item>/d' ~/.config/libreoffice/4/user/registrymodifications.xcu
+    fi
+
+else
+
+    sed -i '/<item oor:path="\/org.openoffice.Office.Common\/Misc"><prop oor:name="PersonaSettings" oor:op="fuse"><value>;;#ffffff<\/value><\/prop><\/item>/d' ~/.config/libreoffice/4/user/registrymodifications.xcu
+
+fi
+
+/usr/lib/libreoffice/program/soffice.distrib "$@"

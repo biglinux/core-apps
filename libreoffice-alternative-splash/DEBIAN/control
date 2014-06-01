@@ -1,0 +1,10 @@
+Package: libreoffice-alternative-splash
+Version: 14.04-0kaiana2
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Depends: libreoffice-common
+Priority: optional
+Description: Alternative splash screen - http://gnome-look.org/content/show.php/LibreOffice+Splash+Screen?content=161688
+

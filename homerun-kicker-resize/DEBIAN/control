@@ -1,0 +1,10 @@
+Package: homerun-kicker-resize
+Version: 1.0.0-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Depends: plasma-widget-homerun-kicker
+Priority: optional
+Description: Make homerun kicker little large
+

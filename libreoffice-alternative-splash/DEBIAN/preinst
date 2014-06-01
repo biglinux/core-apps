@@ -1,0 +1,20 @@
+#! /bin/sh
+
+set -e
+
+package_name=libreoffice-alternative-splash
+
+if [ -z "$package_name" ]; then
+    print >&2 "Internal Error. Please report a bug."
+    exit 1;
+fi
+
+case "$1" in
+  install)
+    dpkg-divert --package $package_name --divert /usr/lib/libreoffice/program/intro.png.distrib --rename /usr/lib/libreoffice/program/intro.png
+    ;;
+  *) echo "$0: didn't understand being called with \`$1'" 1>&2
+     exit 0;;
+esac
+
+exit 0

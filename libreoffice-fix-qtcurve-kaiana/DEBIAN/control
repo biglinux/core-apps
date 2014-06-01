@@ -1,0 +1,10 @@
+Package: libreoffice-fix-qtcurve-kaiana
+Version: 14.04-0kaiana2
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Depends: libreoffice-common
+Priority: optional
+Description: Fix bug dark top menu theme in libreoffice using qtcurve
+
