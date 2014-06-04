@@ -1,0 +1,285 @@
+# Chinese (Traditional) translation for ubiquity-slideshow-ubuntu
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the ubiquity-slideshow-ubuntu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubiquity-slideshow-ubuntu\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-04-02 11:07-0400\n"
+"PO-Revision-Date: 2014-02-25 13:45+0000\n"
+"Last-Translator: Po-Hsu Lin <po-hsu.lin@canonical.com>\n"
+"Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-04-08 14:29+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/accessibility.html:1
+msgid "Access for everyone"
+msgstr "任何人都可以任意存取"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/accessibility.html:8
+msgid ""
+"At the heart of the Ubuntu philosophy is the belief that computing is for "
+"everyone. With advanced accessibility tools and options to change language, "
+"colour scheme and text size, Ubuntu makes computing easy – whoever and "
+"wherever you are."
+msgstr ""
+"Ubuntu 哲學的核心思想是相信人人都有使用電腦的權力。藉由先進的無障礙輔助工具與"
+"變更系統語言、配色方案、文字大小的設定選項，Ubuntu 讓使用電腦變得前所未有的簡"
+"單──無論您是誰，也無論您來自哪裡。"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/accessibility.html:12
+msgid "Customization options"
+msgstr "可自訂選項"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:16
+msgid "Appearance"
+msgstr "界面外觀"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:20
+msgid "Assistive technologies"
+msgstr "無障礙輔助"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:24
+msgid "Language support"
+msgstr "語言支援"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/browse.html:1
+msgid "Make the most of the web"
+msgstr "將 Web 發揮得淋漓盡致"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/browse.html:8
+msgid ""
+"Ubuntu includes Firefox, the web browser used by millions of people around "
+"the world. And web applications you use frequently (like Facebook or Gmail, "
+"for example) can be pinned to your desktop for faster access, just like apps "
+"on your computer."
+msgstr ""
+"Ubuntu 包含了 Firefox，這個全世界上百萬人使用的 Web 瀏覽器。您還可以將經常使"
+"用的 Web 應用（例如 Facebook 或 Gmail）釘選在桌面上供您快速存取，宛如安裝於您"
+"電腦上的軟體一般。"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:12
+#: slideshows/ubuntu/slides/music.html:11
+#: slideshows/ubuntu/slides/office.html:12
+#: slideshows/ubuntu/slides/photos.html:12
+msgid "Included software"
+msgstr "搭載的軟體"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:16
+msgid "Firefox web browser"
+msgstr "Firefox Web瀏覽器"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:19
+#: slideshows/ubuntu/slides/photos.html:19
+msgid "Supported software"
+msgstr "其他支援的軟體"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:23
+msgid "Flash"
+msgstr "Flash"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:27
+msgid "Chromium"
+msgstr "Chromium Web瀏覽器"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/gethelp.html:1
+msgid "Any questions?"
+msgstr "有任何 Ubuntu 使用上的問題嗎？"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/gethelp.html:8
+msgid ""
+"Check out <a href=\"http://askubuntu.com/\">askubuntu.com</a> for answers to "
+"all your Ubuntu questions. There’s a good chance your question will have "
+"been answered already and, if not, you’ll find thousands of volunteers eager "
+"to help. For more support options, go to <a href=\"http://www.ubuntu.com/"
+"support\">ubuntu.com/support</a>."
+msgstr ""
+"請上 <a href=\"http://askubuntu.com/\">askubuntu.com</a> 尋找您所有於 Ubuntu "
+"上的問題的解答。有很高的可能性您的問題早就已經有答案了；如果仍未找到解答，您"
+"也會在這裡找到上千位樂意伸手幫忙的志願者。需要更多的支援方案，請參閱 <a href="
+"\"http://www.ubuntu.com/support\">ubuntu.com/support</a>。"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/gethelp.html:17
+msgid "Let’s talk Ubuntu"
+msgstr "讓我們盡情談論Ubuntu吧！"
+
+#. type: Content of: <div><div><div><div>
+#: slideshows/ubuntu/slides/gethelp.html:18
+msgid "I'm installing #Ubuntu!"
+msgstr "我現在在安裝 #Ubuntu！"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/music.html:2
+msgid "Take your music with you"
+msgstr "讓音樂成為您生活不可或缺的角色"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/music.html:7
+msgid ""
+"Ubuntu comes with the amazing Rhythmbox music player. With advanced playback "
+"options, it's simple to queue up the perfect songs. And it works great with "
+"CDs and portable music players, so you can enjoy all your music wherever you "
+"go."
+msgstr ""
+"Ubuntu 搭載令人驚艷的 Rhythmbox 音樂播放軟體。藉由進階的音樂播放模式設定，建"
+"立您的完美歌單是非常容易的。另外它跟音樂 CD、攜帶式音樂播放機也很合得來，所以"
+"您可以於任何地方享受您所有的音樂。"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/music.html:15
+msgid "Rhythmbox Music Player"
+msgstr "Rhythmbox 音樂播放軟體"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/office.html:1
+msgid "Everything you need for the office"
+msgstr "包辦一切辦公所需"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/office.html:8
+msgid ""
+"LibreOffice is a free office suite packed with everything you need to create "
+"documents, spreadsheets and presentations. Compatible with Microsoft Office "
+"file formats, it gives you all the features you need, without the price tag."
+msgstr ""
+"LibreOffice 是一套搭載了您製作文件、試算表與簡報所需要的所有東西的自由辦公室"
+"套裝軟體。在相容 Microsoft Office 檔案格式的前提下，它帶給您所有您需要的功"
+"能，且無需掏出您的荷包。"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:16
+msgid "LibreOffice Writer"
+msgstr "LibreOffice Writer 文書編輯軟體"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:20
+msgid "LibreOffice Calc"
+msgstr "LibreOffice Calc 試算表軟體"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:24
+msgid "LibreOffice Impress"
+msgstr "LibreOffice Impress 簡報編輯軟體"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/photos.html:1
+msgid "Have fun with your photos"
+msgstr "管理相片變得趣味十足"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/photos.html:8
+msgid ""
+"Shotwell is a handy photo manager that is ready for your gadgets. Connect a "
+"camera or a phone to transfer your photos, then it’s easy to share them and "
+"keep them safe. If you’re feeling creative, you can try lots of photo apps "
+"from the Ubuntu Software Center."
+msgstr ""
+"Shotwell 是一個易用且支援您的裝置的相片管理程式。將您的相機或手機連接到電腦上"
+"就能輕易地分享並妥善保存您的相片。如果您深具創造力還可以試試 Ubuntu 軟體中心"
+"中的許多相片應用軟體。"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:16
+msgid "Shotwell Photo Manager"
+msgstr "Shotwell 相片管理軟體"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:23
+msgid "GIMP Image Editor"
+msgstr "GIMP 影像編輯器"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:27
+msgid "Pitivi Video Editor"
+msgstr "Pitivi 影片編輯器"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/usc.html:1
+msgid "Find even more software"
+msgstr "發掘更多好用的軟體"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/usc.html:8
+msgid ""
+"Say goodbye to searching the web for new software. With Ubuntu Software "
+"Center, you can find and install new apps with ease. Just type in what "
+"you’re looking for, or explore categories such as Science, Education and "
+"Games, alongside helpful reviews from other users."
+msgstr ""
+"向網路上四處尋找新軟體的日子說再見吧！透過 Ubuntu 軟體中心，您將可以輕鬆地搜"
+"尋並安裝新的應用軟體。直接輸入您想尋找的東西，或是逛逛科學、教育或遊戲之類的"
+"軟體分類，並參考其他使用者所發表的有用評論。"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/welcome.html:1
+msgid "Welcome to Ubuntu 14.04"
+msgstr "歡迎使用 Ubuntu 14.04"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/welcome.html:8
+msgid ""
+"Fast and full of new features, the latest version of Ubuntu makes computing "
+"easier than ever. Here are just a few cool new things to look out for…"
+msgstr ""
+"輕快且搭載了滿滿的新功能，Ubuntu 的最新版本讓電腦的使用變得前所未有的簡單。這"
+"裡有一些值得您一看的酷炫新玩意兒……"
+
+#~ msgid "Your own personal cloud"
+#~ msgstr "專為您設計的雲端服務"
+
+#~ msgid ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> gives "
+#~ "you 5GB of free cloud storage to access your files, share your photos and "
+#~ "<a href=\"https://one.ubuntu.com/services/music/\">stream your music</a> "
+#~ "to your computers, tablets and smartphones. Any photo you take appears on "
+#~ "all your devices, the instant you take it. Ubuntu One runs on Ubuntu, "
+#~ "Windows, Mac, Android, iOS and the web."
+#~ msgstr ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> 提供您 "
+#~ "5GB 的免費雲端儲存空間，您可以藉此存取您的檔案、分享您的相片、<a href="
+#~ "\"https://one.ubuntu.com/services/music/\">串流您的音樂</a>至電腦、平板，"
+#~ "甚至是智慧型手機上。您所拍攝的任何相片會出現在所有您擁有的裝置上。Ubuntu "
+#~ "One 可以在 Ubuntu、Windows、Mac、Android、iOS 以及 Web 平臺上使用。"
+
+#~ msgid "One account to log in to everything on Ubuntu"
+#~ msgstr "一只帳號走透任何Ubuntu服務"
+
+#~ msgid "<strong>Make the most of Ubuntu with Ubuntu One.</strong>"
+#~ msgstr "<strong>讓 Ubuntu One 將 Ubuntu 的功能提高到最高層次。</strong>"
+
+#~ msgid "Ubuntu One is the single account to log in to everything on Ubuntu."
+#~ msgstr "Ubuntu One 是登入所有 Ubuntu 服務的唯一帳號。"
+
+#~ msgid "Get <strong>new apps</strong> from the Software Center"
+#~ msgstr "從 Ubuntu 軟體中心取得<strong>新的應用軟體</strong>"
+
+#~ msgid "Listen to <strong>your music collection</strong> and buy tracks"
+#~ msgstr "聆聽<strong>您的音樂收藏</strong>並購買新的歌曲"
+
+#~ msgid "Access <strong>files and photos</strong> from all your devices"
+#~ msgstr "從任何裝置存取<strong>您的檔案與相片</strong>"
+
+#~ msgid "Welcome to Ubuntu 13.10"
+#~ msgstr "歡迎使用 Ubuntu 13.10"

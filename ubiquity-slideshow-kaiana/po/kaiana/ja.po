@@ -1,0 +1,294 @@
+# Japanese translation for ubiquity-slideshow-ubuntu
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the ubiquity-slideshow-ubuntu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubiquity-slideshow-ubuntu\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-04-02 11:07-0400\n"
+"PO-Revision-Date: 2014-03-08 01:04+0000\n"
+"Last-Translator: Kentaro Kazuhama <Unknown>\n"
+"Language-Team: Japanese <ja@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-04-08 14:29+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/accessibility.html:1
+msgid "Access for everyone"
+msgstr "すべての人へ"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/accessibility.html:8
+msgid ""
+"At the heart of the Ubuntu philosophy is the belief that computing is for "
+"everyone. With advanced accessibility tools and options to change language, "
+"colour scheme and text size, Ubuntu makes computing easy – whoever and "
+"wherever you are."
+msgstr ""
+"Ubuntuの哲学の中心となっているのは、「あらゆる人のためのコンピューター」とい"
+"う信念です。高度なアクセシビリティツールや、言語・カラースキーム・テキストサ"
+"イズの変更といったオプションにより、Ubuntuはあらゆる人に寄り添います。あなた"
+"が誰であっても、どこにいようとも。"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/accessibility.html:12
+msgid "Customization options"
+msgstr "カスタマイズの選択肢"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:16
+msgid "Appearance"
+msgstr "外観"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:20
+msgid "Assistive technologies"
+msgstr "支援技術"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:24
+msgid "Language support"
+msgstr "言語サポート"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/browse.html:1
+msgid "Make the most of the web"
+msgstr "ウェブを最大限に活用"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/browse.html:8
+msgid ""
+"Ubuntu includes Firefox, the web browser used by millions of people around "
+"the world. And web applications you use frequently (like Facebook or Gmail, "
+"for example) can be pinned to your desktop for faster access, just like apps "
+"on your computer."
+msgstr ""
+"Ubuntuには、世界中の多くの人々に使われているウェブブラウザーであるFirefoxが含"
+"まれています。また、頻繁に使用するウェブアプリケーション(例えばFacebookや"
+"Gmailのような)は、ちょうどコンピューター上のアプリケーションのように、より素"
+"早くアクセスするためにデスクトップに留めておくことができます。"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:12
+#: slideshows/ubuntu/slides/music.html:11
+#: slideshows/ubuntu/slides/office.html:12
+#: slideshows/ubuntu/slides/photos.html:12
+msgid "Included software"
+msgstr "含まれるソフトウェア"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:16
+msgid "Firefox web browser"
+msgstr "Firefoxウェブブラウザー"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:19
+#: slideshows/ubuntu/slides/photos.html:19
+msgid "Supported software"
+msgstr "サポートされるソフトウェア"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:23
+msgid "Flash"
+msgstr "Flash"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:27
+msgid "Chromium"
+msgstr "Chromium"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/gethelp.html:1
+msgid "Any questions?"
+msgstr "質問がありますか?"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/gethelp.html:8
+msgid ""
+"Check out <a href=\"http://askubuntu.com/\">askubuntu.com</a> for answers to "
+"all your Ubuntu questions. There’s a good chance your question will have "
+"been answered already and, if not, you’ll find thousands of volunteers eager "
+"to help. For more support options, go to <a href=\"http://www.ubuntu.com/"
+"support\">ubuntu.com/support</a>."
+msgstr ""
+"Ubuntuに関する疑問があれば、<a href=\"http://askubuntu.com/\">askubuntu.com</"
+"a>を確認してみてください。あなたの疑問がすでに回答済みのことがよくあります。"
+"またそうでなくても、多くのボランティアが熱心に助言してくれるでしょう。より充"
+"実したサポートオプションが必要であれば、<a href=\"http://www.ubuntu.com/"
+"support\">ubuntu.com/support</a>を確認してください。"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/gethelp.html:17
+msgid "Let’s talk Ubuntu"
+msgstr "Ubuntuについて話しましょう"
+
+#. type: Content of: <div><div><div><div>
+#: slideshows/ubuntu/slides/gethelp.html:18
+msgid "I'm installing #Ubuntu!"
+msgstr "#Ubuntu をインストールしています!"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/music.html:2
+msgid "Take your music with you"
+msgstr "音楽を持ち歩こう"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/music.html:7
+msgid ""
+"Ubuntu comes with the amazing Rhythmbox music player. With advanced playback "
+"options, it's simple to queue up the perfect songs. And it works great with "
+"CDs and portable music players, so you can enjoy all your music wherever you "
+"go."
+msgstr ""
+"Ubuntuに素晴らしいRhythmboxミュージックプレーヤーがやってきました。進化した再"
+"生オプションは、簡単に理想的な音楽を追加することができます。そしてCDやポータ"
+"ブルミュージックプレーヤーと連携し、あなたがどこにいてもすべての音楽を楽しむ"
+"ことができます。"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/music.html:15
+msgid "Rhythmbox Music Player"
+msgstr "Rhythmboxミュージックプレイヤー"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/office.html:1
+msgid "Everything you need for the office"
+msgstr "オフィスに必要なものをすべてあなたに"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/office.html:8
+msgid ""
+"LibreOffice is a free office suite packed with everything you need to create "
+"documents, spreadsheets and presentations. Compatible with Microsoft Office "
+"file formats, it gives you all the features you need, without the price tag."
+msgstr ""
+"LibreOfficeはフリーのオフィススイートで、ドキュメント、表計算、プレゼンテー"
+"ションを作成するのに必要なものがすべて含まれています。Microsoft Officeのファ"
+"イル形式と互換性があるため、値札なしに必要な機能をすべて提供しています。"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:16
+msgid "LibreOffice Writer"
+msgstr "LibreOffice Writer"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:20
+msgid "LibreOffice Calc"
+msgstr "LibreOffice Calc"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:24
+msgid "LibreOffice Impress"
+msgstr "LibreOffice Impress"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/photos.html:1
+msgid "Have fun with your photos"
+msgstr "写真を楽しもう"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/photos.html:8
+msgid ""
+"Shotwell is a handy photo manager that is ready for your gadgets. Connect a "
+"camera or a phone to transfer your photos, then it’s easy to share them and "
+"keep them safe. If you’re feeling creative, you can try lots of photo apps "
+"from the Ubuntu Software Center."
+msgstr ""
+"Shotwellはガジェットに対応した便利な写真管理ツールです。カメラや電話を接続し"
+"て写真を転送すれば、写真の共有や安全な保管を簡単に行えます。クリエイティブな"
+"ことをしたい場合は、Ubuntuソフトウェアセンターからたくさんの写真アプリケー"
+"ションを試すことができます。"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:16
+msgid "Shotwell Photo Manager"
+msgstr "Shotwell写真管理ツール"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:23
+msgid "GIMP Image Editor"
+msgstr "GIMP画像エディター"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:27
+msgid "Pitivi Video Editor"
+msgstr "PiTiVi動画エディター"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/usc.html:1
+msgid "Find even more software"
+msgstr "追加のソフトウェアを見つけましょう"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/usc.html:8
+msgid ""
+"Say goodbye to searching the web for new software. With Ubuntu Software "
+"Center, you can find and install new apps with ease. Just type in what "
+"you’re looking for, or explore categories such as Science, Education and "
+"Games, alongside helpful reviews from other users."
+msgstr ""
+"新しいソフトウェアをウェブで探すのにサヨナラしましょう。Ubuntuソフトウェアセ"
+"ンターで、簡単に新しいアプリケーションを探してインストールすることができま"
+"す。探しているアプリケーションの名前を入力するか、科学や教育、ゲームのような"
+"カテゴリーを、他のユーザーによる有用なレビューも含めて探すことができます。"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/welcome.html:1
+msgid "Welcome to Ubuntu 14.04"
+msgstr "Ubuntu 14.04へようこそ"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/welcome.html:8
+msgid ""
+"Fast and full of new features, the latest version of Ubuntu makes computing "
+"easier than ever. Here are just a few cool new things to look out for…"
+msgstr ""
+"高速で新機能が満載されているUbuntuの最新バージョンでは、これまで以上に簡単に"
+"コンピューターが使用できます。今から紹介するのは気の利いた新機能のほんの一部"
+"です..."
+
+#~ msgid "Your own personal cloud"
+#~ msgstr "あなたのパーソナルクラウド"
+
+#~ msgid ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> gives "
+#~ "you 5GB of free cloud storage to access your files, share your photos and "
+#~ "<a href=\"https://one.ubuntu.com/services/music/\">stream your music</a> "
+#~ "to your computers, tablets and smartphones. Any photo you take appears on "
+#~ "all your devices, the instant you take it. Ubuntu One runs on Ubuntu, "
+#~ "Windows, Mac, Android, iOS and the web."
+#~ msgstr ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a>はコン"
+#~ "ピューターやタブレット、スマートフォンからファイルにアクセスしたり、写真を"
+#~ "共有したり、<a href=\"https://one.ubuntu.com/services/music/\">音楽をスト"
+#~ "リーミング</a>したりするための5GBの無料クラウドストレージを提供します。写"
+#~ "真をとるとただちに、どの写真もすべてのデバイスに現われます。Ubuntu Oneは"
+#~ "Ubuntu、Windows、Mac、Android、iOS、そしてウェブ上で実行できます。"
+
+#~ msgid "One account to log in to everything on Ubuntu"
+#~ msgstr "一つのアカウントでUbuntuのすべてにログイン"
+
+#~ msgid "<strong>Make the most of Ubuntu with Ubuntu One.</strong>"
+#~ msgstr "<strong>Ubuntu OneでUbuntuを最大限に活用しましょう。</strong>"
+
+#~ msgid "Ubuntu One is the single account to log in to everything on Ubuntu."
+#~ msgstr "Ubuntu Oneは、Ubuntuのすべてにログインできる単一のアカウントです。"
+
+#~ msgid "Get <strong>new apps</strong> from the Software Center"
+#~ msgstr "ソフトウェアセンターから<strong>新しいアプリ</strong>を入手"
+
+#~ msgid "Listen to <strong>your music collection</strong> and buy tracks"
+#~ msgstr ""
+#~ "<strong>自分のミュージックコレクション</strong>を聴いたり、楽曲を購入"
+
+#~ msgid "Access <strong>files and photos</strong> from all your devices"
+#~ msgstr "すべてのデバイスから<strong>ファイルや写真</strong>にアクセス"
+
+#~ msgid "Welcome to Ubuntu 13.10"
+#~ msgstr "Ubuntu 13.10へようこそ"

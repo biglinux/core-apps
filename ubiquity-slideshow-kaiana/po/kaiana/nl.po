@@ -1,0 +1,301 @@
+# Dutch translation for ubiquity-slideshow-ubuntu
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the ubiquity-slideshow-ubuntu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubiquity-slideshow-ubuntu\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-04-02 11:07-0400\n"
+"PO-Revision-Date: 2014-03-30 10:56+0000\n"
+"Last-Translator: Pjotr12345 <Unknown>\n"
+"Language-Team: Dutch <nl@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-04-08 14:29+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/accessibility.html:1
+msgid "Access for everyone"
+msgstr "Toegang voor iedereen"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/accessibility.html:8
+msgid ""
+"At the heart of the Ubuntu philosophy is the belief that computing is for "
+"everyone. With advanced accessibility tools and options to change language, "
+"colour scheme and text size, Ubuntu makes computing easy – whoever and "
+"wherever you are."
+msgstr ""
+"De kern van de Ubuntufilosofie is dat computers er voor iedereen moeten "
+"zijn. Met geavanceerde toegankelijkheidshulpmiddelen en opties om taal, "
+"kleurenschema en tekstgrootte aan te passen, is Ubuntu een systeem voor "
+"iedereen – wie of waar u ook bent."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/accessibility.html:12
+msgid "Customization options"
+msgstr "Aanpasmogelijkheden"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:16
+msgid "Appearance"
+msgstr "Uiterlijk"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:20
+msgid "Assistive technologies"
+msgstr "Hulptechnologieën"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:24
+msgid "Language support"
+msgstr "Taalondersteuning"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/browse.html:1
+msgid "Make the most of the web"
+msgstr "Optimaal gebruik maken van het internet"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/browse.html:8
+msgid ""
+"Ubuntu includes Firefox, the web browser used by millions of people around "
+"the world. And web applications you use frequently (like Facebook or Gmail, "
+"for example) can be pinned to your desktop for faster access, just like apps "
+"on your computer."
+msgstr ""
+"Ubuntu bevat Firefox, de webbrowser die door miljoenen mensen over de hele "
+"wereld gebruikt wordt. En webtoepassingen die u vaak gebruikt (zoals "
+"Facebook of Gmail) kunnen vastgezet worden op uw bureaublad voor snellere "
+"toegang, net als met toepassingen op uw computer."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:12
+#: slideshows/ubuntu/slides/music.html:11
+#: slideshows/ubuntu/slides/office.html:12
+#: slideshows/ubuntu/slides/photos.html:12
+msgid "Included software"
+msgstr "Meegeleverde programma's"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:16
+msgid "Firefox web browser"
+msgstr "Firefox webbrowser"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:19
+#: slideshows/ubuntu/slides/photos.html:19
+msgid "Supported software"
+msgstr "Ondersteunde software"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:23
+msgid "Flash"
+msgstr "Flash"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:27
+msgid "Chromium"
+msgstr "Chromium"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/gethelp.html:1
+msgid "Any questions?"
+msgstr "Vragen?"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/gethelp.html:8
+msgid ""
+"Check out <a href=\"http://askubuntu.com/\">askubuntu.com</a> for answers to "
+"all your Ubuntu questions. There’s a good chance your question will have "
+"been answered already and, if not, you’ll find thousands of volunteers eager "
+"to help. For more support options, go to <a href=\"http://www.ubuntu.com/"
+"support\">ubuntu.com/support</a>."
+msgstr ""
+"Raadpleeg <a href=\"http://askubuntu.com/\">askubuntu.com</a> voor "
+"antwoorden op al uw vragen over Ubuntu. Er is een grote kans dat uw vraag al "
+"beantwoord is en zo niet, dan vindt u hier duizenden vrijwilligers die u "
+"graag willen helpen. Ga voor meer ondersteuningsmogelijkheden naar <a href="
+"\"http://www.ubuntu.com/support\">ubuntu.com/support</a>."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/gethelp.html:17
+msgid "Let’s talk Ubuntu"
+msgstr "Laten we het over Ubuntu hebben"
+
+#. type: Content of: <div><div><div><div>
+#: slideshows/ubuntu/slides/gethelp.html:18
+msgid "I'm installing #Ubuntu!"
+msgstr "Bezig met installeren van #Ubuntu!"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/music.html:2
+msgid "Take your music with you"
+msgstr "Neem uw muziek mee"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/music.html:7
+msgid ""
+"Ubuntu comes with the amazing Rhythmbox music player. With advanced playback "
+"options, it's simple to queue up the perfect songs. And it works great with "
+"CDs and portable music players, so you can enjoy all your music wherever you "
+"go."
+msgstr ""
+"Ubuntu wordt geleverd met de uitstekende muziekspeler Rhythmbox. De "
+"uitgebreide afspeelmogelijkheden maken het samenstellen van de ideale "
+"muziekverzameling eenvoudig. Ook kan hij uitstekend overweg met cd's en "
+"draagbare muziekspelers, zodat u van al uw muziek kunt genieten waar u ook "
+"bent."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/music.html:15
+msgid "Rhythmbox Music Player"
+msgstr "Rhythmbox muziekspeler"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/office.html:1
+msgid "Everything you need for the office"
+msgstr "Alles wat u aan kantoortoepassingen nodig heeft"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/office.html:8
+msgid ""
+"LibreOffice is a free office suite packed with everything you need to create "
+"documents, spreadsheets and presentations. Compatible with Microsoft Office "
+"file formats, it gives you all the features you need, without the price tag."
+msgstr ""
+"LibreOffice is een gratis kantoorpakket dat alles bevat wat nodig is om "
+"documenten, rekenbladen en presentaties te maken. Het is compatibel met de "
+"bestandsformaten van Microsoft Office, zodat u beschikt over alle benodigde "
+"functionaliteit zonder het prijskaartje."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:16
+msgid "LibreOffice Writer"
+msgstr "LibreOffice Writer"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:20
+msgid "LibreOffice Calc"
+msgstr "LibreOffice Calc"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:24
+msgid "LibreOffice Impress"
+msgstr "LibreOffice Impress"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/photos.html:1
+msgid "Have fun with your photos"
+msgstr "Beleef plezier aan uw foto's"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/photos.html:8
+msgid ""
+"Shotwell is a handy photo manager that is ready for your gadgets. Connect a "
+"camera or a phone to transfer your photos, then it’s easy to share them and "
+"keep them safe. If you’re feeling creative, you can try lots of photo apps "
+"from the Ubuntu Software Center."
+msgstr ""
+"Shotwell is een handig fotobeheerprogramma, klaar voor al uw gadgets. Sluit "
+"een camera of telefoon aan om uw foto's over te zetten; zo kunt u ze "
+"eenvoudig delen en veilig bewaren. Als u in een creatieve bui bent, kunt u "
+"een van de vele fototoepassingen die zich in het Ubuntu softwarecentrum "
+"bevinden uitproberen."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:16
+msgid "Shotwell Photo Manager"
+msgstr "Shotwell fotobeheer"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:23
+msgid "GIMP Image Editor"
+msgstr "GIMP afbeeldingsbewerker"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:27
+msgid "Pitivi Video Editor"
+msgstr "Pitivi videobewerker"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/usc.html:1
+msgid "Find even more software"
+msgstr "Ontdek nog meer software"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/usc.html:8
+msgid ""
+"Say goodbye to searching the web for new software. With Ubuntu Software "
+"Center, you can find and install new apps with ease. Just type in what "
+"you’re looking for, or explore categories such as Science, Education and "
+"Games, alongside helpful reviews from other users."
+msgstr ""
+"Zeg maar vaarwel tegen het zoeken naar nieuwe software op het internet. Met "
+"het Ubuntu softwarecentrum kunt u heel eenvoudig nieuwe toepassingen zoeken "
+"en installeren. Typ gewoon in wat u zoekt, of doorzoek categorieën zoals "
+"Wetenschap, Educatie en Spelletjes. U vindt hier ook nuttige beoordelingen "
+"van andere gebruikers."
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/welcome.html:1
+msgid "Welcome to Ubuntu 14.04"
+msgstr "Welkom bij Ubuntu 14.04"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/welcome.html:8
+msgid ""
+"Fast and full of new features, the latest version of Ubuntu makes computing "
+"easier than ever. Here are just a few cool new things to look out for…"
+msgstr ""
+"De nieuwste versie van Ubuntu is snel en heeft heel veel nieuwe functies, "
+"waardoor het werken met de computer eenvoudiger dan ooit wordt gemaakt. Hier "
+"zijn slechts enkele van de mooie nieuwe dingen om naar uit te kijken..."
+
+#~ msgid "Your own personal cloud"
+#~ msgstr "Uw persoonlijke cloud"
+
+#~ msgid ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> gives "
+#~ "you 5GB of free cloud storage to access your files, share your photos and "
+#~ "<a href=\"https://one.ubuntu.com/services/music/\">stream your music</a> "
+#~ "to your computers, tablets and smartphones. Any photo you take appears on "
+#~ "all your devices, the instant you take it. Ubuntu One runs on Ubuntu, "
+#~ "Windows, Mac, Android, iOS and the web."
+#~ msgstr ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> geeft u "
+#~ "5GB gratis cloudopslag voor toegang tot uw bestanden, foto's delen en <a "
+#~ "href=\"https://one.ubuntu.com/services/music/\">muziek streamen</a> naar "
+#~ "uw computers, tablets en smartphones. Elke foto die u neemt verschijnt "
+#~ "direct op al uw apparaten. Ubuntu One draait op Ubuntu, Windows, Mac, "
+#~ "Android, iOS en het internet."
+
+#~ msgid "One account to log in to everything on Ubuntu"
+#~ msgstr "Eén account om u overal op Ubuntu aan te melden"
+
+#~ msgid "<strong>Make the most of Ubuntu with Ubuntu One.</strong>"
+#~ msgstr "<strong>Optimaal gebruik maken van Ubuntu met Ubuntu One.</strong>"
+
+#~ msgid "Ubuntu One is the single account to log in to everything on Ubuntu."
+#~ msgstr ""
+#~ "Met één account van Ubuntu One kunt u zich overal op Ubuntu aanmelden."
+
+#~ msgid "Get <strong>new apps</strong> from the Software Center"
+#~ msgstr "<strong>Nieuwe apps</strong> ophalen via het softwarecentrum"
+
+#~ msgid "Listen to <strong>your music collection</strong> and buy tracks"
+#~ msgstr ""
+#~ "Luisteren naar <strong>uw muziekverzameling</strong> en muzieknummers "
+#~ "kopen"
+
+#~ msgid "Access <strong>files and photos</strong> from all your devices"
+#~ msgstr ""
+#~ "Toegang tot <strong>bestanden en foto's</strong> vanaf al uw apparaten"
+
+#~ msgid "Welcome to Ubuntu 13.10"
+#~ msgstr "Welkom bij Ubuntu 13.10"

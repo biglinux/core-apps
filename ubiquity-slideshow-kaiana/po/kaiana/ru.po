@@ -1,0 +1,305 @@
+# Russian translation for ubiquity-slideshow-ubuntu
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the ubiquity-slideshow-ubuntu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubiquity-slideshow-ubuntu\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-04-02 11:07-0400\n"
+"PO-Revision-Date: 2014-02-25 09:49+0000\n"
+"Last-Translator: Jay ZDLin <Unknown>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-04-08 14:29+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/accessibility.html:1
+msgid "Access for everyone"
+msgstr "Доступность для всех"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/accessibility.html:8
+msgid ""
+"At the heart of the Ubuntu philosophy is the belief that computing is for "
+"everyone. With advanced accessibility tools and options to change language, "
+"colour scheme and text size, Ubuntu makes computing easy – whoever and "
+"wherever you are."
+msgstr ""
+"Сердцем философии Ubuntu является вера в то, что компьютеры должны быть "
+"доступны для всех. С улучшенными специальными возможностями и параметрами "
+"для изменения языка, цветовой схемы и размера текста Ubuntu облегчает работу "
+"на компьютере любому — кем бы вы ни были и где бы вы ни находились."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/accessibility.html:12
+msgid "Customization options"
+msgstr "Настройки параметров"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:16
+msgid "Appearance"
+msgstr "Внешний вид"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:20
+msgid "Assistive technologies"
+msgstr "Вспомогательные технологии"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:24
+msgid "Language support"
+msgstr "Языковая поддержка"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/browse.html:1
+msgid "Make the most of the web"
+msgstr "Всё для интернета"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/browse.html:8
+msgid ""
+"Ubuntu includes Firefox, the web browser used by millions of people around "
+"the world. And web applications you use frequently (like Facebook or Gmail, "
+"for example) can be pinned to your desktop for faster access, just like apps "
+"on your computer."
+msgstr ""
+"Ubuntu поставляется с веб-браузером Firefox, используемым миллионами людей "
+"во всём мире. Часто используемые Веб-приложения (например Facebook или "
+"Gmail) могут быть расположены на рабочем столе для получения более "
+"оперативного доступа, как и к обычным приложениям."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:12
+#: slideshows/ubuntu/slides/music.html:11
+#: slideshows/ubuntu/slides/office.html:12
+#: slideshows/ubuntu/slides/photos.html:12
+msgid "Included software"
+msgstr "Установленные программы"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:16
+msgid "Firefox web browser"
+msgstr "Веб-браузер Firefox"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:19
+#: slideshows/ubuntu/slides/photos.html:19
+msgid "Supported software"
+msgstr "Поддерживаемые приложения"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:23
+msgid "Flash"
+msgstr "Флеш-анимация"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:27
+msgid "Chromium"
+msgstr "Chromium"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/gethelp.html:1
+msgid "Any questions?"
+msgstr "Возникли вопросы?"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/gethelp.html:8
+msgid ""
+"Check out <a href=\"http://askubuntu.com/\">askubuntu.com</a> for answers to "
+"all your Ubuntu questions. There’s a good chance your question will have "
+"been answered already and, if not, you’ll find thousands of volunteers eager "
+"to help. For more support options, go to <a href=\"http://www.ubuntu.com/"
+"support\">ubuntu.com/support</a>."
+msgstr ""
+"Посетите <a href=\"http://askubuntu.com/\">askubuntu.com</a>, чтобы получить "
+"ответы на все вопросы, касающиеся Ubuntu. Есть вероятность, что ответ на ваш "
+"вопрос уже существует, если это не так, вы сможете найти тысячи "
+"добровольцев, готовых вам помочь. Дополнительные варианты поддержки "
+"представлены по адресу <a href=\"http://www.ubuntu.com/support\">ubuntu.com/"
+"support</a>."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/gethelp.html:17
+msgid "Let’s talk Ubuntu"
+msgstr "Давайте поговорим о Ubuntu"
+
+#. type: Content of: <div><div><div><div>
+#: slideshows/ubuntu/slides/gethelp.html:18
+msgid "I'm installing #Ubuntu!"
+msgstr "Я устанавливаю #Ubuntu!"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/music.html:2
+msgid "Take your music with you"
+msgstr "Ваша музыка всегда с вами"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/music.html:7
+msgid ""
+"Ubuntu comes with the amazing Rhythmbox music player. With advanced playback "
+"options, it's simple to queue up the perfect songs. And it works great with "
+"CDs and portable music players, so you can enjoy all your music wherever you "
+"go."
+msgstr ""
+"В состав Ubuntu входит замечательный музыкальный проигрыватель Rhythmbox. С "
+"его расширенными опциями воспроизведения очень просто создать список "
+"воспроизведения из превосходных музыкальных композиций. И он отлично "
+"работает с компакт-дисками и портативными аудиоплеерами, так что вы сможете "
+"наслаждаться музыкой, куда бы вы ни пошли."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/music.html:15
+msgid "Rhythmbox Music Player"
+msgstr "Музыкальный проигрыватель Rhythmbox"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/office.html:1
+msgid "Everything you need for the office"
+msgstr "Всё, что нужно для офиса"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/office.html:8
+msgid ""
+"LibreOffice is a free office suite packed with everything you need to create "
+"documents, spreadsheets and presentations. Compatible with Microsoft Office "
+"file formats, it gives you all the features you need, without the price tag."
+msgstr ""
+"LibreOffice — свободный комплект офисных приложений, в состав которого "
+"входит всё необходимое для создания документов, электронных таблиц и "
+"презентаций. Будучи совместимым с форматами файлов Microsoft Office, он "
+"представляет вам все необходимые возможности, и в то же время абсолютно "
+"бесплатен."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:16
+msgid "LibreOffice Writer"
+msgstr "LibreOffice Writer"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:20
+msgid "LibreOffice Calc"
+msgstr "LibreOffice Calc"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:24
+msgid "LibreOffice Impress"
+msgstr "LibreOffice Impress"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/photos.html:1
+msgid "Have fun with your photos"
+msgstr "Наслаждайтесь вашими фотографиями"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/photos.html:8
+msgid ""
+"Shotwell is a handy photo manager that is ready for your gadgets. Connect a "
+"camera or a phone to transfer your photos, then it’s easy to share them and "
+"keep them safe. If you’re feeling creative, you can try lots of photo apps "
+"from the Ubuntu Software Center."
+msgstr ""
+"Shotwell — это удобный менеджер фотографий. Подсоедините фотоаппарат или "
+"телефон, скопируйте фотографии для безопасного хранения и быстрого доступа. "
+"Попробуйте множество программ для редактирования фотографий в Центре "
+"приложений Ubuntu."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:16
+msgid "Shotwell Photo Manager"
+msgstr "Менеджер фотографий Shotwell"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:23
+msgid "GIMP Image Editor"
+msgstr "Редактор изображений GIMP"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:27
+msgid "Pitivi Video Editor"
+msgstr "Видеоредактор Pitivi"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/usc.html:1
+msgid "Find even more software"
+msgstr "Дополнительные программы"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/usc.html:8
+msgid ""
+"Say goodbye to searching the web for new software. With Ubuntu Software "
+"Center, you can find and install new apps with ease. Just type in what "
+"you’re looking for, or explore categories such as Science, Education and "
+"Games, alongside helpful reviews from other users."
+msgstr ""
+"Скажите \"Нет!\" поиску новых программ в интернете. Центр приложений Ubuntu "
+"предлагает вам поиск и простую установку приложений. Введите поисковый "
+"запрос, ознакомьтесь с различными категориями программ, а также отзывами "
+"пользователей."
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/welcome.html:1
+msgid "Welcome to Ubuntu 14.04"
+msgstr "Рады представить вам Ubuntu 14.04"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/welcome.html:8
+msgid ""
+"Fast and full of new features, the latest version of Ubuntu makes computing "
+"easier than ever. Here are just a few cool new things to look out for…"
+msgstr ""
+"Быстрая и современная, последняя версия Ubuntu упрощает работу за "
+"компьютером. Здесь перечислены некоторые новые возможности…"
+
+#~ msgid "Your own personal cloud"
+#~ msgstr "Ваше персональное облако"
+
+#~ msgid ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> gives "
+#~ "you 5GB of free cloud storage to access your files, share your photos and "
+#~ "<a href=\"https://one.ubuntu.com/services/music/\">stream your music</a> "
+#~ "to your computers, tablets and smartphones. Any photo you take appears on "
+#~ "all your devices, the instant you take it. Ubuntu One runs on Ubuntu, "
+#~ "Windows, Mac, Android, iOS and the web."
+#~ msgstr ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> "
+#~ "предоставляет 5 ГБ места в облачном хранилище, где вы можете сохранять и "
+#~ "делиться фотографиями, файлами и возможностью <a href=\"https://one."
+#~ "ubuntu.com/services/music/\">трансляции вашей музыки</a> на другие "
+#~ "компьютеры, планшеты и коммуникаторы. Создаваемые фотографии появляются "
+#~ "на всех ваших устройствах. Ubuntu One совместима с Ubuntu, Windows, Mac, "
+#~ "Android, iOS, также предусмотрен веб-доступ."
+
+#~ msgid "One account to log in to everything on Ubuntu"
+#~ msgstr "Одна учётная запись для доступа ко всем возможностям Ubuntu"
+
+#~ msgid "<strong>Make the most of Ubuntu with Ubuntu One.</strong>"
+#~ msgstr ""
+#~ "<strong>Получите максимум возможного от Ubuntu с помощью Ubuntu One.</"
+#~ "strong>"
+
+#~ msgid "Ubuntu One is the single account to log in to everything on Ubuntu."
+#~ msgstr ""
+#~ "Ubuntu One — одна учётная запись для доступа ко всем возможностям Ubuntu."
+
+#~ msgid "Get <strong>new apps</strong> from the Software Center"
+#~ msgstr ""
+#~ "Устанавливайте <strong>новые приложения</strong> из Центра приложений"
+
+#~ msgid "Listen to <strong>your music collection</strong> and buy tracks"
+#~ msgstr ""
+#~ "Прослушивайте <strong>свою музыкальную коллекцию</strong> и покупайте "
+#~ "новые музыкальные композиции"
+
+#~ msgid "Access <strong>files and photos</strong> from all your devices"
+#~ msgstr ""
+#~ "Осуществляйте доступ к <strong>файлам и фотографиям</strong> на всех "
+#~ "ваших устройствах"
+
+#~ msgid "Welcome to Ubuntu 13.10"
+#~ msgstr "Добро пожаловать в Ubuntu 13.10"

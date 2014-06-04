@@ -1,0 +1,301 @@
+# Finnish translation for ubiquity-slideshow-ubuntu
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the ubiquity-slideshow-ubuntu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubiquity-slideshow-ubuntu\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-04-02 11:07-0400\n"
+"PO-Revision-Date: 2014-03-02 09:51+0000\n"
+"Last-Translator: Jiri Grönroos <Unknown>\n"
+"Language-Team: Finnish <fi@li.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-04-08 14:29+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/accessibility.html:1
+msgid "Access for everyone"
+msgstr "Esteetön kaikille"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/accessibility.html:8
+msgid ""
+"At the heart of the Ubuntu philosophy is the belief that computing is for "
+"everyone. With advanced accessibility tools and options to change language, "
+"colour scheme and text size, Ubuntu makes computing easy – whoever and "
+"wherever you are."
+msgstr ""
+"Ubuntun filosofian ytimessä on usko siihen, että tietokoneiden käyttö sopii "
+"kaikille. Tämän takia Ubuntu tarjoaa erilaisia mukauttamismahdollisuuksia "
+"ollakseen helppokäyttöinen mahdollisimman monelle ihmiselle kaikkialla "
+"maailmassa. Tarjolla ovat muun muassa edistyneet esteettömyystoiminnot sekä "
+"lukuisat valinnaiset kirjasimet, väriteemat ja kielet."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/accessibility.html:12
+msgid "Customization options"
+msgstr "Mukauttamisvalinnat"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:16
+msgid "Appearance"
+msgstr "Ulkoasu"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:20
+msgid "Assistive technologies"
+msgstr "Esteettömyystekniikat"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:24
+msgid "Language support"
+msgstr "Kielituki"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/browse.html:1
+msgid "Make the most of the web"
+msgstr "Ota kaikki irti Internetistä"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/browse.html:8
+msgid ""
+"Ubuntu includes Firefox, the web browser used by millions of people around "
+"the world. And web applications you use frequently (like Facebook or Gmail, "
+"for example) can be pinned to your desktop for faster access, just like apps "
+"on your computer."
+msgstr ""
+"Ubuntu sisältää Firefoxin, miljoonien ihmisten käyttämän verkkoselaimen. "
+"Tärkeimmät verkkosovellukset, kuten Facebook tai Gmail, voidaan kiinnittää "
+"työpöydälle, jolloin niiden käyttö sujuu vaivatta tavallisten sovellusten "
+"tapaan."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:12
+#: slideshows/ubuntu/slides/music.html:11
+#: slideshows/ubuntu/slides/office.html:12
+#: slideshows/ubuntu/slides/photos.html:12
+msgid "Included software"
+msgstr "Sisältyvät ohjelmistot"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:16
+msgid "Firefox web browser"
+msgstr "Firefox-selain"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:19
+#: slideshows/ubuntu/slides/photos.html:19
+msgid "Supported software"
+msgstr "Tuetut ohjelmistot"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:23
+msgid "Flash"
+msgstr "Flash"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:27
+msgid "Chromium"
+msgstr "Chromium"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/gethelp.html:1
+msgid "Any questions?"
+msgstr "Kysyttävää?"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/gethelp.html:8
+msgid ""
+"Check out <a href=\"http://askubuntu.com/\">askubuntu.com</a> for answers to "
+"all your Ubuntu questions. There’s a good chance your question will have "
+"been answered already and, if not, you’ll find thousands of volunteers eager "
+"to help. For more support options, go to <a href=\"http://www.ubuntu.com/"
+"support\">ubuntu.com/support</a>."
+msgstr ""
+"Ubuntu-kysymyksiä ja niihin vastauksia löytyy englanninkieliseltä <a href="
+"\"http://askubuntu.com/\">askubuntu.com</a>-sivustolta. Kysymykseesi saattaa "
+"olla vastaus valmiina, mutta jos ei ole, tuhannet ihmiset ovat valmiita "
+"auttamaan. Suomenkielisestä tuesta löytyy lisätietoja osoitteesta <a href="
+"\"http://www.ubuntu-fi.org\">ubuntu-fi.org</a>."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/gethelp.html:17
+msgid "Let’s talk Ubuntu"
+msgstr "Puhutaanpa Ubuntusta"
+
+#. type: Content of: <div><div><div><div>
+#: slideshows/ubuntu/slides/gethelp.html:18
+msgid "I'm installing #Ubuntu!"
+msgstr "#Ubuntu - asennan sitä nyt!"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/music.html:2
+msgid "Take your music with you"
+msgstr "Ota musiikki mukaasi"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/music.html:7
+msgid ""
+"Ubuntu comes with the amazing Rhythmbox music player. With advanced playback "
+"options, it's simple to queue up the perfect songs. And it works great with "
+"CDs and portable music players, so you can enjoy all your music wherever you "
+"go."
+msgstr ""
+"Ubuntussa on upea Rytmilaatikko-musiikkisoitin. Edistyksellisten "
+"soittomahdollisuuksien ansiosta parhaiden kappaleiden löytäminen on helppoa. "
+"Se toimii loistavasti myös CD-levyjen ja kannettavien musiikkisoittimien "
+"kanssa. Musiikin kuunteleminen ei ole koskaan ollut näin nautinnollista."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/music.html:15
+msgid "Rhythmbox Music Player"
+msgstr "Rytmilaatikko-musiikkisoitin"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/office.html:1
+msgid "Everything you need for the office"
+msgstr "Kaikenkattava toimisto-ohjelmisto"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/office.html:8
+msgid ""
+"LibreOffice is a free office suite packed with everything you need to create "
+"documents, spreadsheets and presentations. Compatible with Microsoft Office "
+"file formats, it gives you all the features you need, without the price tag."
+msgstr ""
+"LibreOffice on vapaa toimisto-ohjelmisto, joka sisältää kaiken tarvittavan "
+"asiakirjojen, taulukoiden ja esitysten luomiseen. LibreOffice on "
+"yhteensopiva Microsoft Office -tiedostomuotojen kanssa, ja sisältää kaikki "
+"tarvittavat ominaisuudet ilman hintalappua."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:16
+msgid "LibreOffice Writer"
+msgstr "LibreOffice Writer"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:20
+msgid "LibreOffice Calc"
+msgstr "LibreOffice Calc"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:24
+msgid "LibreOffice Impress"
+msgstr "LibreOffice Impress"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/photos.html:1
+msgid "Have fun with your photos"
+msgstr "Leikittele valokuvillasi"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/photos.html:8
+msgid ""
+"Shotwell is a handy photo manager that is ready for your gadgets. Connect a "
+"camera or a phone to transfer your photos, then it’s easy to share them and "
+"keep them safe. If you’re feeling creative, you can try lots of photo apps "
+"from the Ubuntu Software Center."
+msgstr ""
+"Shotwellillä valokuvien hallinta on helppoa. Kuvien siirtäminen, jakaminen "
+"ja varmuuskopioiminen onnistuu helposti yhdistämällä kamera tietokoneeseen "
+"ilman ajureiden asentelua. Ubuntun sovellusvalikoimasta löytyy useita "
+"kuvanmuokkausohjelmistoja."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:16
+msgid "Shotwell Photo Manager"
+msgstr "Shotwell - valokuvien hallinta"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:23
+msgid "GIMP Image Editor"
+msgstr "GIMP-kuvankäsittely"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:27
+msgid "Pitivi Video Editor"
+msgstr "Pitivi-videomuokkain"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/usc.html:1
+msgid "Find even more software"
+msgstr "Löydä upeita sovelluksia"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/usc.html:8
+msgid ""
+"Say goodbye to searching the web for new software. With Ubuntu Software "
+"Center, you can find and install new apps with ease. Just type in what "
+"you’re looking for, or explore categories such as Science, Education and "
+"Games, alongside helpful reviews from other users."
+msgstr ""
+"Ohjelmien etsiminen ja latailu epäilyttäviltä verkkosivuilta on historiaa. "
+"Ubuntun sovellusvalikoiman avulla sovelluksien etsiminen ja asentaminen "
+"sujuu vaivatta. Etsi suoraan sovelluksen nimellä tai avainsanalla tai selaa "
+"eri luokkia, kuten tiede, koulutus ja pelit. Muiden käyttäjien antamat "
+"arvostelut helpottavat valintaasi."
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/welcome.html:1
+msgid "Welcome to Ubuntu 14.04"
+msgstr "Tervetuloa, tämä on Ubuntu 14.04"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/welcome.html:8
+msgid ""
+"Fast and full of new features, the latest version of Ubuntu makes computing "
+"easier than ever. Here are just a few cool new things to look out for…"
+msgstr ""
+"Ubuntun uusimman version ennennäkemätön nopeus ja uudet ominaisuudet tekevät "
+"tietokoneen käyttämisestä helpompaa kuin koskaan ennen. Kiinnitä seuraaviin "
+"asioihin huomiota, kun tutustut uuteen käyttöjärjestelmääsi..."
+
+#~ msgid "Your own personal cloud"
+#~ msgstr "Henkilökohtainen pilvesi"
+
+#~ msgid ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> gives "
+#~ "you 5GB of free cloud storage to access your files, share your photos and "
+#~ "<a href=\"https://one.ubuntu.com/services/music/\">stream your music</a> "
+#~ "to your computers, tablets and smartphones. Any photo you take appears on "
+#~ "all your devices, the instant you take it. Ubuntu One runs on Ubuntu, "
+#~ "Windows, Mac, Android, iOS and the web."
+#~ msgstr ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> tarjoaa "
+#~ "viisi gigatavua ilmaista pilvitallennustilaa tiedostoille, kuvien "
+#~ "jakamiseen ja <a href=\"https://one.ubuntu.com/services/music/\">musiikin "
+#~ "suoratoistoon</a> tietokoneille, taulutietokoneille ja älypuhelimille. "
+#~ "Halutessasi ottamasi valokuvat ovat välittömästi käytettävissä kaikilla "
+#~ "laitteillasi. Ubuntu One toimii Ubuntulla, Windowsilla, Macilla, "
+#~ "Androidilla, iOS:lla ja verkkoselaimella."
+
+#~ msgid "One account to log in to everything on Ubuntu"
+#~ msgstr "Ubuntu-maailmaan kirjautuminen yhdellä käyttäjätilillä"
+
+#~ msgid "<strong>Make the most of Ubuntu with Ubuntu One.</strong>"
+#~ msgstr "<strong>Ota hyöty irti Ubuntusta Ubuntu Onella.</strong>"
+
+#~ msgid "Ubuntu One is the single account to log in to everything on Ubuntu."
+#~ msgstr ""
+#~ "Ubuntu One on käyttäjätili, jolla voidaan kirjautua kaikkiin Ubuntu-"
+#~ "palveluihin."
+
+#~ msgid "Get <strong>new apps</strong> from the Software Center"
+#~ msgstr ""
+#~ "Hanki <strong>uusia sovelluksia</strong> Ubuntun sovellusvalikoimasta"
+
+#~ msgid "Listen to <strong>your music collection</strong> and buy tracks"
+#~ msgstr ""
+#~ "Kuuntele <strong>musiikkikokoelmaa</strong> ja osta uusia kappaleita"
+
+#~ msgid "Access <strong>files and photos</strong> from all your devices"
+#~ msgstr "Käytä <strong>tiedostoja ja valokuvia</strong> kaikilla laitteilla"
+
+#~ msgid "Welcome to Ubuntu 13.10"
+#~ msgstr "Tervetuloa, tämä on Ubuntu 13.10"

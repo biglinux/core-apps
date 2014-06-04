@@ -1,0 +1,291 @@
+# Icelandic translation for ubiquity-slideshow-ubuntu
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the ubiquity-slideshow-ubuntu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubiquity-slideshow-ubuntu\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-04-02 11:07-0400\n"
+"PO-Revision-Date: 2013-07-01 03:28+0000\n"
+"Last-Translator: Andri Thorlacius <Unknown>\n"
+"Language-Team: Icelandic <is@li.org>\n"
+"Language: is\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-04-08 14:29+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/accessibility.html:1
+msgid "Access for everyone"
+msgstr "Aðgangur fyrir alla"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/accessibility.html:8
+msgid ""
+"At the heart of the Ubuntu philosophy is the belief that computing is for "
+"everyone. With advanced accessibility tools and options to change language, "
+"colour scheme and text size, Ubuntu makes computing easy – whoever and "
+"wherever you are."
+msgstr ""
+"Í kjarna Ubuntu hugsjónarinar er sú trú að tölvunotkun séu fyrir alla. Með "
+"framsóttum aðgangs verkfærum og möguleikanum að skypa um tungumál, litaþema, "
+"letur stærð, gerir Ubuntu tölvunotkun auðvelda - hversem og hvarsem þú ert."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/accessibility.html:12
+msgid "Customization options"
+msgstr "Sérsníðimöguleikar"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:16
+msgid "Appearance"
+msgstr "Útlit"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:20
+msgid "Assistive technologies"
+msgstr "Hjálpartækni"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:24
+msgid "Language support"
+msgstr "Tungumálastuðningur"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/browse.html:1
+msgid "Make the most of the web"
+msgstr "Fáðu sem mest út úr vefnum"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/browse.html:8
+msgid ""
+"Ubuntu includes Firefox, the web browser used by millions of people around "
+"the world. And web applications you use frequently (like Facebook or Gmail, "
+"for example) can be pinned to your desktop for faster access, just like apps "
+"on your computer."
+msgstr ""
+"Ubuntu inniheldur Firefox, vafran sem er notaður að milljónum manns um allan "
+"heim. Síður sem þú notar reglulega (svo sem Facebook eða Gmail, sem dæmi) er "
+"hægt að pinna á skjáborðið svo þú sért fljótari að nota það, alveg eins og "
+"önnur forrit á tölvunni þinni."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:12
+#: slideshows/ubuntu/slides/music.html:11
+#: slideshows/ubuntu/slides/office.html:12
+#: slideshows/ubuntu/slides/photos.html:12
+msgid "Included software"
+msgstr "Innifalinn hugbúnaður"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:16
+msgid "Firefox web browser"
+msgstr "Firefox vafri"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:19
+#: slideshows/ubuntu/slides/photos.html:19
+msgid "Supported software"
+msgstr "Studdur hugbúnaður"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:23
+msgid "Flash"
+msgstr "Flash"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:27
+msgid "Chromium"
+msgstr "Chromium"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/gethelp.html:1
+msgid "Any questions?"
+msgstr "Einhverjar spurningar?"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/gethelp.html:8
+msgid ""
+"Check out <a href=\"http://askubuntu.com/\">askubuntu.com</a> for answers to "
+"all your Ubuntu questions. There’s a good chance your question will have "
+"been answered already and, if not, you’ll find thousands of volunteers eager "
+"to help. For more support options, go to <a href=\"http://www.ubuntu.com/"
+"support\">ubuntu.com/support</a>."
+msgstr ""
+"Skoðaðu <a href=\"http://askubuntu.com/\">askubuntu.com</a>til að fá svör "
+"við öllum Ubuntu spurningunum þínum. Það eru góðar líkur á að spurningunni "
+"þinni hafi þegar verið svarað og, ef ekki, þá munt þú finna þig meðal fjölda "
+"sjálfboðaliða sem eru æstir til að hjálpa. Fyrir fleyri valkosti, farðu á <a "
+"href=\"http://www.ubuntu.com/support\">ubuntu.com/support</a>."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/gethelp.html:17
+msgid "Let’s talk Ubuntu"
+msgstr "Tölum um Ubuntu"
+
+#. type: Content of: <div><div><div><div>
+#: slideshows/ubuntu/slides/gethelp.html:18
+msgid "I'm installing #Ubuntu!"
+msgstr "Ég er að setja upp #Ubuntu"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/music.html:2
+msgid "Take your music with you"
+msgstr "Taktu tónlistina þína með þér"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/music.html:7
+msgid ""
+"Ubuntu comes with the amazing Rhythmbox music player. With advanced playback "
+"options, it's simple to queue up the perfect songs. And it works great with "
+"CDs and portable music players, so you can enjoy all your music wherever you "
+"go."
+msgstr ""
+"Ubuntu kemur með hinum merka Rhythmbox tónlistar spilara. Með þróuðum "
+"spilunar möguleikum, er auðvelt að raða upp hinum fullkomnu lögum. Og hann "
+"virkar vel með geysladiskum og meðfærilegum tónlistarspilurum, svo þú getir "
+"notið allrar tónlistarinnar þinnar hvert sem þú ferð."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/music.html:15
+msgid "Rhythmbox Music Player"
+msgstr "Rythmbox Tónlistarspilari"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/office.html:1
+msgid "Everything you need for the office"
+msgstr "Allt sem þú þarft á skrifstofunni"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/office.html:8
+msgid ""
+"LibreOffice is a free office suite packed with everything you need to create "
+"documents, spreadsheets and presentations. Compatible with Microsoft Office "
+"file formats, it gives you all the features you need, without the price tag."
+msgstr ""
+"LibreOffice er frír og opin skrifstofu pakki með öllu sem þú þarft til að "
+"búa til skjöl, reiknirit og kynningar. Samhæfur með Microsoft Office "
+"skráarsniðum, gefur hann þér alla möguleikana sem þú þarft án þess að bera "
+"verð miða."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:16
+msgid "LibreOffice Writer"
+msgstr "LibreOffice Writer"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:20
+msgid "LibreOffice Calc"
+msgstr "LibreOffice Calc"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:24
+msgid "LibreOffice Impress"
+msgstr "LibreOffice Impress"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/photos.html:1
+msgid "Have fun with your photos"
+msgstr "Gerðu myndvinnsluna skemmtilegri"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/photos.html:8
+msgid ""
+"Shotwell is a handy photo manager that is ready for your gadgets. Connect a "
+"camera or a phone to transfer your photos, then it’s easy to share them and "
+"keep them safe. If you’re feeling creative, you can try lots of photo apps "
+"from the Ubuntu Software Center."
+msgstr ""
+"Shotwell er handhægt forrit til myndaumsýslu, tilbúið til að tengjast "
+"græjunum þínum. Tengdu myndavél eða síma til að ná í myndirnar þínar, þá er "
+"auðvelt að deila þeim og geyma. Ef þú ert nýjungagjarn eru fjölmörg "
+"myndvinnsluforrrit í Ubuntu Software Center."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:16
+msgid "Shotwell Photo Manager"
+msgstr "Shotwell Myndaumsýsla"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:23
+msgid "GIMP Image Editor"
+msgstr "GIMP Myndvinnsluforrit"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:27
+msgid "Pitivi Video Editor"
+msgstr "Pitivi Myndbands vinnslu forrit"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/usc.html:1
+msgid "Find even more software"
+msgstr "Finndu jafnvel enn meiri hugbúnað"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/usc.html:8
+msgid ""
+"Say goodbye to searching the web for new software. With Ubuntu Software "
+"Center, you can find and install new apps with ease. Just type in what "
+"you’re looking for, or explore categories such as Science, Education and "
+"Games, alongside helpful reviews from other users."
+msgstr ""
+"Kveddu þá hugsun að leita á netinu eftir hugbúnaði. Með Ubuntu Software "
+"Center, getur þú fundið og sett upp ný forrit auðveldlega. Skrifaðu bara það "
+"sem þú leitar að, eða kannaðu flokka svo sem Vísindi, Kennsla og Leikir, "
+"ásamt hjálplegur ummælum frá öðrum notendum."
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/welcome.html:1
+msgid "Welcome to Ubuntu 14.04"
+msgstr ""
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/welcome.html:8
+msgid ""
+"Fast and full of new features, the latest version of Ubuntu makes computing "
+"easier than ever. Here are just a few cool new things to look out for…"
+msgstr ""
+"Hraðvirkt og fullt af nýjum eiginleikum, nýjasta útgáfan af Ubuntu gerir "
+"tölvuvinnu auðveldari en nokkrusinni. Hér eru bara nokkrir flottir nýjir "
+"eiginlegar til að horfa eftir..."
+
+#~ msgid "Your own personal cloud"
+#~ msgstr "Þitt eigið persónulega ský"
+
+#~ msgid ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> gives "
+#~ "you 5GB of free cloud storage to access your files, share your photos and "
+#~ "<a href=\"https://one.ubuntu.com/services/music/\">stream your music</a> "
+#~ "to your computers, tablets and smartphones. Any photo you take appears on "
+#~ "all your devices, the instant you take it. Ubuntu One runs on Ubuntu, "
+#~ "Windows, Mac, Android, iOS and the web."
+#~ msgstr ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> gefur "
+#~ "þér 5GB af frírri skýjahyrslu til að geima og nalgast gögnin þín, deila "
+#~ "myndunum þínum og <a href=\"https://one.ubuntu.com/services/music/"
+#~ "\">streima tónlistina þína</a> í tölvuna, spjaldtölvuna eða snjallsímann. "
+#~ "Myndir byrtast samstundir á tækjum, um leið og þú tekur þær. Ubuntu One "
+#~ "keyrir á Ubuntu, Windows, Mac, Android, iOS og á vefnum."
+
+#~ msgid "One account to log in to everything on Ubuntu"
+#~ msgstr "Einn reikningur til að skrá þig inn í allt Ubuntu"
+
+#~ msgid "<strong>Make the most of Ubuntu with Ubuntu One.</strong>"
+#~ msgstr "<strong>Hafðu sem mest út úr Ubuntu með Ubuntu One.</strong>"
+
+#~ msgid "Ubuntu One is the single account to log in to everything on Ubuntu."
+#~ msgstr ""
+#~ "Ubuntu One er eini notanda reikningurinn til að skrá þig inn í allt Ubuntu"
+
+#~ msgid "Get <strong>new apps</strong> from the Software Center"
+#~ msgstr "Sæktu <strong>ný forrit</strong> úr Hugbúnaðar Miðstöðinni"
+
+#~ msgid "Listen to <strong>your music collection</strong> and buy tracks"
+#~ msgstr "Hlustaðu á <strong>tónlistar safnið þitt</strong> og kauptu lög"
+
+#~ msgid "Access <strong>files and photos</strong> from all your devices"
+#~ msgstr "Skoðaðu <strong>skrár og myndir</strong> frá öllum tækjunum þínum"

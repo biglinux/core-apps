@@ -1,0 +1,302 @@
+# Italian translation for ubiquity-slideshow-ubuntu
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the ubiquity-slideshow-ubuntu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubiquity-slideshow-ubuntu\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-04-02 11:07-0400\n"
+"PO-Revision-Date: 2014-02-28 15:49+0000\n"
+"Last-Translator: Milo Casagrande <milo.casagrande@gmail.com>\n"
+"Language-Team: Italian <it@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-04-08 14:29+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/accessibility.html:1
+msgid "Access for everyone"
+msgstr "Accessibilità"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/accessibility.html:8
+msgid ""
+"At the heart of the Ubuntu philosophy is the belief that computing is for "
+"everyone. With advanced accessibility tools and options to change language, "
+"colour scheme and text size, Ubuntu makes computing easy – whoever and "
+"wherever you are."
+msgstr ""
+"«Il computer deve essere per tutti»: questo è il cuore della filosofia di "
+"Ubuntu. Grazie a strumenti avanzati per l'accessibilità e per modificare "
+"lingua, colori e dimensione del testo, Ubuntu rende l'utilizzo del computer "
+"alla portata di tutti."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/accessibility.html:12
+msgid "Customization options"
+msgstr "Opzioni di personalizzazione"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:16
+msgid "Appearance"
+msgstr "Aspetto"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:20
+msgid "Assistive technologies"
+msgstr "Tecnologie assistive"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:24
+msgid "Language support"
+msgstr "Supporto lingue"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/browse.html:1
+msgid "Make the most of the web"
+msgstr "Sfrutta il web al massimo"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/browse.html:8
+msgid ""
+"Ubuntu includes Firefox, the web browser used by millions of people around "
+"the world. And web applications you use frequently (like Facebook or Gmail, "
+"for example) can be pinned to your desktop for faster access, just like apps "
+"on your computer."
+msgstr ""
+"Ubuntu ti permette di navigare in Internet grazie a Firefox, il browser web "
+"utilizzato da milioni di persone in tutto il mondo. E le tue applicazioni "
+"web preferite, come Facebook o Gmail, ora possono essere aggiunte al "
+"desktop, come una normale applicazione del tuo computer."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:12
+#: slideshows/ubuntu/slides/music.html:11
+#: slideshows/ubuntu/slides/office.html:12
+#: slideshows/ubuntu/slides/photos.html:12
+msgid "Included software"
+msgstr "Programmi inclusi"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:16
+msgid "Firefox web browser"
+msgstr "Browser web Firefox"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:19
+#: slideshows/ubuntu/slides/photos.html:19
+msgid "Supported software"
+msgstr "Programmi supportati"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:23
+msgid "Flash"
+msgstr "Flash"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:27
+msgid "Chromium"
+msgstr "Chromium"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/gethelp.html:1
+msgid "Any questions?"
+msgstr "Domande?"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/gethelp.html:8
+msgid ""
+"Check out <a href=\"http://askubuntu.com/\">askubuntu.com</a> for answers to "
+"all your Ubuntu questions. There’s a good chance your question will have "
+"been answered already and, if not, you’ll find thousands of volunteers eager "
+"to help. For more support options, go to <a href=\"http://www.ubuntu.com/"
+"support\">ubuntu.com/support</a>."
+msgstr ""
+"Prova <a href=\"http://askubuntu.com/\">Ask Ubuntu</a>, il miglior posto per "
+"trovare una risposta alle tue domande riguardo Ubuntu. Con moltissime "
+"risposte già disponibili e migliaia di persone pronte ad aiutarti, troverai "
+"ciò che ti serve in pochissimo tempo. E se hai bisogno di una risposta in "
+"tempi certi, Canonical offre <a href=\"http://www.ubuntu.com/support"
+"\">supporto a pagamento</a> per utenti business. Per il supporto diretto e "
+"gratuito in italiano, fai riferimento al sito <a href=\"http://www.ubuntu.it/"
+"supporto\">ubuntu.it</a>."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/gethelp.html:17
+msgid "Let’s talk Ubuntu"
+msgstr "Parliamo di Ubuntu"
+
+#. type: Content of: <div><div><div><div>
+#: slideshows/ubuntu/slides/gethelp.html:18
+msgid "I'm installing #Ubuntu!"
+msgstr "Sto installando #Ubuntu!"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/music.html:2
+msgid "Take your music with you"
+msgstr "La tua musica sempre con te"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/music.html:7
+msgid ""
+"Ubuntu comes with the amazing Rhythmbox music player. With advanced playback "
+"options, it's simple to queue up the perfect songs. And it works great with "
+"CDs and portable music players, so you can enjoy all your music wherever you "
+"go."
+msgstr ""
+"Ubuntu dispone del riproduttore multimediale Rhythmbox. Ricco di opzioni "
+"avanzate, ascoltare la tua musica non è mai stato così facile. Puoi anche "
+"ascoltare i tuoi CD e collegare il tuo lettore portatile, per avere la tua "
+"musica sempre con te."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/music.html:15
+msgid "Rhythmbox Music Player"
+msgstr "Riproduttore musicale Rhythmbox"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/office.html:1
+msgid "Everything you need for the office"
+msgstr "Tutto il necessario per l'ufficio"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/office.html:8
+msgid ""
+"LibreOffice is a free office suite packed with everything you need to create "
+"documents, spreadsheets and presentations. Compatible with Microsoft Office "
+"file formats, it gives you all the features you need, without the price tag."
+msgstr ""
+"LibreOffice è una suite da ufficio libera e gratuita comprensiva di tutto "
+"ciò che ti può servire per creare documenti, fogli di calcolo e "
+"presentazioni. Compatibile con i formati di Microsoft Office, ha tutto le "
+"funzionalità di cui hai bisogno."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:16
+msgid "LibreOffice Writer"
+msgstr "LibreOffice Writer"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:20
+msgid "LibreOffice Calc"
+msgstr "LibreOffice Calc"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:24
+msgid "LibreOffice Impress"
+msgstr "LibreOffice Impress"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/photos.html:1
+msgid "Have fun with your photos"
+msgstr "Divertiti con le tue fotografie"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/photos.html:8
+msgid ""
+"Shotwell is a handy photo manager that is ready for your gadgets. Connect a "
+"camera or a phone to transfer your photos, then it’s easy to share them and "
+"keep them safe. If you’re feeling creative, you can try lots of photo apps "
+"from the Ubuntu Software Center."
+msgstr ""
+"Shotwell è un gestore di fotografie molto semplice da usare e pronto per i "
+"tuoi gadget. Collega la tua fotocamera o il tuo telefono e copia le tue "
+"fotografie: condividerle non è mai stato più semplice. Dà spazio al tuo lato "
+"creativo provando le molte applicazioni di grafica disponibili attraverso "
+"Ubuntu Software Center."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:16
+msgid "Shotwell Photo Manager"
+msgstr "Gestore di foto Shotwell"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:23
+msgid "GIMP Image Editor"
+msgstr "Editor di immagini GIMP"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:27
+msgid "Pitivi Video Editor"
+msgstr "Editor di video Pitivi"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/usc.html:1
+msgid "Find even more software"
+msgstr "Ancora più software"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/usc.html:8
+msgid ""
+"Say goodbye to searching the web for new software. With Ubuntu Software "
+"Center, you can find and install new apps with ease. Just type in what "
+"you’re looking for, or explore categories such as Science, Education and "
+"Games, alongside helpful reviews from other users."
+msgstr ""
+"Basta cercare applicazioni da installare sul web. Con «Ubuntu Software "
+"Center» puoi trovare e installarle in tutta facilità. Cerca quello di cui "
+"hai bisogno o esplora le categorie come giochi, scienza e istruzione e leggi "
+"le recensioni di molti utenti."
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/welcome.html:1
+msgid "Welcome to Ubuntu 14.04"
+msgstr "Benvenuti in Ubuntu 14.04"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/welcome.html:8
+msgid ""
+"Fast and full of new features, the latest version of Ubuntu makes computing "
+"easier than ever. Here are just a few cool new things to look out for…"
+msgstr ""
+"Sempre più veloce e con moltissime novità, l'ultima versione di Ubuntu rende "
+"l'uso del computer ancora più facile. Ecco alcune delle nuove "
+"caratteristiche..."
+
+#~ msgid "Your own personal cloud"
+#~ msgstr "Il tuo cloud personale"
+
+#~ msgid ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> gives "
+#~ "you 5GB of free cloud storage to access your files, share your photos and "
+#~ "<a href=\"https://one.ubuntu.com/services/music/\">stream your music</a> "
+#~ "to your computers, tablets and smartphones. Any photo you take appears on "
+#~ "all your devices, the instant you take it. Ubuntu One runs on Ubuntu, "
+#~ "Windows, Mac, Android, iOS and the web."
+#~ msgstr ""
+#~ "Un account gratuito con <a href=\"https://one.ubuntu.com/services/free/"
+#~ "\">Ubuntu One</a> ti offre 5GB di spazio cloud da poter utilizzare per "
+#~ "archiviare e accedere ai tuoi file, le tue fotografie e per lo <a href="
+#~ "\"https://one.ubuntu.com/services/music/\">streaming musicale</a> verso i "
+#~ "tuoi computer, tablet o smartphone. Tutte le foto che scatti vengono "
+#~ "sincronizzate istantaneamente su tutti i tuoi dispositivi. Ubuntu One è "
+#~ "disponibile per Ubuntu, Windows, Mac, Android, iOS e via web."
+
+#~ msgid "One account to log in to everything on Ubuntu"
+#~ msgstr "Un unico account per l'accesso a tutto in Ubuntu"
+
+#~ msgid "<strong>Make the most of Ubuntu with Ubuntu One.</strong>"
+#~ msgstr "<strong>Sfrutta al massimo Ubuntu con Ubuntu One.</strong>"
+
+#~ msgid "Ubuntu One is the single account to log in to everything on Ubuntu."
+#~ msgstr ""
+#~ "Ubuntu One è l'unico account necessario per accedere a tutto tramite "
+#~ "Ubuntu."
+
+#~ msgid "Get <strong>new apps</strong> from the Software Center"
+#~ msgstr "Scarica <strong>nuove applicazioni</strong> dal Software Center"
+
+#~ msgid "Listen to <strong>your music collection</strong> and buy tracks"
+#~ msgstr ""
+#~ "Ascolta la <strong>tua collezione musicale</strong> e compra nuove canzoni"
+
+#~ msgid "Access <strong>files and photos</strong> from all your devices"
+#~ msgstr "Accedi a <strong>file e foto</strong> da tutti i tuoi dispositivi"
+
+#~ msgid "Welcome to Ubuntu 13.10"
+#~ msgstr "Benvenuti in Ubuntu 13.10"

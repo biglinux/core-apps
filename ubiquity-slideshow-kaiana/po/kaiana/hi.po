@@ -1,0 +1,290 @@
+# Hindi translation for ubiquity-slideshow-ubuntu
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the ubiquity-slideshow-ubuntu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubiquity-slideshow-ubuntu\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-04-02 11:07-0400\n"
+"PO-Revision-Date: 2014-03-22 16:25+0000\n"
+"Last-Translator: Shubham Rao <cshubhamrao@gmail.com>\n"
+"Language-Team: Hindi <hi@li.org>\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-04-08 14:29+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/accessibility.html:1
+msgid "Access for everyone"
+msgstr "सभी के लिए अभिगम"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/accessibility.html:8
+msgid ""
+"At the heart of the Ubuntu philosophy is the belief that computing is for "
+"everyone. With advanced accessibility tools and options to change language, "
+"colour scheme and text size, Ubuntu makes computing easy – whoever and "
+"wherever you are."
+msgstr ""
+"कंप्यूटिंग हर किसी के लिए है यही विश्वास उबुन्टु के सोच के मूल में बसा हुआ है| उन्नत "
+"एक्सेसिबिलिटी साधन, भाषाओं के विकल्प, रंग योजना और पाठ का आकार बदलने के साथ, उबुन्टु "
+"कंप्यूटिंग आसान बनाता है - चाहे आप कोई भी हों, कहीं भी हों|"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/accessibility.html:12
+msgid "Customization options"
+msgstr "मनपसंद बनाने का विकल्प"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:16
+msgid "Appearance"
+msgstr "रूप"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:20
+msgid "Assistive technologies"
+msgstr "सहायक प्रौद्योगिकी"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:24
+msgid "Language support"
+msgstr "भाषा समर्थन"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/browse.html:1
+msgid "Make the most of the web"
+msgstr "वैब से अधिक से अधिक प्राप्त करें ।"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/browse.html:8
+msgid ""
+"Ubuntu includes Firefox, the web browser used by millions of people around "
+"the world. And web applications you use frequently (like Facebook or Gmail, "
+"for example) can be pinned to your desktop for faster access, just like apps "
+"on your computer."
+msgstr ""
+"उबुनटु में फयरफोक्स, एक ऐसा वैब ब्राउसर है जो कि दुनिया में लाखों लोगों द्वारा प्रयोग किया "
+"जाता है, तथा आप जो वेब अनुप्रयोग अक्सर उपयोग करते हैं (जैसे कि फेसबुक या जीमेल )उन्हें आप "
+"डेस्कटोप पर किसी भी अन्य एपलिकेसन की तरह  लगा सकते हें ताकि आप उन्हें शिघ्रता से प्रयोग "
+"कर सकें ।,"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:12
+#: slideshows/ubuntu/slides/music.html:11
+#: slideshows/ubuntu/slides/office.html:12
+#: slideshows/ubuntu/slides/photos.html:12
+msgid "Included software"
+msgstr "समाहित सॉफ्टवेयर"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:16
+msgid "Firefox web browser"
+msgstr "फायरफॉक्स वेब ब्राउज़र"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:19
+#: slideshows/ubuntu/slides/photos.html:19
+msgid "Supported software"
+msgstr "समर्थित सॉफ्टवेयर"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:23
+msgid "Flash"
+msgstr "फ्लैश"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:27
+msgid "Chromium"
+msgstr "क्रोमियम"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/gethelp.html:1
+msgid "Any questions?"
+msgstr "क्या आपका कोई प्रश्न है ?"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/gethelp.html:8
+msgid ""
+"Check out <a href=\"http://askubuntu.com/\">askubuntu.com</a> for answers to "
+"all your Ubuntu questions. There’s a good chance your question will have "
+"been answered already and, if not, you’ll find thousands of volunteers eager "
+"to help. For more support options, go to <a href=\"http://www.ubuntu.com/"
+"support\">ubuntu.com/support</a>."
+msgstr ""
+"अपने किसी भी उबुन्टु से सम्बन्धित प्रश्न के लिए आप <a href=\"http://askubuntu.com/"
+"\">askubuntu.com</a> पर जा सकते हैं ।इसकी बहुत सम्भावना है कि आपके प्रश्नों के उत्तर पेहले "
+"से ही दिये जा चुके हों, अगर नहीं ,  तो आप हजारों स्वंयंसेवको को मदद करने के लिये उत्सुक  "
+"पायेंगे । मदद के अधिक विकल्पों के लियै इस वेब साइट पर जायें <a href=\"http://www.ubuntu."
+"com/support\">ubuntu.com/support</a>."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/gethelp.html:17
+msgid "Let’s talk Ubuntu"
+msgstr "चलो उबुन्टू के बात करते हैं"
+
+#. type: Content of: <div><div><div><div>
+#: slideshows/ubuntu/slides/gethelp.html:18
+msgid "I'm installing #Ubuntu!"
+msgstr "मैं #उबुन्टू को स्थापित कर रहा हूँ!"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/music.html:2
+msgid "Take your music with you"
+msgstr "अपना संगीत साथ लेकर चलें"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/music.html:7
+msgid ""
+"Ubuntu comes with the amazing Rhythmbox music player. With advanced playback "
+"options, it's simple to queue up the perfect songs. And it works great with "
+"CDs and portable music players, so you can enjoy all your music wherever you "
+"go."
+msgstr ""
+"उबुन्टु आता है अद्भुत रिदमबॉक्स संगीत प्लेयर के साथ।उन्नत पार्शव संगीत वादन विकल्पों के साथ, "
+"अब सभी उत्तम  संगीतों  को कतार में रखना आसन है। यह CD's  एवं वहनीय संगीत वादकों के साथ "
+"बहुत अच्छे से चलता है, जिससे आप अपने  सारे  संगीत का आनंद ले सकते हैं, जहाँ भी आप जाएँ ।"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/music.html:15
+msgid "Rhythmbox Music Player"
+msgstr "रिद्मबाक्स संगीत वादक"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/office.html:1
+msgid "Everything you need for the office"
+msgstr "वह सब कुछ जो आपको कार्यालय के लिए चाहिए"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/office.html:8
+msgid ""
+"LibreOffice is a free office suite packed with everything you need to create "
+"documents, spreadsheets and presentations. Compatible with Microsoft Office "
+"file formats, it gives you all the features you need, without the price tag."
+msgstr ""
+"लिबरे ऑफिस (Libre Office) एक मुफ्त कार्यालय सुइट है जिसमे वह सभी है जो आपको दस्तावेज़, "
+"स्प्रेडशीट एवं प्रदर्शन बनाने के लिए चाहिए । माइक्रोसॉफ्ट ऑफिस स्वरूपों  के साथ अविस्र्द्ध, "
+"यह आपको सभी सुविधाएँ देता है, बिना किसी कीमत के।"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:16
+msgid "LibreOffice Writer"
+msgstr "LibreOffice लेखक"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:20
+msgid "LibreOffice Calc"
+msgstr "LibreOffice केल्क"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:24
+msgid "LibreOffice Impress"
+msgstr "LibreOffice Impress"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/photos.html:1
+msgid "Have fun with your photos"
+msgstr "अपनी तस्वीरों के साथ मज़े करें"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/photos.html:8
+msgid ""
+"Shotwell is a handy photo manager that is ready for your gadgets. Connect a "
+"camera or a phone to transfer your photos, then it’s easy to share them and "
+"keep them safe. If you’re feeling creative, you can try lots of photo apps "
+"from the Ubuntu Software Center."
+msgstr ""
+"शॉटवेल एक आसान तस्वीर प्रबंधक है कि आप अपने गैजेट के लिए तैयार है. अपनी तस्वीरों के "
+"हस्तांतरण करने के लिए एक कैमरा या फोन कनेक्ट करें, है, उन्हें साझा करना और उन्हें सुरक्षित "
+"रखना आसान है . यदि आप रचनात्मक महसूस कर रहे हैं, आप उबुन्टू सॉफ्टवेयर केंद्र में उपलबध बहुत "
+"सारे फोटो अनुप्रयोग का उपयोग कर सकते हैं."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:16
+msgid "Shotwell Photo Manager"
+msgstr "शॉटवेल फोटो प्रबंधक"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:23
+msgid "GIMP Image Editor"
+msgstr "GIMP छवि संपादक"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:27
+msgid "Pitivi Video Editor"
+msgstr "पीटीवी विडियो संपादक"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/usc.html:1
+msgid "Find even more software"
+msgstr "और भी अधिक सॉफ्टवेयर प्राप्त करें"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/usc.html:8
+msgid ""
+"Say goodbye to searching the web for new software. With Ubuntu Software "
+"Center, you can find and install new apps with ease. Just type in what "
+"you’re looking for, or explore categories such as Science, Education and "
+"Games, alongside helpful reviews from other users."
+msgstr ""
+"नये सोफटवैर ढूंडने के लिय वेब को अलविदा कहें । उबुन्टु सौफटवेर केंद्र से आप आसानी से कोई भी "
+"एपलीकेशन ढूंड कर स्थपित कर सकते हें. अपनी इचछित एपलीकेशन को  केवल टाईप करें, अथवा "
+"विभिन्न विभागों, जैसे कि विज्ञान, शिक्षा और खेल,  में अन्य उपयोगर्कताओं की मददगार "
+"समीक्षाओं के साथ ढूंडें ।"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/welcome.html:1
+msgid "Welcome to Ubuntu 14.04"
+msgstr "उबुन्टु 14.04 में आपका स्वागत है"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/welcome.html:8
+msgid ""
+"Fast and full of new features, the latest version of Ubuntu makes computing "
+"easier than ever. Here are just a few cool new things to look out for…"
+msgstr ""
+"तेज़ और नई सुविधाओं का भरपूर, उबुन्तु का नवीनतम संस्करण कंप्यूटिंग पहले से कहीं ज्यादा आसान  "
+"बनाता है| इसमें देखने को कुछ नये रोमांचक चीजें हैं..."
+
+#~ msgid "Your own personal cloud"
+#~ msgstr "आपका निजी क्लाउड"
+
+#~ msgid ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> gives "
+#~ "you 5GB of free cloud storage to access your files, share your photos and "
+#~ "<a href=\"https://one.ubuntu.com/services/music/\">stream your music</a> "
+#~ "to your computers, tablets and smartphones. Any photo you take appears on "
+#~ "all your devices, the instant you take it. Ubuntu One runs on Ubuntu, "
+#~ "Windows, Mac, Android, iOS and the web."
+#~ msgstr ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">उबुन्टु वन </a> आपको देता "
+#~ "है  5GB का मुफ्त क्लाउड  संचयन ताकि आप अपनी फाईलों तक पहुंच सकें,  अपने छायाचित्रों कोे "
+#~ "आपस में बांट सकें तथा <a href=\"https://one.ubuntu.com/services/music/\">संगीत "
+#~ "को अपने किसी भी  कम्प्युटर, टेबलेट, स्मार्टफोन पर भेज सकें</a>. आप कोई भी फोटो लें वो "
+#~ "आपके सभी उपकरणो पर उसी समय दिखाई देगी । उबुन्टु ऐकल (Ubuntu One) उबुन्टु, विन्डोस, "
+#~ "मैक, एन्ड्रोइड, आईओएस तथा वेब के लिए उपलब्ध है ।"
+
+#~ msgid "One account to log in to everything on Ubuntu"
+#~ msgstr "उबुन्टु पर एक खाते से सब कुछ कर सकते हैं|"
+
+#~ msgid "<strong>Make the most of Ubuntu with Ubuntu One.</strong>"
+#~ msgstr "<strong>उबुन्तु वन के सहारे उबुन्टु का अधिकतम लाभ उठाएं|</strong>"
+
+#~ msgid "Ubuntu One is the single account to log in to everything on Ubuntu."
+#~ msgstr "उबुन्तु वन एक ऐसा खाता है जिस से उबुन्टु पर सब में लॉग इन किया जाता है|"
+
+#~ msgid "Get <strong>new apps</strong> from the Software Center"
+#~ msgstr "सॉफ्टवेयर केंद्र से <strong>नए एप्लिकेशन</strong> प्राप्त करें"
+
+#~ msgid "Listen to <strong>your music collection</strong> and buy tracks"
+#~ msgstr "<strong>अपने संगीत के संग्रह</strong> को सुनें और गानें खरीदें"
+
+#~ msgid "Access <strong>files and photos</strong> from all your devices"
+#~ msgstr "अपने सभी यंत्रों से <strong>फाइलों और फोटों</strong> तक पहुचें"
+
+#~ msgid "Welcome to Ubuntu 13.10"
+#~ msgstr "ऊबुन्टु १३.१० मे आपका स्वागत है।"

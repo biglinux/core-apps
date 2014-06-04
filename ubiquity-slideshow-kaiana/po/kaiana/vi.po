@@ -1,0 +1,300 @@
+# Vietnamese translation for ubiquity-slideshow-ubuntu
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the ubiquity-slideshow-ubuntu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubiquity-slideshow-ubuntu\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-04-02 11:07-0400\n"
+"PO-Revision-Date: 2013-09-22 03:46+0000\n"
+"Last-Translator: Vu Do Quynh <vdquynh@gmail.com>\n"
+"Language-Team: Vietnamese <vi@li.org>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-04-08 14:29+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/accessibility.html:1
+msgid "Access for everyone"
+msgstr "Truy cập cho mọi người"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/accessibility.html:8
+msgid ""
+"At the heart of the Ubuntu philosophy is the belief that computing is for "
+"everyone. With advanced accessibility tools and options to change language, "
+"colour scheme and text size, Ubuntu makes computing easy – whoever and "
+"wherever you are."
+msgstr ""
+"Trọng tâm của triết lý Ubuntu là sự tin tưởng rằng mọi người đều được sử "
+"dụng máy tính. Nhờ những công cụ hỗ trợ truy cập và những tùy biến như màu "
+"sắc ưa thích, cỡ chữ và ngôn ngữ, Ubuntu cho phép dùng máy tính một cách dễ "
+"dàng - cho dù bạn là ai hay bạn ở nơi đâu."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/accessibility.html:12
+msgid "Customization options"
+msgstr "Các lựa chọn tùy thích"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:16
+msgid "Appearance"
+msgstr "Giao diện"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:20
+msgid "Assistive technologies"
+msgstr "Công nghệ hỗ trợ"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:24
+msgid "Language support"
+msgstr "Hỗ trợ ngôn ngữ"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/browse.html:1
+msgid "Make the most of the web"
+msgstr "Tận dụng tối đa thế giới web"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/browse.html:8
+msgid ""
+"Ubuntu includes Firefox, the web browser used by millions of people around "
+"the world. And web applications you use frequently (like Facebook or Gmail, "
+"for example) can be pinned to your desktop for faster access, just like apps "
+"on your computer."
+msgstr ""
+"Ubuntu đi kèm trình duyệt Firefox, là phần mềm được hằng triệu người dùng "
+"quanh thế giới. Và bạn có thể đặt những ứng dụng web hay dùng như Facebook "
+"hay Gmail ngay trên màn hình desktop giúp truy cập nhanh hơn, không khác gì "
+"những ứng dụng desktop."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:12
+#: slideshows/ubuntu/slides/music.html:11
+#: slideshows/ubuntu/slides/office.html:12
+#: slideshows/ubuntu/slides/photos.html:12
+msgid "Included software"
+msgstr "Phần mềm cài sẵn"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:16
+msgid "Firefox web browser"
+msgstr "Trình duyệt web Firefox"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:19
+#: slideshows/ubuntu/slides/photos.html:19
+msgid "Supported software"
+msgstr "Những phần mềm được hỗ trợ"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:23
+msgid "Flash"
+msgstr "Flash"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:27
+msgid "Chromium"
+msgstr "Chromium"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/gethelp.html:1
+msgid "Any questions?"
+msgstr "Bạn có thắc mắc?"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/gethelp.html:8
+msgid ""
+"Check out <a href=\"http://askubuntu.com/\">askubuntu.com</a> for answers to "
+"all your Ubuntu questions. There’s a good chance your question will have "
+"been answered already and, if not, you’ll find thousands of volunteers eager "
+"to help. For more support options, go to <a href=\"http://www.ubuntu.com/"
+"support\">ubuntu.com/support</a>."
+msgstr ""
+"Hãy truy cập <a href=\"http://askubuntu.com/\">askubuntu.com</a> để tìm thấy "
+"câu trả lời cho tất cả các câu hỏi về Ubuntu của bạn. Có thể câu hỏi của bạn "
+"đã được trả lời rồi, nếu không thì bạn cũng sẽ được giúp đỡ bởi hàng ngàn "
+"tình nguyện viên nhiệt tình và luôn sẵn sàng. Tuy nhiên, nếu bạn muốn nhiều "
+"lựa chọn hỗ trợ hơn thì cũng có thể truy cập <a href=\"http://www.ubuntu.com/"
+"support\">ubuntu.com/support</a>."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/gethelp.html:17
+msgid "Let’s talk Ubuntu"
+msgstr "Hãy nói về Ubuntu"
+
+#. type: Content of: <div><div><div><div>
+#: slideshows/ubuntu/slides/gethelp.html:18
+msgid "I'm installing #Ubuntu!"
+msgstr "Tôi đang cài đặt #Ubuntu!"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/music.html:2
+msgid "Take your music with you"
+msgstr "Hãy mang âm nhạc theo bạn"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/music.html:7
+msgid ""
+"Ubuntu comes with the amazing Rhythmbox music player. With advanced playback "
+"options, it's simple to queue up the perfect songs. And it works great with "
+"CDs and portable music players, so you can enjoy all your music wherever you "
+"go."
+msgstr ""
+"Ubuntu cài sẵn bộ phát nhạc Rhythmbox. Với những chức năng phát nhạc tiên "
+"tiến, thật dễ dàng tạo ra danh sách những bài nhạc tuyệt vời. Rhythmbox còn "
+"chạy tốt với đĩa CD và các thiết bị chơi nhạc xách tay, để bạn thưởng thức "
+"được tất cả nhạc của bạn ở mọi nơi."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/music.html:15
+msgid "Rhythmbox Music Player"
+msgstr "Bộ phát nhạc Rhythmbox"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/office.html:1
+msgid "Everything you need for the office"
+msgstr "Đầy đủ phần mềm cho văn phòng"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/office.html:8
+msgid ""
+"LibreOffice is a free office suite packed with everything you need to create "
+"documents, spreadsheets and presentations. Compatible with Microsoft Office "
+"file formats, it gives you all the features you need, without the price tag."
+msgstr ""
+"LibreOffice là một bộ phần mềm văn phòng cho phép bạn tạo ra những tài liệu "
+"ấn tượng, bảng tính và bản trình chiếu. Nhờ tính tương thích với định dạng "
+"Microsoft Office, bạn sẽ có được tất cả những tính năng mong muốn mà không "
+"phải mất tiền."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:16
+msgid "LibreOffice Writer"
+msgstr "Soạn thảo LibreOffice Writer"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:20
+msgid "LibreOffice Calc"
+msgstr "Bảng tính LibreOffice Calc"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:24
+msgid "LibreOffice Impress"
+msgstr "Trình diễn LibreOffice Impress"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/photos.html:1
+msgid "Have fun with your photos"
+msgstr "Vui cùng những bức ảnh chụp"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/photos.html:8
+msgid ""
+"Shotwell is a handy photo manager that is ready for your gadgets. Connect a "
+"camera or a phone to transfer your photos, then it’s easy to share them and "
+"keep them safe. If you’re feeling creative, you can try lots of photo apps "
+"from the Ubuntu Software Center."
+msgstr ""
+"Shotwell là một chương trình quản lý ảnh thuận tiện và sẵn sàng làm việc với "
+"các thiết bị của bạn. Bạn chỉ cần gắn máy chụp ảnh hay điện thoại để truyền "
+"ảnh, rồi dễ dàng chia sẻ và lưu giữ các bức ảnh một cách an toàn. Nếu bạn có "
+"cảm hứng sáng tạo, bạn có thể thử rất nhiều ứng dụng chỉnh sửa hình ảnh từ "
+"Trung tâm Phần mềm Ubuntu (Ubuntu Software Center)."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:16
+msgid "Shotwell Photo Manager"
+msgstr "Chương trình quản lý ảnh Shotwell"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:23
+msgid "GIMP Image Editor"
+msgstr "Chương trình biên tập ảnh GIMP"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:27
+msgid "Pitivi Video Editor"
+msgstr "Chương trình biên tập phim Pitivi"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/usc.html:1
+msgid "Find even more software"
+msgstr "Tìm nhiều phần mềm hơn nữa"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/usc.html:8
+msgid ""
+"Say goodbye to searching the web for new software. With Ubuntu Software "
+"Center, you can find and install new apps with ease. Just type in what "
+"you’re looking for, or explore categories such as Science, Education and "
+"Games, alongside helpful reviews from other users."
+msgstr ""
+"Bạn sẽ không cần phải tìm kiếm phần mềm mới trên web nữa. Nhờ Trung tâm Phần "
+"mềm Ubuntu, bạn sẽ dễ dàng tìm và cài đặt những phần mềm mới. Chỉ cần điền "
+"những gì mà bạn đang cần, hoặc tham khảo các mục phần mềm như Khoa học, Giáo "
+"dục và Chò trơi đã kèm những đánh giá hữu ích từ nhiều người dùng khác."
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/welcome.html:1
+msgid "Welcome to Ubuntu 14.04"
+msgstr ""
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/welcome.html:8
+msgid ""
+"Fast and full of new features, the latest version of Ubuntu makes computing "
+"easier than ever. Here are just a few cool new things to look out for…"
+msgstr ""
+"Phiên bản mới nhất của Ubuntu, làm việc nhanh chóng và chứa đầy tính năng "
+"mới, sẽ giúp bạn dùng máy tính một cách dễ hơn bao giờ. Sau đây là những "
+"điểm mới mà bạn nên biết..."
+
+#~ msgid "Your own personal cloud"
+#~ msgstr "Đám mây riêng của bạn"
+
+#~ msgid ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> gives "
+#~ "you 5GB of free cloud storage to access your files, share your photos and "
+#~ "<a href=\"https://one.ubuntu.com/services/music/\">stream your music</a> "
+#~ "to your computers, tablets and smartphones. Any photo you take appears on "
+#~ "all your devices, the instant you take it. Ubuntu One runs on Ubuntu, "
+#~ "Windows, Mac, Android, iOS and the web."
+#~ msgstr ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> cho bạn "
+#~ "5GB lưu trữ đám mây miễn phí để có thể tùy ý truy cập các tài liệu, chia "
+#~ "sẻ hình ảnh và <a href=\"https://one.ubuntu.com/services/music/\">và "
+#~ "chuyển tải trực tuyến các bài hát </a> tới máy tính, máy tính bảng và "
+#~ "điện thoại thông minh của bạn. Bất kì bức ảnh nào khi bạn chụp lại sẽ "
+#~ "xuất hiện trên toàn bộ các thiết bị đó. Ubuntu One chạy được trên Ubuntu, "
+#~ "Windows, Mac, Android, iOS và cả trên nền tảng web."
+
+#~ msgid "One account to log in to everything on Ubuntu"
+#~ msgstr "Một tài khoản để đăng nhập tất cả trên Ubuntu"
+
+#~ msgid "<strong>Make the most of Ubuntu with Ubuntu One.</strong>"
+#~ msgstr "<strong>Hãy tận dụng tối đa Ubuntu với dịch vụ Ubuntu One.</strong>"
+
+#~ msgid "Ubuntu One is the single account to log in to everything on Ubuntu."
+#~ msgstr ""
+#~ "Ubuntu One là một tài khoản đơn cho phép đăng nhập cho mọi thứ trên "
+#~ "Ubuntu."
+
+#~ msgid "Get <strong>new apps</strong> from the Software Center"
+#~ msgstr "Cài đặt <strong>phần mềm mới</strong> từ Trung tâm Phần mềm"
+
+#~ msgid "Listen to <strong>your music collection</strong> and buy tracks"
+#~ msgstr "Nghe và mua bổ sung thêm cho <strong>kho nhạc của bạn</strong>"
+
+#~ msgid "Access <strong>files and photos</strong> from all your devices"
+#~ msgstr ""
+#~ "Truy cập <strong>các tệp và ảnh</strong> từ tất cả các thiết bị của bạn"
+
+#~ msgid "Welcome to Ubuntu 13.10"
+#~ msgstr "Chào mừng đến với Ubuntu 13.10"

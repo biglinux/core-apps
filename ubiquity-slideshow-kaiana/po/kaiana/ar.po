@@ -1,0 +1,297 @@
+# Arabic translation for ubiquity-slideshow-ubuntu
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the ubiquity-slideshow-ubuntu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubiquity-slideshow-ubuntu\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-04-02 11:07-0400\n"
+"PO-Revision-Date: 2014-04-04 15:40+0000\n"
+"Last-Translator: Ibrahim Saed <ibraheem5000@gmail.com>\n"
+"Language-Team: Arabic <ar@li.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-04-08 14:29+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/accessibility.html:1
+msgid "Access for everyone"
+msgstr "حرية الإتاحة للجميع"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/accessibility.html:8
+msgid ""
+"At the heart of the Ubuntu philosophy is the belief that computing is for "
+"everyone. With advanced accessibility tools and options to change language, "
+"colour scheme and text size, Ubuntu makes computing easy – whoever and "
+"wherever you are."
+msgstr ""
+"من قلب فلسفة أبونتو ينبع إيمان بأن الحوسبة ملك للجميع. مع أدوات الإتاحة "
+"المتقدمة وخيارات مثل تنسيق ألوانك المفضّلة، وحجم الخط، واختيار اللغة ستشعر "
+"بأن أبونتو ملك لك، كائنًا من كنت وأينما كنت."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/accessibility.html:12
+msgid "Customization options"
+msgstr "خيارات التخصيص"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:16
+msgid "Appearance"
+msgstr "المظهر"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:20
+msgid "Assistive technologies"
+msgstr "التقنيات المُساعِدة"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:24
+msgid "Language support"
+msgstr "دعم اللغات"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/browse.html:1
+msgid "Make the most of the web"
+msgstr "استغل الويب بأقصى ما يمكن"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/browse.html:8
+msgid ""
+"Ubuntu includes Firefox, the web browser used by millions of people around "
+"the world. And web applications you use frequently (like Facebook or Gmail, "
+"for example) can be pinned to your desktop for faster access, just like apps "
+"on your computer."
+msgstr ""
+"يتضمن أبونتو متصفح الويب الشهير فيرفُكس، المتصفح الذي يستخدمه الملايين من "
+"الأشخاص حول العالم. الآن بإمكانك تثبيت تطبيقات الويب التي تستخدمها بكثرة "
+"(كفيسبوك وجيميل وتويتر وغيرها) على سطح المكتب لسرعة الوصول إليها، تمامًا مثل "
+"تطبيقات الحاسوب الأخرى."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:12
+#: slideshows/ubuntu/slides/music.html:11
+#: slideshows/ubuntu/slides/office.html:12
+#: slideshows/ubuntu/slides/photos.html:12
+msgid "Included software"
+msgstr "البرمجيات المدمجة"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:16
+msgid "Firefox web browser"
+msgstr "متصفًح الوب فَيَرفُكس"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:19
+#: slideshows/ubuntu/slides/photos.html:19
+msgid "Supported software"
+msgstr "البرمجيات المدعومة"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:23
+msgid "Flash"
+msgstr "فلاش"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:27
+msgid "Chromium"
+msgstr "كروميوم"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/gethelp.html:1
+msgid "Any questions?"
+msgstr "أي أسئلة؟"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/gethelp.html:8
+msgid ""
+"Check out <a href=\"http://askubuntu.com/\">askubuntu.com</a> for answers to "
+"all your Ubuntu questions. There’s a good chance your question will have "
+"been answered already and, if not, you’ll find thousands of volunteers eager "
+"to help. For more support options, go to <a href=\"http://www.ubuntu.com/"
+"support\">ubuntu.com/support</a>."
+msgstr ""
+"لديك أسئلة واستفسارات في أبونتو لا تجد لها جوابا؟ .. إذن زُر <a href=\"http://"
+"askubuntu.com/\">Ask Ubuntu</a> المكان الأفضل للحصول على أجوبة لأسئلتك "
+"واستفساراتك عن أبونتو. مع الكثير من الأسئلة المُجاب عنها سابقًا، وآلاف الأشخاص "
+"المُستعدين لتقديم المُساعدة، ستحصل على الجواب في أقرب وقت ممكن. لمزيد من "
+"خيارات الدعم، اذهب إلى <a href=\"http://www.ubuntu.com/support\">ubuntu.com/"
+"support</a>."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/gethelp.html:17
+msgid "Let’s talk Ubuntu"
+msgstr "أبونتو .. دعنا نتحدث"
+
+#. type: Content of: <div><div><div><div>
+#: slideshows/ubuntu/slides/gethelp.html:18
+msgid "I'm installing #Ubuntu!"
+msgstr "أنا أثبّت أبونتو!"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/music.html:2
+msgid "Take your music with you"
+msgstr "خذ صوتياتك معك"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/music.html:7
+msgid ""
+"Ubuntu comes with the amazing Rhythmbox music player. With advanced playback "
+"options, it's simple to queue up the perfect songs. And it works great with "
+"CDs and portable music players, so you can enjoy all your music wherever you "
+"go."
+msgstr ""
+"يأتي أبونتو مع مُشغل الصوتيات الرائع «أنغام». مع خيارات تشغيل متقدمة، ستتيح "
+"لك عمل اصطفاف لصوتياتك المُفضّلة بكل بساطة. كما يعمل بكفاءة مع الأقراص الصوتية "
+"ومع مُشغّلات الصوتيات المحمولة، لذا يمكنك الاستمتاع بصوتياتك أينما ذهبت."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/music.html:15
+msgid "Rhythmbox Music Player"
+msgstr "مشغل الصوتيات أنغام"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/office.html:1
+msgid "Everything you need for the office"
+msgstr "كل ما تحتاجه لمكتبك"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/office.html:8
+msgid ""
+"LibreOffice is a free office suite packed with everything you need to create "
+"documents, spreadsheets and presentations. Compatible with Microsoft Office "
+"file formats, it gives you all the features you need, without the price tag."
+msgstr ""
+"ليبر أوفيس هو حزمة برامج مكتبية مجانية تأتي مع كل ما قد تحتاج إليه لإنشاء "
+"المستندات، والعروض التقديمية، والجداول الحسابية المُمتدة. كما أنه يدعم بشكل "
+"جيد جميع صيغ ملفات ميكروسوفت أوفيس، ويعطيك جميع المميزات التي قد تحتاج إليها "
+"دون أي مقابل مادي."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:16
+msgid "LibreOffice Writer"
+msgstr "ليبر أوفيس رايتر"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:20
+msgid "LibreOffice Calc"
+msgstr "ليبر أوفيس كالك"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:24
+msgid "LibreOffice Impress"
+msgstr "ليبر أوفيس إمبرس"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/photos.html:1
+msgid "Have fun with your photos"
+msgstr "استمتع بصورك"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/photos.html:8
+msgid ""
+"Shotwell is a handy photo manager that is ready for your gadgets. Connect a "
+"camera or a phone to transfer your photos, then it’s easy to share them and "
+"keep them safe. If you’re feeling creative, you can try lots of photo apps "
+"from the Ubuntu Software Center."
+msgstr ""
+"مدير الصور «شُتْ‌وِل» جاهز لجميع أجهزتك. وصّل كاميرتك أو هاتفك لنقل صورك إلى "
+"حاسوبك، ثم شاركها بكل سهولة مع أصدقائك وعائلتك أو احفظها بأمان في حاسوبك. "
+"إذا كنت تشعر بالإبداع، يمكنك تجربة العديد من تطبيقات الصور من مركز برمجيات "
+"أبونتو."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:16
+msgid "Shotwell Photo Manager"
+msgstr "مدير الصور شُتْ‌وِل"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:23
+msgid "GIMP Image Editor"
+msgstr "محرر الصور جِمب"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:27
+msgid "Pitivi Video Editor"
+msgstr "محرر الفيديو بيتيفي"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/usc.html:1
+msgid "Find even more software"
+msgstr "اكتشف المزيد من التطبيقات"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/usc.html:8
+msgid ""
+"Say goodbye to searching the web for new software. With Ubuntu Software "
+"Center, you can find and install new apps with ease. Just type in what "
+"you’re looking for, or explore categories such as Science, Education and "
+"Games, alongside helpful reviews from other users."
+msgstr ""
+"قُل وداعا للبحث عن التطبيقات على الويب. مع مركز برمجيات أبونتو، يمكنك إيجاد "
+"وتثبيت التطبيقات بنقرة زرّ واحدة. اكتب ما تريده في حقل البحث أو استكشف "
+"التصنيفات كالألعاب والعلوم والتعليم وغيرها، مع الاطلاع على تعليقات الآخرين "
+"المفيدة. نزّل أشياء جديدة بكل سهولة واكتب تعليقاتك عليها أيضا لمشاركة تجربتك "
+"مع الآخرين."
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/welcome.html:1
+msgid "Welcome to Ubuntu 14.04"
+msgstr "مرحبًا بك في أوبونتو 14.04"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/welcome.html:8
+msgid ""
+"Fast and full of new features, the latest version of Ubuntu makes computing "
+"easier than ever. Here are just a few cool new things to look out for…"
+msgstr ""
+"يتميز أبونتو بالخفة والمرونة ليجعل من حاسوبك أكثر متعة في الاستخدام. الآن مع "
+"الإصدارة الأخيرة من واجهة يونتي الجذابة ستجد الاستخدام أسهل من أي وقت مضى. "
+"يمكنك الاطلاع على بعض المميزات الرائعة والجديدة من خلال عرض الشرائح الحالي..."
+
+#~ msgid "Your own personal cloud"
+#~ msgstr "سحابتك الشخصية"
+
+#~ msgid ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> gives "
+#~ "you 5GB of free cloud storage to access your files, share your photos and "
+#~ "<a href=\"https://one.ubuntu.com/services/music/\">stream your music</a> "
+#~ "to your computers, tablets and smartphones. Any photo you take appears on "
+#~ "all your devices, the instant you take it. Ubuntu One runs on Ubuntu, "
+#~ "Windows, Mac, Android, iOS and the web."
+#~ msgstr ""
+#~ "حساب <a href=\"https://one.ubuntu.com/services/\">أبونتو ون</a> يعطيك 5 "
+#~ "جيجا بايت من مساحة التخزين السحابي مجانًا، ليتيح لك تخزين ومزامنة ملفاتك "
+#~ "وصورك عبر الأجهزة والوصول إليها أينما كنت من أي مكان في العالم، ومشاركتها "
+#~ "بسهولة مع الأصدقاء والعائلة والزملاء. التقط صورة على هاتفك المحمول "
+#~ "وشاهدها فورًا على سطح مكتبك وعلى جميع أجهزتك، أو أضف <a href=\"https://one."
+#~ "ubuntu.com/services/music/\">دفق الموسيقى</a> لجهازك المحمول للاستمتاع "
+#~ "بالموسيقى أثناء الحركة. أبونتو ون متوفر حاليا على معظم أنظمة التشغيل "
+#~ "كأبونتو، وويندوز، وماكنتوش، وأندرويد، وأنظمة تشغيل آيفون وآيبود وآيباد "
+#~ "بالإضافة إلى الوِب."
+
+#~ msgid "One account to log in to everything on Ubuntu"
+#~ msgstr "حساب واحد فقط للولوج إلى جميع خدمات أبونتو"
+
+#~ msgid "<strong>Make the most of Ubuntu with Ubuntu One.</strong>"
+#~ msgstr "<strong>استفد بأقصى درجة من أبونتو مع أبونتو ون.</strong>"
+
+#~ msgid "Ubuntu One is the single account to log in to everything on Ubuntu."
+#~ msgstr "أبونتو ون هو حساب وحيد يتيح لك الولوج إلى أي شيء على أبونتو"
+
+#~ msgid "Get <strong>new apps</strong> from the Software Center"
+#~ msgstr "احصل على <strong>تطبيقات جديدة</strong> من مركز برمجيات أبونتو"
+
+#~ msgid "Listen to <strong>your music collection</strong> and buy tracks"
+#~ msgstr "استمع إلى <strong>صوتياتك المفضلة</strong> واشترِ المزيد"
+
+#~ msgid "Access <strong>files and photos</strong> from all your devices"
+#~ msgstr "يمكنك الوصول إلى <strong>ملفاتك وصورك</strong> من جميع أجهزتك"
+
+#~ msgid "Welcome to Ubuntu 13.10"
+#~ msgstr "مرحبا بك في أوبونتو 13.10"

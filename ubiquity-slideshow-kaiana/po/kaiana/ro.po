@@ -1,0 +1,303 @@
+# Romanian translation for ubiquity-slideshow-ubuntu
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the ubiquity-slideshow-ubuntu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+# Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: ubiquity-slideshow-ubuntu\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-04-02 11:07-0400\n"
+"PO-Revision-Date: 2014-02-25 10:09+0000\n"
+"Last-Translator: Marian Vasile <marianvasile1972@gmail.com>\n"
+"Language-Team: Romanian Gnome Team <gnomero-list@lists.sourceforge.net>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-04-08 14:29+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/accessibility.html:1
+msgid "Access for everyone"
+msgstr "Disponibil pentru toți"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/accessibility.html:8
+msgid ""
+"At the heart of the Ubuntu philosophy is the belief that computing is for "
+"everyone. With advanced accessibility tools and options to change language, "
+"colour scheme and text size, Ubuntu makes computing easy – whoever and "
+"wherever you are."
+msgstr ""
+"La rădăcina filosofiei Ubuntu este convingerea că utilizarea calculatorului "
+"este pentru toată lumea. Cu unelte de accesibilitate avansate si opţiuni de "
+"schimbare a limbii, a schemei de culori si a dimensiunii textului, Ubuntu "
+"face utilizarea calculatorului uşoară - indiferent cine eşti sau unde eşti."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/accessibility.html:12
+msgid "Customization options"
+msgstr "Opțiuni de personalizare"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:16
+msgid "Appearance"
+msgstr "Aspect"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:20
+msgid "Assistive technologies"
+msgstr "Tehnologii de asistență"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:24
+msgid "Language support"
+msgstr "Suport pentru limbă"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/browse.html:1
+msgid "Make the most of the web"
+msgstr "Profitați din plin de Web"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/browse.html:8
+msgid ""
+"Ubuntu includes Firefox, the web browser used by millions of people around "
+"the world. And web applications you use frequently (like Facebook or Gmail, "
+"for example) can be pinned to your desktop for faster access, just like apps "
+"on your computer."
+msgstr ""
+"Ubuntu include Firefox, browser-ul web folosit de milioane de oameni din "
+"întreaga lume. Și aplicații web pe care le utilizați frecvent (cum ar fi "
+"Facebook sau Gmail, de exemplu) pot fi fixate pe desktop pentru acces mai "
+"rapid, la fel ca și aplicațiile de pe calculatorul dumneavoastră."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:12
+#: slideshows/ubuntu/slides/music.html:11
+#: slideshows/ubuntu/slides/office.html:12
+#: slideshows/ubuntu/slides/photos.html:12
+msgid "Included software"
+msgstr "Programe incluse"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:16
+msgid "Firefox web browser"
+msgstr "Navigatorul web Firefox"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:19
+#: slideshows/ubuntu/slides/photos.html:19
+msgid "Supported software"
+msgstr "Programe compatibile"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:23
+msgid "Flash"
+msgstr "Flash"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:27
+msgid "Chromium"
+msgstr "Chromium"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/gethelp.html:1
+msgid "Any questions?"
+msgstr "Aveți întrebări?"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/gethelp.html:8
+msgid ""
+"Check out <a href=\"http://askubuntu.com/\">askubuntu.com</a> for answers to "
+"all your Ubuntu questions. There’s a good chance your question will have "
+"been answered already and, if not, you’ll find thousands of volunteers eager "
+"to help. For more support options, go to <a href=\"http://www.ubuntu.com/"
+"support\">ubuntu.com/support</a>."
+msgstr ""
+"Accesați <a href=\"http://askubuntu.com/\">askubuntu.com</a> pentru "
+"răspunsuri la întrebările dumneavoastră despre Ubuntu. Foarte probabil ca "
+"întrebarea dvs. să fi primit un răspuns deja și, dacă nu, veți găsi mii de "
+"voluntari dornici să ajute. Pentru mai multe opțiuni de asistență: <a href="
+"\"http://www.ubuntu.com/support\">ubuntu.com/support</a>."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/gethelp.html:17
+msgid "Let’s talk Ubuntu"
+msgstr "Să vorbim despre Ubuntu"
+
+#. type: Content of: <div><div><div><div>
+#: slideshows/ubuntu/slides/gethelp.html:18
+msgid "I'm installing #Ubuntu!"
+msgstr "Instalez #Ubuntu!"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/music.html:2
+msgid "Take your music with you"
+msgstr "Luați-vă muzica cu dumneavoastră"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/music.html:7
+msgid ""
+"Ubuntu comes with the amazing Rhythmbox music player. With advanced playback "
+"options, it's simple to queue up the perfect songs. And it works great with "
+"CDs and portable music players, so you can enjoy all your music wherever you "
+"go."
+msgstr ""
+"Ubuntu vine cu uimitorul player de muzică Rhythmbox. Cu opţiuni avansate de "
+"redare, este simplu să creezi cozi de redare a melodiilor perfecte. Şi "
+"funcţionează grozav cu CD-uri şi dispozitive media portabile, astfel te poţi "
+"bucura de toată muzica ta oriunde ai merge."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/music.html:15
+msgid "Rhythmbox Music Player"
+msgstr "Playerul de muzică Rhythmbox"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/office.html:1
+msgid "Everything you need for the office"
+msgstr "Tot ce ai nevoie pentru birou"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/office.html:8
+msgid ""
+"LibreOffice is a free office suite packed with everything you need to create "
+"documents, spreadsheets and presentations. Compatible with Microsoft Office "
+"file formats, it gives you all the features you need, without the price tag."
+msgstr ""
+"LibreOffice este o suită de birou gratuită ce conține tot ce aveți nevoie "
+"pentru a crea documente, foi de calcul și prezentări. Compatibil cu "
+"formatele fișierelor Microsoft Office, vă oferă toate caracteristicile de "
+"care aveți nevoie, fără a plăti ceva."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:16
+msgid "LibreOffice Writer"
+msgstr "LibreOffice Writer"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:20
+msgid "LibreOffice Calc"
+msgstr "LibreOffice Calc"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:24
+msgid "LibreOffice Impress"
+msgstr "LibreOffice Impress"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/photos.html:1
+msgid "Have fun with your photos"
+msgstr "Distrați-vă cu fotografiile dumneavoastră"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/photos.html:8
+msgid ""
+"Shotwell is a handy photo manager that is ready for your gadgets. Connect a "
+"camera or a phone to transfer your photos, then it’s easy to share them and "
+"keep them safe. If you’re feeling creative, you can try lots of photo apps "
+"from the Ubuntu Software Center."
+msgstr ""
+"Shotwell este un administrator de fotografii ușor de folosit și pregătit "
+"pentru gadgeturile dumneavoastră. Conectați o cameră foto sau un telefon "
+"mobil pentru a vă transfera pozele, apoi este ușor să le partajați și să le "
+"păstrați în siguranță. Dacă sunteți creativ, puteți încerca multe alte "
+"aplicații pentru fotografii din Centrul software Ubuntu."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:16
+msgid "Shotwell Photo Manager"
+msgstr "Managerul de fotografii Shotwell"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:23
+msgid "GIMP Image Editor"
+msgstr "Editorul de imagini GIMP"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:27
+msgid "Pitivi Video Editor"
+msgstr "Editorul video Pitivi"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/usc.html:1
+msgid "Find even more software"
+msgstr "Găsiți și mai multe programe"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/usc.html:8
+msgid ""
+"Say goodbye to searching the web for new software. With Ubuntu Software "
+"Center, you can find and install new apps with ease. Just type in what "
+"you’re looking for, or explore categories such as Science, Education and "
+"Games, alongside helpful reviews from other users."
+msgstr ""
+"Luați-vă adio de la căutat programe pe internet. Cu Centrul de Programe "
+"Ubuntu puteți găsi și instala ușor programe noi. Doar scrieți ce căutați sau "
+"explorați categorii ca Știință, Educație și Jocuri, pe lângă păreri utile "
+"ale celorlalți utilizatori."
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/welcome.html:1
+msgid "Welcome to Ubuntu 14.04"
+msgstr "Bine ați venit în Ubuntu 14.04"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/welcome.html:8
+msgid ""
+"Fast and full of new features, the latest version of Ubuntu makes computing "
+"easier than ever. Here are just a few cool new things to look out for…"
+msgstr ""
+"Rapid și plin de noutăți, ultima versiune de Ubuntu face utilizarea "
+"calculatorului mai ușoară ca oricând. Aici sunt doar câteva lucruri minunate "
+"de văzut..."
+
+#~ msgid "Your own personal cloud"
+#~ msgstr "Spațiul dumneavoastră personal pe Internet"
+
+#~ msgid ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> gives "
+#~ "you 5GB of free cloud storage to access your files, share your photos and "
+#~ "<a href=\"https://one.ubuntu.com/services/music/\">stream your music</a> "
+#~ "to your computers, tablets and smartphones. Any photo you take appears on "
+#~ "all your devices, the instant you take it. Ubuntu One runs on Ubuntu, "
+#~ "Windows, Mac, Android, iOS and the web."
+#~ msgstr ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> vă oferă "
+#~ "5 GB de spațiu de stocare în „cloud” pentru a vă accesa fișierele, "
+#~ "partaja fotografiile și difuza <a href=\"https://one.ubuntu.com/services/"
+#~ "music/\">muzica</a> dvs pe calculatoare, tablete sau telefoane "
+#~ "inteligente. Orice fotografie faceți va apărea pe toate dispozitivele "
+#~ "chiar în momentul în care o faceți. Ubuntu One rulează pe Ubuntu, "
+#~ "Windows, Mac, Android, iOS și online."
+
+#~ msgid "One account to log in to everything on Ubuntu"
+#~ msgstr ""
+#~ "Un singur cont cu care să te autentifici pe orice site legat de Ubuntu"
+
+#~ msgid "<strong>Make the most of Ubuntu with Ubuntu One.</strong>"
+#~ msgstr "<strong>Profită din plin de Ubuntu cu Ubuntu One.</strong>"
+
+#~ msgid "Ubuntu One is the single account to log in to everything on Ubuntu."
+#~ msgstr ""
+#~ "Ubuntu One este un singur cont cu care să te autentifici pe orice site "
+#~ "legat de Ubuntu"
+
+#~ msgid "Get <strong>new apps</strong> from the Software Center"
+#~ msgstr "Obţineţi <strong>aplicații noi</strong> din Centrul Software Ubuntu"
+
+#~ msgid "Listen to <strong>your music collection</strong> and buy tracks"
+#~ msgstr ""
+#~ "Ascultaţi <strong>colecţia dumneavoastră de muzică</strong> şi cumpăraţi "
+#~ "melodii"
+
+#~ msgid "Access <strong>files and photos</strong> from all your devices"
+#~ msgstr ""
+#~ "Accesaţi <strong>fişiere şi fotografii</strong> din toate dispozitivele "
+#~ "dumneavoastră"
+
+#~ msgid "Welcome to Ubuntu 13.10"
+#~ msgstr "Bun venit la Ubuntu 13.10"

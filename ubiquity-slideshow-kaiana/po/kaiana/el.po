@@ -1,0 +1,305 @@
+# Greek translation for ubiquity-slideshow-ubuntu
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the ubiquity-slideshow-ubuntu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubiquity-slideshow-ubuntu\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-04-02 11:07-0400\n"
+"PO-Revision-Date: 2014-02-26 18:50+0000\n"
+"Last-Translator: Filippos Kolyvas <Unknown>\n"
+"Language-Team: Greek <el@li.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-04-08 14:29+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/accessibility.html:1
+msgid "Access for everyone"
+msgstr "Πρόσβαση για όλους"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/accessibility.html:8
+msgid ""
+"At the heart of the Ubuntu philosophy is the belief that computing is for "
+"everyone. With advanced accessibility tools and options to change language, "
+"colour scheme and text size, Ubuntu makes computing easy – whoever and "
+"wherever you are."
+msgstr ""
+"Στην καρδιά της φιλοσοφίας του Ubuntu υπάρχει η πεποίθηση ότι η πληροφορική "
+"είναι για όλους. Με προηγμένα εργαλεία προσβασιμότητας και επιλογές αλλαγής "
+"γλώσσας, διάταξης χρωμάτων και μεγέθους κειμένου, το Ubuntu κάνει τη χρήση "
+"του υπολογιστή εύκολη – όποιος και όπου και αν είστε."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/accessibility.html:12
+msgid "Customization options"
+msgstr "Επιλογές προσαρμογής"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:16
+msgid "Appearance"
+msgstr "Εμφάνιση"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:20
+msgid "Assistive technologies"
+msgstr "Τεχνολογίες υποβοήθησης"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/accessibility.html:24
+msgid "Language support"
+msgstr "Γλωσσική υποστήριξη"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/browse.html:1
+msgid "Make the most of the web"
+msgstr "Αξιοποιήστε το διαδίκτυο στο έπακρο"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/browse.html:8
+msgid ""
+"Ubuntu includes Firefox, the web browser used by millions of people around "
+"the world. And web applications you use frequently (like Facebook or Gmail, "
+"for example) can be pinned to your desktop for faster access, just like apps "
+"on your computer."
+msgstr ""
+"Το Ubuntu περιλαμβάνει τον Firefox, έναν περιηγητή ιστού που χρησιμοποιείται "
+"από εκατομμύρια ανθρώπους σε όλο τον κόσμο. Και οι διαδικτυακές εφαρμογές "
+"που χρησιμοποιείτε συχνά (όπως, για παράδειγμα, το Facebook ή το Gmail) "
+"μπορούν να καρφιτσωθούν στην επιφάνεια εργασίας σας για γρηγορότερη "
+"πρόσβαση, όπως ακριβώς οι εφαρμογές στον υπολογιστή σας."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:12
+#: slideshows/ubuntu/slides/music.html:11
+#: slideshows/ubuntu/slides/office.html:12
+#: slideshows/ubuntu/slides/photos.html:12
+msgid "Included software"
+msgstr "Προεγκατεστημένο λογισμικό"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:16
+msgid "Firefox web browser"
+msgstr "Περιηγητής ιστού Firefox"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/browse.html:19
+#: slideshows/ubuntu/slides/photos.html:19
+msgid "Supported software"
+msgstr "Υποστηριζόμενο λογισμικό"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:23
+msgid "Flash"
+msgstr "Flash"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/browse.html:27
+msgid "Chromium"
+msgstr "Chromium"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/gethelp.html:1
+msgid "Any questions?"
+msgstr "Ερωτήσεις;"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/gethelp.html:8
+msgid ""
+"Check out <a href=\"http://askubuntu.com/\">askubuntu.com</a> for answers to "
+"all your Ubuntu questions. There’s a good chance your question will have "
+"been answered already and, if not, you’ll find thousands of volunteers eager "
+"to help. For more support options, go to <a href=\"http://www.ubuntu.com/"
+"support\">ubuntu.com/support</a>."
+msgstr ""
+"Δείτε στο <a href=\"http://forum.ubuntu-gr.org/\">φόρουμ</a> της ελληνικής "
+"κοινότητας Ubuntu για απαντήσεις σε όλες τις ερωτήσεις σας. Είναι πολύ "
+"πιθανό η ερώτησή σας να έχει ήδη απαντηθεί και εάν όχι, θα βρείτε πολλούς "
+"εθελοντές πρόθυμους να σας βοηθήσουν. Για περισσότερες επιλογές υποστήριξης "
+"στην ελληνική, αλλά και αγγλική γλώσσα, δείτε στο <a href=\"https://ubuntu-"
+"gr.org/support\">ubuntu-gr.org/support</a>"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/ubuntu/slides/gethelp.html:17
+msgid "Let’s talk Ubuntu"
+msgstr "Ας μιλήσουμε για το Ubuntu"
+
+#. type: Content of: <div><div><div><div>
+#: slideshows/ubuntu/slides/gethelp.html:18
+msgid "I'm installing #Ubuntu!"
+msgstr "Εγκαθιστώ το #Ubuntu!"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/music.html:2
+msgid "Take your music with you"
+msgstr "Πάρτε τη μουσική σας μαζί σας"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/music.html:7
+msgid ""
+"Ubuntu comes with the amazing Rhythmbox music player. With advanced playback "
+"options, it's simple to queue up the perfect songs. And it works great with "
+"CDs and portable music players, so you can enjoy all your music wherever you "
+"go."
+msgstr ""
+"Το Ubuntu συνοδεύεται με το καταπληκτικό  πρόγραμμα αναπαραγωγής μουσικής "
+"Rhythmbox. Με προηγμένες δυνατότητες αναπαραγωγής, είναι εύκολο να "
+"δημιουργήσετε την τέλεια λίστα μουσικής. Και λειτουργεί άριστα με τα CD και "
+"τις φορητές συσκευές αναπαραγωγής μουσικής, έτσι ώστε να μπορείτε να "
+"απολαμβάνετε όλη σας τη μουσική όπου και αν πάτε."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/music.html:15
+msgid "Rhythmbox Music Player"
+msgstr "Αναπαραγωγή μουσικής Rhythmbox"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/office.html:1
+msgid "Everything you need for the office"
+msgstr "Ό,τι χρειάζεστε για το γραφείο"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/office.html:8
+msgid ""
+"LibreOffice is a free office suite packed with everything you need to create "
+"documents, spreadsheets and presentations. Compatible with Microsoft Office "
+"file formats, it gives you all the features you need, without the price tag."
+msgstr ""
+"Το LibreOffice είναι μια δωρεάν σουίτα γραφείου που περιέχει ό,τι χρειάζεστε "
+"για να δημιουργήσετε έγγραφα, λογιστικά φύλλα και παρουσιάσεις. Συμβατό με "
+"τους τύπους αρχείων του Microsoft Office, σας παρέχει όλα τα χαρακτηριστικά "
+"που χρειάζεστε χωρίς κανένα κόστος."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:16
+msgid "LibreOffice Writer"
+msgstr "LibreOffice Writer"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:20
+msgid "LibreOffice Calc"
+msgstr "LibreOffice Calc"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/office.html:24
+msgid "LibreOffice Impress"
+msgstr "LibreOffice Impress"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/photos.html:1
+msgid "Have fun with your photos"
+msgstr "Διασκεδάστε με τις φωτογραφίες σας"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/photos.html:8
+msgid ""
+"Shotwell is a handy photo manager that is ready for your gadgets. Connect a "
+"camera or a phone to transfer your photos, then it’s easy to share them and "
+"keep them safe. If you’re feeling creative, you can try lots of photo apps "
+"from the Ubuntu Software Center."
+msgstr ""
+"Το Shotwell είναι ένας εύχρηστος διαχειριστής φωτογραφιών, έτοιμος για όλα "
+"σας τα gadget. Συνδέστε την κάμερα ή το τηλέφωνό σας για να μεταφέρετε τις "
+"φωτογραφίες σας. Έπειτα, είναι εύκολο να τις μοιραστείτε και να τις "
+"κρατήσετε ασφαλείς. Εάν έχετε δημιουργική διάθεση, μπορείτε να δοκιμάσετε "
+"πολλές από τις εφαρμογές φωτογραφίας που υπάρχουν στο Κέντρο λογισμικού."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:16
+msgid "Shotwell Photo Manager"
+msgstr "Διαχείριση εικόνων Shotwell"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:23
+msgid "GIMP Image Editor"
+msgstr "Επεξεργασία εικόνων GIMP"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/ubuntu/slides/photos.html:27
+msgid "Pitivi Video Editor"
+msgstr "Επεξεργασία βίντεο Pitivi"
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/usc.html:1
+msgid "Find even more software"
+msgstr "Ανακαλύψτε ακόμα περισσότερο λογισμικό"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/usc.html:8
+msgid ""
+"Say goodbye to searching the web for new software. With Ubuntu Software "
+"Center, you can find and install new apps with ease. Just type in what "
+"you’re looking for, or explore categories such as Science, Education and "
+"Games, alongside helpful reviews from other users."
+msgstr ""
+"Πείτε αντίο στην αναζήτηση νέου λογισμικού στο διαδίκτυο. Με το Κέντρο "
+"λογισμικού Ubuntu μπορείτε να βρείτε και να εγκαταστήσετε με ευκολία νέες "
+"εφαρμογές. Απλά πληκτρολογήστε αυτό που ψάχνετε ή κάντε εξερεύνηση σε "
+"κατηγορίες όπως Επιστήμη, Εκπαίδευση και Παιχνίδια, λαμβάνοντας υπόψιν και "
+"τις χρήσιμες αξιολογήσεις από άλλους χρήστες."
+
+#. type: Content of: <div><h1>
+#: slideshows/ubuntu/slides/welcome.html:1
+msgid "Welcome to Ubuntu 14.04"
+msgstr "Καλώς ήρθατε στο Ubuntu 14.04"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/ubuntu/slides/welcome.html:8
+msgid ""
+"Fast and full of new features, the latest version of Ubuntu makes computing "
+"easier than ever. Here are just a few cool new things to look out for…"
+msgstr ""
+"Γρήγορη και γεμάτη με νέα χαρακτηριστικά, η τελευταία έκδοση του Ubuntu "
+"κάνει τους υπολογιστές πιο εύκολους στη χρήση από ποτέ. Δείτε εδώ μερικά από "
+"τα πιο προχωρημένα νέα χαρακτηριστικά..."
+
+#~ msgid "Your own personal cloud"
+#~ msgstr "Το προσωπικό σας σύννεφο"
+
+#~ msgid ""
+#~ "<a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> gives "
+#~ "you 5GB of free cloud storage to access your files, share your photos and "
+#~ "<a href=\"https://one.ubuntu.com/services/music/\">stream your music</a> "
+#~ "to your computers, tablets and smartphones. Any photo you take appears on "
+#~ "all your devices, the instant you take it. Ubuntu One runs on Ubuntu, "
+#~ "Windows, Mac, Android, iOS and the web."
+#~ msgstr ""
+#~ "Το <a href=\"https://one.ubuntu.com/services/free/\">Ubuntu One</a> σας "
+#~ "παρέχει δωρεάν χώρο 5GB στο σύννεφο για πρόσβαση στα αρχεία σας, για να "
+#~ "μοιραστείτε τις φωτογραφίες και <a href=\"https://one.ubuntu.com/services/"
+#~ "music/\">τη μουσική σας</a> στους υπολογιστές σας, τις ταμπλέτες και τα "
+#~ "smartphone. Κάθε φωτογραφία θα εμφανίζεται στις συσκευές σας αμέσως μόλις "
+#~ "την τραβήξετε. Το Ubuntu One είναι διαθέσιμο σε Ubuntu, Windows, Mac, "
+#~ "Android, iOS και μέσω του περιηγητή σας."
+
+#~ msgid "One account to log in to everything on Ubuntu"
+#~ msgstr "Ένας λογαριασμός για να συνδεθείτε παντού με το Ubuntu"
+
+#~ msgid "<strong>Make the most of Ubuntu with Ubuntu One.</strong>"
+#~ msgstr "<strong>Αξιοποιήστε στο έπακρο το Ubuntu με το Ubuntu One.</strong>"
+
+#~ msgid "Ubuntu One is the single account to log in to everything on Ubuntu."
+#~ msgstr ""
+#~ "Το Ubuntu One είναι ο μοναδικός λογαριασμός που σας συνδέει παντού με το "
+#~ "Ubuntu."
+
+#~ msgid "Get <strong>new apps</strong> from the Software Center"
+#~ msgstr "Αποκτήστε <strong>νέες εφαρμογές</strong> από το Κέντρο λογισμικού"
+
+#~ msgid "Listen to <strong>your music collection</strong> and buy tracks"
+#~ msgstr ""
+#~ "Ακούστε τη <strong>μουσική συλλογή σας</strong> και αγοράστε κομμάτια"
+
+#~ msgid "Access <strong>files and photos</strong> from all your devices"
+#~ msgstr ""
+#~ "Πρόσβαση <strong>σε αρχεία και φωτογραφίες</strong> από όλες σας τις "
+#~ "συσκευές"
+
+#~ msgid "Welcome to Ubuntu 13.10"
+#~ msgstr "Καλωσορίσατε στο Ubuntu 13.10"
