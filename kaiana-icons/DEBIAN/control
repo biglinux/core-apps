@@ -2,7 +2,7 @@ Package: kaiana-icons
 Version: 1.1.9-0kaiana1
 Architecture: all
 Maintainer: Frank Souza <http://kde-look.org/content/show.php/Evolvere+Icon+theme?content=164181>
-Installed-Size: 43777
+Installed-Size: 72777
 Section: admin
 Priority: optional
-Description: Install Evolvere-Kaiana icon package to Kaiana
+Description: Install two icons theme Kfaenza and Kaiana Evolvere-Kaiana icon package to Kaiana
