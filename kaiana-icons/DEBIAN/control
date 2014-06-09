@@ -1,8 +1,8 @@
 Package: kaiana-icons
-Version: 1.0.0-0kaiana1
+Version: 1.1.9-0kaiana1
 Architecture: all
-Maintainer: Paulo Giovanni Pereira <www.unialivre.com>
-Installed-Size: 38000
+Maintainer: Frank Souza <http://kde-look.org/content/show.php/Evolvere+Icon+theme?content=164181>
+Installed-Size: 43777
 Section: admin
 Priority: optional
-Description: Install oxigen ionized icon package to Kaiana
+Description: Install Evolvere-Kaiana icon package to Kaiana
