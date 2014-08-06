@@ -1,17 +1,9 @@
-ubiquity-slideshow-ubuntu
+ubiquity-slideshow-kaiana is based ubiquity-slideshow-ubuntu
 <http://launchpad.net/ubiquity-slideshow-ubuntu>
 
 -----
 
-This project is about slideshows which appear while installing Ubuntu or
-its *buntu friends. The one source package provides a number of Debian
-packages for Ubuntu, including ubiquity-slideshow-ubuntu,
-ubiquity-slideshow-lubuntu and ubiquity-slideshow-kubuntu.
-
-This is associated with the ubiquity-slideshow group on Launchpad at
-<https://launchpad.net/~ubiquity-slideshow>.
-
-Constructive feedback on the group mailing list is always appreciated!
+This project is about slideshows which appear while installing System.
 
 Please also note the "COPYING", "AUTHORS" and "TODO" files in this
 directory, which all have cool stuff in them.
