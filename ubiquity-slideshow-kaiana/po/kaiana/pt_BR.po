@@ -1,0 +1,240 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010
+msgid ""
+msgstr ""
+"Project-Id-Version: Ubiquity Slideshow Kaiana\n"
+"POT-Creation-Date: 2014-06-04 22:34-0300\n"
+"PO-Revision-Date: 2014-06-05 02:10+0000\n"
+"Last-Translator: paulusiohannes <paulusiohannes@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/ubiquity-slideshow-kaiana/language/pt_BR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. type: Content of: <div><h1>
+#: slideshows/kaiana/slides/accessibility.html:1
+msgid "Access for everyone"
+msgstr "Acesso para todos"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/kaiana/slides/accessibility.html:8
+msgid ""
+"At the heart of the Kaiana philosophy is the belief that computing is for "
+"everyone. With advanced accessibility tools and options to change language, "
+"colour scheme and text size, Kaiana makes computing easy – whoever and "
+"wherever you are."
+msgstr ""
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/kaiana/slides/accessibility.html:12
+msgid "Customization options"
+msgstr "Opções de personalização"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/kaiana/slides/accessibility.html:16
+msgid "Appearance"
+msgstr "Aparência"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/kaiana/slides/accessibility.html:20
+msgid "Assistive technologies"
+msgstr "Tecnologias assistivas"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/kaiana/slides/accessibility.html:24
+msgid "Language support"
+msgstr "Suporte a idiomas"
+
+#. type: Content of: <div><h1>
+#: slideshows/kaiana/slides/browse.html:1
+msgid "Make the most of the web"
+msgstr "Aproveite a Internet ao máximo"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/kaiana/slides/browse.html:8
+msgid ""
+"Ubuntu includes Firefox, the web browser used by millions of people around "
+"the world. And web applications you use frequently (like Facebook or Gmail, "
+"for example) can be pinned to your desktop for faster access, just like apps"
+" on your computer."
+msgstr "O Ubuntu inclui o Firefox, o navegador web usado por milhões de pessoas pelo mundo. E aplicações da web que você usa com frequência (como Facebook ou Gmail, por exemplo) podem ser fixados em seu desktop para acesso rápido, assim como aplicativos em seu computador."
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/kaiana/slides/browse.html:12
+#: slideshows/kaiana/slides/music.html:16
+#: slideshows/kaiana/slides/office.html:12
+#: slideshows/kaiana/slides/photos.html:16
+msgid "Included software"
+msgstr "Programas inclusos"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/kaiana/slides/browse.html:16
+msgid "Firefox web browser"
+msgstr "Navegador Firefox"
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/kaiana/slides/browse.html:19
+#: slideshows/kaiana/slides/photos.html:23
+msgid "Supported software"
+msgstr "Programas suportados"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/kaiana/slides/browse.html:23
+msgid "Flash"
+msgstr "Flash"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/kaiana/slides/browse.html:27
+msgid "Chromium"
+msgstr "Chromium"
+
+#. type: Content of: <div><h1>
+#: slideshows/kaiana/slides/gethelp.html:1
+msgid "Any questions?"
+msgstr "Alguma pergunta?"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/kaiana/slides/gethelp.html:8
+msgid ""
+"Check out <a href=\"http://kaiana.com.br/\">kaiana.com.br</a> for answers to"
+" all your Kaiana questions. There’s a good chance your question will have "
+"been answered already and, if not, you’ll find thousands of volunteers eager"
+" to help. For more support options, go to <a "
+"href=\"http://www.uniaolivre.com/forum\">kaiana.com.br/forum</a>."
+msgstr ""
+
+#. type: Content of: <div><div><div><h2>
+#: slideshows/kaiana/slides/gethelp.html:17
+msgid "Let’s talk Kaiana"
+msgstr ""
+
+#. type: Content of: <div><div><div><div>
+#: slideshows/kaiana/slides/gethelp.html:18
+msgid "I'm installing #Kaiana!"
+msgstr ""
+
+#. type: Content of: <div><h1>
+#: slideshows/kaiana/slides/music.html:2
+msgid "Music and movies in Kaiana"
+msgstr ""
+
+#. type: Content of: <div><div><div><li><p>
+#: slideshows/kaiana/slides/music.html:7
+msgid ""
+"Clementine audio player lets you organize your music and listen to Internet "
+"radio, podcasts, and more, as well as synchronizes your audio collection to "
+"a portable audio player."
+msgstr ""
+
+#. type: Content of: <div><div><div><li><p>
+#: slideshows/kaiana/slides/music.html:10
+msgid ""
+"SMPlayer allows you to easily watch videos from your computer, DVD, or "
+"streamed over the Internet."
+msgstr ""
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/kaiana/slides/music.html:20
+msgid "Clementine Music Player"
+msgstr ""
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/kaiana/slides/music.html:24
+msgid "SMPlayer"
+msgstr ""
+
+#. type: Content of: <div><h1>
+#: slideshows/kaiana/slides/office.html:1
+msgid "Everything you need for the office"
+msgstr "Tudo que você precisa para o escritório"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/kaiana/slides/office.html:8
+msgid ""
+"LibreOffice is a free office suite packed with everything you need to create"
+" documents, spreadsheets and presentations. Compatible with Microsoft Office"
+" file formats, it gives you all the features you need, without the price "
+"tag."
+msgstr "O LibreOffice é uma suíte de aplicativos para escritório que contém tudo que você precisa para criar documentos, planilhas e apresentações. Compatível com os arquivos de formato Microsoft Office, ela lhe fornece todos os recursos que você precisa sem uma etiqueta de preço."
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/kaiana/slides/office.html:16
+msgid "LibreOffice Writer"
+msgstr "LibreOffice Writer"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/kaiana/slides/office.html:20
+msgid "LibreOffice Calc"
+msgstr "LibreOffice Calc"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/kaiana/slides/office.html:24
+msgid "LibreOffice Impress"
+msgstr "LibreOffice Impress"
+
+#. type: Content of: <div><h1>
+#: slideshows/kaiana/slides/photos.html:1
+msgid "Organize, enjoy, and share your photos"
+msgstr ""
+
+#. type: Content of: <div><div><div><p><li>
+#: slideshows/kaiana/slides/photos.html:8
+msgid ""
+"With <em>Gwenview</em>, it is really easy to organize and share your photos."
+msgstr ""
+
+#. type: Content of: <div><div><div><p><li>
+#: slideshows/kaiana/slides/photos.html:10
+msgid ""
+"Use the Export option to copy your photos to a remote computer, iPod, a "
+"custom HTML gallery, or to export to services such as Flickr, SmugMug, "
+"PicasaWeb, and more."
+msgstr ""
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/kaiana/slides/photos.html:20
+msgid "Gwenview Photo Manager"
+msgstr ""
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/kaiana/slides/photos.html:27
+msgid "GIMP Image Editor"
+msgstr "Editor de imagens GIMP"
+
+#. type: Content of: <div><div><div><ul><li><p>
+#: slideshows/kaiana/slides/photos.html:31
+msgid "Pitivi Video Editor"
+msgstr "Editor de vídeo Pitivi"
+
+#. type: Content of: <div><h1>
+#: slideshows/kaiana/slides/usc.html:1
+msgid "Find even more software"
+msgstr "Encontre mais programas"
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/kaiana/slides/usc.html:8
+msgid ""
+"Say goodbye to searching the web for new software. With Ubuntu Software "
+"Center, you can find and install new apps with ease. Just type in what "
+"you’re looking for, or explore categories such as Science, Education and "
+"Games, alongside helpful reviews from other users."
+msgstr "Diga adeus à procura na Web por novos programas. Com a Central de programas do Ubuntu, você pode encontrar e instalar novos aplicativos facilmente. É só digitar o que você está procurando, ou explorar categorias como Ciência, Educação e Jogos, junto com avaliações úteis de outros usuários."
+
+#. type: Content of: <div><h1>
+#: slideshows/kaiana/slides/welcome.html:1
+msgid "Welcome to Kaiana"
+msgstr ""
+
+#. type: Content of: <div><div><div><p>
+#: slideshows/kaiana/slides/welcome.html:8
+msgid ""
+"Fast and full of new features, the latest version of Kaiana makes computing "
+"easier than ever. Here are just a few cool new things to look out for…"
+msgstr ""
