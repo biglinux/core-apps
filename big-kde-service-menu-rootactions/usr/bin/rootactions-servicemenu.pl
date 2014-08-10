@@ -838,7 +838,7 @@ if ( $#ARGV lt 0 ) {
 
 # Check whether kdesudo is installed, and use it instead of kdesu to get root privileges.
 if ( `which kdesudo` ) {
-	$SUCOMMAND = "$KDEBINPATH"."kdesudo -d --noignorebutton --"}
+	$SUCOMMAND = "$KDEBINPATH"."kdesudo -d -c"}
 elsif ( `which kdesu` ) {
 	$SUCOMMAND = "$KDEBINPATH"."kdesu -d -c"}
 else { $SUCOMMAND = "xdg-su -c"}

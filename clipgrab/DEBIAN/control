@@ -1,0 +1,15 @@
+Package: clipgrab
+Version: 3.4.2-1trusty4
+Architecture: amd64
+Maintainer: Anton Asche <anton.asche@mhinac.de>
+Installed-Size: 685
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libqt4-network (>= 4:4.5.3), libqt4-xml (>= 4:4.5.3), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.6.1), libqtwebkit4, libstdc++6 (>= 4.1.1), libav-tools (>= 6:9.14), libvorbis0a (>= 1.3.2), libogg0 (>= 1.2.1), libavcodec-extra-54 (>= 6:9.14)
+Section: sound
+Priority: extra
+Homepage: http://www.clipgrab.de
+Description: Download and convert videos from various online portals (e.g. YouTube)
+ With ClipGrab, you can easily save your favourite videos from sites like
+ YouTube, Dailymotion or Vimeo. And you can convert these videos into
+ "usable" formats like WMV, MPEG or MP3.
+
+ 

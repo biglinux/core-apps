@@ -1,0 +1,73 @@
+#!/bin/bash
+#
+# Autor: Bruno Goncalves
+# Contato: bigbruno@gmail.com
+# Licença: GPL
+# Data: Junho 2014
+# Seerve para utilizar o netflix no Linux.
+##########################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN="kaiana-netflix"
+
+
+#Confere se o pipelight esta instalado
+if [ "$(pipelight-plugin --list-enabled-all | grep silverlight)" = "" ]; then
+
+
+#Confere se o arquivo existe
+if [ -e "/rofs" ]; then
+    kdialog --msgbox --title $"O sistema não está instalado." $"Esse aplicativo funciona somente com o sistema instalado no hd."
+fi
+
+
+
+
+#Se nao estiver pergunta se deve instalar
+kdialog --title $"Instalar o Silverlight" --msgbox $"Para utilizar esse aplicativo é necessário instalar o plugin Silverlight, para isso é necesário que você concorde com a licença de uso.
+
+Na próxima janela irei exibir um diálogo onde você decidirá se aceita a licença de uso do Silverlight."
+
+
+kdialog --title $"Instalar o Silverlight" --yesno $"[*] Microsoft Silverlight 5.1
+        By continuing the installation you agree that you've read and accepted the
+        MICROSOFT SOFTWARE LICENSE TERMS:
+        http://go.microsoft.com/fwlink/?LinkId=229303
+
+        Microsoft Silverlight Privacy Statement:
+        http://go.microsoft.com/fwlink/?LinkId=229306
+
+        To find out more click here:
+        http://www.microsoft.com/silverlight/
+
+[*] mpg2splt.ax
+        This library is part of the Microsoft DirectX End-User Runtime.
+        By continuing the installation you agree that you've read and accepted the
+        Microsoft Software License Terms.
+        You can find them in /usr/share/pipelight/licenses/license-mpg2splt.txt
+
+        To find out more click here:
+        http://www.microsoft.com/en-us/download/details.aspx?id=35
+
+        Do you accept the 2 license(s) above?"
+    if [ "$?" -ne 1 ]; then
+	pipelight-plugin --accept --enable silverlight5.1 -y
+    else
+	kdialog --title $"Instalar o Silverlight" --error $"A instalação do Silverlight foi cancelada."
+	exit
+    fi
+fi
+
+
+
+
+
+if [ "$(echo "$LANG" | grep pt_BR)" = "" ]; then
+    /usr/share/kaiana/netflix/kaiana-netflix.py "Netflix" "http://netflix.com" "/usr/share/pixmaps/netflix.png" "1010" "600"
+else
+    /usr/share/kaiana/netflix/kaiana-netflix.py "Netflix" "http://netflix.com.br" "/usr/share/pixmaps/netflix.png" "1010" "600"
+fi
+
+
+

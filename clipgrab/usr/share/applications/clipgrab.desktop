@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Name=ClipGrab
+Exec=clipgrab
+Icon=/usr/share/pixmaps/clipgrab.png
+Comment[de_DE]=Videos von Online-Portalen wie YouTube herunterladen und konvertieren
+Comment[pt_BR]=Baixar vídeos de sites como Youtube e Dailymotion
+Comment=Download and convert videos from various portals (e.g. YouTube)
+GenericName=Download and convert videos from various portals (e.g. YouTube)
+GenericName[pt_BR]=Baixar vídeos de sites como Youtube e Dailymotion
+Categories=Application;Network

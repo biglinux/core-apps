@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=AudioVideo;Player;Video;
+Exec=kaiana-netflix
+Comment=Online movies
+Comment[pt]=Vídeos online
+Comment[pt_BR]=Vídeos online
+Icon=/usr/share/pixmaps/netflix.png
+Name=Netflix online movies
+Name[pt]=Netflix, filmes e séries
+Name[pt_BR]=Netflix, filmes e séries
+Type=Application
+X-KDE-StartupNotify=false

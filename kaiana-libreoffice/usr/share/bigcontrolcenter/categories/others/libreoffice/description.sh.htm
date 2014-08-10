@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Control Center for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-others-libreoffice
+
+name_application=$"Extras para o LibreOffice"
+description_application=$"Selecione a interface e baixe extras"
+exec_application="/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/others/libreoffice/libreoffice.sh.htm -i /usr/share/bigcontrolcenter/categories/others/libreoffice/icon.png"
+icon_application="/usr/share/bigcontrolcenter/categories/others/libreoffice/icon.png"

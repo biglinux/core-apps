@@ -1,0 +1,91 @@
+# Portuguese translations for Kaiana package.
+# Copyright (C) 2014 THE Kaiana'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Kaiana package.
+# Automatically generated, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Kaiana\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-08-09 05:28-0300\n"
+"PO-Revision-Date: 2014-08-09 05:28-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Selecionar interface do LibreOffice"
+msgstr ""
+
+msgid "Aplicar"
+msgstr ""
+
+msgid "Sair"
+msgstr ""
+
+msgid ""
+"Alteração aplicada, a configuração será utilizada após reiniciar o "
+"computador ou efetuar login em uma nova sessão."
+msgstr ""
+
+msgid "Extras para o LibreOffice"
+msgstr ""
+
+msgid "Selecione a interface e baixe extras"
+msgstr ""
+
+msgid "Utilizar interface de acordo com o Desktop em uso"
+msgstr ""
+
+msgid "Melhor integração com dispositivos, por exemplo CDs e PenDrives"
+msgstr ""
+
+msgid "Melhor compatiblidade com extensões e integração com o tema do sistema"
+msgstr ""
+
+msgid "Aprenda a utilizar os recursos do LibreOffice com os guias oficiais."
+msgstr ""
+
+msgid "Diversos modelos de arquivos para agilizar o seu trabalho."
+msgstr ""
+
+msgid "Faça o download pelo navegador e abra no LibreOffice."
+msgstr ""
+
+msgid "Selecione a interface que mais o agrada."
+msgstr ""
+
+msgid "Extras e configurações especiais para o LibreOffice."
+msgstr ""
+
+msgid "Adicione recursos com extensões"
+msgstr ""
+
+msgid "Modelos de arquivos"
+msgstr ""
+
+msgid "Documentação"
+msgstr ""
+
+msgid "Mais modelos de arquivos"
+msgstr ""
+
+msgid "Selecione a interface (KDE ou Gnome)"
+msgstr ""
+
+msgid "Selecione a interface a ser utilizada:"
+msgstr ""
+
+msgid "Automatico - Utilizar interface de acordo com o Desktop em uso."
+msgstr ""
+
+msgid "KDE - Melhor integracao com dispositivos, exemplos: CDs e PenDrives."
+msgstr ""
+
+msgid ""
+"Gnome - Melhor compatiblidade com extensoes, integracao com o tema do "
+"sistema e suporte a bluetooth."
+msgstr ""

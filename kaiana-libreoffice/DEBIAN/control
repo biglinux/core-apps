@@ -1,0 +1,10 @@
+Package: kaiana-libreoffice
+Version: 1:0.0.0-1kaiana1
+Architecture: all
+Maintainer: Bruno <bigbruno@gmail.com>
+Installed-Size: 1068
+Section: editors
+Depends: libreoffice-kde, libreoffice-gtk
+Homepage: libreoffice.org
+Description: Panel for libreoffice
+

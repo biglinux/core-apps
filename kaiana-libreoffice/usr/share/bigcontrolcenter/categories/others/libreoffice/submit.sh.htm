@@ -1,0 +1,49 @@
+#!/bin/bash
+
+#WEB panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-others-libreoffice
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,310);
+function NoResize(){
+  window.resizeTo(640,310);
+}
+</script>
+'
+
+title=$"Selecionar interface do LibreOffice"
+apply=$"Aplicar"
+close=$"Sair"
+#title
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>'
+close_header
+
+
+echo "$p_escolha" > ~/.oooforce
+
+#Exibir resposta para o usuario
+echo "<center><b>" $"Alteração aplicada, a configuração será utilizada após reiniciar o computador ou efetuar login em uma nova sessão." "</b></center><p><br>"
+
+
+
+
+echo "</div><div id=\"rodape\"><button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

@@ -1,8 +1,0 @@
-Dependencies :
-
-    sudo apt-get install python-qt4 python-flask python-jinja2
-
-To run:
-
-    ./run.sh
-

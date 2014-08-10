@@ -1,8 +1,8 @@
 Package: kaiana-icons
-Version: 1.0.0-0kaiana2
+Version: 1.0.0-0kaiana4
 Architecture: all
 Maintainer: Paulo Giovanni Pereira <www.unialivre.com>
 Installed-Size: 38000
 Section: admin
 Priority: optional
-Description: Install oxigen ionized icon package to Kaiana
+Description: Install oxigen ionized icon package to Kaiana and Kfaenza icons

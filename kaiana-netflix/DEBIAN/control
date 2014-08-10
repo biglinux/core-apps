@@ -1,0 +1,10 @@
+Package: kaiana-netflix
+Version: 1.0.0-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <bigbruno@gmail.com>
+Installed-Size: 100
+Depends: pipelight-multi, python-webkit, gir1.2-soup-2.4
+Section: admin
+Priority: optional
+Description: Not official netflix webapp
+

@@ -1,0 +1,3 @@
+Package: *
+Pin: release o=LP-PPA-blue-shell-firefox-kde
+Pin-Priority: 1000
