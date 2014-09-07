@@ -1,0 +1,3300 @@
+[TIPS]
+
+
+
+100%25.title=100%
+
+100%25.content=Zoom do documento para 100% do tamanho normal.
+
+
+
+
+
+3DColor.title=Cor 3 - d
+
+3DColor.content=Encha a forma 3-d selecionada com a cor . \n nclique na seta para selecionar a partir de diferentes cores em 3-d .
+
+
+
+
+
+3DColor2.title=Cor 3 - d
+
+3DColor2.content=Clique na seta para selecionar a partir de diferentes cores em 3-d .
+
+
+
+
+
+3DDepthMenu.title=Profundidade
+
+3DDepthMenu.content=Alterar a altura da forma 3 - d seleccionado .
+
+
+
+
+
+3DDirectionPalette.title=Direção
+
+3DDirectionPalette.content=Escolha o efeito de sentido da forma 3-d selecionado.
+
+
+
+
+
+3DLightingPalette.title=Iluminação
+
+3DLightingPalette.content=definir a direção de iluminação e intensidade para a forma 3-d selecionado. este último inclui brilhante, normal e escuro. 
+
+
+
+
+
+3DOnOff.title=3-d on /off
+
+3DOnOff.content=Ligar ou desligar o efeito 3-d aplicado à forma .
+
+
+
+
+
+3DStylePalette.title=3 - d efeitos
+
+3DStylePalette.content=Adicionar um efeito 3- d para a forma.
+
+
+
+
+
+3DSurfaceMenu.title=Superfície
+
+3DSurfaceMenu.content=Escolha um efeito de superfície para a forma 3-d selecionado no documento .
+
+
+
+
+
+3DTiltDown.title=Inclinação para baixo
+
+3DTiltDown.content=Inclinação da forma a seguir.
+
+
+
+
+
+3DTiltLeft.title=Tilt esquerda
+
+3DTiltLeft.content=Inclinar a forma para a esquerda .
+
+
+
+
+
+3DTiltRight.title=Tilt direito
+
+3DTiltRight.content=Inclinar a forma para a direita .
+
+
+
+
+
+3DTiltUp.title=Inclinação para cima
+
+3DTiltUp.content=Incline a forma para trás.
+
+
+
+
+
+AcceptChangeOnTB.title=Aceitar a alteração selecionada
+
+AcceptChangeOnTB.content=Aceitar a mudança atual no documento .
+
+
+
+
+
+AcceptChangeOnTB2.title=Aceitar a alteração selecionada
+
+AcceptChangeOnTB2.content=Clique aqui para aceitar todas as alterações no documento.
+
+
+
+
+
+AdjustTableProperties.title=Propriedades da tabela
+
+AdjustTableProperties.content=Abra a caixa de diálogo propriedades da tabela.
+
+AdjustTableProperties.img=Wpstableproperties
+
+
+
+
+
+AlignBottomCenter.title=Alinhar ao centro inferior
+
+AlignBottomCenter.content=Centralizar o texto e alinhar a parte inferior da célula .
+
+
+
+
+
+AlignBottomJustified.title=Alinhar parte inferior justified
+
+AlignBottomJustified.content=Alinhar texto para o canto inferior esquerdo da célula .
+
+
+
+
+
+AlignBottomRight.title=Alinhar à direita inferior
+
+AlignBottomRight.content=Alinhar texto para o canto inferior direito da célula .
+
+
+
+
+
+AlignCenter.title=Alinhar ao centro
+
+AlignCenter.content=Texto centro vertical e horizontalmente no interior da célula .
+
+
+
+
+
+AlignCenterJustified.title=Centralizar justificado
+
+AlignCenterJustified.content=Centro texto verticalmente e alinhá-lo para o lado esquerdo da célula.
+
+
+
+
+
+AlignCenterRight.title=Alinhar centro direita
+
+AlignCenterRight.content=Centro texto verticalmente e alinhá-lo para o lado direito da célula.
+
+
+
+
+
+AlignStyle.title=Alinhamento
+
+AlignStyle.content=Especificar como o conteúdo na célula deve ser alinhado .
+
+
+
+
+
+AlignStyle2.title=Alinhamento
+
+AlignStyle2.content=Especificar como o conteúdo na célula deve ser alinhado .
+
+
+
+
+
+AlignTopCenter.title=Alinhe top center
+
+AlignTopCenter.content=Centralizar o texto e alinhá-lo ao topo da célula.
+
+
+
+
+
+AlignTopJustified.title=Alinhe top justificado
+
+AlignTopJustified.content=Alinhar texto para o canto superior esquerdo da célula .
+
+
+
+
+
+AlignTopRight.title=Alinhe top right
+
+AlignTopRight.content=Alinhar texto para o canto superior direito da célula .
+
+
+
+
+
+ArrangeAll.title=Organizar tudo
+
+ArrangeAll.content=Telha de todos os documentos aberto de lado- a-lado na mesma janela do programa .
+
+
+
+
+
+ArtisticWordCharacterSpacing.title=Espaçamento entre caracteres
+
+ArtisticWordCharacterSpacing.content=Alterar o espaçamento entre as letras do texto de wordart selecionado.
+
+
+
+
+
+AutoAdjustRightIndent.title=Ajuste de recuo à direita com grade
+
+AutoAdjustRightIndent.content=Ajustar automaticamente o documento certo travessão quando a grade do documento está definido. \\ n opção \\ no está disponível quando grid é definido.
+
+
+
+
+
+AutoFitWindow.title=Ajuste automático à janela
+
+AutoFitWindow.content=Ajustar automaticamente a largura da tabela de acordo com o tamanho da janela
+
+
+
+
+
+AutoVersion.title=Ativar auto backup
+
+AutoVersion.content=ativar o backup automático para o documento atual , e salvar o arquivo de backup para arquivo seguro cada vez que o documento é fechado . 
+
+
+
+
+
+Autobackup.title=Seguro arquivo
+
+Autobackup.content=Uma breve introdução ao arquivo seguro .
+
+
+
+
+
+BackgroundShapeFillColor.title=Página cor
+
+BackgroundShapeFillColor.content=Escolha uma cor para o fundo da página.
+
+BackgroundShapeFillColor.img=Wpsbackgroundshapefillcolor
+
+
+
+
+
+Bold.title=Negrito
+
+Bold.content=Faça o texto selecionado em negrito.
+
+
+
+
+
+BreakForwardLink.title=Quebre atacante link
+
+BreakForwardLink.content=Quebrar o vínculo entre a caixa de texto selecionado eo próximo . \n ntodas do texto será colocado na caixa de texto selecionado.
+
+
+
+
+
+BringForward.title=Trazer para a frente
+
+BringForward.content=Traga o objeto selecionado para a frente de modo que ele está escondido pelo menos objetos que estão na frente dele .
+
+
+
+
+
+BringForward2.title=Trazer para a frente
+
+BringForward2.content=Traga os objetos selecionados para a frente um nível ou para a frente de todos os objetos .
+
+
+
+
+
+Bullets.title=Bullets
+
+Bullets.content=Iniciar uma lista com marcadores . \n nclique na seta para selecionar diferentes estilos de bala.
+
+
+
+
+
+Bullets2.title=Bullets
+
+Bullets2.content=Clique na seta para selecionar diferentes estilos de bala.
+
+
+
+
+
+COMAddIns.title=Com add- ins
+
+COMAddIns.content=Adicionar ou excluir disponível com add-ins.
+
+
+
+
+
+TemplateAddIns.title=Add- ins
+
+TemplateAddIns.content=Gerenciar os suplementos disponíveis para uso com este arquivo.
+
+
+
+
+
+CTB_DesignMode.title=Modo de design
+
+CTB_DesignMode.content=Entre no modo de design para editar nomes e as funções dos controles .
+
+
+
+
+
+CTB_MoreControls.title=Mais controles
+
+CTB_MoreControls.content=Clique aqui para inserir um controle a partir do conjunto de controles disponíveis no computador.
+
+
+
+
+
+CTB_Property.title=Controles de propriedade
+
+CTB_Property.content=Visualizar e modificar as propriedades para o controle selecionado.
+
+
+
+
+
+CTB_ViewCode.title=Exibir código
+
+CTB_ViewCode.content=Lançamento editor visual basic para editar o código dos controles selecionados .
+
+
+
+
+
+ChangeCase.title=Alterar caso
+
+ChangeCase.content=mude todo o texto selecionado para maiúsculas , minúsculas ou outras capitalizações comuns. \n nclique na seta para escolher guia fonético , cerca caracteres , e as opções de fronteira personagem.
+
+
+
+
+
+ChangePicture.title=Alterar imagem
+
+ChangePicture.content=mudar para uma imagem diferente , preservando a formatação e tamanho da imagem atual . 
+
+
+
+
+
+ChangeTextDirection.title=Direção do texto
+
+ChangeTextDirection.content=personalizar a direção do layout de texto na seção atual , todo o documento, ou a caixa de texto selecionado e mesa. 
+
+
+
+
+
+CharacterBorder.title=Border personagem
+
+CharacterBorder.content=Aplique uma borda em torno de um conjunto de caracteres ou frase.
+
+
+
+
+
+CharacterShading.title=Shading personagem
+
+CharacterShading.content=Sombra do texto selecionado com a cor cinza.
+
+
+
+
+
+CheckSpelling.title=Verificação ortográfica
+
+CheckSpelling.content=Verifique a ortografia do texto no documento atual .
+
+
+
+
+
+Chinese%20Translation.title=Simplificado para chinês tradicional
+
+Chinese%20Translation.content=Decida a unidade de tradução para simplificado - chinês tradicional para ser personagem ou palavra.
+
+
+
+
+
+CleanLineSpacing.title=Espaçamento clean line
+
+CleanLineSpacing.content=Aplicar espaçamento simples entre linhas do parágrafo selecionado e se encaixam na grade .
+
+
+
+
+
+ClearFormats.title=Limpar formatação
+
+ClearFormats.content='limpar a formatação da seleção , deixando apenas o texto simples. 
+
+
+
+
+
+ClearTableStyle.title=Limpar o estilo de mesa
+
+ClearTableStyle.content=Limpar estilo de tabela de células selecionadas .
+
+
+
+
+
+CloseDevelopmentTools.title=Fechar
+
+CloseDevelopmentTools.content=Clique aqui para esconder developer tools .
+
+
+
+
+
+CloseHeaderAndFooter.title=Fechar
+
+CloseHeaderAndFooter.content=Fechar cabeçalho e rodapé ferramentas e retornar à edição do documento.
+
+
+
+
+
+CloseMail.title=Fechar
+
+CloseMail.content=Clique aqui para esconder guia correspondências .
+
+
+
+
+
+CloseOtherWindow.title=Fechar other windows
+
+CloseOtherWindow.content=Feche todas as outras janelas exceto a atual.
+
+
+
+
+
+CloseOutlineview.title=Fechar
+
+CloseOutlineview.content=Fechar vista de destaques e retornar à edição do documento.
+
+
+
+
+
+ClosePreview.title=Fechar
+
+ClosePreview.content=Fechar visualização de impressão e retornar à edição do documento.
+
+
+
+
+
+CloseWindow.title=Fechar janela
+
+CloseWindow.content=Feche a janela atual.
+
+
+
+
+
+CmpSideBySide.title=Ver lado a lado
+
+CmpSideBySide.content=Ver dois documentos lado a lado para comparar os seus conteúdos .
+
+
+
+
+
+CollapseOnOutlining.title=Fechar
+
+CollapseOnOutlining.content=Recolher o item selecionado.
+
+
+
+
+
+CompressPictures.title=Compress pictures
+
+CompressPictures.content=Comprimir a imagem selecionada ou todas as imagens no documento para reduzir o tamanho .
+
+
+
+
+
+ConvertTabletoText.title=Converter tabela em texto
+
+ConvertTabletoText.content=converter tabela em texto de parágrafo usando vírgulas , espaços ou outros caracteres como separadores . 
+
+
+
+
+
+Copy.title=Cópia
+
+Copy.content=Copiar a seleção e colocá-lo na área de transferência do sistema.
+
+
+
+
+
+CoverPages.title=Inserir página de rosto
+
+CoverPages.content=escolher a partir de diferentes estilos de página de rosto e inserir no documento . você pode preencher o título , autor, endereço de e-mail e outras informações. 
+
+CoverPages.img=Wpscoverpages
+
+
+
+
+
+CreateTextBoxLink.title=Criar texto link box
+
+CreateTextBoxLink.content=Vincular a caixa de texto selecionado para outro vazio para que o texto flui entre eles.
+
+
+
+
+
+CrossReference.title=Referência cruzada
+
+CrossReference.content=Use a referência cruzada para se referir a títulos e valores no documento.
+
+
+
+
+
+Cut.title=Cut
+
+Cut.content=Recortar a seleção e colocá-lo na área de transferência do sistema.
+
+
+
+
+
+DecreaseIndent.title=Diminuir recuo
+
+DecreaseIndent.content=Diminuir o nível de recuo do parágrafo.
+
+
+
+
+
+Delete.title=Excluir
+
+Delete.content=excluir linhas, colunas , células ou a tabela inteira. 
+
+
+
+
+
+DeleteSection.title=Excluir seção
+
+DeleteSection.content=Excluir a seção selecionada.
+
+
+
+
+
+DemoteOnOutlining.title=Rebaixar
+
+DemoteOnOutlining.content=Rebaixar esse item para um nível inferior.
+
+
+
+
+
+DemoteOnParagraph.title=Rebaixar toc nível
+
+DemoteOnParagraph.content=Rebaixar o parágrafo selecionado para um nível inferior toc .
+
+
+
+
+
+DemoteToLowestLevelOnOutlining.title=Rebaixar para corpo de texto
+
+DemoteToLowestLevelOnOutlining.content=Rebaixar esse item para o nível mais baixo do contorno.
+
+
+
+
+
+DemoteToLowestLevelOnParagraph.title=Rebaixar para corpo de texto
+
+DemoteToLowestLevelOnParagraph.content=Rebaixar o parágrafo selecionado para o nível mais baixo do toc .
+
+
+
+
+
+DetailedSettings_DrawingTools.title=Configurações
+
+DetailedSettings_DrawingTools.content=Altere as configurações de formatação forma.
+
+
+
+
+
+DetailedSettings_Home.title=Configurações
+
+DetailedSettings_Home.content=alterar as configurações de fonte, parágrafo e estilos e formatação. 
+
+
+
+
+
+DetailedSettings_PageLayout.title=Configurações
+
+DetailedSettings_PageLayout.content=Altere as configurações de página de configuração e parágrafo.
+
+
+
+
+
+DetailedSettings_Paragraph.title=Configurações
+
+DetailedSettings_Paragraph.content=alterar as configurações de parágrafo , configuração de página , e estilos e formatação. 
+
+
+
+
+
+DetailedSettings_PictureTools.title=Configurações
+
+DetailedSettings_PictureTools.content=Altere as configurações de formatação de imagem.
+
+
+
+
+
+DetailedSettings_Section.title=Configurações
+
+DetailedSettings_Section.content=alterar as configurações de configuração de página , e cabeçalho e rodapé. 
+
+
+
+
+
+DetailedSettings_TableTools.title=Detailedsettings tabletools título
+
+DetailedSettings_TableTools.content=Detailedsettings tabletools conteúdo
+
+
+
+
+
+DetailedSettings_WordArt.title=Configurações
+
+DetailedSettings_WordArt.content=Altere as configurações de formatação de wordart.
+
+
+
+
+
+DevelopmentTools.title=Ferramentas de desenvolvimento
+
+DevelopmentTools.content='abra a guia ferramentas de desenvolvimento para inserir o botão de opção , caixa de seleção e muito mais. 
+
+
+
+
+
+DirectoryLevel.title=Toc nível
+
+DirectoryLevel.content=Defina o nível de toc para o parágrafo selecionado.
+
+
+
+
+
+DisableLineHeightGrid.title=Alinhar à grade
+
+DisableLineHeightGrid.content=Alinhar o conteúdo do texto de acordo com a grade.
+
+
+
+
+
+DisplayForReview.title=Mostrar para revisão
+
+DisplayForReview.content=Escolha como visualizar as alterações propostas para o documento .
+
+
+
+
+
+DistributeColumns.title=Distribuir colunas uniformemente
+
+DistributeColumns.content=Distribuir a largura das colunas seleccionadas igualmente entre elas .
+
+
+
+
+
+DistributeRows.title=Distribuir linhas uniformemente
+
+DistributeRows.content=Distribuir a altura das linhas seleccionadas igualmente entre elas .
+
+
+
+
+
+DoublePages.title=Duas páginas
+
+DoublePages.content=Zoom do documento de modo que duas páginas caber na janela.
+
+
+
+
+
+DrawTable.title=Desenhar tabela
+
+DrawTable.content=Desenhar as bordas de uma tabela.
+
+
+
+
+
+DrawingToolsDetailedSettings.title=Drawingtoolsdetailedsettings título
+
+DrawingToolsDetailedSettings.content=Drawingtoolsdetailedsettings conteúdo
+
+
+
+
+
+DropCap.title=Capitular
+
+DropCap.content=Criar uma letra maiúscula grande no início de um parágrafo.
+
+
+
+
+
+EditPoints.title=Editar pontos
+
+EditPoints.content=Edite os pontos de quebra para mudar a forma .
+
+
+
+
+
+EditWordArtText.title=Editar texto wordart
+
+EditWordArtText.content=Edite o texto do wordart selecionado.
+
+
+
+
+
+EmphasisMark.title=ênfase mark
+
+EmphasisMark.content=Adicionar pontos pretos sob o conteúdo selecionado para mostrar ênfase. \n nclique na seta para adicionar um tachado.
+
+
+
+
+
+EncloseCharacters.title=Coloque personagens
+
+EncloseCharacters.content='adicionar um círculo ou outra borda em torno de um personagem. \n nclique na seta para escolher guia fonético , change case e opções de borda de caracteres. 
+
+
+
+
+
+EnterParagraphAdjustment.title=Disposição parágrafo
+
+EnterParagraphAdjustment.content=Entre no modo de layout de parágrafo.
+
+EnterParagraphAdjustment.img=Wpsenterparagraphadjustment
+
+
+
+
+
+ExitParagraph.title=Fechar
+
+ExitParagraph.content=Feche as ferramentas de layout de parágrafo e voltar a editar o documento .
+
+
+
+
+
+ExpandOnOutlining.title=Expandir
+
+ExpandOnOutlining.content=Expanda o item selecionado.
+
+
+
+
+
+ExplorBackupDir.title=Explorar file safe
+
+ExplorBackupDir.content=Ver arquivos de backup e abrir ou recuperar os arquivos de backup para um determinado documento.
+
+
+
+
+
+ExplorVersion.title=Ver backup história
+
+ExplorVersion.content='ver o histórico de registro de backup do documento atual para abrir , excluir ou restaurar os arquivos. 
+
+
+
+
+
+ExportWeiboImageCmd.title=Exportação weibo imagem
+
+ExportWeiboImageCmd.content=Exportação weibo imagem
+
+
+
+
+
+FieldFormula.title=Formula
+
+FieldFormula.content='adicionar uma fórmula a uma célula para realizar um cálculo simples, como sum, average ou max . 
+
+
+
+
+
+FillColor.title=Preenchimento da forma
+
+FillColor.content='encha a forma selecionada com uma cor sólida, gradiente , imagem ou textura. \n nclique na seta para selecionar diferentes efeitos de preenchimento .
+
+
+
+
+
+FillColor2.title=Preenchimento da forma
+
+FillColor2.content=Clique na seta para selecionar diferentes efeitos de preenchimento .
+
+
+
+
+
+Find.title=Encontre
+
+Find.content='encontre o texto do documento . \n nclique na seta para escolher outras opções , tais como go to. 
+
+
+
+
+
+Find2.title=Encontre
+
+Find2.content='clique na seta para escolher outras opções , tais como go to. 
+
+
+
+
+
+FirstPageIsDifferent.title=Primeira página diferente
+
+FirstPageIsDifferent.content=Especifique um cabeçalho e rodapé único para a primeira página do documento.
+
+
+
+
+
+FirstRecord.title=Primeiro registro
+
+FirstRecord.content=Visualize o primeiro registro na lista de destinatários.
+
+
+
+
+
+FirstSection.title=Primeira seção
+
+FirstSection.content=Vá para a primeira seção do documento .
+
+
+
+
+
+FontColor.title=Cor do texto
+
+FontColor.content=Mude a cor do texto . \n nclique na seta para escolher uma cor de texto diferente.
+
+
+
+
+
+FontColor2.title=Cor do texto
+
+FontColor2.content=Clique na seta para escolher uma cor de texto diferente.
+
+
+
+
+
+FontName.title=Fonte
+
+FontName.content=Alterar o tipo de letra .
+
+
+
+
+
+FontSize.title=Tamanho da fonte
+
+FontSize.content=Alterar o tamanho da fonte.
+
+
+
+
+
+FooterLinkToPrevious.title=Link para rodapé anterior
+
+FooterLinkToPrevious.content=Vincular o rodapé atual para a seção anterior.
+
+
+
+
+
+FormatAlignCenter.title=Centro
+
+FormatAlignCenter.content=Texto center.
+
+
+
+
+
+FormatAlignDistributed.title=Distribuído
+
+FormatAlignDistributed.content=Alinhar parágrafo para tanto a margens esquerda e direita , adicionando espaço extra entre caracteres , se necessário.
+
+
+
+
+
+FormatAlignJustify.title=Justificar
+
+FormatAlignJustify.content=Alinhar texto para ambos as margens esquerda e direita , adicionando espaço extra entre as palavras conforme necessário .
+
+
+
+
+
+FormatAlignLeft.title=Alinhar texto à esquerda
+
+FormatAlignLeft.content=Alinhar o texto à esquerda .
+
+
+
+
+
+FormatAlignRight.title=Alinhar o texto à direita
+
+FormatAlignRight.content=Alinhar o texto à direita .
+
+
+
+
+
+FormatObject.title=Formatar objeto
+
+FormatObject.content=Mostrar a caixa de diálogo formatar objeto .
+
+FormatObject.img=Wpsformatobject
+
+
+
+
+
+FormatPainter.title=Pincel
+
+FormatPainter.content=Copiar a formatação de um local e aplicá-lo para outro. \n ndouble - clique neste botão para aplicar a mesma formatação a vários lugares no documento .
+
+
+
+
+
+FullScreenMode.title=Modo de tela cheia
+
+FullScreenMode.content=Ver o documento no modo de tela cheia .
+
+
+
+
+
+Gallery.title=Wps gallery
+
+Gallery.content='wps gallery oferece todos os tipos de fontes de imagens para você usar , coletar , editar e gerenciar. \n nwps galeria fontes on-line requer conexão com a internet . 
+
+
+
+
+
+GenkoSetting.title=Genko setting
+
+GenkoSetting.content=Aplicar configurações genko ao documento atual .
+
+GenkoSetting.img=Wpsgenkosetting
+
+
+
+
+
+GotoFootnotes.title=Próxima nota de rodapé /nota de rodapé
+
+GotoFootnotes.content=Navegue até a seguinte nota de rodapé /nota de rodapé no documento.
+
+
+
+
+
+GotoNextEndnote.title=Próxima endnote
+
+GotoNextEndnote.content=Navegue até a seguinte nota de rodapé no documento.
+
+
+
+
+
+GotoNextFootnote.title=Próxima nota de rodapé
+
+GotoNextFootnote.content=Navegue até a seguinte nota de rodapé no documento.
+
+
+
+
+
+GotoPrevEndnote.title=Nota de rodapé anterior
+
+GotoPrevEndnote.content=Navegue para a nota final anterior no documento .
+
+
+
+
+
+GotoPrevFootnote.title=Nota anterior
+
+GotoPrevFootnote.content=Navegue até a nota anterior no documento.
+
+
+
+
+
+GotoRecord.title=Ir para gravar
+
+GotoRecord.content=Ver um registro específico na lista de destinatários
+
+
+
+
+
+GotoTocOnOutlining.title=Ir para toc
+
+GotoTocOnOutlining.content=Ir para toc do documento.
+
+
+
+
+
+Gridlines.title=Gridlines
+
+Gridlines.content=Ativar /desativar as linhas de grade para que você pode alinhar objetos no documento .
+
+
+
+
+
+GrowFont.title=Crescer font
+
+GrowFont.content=Aumentar o tamanho da fonte.
+
+
+
+
+
+HeadRowsRepeat.title=Repetir linhas de cabeçalho
+
+HeadRowsRepeat.content=Repita as linhas de cabeçalho da tabela selecionada em cada página. \n no afeta apenas as tabelas que se estendem para além de uma única página.
+
+
+
+
+
+HeaderAndFooterSetting.title=Cabeçalho /rodapé
+
+HeaderAndFooterSetting.content=Mostrar a caixa de diálogo cabeçalho /rodapé .
+
+
+
+
+
+HeaderFooter.title=Cabeçalho e rodapé
+
+HeaderFooter.content=Edite o cabeçalho e rodapé do documento.
+
+HeaderFooter.img=Wpsheaderfooter
+
+
+
+
+
+HeaderFooterOptions.title=Cabeçalho e rodapé opções
+
+HeaderFooterOptions.content=aplicar configurações de cabeçalho e rodapé para a seção ou documento atual, como primeira página diferente , diferentes páginas estranho mesmo , ea margem para a fronteira. 
+
+HeaderFooterOptions.img=Wpsheaderfooteroptions
+
+
+
+
+
+HeaderLine.title=Mostrar cabeçalho de linha
+
+HeaderLine.content=Adicione uma linha horizontal para o cabeçalho .
+
+
+
+
+
+HeaderLinkToPrevious.title=Link para header anterior
+
+HeaderLinkToPrevious.content=Vincular o cabeçalho atual para a seção anterior.
+
+
+
+
+
+HighlightColor.title=Realçar texto cor
+
+HighlightColor.content=Faça olhada texto como ele foi marcado com uma caneta marca-texto . \n nclique na seta para selecionar uma cor de realce diferente.
+
+
+
+
+
+HighlightColor2.title=Realçar texto cor
+
+HighlightColor2.content=Clique na seta para selecionar uma cor de realce diferente.
+
+
+
+
+
+HighlightMergeFields.title=Realçar campos de mesclagem
+
+HighlightMergeFields.content=Destaque os campos que você tenha inserido no documento . \n neste torna mais fácil para ver o que parte de sua forma de carta será substituído por informações da lista de destinatários que você escolheu.
+
+
+
+
+
+HomeDetailedSettings.title=Homedetailedsettings título
+
+HomeDetailedSettings.content=Homedetailedsettings conteúdo
+
+
+
+
+
+IncreaseIndent.title=Aumentar recuo
+
+IncreaseIndent.content=Aumentar o nível de recuo do parágrafo.
+
+
+
+
+
+IncreaseStep.title=Aumentar espaçamento entre linhas
+
+IncreaseStep.content=Increas o espaçamento de linha de parágrafo atual em 0,25 vezes.
+
+
+
+
+
+InsertAutoText.title=Auto texto
+
+InsertAutoText.content=Inserir autotexto no cabeçalho ou rodapé para ver facilmente e localizar o artigo relacionado .
+
+
+
+
+
+InsertBlankPage.title=Blank page
+
+InsertBlankPage.content=Inserir uma nova página em branco na posição do cursor .
+
+
+
+
+
+InsertBlankPage2.title=Blank page
+
+InsertBlankPage2.content=Clique aqui para inserir uma página em branco na horizontal ou na vertical.
+
+
+
+
+
+InsertBookmark.title=Inserir marcador
+
+InsertBookmark.content=Criar um marcador para atribuir um nome a um ponto específico em um documento.
+
+
+
+
+
+InsertCaption.title=Inserir legenda
+
+InsertCaption.content=Adicionar uma legenda descritiva para uma imagem ou uma tabela.
+
+InsertCaption.img=Wpsinsertcaption
+
+
+
+
+
+InsertCells.title=Inserir células
+
+InsertCells.content=Mostrar a caixa de diálogo inserir células .
+
+InsertCells.img=Wpsinsertcells
+
+
+
+
+
+InsertChart.title=Insert chart
+
+InsertChart.content='o quadro inserido precisa ser editado em wps spreadsheets. \n nao wps spreadsheets fechado , o gráfico no documento pode exibir normalmente. clique duas vezes no gráfico se você quiser editá-lo. 
+
+InsertChart.img=Wpsinsertchart
+
+
+
+
+
+InsertClipArt.title=Inserir clip art
+
+InsertClipArt.content=Escolha um clip-art da janela de tarefas e inseri-lo no documento.
+
+
+
+
+
+InsertColumnLeft.title=Inserir colunas à esquerda
+
+InsertColumnLeft.content=Adicionar uma coluna directamente à esquerda da coluna seleccionada .
+
+
+
+
+
+InsertColumnRight.title=Inserir colunas à direita
+
+InsertColumnRight.content=Adicionar uma coluna imediatamente à direita da coluna seleccionada .
+
+
+
+
+
+InsertComment.title=Inserir comentário
+
+InsertComment.content=Adicionar um comentário ao documento sobre a seleção .
+
+
+
+
+
+InsertDateTime.title=Data e hora
+
+InsertDateTime.content=Mostrar a caixa de diálogo data e hora para inserir a data ou a hora atual no documento atual .
+
+
+
+
+
+InsertField.title=Inserir campo
+
+InsertField.content=Inserir um campo no documento.
+
+
+
+
+
+InsertFileObject.title=Inserir objeto de arquivo
+
+InsertFileObject.content=Inserir arquivo selecionado no documento .
+
+
+
+
+
+InsertFootnote.title=Inserir nota /endnote
+
+InsertFootnote.content=Adicionar uma nota de rodapé do documento .
+
+InsertFootnote.img=Wpsfootandendnote
+
+
+
+
+
+InsertHyperlink.title=Inserir hyperlink
+
+InsertHyperlink.content=criar um link para uma página web , uma imagem, ou um endereço de e -mail. 
+
+
+
+
+
+InsertIndexTables.title=Insira Índice
+
+InsertIndexTables.content=mostrar a caixa de diálogo tabela de conteúdo , e adicionar um índice para o documento. \\ n nível \\ nset toc para o parágrafo selecionado e adicionar um Índice. 
+
+
+
+
+
+InsertMergeFields.title=Inserir campo
+
+InsertMergeFields.content='insira qualquer campo de sua lista de destinatários do documento , como \\ 'last name \\ , \\ 'nick name \\ , \\ 'nome da empresa \\ , \\ 'nome do departamento \\ 'ou \\ 'posição \\ .
+
+
+
+
+
+InsertMutidiagonalCell.title=Celular insert multi- diagonal
+
+InsertMutidiagonalCell.content=Coloque diferentes tipos de linhas diagonais em uma célula para usar como títulos. \n nos linhas diagonais nos cabeçalhos da tabela podem ser movidos.
+
+
+
+
+
+InsertNumber.title=Inserir número de
+
+InsertNumber.content=Insira um formato de número personalizado para o documento.
+
+
+
+
+
+InsertObject.title=Inserir objeto
+
+InsertObject.content=Insira um objeto incorporado no documento. \n nclique a seta para inserir o conteúdo do arquivo para o documento.
+
+
+
+
+
+InsertObject2.title=Inserir objeto
+
+InsertObject2.content=Clique na seta para inserir o conteúdo do arquivo para o documento.
+
+
+
+
+
+InsertPageBreak.title=Quebra de página
+
+InsertPageBreak.content=iniciar a próxima página na posição atual do cursor , eo conteúdo após o cursor será movido para a nova página. 
+
+
+
+
+
+InsertPageNumbers.title=Inserir número de página
+
+InsertPageNumbers.content=Inserir números de página no documento.
+
+
+
+
+
+InsertPictureFromFile.title=Inserir imagem
+
+InsertPictureFromFile.content=Inserir uma imagem na pasta local.
+
+
+
+
+
+InsertPictureFromFile2.title=Inserir imagem
+
+InsertPictureFromFile2.content=Clique aqui para inserir uma imagem em pasta local ou de um scanner.
+
+
+
+
+
+InsertRowAbove.title=Inserir linhas acima
+
+InsertRowAbove.content=Adicionar uma nova linha imediatamente acima da linha selecionada.
+
+
+
+
+
+InsertRowBelow.title=Inserir linhas abaixo
+
+InsertRowBelow.content=Adicionar uma nova linha diretamente abaixo da linha selecionada.
+
+
+
+
+
+InsertSectionAfter.title=Insira seção depois
+
+InsertSectionAfter.content=Insira uma nova seção após a seção atual .
+
+
+
+
+
+InsertSectionBefore.title=Insira seção antes
+
+InsertSectionBefore.content=Inserir uma seção antes da seção atual.
+
+
+
+
+
+InsertSymbol.title=Inserir símbolo
+
+InsertSymbol.content='inserir símbolos que não estão no seu teclado , tais como caracteres fechados e símbolos de direitos autorais. 
+
+
+
+
+
+InsertTheEndnote.title=Inserir nota de rodapé
+
+InsertTheEndnote.content=Adicionar uma nota de rodapé do documento .
+
+
+
+
+
+InsertTheFootnote.title=Inserir nota de rodapé
+
+InsertTheFootnote.content=Adicionar uma nota de rodapé do documento.
+
+
+
+
+
+InsertWordArt.title=Wordart
+
+InsertWordArt.content=Mostrar a caixa de diálogo wordart gallery para selecionar um estilo de wordart e editar conteúdo .
+
+
+
+
+
+InsertWordField.title=Insira próxima campos
+
+InsertWordField.content='para resolver o problema de quebra de página em mala direta , se n linhas estão a ser mostrado em uma página , insira n-1 próximos campos. 
+
+
+
+
+
+Italic.title=Itálico
+
+Italic.content=Itálico do texto selecionado.
+
+
+
+
+
+KOSCloudFeedbackTip.title=Comentário do usuário
+
+KOSCloudFeedbackTip.content=Ajude-nos a melhorar wps office.
+
+
+
+
+
+KOSCloudInformationTip.title=Guia do usuário
+
+KOSCloudInformationTip.content=Como usar o office space .
+
+
+
+
+
+KOSCreatecloudLinkTip.title=Apenas dez segundos! você pode :
+
+KOSCreatecloudLinkTip.content=Digitalize o código qr ​​e compartilhar seu documento para celular, para wechat ou michat para edição por outros.
+
+
+
+
+
+KOSOfficespaceLoginFailTip.title=@@
+
+KOSOfficespaceLoginFailTip.content=Nome de usuário ou senha não corresponder
+
+
+
+
+
+KOSOfficespacePsaawordTip.title=@@
+
+KOSOfficespacePsaawordTip.content=Senha está errada
+
+
+
+
+
+KOSOfficespaceRegPsaawordTip.title=@@
+
+KOSOfficespaceRegPsaawordTip.content=A senha não corresponder
+
+
+
+
+
+KOSOpenCloudFileTip.title=Aberto de nuvem docs
+
+KOSOpenCloudFileTip.content=Modificações de documentos em nuvem docs serão salvos diretamente .
+
+
+
+
+
+KOSRoamingfileTip.title=Roaming arquivo
+
+KOSRoamingfileTip.content=arquivos abertos será automaticamente vagavam para a nuvem e todos os seus dispositivos . \n n você pode começar a trabalhar a qualquer hora e em qualquer lugar. 
+
+
+
+
+
+KOSSaveFileTocloudTip.title=Salve a nuvem docs
+
+KOSSaveFileTocloudTip.content=Partilhe com os outros para a discussão , edição e visualização de documentos online.
+
+
+
+
+
+KOSUserLoginCloudTextBtnTip.title=Assinar em
+
+KOSUserLoginCloudTextBtnTip.content=Entre wps office cloud e fazer upload de seus documentos. você pode editar o mesmo documento em outros computadores ou telefones celulares e nunca perdê-lo.
+
+
+
+
+
+KOSUserLoginCloudTip.title=Kosuserlogincloudtip título
+
+KOSUserLoginCloudTip.content=Kosuserlogincloudtip conteúdo
+
+
+
+
+
+KOSUserLogoutCloudTip.title=Assinado em
+
+KOSUserLogoutCloudTip.content=Você entrou no wps office cloud. clique aqui para sair .
+
+
+
+
+
+KingsoftEquationEditor.title=Inserir equação
+
+KingsoftEquationEditor.content=Insira equações matemáticas , usando editor de equações .
+
+KingsoftEquationEditor.img=Wpskingsoftequationeditor
+
+
+
+
+
+LastRecord.title=último registro
+
+LastRecord.content=Visualize o último registro na lista de destinatários.
+
+
+
+
+
+LastSection.title=Última seção
+
+LastSection.content=Ir para a última seção do documento.
+
+
+
+
+
+LineColor.title=Contorno
+
+LineColor.content='definir a cor , a largura eo estilo de linha para o contorno da forma selecionada . \n nclique na seta para selecionar configurações detalhadas para o contorno. 
+
+
+
+
+
+LineColor2.title=Contorno
+
+LineColor2.content=Clique na seta para selecionar configurações detalhadas para o contorno.
+
+
+
+
+
+LineSpacingShow.title=Espaçamento entre linhas
+
+LineSpacingShow.content=Alterar o espaçamento entre linhas de texto .
+
+
+
+
+
+LinktoPreviousHeader.title=Link para anterior
+
+LinktoPreviousHeader.content=Faça o cabeçalho eo rodapé da seção atual o mesmo que o anterior.
+
+
+
+
+
+LocateToSection.title=Localize a seção
+
+LocateToSection.content=Mudar para outra seção .
+
+
+
+
+
+LockSideBySide.title=Rolagem sincronizada
+
+LockSideBySide.content=sincronizar a rolagem de dois documentos para que eles rolam juntos . \n npara ativar esse recurso , ligue ver lado a lado. 
+
+
+
+
+
+LooseLineSpacing.title=Espaçamento entre linhas soltas
+
+LooseLineSpacing.content=Definir espaçamento 1,5 para o parágrafo selecionado com snap to grid selecionado.
+
+
+
+
+
+Macro.title=Exibir macros
+
+Macro.content='caixa de diálogo mostrar macros. veja a lista de macros, a partir da qual você pode executar , criar ou excluir uma macro. 
+
+
+
+
+
+Macro2.title=Exibir macros
+
+Macro2.content=veja a lista de macros, a partir da qual você pode executar , criar ou excluir uma macro. 
+
+
+
+
+
+Mail.title=Correspondências
+
+Mail.content='clique aqui para abrir o guia correspondências , que inclui características tais como mala direta. 
+
+
+
+
+
+MailMergeRecipients.title=Destinatários
+
+MailMergeRecipients.content=Adicionar ou excluir destinatários da lista destinatários da mala direta .
+
+
+
+
+
+MarkVersion.title=Backup manual
+
+MarkVersion.content='sem fechar o arquivo, você pode fazer backup manualmente o arquivo atual para o seu arquivo de segurança e adicionar notas para o arquivo de backup. 
+
+
+
+
+
+Markup.title=Revisão markup
+
+Markup.content=Mostrar ou ocultar as marcações de revisão no documento.
+
+
+
+
+
+MatchFields.title=Jogo campos
+
+MatchFields.content=match campos lhe permite dizer escritor wps os significados de diferentes campos na lista de destinatários . \\ n exemplo \\ npara , pode indicar que o seu costume campo \\ 'zip \\ é equivalente ao normal embutido no campo \\ 'zip code \\ '. 
+
+
+
+
+
+MergeCells.title=Mesclar células
+
+MergeCells.content=Mesclar as células selecionadas em uma única célula .
+
+
+
+
+
+MergeToDiffNewDoc.title=Mesclar para different new document
+
+MergeToDiffNewDoc.content=Exportar o conteúdo de correio intercalado para diferentes documentos de acordo com a lista de destinatários .
+
+
+
+
+
+MergeToEmail.title=Mesclar para e-mail
+
+MergeToEmail.content=Envie conteúdo mesclado via e-mail.
+
+
+
+
+
+MergeToNewDoc.title=Mesclar para novo documento
+
+MergeToNewDoc.content=Exportação fundiu o conteúdo para um novo documento .
+
+
+
+
+
+MergeToPrinter.title=Mesclar para impressora
+
+MergeToPrinter.content=Imprimir o conteúdo mesclado .
+
+
+
+
+
+NavigationPane.title=Painel de navegação
+
+NavigationPane.content=Mostrar ou ocultar o painel de navegação .
+
+NavigationPane.img=Wpsnavigationpane
+
+
+
+
+
+NewWindow.title=Nova janela
+
+NewWindow.content=Abra uma nova janela que contém uma vista do documento atual.
+
+
+
+
+
+SplitWindow.title=Dividir janela
+
+SplitWindow.content=Dividir a janela atual em duas partes de modo que você pode visualizar diferentes seções do documento ao mesmo tempo .
+
+
+
+
+
+SplitWindowMenu.title=Dividir janela
+
+SplitWindowMenu.content=Clique para dividir a janela atual na horizontal ou na vertical.
+
+
+
+
+
+NextChange.title=Próxima mudança
+
+NextChange.content=Navegue até a próxima revisão no documento de modo que você pode aceitar ou rejeitá-la.
+
+
+
+
+
+NextComment.title=Próxima comentário
+
+NextComment.content=Navegue até o próximo comentário no documento.
+
+
+
+
+
+NextHeader.title=Show next
+
+NextHeader.content=Navegue até cabeçalho da próxima seção ou rodapé com base na posição atual do cursor.
+
+
+
+
+
+NextRecord.title=Próximo registro
+
+NextRecord.content=Visualize o próximo registro na lista de destinatários.
+
+
+
+
+
+NextSection.title=Próxima seção
+
+NextSection.content=Vá para a próxima seção .
+
+
+
+
+
+NextTextBox.title=Próxima caixa de texto
+
+NextTextBox.content=Navegue até a caixa de texto ao lado ligado ao atual.
+
+
+
+
+
+NudgeShadowDown.title=Deslocar sombra para baixo
+
+NudgeShadowDown.content=Mova a sombra do objeto selecionado para baixo .
+
+
+
+
+
+NudgeShadowLeft.title=Deslocar sombra esquerda
+
+NudgeShadowLeft.content=Mova a sombra do objeto selecionado para a esquerda.
+
+
+
+
+
+NudgeShadowRight.title=Deslocar sombra direito
+
+NudgeShadowRight.content=Mova a sombra do objeto selecionado para a direita.
+
+
+
+
+
+NudgeShadowUp.title=Deslocar sombra para cima
+
+NudgeShadowUp.content=Mova a sombra do objeto selecionado para cima .
+
+
+
+
+
+Numbering.title=Numeração
+
+Numbering.content=Iniciar uma lista numerada . \n nclique na seta para selecionar diferentes formatos de numeração .
+
+
+
+
+
+Numbering2.title=Bullets
+
+Numbering2.content=Clique na seta para selecionar diferentes formatos de numeração .
+
+
+
+
+
+ObjectSelect.title=Painel de seleção
+
+ObjectSelect.content=Mostrar janela de tarefas do painel de seleção para encontrar facilmente um único objeto ou definir a sua ordem e visibilidade.
+
+ObjectSelect.img=Wpsobjectselect
+
+
+
+
+
+OnePage.title=One page
+
+OnePage.content=Zoom do documento para que uma página inteira caiba na janela.
+
+
+
+
+
+OpenDataSource.title=Abrir fonte de dados
+
+OpenDataSource.content='soucres dados abertos na pasta local , como arquivos de planilhas , arquivos de banco de dados e arquivos de texto .
+
+
+
+
+
+OpenDataSource2.title=Abrir fonte de dados
+
+OpenDataSource2.content=Clique aqui para abrir ou fechar arquivos de fonte de dados.
+
+
+
+
+
+OutLine.title=Outline view
+
+OutLine.content=Ver o documento como um esboço.
+
+
+
+
+
+OutLineLevelComboOnOutlining.title=Nível hierárquico
+
+OutLineLevelComboOnOutlining.content=Definir um nível de destaque para o parágrafo selecionado.
+
+
+
+
+
+PageLayoutDetailedSettings.title=Pagelayoutdetailedsettings título
+
+PageLayoutDetailedSettings.content=Pagelayoutdetailedsettings conteúdo
+
+
+
+
+
+PageNumber.title=Inserir número de página
+
+PageNumber.content=mostrar a caixa de diálogo números de página e aplicar as configurações de número da página para a seção atual ou todo o documento. 
+
+
+
+
+
+PageNumberFormat.title=Formatar número de página
+
+PageNumberFormat.content=Selecione o número de formatos de números de página no documento atual.
+
+
+
+
+
+PageNumberStart.title=Número de página iniciar
+
+PageNumberStart.content=Defina um número de página para a página atual . isto torna-se disponível quando número de página iniciar em é habilitado .
+
+
+
+
+
+PageOrientation.title=Orientação da página
+
+PageOrientation.content=Alterne entre as páginas de layouts retrato e paisagem.
+
+
+
+
+
+PageSetup.title=Configuração da página
+
+PageSetup.content=Mostrar a caixa de diálogo configurar página.
+
+PageSetup.img=Wpspagesetup
+
+
+
+
+
+PageWidth.title=Largura da página
+
+PageWidth.content=Aumentar o documento de modo que a largura da página, corresponde à largura da janela .
+
+
+
+
+
+ParagraphDetailedSettings.title=Paragraphdetailedsettings título
+
+ParagraphDetailedSettings.content=Paragraphdetailedsettings conteúdo
+
+
+
+
+
+PhoneticGuide.title=Guia fonético
+
+PhoneticGuide.content='mostrar caracteres fonéticos para esclarecer a pronúncia. \n nclique na seta para escolher alterar caixa , cerca caracteres , ou opções de fronteira personagem.
+
+
+
+
+
+PhoneticGuide2.title=Outras opções
+
+PhoneticGuide2.content='clique na seta para escolher guia fonético , change case , cerca caracteres ou opções border personagem .
+
+
+
+
+
+PictureAdjust.title=Ajuste imagem
+
+PictureAdjust.content=Aumentar ou diminuir o contraste eo brilho da imagem seleccionada .
+
+
+
+
+
+PictureColor.title=Cor
+
+PictureColor.content='alterar a cor da imagem escolhida para dar-lhe um preto e branco, lavagem ou cor transparente . 
+
+
+
+
+
+PictureCrop.title=Cortar
+
+PictureCrop.content=Corte a imagem para remover quaisquer partes indesejadas .
+
+
+
+
+
+PictureFill.title=Preenchimento de imagem
+
+PictureFill.content='encha o objeto selecionado com uma cor, gradiente , padrão e imagem . \n nclique na seta para selecionar diferentes efeitos de preenchimento .
+
+
+
+
+
+PictureFill2.title=Preenchimento de imagem
+
+PictureFill2.content=Clique na seta para selecionar diferentes modos de preenchimento .
+
+
+
+
+
+PictureOutline.title=Esboço imagem
+
+PictureOutline.content=definir esboço imagem cor, largura do contorno e estilo de contorno para o objeto selecionado . \n nclique na seta para selecionar configurações detalhadas para o contorno. 
+
+
+
+
+
+PictureOutline2.title=Esboço imagem
+
+PictureOutline2.content=Clique na seta para selecionar configurações detalhadas para o contorno.
+
+
+
+
+
+PictureSetTransparentColor.title=Definir cor transparente
+
+PictureSetTransparentColor.content=faça uma cor na imagem atual transparente. \n nao clicar em um pixel no gráfico atual, todos os pixels da mesma cor específica tornar-se transparente. 
+
+
+
+
+
+PictureSize.title=Tamanho da imagem
+
+PictureSize.content='mude o tamanho, grau de rotação e escala de zoom da forma selecionada . 
+
+
+
+
+
+PictureToolsDetailedSettings.title=Picturetoolsdetailedsettings título
+
+PictureToolsDetailedSettings.content=Picturetoolsdetailedsettings conteúdo
+
+
+
+
+
+PreviousChange.title=Alterar anterior
+
+PreviousChange.content=Navegue até a revisão anterior do documento de modo que você pode aceitar ou rejeitá-la.
+
+
+
+
+
+PreviousComment.title=Comentário anterior
+
+PreviousComment.content=Navegue até o comentário anterior no documento .
+
+
+
+
+
+PreviousHeader.title=Mostrar anterior
+
+PreviousHeader.content=Navegue até o cabeçalho do item anterior ou rodapé com base na posição atual do cursor.
+
+
+
+
+
+PreviousRecord.title=Registro anterior
+
+PreviousRecord.content=Visualize o recorde anterior na lista de destinatários .
+
+
+
+
+
+PreviousSection.title=Seção anterior
+
+PreviousSection.content=Vá para a seção anterior.
+
+
+
+
+
+PreviousTextBox.title=Anterior caixa de texto
+
+PreviousTextBox.content=Navegue até a caixa de texto anterior, que está ligado à caixa de texto selecionado.
+
+
+
+
+
+Print.title=Imprimir
+
+Print.content=aplicar configurações detalhadas para a impressão , tais como impressão, intervalo de impressão , cópias de impressão , páginas por planilha e zoom. 
+
+
+
+
+
+Print2.title=Imprimir
+
+Print2.content=clique aqui para definir detalhes de impressão, ou usar as configurações padrão para imprimir diretamente . 
+
+
+
+
+
+PrintDirect.title=Imprimir diretamente
+
+PrintDirect.content=Enviar o documento diretamente para a impressora padrão sem fazer alterações.
+
+
+
+
+
+PrintLayoutView.title=Layout de impressão
+
+PrintLayoutView.content=Ver o documento como ele aparecerá na página impressa .
+
+
+
+
+
+PrintPreview.title=Visualização de impressão
+
+PrintPreview.content=Pré-visualizar e fazer alterações em páginas antes de imprimir.
+
+
+
+
+
+PrintPreviewZoomCombo.title=Zoom
+
+PrintPreviewZoomCombo.content=Selecione o tamanho de zoom do documento atual.
+
+
+
+
+
+PrintShowViewRuler.title=Régua
+
+PrintShowViewRuler.content='mostrar ou ocultar as réguas , usadas para medir e alinhar objetos no documento. 
+
+
+
+
+
+PromoteOnOutlining.title=Promover
+
+PromoteOnOutlining.content=Promover o item selecionado para um nível superior .
+
+
+
+
+
+PromoteOnParagraph.title=Promover toc nível
+
+PromoteOnParagraph.content=Promover o parágrafo selecionado um nível toc superior.
+
+
+
+
+
+PromoteToHighestLevelOnOutlining.title=Promover ao nível 1
+
+PromoteToHighestLevelOnOutlining.content=Promover este item para o nível mais alto da estrutura de tópicos .
+
+
+
+
+
+PromoteToHighestLevelOnParagraph.title=Promover ao nível 1
+
+PromoteToHighestLevelOnParagraph.content=Promover este item para o nível mais alto do toc .
+
+
+
+
+
+RB_Clipboard.title=Clipboard
+
+RB_Clipboard.content=Veja artigos na prancheta .
+
+RB_Clipboard.img=Wpsclipboard
+
+
+
+
+
+RB_Font.title=Fonte
+
+RB_Font.content=Mostrar a caixa de diálogo fonte .
+
+RB_Font.img=Wpsfont
+
+
+
+
+
+RB_Paragraph.title=Parágrafo
+
+RB_Paragraph.content=Mostrar a caixa de diálogo parágrafo.
+
+RB_Paragraph.img=Wpsparagraph
+
+
+
+
+
+RB_Style.title=Estilos e formatação
+
+RB_Style.content=Mostrar a janela estilos e formatação tarefa .
+
+RB_Style.img=Wpsstyle
+
+
+
+
+
+RbTableOutsideBorder.title=Fronteiras externas
+
+RbTableOutsideBorder.content=Personalize as bordas das células ou texto selecionado.
+
+
+
+
+
+RbTableOutsideBorder2.title=Fronteiras externas
+
+RbTableOutsideBorder2.content=Clique na seta para selecionar diferentes fronteiras.
+
+
+
+
+
+RecentFastCalc.title=Cálculo rápido
+
+RecentFastCalc.content=executar soma, média , os cálculos máximos ou mínimos de valor para a linha selecionada ou dados da coluna. \n nresults será exibido em uma célula seguindo as células selecionadas na mesma linha ou coluna. se não houver nenhuma célula , depois disso, uma nova vai ser criada linha ou coluna . 
+
+
+
+
+
+RecentFontColor.title=Cor do texto
+
+RecentFontColor.content=Mude a cor do texto . \n nclique na seta para selecionar uma cor de texto diferente.
+
+
+
+
+
+RecentFontColor2.title=Cor do texto
+
+RecentFontColor2.content=Clique na seta para selecionar uma cor de texto diferente.
+
+
+
+
+
+RecentTableShadingColor.title=Shading cor
+
+RecentTableShadingColor.content=Colorir o fundo atrás do texto ou parágrafo. selecionado \n nclique na seta para selecionar diferentes cores de fundo .
+
+
+
+
+
+RecentTableShadingColor2.title=Shading cor
+
+RecentTableShadingColor2.content=Clique na seta para selecionar diferentes cores de fundo .
+
+
+
+
+
+RecordMacro.title=Gravar macro
+
+RecordMacro.content=Mostrar caixa de diálogo gravar macro e iniciar a gravação de macro.
+
+
+
+
+
+ReducedStep.title=Reduzir espaçamento entre linhas
+
+ReducedStep.content=Reduzir o espaçamento entre linhas do parágrafo selecionado por 0,25.
+
+
+
+
+
+RejectChangeOnTB.title=Rejeitar a alteração selecionada
+
+RejectChangeOnTB.content=Rejeitar a mudança atual e apagar o comentário .
+
+
+
+
+
+RejectChangeOnTB2.title=Rejeitar a alteração selecionada
+
+RejectChangeOnTB2.content=Clique na seta para rejeitar todas as alterações no documento.
+
+
+
+
+
+RejectRevisionOnTB.title=Rejeitar alteração
+
+RejectRevisionOnTB.content=Rejeitar a alteração selecionada no documento
+
+
+
+
+
+RejectRevisionOnTB2.title=Rejeitar alteração
+
+RejectRevisionOnTB2.content=Clique aqui para rejeitar todas as alterações no documento.
+
+
+
+
+
+RelocateDownOnOutlining.title=Mover para baixo
+
+RelocateDownOnOutlining.content=Mover o item selecionado para baixo dentro do contorno.
+
+
+
+
+
+RelocateUpOnOutlining.title=Mover para cima
+
+RelocateUpOnOutlining.content=Mover o item selecionado para cima dentro do contorno.
+
+
+
+
+
+Replace.title=Substituir
+
+Replace.content=Substitua o conteúdo do texto no documento.
+
+
+
+
+
+ResetPicture.title=Redefinir imagem
+
+ResetPicture.content=Descartar todas as alterações de formatação que você fez para esta imagem .
+
+
+
+
+
+RestartPageNumber.title=Reiniciar numeração de página
+
+RestartPageNumber.content=Redefinir o número da página inicial do documento atual .
+
+
+
+
+
+RestrictEditing.title=Restringir edição
+
+RestrictEditing.content=Restringir o modo como as pessoas editar ou formatar partes específicas do documento . \n nvocê pode evitar alterações de formatação , forçar todas as alterações a serem rastreados , ou ativar os comentários .
+
+
+
+
+
+Ruler.title=Régua
+
+Ruler.content='mostrar ou ocultar as réguas , usadas para medir e alinhar objetos no documento. 
+
+
+
+
+
+RunMacro.title=Exibir macros
+
+RunMacro.content='caixa de diálogo e ver a lista de macros, a partir da qual você pode executar , excluir ou criar uma macro diretamente mostrar macros .
+
+
+
+
+
+SectionDetailedSettings.title=Sectiondetailedsettings título
+
+SectionDetailedSettings.content=Sectiondetailedsettings conteúdo
+
+
+
+
+
+Security.title=Macros segurança
+
+Security.content=Personalize as configurações de segurança de macro .
+
+
+
+
+
+Select.title=Selecione
+
+Select.content=Selecione texto ou objetos no documento.
+
+
+
+
+
+SendBackward.title=Recuar
+
+SendBackward.content=Envie o objeto selecionado para trás de modo que ele está escondido pelos objetos que estão em diant dele.
+
+
+
+
+
+SendBackward2.title=Recuar
+
+SendBackward2.content=Envie o objeto selecionado para trás um nível ou a parte de trás de todos os objetos .
+
+
+
+
+
+Separator.title=Mostrar footnote /endnote separator
+
+Separator.content='depois de inserir nota de rodapé /nota final , mostrar ou ocultar o separador de nota de rodapé /nota de rodapé na parte inferior do documento. 
+
+
+
+
+
+ShadowColor.title=Sombra colorida
+
+ShadowColor.content=Defina a cor da sombra do objeto selecionado . \n nclique na seta para selecionar diferentes cores de sombra .
+
+
+
+
+
+ShadowColor2.title=Sombra colorida
+
+ShadowColor2.content=Clique na seta para selecionar diferentes cores de sombra .
+
+
+
+
+
+ShadowOnOff.title=Sombra on /off
+
+ShadowOnOff.content=Ligar ou desligar o efeito de sombra ao objeto selecionado .
+
+
+
+
+
+ShadowSetting.title=Efeitos de sombra
+
+ShadowSetting.content=Definir efeito de sombra ao objeto selecionado .
+
+
+
+
+
+ShapeSize.title=Tamanho da forma
+
+ShapeSize.content='defina o tamanho , graus de rotação e zoom para a forma selecionada . 
+
+
+
+
+
+Shapes.title=Shapes
+
+Shapes.content=inserir formas prontas , como linhas, retângulos , símbolos de fluxograma e textos explicativos . 
+
+
+
+
+
+ShowDocumentMap.title=Mapa do documento
+
+ShowDocumentMap.content=Mostrar ou ocultar o painel de mapa do documento .
+
+
+
+
+
+ShowDocumentMap2.title=Mapa do documento
+
+ShowDocumentMap2.content=Clique aqui para escolher qual a posição para exibir o painel mapa do documento .
+
+
+
+
+
+ShowFirstLineOnly.title=Só show first line
+
+ShowFirstLineOnly.content=Mostrar apenas a primeira linha de cada item no esquema.
+
+
+
+
+
+ShowFirstPageNumber.title=Mostrar primeiro número da página
+
+ShowFirstPageNumber.content=Mostrar ou ocultar o número de página na primeira página do documento.
+
+
+
+
+
+ShowFormatting.title=Formatação mostrar texto
+
+ShowFormatting.content=Mostrar ou ocultar toda a formatação do texto no esquema.
+
+
+
+
+
+ShowGridlines.title=Linhas de grade de exibição de tabela
+
+ShowGridlines.content=Mostrar ou ocultar as linhas de grade dentro da tabela que não tem fronteiras .
+
+
+
+
+
+ShowHeaderOrFooter.title=Alternar entre cabeçalho e rodapé
+
+ShowHeaderOrFooter.content=Alterne entre o cabeçalho eo rodapé da página atual no documento.
+
+
+
+
+
+ShowHideFormattingMarks.title=Show /hide marcas de edição
+
+ShowHideFormattingMarks.content=Mostrar todos os símbolos de formatação do documento.
+
+
+
+
+
+ShowHideTextOctopus.title=Show /hide layout parágrafo
+
+ShowHideTextOctopus.content=Mostrar ou ocultar o botão layout parágrafo no documento .
+
+ShowHideTextOctopus.img=Wpsshowhidetextoctopus
+
+
+
+
+
+ShowLevelOnOutlining.title=Mostrar nível
+
+ShowLevelOnOutlining.content=Escolha quais os níveis para mostrar no esquema. \n no nível selecionado e todos os níveis mais elevados serão visíveis.
+
+
+
+
+
+ShrinkFont.title=Encolher font
+
+ShrinkFont.content=Diminuir o tamanho da fonte .
+
+
+
+
+
+SimplifiedChinese.title=Simplificado
+
+SimplifiedChinese.content=Converta o documento para chinês simplificado.
+
+
+
+
+
+SplitCells.title=Dividir células
+
+SplitCells.content=Dividir as células selecionadas em várias células novas .
+
+
+
+
+
+SplitSection.title=Dividir seção
+
+SplitSection.content=Introduza a próxima quebra de seção no documento.
+
+
+
+
+
+SplitSection2.title=Dividir seção
+
+SplitSection2.content=Clique aqui para escolher a seção tipos de quebra .
+
+
+
+
+
+SplitTable.title=Dividir tabela
+
+SplitTable.content=Dividir a tabela em duas tabelas de acordo com as linhas ou colunas.
+
+
+
+
+
+StopAutoVersion.title=Backup auto stop
+
+StopAutoVersion.content=Parar o backup automático do documento atual .
+
+
+
+
+
+StopRecordMacro.title=Parar gravação
+
+StopRecordMacro.content=Pare a gravação da macro .
+
+
+
+
+
+Strikethought.title=Tachado
+
+Strikethought.content=Desenhar uma linha no meio do texto selecionado . \n nclique na seta para adicionar uma marca de ênfase.
+
+
+
+
+
+Strikethought2.title=Outras opções
+
+Strikethought2.content=Clique na seta para adicionar um tachado ou uma marca ênfase.
+
+
+
+
+
+Subscript.title=Subscrito
+
+Subscript.content=Criar letras pequenas abaixo da linha de base do texto .
+
+
+
+
+
+Superscript.title=Sobrescrito
+
+Superscript.content=Criar pequenas letras acima da linha de texto .
+
+
+
+
+
+Superscript2.title=Outras opções
+
+Superscript2.content=Clique na seta para selecionar sobrescrito ou subscrito .
+
+
+
+
+
+SwitchWindow.title=Alternar janelas
+
+SwitchWindow.content=Mudar para uma janela aberta no momento diferente.
+
+
+
+
+
+Table.title=Tabela
+
+Table.content=inserir ou desenhar uma tabela no documento e converter o texto em tabela ou vice- versa. 
+
+
+
+
+
+TableAutoAdjust.title=Ajustar automaticamente a
+
+TableAutoAdjust.content=Redimensionar automaticamente as larguras de linha e coluna dentro da tabela .
+
+
+
+
+
+TableBorderColor.title=Cor da margem
+
+TableBorderColor.content=Defina uma cor de borda para a tabela selecionada . \n nclique na seta para selecionar diferentes cores de fronteira.
+
+
+
+
+
+TableBorderColor2.title=Cor da margem
+
+TableBorderColor2.content=Clique na seta para selecionar diferentes cores de fronteira.
+
+
+
+
+
+TableBorderStyle.title=Estilo da linha
+
+TableBorderStyle.content=Mude o estilo da linha utilizada para desenhar fronteiras.
+
+
+
+
+
+TableBorderWidth.title=Linha de peso
+
+TableBorderWidth.content=Altere a largura da linha usada para desenhar fronteiras.
+
+
+
+
+
+TableContents.title=Índice
+
+TableContents.content=Adicionar um índice para o documento antes de o corpo do texto .
+
+
+
+
+
+TableEraser.title=Tabela eraser
+
+TableEraser.content=Apague as fronteiras de uma tabela no documento.
+
+
+
+
+
+TableProperties.title=Propriedades da tabela
+
+TableProperties.content=alterar as propriedades da tabela avançadas, tais como envolver estilo, recortes e permitindo que linhas para quebrar entre páginas. 
+
+TableProperties.img=Wpstableproperties
+
+
+
+
+
+TableSelectMenu.title=Selecionar tabela
+
+TableSelectMenu.content='selecione a célula atual, linha, coluna ou tabela inteira , e selecionar tabelas com bordas tracejadas . 
+
+
+
+
+
+TableShadingColor.title=Shading
+
+TableShadingColor.content=Colorir o fundo atrás do texto ou parágrafo. selecionado \n nclique na seta para selecionar diferentes cores de sombra.
+
+
+
+
+
+TableShadingColor2.title=Shading
+
+TableShadingColor2.content=Clique na seta para selecionar diferentes cores de sombra.
+
+
+
+
+
+Tabs.title=Tabs
+
+Tabs.content=mostrar a caixa de diálogo tabulações , e definir a posição de tabulação do texto. 
+
+
+
+
+
+TaskPane.title=Janela task
+
+TaskPane.content=Mostrar ou janela da tarefa no documento esconder.
+
+
+
+
+
+TextBox.title=Desenhar caixa de texto horizontal
+
+TextBox.content=Inserir uma caixa de texto horizontal no documento.
+
+
+
+
+
+TextBox2.title=Desenhar caixa de texto
+
+TextBox2.content=clique aqui para inserir caixas de texto horizontal, vertical ou de várias linhas . 
+
+
+
+
+
+TextDirection.title=Direção do texto
+
+TextDirection.content=definir a orientação do texto horizontal ou vertical para a seção atual, documento inteiro , selecionou a caixa de texto ou tabela . 
+
+
+
+
+
+TightLineSpacing.title=Espaçamento entre linhas apertado
+
+TightLineSpacing.content=Definir espaçamento entre linhas de 1,0 para parágrafos selecionados sem snap to grid selecionado.
+
+
+
+
+
+TrackChanges.title=Controlar alterações
+
+TrackChanges.content='acompanhe todas as alterações feitas no documento , incluindo inserções, exclusões e alterações de formatação. 
+
+
+
+
+
+TrackChanges2.title=Controlar alterações
+
+TrackChanges2.content='clique aqui para selecionar marcações de revisão ou formatação comentário , ou para alterar as informações revisor. 
+
+
+
+
+
+TraditionalChinese.title=Tradicional
+
+TraditionalChinese.content=Converta o documento para chinês tradicional .
+
+
+
+
+
+Underline.title=Sublinhe
+
+Underline.content=Sublinhar o texto selecionado. \n nclique na seta para selecionar diferentes estilos de sublinhado.
+
+
+
+
+
+Underline2.title=Sublinhe
+
+Underline2.content=Clique na seta para selecionar diferentes estilos de sublinhado.
+
+
+
+
+
+UpdateTocOnOutlining.title=Atualização de Índice
+
+UpdateTocOnOutlining.content=Atualize o Índice de modo que todas as entradas se referem ao número de página correta .
+
+
+
+
+
+VerbSideBySide.title=Redefinir posição da janela
+
+VerbSideBySide.content='redefinir a posição da janela dos documentos que estão sendo comparados lado a lado para que eles compartilham a tela da mesma forma. \n npara ativar esse recurso , ligue ver lado a lado. 
+
+
+
+
+
+ViewMergedData.title=Exibir dados mesclados
+
+ViewMergedData.content=Substitui os campos de mesclagem no documento com dados reais de sua lista de destinatários para que você possa ver o que se parece.
+
+
+
+
+
+ViewRuler.title=Régua
+
+ViewRuler.content='ver os governantes , usadas para medir e alinhar o texto e objetos no documento. 
+
+
+
+
+
+VisualBasicEditor.title=Editor do visual basic
+
+VisualBasicEditor.content=Abra o editor do visual basic para editar macros.
+
+
+
+
+
+WaterMark.title=Watermark
+
+WaterMark.content=insert fantasma texto e imagem por trás do conteúdo da página . \n neste é muitas vezes usado para indicar que o documento deve ser tratado de forma especial , como criptografados , confidencial e não copie, ou para marcar a origem do documento , como a adição de logos de direitos autorais e informações do autor. 
+
+
+
+
+
+WebLayoutView.title=Layout da web
+
+WebLayoutView.content=Ver o documento como ele ficaria como uma página da web .
+
+
+
+
+
+WordArtAlignment.title=Alinhamento de wordart
+
+WordArtAlignment.content=Especifique linhas como individuais de um multi- linha wordart devem estar alinhados .
+
+
+
+
+
+WordArtDetailedSettings.title=Wordartdetailedsettings título
+
+WordArtDetailedSettings.content=Wordartdetailedsettings conteúdo
+
+
+
+
+
+WordArtFill.title=Preencha wordart
+
+WordArtFill.content='encha o wordart selecionado com uma cor sólida , gradiente , textura ou imagem. \n nclique a seta para preencher o wordart de maneiras diferentes. 
+
+
+
+
+
+WordArtFill2.title=Preencha wordart
+
+WordArtFill2.content=Clique na seta para preencher o wordart de maneiras diferentes.
+
+
+
+
+
+WordArtGallery.title=Wordart gallery
+
+WordArtGallery.content=Mude o estilo do wordart selecionado.
+
+
+
+
+
+WordArtOutline.title=Wordart contorno
+
+WordArtOutline.content='definir a cor , a largura eo estilo de linha para o contorno do wordart selecionado. \n nclique na seta para selecionar configurações detalhadas para o contorno. 
+
+
+
+
+
+WordArtOutline2.title=Wordart contorno
+
+WordArtOutline2.content=Clique na seta para selecionar mais estilos de contorno .
+
+
+
+
+
+WordArtSameLetterHeights.title=Wordart mesmo letra heights
+
+WordArtSameLetterHeights.content=Faça todas as letras do wordart selecionado exatamente a mesma altura.
+
+
+
+
+
+WordArtShapePalette.title=Forma da wordart
+
+WordArtShapePalette.content=Mude o estilo forma do wordart selecionado.
+
+
+
+
+
+WordArtSize.title=Wordart tamanho
+
+WordArtSize.content='defina o tamanho , grau de rotação e escala do wordart selecionado. 
+
+
+
+
+
+WordArtVerticalText.title=Texto vertical da wordart
+
+WordArtVerticalText.content='desenhar o texto na vertical , com as cartas empilhadas em cima umas das outras . 
+
+
+
+
+
+WordCount.title=Contagem de palavra
+
+WordCount.content='contar o número de páginas , palavras, caracteres e parágrafos do documento. 
+
+
+
+
+
+WordTools.title=Ferramentas do word
+
+WordTools.content=aplicar formatação inteligente ao documento. \n formatação napply inteligente, como \\ 'espaços apagar \\ , \\ 'recuar a primeira linha de um parágrafo por dois caracteres \\ ', e outras opções especificadas no documento. 
+
+
+
+
+
+WorkSpace_Backup.title=Workspace_backup título
+
+WorkSpace_Backup.content=Workspace_backup conteúdo
+
+
+
+
+
+Zoom.title=Zoom
+
+Zoom.content=Mostrar a caixa de diálogo zoom para especificar o nível de zoom do documento.
+
+
+
+
+
+m_Align.title=Alinhe
+
+m_Align.content=Alinhe os objetos selecionados.
+
+
+
+
+
+m_Breaks.title=Inserir página e quebras de secção
+
+m_Breaks.content='adicionar página, seção ou quebras de coluna para o documento. 
+
+
+
+
+
+m_CharacterScaling.title=Scaling personagem
+
+m_CharacterScaling.content=Definir escala caráter do conteúdo selecionado .
+
+
+
+
+
+m_ColumnsPalette.title=Colunas
+
+m_ColumnsPalette.content=Dividir o texto em duas ou mais colunas .
+
+
+
+
+
+m_Group.title=Grupo
+
+m_Group.content=Agrupar objetos para que eles possam ser tratados como um único objeto.
+
+
+
+
+
+m_LineNumber.title=Números de linha
+
+m_LineNumber.content=Adicionar números de linha na margem ao lado de cada linha do documento.
+
+
+
+
+
+m_LineSpacing.title=Espaçamento entre linhas
+
+m_LineSpacing.content=Alterar o espaçamento entre linhas de texto .
+
+
+
+
+
+m_Margins.title=Margens
+
+m_Margins.content=Selecione os tamanhos de margem do documento inteiro ou da seção atual.
+
+
+
+
+
+m_PageBorder.title=Bordas da página
+
+m_PageBorder.content=Adicionar ou alterar a borda ao redor da página da seção atual ou todo o documento.
+
+
+
+
+
+m_PageSize.title=Tamanho da página
+
+m_PageSize.content=Escolha um tamanho de papel para a seção atual ou todo o documento.
+
+
+
+
+
+m_Rotate.title=Rodar
+
+m_Rotate.content=Girar ou virar o objeto selecionado .
+
+
+
+
+
+m_ShowReviewer.title=Mostrar marcação
+
+m_ShowReviewer.content=Escolha o tipo de marcação para mostrar no documento.
+
+
+
+
+
+m_Style.title=New style
+
+m_Style.content=mostrar a caixa de diálogo novo estilo , e criar um novo estilo na janela de tarefas estilos e formatação. 
+
+
+
+
+
+m_Style2.title=New style
+
+m_Style2.content='clique aqui para solicitar outras opções , como formatação clara. 
+
+
+
+
+
+m_Wrapping.title=Quebra de texto
+
+m_Wrapping.content=mudar os envoltórios de texto caminho ao redor do objeto selecionado, como praça e atrás do texto . 
+
+
+
+
+
+m_tocLevel.title=Toc nível
+
+m_tocLevel.content=Definir um nível de toc para o parágrafo selecionado.
+
+
+
+
+
+sp_DeleteComment.title=Excluir comentário
+
+sp_DeleteComment.content=Exclua o comentário selecionado .
+
+
+
+
+
+sp_DeleteComment2.title=Excluir comentário
+
+sp_DeleteComment2.content=Clique aqui para apagar todos os comentários no documento.
+
+
+
+
+
+sp_Paste.title=Colar
+
+sp_Paste.content=Colar o conteúdo da área de transferência.
+
+
+
+
+
+sp_Paste2.title=Colar
+
+sp_Paste2.content=Clique aqui para obter mais opções, tais como colar apenas texto não formatado .
+
+
+
+
+
+weibotool.title=Weibotool
+
+weibotool.content=Converta documento de imagem e participação no weibo .
+

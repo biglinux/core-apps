@@ -1,0 +1,1158 @@
+[TIPS]
+
+3DColor.title=3-D Cor
+3DColor.content=Preencha  a forma 3-D selecionada com a cor . \n \n Clique na seta para selecionar a partir de diferentes cores em 3-D .
+
+
+3DColor2.title=3-D Cor
+3DColor2.content=Clique na seta para selecionar a partir de diferentes cores em 3-D .
+
+
+3DDepthMenu.title=profundidade
+3DDepthMenu.content=Alterar a altura da forma 3 - D seleccionado .
+
+
+3DOnOff.title=3-D On /Off
+3DOnOff.content=Ligar ou desligar o efeito 3-D aplicado à forma .
+
+
+3DStylePalette.title=3 - D Efeitos
+3DStylePalette.content=Adicionar um efeito 3- D para a forma.
+
+
+3DSurfaceMenu.title=superfície
+3DSurfaceMenu.content=Escolha um efeito de superfície para a forma 3-D selecionado no documento .
+
+
+3DTiltDown.title=Inclinação para baixo
+3DTiltDown.content=Inclinação da forma a seguir.
+
+
+3DTiltLeft.title=Tilt Esquerda
+3DTiltLeft.content=Inclinar a forma para a esquerda .
+
+
+3DTiltRight.title=Tilt direito
+3DTiltRight.content=Inclinar a forma para a direita .
+
+
+3DTiltUp.title=Inclinação para cima
+3DTiltUp.content=Incline a forma para trás.
+
+
+ActionSetting.title=Configurações de ação
+ActionSetting.content=Adicionar uma ação para o objeto selecionado para especificar o que deve acontecer quando você clicar nele ou passar o mouse sobre ele com o mouse .
+
+
+AddAssistant.title=Adicionar Assistant
+AddAssistant.content=Adicionar um assistente para o membro selecionado.
+
+
+AddCoworker.title=Adicionar Colega de trabalho
+AddCoworker.content=Adicionar um colega de trabalho para o membro selecionado.
+
+
+AddSubordinate.title=Adicionar subordinada
+AddSubordinate.content=Adicionar um subordinado para o membro selecionado.
+
+
+AlignBottom.title=alinhar parte inferior
+AlignBottom.content=Alinhar o texto para a parte inferior da célula .
+
+
+AlignCenter.title=Centralizar verticalmente
+AlignCenter.content=Centralizar verticalmente o texto .
+
+
+AlignTop.title=Alinhe Top
+AlignTop.content=Alinhar o texto para o topo da célula .
+
+
+AnimationSchemes.title=Esquemas de animação
+AnimationSchemes.content=Mostrar o design do slide - janela de tarefas Esquemas de animação para criar efeitos de transição e animação ao slide atual ou a apresentação inteira.
+AnimationSchemes.img=WPPAnimationSchemes
+
+
+Arrange.title=organizar
+Arrange.content='Organizar objetos nos slides mudando sua ordem , posição e rotação. 
+
+
+ArrangeAll.title=organizar tudo
+ArrangeAll.content=Telha de todos os documentos abertos lado-a - lado na mesma janela do programa .
+
+
+AutoVersion.title=Ativar Auto Backup
+AutoVersion.content=Ativar o backup automático para o documento atual , salvar o arquivo de backup para arquivo seguro cada vez que o documento é fechado . 
+
+
+Autobackup.title=Seguro arquivo
+Autobackup.content=Uma breve introdução ao arquivo seguro .
+
+
+Backdrop.title=Background
+Backdrop.content=Defina o estilo de plano de fundo para o slide atual ou a apresentação inteira.
+
+
+BackgroundMusic.title=Insira música de fundo
+BackgroundMusic.content=Inserir um arquivo de áudio a partir da pasta local. A apresentação de slides inicia-se automaticamente o áudio, que vai ser enrolada até o final da apresentação . 
+
+
+Bold.title=Negrito
+Bold.content=Faça o texto selecionado em negrito.
+
+
+BordersFill.title=fronteiras
+BordersFill.content=Definir o estilo da borda , cor e largura do slide atual. 
+
+
+BringForward.title=trazer para a Frente
+BringForward.content=Traga o objeto selecionado para a frente de modo que ele está escondido pelo menos objetos que estão na frente dele .
+
+
+BringForward2.title=trazer para a Frente
+BringForward2.content=Traga os objetos selecionados para a frente um nível ou para a frente de todos os objetos .
+
+
+Bullets.title=Bullets
+Bullets.content=Iniciar uma lista com marcadores . \n \n Clique na seta para selecionar diferentes estilos de bala.
+
+
+Bullets2.title=Bullets
+Bullets2.content=Clique na seta para selecionar diferentes estilos de bala.
+
+
+COMAddIns.title=COM Add- Ins
+COMAddIns.content=Adicionar ou excluir disponível COM Add-Ins.
+
+
+CTB_MoreControls.title=mais Controles
+CTB_MoreControls.content=Clique aqui para inserir um controle a partir do conjunto de controles disponíveis no computador.
+
+
+CTB_Property.title=Propriedades de Controle
+CTB_Property.content=Visualizar e modificar as propriedades para o controle selecionado.
+
+
+CTB_ViewCode.title=Exibir código
+CTB_ViewCode.content=Lançamento editor Visual Basic para editar o código dos controles selecionados .
+
+
+ChangePicture.title=Alterar Imagem
+ChangePicture.content=Mudar para uma imagem diferente , preservando a formatação e tamanho da imagem atual . 
+
+
+ChangeTextDir.title=Direção do texto
+ChangeTextDir.content=Altere a orientação do texto para horizontal ou vertical.
+
+
+CheckSpelling.title=Verificação ortográfica
+CheckSpelling.content=Verifique a ortografia do texto no documento atual .
+
+
+ChineseTranslation.title=Simplificado para chinês tradicional
+ChineseTranslation.content=Conjunto Simplificado para tradução Tradicional Chinesa baseada no caráter ou palavra.
+
+
+ClearTableStyle.title=Limpar o estilo de mesa
+ClearTableStyle.content=Limpar estilo de tabela de células selecionadas .
+
+
+CloseDevelopmentTools.title=Fechar
+CloseDevelopmentTools.content=Clique aqui para esconder Developer Tools .
+
+
+CloseOtherWindow.title=Fechar Other Windows
+CloseOtherWindow.content=Feche todas as outras janelas exceto a atual.
+
+
+CloseWindow.title=Fechar Janela
+CloseWindow.content=Feche a janela atual.
+
+
+Color.title=Cor
+Color.content=Defina qualquer cor ou impressão a preto e branco puro para a apresentação atual.
+
+
+ColorScheme.title=Esquemas de Cores
+ColorScheme.content=Mostre o design do slide - janela de tarefas Esquemas de cores para configurar o esquema de cores de títulos, balas e objetos para o slide atual ou a apresentação inteira. 
+ColorScheme.img=WPPColorScheme
+
+
+CompressPictures.title=Compress Pictures
+CompressPictures.content=Comprimir a imagem selecionada ou todas as imagens para reduzir o tamanho .
+
+
+Copy.title=cópia
+Copy.content=Copiar a seleção e colocá-lo na área de transferência do sistema.
+
+
+CustomAnimation.title=Animação personalizada
+CustomAnimation.content=Mostrar janela de tarefas Personalizar animação para criar efeitos de animação ao texto ou objeto no slide atual.
+CustomAnimation.img=WPPCustomAnimation
+
+
+CustomShows.title=Shows de Slides Personalizados
+CustomShows.content=A apresentação de slides personalizada exibe apenas os slides que você selecionou .
+
+
+Cut.title=Cut
+Cut.content=Recortar a seleção e colocá-lo na área de transferência do sistema.
+
+
+DecreaseFontSize.title=Diminuir tamanho da fonte
+DecreaseFontSize.content=Diminuir o tamanho da fonte .
+
+
+DecreaseIndent.title=Diminuir lista de nível
+DecreaseIndent.content=Diminuir o nível de recuo .
+
+
+DecreaseSpace.title=diminuir o espaçamento
+DecreaseSpace.content=Diminuir espaçamento entre linhas.
+
+
+Delete.title=excluir
+Delete.content='Excluir linhas , colums , células ou a tabela inteira. 
+
+
+DeleteComment.title=excluir comentário
+DeleteComment.content=Exclua o comentário.
+
+
+DeleteMaster.title=excluir Mestre
+DeleteMaster.content=Excluir o slide mestre selecionado .
+
+
+DeleteMember.title=excluir membro
+DeleteMember.content=Excluir o membro selecionado
+
+
+DetailedSettings_DrawingTools.title=configurações
+DetailedSettings_DrawingTools.content=Altere as configurações de formatação forma.
+
+
+DetailedSettings_Home.title=configurações
+DetailedSettings_Home.content=Alterar as configurações de fonte.
+
+
+DetailedSettings_PictureTools.title=configurações
+DetailedSettings_PictureTools.content=Altere as configurações de formatação de imagem.
+
+
+DetailedSettings_WordArt.title=configurações
+DetailedSettings_WordArt.content=Altere as configurações de formatação de WordArt.
+
+
+DevelopmentTools.title=Ferramentas de Desenvolvimento
+DevelopmentTools.content='Abra a guia Ferramentas de Desenvolvimento para inserir o botão de opção , caixa de seleção e muito mais. 
+
+
+Direction.title=direção
+Direction.content=Escolha o efeito de sentido da forma 3-D selecionado.
+
+
+DistColumnSevenly.title=Distribuir colunas uniformemente
+DistColumnSevenly.content=Distribuir a largura das colunas seleccionadas igualmente entre elas .
+
+
+DistRowSevenly.title=Distribuir linhas uniformemente
+DistRowSevenly.content=Distribuir a altura das linhas seleccionadas igualmente entre elas .
+
+
+Distributed.title=distribuído
+Distributed.content=Alinhar parágrafo para tanto a margens esquerda e direita , adicionando espaço extra entre caracteres , se necessário.
+
+
+DrawAlignLeft.title=Alinhe
+DrawAlignLeft.content=Alinhe o objeto selecionado.
+
+
+DrawAlignTop.title=alinhar texto
+DrawAlignTop.content=Definir o alinhamento do texto . \n \n Clique na seta para selecionar um alinhamento diferente.
+
+
+DrawAlignTop2.title=alinhar texto
+DrawAlignTop2.content=Clique na seta para selecionar um alinhamento diferente.
+
+
+DrawingToolsDetailedSettings.title=DrawingToolsDetailedSettings Título
+DrawingToolsDetailedSettings.content=DrawingToolsDetailedSettings conteúdo
+
+
+DuplicateSlide.title=Nova cópia de slides
+DuplicateSlide.content=Inserir um duplicado do diapositivo actual para a apresentação.
+
+
+DynamicShape.title=Inserir Formas
+DynamicShape.content=Inserir formas prontas , como retângulos e círculos, setas , linhas, símbolos de fluxograma e textos explicativos . 
+
+
+EditComment.title=Editar comentário
+EditComment.content=Edite o comentário.
+
+
+EditPoints.title=editar Pontos
+EditPoints.content=Edite os pontos de quebra para mudar a forma .
+
+
+EditWordArtText.title=Editar Texto WordArt
+EditWordArtText.content=Edite o texto do WordArt selecionado.
+
+
+EquationEditor.title=Inserir Equação
+EquationEditor.content=Insira equações matemáticas , usando editor de equações .
+EquationEditor.img=WPPEquationEditor
+
+
+ExplorBackupDir.title=Explorar File Safe
+ExplorBackupDir.content=Ver arquivos de backup e abrir ou recuperar os arquivos de backup para um determinado documento.
+
+
+ExplorVersion.title=Ver backup História
+ExplorVersion.content='Ver o histórico de registro de backup do documento atual para abrir , excluir ou restaurar os arquivos. 
+
+
+ExportWeiboImageCmd.title=ExportWeiboImageCmd Título
+ExportWeiboImageCmd.content=ExportWeiboImageCmd conteúdo
+
+
+Find.title=Encontre
+Find.content=Localizar texto na apresentação.
+
+
+FitTextTip.title=Texto Fit
+FitTextTip.content=Ajustar texto às formas .
+
+
+Flash.title=Inserir Animação em Flash
+Flash.content=Insira uma animação em flash a partir de pasta local.
+
+
+FontAlignMenu.title=Alinhamento da fonte
+FontAlignMenu.content=Defina o alinhamento entre as fontes.
+
+
+FontColor.title=Cor da Fonte
+FontColor.content=Definir a cor do texto . \n \n Clique na seta para selecionar uma cor de texto diferente.
+
+
+FontColor2.title=Cor da Fonte
+FontColor2.content=Clique na seta para selecionar uma cor de fonte diferente.
+
+
+FontName.title=Fonte
+FontName.content=Alterar o tipo de letra .
+
+
+FontSize.title=Tamanho da Fonte
+FontSize.content=Alterar o tamanho da fonte.
+
+
+FormatAlignCenter.title=centro
+FormatAlignCenter.content=Texto Center.
+
+
+FormatAlignLeft.title=Alinhar texto à esquerda
+FormatAlignLeft.content=Alinhar o texto à esquerda .
+
+
+FormatAlignRight.title=Alinhar o texto à direita
+FormatAlignRight.content=Alinhar o texto à direita .
+
+
+FormatObject.title=Formatar objeto
+FormatObject.content=Mostrar a caixa de diálogo Formatar Objeto .
+FormatObject.img=WPPFormatObject
+
+
+FormatPainter.title=Pincel
+FormatPainter.content=Copiar a formatação de um local e aplicá-lo para outro. \n \n Double - clique neste botão para aplicar a mesma formatação a vários lugares no documento .
+
+
+Gallery.title=WPS Gallery
+Gallery.content='WPS Gallery oferece todos os tipos de fontes de imagens para você usar , coletar , editar e gerenciar. \n \n WPS Galeria fontes on-line requer conexão com a Internet . 
+
+
+GridGuides.title=Linhas de grade e guias
+GridGuides.content=Configure as linhas de grade e guias para a apresentação.
+
+
+Group.title=grupo
+Group.content=Agrupar objetos para que eles possam ser tratados como um único objeto.
+
+
+HeaderFooter.title=Cabeçalho e Rodapé
+HeaderFooter.content=Edite o cabeçalho e rodapé do documento.
+HeaderFooter.img=WPPHeaderFooter
+
+
+HomeDetailedSettings.title=HomeDetailedSettings Título
+HomeDetailedSettings.content=HomeDetailedSettings conteúdo
+
+
+Hyperlink.title=Inserir Hyperlink
+Hyperlink.content=Criar um link para uma página web , uma imagem, ou um endereço de e -mail. 
+
+
+IncreaseFontSize.title=Aumentar tamanho da fonte
+IncreaseFontSize.content=Aumentar o tamanho da fonte.
+
+
+IncreaseIndent.title=Aumente a lista de nível
+IncreaseIndent.content=Aumentar o nível de recuo .
+
+
+IncreaseSpace.title=aumentar o espaçamento
+IncreaseSpace.content=Aumentar o espaçamento entre as linhas .
+
+
+InsertChart.title=Insert Chart
+InsertChart.content='O quadro inserido precisa ser editado em WPS Spreadsheets. \n \n Ao WPS Spreadsheets fechado , o gráfico no documento pode exibir normalmente. Clique duas vezes no gráfico se você quiser editá-lo. 
+InsertChart.img=WPPInsertChart
+
+
+InsertClipArt.title=Inserir Clip Art
+InsertClipArt.content=Selecione um clip-art da janela de tarefas e inseri-lo no documento.
+
+
+InsertColumnsLeft.title=Inserir Colunas à Esquerda
+InsertColumnsLeft.content=Inserir uma coluna à esquerda da coluna selecionada .
+
+
+InsertColumnsRight.title=Inserir colunas à direita
+InsertColumnsRight.content=Inserir uma coluna à direita da coluna selecionada .
+
+
+InsertDateTime.title=Data e Hora
+InsertDateTime.content=Mostrar a caixa de diálogo Data e Hora para inserir a data ou a hora atual no documento atual .
+
+
+InsertFileObject.title=Inserir objeto de arquivo
+InsertFileObject.content=Inserir o arquivo selecionado para documento.
+
+
+InsertMedia.title=mídia
+InsertMedia.content=Inserir a música , vídeo, animação e outros arquivos de mídia em apresentação de aces expressão para a apresentação. 
+
+
+InsertObject.title=Inserir objeto
+InsertObject.content=Mostrar a caixa de diálogo Inserir objeto para selecionar novo arquivo ou arquivo da pasta local.
+
+
+InsertOrgChart.title=Inserir Organograma
+InsertOrgChart.content=Insira organograma no slide atual.
+InsertOrgChart.img=WPPInsertOrgChart
+
+
+InsertPictureFromFile.title=Inserir imagem
+InsertPictureFromFile.content=Inserir uma imagem a partir da pasta local.
+
+
+InsertRowsAbove.title=Inserir Linhas Acima
+InsertRowsAbove.content=Adicionar uma nova linha imediatamente acima da linha selecionada.
+
+
+InsertRowsBelow.title=Inserir linhas Abaixo
+InsertRowsBelow.content=Insira uma nova linha diretamente abaixo da linha selecionada.
+
+
+InsertSymbol.title=Inserir símbolo
+InsertSymbol.content='Inserir símbolos que não estão no seu teclado , tais como caracteres fechados e símbolos de direitos autorais. 
+
+
+InsertTable.title=Inserir tabela
+InsertTable.content=Inserir ou desenhar uma tabela no slide atual .
+
+
+InsertWordArt.title=Inserir WordArt
+InsertWordArt.content=Mostrar a caixa de diálogo WordArt Gallery para selecionar um estilo de WordArt e editar conteúdo .
+
+
+Italic.title=Itálico
+Italic.content=Itálico do texto selecionado.
+
+
+Justify.title=justificar
+Justify.content=Alinhar texto para ambas as margens esquerda e direita, adicionando espaço extra entre as palavras conforme o necessário. 
+
+
+KOSCloudFeedbackTip.title=Comentário do usuário
+KOSCloudFeedbackTip.content=Ajude-nos a melhorar WPS Office.
+
+
+KOSCloudInformationTip.title=Guia do Usuário
+KOSCloudInformationTip.content=Como usar o Office Space .
+
+
+KOSCreatecloudLinkTip.title=Apenas dez segundos! Você pode :
+KOSCreatecloudLinkTip.content=Digitalize o código QR ​​e compartilhar seu documento para celular, para WeChat ou MICHAT para edição por outros.
+
+
+KOSOfficespaceLoginFailTip.title=@@
+KOSOfficespaceLoginFailTip.content=Nome de usuário ou senha não corresponder
+
+
+KOSOfficespacePsaawordTip.title=@@
+KOSOfficespacePsaawordTip.content=Senha está errada
+
+
+KOSOfficespaceRegPsaawordTip.title=@@
+KOSOfficespaceRegPsaawordTip.content=A senha não corresponder
+
+
+KOSOpenCloudFileTip.title=Aberto de Nuvem Docs
+KOSOpenCloudFileTip.content=Modificações de documentos em nuvem Docs serão salvos diretamente .
+
+
+KOSRoamingfileTip.title=Roaming arquivo
+KOSRoamingfileTip.content=Arquivos abertos será automaticamente vagavam para a nuvem e todos os seus dispositivos . \n \n  Você pode começar a trabalhar a qualquer hora e em qualquer lugar. 
+
+
+KOSSaveFileTocloudTip.title=Salve a Nuvem Docs
+KOSSaveFileTocloudTip.content=Partilhe com os outros para a discussão , edição e visualização de documentos online.
+
+
+KOSUserLoginCloudTextBtnTip.title=assinar em
+KOSUserLoginCloudTextBtnTip.content=Entre WPS Office Cloud e fazer upload de seus documentos. Você pode editar o mesmo documento em outros computadores ou telefones celulares e nunca perdê-lo.
+
+
+KOSUserLoginCloudTip.title=KOSUserLoginCloudTip Título
+KOSUserLoginCloudTip.content=KOSUserLoginCloudTip conteúdo
+
+
+KOSUserLogoutCloudTip.title=assinado em
+KOSUserLogoutCloudTip.content=Você entrou no WPS Office Cloud. Clique aqui para sair .
+
+
+Lighting.title=Iluminação
+Lighting.content=Definir a direção de iluminação e intensidade para a forma 3-D selecionado. Este último inclui brilhante, normal e escuro. 
+
+
+LineBreak.title=Quebra de Linha
+LineBreak.content=Alterar o formato de quebra de linha.
+
+
+LineSpacing.title=espaçamento entre linhas
+LineSpacing.content=Alterar o espaçamento entre linhas de texto .
+
+
+MarkVersion.title=backup manual
+MarkVersion.content='Sem fechar o arquivo, você pode fazer backup manualmente o arquivo atual para o seu arquivo de segurança e adicionar notas para o arquivo de backup. 
+
+
+Markup.title=Revisão Markup
+Markup.content=Mostrar ou ocultar as marcações de revisão no documento.
+
+
+MasterLayout.title=layout de Mestre
+MasterLayout.content=Definir os elementos de espaço reservado contidos no slide mestre.
+
+
+Media.title=Inserir filme
+Media.content=Inserir um filme a partir de pasta local
+
+
+MergeCells.title=mesclar células
+MergeCells.content=Mesclar as células selecionadas em uma única célula .
+
+
+NewComment.title=Inserir comentário
+NewComment.content=Crie um novo comentário.
+
+
+NewSlide.title=novo Slide
+NewSlide.content=Adicionar um novo slide na apresentação.
+
+
+NewSlide2.title=outras opções
+NewSlide2.content=Clique aqui para selecionar novos Duplicate .
+
+
+NewSlideMaster.title=New Slide Mestre
+NewSlideMaster.content=Insira um novo slide mestre.
+
+
+NewTitleMaster.title=Novo título mestre
+NewTitleMaster.content=Inserir um slide mestre com um novo estilo de título.
+
+
+NewWindow.title=nova Janela
+NewWindow.content=Abra uma nova janela que contém uma vista do documento atual.
+
+
+NextComment.title=próxima Comentário
+NextComment.content=Próxima comentário.
+
+
+Normal.title=Exibição normal '
+Normal.content=Veja a apresentação em vista Normal.
+
+
+NudgeShadowDown.title=Deslocar sombra para baixo
+NudgeShadowDown.content=Mova a sombra do objeto selecionado para baixo .
+
+
+NudgeShadowLeft.title=Deslocar Sombra Esquerda
+NudgeShadowLeft.content=Mova a sombra do objeto selecionado para a esquerda.
+
+
+NudgeShadowRight.title=Deslocar Sombra Direito
+NudgeShadowRight.content=Mova a sombra do objeto selecionado para a direita.
+
+
+NudgeShadowUp.title=Deslocar Sombra para Cima
+NudgeShadowUp.content=Mova a sombra do objeto selecionado para cima .
+
+
+Numbering.title=Numeração
+Numbering.content=Número do parágrafo selecionado . \n \n Clique na seta para selecionar diferentes formatos de numeração .
+
+
+Numbering2.title=Numeração
+Numbering2.content=Clique na seta para selecionar diferentes formatos de numeração .
+
+
+ObjectSelect.title=Painel de Seleção
+ObjectSelect.content=Mostrar janela de tarefas do Painel de Seleção para encontrar facilmente um único objeto ou definir a sua ordem e visibilidade.
+ObjectSelect.img=WPPObjectSelect
+
+
+OrgChartLayout.title=Disposição
+OrgChartLayout.content=Chang o layout ramo do membro selecionado.
+
+
+Package.title=Pacote a apresentação do arquivo
+Package.content='Copie o arquivo de apresentação e itens de mídia relacionados, tais como vídeo, áudio, etc para a pasta especificada , a fim de executar este arquivo em outro computador. 
+
+
+PageSetup.title=Configuração da Página
+PageSetup.content=Mostrar a caixa de diálogo Configurar página.
+PageSetup.img=WPPPageSetup
+
+
+Paragraph1.title=alinhamento
+Paragraph1.content=Clique na seta para selecionar um alinhamento diferente.
+
+
+Paragraph2.title=outras opções
+Paragraph2.content='Clique na seta para selecionar aumentar o espaçamento , Diminuir a opção Espaçamento e Wrap. 
+
+
+Paste.title=colar
+Paste.content=Colar o conteúdo da área de transferência.
+
+
+Paste2.title=colar
+Paste2.content=Clique aqui para obter mais opções, tais como colar apenas texto não formatado .
+
+
+PictureAdjust.title=Ajuste Imagem
+PictureAdjust.content=Aumentar ou diminuir o contraste eo brilho da imagem seleccionada .
+
+
+PictureColor.title=Cor
+PictureColor.content='Alterar a cor da imagem escolhida para dar-lhe uma volta e branco, lavagem ou cor transparente . 
+
+
+PictureCrop.title=Cortar Imagem
+PictureCrop.content=Corte a imagem para remover quaisquer partes indesejadas .
+
+
+PictureFill.title=preenchimento de imagem
+PictureFill.content='Encha o objeto selecionado com uma cor, gradiente , padrão e imagem . \n \n Clique na seta para selecionar diferentes efeitos de preenchimento .
+
+
+PictureFill2.title=preenchimento de imagem
+PictureFill2.content=Clique na seta para selecionar diferentes efeitos de preenchimento .
+
+
+PictureLine.title=Esboço imagem
+PictureLine.content=Definir esboço imagem cor, largura do contorno e estilo de contorno para o objeto selecionado . \n \n Clique na seta para selecionar configurações detalhadas para o contorno. 
+
+
+PictureLine2.title=Esboço imagem
+PictureLine2.content=Clique na seta para selecionar configurações detalhadas para o contorno.
+
+
+PictureSetTransparentColor.title=Definir cor transparente
+PictureSetTransparentColor.content=Faça uma cor na imagem atual transparente. \n \n Ao clicar em um pixel no gráfico atual, todos os pixels da mesma cor específica tornar-se transparente. 
+
+
+PictureSize.title=Tamanho da Imagem
+PictureSize.content='Mude o tamanho, grau de rotação e escala de zoom da forma selecionada . 
+
+
+PictureToolsDetailedSettings.title=PictureToolsDetailedSettings Título
+PictureToolsDetailedSettings.content=PictureToolsDetailedSettings conteúdo
+
+
+PreComment.title=Comentário Anterior
+PreComment.content=Comentário anterior.
+
+
+PreserveMaster.title=Preserve Mestre
+PreserveMaster.content=Preserve o slide mestre selecionado. Mesmo que seja utilizada ainda pode permanecer na apresentação .
+
+
+PrevClose.title=Fechar
+PrevClose.content=Feche a visualização de impressão e voltar ao modo de edição de apresentação.
+
+
+PrevFrameSlides.title=quadro de slide
+PrevFrameSlides.content=Adicionar bordas ao redor do slide.
+
+
+PrevLandscape.title=Paisagem
+PrevLandscape.content=Definir o layout da página para paisagem na impressão de folhetos , páginas de notas e contorno. 
+
+
+PrevNextPage.title=Página Seguinte
+PrevNextPage.content=Navegue até a página seguinte na apresentação.
+
+
+PrevPortrait.title=Retrato
+PrevPortrait.content=Definir o layout da página para retrato na impressão de folhetos , páginas de notas e contorno. 
+
+
+PrevPrintHiddenSlide.title=Imprimir escondido Slides
+PrevPrintHiddenSlide.content=Mostrar slides ocultos em visualização de impressão.
+
+
+PreviewPage.title=Página Anterior
+PreviewPage.content=Navegue para a página anterior da apresentação .
+
+
+Print.title=Imprimir
+Print.content=Aplicar configurações detalhadas para a impressão , tais como impressão, intervalo de impressão , cópias de impressão , páginas por folha e zoom. 
+
+
+Print2.title=Imprimir
+Print2.content='Clique aqui para selecionar configurações detalhadas para a impressão, ou para usar as configurações de impressão padrão para imprimir diretamente . 
+
+
+PrintDirect.title=Impressão Rápida
+PrintDirect.content=Use a impressora padrão para imprimir diretamente .
+
+
+PrintPreview.title=Visualização de Impressão
+PrintPreview.content=Efeitos página de visualização antes de imprimir.
+
+
+PrintingOrder.title=Printing Order
+PrintingOrder.content=Definir a ordem de folhetos impressos verticalmente ou horizontalmente.
+
+
+RB_Clipboard.title=clipboard
+RB_Clipboard.content=Ver todos os itens copiados para o clipboard.
+RB_Clipboard.img=WPPClipboard
+
+
+RB_Font.title=Fonte
+RB_Font.content=Mostrar a caixa de diálogo Fonte .
+RB_Font.img=WPPFont
+
+
+RecentFillColor.title=Shading
+RecentFillColor.content=Usar as cores, gradientes , texturas e imagens para preencher a tabela selecionada no slide atual. \n \n Clique na seta para selecionar diferentes efeitos de preenchimento .
+
+
+RecentFillColor2.title=Shading
+RecentFillColor2.content=Clique nas setas para selecionar diferentes efeitos de preenchimento .
+
+
+Rehearse.title=Testar intervalos
+Rehearse.content=Iniciar uma apresentação de slides em tela cheia , em que você pode ensaiar sua apresentação. \n \n A quantidade de tempo que você gasta em cada slide é gravado e você pode salvar esses horários para executar o show automaticamente no futuro .
+
+
+RenameMaster.title=Rename Master
+RenameMaster.content=Renomeie o slide mestre selecionado.
+
+
+Replace.title=substituir
+Replace.content=Substitua o texto do documento .
+
+
+Replace2.title=substituir
+Replace2.content=Clique aqui para substituir o texto ou fonte no documento.
+
+
+ResetLayout.title=Redefinir layout da
+ResetLayout.content=Redefinir para o layout padrão
+
+
+ResetPicture.title=Redefinir Imagem
+ResetPicture.content=Descartar todas as alterações de formatação que você fez para esta imagem .
+
+
+ResetShape.title=Redefinir Forma
+ResetShape.content=Descartar todas as modificações feitas a formatação da forma seleccionada .
+
+
+Rotate.title=Rodar
+Rotate.content=Girar ou virar o objeto selecionado .
+
+
+Ruler.title=régua
+Ruler.content='Mostrar ou ocultar as réguas , usadas para medir e alinhar objetos no documento. 
+
+
+RunMacro.title=Exibir macros
+RunMacro.content=Mostrar a caixa de diálogo Macros. Veja a lista de macros , a partir da qual você pode executar , criar ou excluir uma macro. 
+
+
+SaveBackgroundPicture.title=Salvar imagem de fundo
+SaveBackgroundPicture.content=Salve o fundo do slide como imagem .
+
+
+Security.title=Segurança de Macro
+Security.content=Personalize as configurações de segurança de macro .
+
+
+Select.title=Selecione
+Select.content='Selecione o texto , tabela ou objeto no documento. 
+
+
+SelectAll.title=selecionar tudo
+SelectAll.content='Use Selecionar tudo para selecionar o slide , objeto ou conteúdo de texto na apresentação. 
+
+
+SendBackward.title=Recuar
+SendBackward.content=Envie o objeto selecionado para trás de modo que ele está escondido pelos objetos que estão em diant dele.
+
+
+SendBackward2.title=Recuar
+SendBackward2.content=Envie o objeto selecionado para trás um nível ou a parte de trás de todos os objetos .
+
+
+SetUpShow.title=Set Up Slide Show
+SetUpShow.content=Mostrar o Set Up Show caixa de diálogo para configurar as opções avançadas para a apresentação de slides , como o modo de quiosque. 
+SetUpShow.img=WPPSetUpShow
+
+
+ShadowButton.title=Sombra texto
+ShadowButton.content=Defina os efeitos de sombra ao texto selecionado.
+
+
+ShadowColor.title=sombra colorida
+ShadowColor.content=Defina a cor da sombra do objeto selecionado . \n \n Clique na seta para selecionar diferentes cores de sombra .
+
+
+ShadowColor2.title=sombra colorida
+ShadowColor2.content=Clique na seta para selecionar diferentes cores de sombra .
+
+
+ShadowOnOff.title=Sombra On /Off
+ShadowOnOff.content=Ligar ou desligar o efeito de sombra do objeto selecionado .
+
+
+ShadowPalette.title=Efeitos de Sombra
+ShadowPalette.content=Definir efeito de sombra ao objeto selecionado .
+
+
+ShapeEffects.title=Efeitos de Forma
+ShapeEffects.content=Aplicar um efeito de sombra e efeito 3-D para a forma selecionada .
+
+
+ShapeFill.title=preenchimento da Forma
+ShapeFill.content='Encha a forma selecionada com uma cor sólida, gradiente , imagem ou textura. \n \n Clique na seta para selecionar diferentes efeitos de preenchimento .
+
+
+ShapeFill2.title=preenchimento da Forma
+ShapeFill2.content=Clique na seta para selecionar diferentes efeitos de preenchimento .
+
+
+ShapeLine.title=Contorno
+ShapeLine.content='Definir a cor , a largura eo estilo de linha para o contorno do objeto selecionado. \n \n Clique na seta para selecionar configurações detalhadas para o contorno. 
+
+
+ShapeLine2.title=Contorno
+ShapeLine2.content=Clique na seta para selecionar configurações detalhadas para o contorno.
+
+
+ShapeSize.title=Tamanho da forma
+ShapeSize.content='Defina o tamanho , graus de rotação e zoom para a forma selecionada . 
+
+
+ShowHideGrid.title=Gridlines
+ShowHideGrid.content=Mostrar ou ocultar as linhas de grade na apresentação.
+
+
+ShowHideMark.title=Mostrar /Ocultar Comentários
+ShowHideMark.content=Mostrar /ocultar os comentários.
+
+
+SimplifiedChinese.title=Simplificado
+SimplifiedChinese.content=Converta o documento para chinês simplificado.
+
+
+SkipSlide.title=Ocultar slide
+SkipSlide.content=Ocultar o slide atual da apresentação. Não será mostrado durante a apresentação de slides em tela cheia .
+
+
+SlideDesign.title=Modelos de projeto
+SlideDesign.content=Mostrar o design do slide - janela tarefas Design Templates para aplicar diferentes modelos para o slide atual ou a apresentação inteira.
+SlideDesign.img=WPPSlideDesign
+
+
+SlideLayout.title=layout do Slide
+SlideLayout.content='Mostrar a janela de tarefas Layout do slide para configurar vários layouts de slides aos slides selecionados , incluindo layouts de texto, layouts de conteúdo, layouts de texto e conteúdo e outros layouts. 
+SlideLayout.img=WPPSlideLayout
+
+
+SlideMaster.title=Slide Mestre
+SlideMaster.content=Abrir visualização do slide mestre para mudar o design e layout dos slides mestre.
+
+
+SlideMasterClose.title=Fechar exibição mestre
+SlideMasterClose.content=Fechar Slide Mestre exibição e voltar para editar o slide show.
+
+
+SlideNumber.title=Inserir número de slides
+SlideNumber.content=Insira o número do slide ao slide atual ou a apresentação inteira. O número de slides reflecte a posição da corrediça no interior da apresentação .
+
+
+SlideOrientation.title=Orientação Deslize
+SlideOrientation.content=Mudar a orientação de deslocamento entre retrato e paisagem.
+
+
+SlidePreview.title=Pré-Visualização
+SlidePreview.content=Visualizar as animações e efeitos de transição no slide atual.
+
+
+SlideShow.title=Slide Show de Beginning
+SlideShow.content=Comece a apresentação do primeiro slide.
+
+
+SlideShowFromCurrent.title=Slide Show de Slide atual
+SlideShowFromCurrent.content=Comece a apresentação do slide atual.
+
+
+SlideShowFromCurrent2.title=Iniciar apresentação de slides
+SlideShowFromCurrent2.content=Clique aqui para selecionar Do Começo ou Do Slide atual .
+
+
+SlideSorter.title=Classificação de Slides Ver
+SlideSorter.content=Veja a apresentação em vista de organização de diapositivos para reorganizar facilmente slides.
+
+
+SlideTransition.title=Transição de slides
+SlideTransition.content=Mostrar a janela de tarefas Transição de slides para criar efeitos de transição aos slides selecionados ou apresentação inteira .
+SlideTransition.img=WPPTransitionEffect
+
+
+SmartChoice.title=Smart Choice
+SmartChoice.content=Escolher o mesmo nível de membros, o mesmo ramo de membros, todos os assistentes ou todas as linhas de conexão. 
+
+
+Sound.title=Inserir som
+Sound.content=Insira um clipe de som ou música da pasta local.
+
+
+SpeakerNotes.title=Speaker Notes
+SpeakerNotes.content='Adicionar uma nota ao slide atual. \n \n Ao você quiser fazer anotações , mas não querem sair da apresentação de slides, clique com botão direito na tela e selecione anotações do orador para fazer anotações no painel de anotações do slide atual . 
+
+
+SplitCells.title=dividir células
+SplitCells.content=Dividir as células selecionadas em várias células novas .
+
+
+StopAutoVersion.title=Backup Auto Stop
+StopAutoVersion.content=Parar o backup automático do documento atual .
+
+
+Subscript.title=subscrito
+Subscript.content=Criar letras pequenas abaixo da linha de base do texto .
+
+
+Superscript.title=sobrescrito
+Superscript.content=Criar pequenas letras acima da linha de texto .
+
+
+Superscript2.title=outras opções
+Superscript2.content=Clique na seta para selecionar sobrescrito e subscrito .
+
+
+SwitchWindow.title=alternar janelas
+SwitchWindow.content=Mudar para uma janela aberta no momento diferente.
+
+
+TableCenter.title=centro
+TableCenter.content=Texto Center.
+
+
+TableLeft.title=Alinhar texto à esquerda
+TableLeft.content=Alinhar o texto à esquerda .
+
+
+TableRight.title=Alinhar o texto à direita
+TableRight.content=Alinhar o texto à direita .
+
+
+TableStyle.title=Estilo de tabela
+TableStyle.content=Mostrar janela de tarefas do estilo de tabela
+TableStyle.img=WPPTableStyle
+
+
+TaskPane.title=Janela Task
+TaskPane.content=Mostrar ou ocultar a janela de tarefas na apresentação.
+
+
+TextBox.title=Desenhar Caixa de Texto Horizontal
+TextBox.content=Inserir uma caixa de texto horizontal no documento.
+
+
+TextBox2.title=Desenhar Caixa de Texto
+TextBox2.content=Clique aqui para inserir a caixa de texto horizontal ou vertical.
+
+
+TextDirection.title=Direção do texto
+TextDirection.content=Personalizar a orientação do texto horizontal ou vertical para a seção atual, todo o documento, ou a caixa de texto selecionado e mesa. 
+
+
+TextFontColor.title=Cor do texto
+TextFontColor.content=Definir a cor do texto . \n \n Clique na seta para selecionar uma cor de texto diferente.
+
+
+TextFontColor2.title=Cor do texto
+TextFontColor2.content=Clique na seta para selecionar uma cor de texto diferente.
+
+
+TextMargin.title=margens das células
+TextMargin.content=Especifique as margens para as células selecionadas .
+
+
+TraditionalChinese.title=tradicional
+TraditionalChinese.content=Converta o documento para chinês tradicional .
+
+
+TransitionEffect.title=Efeitos de Transição
+TransitionEffect.content=Mostrar a janela de tarefas Transição de slides para criar efeitos de transição aos slides selecionados ou apresentação inteira .
+TransitionEffect.img=WPPTransitionEffect
+
+
+Underline.title=Sublinhe
+Underline.content=Sublinhar o texto selecionado.
+
+
+VisualBasicEditor.title=Editor do Visual Basic
+VisualBasicEditor.content=Abra o Editor do Visual Basic para editar macros.
+
+
+WordArtAlignment.title=alinhamento
+WordArtAlignment.content=Defina o alinhamento de linhas individuais de multi- linha WordArt no documento.
+
+
+WordArtCharacterSpacing.title=Espaçamento entre caracteres
+WordArtCharacterSpacing.content=Alterar o espaçamento entre as letras do texto de WordArt selecionado.
+
+
+WordArtDetailedSettings.title=WordArtDetailedSettings Título
+WordArtDetailedSettings.content=WordArtDetailedSettings conteúdo
+
+
+WordArtFill.title=Preencha WordArt
+WordArtFill.content='Encha o WordArt selecionado com uma cor sólida , gradiente , textura e imagem . \n \n Clique na seta para selecionar diferentes efeitos de preenchimento .
+
+
+WordArtFill2.title=Preencha WordArt
+WordArtFill2.content=Clique na seta para selecionar diferentes efeitos de preenchimento ..
+
+
+WordArtGallery.title=WordArt Gallery
+WordArtGallery.content=Mude o estilo do WordArt selecionado.
+
+
+WordArtLine.title=WordArt Contorno
+WordArtLine.content='Definir a cor , a largura eo estilo de linha para o contorno do WordArt selecionado. \n \n Clique na seta para selecionar configurações detalhadas para o contorno. 
+
+
+WordArtLine2.title=WordArt Contorno
+WordArtLine2.content=Clique na seta para selecionar mais estilos de contorno .
+
+
+WordArtSameLetterHeights.title=Mesma letra Heights
+WordArtSameLetterHeights.content=Faça todas as letras do WordArt selecionado exatamente a mesma altura.
+
+
+WordArtShapePalette.title=Forma da WordArt
+WordArtShapePalette.content=Mude o estilo forma do WordArt selecionado.
+
+
+WordArtSize.title=WordArt Tamanho
+WordArtSize.content='Defina o tamanho , grau de rotação e escala do WordArt selecionado. 
+
+
+WordArtVerticalText.title=Texto Vertical
+WordArtVerticalText.content='Desenhar o texto na vertical , com as cartas empilhadas em cima umas das outras . 
+
+
+WorkSpace_Backup.title=WorkSpace_Backup Título
+WorkSpace_Backup.content=WorkSpace_Backup conteúdo
+
+
+WpPrintWhat_1.title=Apostilas ( um slide por página )
+WpPrintWhat_1.content=Configure a impressão que como Handout ( um slide por página).
+
+
+WpPrintWhat_1Notes.title=Notas ( um slide por página )
+WpPrintWhat_1Notes.content=Configurar a impressão que como páginas de notas ( um slide por página , observa à direita do slide ) . 
+
+
+WpPrintWhat_2.title=Apostilas (dois slides por página )
+WpPrintWhat_2.content=Configure a impressão que como Handout ( dois slides por página) .
+
+
+WpPrintWhat_3.title=Apostilas (três slides por página )
+WpPrintWhat_3.content=Configure a impressão que como Handout ( três slides por página) .
+
+
+WpPrintWhat_3Notes.title=Notas (três slides por página )
+WpPrintWhat_3Notes.content=Configurar a impressão que como páginas de anotações ( três slides por página , nota para a direita dos slides ) . 
+
+
+WpPrintWhat_4.title=Apostilas (quatro slides por página )
+WpPrintWhat_4.content=Configure a impressão que como Handout ( quatro slides por página) .
+
+
+WpPrintWhat_6.title=Apostilas (seis slides por página )
+WpPrintWhat_6.content=Configure a impressão que como Handout ( seis slides por página ) .
+
+
+WpPrintWhat_9.title=Apostilas (nove slides por página )
+WpPrintWhat_9.content=Configure a impressão que como Handout ( nove slides por página ) .
+
+
+WpPrintWhat_OutlineView.title=A vista de destaques
+WpPrintWhat_OutlineView.content=Configure a impressão que a vista de destaques . Conteúdo do slide mostrado na página de impressão por meio de destaques.
+
+
+WpPrintWhat_Slides.title=Conteúdo impressão
+WpPrintWhat_Slides.content=Defina o conteúdo impressão como slide ( um slide por página).
+
+
+WpPrintWhat_Slides2.title=Conteúdo impressão
+WpPrintWhat_Slides2.content='Clique aqui para selecionar mais conteúdo impressão, como slides , folhetos , páginas de notas e destaques. 
+
+
+Zoom.title=Zoom
+Zoom.content=Mostrar a caixa de diálogo Zoom para especificar o nível de zoom do documento.
+
+
+ZoomCombo.title=Zoom
+ZoomCombo.content=Selecione o tamanho do zoom da apresentação atual .
+
+
+ZoomFit.title=Ajustar à janela
+ZoomFit.content=Zoom da apresentação para que o slide se encaixa a janela.
+
+
+sp_Macros.title=Exibir macros
+sp_Macros.content='Caixa de diálogo Mostrar Macros. Veja a lista de macros , a partir da qual você pode executar , criar ou excluir uma macro. 
+
+
+sp_Macros2.title=Exibir macros
+sp_Macros2.content=Veja a lista de macros , a partir da qual você pode executar , criar ou excluir uma macro. 
+
+
+weibotool.title=weibotool Título
+weibotool.content=Conteúdo weibotool

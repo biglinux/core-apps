@@ -1,0 +1,12 @@
+Package: wps-office-vero
+Priority: optional
+Section: localization
+Installed-Size: 5667
+Maintainer: Paulo Giovanni <paulusiohannes@gmail.com>
+Architecture: all
+Version: 3.2-0kaiana060914
+Homepage: https://pt-br.libreoffice.org/projetos/vero/
+Depends: wps-office
+Description: Este Arquivo é implementação do VERificador Ortografico do LibreOffice, VERO, para ser utilizado como Corretor Ortográfico no WPS Office.
+ O VERO - sigla que denomina o VERificador Ortografico do LibreOffice - é um projeto desenvolvido em Software Livre, criado em janeiro de 2006, com objetivo de identificar e corrigir erros de ortografia. Em 2008 o VERO desenvolveu o hifenizador, um separador de silabas, que foi agregado ao projeto. Com a implantação do Acordo Ortográfico da Língua Portuguesa de 1990, em vigência desde janeiro de 2009, o VERO tornou-se o primeiro corretor ortográfico de língua portuguesa a adaptar-se às regras no Novo Acordo.
+ 

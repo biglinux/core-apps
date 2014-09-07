@@ -1,0 +1,12 @@
+Package: wps-office-winfonts
+Priority: optional
+Section: localization
+Installed-Size: 398
+Maintainer: Paulo Giovanni <paulusiohannes@gmail.com>
+Architecture: all
+Version: 1.0.0-0kaiana060914
+Homepage: http://wps-community.org/download/fonts/
+Depends: wps-office
+Description: This package install some fonts needed by WPS Office, but most of them have copyright issue. 
+
+ 

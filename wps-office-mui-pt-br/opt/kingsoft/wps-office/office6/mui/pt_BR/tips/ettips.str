@@ -1,0 +1,1314 @@
+[TIPS]
+
+3DColor.title=3-D Cor
+3DColor.content=Preencha a forma 3-D selecionada com a cor . \n \n  na seta para selecionar a partir de diferentes cores em 3-D .
+
+
+3DColor2.title=3-D Cor
+3DColor2.content=Clique na seta para selecionar a partir de diferentes cores em 3-D .
+
+
+3DDepthMenu.title=profundidade
+3DDepthMenu.content=Alterar a altura da forma 3 - D seleccionado .
+
+
+3DOnOff.title=3-D Ativar/Desativar
+3DOnOff.content=Ativar ou Desativar o efeito 3-D aplicado à forma .
+
+
+3DStylePalette.title=3 - D Efeitos
+3DStylePalette.content=Adicionar um efeito 3- D para a forma.
+
+
+3DSurfaceMenu.title=superfície
+3DSurfaceMenu.content=Escolha um efeito de superfície para a forma 3-D selecionado no documento .
+
+
+3DTiltDown.title=Inclinação para baixo
+3DTiltDown.content=Inclinação da forma a seguir.
+
+
+3DTiltLeft.title=Tilt Esquerda
+3DTiltLeft.content=Inclinar a forma para a esquerda .
+
+
+3DTiltRight.title=Tilt direito
+3DTiltRight.content=Inclinar a forma para a direita .
+
+
+3DTiltUp.title=Inclinação para cima
+3DTiltUp.content=Incline a forma para trás.
+
+
+AdvancedFilter.title=Filtro avançado
+AdvancedFilter.content=Especificar critérios complexos para limitar quais registros são incluídos no conjunto de resultados de uma consulta.
+
+
+Align.title=Alinhe
+Align.content=Alinhe as bordas de vários objetos selecionados . \n n Você também pode centralizá-los ou distribuí-los de forma uniforme em toda a página .
+
+
+AlignCenter.title=centro
+AlignCenter.content=Texto Center.
+
+
+AlignLeft.title=Alinhar texto à esquerda
+AlignLeft.content=Alinhar o texto à esquerda .
+
+
+AlignRight.title=Alinhar o texto à direita
+AlignRight.content=Alinhar o texto à direita .
+
+
+AlignmentFormatCells.title=Formatar células : Alinhamento
+AlignmentFormatCells.content=Mostrar a guia Alinhamento da caixa de diálogo Formatar células.
+AlignmentFormatCells.img=ETAlignmentFormatCells
+
+
+AllBorders.title=Todos bordas
+AllBorders.content=Aplicar bordas às células selecionadas atualmente .
+
+
+AllFunction.title=todas as funções
+AllFunction.content=Procurar e selecione a partir da lista que contém todas as funções .
+
+
+AllowEditRanges.title=Permitir que os usuários editem intervalos
+AllowEditRanges.content='Permitir que as pessoas específicas para editar intervalos de células em uma pasta de trabalho ou planilha protegida . \n nAntes usar esse recurso, primeiro conjunto de segurança na folha usando o comando Proteger planilha . 
+
+
+ArtisticWordAlignment.title=alinhamento
+ArtisticWordAlignment.content=Defina o alinhamento de linhas individuais de multi- linha WordArt no documento.
+
+
+AutoFilter.title=Filtro Automático
+AutoFilter.content='Ativar a filtragem das células selecionadas . \n  filtragem \n Assim está ligado , clique na seta para escolher um filtro para a coluna. 
+
+
+AutoSum.title=AutoSum
+AutoSum.content=Mostrar a soma das células seleccionadas directamente após as células seleccionadas .
+AutoSum.img=ETAutoSum
+
+
+AutoVersion.title=Ativar Auto Backup
+AutoVersion.content=Ativar o backup automático para o documento atual , salvar o arquivo de backup para arquivo seguro cada vez que o documento é fechado . 
+
+
+Autobackup.title=Seguro arquivo
+Autobackup.content=Uma breve introdução ao arquivo seguro .
+
+
+Average.title=média
+Average.content=Retorna a média (média aritmética) dos argumentos.
+
+
+Bold.title=Negrito
+Bold.content=Faça o texto selecionado em negrito.
+
+
+BookProtection.title=proteger pasta de trabalho
+BookProtection.content=Impedir alterações indesejadas na estrutura da pasta de trabalho , tais como mover , excluir ou acrescentar folhas. 
+
+
+BottomBorder.title=borda inferior
+BottomBorder.content=Aplicar bordas às células selecionadas atualmente .
+
+
+BottomDoubleBorder.title=Border duplo fundo
+BottomDoubleBorder.content=Aplicar bordas às células selecionadas atualmente .
+
+
+BringForward.title=trazer para a Frente
+BringForward.content=Traga o objeto selecionado para a frente de modo que ele está escondido pelo menos objetos que estão na frente dele .
+
+
+BringForward2.title=trazer para a Frente
+BringForward2.content=Traga os objetos selecionados para a frente um nível ou para a frente de todos os objetos .
+
+
+CTB_DesignMode.title=Modo de Design
+CTB_DesignMode.content=Entre no modo de design para editar nomes e as funções dos controles .
+
+
+CTB_MoreControls.title=mais Controles
+CTB_MoreControls.content=Clique aqui para inserir um controle a partir do conjunto de controles disponíveis no computador.
+
+
+CTB_Property.title=Propriedades de Controle
+CTB_Property.content=Visualizar e modificar as propriedades para o controle selecionado.
+
+
+CTB_ViewCode.title=Exibir código
+CTB_ViewCode.content=Mostrar o Editor do Visual Basic para editar o código dos controles selecionados .
+
+
+CalculateSheet.title=Calcule Folha
+CalculateSheet.content=Calcular a planilha atual momento. \n O só é necessário se o cálculo automático foi desligado .
+
+
+Camera.title=Câmera
+Camera.content=Células link ou intervalo de células de objetos de desenho . As alterações feitas aos dados nas células da planilha será automaticamente mostrada em objetos de desenho .
+
+
+ChangeChartType.title=Alterar tipo de gráfico
+ChangeChartType.content=Alterar o tipo de gráfico atual.
+
+
+ChangePicture.title=Alterar Imagem
+ChangePicture.content=Mudar para uma imagem diferente , preservando a formatação e tamanho da imagem atual . 
+
+
+CharacterSpacing.title=WordArt espaçamento entre caracteres
+CharacterSpacing.content=Alterar o espaçamento entre as letras do texto de WordArt selecionado.
+
+
+Chart.title=Criar gráfico
+Chart.content=Mostrar a caixa de diálogo Tipo de Gráfico para selecionar opções como tipo de gráfico a ser inserido.
+Chart.img=Etchart
+
+
+ChartObjects.title=Objetos Gráfico
+ChartObjects.content=Selecione um elemento gráfico para que você pode formatá-lo.
+
+
+ChineseTranslation.title=Simplificado para chinês tradicional
+ChineseTranslation.content=Conjunto Simplificado para tradução Tradicional Chinesa baseada no caráter ou palavra.
+
+
+CircularReferences.title=Referências circulares
+CircularReferences.content=Mostrar a caixa de diálogo referências circulares . Você pode pesquisar e localizar todas as células que contêm referências circulares na pasta de trabalho . \n nDouble clique em um item na lista de resultados para mudar a célula correspondente .
+
+
+Clear.title=Limpar
+Clear.content=Excluir tudo, desde a célula , ou remover seletivamente a formatação , o conteúdo , ou os comentários. 
+
+
+ClearFilter.title=Mostrar todos
+ClearFilter.content=Limpe o filtro e classificar Estado para a actual gama de dados.
+
+
+ClearTableStyle.title=Limpar o estilo de mesa
+ClearTableStyle.content=Limpar estilo de tabela de células selecionadas .
+
+
+CloseDevelopmentTools.title=Fechar
+CloseDevelopmentTools.content=Clique aqui para ocultar a guia Ferramenta de Desenvolvimento .
+
+
+CloseOtherWindow.title=Fechar Other Windows
+CloseOtherWindow.content=Feche todas as outras janelas exceto a atual.
+
+
+CloseWindow.title=Fechar Janela
+CloseWindow.content=Feche a janela atual.
+
+
+ColumnsCenter.title=Em todo Centro
+ColumnsCenter.content=Selecionar células contínuas em uma linha ou várias linhas , definir o conteúdo das células para o centro. 
+
+
+ComAddin.title=COM Add- Ins
+ComAddin.content=Adicionar ou excluir o disponível em Suplementos .
+
+
+CommaStyle.title=Estilo Comma
+CommaStyle.content=Apresentar o valor da célula com um separador de milhares .
+
+
+CompressPictures.title=Compress Pictures
+CompressPictures.content=Comprimir a imagem selecionada ou todas as imagens na planilha para reduzir o tamanho .
+
+
+ConditionalFormat.title=formatação condicional
+ConditionalFormat.content=Visualmente explorar e analisar os dados , detectar problemas críticos e identificar padrões e tendências . 
+
+
+Consolidate.title=consolidar
+Consolidate.content=Combine os valores de vários intervalos em um novo intervalo.
+
+
+Copy.title=cópia
+Copy.content=Copiar a seleção e colocá-lo na área de transferência do sistema.
+
+
+Count.title=Contagem
+Count.content=Conte o número de células em uma coluna que contêm números .
+
+
+Currency.title=Moeda
+Currency.content='Escolha um formato de moeda alternativa para a célula selecionada . \n  instância \n Para , escolha Euros em vez de dólares . 
+
+
+Cut.title=Cut
+Cut.content=Recortar a seleção e colocá-lo na área de transferência do sistema.
+
+
+DataDetailedSettings.title=DataDetailedSettings Título
+DataDetailedSettings.content=DataDetailedSettings conteúdo
+
+
+DataGroup.title=grupo
+DataGroup.content=Amarrar uma gama de células em conjunto de modo que elas podem ser recolhidas ou expandidas .
+DataGroup.img=ETDataGroup
+
+
+DataSort.title=Ordenar
+DataSort.content=Mostrar a caixa de diálogo Classificar para classificar os dados com base em vários critérios ao mesmo tempo.
+
+
+DataTable.title=Tabela de Dados
+DataTable.content=Adicionar uma tabela de dados para o gráfico.
+
+
+DataUngroup.title=Desagrupar
+DataUngroup.content=Desagrupar um intervalo de células que foram previamente agrupados.
+
+
+DataUngroup2.title=Desagrupar
+DataUngroup2.content=Desagrupar um intervalo de células que foram previamente agrupados.
+
+
+DecreaseDecimal.title=diminuir Decimal
+DecreaseDecimal.content=Mostrar valores menos precisos , mostrando menos casas decimais.
+
+
+DecreaseIndent.title=diminuir Recuo
+DecreaseIndent.content=Diminuir a margem entre a borda eo texto na célula .
+
+
+DeleteComment.title=excluir
+DeleteComment.content=Exclua o comentário selecionado .
+
+
+DeleteRange.title=Eliminar células
+DeleteRange.content=Excluir células, linhas ou colunas em planilha. 
+
+
+DeleteRange2.title=Eliminar células
+DeleteRange2.content=Clique aqui para apagar células , linhas ou a planilha inteira . 
+
+
+DetailedSettings_Data.title=configurações
+DetailedSettings_Data.content=Altere as configurações avançadas de contorno.
+
+
+DetailedSettings_DrawingTools.title=configurações
+DetailedSettings_DrawingTools.content=Altere as configurações de formatação forma.
+
+
+DetailedSettings_Home.title=configurações
+DetailedSettings_Home.content=Altere as configurações de formatação de células .
+
+
+DetailedSettings_Layout.title=configurações
+DetailedSettings_Layout.content=Altere as configurações de configuração de página .
+
+
+DetailedSettings_PictureTool.title=configurações
+DetailedSettings_PictureTool.content=Altere as configurações de formatação de imagem.
+
+
+DetailedSettings_WordArt.title=configurações
+DetailedSettings_WordArt.content=Altere as configurações de formatação de WordArt.
+
+
+DevelopmentTools.title=desenvolvedor
+DevelopmentTools.content=DevelopmentTools conteúdo
+
+
+Direction.title=direção
+Direction.content=Escolha o efeito de sentido da forma 3-D selecionado.
+
+
+DisplayGridlines.title=Exibir linhas de grade
+DisplayGridlines.content=Mostrar as linhas entre linhas e colunas na folha para tornar a edição e leitura mais fácil . \n linhas nEstas não imprime a menos de impressão também é verificada.
+
+
+DisplayHeadings.title=Exibir cabeçalhos
+DisplayHeadings.content=Mostrar cabeçalhos de linha e coluna . \\ títulos n \n row são os números de linha ao lado da folha . cabeçalhos \n nColumn são as letras ou números que aparecem acima das colunas em uma folha .
+
+
+DrawBorder.title=desenhar borda
+DrawBorder.content='Para desenhar linha de fronteira , clique nessa opção e arraste o mouse para desenhar . \n nAperte Esc no teclado ou clicar nesta opção novamente para sair do modo de desenho . 
+
+
+DrawGrid.title=Desenhar borda da grade
+DrawGrid.content='Para desenhar grade fronteira , clique nessa opção e arraste o mouse para desenhar . \n nAperte Esc no teclado ou clicar nesta opção novamente para sair do modo de desenho . 
+
+
+DrawingToolsDetailedSettings.title=DrawingToolsDetailedSettings Título
+DrawingToolsDetailedSettings.content=DrawingToolsDetailedSettings conteúdo
+
+
+Duplicates.title=duplicatas
+Duplicates.content=Highlight , Rejeitar entrada ou remover linhas duplicadas de uma folha. \n n Você pode especificar quais colunas devem ser verificados para informações duplicadas . 
+
+
+DynamicShape.title=Inserir Formas
+DynamicShape.content=Inserir formas prontas , como linhas, retângulos , símbolos de fluxograma e textos explicativos . 
+
+
+EDRProperties.title=Propriedades do intervalo de dados
+EDRProperties.content='Mude os nomes de fontes de dados externas , formato de número e disposição. 
+
+
+EditCloumns.title=Formula Bar
+EditCloumns.content='Ver a barra de fórmula, na qual é possível inserir texto e fórmulas nas células. 
+EditCloumns.img=EditCloumns
+
+
+EditComment.title=Editar comentário
+EditComment.content=Edite o comentário selecionado .
+
+
+EditCrossBookLinks.title=editar vínculos
+EditCrossBookLinks.content=A fim de atualizar os dados ou excluir links, ver todos os arquivos que foram ligados a este livro. 
+
+
+EditOleDBQuery.title=Consulta Editar OLE DB
+EditOleDBQuery.content='Selecione o tipo de comando , a entrada de uma instrução de consulta relevent e filtrar os dados importados.
+
+
+EditPoints.title=editar Pontos
+EditPoints.content=Edite os pontos de quebra para mudar a forma .
+
+
+EditWordArtText.title=Edit Text
+EditWordArtText.content=Edite o texto do WordArt selecionado.
+
+
+EquationEditor.title=Inserir Equação
+EquationEditor.content=Insira equações matemáticas , usando editor de equações .
+EquationEditor.img=ETEquationEditor
+
+
+Eraseborder.title=apague Border
+Eraseborder.content='Para apagar fronteira , clique nessa opção e arraste o mouse para apagar . \n nAperte Esc no teclado ou clicar nesta opção novamente para sair do modo de apagar . 
+
+
+EvaluateFormula.title=avaliar fórmula
+EvaluateFormula.content=Mostrar a caixa de diálogo Avaliar fórmula para depurar uma fórmula , avaliando cada parte da fórmula individualmente.
+
+
+ExitPreview.title=saída
+ExitPreview.content=Sair Visualização de Impressão e volta para o modo de edição de documentos .
+
+
+ExplorBackupDir.title=Explorar File Safe
+ExplorBackupDir.content=Ver arquivos de backup e abrir ou recuperar os arquivos de backup para um determinado documento.
+
+
+ExplorVersion.title=Ver históricos de backup
+ExplorVersion.content='Ver o histórico de registro de backup do documento atual para abrir , excluir ou restaurar os arquivos. 
+
+
+FTB_EditCode.title=Editar código
+FTB_EditCode.content=Inicie o Editor do Visual Basic para editar o código do formulário selecionado.
+
+
+FTB_Property.title=Propriedades de Controle
+FTB_Property.content=Definir as propriedades do objeto de formulário selecionados , como fonte e tamanho . 
+
+
+Fill.title=Preencha
+Fill.content=De acordo com certas regras , você pode preencher o conteúdo de uma célula em qualquer direção para células adjacentes. 
+
+
+FillColor.title=Cor de preenchimento
+FillColor.content=Colorir o fundo das células selecionadas. \n \n  na seta para selecionar uma cor de fundo diferente.
+
+
+FillColor2.title=Cor de preenchimento
+FillColor2.content=Clique na seta para selecionar uma cor de fundo diferente.
+
+
+Financial.title=financeiro
+Financial.content=Procurar e selecione a partir de uma lista de funções financeiras .
+
+
+Find.title=Localizar e substituir
+Find.content='Localizar texto no livro. \n \n  na seta para escolher outras opções , tais como Go To. 
+
+
+FontColor.title=Cor do texto
+FontColor.content=Mude a cor do texto . \n \n  na seta para selecionar uma cor de texto diferente.
+
+
+FontColor2.title=Cor do texto
+FontColor2.content=Clique na seta para selecionar uma cor de texto diferente.
+
+
+FontFormatCells.title=Formatar células : Fonte
+FontFormatCells.content=Mostrar a guia Fonte da caixa de diálogo Formatar células.
+FontFormatCells.img=ETFontFormatCells
+
+
+FontName.title=Fonte
+FontName.content=Alterar o tipo de letra .
+
+
+FontSize.title=Tamanho da Fonte
+FontSize.content=Alterar o tamanho da fonte.
+
+
+FormatChartObject.title=formato Seleção
+FormatChartObject.content=Mostrar a caixa de diálogo Formato de objetos de gráfico . Você pode usar as configurações detalhadas para opções de gráfico .
+
+
+FormatObject.title=Formatar objeto
+FormatObject.content=Mostrar a caixa de diálogo Formatar Objeto .
+FormatObject.img=ETFormatObject
+
+
+FormatPainter.title=Pincel
+FormatPainter.content=Copiar a formatação de um local e aplicá-lo para outro. \n nDouble - clique neste botão para aplicar a mesma formatação a vários lugares no documento .
+
+
+FormatStyle.title=formato Estilo
+FormatStyle.content=Faça combinações diferentes de formatos de célula , como número ou alinhamento formatos , em seguida, gerar esses formatos em um só. 
+
+
+FreezePanes.title=Congelar /Descongelar painéis
+FreezePanes.content=Manter uma porção da folha visível , enquanto o resto dos rolos de folha . (Você pode cancelar o bloqueio para percorrer a planilha inteira ) .
+
+
+FullScreenMode.title=tela cheia
+FullScreenMode.content=Ver o livro no modo de tela cheia
+
+
+FuncCatDateAndTime.title=Data Hora
+FuncCatDateAndTime.content=Procurar e selecione a partir de uma lista de funções de data e hora .
+
+
+FuncCatMoreFunctions.title=mais funções
+FuncCatMoreFunctions.content=Procurar e selecione a partir de listas de estatística , engenharia e funções de informação . 
+
+
+FuncCatText.title=Função texto
+FuncCatText.content=Procurar e selecione a partir de uma lista de funções de texto .
+
+
+Gallery.title=WPS Gallery Escritório
+Gallery.content='WPS Gallery oferece todos os tipos de fontes de imagens para você usar , coletar , editar e gerenciar. \n NWPS Galeria fontes on-line requer conexão com a Internet . 
+
+
+Group.title=grupo
+Group.content=Agrupar objetos para que eles possam ser tratados como um único objeto.
+
+
+GrowFont.title=Aumentar tamanho da fonte
+GrowFont.content=Aumentar o tamanho da fonte.
+
+
+HeaderFooter.title=Cabeçalho e Rodapé
+HeaderFooter.content=Edite o cabeçalho e rodapé do documento. Informações \n nO no cabeçalho ou rodapé aparece na parte superior ou inferior de cada página impressa.
+HeaderFooter.img=ETHeaderFooter
+
+
+HideDetail.title=Ocultar detalhe
+HideDetail.content=Recolher um grupo de células .
+
+
+HomeDetailedSettings.title=HomeDetailedSettings Título
+HomeDetailedSettings.content=HomeDetailedSettings conteúdo
+
+
+Hyperlink.title=Inserir Hyperlink
+Hyperlink.content=Criar um link para uma página web , uma imagem, ou um endereço de e -mail. 
+
+
+ImportData.title=Importar dados
+ImportData.content=Importar dados externos para a planilha selecionada .
+
+
+IncreaseDecimal.title=Aumente Decimal
+IncreaseDecimal.content=Mostrar valores mais precisos , mostrando mais casas decimais .
+
+
+IncreaseIndent.title=aumentar recuo
+IncreaseIndent.content=Aumente a margem entre a borda eo texto na célula.
+
+
+InsertClipArt.title=Inserir ClipArt
+InsertClipArt.content=Inserir ClipArt conteúdo
+
+
+InsertComment.title=novo Comentário
+InsertComment.content=Acrescentar um comentário a planilha sobre a seleção .
+
+
+InsertFileObject.title=Inserir objeto de arquivo
+InsertFileObject.content=Inserir o arquivo selecionado para documento.
+
+
+InsertFunction.title=Inserir Função
+InsertFunction.content=Edite a fórmula na célula atual , escolhendo funções e editar os argumentos.
+
+
+InsertObject.title=Inserir objeto
+InsertObject.content=Mostrar a caixa de diálogo Inserir objeto para selecionar novo arquivo ou arquivo da pasta local.
+
+
+InsertPageBreak.title=quebras de página
+InsertPageBreak.content=Especifique onde uma nova página começará na cópia impressa breaks . \n npágina são inseridos acima e à esquerda da seleção.
+
+
+InsertPictureFromFile.title=Inserir imagem
+InsertPictureFromFile.content=Inserir uma imagem a partir da pasta local.
+
+
+InsertRange.title=Inserir Células
+InsertRange.content=Inserir células, linhas ou colunas na planilha . 
+
+
+InsertRange2.title=Inserir Células
+InsertRange2.content=Clique aqui para inserir células, linhas ou colunas na planilha ou adicionar uma planilha totalmente novo. 
+
+
+InsertSymbol.title=Inserir símbolo
+InsertSymbol.content='Inserir símbolos que não estão no seu teclado , tais como caracteres fechados e símbolos de direitos autorais. 
+
+
+InsertTextboxHorizontal.title=Desenhar Caixa de Texto Horizontal
+InsertTextboxHorizontal.content=Inserir uma caixa de texto horizontal.
+
+
+InsertTextboxHorizontal2.title=Desenhar Caixa de Texto
+InsertTextboxHorizontal2.content=Clique aqui para inserir qualquer texto horizontal ou vertical.
+
+
+InsertWordArt.title=Inserir WordArt
+InsertWordArt.content=Mostrar a caixa de diálogo WordArt Gallery para selecionar um estilo de WordArt e editar conteúdo .
+
+
+Italic.title=Itálico
+Italic.content=Itálico do texto selecionado.
+
+
+KOSCloudFeedbackTip.title=Comentário do usuário
+KOSCloudFeedbackTip.content=Ajude-nos a melhorar WPS Office.
+
+
+KOSCloudInformationTip.title=Guia do Usuário
+KOSCloudInformationTip.content=Como usar o Office Space .
+
+
+KOSCreatecloudLinkTip.title=Apenas dez segundos! Você pode :
+KOSCreatecloudLinkTip.content=Digitalize o código QR ​​e compartilhar seu documento para celular, para WeChat ou MICHAT para edição por outros.
+
+
+KOSOfficespaceLoginFailTip.title=@@
+KOSOfficespaceLoginFailTip.content=Nome de usuário ou senha não corresponder
+
+
+KOSOfficespacePsaawordTip.title=@@
+KOSOfficespacePsaawordTip.content=Senha está errada
+
+
+KOSOfficespaceRegPsaawordTip.title=@@
+KOSOfficespaceRegPsaawordTip.content=A senha não corresponder
+
+
+KOSOpenCloudFileTip.title=Aberto de Nuvem Docs
+KOSOpenCloudFileTip.content=Modificações de documentos em nuvem Docs serão salvos diretamente .
+
+
+KOSRoamingfileTip.title=Roaming arquivo
+KOSRoamingfileTip.content=Arquivos abertos será automaticamente vagavam para a nuvem e todos os seus dispositivos . \n n Você pode começar a trabalhar a qualquer hora e em qualquer lugar. 
+
+
+KOSSaveFileTocloudTip.title=Salve a Nuvem Docs
+KOSSaveFileTocloudTip.content=Partilhe com os outros para a discussão , edição e visualização de documentos online.
+
+
+KOSUserLoginCloudTextBtnTip.title=assinar em
+KOSUserLoginCloudTextBtnTip.content=Entre WPS Office Cloud e fazer upload de seus documentos. Você pode editar o mesmo documento em outros computadores ou telefones celulares e nunca perdê-lo.
+
+
+KOSUserLoginCloudTip.title=KOSUserLoginCloudTip Título
+KOSUserLoginCloudTip.content=KOSUserLoginCloudTip conteúdo
+
+
+KOSUserLogoutCloudTip.title=assinado em
+KOSUserLogoutCloudTip.content=Você entrou no WPS Office Cloud. Clique aqui para sair .
+
+
+LeftBorder.title=Border esquerda
+LeftBorder.content=Aplicar bordas às células selecionadas atualmente .
+
+
+Legend.title=Legenda
+Legend.content=Mostrar ou ocultar a legenda do gráfico .
+
+
+Lighting.title=Iluminação
+Lighting.content=Definir a direção de iluminação e intensidade para a forma 3-D selecionado. Este último inclui brilhante, normal e escuro. 
+
+
+LoadMacro.title=Add- Ins
+LoadMacro.content=Gerenciar o Add- Ins disponíveis para uso com este arquivo.
+
+
+LockCell.title=Bloqueio de celular
+LockCell.content=Se a planilha está protegida , o recurso de bloqueio celular pode proteger os dados sejam modificados . 
+
+
+Logical.title=lógico
+Logical.content=Procurar e selecione a partir de uma lista de funções lógicas.
+
+
+LookupAndReference.title=de referência de pesquisa
+LookupAndReference.content=Procurar e selecione a partir de uma lista de funções de pesquisa e de referência .
+
+
+Macros.title=Exibir macros
+Macros.content=Veja a lista de macros , a partir da qual você pode executar , criar ou excluir uma macro. 
+
+
+Margins.title=margens
+Margins.content=Selecione os tamanhos de margem do documento inteiro ou da seção atual.
+
+
+MarkVersion.title=backup manual
+MarkVersion.content='Sem fechar o arquivo, você pode fazer backup manualmente o arquivo atual para o seu arquivo de segurança e adicionar notas para o arquivo de backup. 
+
+
+MathAndTrig.title=Math Trig
+MathAndTrig.content=Procurar e selecione a partir de uma lista de funções de matemática e trigonometria .
+
+
+Max.title=Max
+Max.content=Retorna o maior valor em um conjunto de valores.
+
+
+MergeCenter.title=Mesclar e centralizar
+MergeCenter.content=Junte-se às células selecionadas em uma única célula maior e centraliza o conteúdo na nova célula .
+MergeCenter.img=ETMergeCenter
+
+
+MergeCenter2.title=Mesclar e centralizar
+MergeCenter2.content=Junte-se às células selecionadas em uma única célula maior e centraliza o conteúdo na nova célula .
+
+
+MergeColumns.title=mesclar outro lado
+MergeColumns.content=Selecione e mesclar células em uma ou várias linhas.
+
+
+MergeSelection.title=mesclar células
+MergeSelection.content=Mesclar as células selecionadas em uma única célula .
+
+
+Min.title=em
+Min.content=Retorna o menor número em um conjunto de valores.
+
+
+ModifyPivotTable.title=modificar tabela dinâmica
+ModifyPivotTable.content=Alterar fonte de dados de tabela dinâmica e redefinir seu local de exibição .
+
+
+Morefunctions.title=mais funções
+Morefunctions.content=Procurar e selecione a partir de listas de estatística , engenharia , cubo, e funções de informação . 
+
+
+NameCreate.title=Criar Nomes
+NameCreate.content=Gerar automaticamente nomes de células selecionadas. \n  pessoas \n many optar por usar o texto na primeira linha ou coluna da esquerda de uma seleção.
+
+
+NameDefine.title=definir nome
+NameDefine.content='Nomear células para que você possa consultá-las em fórmulas com esse nome \n nPor exemplo , selecione as células A1: . A10, eo nome deste conjunto de células \\ 'test \\ '\n nNames pode ser usada em fórmulas para . torná-los mais fáceis de entender . 
+
+
+NameManager.title=nome do Gerente
+NameManager.content=Criar , editar, apagar , e encontrar todos os nomes usados ​​no livro \n nNames pode ser usado em fórmulas como substitutos de referências de células \n nPor exemplo : . = SUM ( MySales ) em vez de = SUM (A1: A20 ) . 
+
+
+NamePaste.title=colar Nome
+NamePaste.content=Escolha um nome que está sendo usado na pasta de trabalho atual e colá-lo na fórmula atual.
+
+
+NewWindow.title=nova Janela
+NewWindow.content=Abra uma nova janela que contém uma vista da planilha atual .
+
+
+NoBorder.title=No Border
+NoBorder.content=Aplicar bordas às células selecionadas atualmente .
+
+
+NormalViewEt.title=Exibição normal '
+NormalViewEt.content=Ver a planilha na vista Normal.
+
+
+NudgeShadowDown.title=Deslocar sombra para baixo
+NudgeShadowDown.content=Mova a sombra do objeto selecionado para baixo .
+
+
+NudgeShadowLeft.title=Deslocar Sombra Esquerda
+NudgeShadowLeft.content=Mova a sombra do objeto selecionado para a esquerda.
+
+
+NudgeShadowRight.title=Deslocar Sombra Direito
+NudgeShadowRight.content=Mova a sombra do objeto selecionado para a direita.
+
+
+NudgeShadowUp.title=Deslocar Sombra para Cima
+NudgeShadowUp.content=Mova a sombra do objeto selecionado para cima .
+
+
+NumberFormatCells.title=Formatar células : Número
+NumberFormatCells.content=Mostrar a guia Número da caixa de diálogo Formatar células.
+NumberFormatCells.img=ETNumberFormatCells
+
+
+ObjectSelect.title=Painel de Seleção
+ObjectSelect.content=Mostrar janela de tarefas do Painel de Seleção para encontrar facilmente um único objeto ou definir a sua ordem e visibilidade.
+ObjectSelect.img=ETObjectSelect
+
+
+OtherBorders.title=outros bordas
+OtherBorders.content=Você pode usar as configurações detalhadas para selecionar bordas da célula.
+
+
+OutlineSettings.title=Configurações Contorno
+OutlineSettings.content=Mostrar a caixa de diálogo Esquema .
+
+
+OutsideBorders.title=bordas externas
+OutsideBorders.content=Aplicar bordas às células selecionadas atualmente .
+
+
+PTFieldSettings.title=Configurações do Campo
+PTFieldSettings.content=Mostrar a caixa de diálogo Configurações do Campo .
+
+
+PTHide.title=esconder
+PTHide.content='Esconder os campos de tabela dinâmica em páginas, linha, área de coluna ou itens nos campos. 
+
+
+PTHideDetail.title=Ocultar detalhe
+PTHideDetail.content=Esconder todos os itens do campo ativo .
+
+
+PTHideFieldList.title=Ocultar Lista de Campos
+PTHideFieldList.content=Mostrar ou ocultar a lista de campos. \n  lista de campos \n O permite adicionar e remover campos .
+
+
+PTRefreshData.title=Atualizar dados
+PTRefreshData.content=Atualizar as informações da fonte de dados na pasta de trabalho .
+
+
+PTShowDetail.title=Mostrar Detalhes
+PTShowDetail.content=Mostrar todos os itens do campo ativo.
+
+
+PTSortAndTopTen.title=Ordenar
+PTSortAndTopTen.content=Defina a opção de ordenação automática do campo de tabela dinâmica.
+
+
+PTSubtotals.title=Subtotais
+PTSubtotals.content=Mostrar ou ocultar subtotais.
+
+
+PTTableOptions.title=Opções de tabela dinâmica
+PTTableOptions.content=Mostrar a caixa de diálogo Opções de tabela dinâmica .
+
+
+PageBreakPreview.title=Visualizar quebra de página
+PageBreakPreview.content=Ver uma prévia do que as páginas vão quebrar quando este livro é impresso .
+
+
+PageLayoutDetailedSettings.title=PageLayoutDetailedSettings Título
+PageLayoutDetailedSettings.content=PageLayoutDetailedSettings conteúdo
+
+
+PageOrientation.title=Orientação da página
+PageOrientation.content=Alterne entre as páginas de layouts retrato e paisagem.
+
+
+PageSetup.title=Configuração da Página
+PageSetup.content=Mostrar a caixa de diálogo de configuração de página .
+PageSetup.img=ETPageSetup
+
+
+PageSize.title=Tamanho da página
+PageSize.content='Selecione um tamanho de papel para a seção atual . \n nPara aplicar um tamanho de papel específico para todas as seções do documento , clique para personalizar o tamanho do papel. 
+
+
+PageZoom.title=página Zoom
+PageZoom.content='Dimensionar a largura ou altura da saída impressa para caber um número máximo de páginas , ou a uma percentagem do seu tamanho real. 
+
+
+PercentStyle.title=Estilo por cento
+PercentStyle.content=Mostrar o valor da célula como uma porcentagem.
+
+
+PictureAdjust.title=Ajuste Imagem
+PictureAdjust.content=Aumentar ou diminuir o contraste eo brilho da imagem seleccionada .
+
+
+PictureColor.title=Cor
+PictureColor.content='Alterar a cor da imagem escolhida para dar-lhe um preto e branco, lavagem ou cor transparente . 
+
+
+PictureCrop.title=Cortar
+PictureCrop.content=Corte a imagem para remover quaisquer partes indesejadas .
+
+
+PictureFillColor.title=preenchimento de imagem
+PictureFillColor.content='Preencha o objeto selecionado com uma cor, gradiente , padrão e imagem . \n \n  na seta para selecionar diferentes efeitos de preenchimento .
+
+
+PictureFillColor2.title=preenchimento de imagem
+PictureFillColor2.content=Clique na seta para selecionar diferentes modos de preenchimento .
+
+
+PictureLineColor.title=Esboço imagem
+PictureLineColor.content=Definir esboço imagem cor, largura do contorno e estilo de contorno para o objeto selecionado . \n \n  na seta para selecionar configurações detalhadas para o contorno. 
+
+
+PictureLineColor2.title=Esboço imagem
+PictureLineColor2.content=Clique na seta para selecionar configurações detalhadas para o contorno.
+
+
+PictureSetTransparentColor.title=Definir cor transparente
+PictureSetTransparentColor.content=Faça uma cor na imagem atual transparente. \n nAo clicar em um pixel no gráfico atual, todos os pixels da mesma cor específica tornar-se transparente. 
+
+
+PictureSize.title=Tamanho da Imagem
+PictureSize.content='Mude o tamanho, grau de rotação e escala de zoom da forma selecionada . 
+
+
+PictureToolsDetailedSettings.title=PictureToolsDetailedSettings Título
+PictureToolsDetailedSettings.content=PictureToolsDetailedSettings conteúdo
+
+
+PivotTable.title=Inserir Tabela Dinâmica
+PivotTable.content=Clique aqui para resumir dados usando uma tabela dinâmica. \n nPivotTable torná-lo fácil de organizar e sintetizar os dados complicados e aprofundar em detalhes .
+
+
+PivotTableDelete.title=excluir tabela dinâmica
+PivotTableDelete.content=Excluir a tabela dinâmica selecionado.
+
+
+PivotTableOrder.title=Encomendar
+PivotTableOrder.content=Movimente a área de linha ou coluna de uma tabela dinâmica para a parte superior ou inferior .
+
+
+PrevLandscape.title=Paisagem
+PrevLandscape.content=Defina as páginas planilha para paisagem .
+
+
+PrevNextPage.title=Página Seguinte
+PrevNextPage.content=Mover para a próxima página de impressão da planilha atual .
+
+
+PrevPortrait.title=Retrato
+PrevPortrait.content=Defina as páginas planilha para retrato.
+
+
+PrevPreviousPage.title=Página Anterior
+PrevPreviousPage.content=Mover-se para a página de impressão anterior da planilha atual .
+
+
+Print.title=Imprimir
+Print.content=Aplicar configurações detalhadas para a impressão , tais como impressão, intervalo de impressão , cópias de impressão , páginas por folha e zoom. 
+
+
+Print2.title=Imprimir
+Print2.content=Clique aqui para definir detalhes de impressão, ou usar as configurações padrão para imprimir diretamente . 
+
+
+PrintArea.title=Área de Impressão
+PrintArea.content=Para selecionar uma área específica da folha para a impressão , ao invés de completamente impresso , os resultados de impressão podem ser vistos na visualização de impressão . 
+
+
+PrintDirect.title=Imprimir diretamente
+PrintDirect.content=Enviar o documento diretamente para a impressora padrão sem fazer alterações.
+
+
+PrintGridlines.title=Linhas de grade de impressão
+PrintGridlines.content=Imprimir as linhas de grade entre as colunas e as linhas da planilha.
+
+
+PrintHeadings.title=Os títulos de impressão
+PrintHeadings.content=Fila de impressão e títulos de coluna . \n  cabeçalhos \n row são os números de linha ao lado da folha . \n  cabeçalhos \n Column são as letras ou números que aparecem acima das colunas em uma folha .
+
+
+PrintLayout.title=layout da Página
+PrintLayout.content=Ver o livro como ele aparecerá na página impressa .
+
+
+PrintNormalView.title=Exibição normal '
+PrintNormalView.content=Sair visualização de impressão e , em seguida, entrar no modo de exibição normal .
+
+
+PrintPreview.title=Visualização de Impressão
+PrintPreview.content=Pré-visualizar e fazer alterações em páginas antes de imprimir.
+
+
+PrintPreviewMargins.title=margens
+PrintPreviewMargins.content=Especificar a distância entre o conteúdo da folha e o bordo da página impressa .
+
+
+PrintPreviewZoomCombo.title=Zoom
+PrintPreviewZoomCombo.content=Selecione o tamanho do zoom da planilha atual.
+
+
+PrintTitle.title=Imprimir títulos
+PrintTitle.content=Especifique linhas e colunas a repetir em cada página impressa .
+
+
+ProtectAndShare.title=Proteger e Compartilhar Pasta de Trabalho
+ProtectAndShare.content=Compartilhe a pasta de trabalho e protegê-lo com uma senha ao mesmo tempo . \n nO senha impedir que outros desligar o controle de alterações .
+
+
+ProtectSheet.title=proteger Planilha
+ProtectSheet.content=Impedir alterações indesejadas para os dados em uma folha especificando quais as informações podem ser alteradas. \n  exemplo \n Para , você pode impedir que as pessoas editem células bloqueadas ou alterar a formatação do documento. \n n Você pode especificar uma senha que pode ser inscrito para desproteger a planilha e permitir que essas alterações . 
+
+
+RB_Clipboard.title=clipboard
+RB_Clipboard.content=Verifique os itens que são copiados para a área de transferência .
+RB_Clipboard.img=ETClipboard
+
+
+ReadingLayout.title=layout de Leitura
+ReadingLayout.content=Conveniente para verificar os dados relacionados que estão na mesma linha ou coluna com a célula atual . \n \n  na seta para escolher uma cor diferente.
+
+
+ReadingLayout2.title=layout de Leitura
+ReadingLayout2.content=Clique na seta para escolher uma cor diferente.
+
+
+ReapplyFilter.title=reaplicar
+ReapplyFilter.content=Reaplique o filtro e classificar na faixa atual. \n nNovo ou dados modificados na coluna não serão filtrados ou ordenados até que você clique em Reaplicar .
+
+
+RecalculateBook.title=recalcular livro
+RecalculateBook.content=Calcule o livro inteiro agora . \n nEste só é necessário se o cálculo automático foi desligado .
+
+
+RecentLineWrap.title=Quebra de Texto
+RecentLineWrap.content=Faça todo o conteúdo visível dentro de uma célula , exibindo-o em várias linhas .
+RecentLineWrap.img=ETRecentLineWrap
+
+
+RecenttlyUsed.title=Recently Used
+RecenttlyUsed.content=Procurar e selecione a partir de uma lista de funções utilizadas recentemente .
+
+
+RecordList.title=Formulário
+RecordList.content='Depois de selecionar o título da coluna , que você pode introduzir , procurar ou excluir dados através do formulário de dados. 
+
+
+RecordMacro.title=Gravar Macro
+RecordMacro.content=Mostrar caixa de diálogo Gravar Macro e iniciar a gravação de macro.
+
+
+Refresh.title=Atualizar dados
+Refresh.content=Atualize todas as informações no livro que é proveniente de uma fonte de dados.
+
+
+RefreshAll.title=atualizar tudo
+RefreshAll.content=Atualize todas as informações no livro que é proveniente de uma fonte de dados.
+
+
+RelativeReference.title=Use referências relativas
+RelativeReference.content=Use referências relativas para que macros são gravadas com ações relativas à célula selecionada inicial.
+
+
+ResetPicture.title=Redefinir Imagem
+ResetPicture.content=Descartar todas as alterações de formatação que você fez para esta imagem .
+
+
+RightBorder.title=Borda direita
+RightBorder.content=Aplicar bordas às células selecionadas atualmente .
+
+
+RotateRight.title=Rodar
+RotateRight.content=Girar ou virar o objeto selecionado .
+
+
+RowsAndColumn.title=Linhas e Colunas
+RowsAndColumn.content=Clique aqui para operar as linhas e colunas . Pode-se ajustar a altura ea largura , de preenchimento ou ocultar linhas e colunas. 
+
+
+RunMacro.title=Exibir macros
+RunMacro.content='Caixa de diálogo Mostrar Macros. Veja a lista de macros , a partir da qual você pode executar , criar ou excluir uma macro. 
+
+
+RunMacro2.title=Exibir macros
+RunMacro2.content='Caixa de diálogo Mostrar Macros. Veja a lista de macros , a partir da qual você pode executar , criar ou excluir uma macro. 
+
+
+SameLetterHeights.title=WordArt mesmo letra Heights
+SameLetterHeights.content=Faça todas as letras do WordArt selecionado exatamente a mesma altura.
+
+
+Security.title=Segurança de Macro
+Security.content=Personalize as configurações de segurança de macro .
+
+
+SendBackward.title=Recuar
+SendBackward.content=Envie o objeto selecionado para trás de modo que ele está escondido pelos objetos que estão em diant dele.
+
+
+SendBackward2.title=Recuar
+SendBackward2.content=Envie o objeto selecionado para trás um nível ou a parte de trás de todos os objetos .
+
+
+SeriesInColumns.title=interruptor da coluna
+SeriesInColumns.content=Série de gráficos são criados em colunas.
+
+
+SeriesInRows.title=Mudar Row
+SeriesInRows.content=Série de gráficos são criados em fileiras.
+
+
+ShadowColor.title=sombra colorida
+ShadowColor.content=Defina a cor da sombra do objeto selecionado . \n \n  na seta para selecionar diferentes cores de sombra .
+
+
+ShadowColor2.title=sombra colorida
+ShadowColor2.content=Clique na seta para selecionar diferentes cores de sombra .
+
+
+ShadowOnOff.title=Sombra Ativar/Desativar
+ShadowOnOff.content=Ativar ou Desativar o efeito de sombra do objeto selecionado .
+
+
+ShadowPalette.title=Efeitos de Sombra
+ShadowPalette.content=Definir efeito de sombra ao objeto selecionado .
+
+
+ShapeFillColor.title=preenchimento da Forma
+ShapeFillColor.content='Preencha a forma selecionada com uma cor sólida, gradiente , imagem ou textura. \n \n  na seta para selecionar diferentes efeitos de preenchimento .
+
+
+ShapeFillColor2.title=preenchimento da Forma
+ShapeFillColor2.content=Clique na seta para selecionar diferentes efeitos de preenchimento .
+
+
+ShapeLineColor.title=Contorno
+ShapeLineColor.content='Definir a cor , a largura eo estilo de linha para o contorno do objeto selecionado. \n \n  na seta para selecionar configurações detalhadas para o contorno. 
+
+
+ShapeLineColor2.title=Contorno
+ShapeLineColor2.content=Clique na seta para selecionar configurações detalhadas para o contorno.
+
+
+ShapeSize.title=Tamanho da forma
+ShapeSize.content='Defina o tamanho , graus de rotação e zoom para a forma selecionada . 
+
+
+ShareWorkbook.title=Compartilhar pasta de trabalho
+ShareWorkbook.content=Permitir várias pessoas para trabalhar em uma pasta de trabalho ao mesmo tempo . \n nO livro deve ser salvo em um local da rede onde várias pessoas podem abri-lo. \n nWorkbooks contendo tabelas não podem ser compartilhados.
+
+
+ShowDetail.title=Mostrar Detalhes
+ShowDetail.content=Mostrar todos os itens do campo ativo.
+
+
+ShrinkFont.title=Diminuir tamanho da fonte
+ShrinkFont.content=Diminuir o tamanho da fonte .
+
+
+SortAndFilter.title=Ordenar
+SortAndFilter.content=Organizar os dados de modo que é mais fácil de analisar . \n n Você pode classificar os dados selecionados em ordem crescente ou decrescente .
+
+
+SortAscending.title=Crescente
+SortAscending.content=Organizar a selecção de forma que os valores mais baixos são na parte superior da coluna .
+
+
+SortDescending.title=descendente
+SortDescending.content=Organizar a selecção de forma que os valores mais elevados são na parte superior da coluna .
+
+
+SourceData.title=Selecionar Dados
+SourceData.content=Alterar o intervalo de dados incluídos no gráfico .
+
+
+SpellCheck.title=Verificação ortográfica
+SpellCheck.content=Verifique a ortografia do texto na planilha atual .
+
+
+SplitPanes.title=Dividir /unsplit
+SplitPanes.content=Dividir a janela em vários painéis redimensionáveis ​​contendo pontos de vista de sua planilha. \n n Você pode usar esse recurso para exibir vários painéis distantes de sua planilha ao mesmo tempo.
+
+
+StopAutoVersion.title=Backup Auto Stop
+StopAutoVersion.content=Parar a pasta de trabalho atual de gravação automática .
+
+
+StopRecordMacro.title=Parar gravação
+StopRecordMacro.content=Pare a gravação da macro .
+
+
+Subtotals.title=Subtotal
+Subtotals.content=Total de várias linhas de dados relacionados entre si por inserir automaticamente subtotais e totais para as células selecionadas .
+
+
+SwitchWindow.title=alternar janelas
+SwitchWindow.content=Mudar para uma janela aberta no momento diferente.
+
+
+TaskWindow.title=Janela Task
+TaskWindow.content=Mostrar ou ocultar a janela de tarefas na planilha.
+
+
+TextFill.title=Cor do texto
+TextFill.content=Mude a cor do texto . \n \n  na seta para selecionar uma cor de texto diferente.
+
+
+TextFill2.title=Cor do texto
+TextFill2.content=Clique na seta para selecionar uma cor de texto diferente.
+
+
+TextOrientation.title=Orientação
+TextOrientation.content=Girar o texto em um ângulo diagonal ou orientação vertical. \n nEste é muitas vezes usado para rotular colunas estreitas . \n \n  a orientação do texto selecionado novamente para redefinir o texto novamente para a orientação normal.
+
+
+TextToColumns.title=Texto para Colunas
+TextToColumns.content='Separar o conteúdo de uma célula de Planilhas em colunas separadas . \n  exemplo \n Para , você pode separar uma coluna de nomes completos em colunas primeiro e último nome separados. \n nEm Escritor, usar esse recurso para converter o texto selecionado em um mesa, dividindo o texto em colunas em cada vírgula, ponto ou outro caractere que você especificar. 
+
+
+ThickBottomBorder.title=Border fundo grosso
+ThickBottomBorder.content=Aplicar bordas às células selecionadas atualmente .
+
+
+ThickBoxBorder.title=Grosso Box Border
+ThickBoxBorder.content=Aplicar bordas às células selecionadas atualmente .
+
+
+TopAndBottomBorder.title=Top e borda inferior
+TopAndBottomBorder.content=Aplicar bordas às células selecionadas atualmente .
+
+
+TopAndDloubleBottomBorder.title=Top e borda inferior Duplo
+TopAndDloubleBottomBorder.content=Aplicar bordas às células selecionadas atualmente .
+
+
+TopAndThickBottomBorder.title=Grosso Top e borda inferior
+TopAndThickBottomBorder.content=Aplicar bordas às células selecionadas atualmente .
+
+
+TopBorder.title=Border Top
+TopBorder.content=Aplicar bordas às células selecionadas atualmente .
+
+
+TrackChanges.title=Controlar Alterações
+TrackChanges.content='Acompanhe todas as alterações feitas à pasta de trabalho , incluindo inserções , exclusões e alterações de formatação . 
+
+
+TranslateToSimplifiedChinese.title=Chinês tradicional para chinês simplificado
+TranslateToSimplifiedChinese.content=Traduzir chinês tradicional em chinês simplificado.
+
+
+TranslateToTraditionalChinese.title=Chinês Simplificado para Tradicional Chinesa
+TranslateToTraditionalChinese.content=Traduzir chinês simplificado em chinês tradicional .
+
+
+Underline.title=Sublinhe
+Underline.content=Sublinhar o texto selecionado.
+
+
+VAlignBottom.title=inferior Align
+VAlignBottom.content=Alinhar o texto para a parte inferior da célula .
+
+
+VAlignCenter.title=Oriente Align
+VAlignCenter.content=Alinhar o texto de modo que é centrada entre a parte superior e na parte inferior da célula .
+
+
+VAlignTop.title=Top Align
+VAlignTop.content=Alinhar o texto para a cima da célula .
+
+
+Validation.title=Validação de dados
+Validation.content='Impedir que dados inválidos sejam inseridos em um exemplo de célula \n nPara , você pode rejeitar os dados ou números maiores inválidos de 1000 \n n Você também pode forçar a entrada a ser escolhido a partir de uma lista suspensa de valores que você especificar. 
+
+
+VerticalText.title=Texto vertical do WordArt
+VerticalText.content='Desenhar o texto na vertical , com as cartas empilhadas em cima umas das outras . 
+
+
+VisualBasicEditor.title=Editor do Visual Basic
+VisualBasicEditor.content=Abra o Editor do Visual Basic para editar macros.
+
+
+What-If%20Analysis.title=Análise what-if
+What-If%20Analysis.content=Meta vai encontrar a entrada certa quando você conhece o resultado desejado. \n O - se Análise ferramenta que localiza o valor ideal de uma célula-alvo , alterando os valores nas células utilizadas para calcular a célula -alvo.
+
+
+WindowReset.title=organizar tudo
+WindowReset.content=Todas as Planilhas abertas lado a lado na mesma janela do programa .
+
+
+WordArtDetailedSettings.title=WordArtDetailedSettings Título
+WordArtDetailedSettings.content=WordArtDetailedSettings conteúdo
+
+
+WordArtFillColor.title=PrePreencha WordArt
+WordArtFillColor.content='Preencha o WordArt selecionado com uma cor sólida , gradiente , textura e imagem . \n \n  a seta para preencher o WordArt de maneiras diferentes. 
+
+
+WordArtFillColor2.title=PrePreencha WordArt
+WordArtFillColor2.content=Clique na seta para preencher o WordArt de maneiras diferentes.
+
+
+WordArtGallery.title=WordArt Gallery
+WordArtGallery.content=Mude o estilo do WordArt selecionado.
+
+
+WordArtLineColor.title=WordArt Contorno
+WordArtLineColor.content='Definir a cor , a largura eo estilo de linha para o contorno do WordArt selecionado. \n \n  na seta para selecionar configurações detalhadas para o contorno. 
+
+
+WordArtLineColor2.title=WordArt Contorno
+WordArtLineColor2.content=Clique na seta para selecionar configurações detalhadas para o contorno.
+
+
+WordArtShapePalette.title=Forma da WordArt
+WordArtShapePalette.content=Mude o estilo forma do WordArt selecionado.
+
+
+WordArtSize.title=WordArt Tamanho
+WordArtSize.content='Defina o tamanho , grau de rotação e escala do WordArt selecionado. 
+
+
+WorkSheet.title=planilha
+WorkSheet.content=Clique aqui para modificar a planilha. Você pode inserir ou excluir a planilha, Renomear a planilha, ou mudar a cor da guia da planilha . 
+
+
+WorkSpace_Backup.title=WorkSpace backup
+WorkSpace_Backup.content=WorkSpace_Backup conteúdo
+
+
+Zoom.title=Zoom
+Zoom.content=Mostrar a caixa de diálogo Zoom para especificar o nível de zoom do documento.
+
+
+m_Format.title=formato
+m_Format.content='Para alterar o formato das células selecionadas , converter texto em número ou Hyperlink .
+
+
+sp_AutoSum.title=AutoSum
+sp_AutoSum.content=Mostrar a soma das células seleccionadas directamente após as células seleccionadas .
+sp_AutoSum.img=ETAutoSum
+
+
+sp_AutoSum2.title=AutoSum
+sp_AutoSum2.content=Clique aqui para exibir o resultado de um cálculo simples, como médio ou valor máximo , após as células selecionadas . 
+
+
+sp_Paste.title=colar
+sp_Paste.content=Colar o conteúdo da área de transferência.
+
+
+sp_Paste2.title=colar
+sp_Paste2.content=Clique aqui para obter mais opções, tais como colar apenas os valores .
+
+
+FormulaErrorCheck.title=Verificação de Erros
+FormulaErrorCheck.content=Verifique se há erros comuns que ocorrem ao usar fórmulas.
+
+

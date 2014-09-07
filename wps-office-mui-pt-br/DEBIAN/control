@@ -1,0 +1,15 @@
+Package: wps-office-mui-pt-br
+Priority: optional
+Section: localization
+Installed-Size: 19528
+Maintainer: Paulo Giovanni <paulusiohannes@gmail.com>
+Architecture: all
+Version: 1.0.0-0kaiana060914
+Homepage: http://wps-community.org
+Depends: wps-office
+Description: Brazilian portuguese language pack for WPS Office.
+ WPS Office including Writer, Presentation and Spreadsheets,
+ is a powerful office suite, which is able to process word
+ file, produce wonderful slides, and analyze data as well.
+ This package contains the localization resources of WPS Office
+ in Brazilian portuguese.
