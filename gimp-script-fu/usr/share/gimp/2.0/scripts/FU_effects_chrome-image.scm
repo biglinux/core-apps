@@ -1,7 +1,7 @@
 ; FU_effects_chrome-image.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/14/2014 on GIMP-2.8.10
 ;
 ; 12/14/2008 took out color layer - made use confusing for me
 ;
@@ -9,14 +9,52 @@
 ; removing deprecated functions
 ;
 ; 10-/15/2010 - tweaked default settings, emboss was to much...
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/14/2014 - convert to RGB if needed
+;==============================================================
+;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
 ; 
 ; Chrome image script  for GIMP 1.2
 ; Copyright (C) 2001-2002 Iccii <iccii@hotmail.com>
-; 
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
+
 
 (define (FU-chrome-image
 			img		
@@ -27,6 +65,10 @@
 			emboss?
 	)
 
+	(gimp-image-undo-group-start img)
+	(if (not (= RGB (car (gimp-image-base-type img))))
+			 (gimp-image-convert-rgb img))
+			 
   (let* (
 	 (width (car (gimp-drawable-width drawable)))
 	 (height (car (gimp-drawable-height drawable)))
@@ -40,7 +82,6 @@
          (count 0)
         )
 
-    (gimp-image-undo-group-start img)
     (if (eqv? (car (gimp-drawable-is-gray drawable)) FALSE)
         (gimp-desaturate drawable))
     (plug-in-gauss-iir2 1 img drawable deform deform)
@@ -73,7 +114,7 @@
 	"Iccii <iccii@hotmail.com>"
 	"Iccii"
 	"2002, Feb"
-	"RGB* GRAY*"
+	"*"
 	SF-IMAGE      "Image"		0
 	SF-DRAWABLE   "Drawable"	0
 	SF-ADJUSTMENT "Contrast"      '(20 0 127 1 1 0 0)

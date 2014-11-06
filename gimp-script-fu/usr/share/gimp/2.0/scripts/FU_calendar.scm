@@ -1,20 +1,49 @@
 ; FU_calendar.scm
-; version 1.0 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/15/2014 on GIMP-2.8.10
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/15/2014 - accommodate indexed images
+;==============================================================
 ;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
+; Installation:
+; This script should be placed in the user or system-wide script folder.
 ;
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
 
 ; Revision: January 2012 - added Hungarian translation (thanks to petrikp)
 
@@ -23,9 +52,7 @@
 ;   1 = Force week 6
 ;   2 = Wrap w6 to w1
 ;   3 = Wrap w6 to w5
-
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
 
 
 (define sg-calendar-languages '("English" "German" "Italian" "Spanish" "French" "Hungarian" "Polish") )
@@ -318,6 +345,13 @@
          )         
     (gimp-context-push)
     (gimp-image-undo-group-start image)
+	
+	
+    (if (not (= RGB (car (gimp-image-base-type image))))
+			 (gimp-image-convert-rgb image))	
+	
+	
+	
     (set! orig-sel (car (gimp-selection-save image)))
     (set! buffer (car (gimp-edit-named-copy drawable "buffer")))
     (set! bg-layer (car (gimp-edit-named-paste drawable buffer FALSE)))
@@ -566,6 +600,12 @@
          (layer 0)
          (display 0) )
     (gimp-image-undo-group-start orig-image)
+	
+	
+    (if (not (= RGB (car (gimp-image-base-type orig-image))))
+			 (gimp-image-convert-rgb orig-image))	
+	
+	
     (set! orig-sel (car (gimp-selection-save orig-image)))
     (unless (= (car (gimp-selection-is-empty orig-image)) TRUE)
       (set! bounds (cdr bounds))
@@ -664,12 +704,12 @@
   "Saul Goode"
   "Saul Goode"
   "10/26/09, updated Jan 2012"
-  "RGB*,GRAY*"
+  "*"
   SF-IMAGE    "Image"    0
   SF-DRAWABLE "Drawable"  0
   SF-OPTION "Language" sg-calendar-languages
   SF-OPTION "Month" (car sg-calendar-months)
-  SF-ADJUSTMENT "Year" '( 2012 1753 2050 1 10 0 1 )
+  SF-ADJUSTMENT "Year" '( 2014 1753 2050 1 10 0 1 )
   SF-TOGGLE "Sunday first" TRUE
   SF-OPTION "Day format" '("S M T ..." "Su Mo Tu ..." "Sun Mon Tue ...")
   SF-OPTION "Layout" '( "Allow 6-week span" "Force 6-week span" "Wrap Week 6 to Week 1" "Wrap Week 6 to Week 5")
@@ -689,11 +729,11 @@
   "Saul Goode"
   "Saul Goode"
   "Dec 2010, updated Jan 2012"
-  "RGB*,GRAY*"
+  "*"
   SF-IMAGE    "Image"    0
   SF-DRAWABLE "Drawable"  0
   SF-OPTION "Language" sg-calendar-languages
-  SF-ADJUSTMENT "Year" '( 2012 1753 2050 1 10 0 1 )
+  SF-ADJUSTMENT "Year" '( 2014 1753 2050 1 10 0 1 )
   SF-ADJUSTMENT "Columns" '( 4 1 12 1 10 0 1 )
   SF-ADJUSTMENT "Padding" '( 10 0 80 1 10 0 1 )
  

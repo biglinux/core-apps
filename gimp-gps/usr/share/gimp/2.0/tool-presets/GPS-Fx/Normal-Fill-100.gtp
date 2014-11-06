@@ -1,0 +1,18 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-bucket-fill")
+(name "Normal Fill 100%")
+(tool-options "GimpBucketFillOptions"
+    (tool "gimp-bucket-fill-tool")
+    (pattern "Warning!")
+    (fill-selection yes)
+    (sample-merged yes))
+(use-fg-bg no)
+(use-brush no)
+(use-dynamics no)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

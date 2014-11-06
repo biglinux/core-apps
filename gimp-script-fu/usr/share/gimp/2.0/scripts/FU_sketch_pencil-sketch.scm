@@ -1,30 +1,55 @@
 ; FU_sketch_pencil-sketch.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/17/2014 on GIMP-2.8.10
 ;
 ; Modified 10/01/2008 to remove deprecated procedures
+; 02/15/2014 - accommodated indexed images, option (default) to merge layers when complete
+; 02/17/2014 - corrected undefined error for variable (tmplayer) used with texture->synthetic
+;==============================================================
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; Installation:
+; This script should be placed in the user or system-wide script folder.
 ;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ; pencil-sketch.scm
 ; Jeff Trefftzs <trefftzs@tcsn.net>
 ;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
-; 
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-; 
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-
 ; Changelog:
 ; 020113 - Version 1.1.  Added multiple choice for edge detection
 ; 020113 - Version 1.01. Fixed mask texture bug.
@@ -32,16 +57,24 @@
 ;
 ; Changed on March 5, 2004 by Kevin Cozens <kcozens@interlog.com>
 ; Updated for GIMP 2.0pre3
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
 
-(define (FU-pencil-sketch inImage inLayer
-				 inWeight
-				 inEdges
-				 inMaskPat
-				 inTextToggle
-				 inTexture)
+
+(define (FU-pencil-sketch 
+		inImage 
+		inLayer
+		inWeight
+		inEdges
+		inMaskPat
+		inTextToggle
+		inTexture
+		inMerge
+	)
+	
+	(gimp-image-undo-group-start inImage)
+	(define indexed (car (gimp-drawable-is-indexed inLayer)))
+	(if (= indexed TRUE)(gimp-image-convert-rgb inImage))	
+	
   (let*
       (
        (WhiteLayer (car (gimp-layer-copy inLayer TRUE)))
@@ -50,8 +83,6 @@
        (LayerMask (car (gimp-layer-create-mask MaskedLayer 0)))
        )
     
-    (gimp-image-undo-group-start inImage)
-
     (gimp-image-insert-layer inImage WhiteLayer 0 -1)
     (gimp-image-insert-layer inImage MaskedLayer 0 -1)
     (gimp-image-insert-layer inImage EdgeLayer 0 -1)
@@ -89,7 +120,7 @@
 	  ((= inEdges 1)		; Sobel Edges
 	   (plug-in-sobel TRUE inImage EdgeLayer TRUE TRUE TRUE))
 	  ((= inEdges 2)		; Synthetic Edges
-	   (set! tmplayer (car (gimp-layer-copy EdgeLayer TRUE)))
+	   (define tmplayer (car (gimp-layer-copy EdgeLayer TRUE)))
 	   (gimp-image-insert-layer inImage tmplayer 0 -1)
 	   (gimp-layer-set-mode tmplayer DIVIDE-MODE)
 	   (plug-in-gauss-iir TRUE inImage tmplayer inWeight TRUE TRUE)
@@ -103,13 +134,13 @@
 			0 255)
 	   )
 	  )
-    
     (gimp-layer-set-mode EdgeLayer DARKEN-ONLY-MODE) ; in case white bg
-
     (gimp-image-set-active-layer inImage inLayer)
+    ); end let
+	
+	(if (= inMerge TRUE)(gimp-image-merge-visible-layers inImage EXPAND-AS-NECESSARY))
     (gimp-image-undo-group-end inImage)
     (gimp-displays-flush)
-    )
   )
 
 (script-fu-register "FU-pencil-sketch"
@@ -118,13 +149,13 @@
 	"Jeff Trefftzs"
 	"Copyright 2002, Jeff Trefftzs"
 	"January 12, 2002"
-	"RGB* GRAY*"
-	SF-IMAGE "The Image" 0
-	SF-DRAWABLE "The Layer" 0
-	SF-ADJUSTMENT "Line Weight (Fine) 1 <----> 128 (Thick)" 
-	'(3 1 128 1 8 0 1)
-	SF-OPTION "Edge Detector" '("Laplace" "Sobel" "Synthetic")
-	SF-PATTERN "Image Texture" "Paper"
-	SF-TOGGLE  "Textured Paper" FALSE
-	SF-PATTERN "Paper Texture" "Crinkled Paper"
+	"*"
+	SF-IMAGE 		"The Image" 								0
+	SF-DRAWABLE 	"The Layer" 								0
+	SF-ADJUSTMENT 	"Line Weight (Fine) 1 <----> 128 (Thick)" 	'(3 1 128 1 8 0 1)
+	SF-OPTION 		"Edge Detector" 							'("Laplace" "Sobel" "Synthetic")
+	SF-PATTERN 		"Image Texture" 							"Paper"
+	SF-TOGGLE  		"Textured Paper" 							FALSE
+	SF-PATTERN 		"Paper Texture" 							"Crinkled Paper"
+	SF-TOGGLE     	"Merge layers when complete?" 				TRUE
 )

@@ -1,37 +1,73 @@
 ; FU_photo_halftone.scm
-; version 1.0a [gimphelp.org]
+; version 2.9 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/15/2014 on GIMP-2.8.10
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+;==============================================================
 ;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
+; Installation:
+; This script should be placed in the user or system-wide script folder.
 ;
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ; This script adds a halftone pixel effect to an image based on the steps
 ; found in this tutorial: http://photoshop-tutorials.deviantart.com/art/Halftone-Pixel-Look-R-31752808
 ; Works only on RGB and Indexed images (with and without alpha channels)
 ; Added new functionality and coding techniques based on suggestions 
 ; of saulgoode and Photocomix at gimptalk.com
-; 
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
 
-(define (FU_photo_halftone image layer useVisible dither mode opacity invertHalftone mask invertMask)
+
+(define (FU_photo_halftone 
+		image 
+		layer 
+		useVisible 
+		dither 
+		mode 
+		opacity 
+		invertHalftone 
+		mask 
+		invertMask
+	)
 	(let* (
 		(isMask nil)
 		(newImage nil)
 		(width nil)
 		(height nil)
-		(indexed nil)
 		(originalLayer nil)
 		(theSelection nil)
 		(halftoneLayer nil)
@@ -44,13 +80,8 @@
 	(gimp-context-push)
 	(gimp-image-undo-group-start image)
 
-	(set! indexed (car (gimp-drawable-is-indexed layer)))
-
-	(if (= indexed TRUE)
-	  (begin
-	   (gimp-image-convert-rgb image)
-	  )
-	)
+	(define indexed (car (gimp-drawable-is-indexed layer)))
+	(if (= indexed TRUE)(gimp-image-convert-rgb image))
 
 	(set! theSelection (car (gimp-selection-save image)))
 	(gimp-selection-none image)
@@ -114,7 +145,7 @@
 	"Fencepost"
 	"Fencepost"
 	"March 23, 2009"
-	"RGB* INDEXED*"
+	"*"
 	SF-IMAGE "Image" 0
 	SF-DRAWABLE "Drawable" 0
 	SF-TOGGLE "Use Visible Layers?" FALSE      

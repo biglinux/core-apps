@@ -1,7 +1,7 @@
 ; FU_stroked_text.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/15/2014 on GIMP-2.8.10
 ;
 ; 10/01/2008
 ; Modified to remove deprecated procedures as listed:
@@ -9,20 +9,35 @@
 ;
 ; Updated to Gimp2.4 (11-2007) http://gimpscripts.com
 ;
-; Updated again to not throw error (needed to define theImage and theDraw)
-; 11/30/2007 by Paul Sherman
+; Updated again to not throw error - 11/30/2007
 ;
 ; 10/15/2010 - added routine to change non-RGB to RGB image
-;              text is basically worthless if not color, and throws an 
-;			   error if not... so what the hell. Also changed some default values
-;			   for better looking text.
+;              	text is basically worthless if not color, and throws an 
+;			error if not... so what the hell. Also changed some default values
+;			for better looking text.
+; 02/15/2014 - accommodate indexed images, cleaned code, relabeled to "Outlined text"
+;==============================================================
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
-; Unknown
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
-; ========================================================================
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
 ;
 ; LICENSE
 ;
@@ -39,32 +54,43 @@
 ;    You should have received a copy of the GNU General Public License
 ;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;
-; ========================================================================
+;==============================================================
+; Original information 
+; 
+; NOT AVAILABLE
+;==============================================================
 ;
-(define (text-layer))
-(define (textheight))
-(define (textheight2))
-(define (textwidth))
-(define (textwidth2))
-(define (stroke-layer))
 
-(define (FU-stoked-text inimage indraw text font font-size stroke text-colour stroke-colour)
+(define (FU-stroked-text 
+		theImage 
+		theDraw 
+		text 
+		font 
+		font-size 
+		stroke 
+		text-colour 
+		stroke-colour
+	)
 
-	(define theImage inimage)
-	(define theDraw indraw)
-
+  (let*
+      (
+		(text-layer 0)
+		(textheight 0)
+		(textheight2 0)
+		(textwidth 0)
+		(textwidth2 0)
+		(stroke-layer 0)
+       ))
+	   
 	(gimp-image-undo-group-start theImage)
-
-	(if (not (= RGB (car (gimp-image-base-type inimage))))
-		    	 (gimp-image-convert-rgb inimage))
+    (if (not (= RGB (car (gimp-image-base-type theImage))))
+			 (gimp-image-convert-rgb theImage))
 
 	(gimp-context-set-foreground text-colour)
-	(set! text-layer (gimp-text-fontname theImage -1 0 0 text 0 TRUE font-size PIXELS
-					    	 font))
+	(set! text-layer (gimp-text-fontname theImage -1 0 0 text 0 TRUE font-size PIXELS font))
 	(set! textheight (car (gimp-drawable-height (car text-layer))))
 	(set! textwidth (car (gimp-drawable-width (car text-layer))))
-	(gimp-layer-resize (car text-layer) (+ textwidth (* 2 stroke)) (+ textheight (* 2 stroke))
-					  stroke stroke)
+	(gimp-layer-resize (car text-layer) (+ textwidth (* 2 stroke)) (+ textheight (* 2 stroke)) stroke stroke)
 	(gimp-layer-translate (car text-layer) stroke stroke)
 	(gimp-image-select-item theImage CHANNEL-OP-REPLACE  (car text-layer))
 	(gimp-selection-grow theImage stroke)
@@ -82,23 +108,21 @@
 
 	(gimp-image-undo-group-end theImage)
 	(gimp-displays-flush)
-
-
 )
-(script-fu-register "FU-stoked-text"
-	"<Image>/Script-Fu/Stoked text"
+(script-fu-register "FU-stroked-text"
+	"<Image>/Script-Fu/Outlined text"
 	"Creates outlined (stroked) text on image."
 	"Karl Ward"
 	"Karl Ward"
 	"Feb 2006"
-	"RGB* GRAY*"
-	SF-IMAGE      	"SF-IMAGE" 0
-	SF-DRAWABLE   	"SF-DRAWABLE" 0
-	SF-STRING     	"Text" "Stroked"
-	SF-FONT	      	"Font" "Sans"
-	SF-ADJUSTMENT	"Font-size" '(80 1 300 1 10 0 1)
-	SF-ADJUSTMENT   "Stroke"    '(3 1 20 1 1 1 0)
-	SF-COLOR	"Text colour" '(70 180 243)
-	SF-COLOR	"Stroke colour" '(0 0 0)
+	"*"
+	SF-IMAGE      	"SF-IMAGE" 			0
+	SF-DRAWABLE   	"SF-DRAWABLE" 		0
+	SF-STRING     	"Text" 				"Stroked"
+	SF-FONT	      	"Font" 				"Sans"
+	SF-ADJUSTMENT	"Font-size" 		'(80 1 300 1 10 0 1)
+	SF-ADJUSTMENT   "Stroke"    		'(3 1 20 1 1 1 0)
+	SF-COLOR		"Text colour" 		'(70 180 243)
+	SF-COLOR		"Stroke colour" 	'(0 0 0)
 )
 				

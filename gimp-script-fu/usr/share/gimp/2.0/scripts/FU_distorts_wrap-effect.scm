@@ -1,11 +1,49 @@
 ; FU_distorts_wrap-effect.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/14/2014 on GIMP-2.8.10
+
+;==============================================================
 ;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
 ;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ; Wrap paint effect Script  for GIMP 1.2
 ; 
 ; --------------------------------------------------------------------
@@ -15,21 +53,21 @@
 ; version 0.2  by Iccii 2001/10/01 <iccii@hotmail.com>
 ;     - Changed menu path because this script attempts to PS's filter
 ;     - Added some code (if selection exists...)
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
+
 
 (define (FU-wrap-effect
-                		inImage
-				inDrawable
-				inRadius
-				inGamma1
-				inGamma2
-				inSmooth
+		inImage
+		inDrawable
+		inRadius
+		inGamma1
+		inGamma2
+		inSmooth
 	)
 
 	(gimp-image-undo-group-start inImage)
-
+	(if (not (= RGB (car (gimp-image-base-type inImage))))
+			 (gimp-image-convert-rgb inImage))
   (let* (
 	(theOld-bg (car (gimp-context-get-background)))
 	(theNewlayer (car (gimp-layer-copy inDrawable 1)))
@@ -84,13 +122,13 @@
 	"Iccii <iccii@hotmail.com>"
 	"Iccii"
 	"Oct, 2001"
-	"RGB*"
-	SF-IMAGE	"Image"			0
-	SF-DRAWABLE	"Drawable"		0
+	"*"
+	SF-IMAGE		"Image"				0
+	SF-DRAWABLE		"Drawable"			0
 	SF-ADJUSTMENT	"Randomness"		'(10 0 32 1 10 0 0)
 	SF-ADJUSTMENT	"Highlight Balance"	'(3.0 1.0 10 0.5 0.1 1 0)
 	SF-ADJUSTMENT	"Edge Amount"		'(3.0 1.0 10 0.5 0.1 1 0)
-	SF-TOGGLE	"Smooth"		FALSE
+	SF-TOGGLE		"Smooth"			FALSE
 )
 
 

@@ -1,19 +1,54 @@
 ; FU_color-saturation_lighten_saturate.scm
-; version 3.1 [gimphelp.org]
+; version 3.3 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/15/2014 on GIMP-2.8.10
 ;
 ; Modified again 11/15/2007
 ;
 ; Revised on 10/27/2007 to fix unbound variables 
 ; (required for v.2.4.0) by Paul Sherman
+; 02/15/2014 - convert to RGB if needed
+;==============================================================
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; Installation:
+; This script should be placed in the user or system-wide script folder.
 ;
-; The GIMP -- an image manipulation program
-; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+;
 ; EZ Improver script  for GIMP 2.4
 ; Original author: Mark Lowry
 ; Created on 5/22/2006 for v.2.2.8
@@ -39,24 +74,13 @@
 ; the layers.  The script-fu input parameters are retained
 ; from one run to the next, so you won't have to change the
 ; opacity slider once you get it set the way you want it.
-;
-; --------------------------------------------------------------------
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
-; 
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-; 
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-; --------------------------------------------------------------------
+;==============================================================
 
-(define (FU-lighten_saturate  img drawable merge-flag )
+(define (FU-lighten_saturate  
+		img 
+		drawable 
+		merge-flag
+	)
 
    (let* (
 	     (screen-layer 0)
@@ -64,12 +88,11 @@
          (second-merge 0)
          )
 
-   ; Start an undo group.  Everything between the start and the end
-   ; will be carried out if an undo command is issued.
-   (gimp-image-undo-group-start img)
+	(gimp-image-undo-group-start img)
+	(if (not (= RGB (car (gimp-image-base-type img))))
+			 (gimp-image-convert-rgb img))
 
    ; CREATE THE SCREEN LAYER
-   ; Create a new layer
    (set! screen-layer (car (gimp-layer-copy drawable 0)))
   
    ; Give it a name
@@ -127,8 +150,8 @@
       "Script by Mark Lowry"
       "Script by Mark Lowry"
       "2007"
-      "RGB*, GRAY*"
-      SF-IMAGE "Image" 0
-      SF-DRAWABLE "Current Layer" 0
-      SF-TOGGLE "Merge Layers?"  FALSE
+      "*"
+      SF-IMAGE "Image" 				0
+      SF-DRAWABLE "Current Layer" 	0
+      SF-TOGGLE "Merge Layers?"  	FALSE
  )

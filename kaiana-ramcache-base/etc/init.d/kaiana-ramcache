@@ -1,0 +1,33 @@
+#!/bin/bash
+#
+# Autor: Bruno Gonçalves Araujo.
+# Contato: bigbruno@gmail.com
+# Licença: GPL V3.
+# Data: 08/2014.
+# Sistema de cache na ram para navegadores utilizando aufs e tmpfs
+##################################################################
+
+do_stop () {
+
+OIFS=$IFS
+IFS=$'\n'
+
+for i  in  $(grep -e ".ramcache" /proc/mounts | grep aufs | awk '{print $2}'); do
+    rsync -apxrgtXogA --delete "$i/" "$i-save"
+done
+
+IFS=$OIFS
+
+}
+
+case "$1" in
+  stop)
+	do_stop
+	;;
+  *)
+	echo "Usage: $0 stop" >&2
+	exit 3
+	;;
+esac
+
+:

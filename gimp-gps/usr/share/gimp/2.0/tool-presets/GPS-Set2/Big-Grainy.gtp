@@ -1,0 +1,22 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-paintbrush")
+(name "Big Grainy")
+(tool-options "GimpPaintOptions"
+    (tool "gimp-paintbrush-tool")
+    (foreground (color-rgb 0.612872 0.691273 0.689931))
+    (background (color-rgb 0.118823 0.118823 0.118823))
+    (opacity 0.650000)
+    (brush "A-19 eroded round 2")
+    (dynamics "Big Grainy")
+    (palette "Firecode")
+    (brush-size 140.000000))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

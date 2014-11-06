@@ -1,0 +1,24 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-ink")
+(name "Comic Ink")
+(tool-options "GimpInkOptions"
+    (tool "gimp-ink-tool")
+    (foreground (color-rgb 0.152941 0.133333 0.188235))
+    (use-smoothing yes)
+    (smoothing-quality 42)
+    (smoothing-factor 394.200000)
+    (size 5.000000)
+    (tilt-angle 25.000000)
+    (vel-sensitivity 0.694444)
+    (tilt-sensitivity 0.000000)
+    (blob-angle -1.107149))
+(use-fg-bg no)
+(use-brush no)
+(use-dynamics no)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

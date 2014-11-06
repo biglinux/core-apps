@@ -1,16 +1,51 @@
 ; FU_photo_copyright.scm
 ;
-; version 1.0a [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/14/2014 on GIMP-2.8.10
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/14/2014 - convert to RGB if needed
+;==============================================================
 ;
-; The GIMP -- an image manipulation program
-; Copyright (C) 1995 Spencer Kimball and Peter Mattis
+; Installation:
+; This script should be placed in the user or system-wide script folder.
 ;
-
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ; Copyright script(v1.0a) for GIMP 2.4
 ; Original author: Martin Egger (martin.egger@gmx.net)
 ; (C) 2005, Bern, Switzerland
@@ -21,33 +56,30 @@
 ;
 ; You can find more about simulating BW at
 ; http://epaperpress.com/psphoto/
-;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
-;
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-;
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
 
-;
 ; Define the function
 ;
-(define (FU-Copyright InImage InLayer InText InFont InPercent InReserve InOpacity InColorPre InColor InPosition InBlur InFlatten)
-;
+(define (FU-Copyright 
+		InImage 
+		InLayer 
+		InText 
+		InFont 
+		InPercent 
+		InReserve 
+		InOpacity 
+		InColorPre 
+		InColor 
+		InPosition 
+		InBlur 
+		InFlatten)
+		
 ; Save history
 ;
-    (gimp-image-undo-group-start InImage)
-;
+    (gimp-image-undo-group-start InImage);	
+	(if (not (= RGB (car (gimp-image-base-type InImage))))
+			 (gimp-image-convert-rgb InImage))
+			 
     (let*    (
         (TheWidth (car (gimp-image-width InImage)))
         (TheHeight (car (gimp-image-height InImage)))
@@ -194,27 +226,27 @@
     "Martin Egger (martin.egger@gmx.net)"
     "2006, Martin Egger, Bern, Switzerland"
     "12.04.2006"
-    "RGB*,GRAY*"
-    SF-IMAGE    "The Image"    0
-    SF-DRAWABLE    "The Layer"    0
-    SF-STRING     "Copyright" "\302\251Paul Sherman"
-    SF-FONT     "Font" "Arial Bold"
-    SF-ADJUSTMENT     "Text Height (Percent of image height)" '(5 1.0 100 1.0 0 2 0)
-    SF-ADJUSTMENT    "Distance from border (Percent of image height)" '(2 0.0 10 1.0 0 2 0)
-    SF-ADJUSTMENT    "Layer Opacity" '(30.0 1.0 100.0 1.0 0 2 0)
-    SF-OPTION    "Copyright color (preset)" '("White"
-                "Gray"
-                "Black"
-                "Color from selection")
-    SF-COLOR     "Copyright color (selection)" '(220 220 220)
-    SF-OPTION     "Copyright position" '("Bottom right"
-                "Bottom left"
-                "Bottom center"
-                "Top right"
-                "Top left"
-                "Top center"
-                "Image center")
-    SF-TOGGLE     "Blur copyright" TRUE
-    SF-TOGGLE    "Flatten Image"    TRUE
+    "*"
+    SF-IMAGE    	"The Image"    										0
+    SF-DRAWABLE    	"The Layer"    										0
+    SF-STRING     	"Copyright" 										"\302\251Paul Sherman"
+    SF-FONT     	"Font" 												"Arial Bold"
+    SF-ADJUSTMENT   "Text Height (Percent of image height)" 			'(5 1.0 100 1.0 0 2 0)
+    SF-ADJUSTMENT   "Distance from border (Percent of image height)" 	'(2 0.0 10 1.0 0 2 0)
+    SF-ADJUSTMENT   "Layer Opacity" 									'(30.0 1.0 100.0 1.0 0 2 0)
+    SF-OPTION    	"Copyright color (preset)" 							'("White"
+																		"Gray"
+																		"Black"
+																		"Color from selection")
+    SF-COLOR     	"Copyright color (selection)" 						'(220 220 220)
+    SF-OPTION     	"Copyright position" 								'("Bottom right"
+																		"Bottom left"
+																		"Bottom center"
+																		"Top right"
+																		"Top left"
+																		"Top center"
+																		"Image center")
+    SF-TOGGLE     	"Blur copyright" 									TRUE
+    SF-TOGGLE    	"Flatten Image"    									TRUE
 )
 ;

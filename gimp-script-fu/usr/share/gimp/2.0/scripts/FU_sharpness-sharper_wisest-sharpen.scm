@@ -1,10 +1,49 @@
 ;FU_sharpness-sharper_wisest-sharpen.scm
-; version 2.7a [gimphelp.org]
+; version 3.0 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/15/2014 on GIMP-2.8.10
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+;==============================================================
+;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ; Smart Seperate Sharpening, V2.7
 ;
 ; Martin Egger (martin.egger@gmx.net), Michael Kolodny (m_kolodny@phreego.com) 
@@ -17,26 +56,11 @@
 ; This script was tested with Gimp 2.7
 ;
 ; New versions will be distributed from http://registry.gimp.org/ only
-;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 3 of the License, or
-; (at your option) any later version.
-; 
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-; 
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, see <http://www.gnu.org/licenses>.
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
 
 ; Define the function
 ;
-(define (script-fu-Eg-SmartSeparateSharpen 
+(define (FU-Eg-SmartSeparateSharpen 
 			 InImage 
 			 InLayer 
 			 TInAmount
@@ -106,9 +130,7 @@
 			(script-fu-Eg-SharpenLightAndDark InImage TextureSharpenLayer TInRadius TInAmount TInLightOpacity TInDarkOpacity TInThreshold InFlatten "Texture")
 
 		)
-;
 
-;
 		(cond
 			((= InFlatten FALSE)
 				(begin
@@ -126,13 +148,9 @@
 	(gimp-displays-flush)
 ;
 )
-;
 
 (define (script-fu-Eg-SharpenLightAndDark InImage InSharpenDarkLayer InRadius InAmount InLightOpacity InDarkOpacity InThreshold InFlatten InLabel)
-;
-;
-;
-;
+
    		(gimp-layer-set-mode InSharpenDarkLayer DARKEN-ONLY-MODE)
    		(gimp-layer-set-opacity InSharpenDarkLayer  InDarkOpacity)
 			(plug-in-unsharp-mask TRUE InImage InSharpenDarkLayer InRadius InAmount InThreshold)
@@ -171,28 +189,28 @@
 
 
 (script-fu-register 
-	"script-fu-Eg-SmartSeparateSharpen"
+	"FU-Eg-SmartSeparateSharpen"
 	"<Image>/Script-Fu/Sharpness/Sharper/Wisest Sharpen"
 	"Smart Sharpening, Redux version"
 	"Martin Egger (martin.egger@gmx.net) and Michael Kolodny (m_kolodny@phreego.com)"
 	"2010, Martin Egger, Bern, Switzerland"
 	"21.11.2010"
-	"RGB* GRAY*"
-	SF-IMAGE	"The Image"		0
-	SF-DRAWABLE	"The Layer"		0
-	SF-ADJUSTMENT	"Texture Sharpen USM: Amount"		'(1.2 0.0 10.0 0.5 0 2 0)
+	"*"
+	SF-IMAGE		"The Image"									0
+	SF-DRAWABLE		"The Layer"									0
+	SF-ADJUSTMENT	"Texture Sharpen USM: Amount"				'(1.2 0.0 10.0 0.5 0 2 0)
 	SF-ADJUSTMENT	"Texture Sharpen Lighten USM: Opacity"		'(50 0.0 100 0.5 0 2 0)
 	SF-ADJUSTMENT	"Texture Sharpen Darken USM: Opacity"		'(100 0.0 100 0.5 0 2 0)
-	SF-ADJUSTMENT	"Edge Sharpen USM: Amount"		'(1.2 0.0 5.0 0.5 0 2 0)
-	SF-ADJUSTMENT	"Edge Sharpen Lighten USM: Opacity"		'(50 0.0 100 0.5 0 2 0)
-	SF-ADJUSTMENT	"Edge Sharpen Darken USM: Opacity"		'(100 0.0 100 0.5 0 2 0)
-	SF-ADJUSTMENT	"Texture Sharpen USM: Radius"		'(0.3 0.0 120.0 1 0 2 0)
-	SF-ADJUSTMENT	"Texture Sharpen USM: Threshold"		'(0.0 0.0 255.0 1.0 0 2 0)
-	SF-ADJUSTMENT	"Edge Sharpen USM: Radius"		'(0.3 0.0 50.0 1 0 2 0)
-	SF-ADJUSTMENT	"Edge Sharpen USM: Threshold"		'(0.0 0.0 50.0 1.0 0 2 0)
-	SF-ADJUSTMENT	"Edges: Detect Amount"	'(6.0 1.0 10.0 1.0 0 2 0)
-	SF-ADJUSTMENT	"Edges: Blur Pixels"	'(6.0 1.0 10.0 1.0 0 2 0)
-	SF-TOGGLE	"Flatten Image"		FALSE
+	SF-ADJUSTMENT	"Edge Sharpen USM: Amount"					'(1.2 0.0 5.0 0.5 0 2 0)
+	SF-ADJUSTMENT	"Edge Sharpen Lighten USM: Opacity"			'(50 0.0 100 0.5 0 2 0)
+	SF-ADJUSTMENT	"Edge Sharpen Darken USM: Opacity"			'(100 0.0 100 0.5 0 2 0)
+	SF-ADJUSTMENT	"Texture Sharpen USM: Radius"				'(0.3 0.0 120.0 1 0 2 0)
+	SF-ADJUSTMENT	"Texture Sharpen USM: Threshold"			'(0.0 0.0 255.0 1.0 0 2 0)
+	SF-ADJUSTMENT	"Edge Sharpen USM: Radius"					'(0.3 0.0 50.0 1 0 2 0)
+	SF-ADJUSTMENT	"Edge Sharpen USM: Threshold"				'(0.0 0.0 50.0 1.0 0 2 0)
+	SF-ADJUSTMENT	"Edges: Detect Amount"						'(6.0 1.0 10.0 1.0 0 2 0)
+	SF-ADJUSTMENT	"Edges: Blur Pixels"						'(6.0 1.0 10.0 1.0 0 2 0)
+	SF-TOGGLE		"Flatten Image"								FALSE
 )
 
 ;

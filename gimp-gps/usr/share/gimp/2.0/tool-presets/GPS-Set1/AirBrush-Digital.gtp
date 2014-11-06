@@ -1,0 +1,22 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-airbrush")
+(name "Airbrush Digital")
+(tool-options "GimpAirbrushOptions"
+    (tool "gimp-airbrush-tool")
+    (foreground (color-rgb 0.661247 0.717518 0.704861))
+    (opacity 0.900000)
+    (brush "Soft Brush")
+    (dynamics "Airbrush Digital")
+    (palette "Default")
+    (brush-size 400.000000)
+    (rate 135.000000))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

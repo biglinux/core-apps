@@ -4,8 +4,7 @@ TO_INSTALL:
 
 Put the scripts in :
 
-
-	Windows Vista/7)
+	Windows Vista/7/8)
 	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
 	or
 	C:\Users\YOUR-NAME\.gimp-2.8\scripts
@@ -27,10 +26,10 @@ Put the scripts in :
 
 
 
+
 Put the Gimpressionist presets in :
 
-
-	Windows Vista/7
+	Windows Vista/7/8
 	C:\Program Files\GIMP 2\share\gimp\2.0\gimpressionist\preset
 	or
 	C:\Users\YOUR-NAME\.gimp-2.8\gimpressionist\presets
@@ -49,4 +48,48 @@ Put the Gimpressionist presets in :
 	Linux - system-wide
 	/usr/share/gimp/2.0/gimpressionist/Presets 
 
-     
+
+
+
+Put the Gradients in :
+
+	Windows Vista/7/8
+	C:\Program Files\GIMP 2\share\gimp\2.0\gradients
+	or
+	C:\Users\YOUR-NAME\.gimp-2.8\gradients
+	
+	
+	Windows XP
+	C:\Program Files\GIMP 2\share\gimp\2.0\gradients
+	or
+	C:\Documents and Settings\yourname\.gimp-2.8\gradients
+    
+	
+	Linux
+	/home/yourname/.gimp-2.8/gradients
+	or
+	Linux - system-wide
+	/usr/share/gimp/2.0/gradients
+	
+	
+
+
+Put the patterns in :
+
+	Windows Vista/7
+	C:\Program Files\GIMP 2\share\gimp\2.0\patterns
+	or
+	C:\Users\YOUR-NAME\.gimp-2.8\patterns
+	
+	Windows XP
+	C:\Program Files\GIMP 2\share\gimp\2.0\patterns
+	or
+	C:\Documents and Settings\yourname\.gimp-2.8\patterns  
+    
+	Linux
+	/home/yourname/.gimp-2.8/patterns
+	or
+	Linux - system-wide
+	/usr/share/gimp/2.0/patterns
+	
+	

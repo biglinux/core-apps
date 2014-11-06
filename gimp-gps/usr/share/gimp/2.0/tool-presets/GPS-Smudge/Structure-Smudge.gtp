@@ -1,0 +1,23 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-smudge")
+(name "Structure Smudge")
+(tool-options "GimpSmudgeOptions"
+    (tool "gimp-smudge-tool")
+    (foreground (color-rgb 0.272849 0.412488 0.096606))
+    (opacity 0.951000)
+    (brush "Structure_03")
+    (dynamics "Structure Smudge")
+    (palette "Default")
+    (brush-size 346.280000)
+    (jitter-amount 0.339806)
+    (rate 90.200000))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient no)
+(use-pattern no)
+(use-palette yes)
+(use-font no)
+
+# end of GIMP tool preset file

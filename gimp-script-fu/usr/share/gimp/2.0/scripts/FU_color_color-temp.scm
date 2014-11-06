@@ -1,34 +1,65 @@
 ; FU_color_color-temp.scm
-; version 2.7 [gimphelp.org]
+; version 2.9 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/15/2014 on GIMP-2.8.10
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+;==============================================================
 ;
-; Colortemp is a script for The GIMP
-; Description: converts the color temperature of an image 
-; Last changed: Dec 14, 2006
-; Copyright (C) 2006 Luca de Alfaro <lda@dealfaro.com>
+; Installation:
+; This script should be placed in the user or system-wide script folder.
 ;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.  
-; 
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-; 
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
 ;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+;
+; NOT AVAILABLE
+;==============================================================
 
-(define (FU-colortemp image drawable sourcemod sourcetemp desttemp intensmult satura)
+(define (FU-colortemp 
+		image 
+		drawable 
+		sourcemod 
+		sourcetemp 
+		desttemp 
+		intensmult 
+		satura
+	)
+
+	(gimp-image-undo-group-start image)
+	(if (not (= RGB (car (gimp-image-base-type image))))
+			 (gimp-image-convert-rgb image))
 
   (define (floor x) (- x (fmod x 1)))
 
@@ -283,8 +314,6 @@
          (green-curve (cons-array num_bytes 'byte))
          (blue-curve  (cons-array num_bytes 'byte)))
 
-    (gimp-image-undo-group-start image)
-
     (while (< i num_bytes)
       (aset red-curve   i (lin-mult-in-gamma-space i rratio))
       (aset green-curve i (lin-mult-in-gamma-space i gratio))
@@ -307,14 +336,14 @@
 	"Luca de Alfaro <lda@dealfaro.com>"
 	"Luca de Alfaro"
 	"December 2006"
-	"RGB*"
-	SF-IMAGE    "Image"         0
-	SF-DRAWABLE "Drawable"      0
-	SF-OPTION      "Obtain original temperature" '("From slider below" "From foreground color")
-	SF-ADJUSTMENT _"Original temperature (K)" '(6500 1000 12000 25 250 0 0)
-	SF-ADJUSTMENT _"Target temperature (K)"   '(6500 1000 12000 25 250 0 0)
-	SF-ADJUSTMENT _"Intensity (%)" '(100 0 200 1 10 0 0)
-	SF-ADJUSTMENT _"Saturation change (%)" '(0 -100 100 1 10 0 0)
+	"*"
+	SF-IMAGE    	"Image"         				0
+	SF-DRAWABLE 	"Drawable"      				0
+	SF-OPTION      	"Obtain original temperature" 	'("From slider below" "From foreground color")
+	SF-ADJUSTMENT 	"Original temperature (K)" 		'(6500 1000 12000 25 250 0 0)
+	SF-ADJUSTMENT 	"Target temperature (K)"   		'(6500 1000 12000 25 250 0 0)
+	SF-ADJUSTMENT 	"Intensity (%)" 				'(100 0 200 1 10 0 0)
+	SF-ADJUSTMENT 	"Saturation change (%)" 		'(0 -100 100 1 10 0 0)
 )
 
 

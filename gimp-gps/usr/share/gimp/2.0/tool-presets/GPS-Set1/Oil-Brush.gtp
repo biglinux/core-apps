@@ -1,0 +1,22 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-paintbrush")
+(name "Oil Brush")
+(tool-options "GimpPaintOptions"
+    (tool "gimp-paintbrush-tool")
+    (brush "O_Oils 1 GP")
+    (dynamics "Oil Brush")
+    (brush-size 72.190000)
+    (jitter-amount 0.350000)
+    (fade-length 138.000000)
+    (fade-unit percent)
+    (gradient-reverse yes))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

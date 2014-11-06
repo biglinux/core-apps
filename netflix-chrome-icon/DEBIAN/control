@@ -1,0 +1,10 @@
+Package: netflix-chrome-icon
+Version: 1.0.0-1kaiana2
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Depends: google-chrome-unstable (>=37.0.2062.68-1) | google-chrome-beta (>=37.0.2062.68-1) | google-chrome-stable (>=37.0.2062.68-1), libnss3 (>=2:3.16.3-1ubuntu1), libnss3-1d (>=2:3.16.3-1ubuntu1), libnss3-nssdb (>=2:3.16.3-1ubuntu1)
+Priority: optional
+Description: Add netflix icon to use native in Google Chrome
+

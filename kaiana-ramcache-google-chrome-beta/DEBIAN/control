@@ -1,0 +1,10 @@
+Package: kaiana-ramcache-google-chrome-beta
+Version: 1.0.0-0kaiana0
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: kaiana-ramcache-base, google-chrome-beta
+Section: admin
+Priority: optional
+Description: Use rsync, aufs and tmpfs to ram cache Google Chrome Unstable config and cache.
+

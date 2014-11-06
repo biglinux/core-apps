@@ -1,0 +1,41 @@
+#!/bin/bash
+#
+# Autor: Tales Mendonca
+# Contato: talesam@gmail.com
+# Licença: GPL
+# Data: Agosto 2014
+# Simples script para executar o Netflix diretamente
+####################################################
+
+#Confere se um número é maior ou igual ao outro
+
+if [ "$(google-chrome --version | cut -f3 -d" " | cut -f1 -d".")" -ge "37" ]; then
+    CHROMENETFLIX=google-chrome
+fi
+
+
+if [ "$CHROMENETFLIX" = "" ]; then
+    if [ "$(google-chrome-beta --version | cut -f3 -d" " | cut -f1 -d".")" -ge "37" ]; then
+	CHROMENETFLIX=google-chrome-beta
+    fi
+fi
+
+
+if [ "$CHROMENETFLIX" = "" ]; then
+    if [ "$(google-chrome-unstable --version | cut -f3 -d" " | cut -f1 -d".")" -ge "37" ]; then
+	CHROMENETFLIX=google-chrome-unstable
+    fi
+fi
+
+
+NETFLIX=`$CHROMENETFLIX --no-default-browser-check --user-agent="Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2114.2 Safari/537.36" --user-data-dir=$HOME/.config/netflix --app=http://netflix.com`
+
+
+if [ -d "$dir" ];then
+# se o diretório existir
+	$NETFLIX
+else
+# se não existir, vai ser criado o diretório
+	mkdir $HOME/.config/netflix
+	$NETFLIX
+fi

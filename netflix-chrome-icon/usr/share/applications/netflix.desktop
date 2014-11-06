@@ -1,0 +1,14 @@
+[Desktop Entry]
+Categories=AudioVideo;Player;Video;
+Exec=netflix-icon
+GenericName=Netflix online movies
+GenericName[pt]=Netflix, filmes e séries
+GenericName[pt_BR]=Netflix, filmes e séries
+Comment[pt]=Vídeos online do Netflix
+Comment[pt_BR]=Vídeos online do Netflix
+Icon=/usr/share/pixmaps/netflix-icon.png
+Name=Netflix online movies
+Name[pt]=Netflix, filmes e séries
+Name[pt_BR]=Netflix, filmes e séries
+Type=Application
+X-KDE-StartupNotify=false

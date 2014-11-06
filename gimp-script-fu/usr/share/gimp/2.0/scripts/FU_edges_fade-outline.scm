@@ -1,13 +1,52 @@
 ; FU_edges_fade-outline.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/14/2014 on GIMP-2.8.10
 ;
 ; 10/17/2010 - fixed undefined variable (old-selection)
 ; when using a growing selection.  Discovered and
 ; corrected by John McGowan <jmcgowan@inch.com>
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/14/2014 - convert to RGB if needed
+;==============================================================
+;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
 ; 
 ; This GIMP script_fu operates on a single Layer
 ; It blends the outline boarder from one to another transparency level
@@ -28,27 +67,7 @@
 ;     Eliminated undefined variable errors.
 ;     Simplified by flattening image upon completion.
 ;     Added option to leave fade transparent, or flaten onto the image.
-;
-;
-; The GIMP -- an image manipulation program
-; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
-; 
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-; 
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
 
 (define (FU-fade-outline
 			inImage
@@ -56,17 +75,12 @@
 			inBorderSize
 			inFadeFrom
 			inFadeTo
-			inGrowingSelection
-			inApplyMask
-			inClearUnselected
 			inLeaveTransparent
 	)
-
 	(let* ((l-idx 0)
 		(l-old-bg-color (car (gimp-context-get-background)))
 		(l-has-selection TRUE)
 	)
-              
 	; check Fade from and To Values (and force values from 0% to 100%)
 	(if (> inFadeFrom 100) (begin (set! inFadeFrom 100 )) )
 	(if (< inFadeFrom 0)   (begin (set! inFadeFrom 0 )) )
@@ -78,55 +92,30 @@
     (define l-step (/  (- l-from-gray l-to-gray) (+ inBorderSize 1)))
     (define l-gray l-to-gray)
 	(define old-selection)
-
 	; do nothing if the layer is a layer mask
 	(if (= (car (gimp-item-is-layer-mask inLayer)) 0)
 		(begin
 			(gimp-image-undo-group-start inImage)
+			
+			(if (not (= RGB (car (gimp-image-base-type inImage))))
+					 (gimp-image-convert-rgb inImage))			
 			; if the layer has no alpha add alpha channel
 			(if (= (car (gimp-drawable-has-alpha inLayer)) FALSE)
 				(begin
 					(gimp-layer-add-alpha inLayer)))
-
 			; if the layer is the floating selection convert to normal layer
 			; because floating selection cant have a layer mask
 			(if (> (car (gimp-layer-is-floating-sel inLayer)) 0)
 				(begin
 					(gimp-floating-sel-to-layer inLayer)))
-
 			; if there is no selection we use the layers alpha channel
 			(if (= (car (gimp-selection-is-empty inImage)) TRUE)
 				(begin
 					(set! l-has-selection FALSE)
 					(gimp-image-select-item inImage CHANNEL-OP-REPLACE inLayer)))
-
 			(gimp-selection-sharpen inImage)
-
-			; apply the existing mask before creating a new one
-			; removed due to errors
-			;;;;;(gimp-image-remove-layer-mask inImage inLayer 0)
-
-			(if (= inClearUnselected  TRUE)
-				(begin
-					(define l-mask (car (gimp-layer-create-mask inLayer BLACK-MASK))))
-				(begin
-                    (define l-mask (car (gimp-layer-create-mask inLayer WHITE-MASK)))))
-					
-
+			(define l-mask (car (gimp-layer-create-mask inLayer WHITE-MASK)))
 			(gimp-layer-add-mask inLayer l-mask)
-
-			(if (= inGrowingSelection  TRUE)
-				(begin
-	            	(set! l-gray l-from-gray)
-	            	(set! l-from-gray l-to-gray)
-                    (set! l-to-gray l-gray)
-                    (set! l-step (/  (- l-from-gray l-to-gray) (+ inBorderSize 1)))
-                    (set! old-selection  (car (gimp-selection-save inImage)))
-                    (gimp-selection-invert inImage)
-                  )
-               )
-                    
-					                       
               (while (<= l-idx inBorderSize)
                  (if (= l-idx inBorderSize)
                      (begin
@@ -144,57 +133,22 @@
                          (set! l-idx (+ inBorderSize 100))     ; break the while loop
                       )
                    )
-
               )
-              
-              (if (= inGrowingSelection  TRUE)
-                  (begin
-                    (gimp-image-select-item inImage CHANNEL-OP-REPLACE old-selection)
-                    (gimp-context-set-background (list (/ l-to-gray 100) (/ l-to-gray 100) (/ l-to-gray 100)))
-                    (gimp-edit-fill l-mask BG-IMAGE-FILL)
-                    (gimp-selection-grow inImage inBorderSize)
-                    (gimp-selection-invert inImage)
-        	    (if (= inClearUnselected  TRUE)
-                	(begin
-                          ;(gimp-palette-set-background (list (/ l-from-gray 100) (/ l-from-gray 100) (/ l-from-gray 100)))
-                          (gimp-context-set-background (list 0 0 0))
-                	 )
-                	(begin
-                          (gimp-context-set-background (list 255 255 255))
-                	)
-        	     )
-                    (gimp-edit-fill l-mask BG-IMAGE-FILL)
-                    (gimp-image-remove-channel inImage old-selection)
-                  )
-               )
-
-
-              (if (=  inApplyMask TRUE)
-                  (begin
-                    (gimp-layer-remove-mask inLayer 0)
-                  )
-               )
-
               (if (= l-has-selection FALSE)
                   (gimp-selection-none inImage)
               )
-
               (gimp-context-set-background l-old-bg-color)
-	     
 	     (gimp-selection-none inImage)
-	     
               (if (=  inLeaveTransparent FALSE)
                   (begin
                     (gimp-image-flatten inImage)
                   )
                )	     
-	     
              (gimp-image-undo-group-end inImage)
              (gimp-displays-flush)
              )
         ))
 )
-
 (script-fu-register
     "FU-fade-outline"
     "Fade Outline"
@@ -202,15 +156,12 @@
     "Wolfgang Hofer <hof@hotbot.com>"
     "Wolfgang Hofer"
     "10 Nov 1999"
-    "RGB* GRAY*"
-    SF-IMAGE "The Image" 0
-    SF-DRAWABLE "The Layer" 0
-    SF-ADJUSTMENT _"Border Size" '(10 1 300 1 10 0 1)
-    SF-ADJUSTMENT _"Fade From %" '(100 0 100 1 10 0 0)
-    SF-ADJUSTMENT _"Fade To   %" '(0 0 100 1 10 0 0)
-    SF-TOGGLE _"Use Growing Selection" FALSE
-    SF-TOGGLE _"Apply Generated Layermask" FALSE
-    SF-TOGGLE _"Clear Unselected Maskarea" TRUE
-    SF-TOGGLE _"Leave faded area transparent" FALSE
+    "*"
+    SF-IMAGE 		"The Image" 					0
+    SF-DRAWABLE 	"The Layer" 					0
+    SF-ADJUSTMENT 	"Border Size" 					'(10 1 300 1 10 0 1)
+    SF-ADJUSTMENT 	"Fade From %" 					'(100 0 100 1 10 0 0)
+    SF-ADJUSTMENT 	"Fade To   %" 					'(0 0 100 1 10 0 0)
+    SF-TOGGLE 		"Leave faded area transparent" 	FALSE
 )
 (script-fu-menu-register "FU-fade-outline" "<Image>/Script-Fu/Edges/")

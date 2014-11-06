@@ -1,38 +1,54 @@
 ; FU_effects_reflection.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/14/2014 on GIMP-2.8.10
 ;
-; Wed Oct  1 22:14:40 EDT 2008
-; Modified to remove deprecated procedures as listed:
-;     gimp-flip  ==>  gimp-drawable-transform-flip-simple
-; added extra parameters
-; also flushed before undo-end
+; 02/14/2014 - convert to RGB if needed
+;==============================================================
 ;
-; earlier modified by Paul Sherman to work in GIMP 2.4.2 on 11/30/2007
+; Installation:
+; This script should be placed in the user or system-wide script folder.
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
 ;
-; Reflection v0.3 2007-12-20
+;==============================================================
 ;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ; Copyright (C) 2005-2007 Otavio Correa Cordeiro (otavio gmail com)
 ; Create a reflection effect like Apple iWeb does..
 ;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
-;
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-;
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-;
+; modified by Paul Sherman to work in GIMP 2.4.2 on 11/30/2007
 ;
 ; modified by David Cummins and Paul Sherman Dec 2007, tested on GIMP-2.4.3
 ; * added user settings to control the height of the generated reflection,
@@ -48,6 +64,13 @@
 ; * flattened on start (to avoid errors)
 ; * undo ability functional
 ;
+; Wed Oct  1 22:14:40 EDT 2008
+; Modified to remove deprecated procedures as listed:
+;     gimp-flip  ==>  gimp-drawable-transform-flip-simple
+; added extra parameters
+; also flushed before undo-end
+;==============================================================
+
 
 (define (draw-line layer x-from y-from x-to y-to) 
   (let* (
@@ -76,6 +99,10 @@
     (define originalHeight (car (gimp-image-height theImage)))
 	  
     (gimp-image-undo-group-start theImage)
+	
+	(if (not (= RGB (car (gimp-image-base-type theImage))))
+			 (gimp-image-convert-rgb theImage))	
+	
 ;    (gimp-selection-all theImage)
     (gimp-selection-none theImage)
     (set! theLayer (car(gimp-image-merge-visible-layers theImage 0)))
@@ -169,14 +196,14 @@
 	"<Image>/Script-Fu/Effects/Reflection"
 	"Reflection -- extends lower section of an image as a reflection of the original image."
 	"Original author Otavio Cordeiro, later edited by David Cummins and Paul Sherman"
-	"Otavio Cordeiro (otavio gmail com)"
+	"Paul Sherman <psherman2001@gmail.com>"
 	"Last updated 12/19/2007 - tested on GIMP-2.4.3"
-	"RGB* GRAY*"
-	SF-IMAGE    "Image"    0
-	SF-DRAWABLE "Drawable" 0
-    SF-ADJUSTMENT "Reflection Height (% of original)" '( 30 10 99 1 20 0 0)
-    SF-ADJUSTMENT "Fade Rate (%)" '(100 0 100 10 20 0 0)
-    SF-TOGGLE "Keep Reflection as a separate Layer" FALSE
-    SF-TOGGLE "Transparent Background" TRUE
-	SF-TOGGLE "Include a Separator Line?" TRUE
+	"*"
+	SF-IMAGE    	"Image"    								0
+	SF-DRAWABLE 	"Drawable" 								0
+    SF-ADJUSTMENT 	"Reflection Height (% of original)" 	'( 40 10 99 1 20 0 0)
+    SF-ADJUSTMENT 	"Fade Rate (%)" 						'(60 0 100 10 20 0 0)
+    SF-TOGGLE 		"Keep Reflection as a separate Layer" 	FALSE
+    SF-TOGGLE 		"Transparent Background" 				FALSE
+	SF-TOGGLE 		"Include a Separator Line?" 			TRUE
 )

@@ -1,0 +1,23 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-smudge")
+(name "Normal Smudge")
+(tool-options "GimpSmudgeOptions"
+    (tool "gimp-smudge-tool")
+    (foreground (color-rgb 0.448926 0.133965 0.133965))
+    (opacity 0.900000)
+    (brush "Normal Nib 1")
+    (dynamics "Normal Smudge")
+    (palette "Default")
+    (brush-size 50.460000)
+    (jitter-amount 0.339806)
+    (rate 70.000000))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

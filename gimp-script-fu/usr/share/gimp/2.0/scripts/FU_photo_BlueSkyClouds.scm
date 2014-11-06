@@ -1,25 +1,56 @@
 ; FU_photo_BlueSkyClouds.scm
-; version 3.1 [gimphelp.org]
+; version 3.2 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/14/2014 on GIMP-2.8.10
 ;
-; See description on authjor's site:
+; See description on author's site:
 ; http://www.farcrydesign.com/GIMP/BlueSkyClouds.html
 ;
-; ORIGINAL INFORMATION::::::::::::::::::::::::::::::::::::::::
+; 02/14/2014 - convert to RGB if needed
+;==============================================================
+;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ; Blue Sky & Clouds, V2.0
 ; AUTHOR: Darla McKay (Darla@FarcryDesign.com), (C) 2007,2008
 ; This plugin was tested with GIMP 2.4
-;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License Version 3 as 
-; published by the Free Software Foundation.
-; 
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
-; GNU General Public License at  http://www.gnu.org/licenses for
-; more details.
 ;
 ; DESCRIPTION:
 ; To fix burned out or white skies by adding a blue sky gradient.
@@ -31,12 +62,22 @@
 ; Threshold masking is applied.  Optionally, a layer with rendered clouds
 ; can be added.
 ;     See http://www.FarcryDesign.com/GIMP/ for more information.
-; =============================================================================
+;==============================================================
 
 
-(define (FU-BlueSkyClouds InImage InLayer InThreshold InSkyTop InSkyBottom InFeather InClouds InFlatten)
+(define (FU-BlueSkyClouds 
+			InImage 
+			InLayer 
+			InThreshold 
+			InSkyTop 
+			InSkyBottom 
+			InFeather 
+			InClouds 
+			InFlatten
+		)
 	(gimp-image-undo-group-start InImage)
-
+	(if (not (= RGB (car (gimp-image-base-type InImage))))
+			 (gimp-image-convert-rgb InImage))
 	(let*	(
 		(BlueGradientLayer (car (gimp-layer-copy InLayer TRUE)))
 		(CloudLayer (car (gimp-layer-copy InLayer TRUE)))
@@ -116,13 +157,13 @@ See http://www.FarcryDesign.com/GIMP for more information."
 	"Darla McKay (Darla@FarcryDesign.com)"
 	"Darla McKay"
 	"2007,2008"
-	"RGB* GRAY*"
-	SF-IMAGE		"The Image"			0
-	SF-DRAWABLE		"The Layer"			0
-	SF-ADJUSTMENT	_"Threshold"			'(248 0 254 1 0 0 0)
-	SF-COLOR		_"Sky Top Color"			'(187 219 255)
-	SF-COLOR		_"Sky Bottom Color"		'(221 234 255)
-	SF-ADJUSTMENT	_"Edges: Feather Amount"	'(5.0 1.0 10.0 1.0 0 1 0)
-	SF-TOGGLE		_"Add Rendered Clouds"		TRUE
-	SF-TOGGLE		_"Flatten Image"			FALSE
+	"*"
+	SF-IMAGE		"The Image"					0
+	SF-DRAWABLE		"The Layer"					0
+	SF-ADJUSTMENT	"Threshold"					'(248 0 254 1 0 0 0)
+	SF-COLOR		"Sky Top Color"				'(187 219 255)
+	SF-COLOR		"Sky Bottom Color"			'(221 234 255)
+	SF-ADJUSTMENT	"Edges: Feather Amount"		'(5.0 1.0 10.0 1.0 0 1 0)
+	SF-TOGGLE		"Add Rendered Clouds"		TRUE
+	SF-TOGGLE		"Flatten Image"				FALSE
 )

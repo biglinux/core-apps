@@ -1,11 +1,50 @@
 ; FU_effects_crosslight.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/14/2014 on GIMP-2.8.10
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/14/2014 - convert to RGB if needed, added option to merge layers upon completion
+;==============================================================
 ;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ; Cross light script  for GIMP 2
 ; based on Cross light script  for GIMP 1.2
 ; Copyright (C) 2001 Iccii <iccii@hotmail.com>
@@ -16,42 +55,38 @@
 ; version 0.2  by Iccii 2001/08/09
 ;     - Add the Start Angle and the Number of Lighting options
 ; version 0.2a adapted for GIMP2  by EV
-; --------------------------------------------------------------------
-; 
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
+
 
 (define (FU-cross-light
-			img
-			drawable
-			length
-			angle	
-			number
-			threshold
+		img
+		drawable
+		length
+		angle	
+		number
+		threshold
+		inMerge
 	)
+	(gimp-image-undo-group-start img)
+	(if (not (= RGB (car (gimp-image-base-type img))))
+			 (gimp-image-convert-rgb img))
   (let* (
-	 (modulo fmod)			;; in R4RS way
-	 (count 1)
-	 (tmp-layer (car (gimp-layer-copy drawable TRUE)))
-	 (target-layer (car (gimp-layer-copy drawable TRUE)))
-	 (layer-mask (car (gimp-layer-create-mask target-layer WHITE-MASK)))
-	 (marged-layer (car (gimp-layer-copy drawable TRUE)))
-   (currentselection (car(gimp-selection-save img)))
-        )
-
-    (gimp-image-undo-group-start img)
-
+	(modulo fmod)			;; in R4RS way
+	(count 1)
+	(tmp-layer (car (gimp-layer-copy drawable TRUE)))
+	(target-layer (car (gimp-layer-copy drawable TRUE)))
+	(layer-mask (car (gimp-layer-create-mask target-layer WHITE-MASK)))
+	(marged-layer (car (gimp-layer-copy drawable TRUE)))
+	(currentselection (car(gimp-selection-save img)))
+	)
 ;    (set! currentselection (car(gimp-selection-save img)))
-    (gimp-selection-none img)
-
-; these tree line were moved up by EV
-    (gimp-image-insert-layer img target-layer 0 -1)
-    (gimp-layer-add-mask target-layer layer-mask)
-    (gimp-image-insert-layer img tmp-layer 0 -1)
-
-    (gimp-desaturate tmp-layer)
-    (gimp-threshold tmp-layer threshold 255)
-   (gimp-edit-copy tmp-layer)
+	(gimp-selection-none img)
+	(gimp-image-insert-layer img target-layer 0 -1)
+	(gimp-layer-add-mask target-layer layer-mask)
+	(gimp-image-insert-layer img tmp-layer 0 -1)
+	(gimp-desaturate tmp-layer)
+	(gimp-threshold tmp-layer threshold 255)
+	(gimp-edit-copy tmp-layer)
 
     (gimp-floating-sel-anchor (car (gimp-edit-paste layer-mask 0)))
     (gimp-layer-remove-mask target-layer APPLY)
@@ -88,6 +123,7 @@
         ))
     (gimp-image-remove-channel img currentselection)
 
+	(if (= inMerge TRUE)(gimp-image-merge-visible-layers img EXPAND-AS-NECESSARY))
     (gimp-image-undo-group-end img)
     (gimp-displays-flush)
   )
@@ -100,11 +136,12 @@
 	"Iccii <iccii@hotmail.com>"
 	"Iccii"
 	"2001, Aug"
-	"RGB*"
-	SF-IMAGE      "Image"			0
-	SF-DRAWABLE   "Drawable"		0
-	SF-ADJUSTMENT _"Light Length"		'(40 1 255 1 10 0 0)
-	SF-ADJUSTMENT _"Start Angle"		'(30 0 360 1 10 0 0)
-	SF-ADJUSTMENT "Number of Lights"	'(4 1 16 1 2 0 1)
-	SF-ADJUSTMENT _"Threshold (Bigger 1<-->255 Smaller)"  '(223 1 255 1 10 0 0)
+	"*"
+	SF-IMAGE      "Image"									0
+	SF-DRAWABLE   "Drawable"								0
+	SF-ADJUSTMENT "Light Length"							'(40 1 255 1 10 0 0)
+	SF-ADJUSTMENT "Start Angle"								'(30 0 360 1 10 0 0)
+	SF-ADJUSTMENT "Number of Lights"						'(4 1 16 1 2 0 1)
+	SF-ADJUSTMENT "Threshold (Bigger 1<-->255 Smaller)"  	'(223 1 255 1 10 0 0)
+	SF-TOGGLE     "Merge layers when complete?" 			FALSE
 )

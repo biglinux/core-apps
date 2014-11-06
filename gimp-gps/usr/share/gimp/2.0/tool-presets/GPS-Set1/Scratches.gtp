@@ -1,0 +1,23 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-paintbrush")
+(name "Scratches")
+(tool-options "GimpPaintOptions"
+    (tool "gimp-paintbrush-tool")
+    (opacity 0.500000)
+    (brush "Sc_Scratches3")
+    (dynamics "Scratches")
+    (brush-size 80.000000)
+    (application-mode incremental)
+    (jitter-amount 2.758621)
+    (fade-length 138.000000)
+    (fade-unit percent))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

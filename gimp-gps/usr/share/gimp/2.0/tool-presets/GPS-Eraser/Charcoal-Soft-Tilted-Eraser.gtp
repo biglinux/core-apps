@@ -1,0 +1,22 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-eraser")
+(name "Charcoal Soft Tilted Eraser")
+(tool-options "GimpEraserOptions"
+    (tool "gimp-eraser-tool")
+    (foreground (color-rgb 0.448926 0.133965 0.133965))
+    (opacity 0.381000)
+    (brush "A-17 Knife eroded anim")
+    (dynamics "Charcoal Soft Tilted Eraser")
+    (palette "Default")
+    (brush-size 170.000000)
+    (application-mode incremental))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

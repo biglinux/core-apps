@@ -1,0 +1,22 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-desaturate")
+(name "Texture Overlay (Choose brush...)")
+(tool-options "GimpPaintOptions"
+    (tool "gimp-paintbrush-tool")
+    (foreground (color-rgb 0.434541 0.780923 0.774990))
+    (background (color-rgb 0.118823 0.118823 0.118823))
+    (paint-mode overlay-mode)
+    (brush "A-3 rocks1")
+    (dynamics "Texture Overlay (Choose Brush...)")
+    (palette "Firecode")
+    (brush-size 200.000000))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

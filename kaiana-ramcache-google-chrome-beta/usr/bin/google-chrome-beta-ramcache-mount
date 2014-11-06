@@ -1,0 +1,45 @@
+#!/bin/sh
+#
+# Autor: Bruno Gonçalves Araujo.
+# Contato: bigbruno@gmail.com
+# Licença: GPL V3.
+# Data: 08/2014.
+# Sistema de cache na ram para navegadores utilizando aufs e tmpfs
+##################################################################
+
+# $2=$HOME
+# $3=$USER
+
+case "$1" in
+  --start-config)
+	if [ "$(grep "tmpfs /var/ramcache" /proc/mounts)" = "" ]; then
+	    kaiana-ramcache-start
+	fi
+        sudo -u $3 mkdir -p /var/ramcache/$3/google-chrome-beta/config
+	mount -t aufs -o br=/var/ramcache/$3/google-chrome-beta/config=rw:$2/.ramcache/google-chrome-beta/config-save=ro none $2/.ramcache/google-chrome-beta/config
+        ;;
+        
+        
+  --stop-config)
+        umount $2/.ramcache/google-chrome-beta/config
+        ;;
+
+  --start-cache)
+	mkdir sudo -u $3 -p /var/ramcache/$3/google-chrome-beta/cache
+	mount -t aufs -o br=/var/ramcache/$3/google-chrome-beta/cache/=rw:$2/.cache/google-chrome-beta-save=ro none $2/.cache/google-chrome-beta
+        ;;
+        
+        
+  --stop-cache)
+        umount -l /var/ramcache/$3/cache/google-chrome-beta
+        ;;
+
+  --help)
+        echo "Options:
+        --start-config home user
+        --start-cache home user
+        --stop-config home user
+        --stop-cache home user"
+        ;;
+        
+        esac

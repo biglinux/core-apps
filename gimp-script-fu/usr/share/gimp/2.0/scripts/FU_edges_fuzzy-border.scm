@@ -1,49 +1,77 @@
 ; FU_edges_fuzzy-border.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/14/2014 on GIMP-2.8.10
 
 ; Do a cool fade to a given colour at the border of an image 
 ; (optional shadow.) Will make image RGB if it isn't already.
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/14/2014 - convert to RGB if needed
+;==============================================================
+;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
+; Chris Gutteridge (cjg@ecs.soton.ac.uk)
+; At ECS Dept, University of Southampton, England
 ;
 ; tweaked for GIMP-2.4.x by Paul Sherman 10/24/2007
 ; later moved menu location
 ; edited again for GIMP 2.6 - 11/20/2008
-;
-; Chris Gutteridge (cjg@ecs.soton.ac.uk)
-; At ECS Dept, University of Southampton, England.
-;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
-;
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-;
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
 
-(define (FU-fuzzy-border 	inImage
-                                		inLayer
-                                		inColor
-                                		inSize
-                                		inBlur
-                                		inGranu
-                                		inShadow
-                                		inShadWeight
-                                		inCopy
-                                		inFlatten
+(define (FU-fuzzy-border 
+		inImage
+		inLayer
+		inColor
+		inSize
+		inBlur
+		inGranu
+		inShadow
+		inShadWeight
+		inCopy
+		inFlatten
         )
 
+	(gimp-image-undo-group-start inImage)
+	(if (not (= RGB (car (gimp-image-base-type inImage))))
+			 (gimp-image-convert-rgb inImage))
+			 
   (let (
        (theWidth (car (gimp-image-width inImage)))
        (theHeight (car (gimp-image-height inImage)))
@@ -134,6 +162,7 @@
         (gimp-display-new theImage)
       )
     )
+    (gimp-image-undo-group-end inImage)
     (gimp-displays-flush)
   )
 )
@@ -153,17 +182,17 @@
 	"Chris Gutteridge"
 	"1998, Chris Gutteridge / ECS dept, University of Southampton, England."
 	"3rd April 1998"
-	"RGB* GRAY*"
-	SF-IMAGE      "The image"               0
-	SF-DRAWABLE   "The layer"               0
-	SF-COLOR      _"Color"                  "white"
-	SF-ADJUSTMENT _"Border size"            '(16 1 300 1 10 0 1)
-	SF-TOGGLE     _"Blur border"            TRUE
-	SF-ADJUSTMENT _"Granularity (1 is Low)" '(4 1 16 0.25 5 2 0)
-	SF-TOGGLE     _"Add shadow"             FALSE
-	SF-ADJUSTMENT _"Shadow weight (%)"      '(100 0 100 1 10 0 0)
-	SF-TOGGLE     _"Work on copy"           TRUE
-	SF-TOGGLE     _"Flatten image"          TRUE
+	"*"
+	SF-IMAGE      	"The image"               0
+	SF-DRAWABLE   	"The layer"               0
+	SF-COLOR      	"Color"                  "white"
+	SF-ADJUSTMENT 	"Border size"            '(16 1 300 1 10 0 1)
+	SF-TOGGLE     	"Blur border"            TRUE
+	SF-ADJUSTMENT 	"Granularity (1 is Low)" '(4 1 16 0.25 5 2 0)
+	SF-TOGGLE     	"Add shadow"             FALSE
+	SF-ADJUSTMENT 	"Shadow weight (%)"      '(100 0 100 1 10 0 0)
+	SF-TOGGLE     	"Work on copy"           TRUE
+	SF-TOGGLE     	"Flatten image"          TRUE
 )
 
 (script-fu-menu-register "FU-fuzzy-border" "<Image>/Script-Fu/Edges/")

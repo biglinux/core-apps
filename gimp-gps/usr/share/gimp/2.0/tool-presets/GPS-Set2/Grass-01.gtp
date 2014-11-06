@@ -1,0 +1,23 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-paintbrush")
+(name "Grass 01")
+(tool-options "GimpPaintOptions"
+    (tool "gimp-paintbrush-tool")
+    (brush "N_Grass 1")
+    (dynamics "Grass 01")
+    (gradient "GPS Nature Pure greens")
+    (palette "Firecode")
+    (brush-size 200.000000)
+    (jitter-amount 0.263158)
+    (fade-length 138.000000)
+    (fade-unit percent))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient yes)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

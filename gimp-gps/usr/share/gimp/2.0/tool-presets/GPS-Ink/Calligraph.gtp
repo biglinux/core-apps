@@ -1,0 +1,23 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-ink")
+(name "Calligraph")
+(tool-options "GimpInkOptions"
+    (tool "gimp-ink-tool")
+    (use-smoothing yes)
+    (smoothing-quality 42)
+    (smoothing-factor 398.400000)
+    (size 8.000000)
+    (vel-sensitivity 0.913793)
+    (tilt-sensitivity 0.268421)
+    (blob-type square)
+    (blob-aspect 7.843137))
+(use-fg-bg no)
+(use-brush no)
+(use-dynamics no)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

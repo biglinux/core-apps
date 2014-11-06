@@ -1,0 +1,23 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-dodge")
+(name "Dodge/Burn (Ctrl =inverse)")
+(tool-options "GimpDodgeBurnOptions"
+    (tool "gimp-dodge-burn-tool")
+    (foreground (color-rgb 0.950393 0.950393 0.950393))
+    (opacity 0.684211)
+    (brush "Round  middle soft 010")
+    (dynamics "Dodge/Burn (Ctrl= Inverse)")
+    (palette "Default")
+    (brush-size 300.000000)
+    (mode highlights)
+    (exposure 100.000000))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

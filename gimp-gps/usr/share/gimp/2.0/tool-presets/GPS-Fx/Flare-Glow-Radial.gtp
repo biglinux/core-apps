@@ -1,0 +1,19 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-blend")
+(name "Flare Glow Radial (Sel.Gradient)")
+(tool-options "GimpBlendOptions"
+    (tool "gimp-blend-tool")
+    (foreground (color-rgb 0.925341 0.925341 0.925341))
+    (gradient "Flare Glow Radial 1")
+    (dynamics-expanded yes)
+    (gradient-type radial))
+(use-fg-bg yes)
+(use-brush no)
+(use-dynamics no)
+(use-gradient yes)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

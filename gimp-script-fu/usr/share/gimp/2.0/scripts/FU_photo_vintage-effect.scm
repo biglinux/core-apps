@@ -1,14 +1,52 @@
 ; FU_photo_vintage-effect.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/14/2014 on GIMP-2.8.10
 ;
 ; 04/27/2008 - Edited by Paul Sherman
 ; added faded border option
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+;==============================================================
 ;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ; Vintage Film Effect script for GIMP 2.4
 ; Original author: Alexia Death
 ; Tags: photo, vintage
@@ -19,29 +57,15 @@
 ; This represents my first attempt at gimp scripting and my first 
 ; ever contact with Scheme language. If you feel its not as good 
 ; as it can be, feel free to improve it.
-;------------------------------------------------------------------
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
-;
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-;
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
 
-(define (FU-vintage-effect     inImage
-                                      inLayer
-                                      inCopy
-                                      inFlatten
-				      inBorder
+
+(define (FU-vintage-effect     
+		inImage
+		inLayer
+		inCopy
+		inFlatten
+		inBorder
         )
 
   (let (
@@ -160,10 +184,10 @@
 	"Alexia Death"
 	"2007, Alexia Death."
 	"3rd October 2007"
-	"RGB* GRAY*"
-	SF-IMAGE      "The image"               0
-	SF-DRAWABLE   "The layer"               0
-	SF-TOGGLE     _"Work on copy"           FALSE
-	SF-TOGGLE     _"Flatten image"          FALSE
-	SF-TOGGLE     _"Faded Border"           TRUE
+	"*"
+	SF-IMAGE      "The image"		0
+	SF-DRAWABLE   "The layer"		0
+	SF-TOGGLE     "Work on copy" 	FALSE
+	SF-TOGGLE     "Flatten image" 	FALSE
+	SF-TOGGLE     "Faded Border"  	TRUE
 )

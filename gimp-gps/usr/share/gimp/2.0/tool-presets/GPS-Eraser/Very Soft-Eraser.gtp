@@ -1,0 +1,20 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-eraser")
+(name "Very Soft Eraser")
+(tool-options "GimpEraserOptions"
+    (tool "gimp-eraser-tool")
+    (foreground (color-rgb 0.448926 0.133965 0.133965))
+    (brush "Round  middle soft 010")
+    (dynamics "Very Soft Eraser")
+    (palette "Default")
+    (brush-size 80.000000))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

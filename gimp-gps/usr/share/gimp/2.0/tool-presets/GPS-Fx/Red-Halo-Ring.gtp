@@ -1,0 +1,20 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-blend")
+(name "Red Halo Ring")
+(tool-options "GimpBlendOptions"
+    (tool "gimp-blend-tool")
+    (foreground (color-rgb 1.000000 1.000000 1.000000))
+    (background (color-rgb 0.000000 0.000000 0.000000))
+    (gradient "Flare Radial 102")
+    (offset 7.344633)
+    (gradient-type radial))
+(use-fg-bg yes)
+(use-brush no)
+(use-dynamics no)
+(use-gradient yes)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

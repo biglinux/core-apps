@@ -1,15 +1,30 @@
 ; FU_Shapes_circle-creator.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/04/2014 on GIMP-2.8.10
 ;
-; (c)2010 by Paul Sherman
-; uploaded to gimphelp.org
+;==============================================================
 ;
-;;; initial idea based upon:
-;;; Plugin  : draw-circle.scm
-;;; Author  : Arch. Giuseppe Conte 
-; ========================================================================
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
 ;
 ; LICENSE
 ;
@@ -26,7 +41,17 @@
 ;    You should have received a copy of the GNU General Public License
 ;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;
-; ========================================================================
+;==============================================================
+; Original information 
+; 
+; (c)2010 by Paul Sherman
+; uploaded to gimphelp.org
+;
+; initial idea based upon:
+; Plugin  : draw-circle.scm
+; Author  : Arch. Giuseppe Conte 
+;==============================================================
+
 
 (define (FU-circle-creator image layer Radius FeatherRadius isSolid circlethick sfcolor)
 	(let* (

@@ -1,0 +1,24 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-airbrush")
+(name "Airbrush Textured")
+(tool-options "GimpAirbrushOptions"
+    (tool "gimp-airbrush-tool")
+    (foreground (color-rgb 0.612872 0.691273 0.689931))
+    (background (color-rgb 0.118823 0.118823 0.118823))
+    (brush "A - 3 Smoke")
+    (dynamics "Airbrush Textured")
+    (gradient "Dark 1")
+    (palette "Firecode")
+    (brush-size 200.000000)
+    (rate 150.000000)
+    (flow 40.000000))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

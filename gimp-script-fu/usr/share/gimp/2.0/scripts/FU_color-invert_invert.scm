@@ -1,13 +1,49 @@
 ; FU_color-invert_invert.scm
-; version 3.1 [gimphelp.org]
+; version 3.2 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/15/2014 on GIMP-2.8.10
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/15/2014 - convert to RGB if needed
+;==============================================================
 ;
-; The GIMP -- an image manipulation program
-; Copyright (C) 1995 Spencer Kimball and Peter Mattis
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
 ;
 ; Lasm's color invert effect  script  for GIMP 2.4
 ; Original author: lasm <lasm@rocketmail.com>
@@ -20,25 +56,17 @@
 ;;; This effect is fully reversible.
 ;;; Another quality script brought to you by  the Grandmother Coffee House production.
 ;;; Created in the Special Palindrome Day of the century 20022002
-;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
-;
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-;
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
 
-(define (FU-color-invert invert-type img inLayer)
+(define (FU-color-invert 
+		invert-type 
+		img 
+		inLayer
+	)
+
+	(gimp-image-undo-group-start img)
+	(if (not (= RGB (car (gimp-image-base-type img))))
+			 (gimp-image-convert-rgb img))
 
 (define (copylayer layer layername)
   (let* ((new (car(gimp-layer-copy layer 1)))) ; Add an alpha channel
@@ -49,8 +77,6 @@
 
 (let*
 	((invert-layer (copylayer inLayer "Invert Layer")))
-	(gimp-image-undo-group-start img)
-
 	(gimp-image-insert-layer img invert-layer 0 -1)
 	(if (= invert-type 0)
 	(gimp-invert inLayer)
@@ -83,7 +109,7 @@
 	"lasm"
 	"Copyright 2002-2005, lasm"
 	"February 20, 2002"
-	"RGB*"
+	"*"
 	SF-IMAGE "The Image"      0
 	SF-DRAWABLE "The Layer" 0
 )
@@ -94,7 +120,7 @@
 	"lasm"
 	"Copyright 2002-2005, lasm"
 	"February 20, 2002"
-	"RGB*"
+	"*"
 	SF-IMAGE "The Image"      0
 	SF-DRAWABLE "The Layer" 0
 )
@@ -105,7 +131,7 @@
 	"lasm"
 	"Copyright 2002-2005, lasm"
 	"February 20, 2002"
-	"RGB*"
+	"*"
 	SF-IMAGE "The Image"      0
 	SF-DRAWABLE "The Layer" 0
 )
@@ -116,7 +142,7 @@
 	"lasm"
 	"Copyright 2002-2005, lasm"
 	"November 19, 2005"
-	"RGB*"
+	"*"
 	SF-IMAGE "The Image"      0
 	SF-DRAWABLE "The Layer" 0
 )
@@ -127,7 +153,7 @@
 	"lasm"
 	"Copyright 2002-2005, lasm"
 	"November 21, 2005"
-	"RGB*"
+	"*"
 	SF-IMAGE "The Image"      0
 	SF-DRAWABLE "The Layer" 0
 )

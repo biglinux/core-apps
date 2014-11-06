@@ -1,7 +1,7 @@
 ; FU_sharpness-sharper_softfocus.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/15/2014 on GIMP-2.8.10
 ;
 ; Modified 12/18/2007 by Paul Sherman
 ; made compatible with GIMP-2.4
@@ -14,44 +14,71 @@
 ;     Modified to remove passing of image parameter to gimp-layer-add-mask
 ;     (which only requires the layer and the mask) tested OK on GIMP-2.6
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/15/2014 - accommodated indexed images, merge option added
+;==============================================================
 ;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ; copyright 2006, Y.Morikaku
 ; August 15, 2006
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
 
-(define (FU-soft-focus image drawable imgcopy edge mode opacity)
 
-	(gimp-image-flatten image)
+(define (FU-soft-focus 
+		theImage 
+		theLayer
+		edge 
+		mode 
+		opacity
+		inMerge
+	)
+
+	(gimp-image-undo-group-start theImage)
+    (if (not (= RGB (car (gimp-image-base-type theImage))))
+			 (gimp-image-convert-rgb theImage))	
 	
     (define addString (cond     ((= mode 0) "_super-softfocus_h.jpg" )
                                 ((= mode 1) "_super-softfocus_a.jpg" )
                                 ((= mode 2) "_super-softfocus_s.jpg" )
                                 ((= mode 3) "_super-softfocus_dv.jpg" )
                                 ('else "_super-softfocus_ds.jpg" ) ))
-    
-    (if (= imgcopy TRUE )
-        (begin
-            (define theImage (car (gimp-image-duplicate image)))
-            (define theLayer (car (gimp-image-get-active-layer theImage)))
-            (define theFilename (car(gimp-image-get-filename image)))
-            (define newFilename (string-append 
-                                    (substring theFilename 0 (- (string-length theFilename) 4))
-                                    addString
-                                ))
-            (gimp-image-set-filename theImage newFilename)
- 
-        )
-        (begin
-	    (gimp-image-undo-group-start image)
-            (define theImage image)
-            (define theLayer (car (gimp-image-get-active-layer theImage)))
-        )
-
-    )
     
     (define theLayer2 (car(gimp-layer-copy theLayer 1)))
     (gimp-image-insert-layer theImage theLayer2 0 0)
@@ -96,16 +123,10 @@
     );end of if 
     (gimp-layer-set-opacity pastedLayer opacity )    
     
-                
-    (if (= imgcopy TRUE )
-       (begin
-         (gimp-display-new theImage)  
-         (gimp-displays-flush)
-    )
-    (begin
-       (gimp-image-undo-group-end theImage)
-	   (gimp-displays-flush)
-    ))
+	(if (= inMerge TRUE)(gimp-image-merge-visible-layers theImage EXPAND-AS-NECESSARY))
+	(gimp-image-undo-group-end theImage)
+	(gimp-displays-flush)
+
     
      
 );end of define
@@ -116,11 +137,11 @@
     "Y Morikaku"
     "copyright 2006, Y.Morikaku"
     "August 15, 2006"
-    "RGB*, GRAY*"
-    SF-IMAGE      "Image"     0
-    SF-DRAWABLE   "Drawable"  0
-    SF-TOGGLE     "Copy Image" TRUE
-    SF-ADJUSTMENT "Edge Strength"   '(50 0 100 1 10 0 0)
-    SF-OPTION     "Top Layer Mode" '( "HARDLIGHT-MODE" "ADDITION" "SCREEN" "DIVIDE" "Desaturation" )
-    SF-ADJUSTMENT "Top Layer Opacity"   '(30 0 100 1 10 0 0)
+    "*"
+    SF-IMAGE      "Image"     						0
+    SF-DRAWABLE   "Drawable"  						0
+    SF-ADJUSTMENT "Edge Strength"   				'(50 0 100 1 10 0 0)
+    SF-OPTION     "Top Layer Mode" 					'( "HARDLIGHT-MODE" "ADDITION" "SCREEN" "DIVIDE" "Desaturation" )
+    SF-ADJUSTMENT "Top Layer Opacity"   			'(30 0 100 1 10 0 0)
+	SF-TOGGLE     "Merge layers when complete?" 	TRUE
 )

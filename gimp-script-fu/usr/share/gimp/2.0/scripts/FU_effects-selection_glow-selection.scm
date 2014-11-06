@@ -1,7 +1,7 @@
 ; FU_effects-selection_glow-selection.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/013/2014 on GIMP-2.8.10
 ;
 ; Modified to remove deprecated procedures as listed:
 ; Wed Oct  1 22:14:44 EDT 2008
@@ -12,34 +12,54 @@
 ; exit gracefully after giving the message
 ; also changed menu location
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+;==============================================================
 ;
-; The GIMP -- an image manipulation program
-; Copyright (C) 1995 Spencer Kimball and Peter Mattis
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
 ; 
 ; Glow
 ; Copyright (c) 1997 Adrian Likins
 ; aklikins@eos.ncsu.ed
 ;
 ;  Makes a "glow" around the outside of the current selection.
-;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
-; 
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-; 
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
+
 
 (define (my-pair->string pair)
   (cons ((pair? (cdr pair))
@@ -91,7 +111,9 @@
 	  (message-box "The current image doesn't have a selection.\n\nThis plugin creates a glow effect around a \nSELECTED AREA of the image."))
 	(begin
 	    (gimp-image-undo-group-start image)	  
-            (define seperate-layer TRUE)
+	    (if (not (= RGB (car (gimp-image-base-type image))))
+		    	 (gimp-image-convert-rgb image))	
+		(define seperate-layer TRUE)
 	    (define from-selection TRUE)
 	    (define active-selection (car (gimp-selection-save image)))
 	 
@@ -171,7 +193,7 @@
 		    "Adrian Likins <adrian@gimp.org>"
 		    "Adrian Likins"
 		    "10/12/97"
-		    "RGB RGBA GRAY GRAYA"
+		    "*"
 		    SF-IMAGE "Image" 0
 		    SF-DRAWABLE "Drawable" 0
 		    SF-VALUE "Glow Radius" "2"

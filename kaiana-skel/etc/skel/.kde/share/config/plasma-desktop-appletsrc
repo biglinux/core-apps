@@ -296,6 +296,7 @@ zvalue=7
 
 [Containments][21][Applets][32][Configuration][General]
 buttonImage=file:///usr/share/icons/kaiana/kaiana-kmenu.png
+nameFormat=3
 useCustomButtonImage=true
 
 [Containments][21][Applets][32][PopupApplet]

@@ -1,37 +1,60 @@
 ; FU_effects_sepoina.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/14/2014 on GIMP-2.8.10
 ;
 ; Details for script at:
 ; http://www.sepoina.it/grafix/index.htm
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/14/2014 - convert to RGB if needed, option to flatten image upon completion
+;==============================================================
 ;
-; ----------------------------
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ; Sepoina Graf-ix decor-filter
-; ----------------------------
 ;
 ; last version at: www.sepoina.it/grafix/index.htm
 ; this.version: 1.03
 ;
 ; Autore: Ghigi Giancarlo (software@sepoina.it)
 ; translated By Patty
-;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
-; 
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-; 
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 ;
 ; Variables:
 ; Equalize			equalize		1/0
@@ -48,18 +71,32 @@
 ;
 ; Modified for use in GIMP-2.4 by Paul Sherman on 12/18/2007
 ; tested on GIMP-2.4.3
-; distributed by gimphelp.org
-; last update 01/06/2008
-;
-(define (FU-SepoinaGrafix inImage inLayer equalizza propagazione preaffila sfocaintelligente incisaree postaffila tela fondo carta tipo)
+;==============================================================
+
+
+(define (FU-SepoinaGrafix 
+		inImage 
+		inLayer 
+		equalizza 
+		propagazione 
+		preaffila 
+		sfocaintelligente 
+		incisaree 
+		postaffila 
+		tela 
+		fondo 
+		carta 
+		tipo
+		inFlatten
+	)
  
   (gimp-image-undo-group-start inImage)			; Prepare any undo 
+  (if (not (= RGB (car (gimp-image-base-type inImage))))
+			 (gimp-image-convert-rgb inImage)) ; convert to RGB if not already....
   (gimp-selection-all inImage)				; Select whole image
   (define LayerBase (car(gimp-image-flatten inImage)))	; Set the Layer to whole image flattened on one level
   (gimp-item-set-name LayerBase "Base")		; the name of LayerBase picture is Base
   
-  
-  ;
   ;   Crea il piano LayerSobel
   ;
   (define LayerSobel 
@@ -91,7 +128,6 @@
   (gimp-brightness-contrast LayerSobel -62 86)  	; Uncontrast
 
   
-  ;
   ;    Make scratched levels
   ;
 
@@ -115,7 +151,6 @@
   (gimp-image-insert-layer inImage LayerPieno 0 10)			; Nuovo layer in coda ai layer
   (gimp-context-set-pattern fondo)				; "background" is the new filling up style
   (gimp-drawable-fill LayerPieno 4)				; Fill up layer pieno with this filling
-
   ;
   ;  Paper plane
   ;
@@ -124,7 +159,6 @@
   (gimp-image-insert-layer inImage LayerCarta 0 100)			; Add layer at the end
   (gimp-context-set-background carta)				; prepare paper colour
 
-   
  ; Modalità piani                Method plans          
  ; 0 = Normale                   0 = Normal            
  ; 1 = Dissolvenza               1 = Fade out          
@@ -151,7 +185,6 @@
 
  (define posterizzazione FALSE)				; only some filters posterize the result
  (gimp-image-raise-item-to-top inImage LayerSobel)	; Put sobel layer at the top
- 
  ;
  ; Tipologie di output
  ;  
@@ -242,8 +275,6 @@
   	  LayerCarta	0	100)  
     (set! propagazione TRUE)
    ))
-  
-  
  ;
  ;  Spread background colour to soften
  ;
@@ -265,32 +296,25 @@
   (if (= posterizzazione TRUE)
    (gimp-posterize LayerBase 50)
   )
- 
-
-
  ;
  ;  Paint paper
  ;
   (gimp-edit-fill LayerCarta BACKGROUND-FILL)		; Colora il layer
   (gimp-item-set-name LayerCarta "Carta") 		; il nome del layer Nuovo è "semi"
 
- ;
  ; Finali
  ;
  ;(set! LayerBase (car(gimp-image-flatten inImage)))  	; Setta theLayer a tutta l'immagine appiattita su un unico livello
  ;Scolpisce
  ; (if (= scolpisce TRUE)
  ;	(script-fu-carve-it inImage LayerBase LayerBase TRUE))
- 
- ;
  ;   Close
  ;
   (gimp-selection-none inImage)  			;Unselect
-  (gimp-image-undo-group-end inImage)			;Any Undo
+  (if (= inFlatten TRUE)(gimp-image-flatten inImage))
+  (gimp-image-undo-group-end inImage)		;Any Undo
   (gimp-displays-flush inImage) 			;Re-visualize
 )
-
-
 ;
 ;  set all plans depending on selection
 ;
@@ -311,9 +335,6 @@
   (if (= d3 0)   (gimp-item-set-visible d1 0)  )    ; "
   (if (= e3 0)   (gimp-item-set-visible e1 0)  )    ; "
 )
-
-
-
 ;
 ; Register the function with the GIMP:
 ;
@@ -331,28 +352,29 @@ Same address for Bug!
 "Ghigi Giancarlo - software@sepoina.it"
 "Ghigi Giancarlo 2004, Italy."
 "16th April 2004"
-"RGB*"
-SF-IMAGE      "The Image"     0
-SF-DRAWABLE   "The Layer"     0
-SF-TOGGLE   _"Equalize?" FALSE
-SF-TOGGLE   _"Spreading? (time expansive)" FALSE
-SF-ADJUSTMENT _"Pre-sharp (0=No)"  '(70 0 99 0.05 0.5 2 0)
-SF-ADJUSTMENT _"Smart-blur (0=NO)"  '(1.5 0 30 0.5 1 2 0)
-SF-ADJUSTMENT _"Engraving mask (0=No)"  '(5 0 8 0.05 0.5 2 0)
-SF-ADJUSTMENT _"Post-sharp (0=No)"  '(12 0 99 0.05 0.5 2 0)
-SF-ADJUSTMENT _"Canvasize (0=NO)"  '(0 0 10 1 1 2 0)
-SF-PATTERN _"Scratched texture" "Paper" 
-SF-COLOR   _"Paper Color" '(159 122 43)
-SF-OPTION     _"Output type"     '(_"Zaza"
-				   _"LSD"
-				   _"Watercoloured pencils"
-				   _"Scratched pencils"
-				   _"Uncoloured pencils"
-				   _"Yoga"
-				   _"BW pen pencil white paper"
-				   _"BW pen pencil chalk coloured paper"
-				   _"PsicoPaint"
-				   _"Acquarelguson (time expansive)"
-				   _"Watercolour Faber (time expansive)"
-				)
+"*"
+SF-IMAGE      	"The Image"     				0
+SF-DRAWABLE   	"The Layer"     				0
+SF-TOGGLE   	"Equalize?" 					FALSE
+SF-TOGGLE   	"Spreading? (time expansive)" 	FALSE
+SF-ADJUSTMENT 	"Pre-sharp (0=No)"  			'(70 0 99 0.05 0.5 2 0)
+SF-ADJUSTMENT 	"Smart-blur (0=NO)"  			'(1.5 0 30 0.5 1 2 0)
+SF-ADJUSTMENT 	"Engraving mask (0=No)" 		'(5 0 8 0.05 0.5 2 0)
+SF-ADJUSTMENT 	"Post-sharp (0=No)"  			'(12 0 99 0.05 0.5 2 0)
+SF-ADJUSTMENT 	"Canvasize (0=NO)"  			'(0 0 10 1 1 2 0)
+SF-PATTERN 		"Scratched texture" 			"Paper" 
+SF-COLOR   		"Paper Color" 					'(159 122 43)
+SF-OPTION     	"Output type"     				'(_"Zaza"
+												"LSD"
+												"Watercoloured pencils"
+												"Scratched pencils"
+												"Uncoloured pencils"
+												"Yoga"
+												"BW pen pencil white paper"
+												"BW pen pencil chalk coloured paper"
+												"PsicoPaint"
+												"Acquarelguson (time expansive)"
+												"Watercolour Faber (time expansive)"
+												)
+SF-TOGGLE     "Flatten image when complete?" 	FALSE
 )

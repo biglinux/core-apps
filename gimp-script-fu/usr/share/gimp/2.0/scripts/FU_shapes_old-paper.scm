@@ -1,18 +1,57 @@
 ; FU_shapes_old-paper.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/14/2014 on GIMP-2.8.10
 ;
 ; 12/15/2008 - fixed old function call to fontname-fontname
 ; Modified 10/01/2008 to remove deprecated procedures
 ; modified by Paul Sherman 11/22/2007
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/14/2014 - convert to RGB if needed
+;==============================================================
 ;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ; script by kward1979uk
-;
-;--------------------------------------------------------------------
+;==============================================================
+
 
 (define (add-text t-colour theImage text font-size font) 
 	(gimp-context-set-foreground t-colour)
@@ -32,8 +71,21 @@
 	)
 )
 
-(define (FU-old-paper inImage inlayer distress p-colour shadow text-req text font font-size t-colour)
+(define (FU-old-paper 
+		inImage 
+		inlayer 
+		distress 
+		p-colour 
+		shadow 
+		text-req 
+		text 
+		font 
+		font-size 
+		t-colour
+	)
 	(gimp-image-undo-group-start inImage)
+	(if (not (= RGB (car (gimp-image-base-type inImage))))
+			 (gimp-image-convert-rgb inImage))	
 	(let*(
 		(OldFG (car (gimp-context-get-foreground)))
 		(OldBG (car (gimp-context-get-background)))
@@ -93,15 +145,15 @@
 	"Karl Ward"
 	"Karl Ward"
 	"Oct 2005"
-	"RGB*"
-	SF-IMAGE      "SF-IMAGE" 0
-	SF-DRAWABLE   "SF-DRAWABLE" 0
-	SF-TOGGLE     "Distress selection" TRUE
-	SF-COLOR      "Paper Colour" '(207 194 162)
-	SF-TOGGLE     "Apply drop-shadow" TRUE
-	SF-TOGGLE     "Text Required" FALSE
-	SF-STRING     "Text (IF NO TEXT LEAVE BLANK)" ""
-	SF-FONT       "Font" ""
-	SF-ADJUSTMENT "Font-size" '(15 10 300 1 10 0 1)
-	SF-COLOR      "TEXT Colour" '(0 0 0)
+	"*"
+	SF-IMAGE      "SF-IMAGE" 						0
+	SF-DRAWABLE   "SF-DRAWABLE" 					0
+	SF-TOGGLE     "Distress selection" 				TRUE
+	SF-COLOR      "Paper Colour" 					'(207 194 162)
+	SF-TOGGLE     "Apply drop-shadow" 				TRUE
+	SF-TOGGLE     "Text Required" 					FALSE
+	SF-STRING     "Text (IF NO TEXT LEAVE BLANK)" 	""
+	SF-FONT       "Font" 							""
+	SF-ADJUSTMENT "Font-size" 						'(15 10 300 1 10 0 1)
+	SF-COLOR      "TEXT Colour" 					'(0 0 0)
 )

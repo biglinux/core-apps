@@ -1,0 +1,2 @@
+ALL  ALL         =   (ALL:ALL)  NOPASSWD:  /usr/bin/google-chrome-stable-ramcache-mount
+

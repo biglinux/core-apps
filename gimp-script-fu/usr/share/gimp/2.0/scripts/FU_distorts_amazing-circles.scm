@@ -1,11 +1,50 @@
 ; FU_distorts_amazing-circles.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/04/2014 on GIMP-2.8.10
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+;==============================================================
 ;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+
+; Original information 
+; 
 ; Amazing Circles is a script for The GIMP
 ;
 ; Turn an image into an Amazing Circle.
@@ -16,9 +55,14 @@
 ; Made to not error out by attempting to use on indexed image
 ; and changed menu location by Paul Sherman on 11/30/2007
 ; distributed by gimphelp.org
+; 02/14/2014 - convert to RGB if needed
 ; --------------------------------------------------------------------
 ;  
-; Changelog:
+; Changelog
+;
+;  Version 1.5 (7th August 2007)
+;    - Added the option to choose the background colour:
+;
 ;  Version 1.4 (7th August 2007)
 ;    - Cleaned up the code
 ;    - Created a mini funtion "square-crop"
@@ -34,60 +78,46 @@
 ;
 ;  Version 1.1
 ;    - Added a check to see if the image is already square
-; --------------------------------------------------------------------
-; 
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 3 of the License, or
-; (at your option) any later version.  
-; 
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-; 
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, you can view the GNU General Public
-; License version 3 at the web site http://www.gnu.org/licenses/gpl-3.0.html
-; Alternatively you can write to the Free Software Foundation, Inc., 675 Mass
-; Ave, Cambridge, MA 02139, USA.
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
-;
+;==============================================================
 
 (define (square-crop image)
     
-    (let* 
-    (
-        ;Read the image width and height
+    (let* (
 	(width (car (gimp-image-width image)))
 	(height (car (gimp-image-height image)))
-
-    )
+	)
 	
 	(if (= width height)
 		()
 		(begin
-
 	;Check which is longer
 	(if 	(> width height)
 		(gimp-image-crop image height height (/ (- width height) 2) 0)
 		(gimp-image-crop image width width 0 (/ (- height width) 2))
-	
 	))
 )))
 
 
 (define (FU-amazing-circles	theImage
-					theLayer
-					circlePercent
-					cropType
+		theLayer
+		circlePercent
+		backGround
+		cropType
 	)
 
-    ;Start an undo group so the process can be undone with one undo
     (gimp-image-undo-group-start theImage)
+	(if (not (= RGB (car (gimp-image-base-type theImage))))
+			 (gimp-image-convert-rgb theImage))
 
+    ;Initiate some variables
+    (let* (
+	;Read the current colour
+	(myBackground (car (gimp-context-get-background)))
+    )
+
+    ;Set the background colour
+    (gimp-context-set-background backGround)
+	
     ;Select none
     (gimp-selection-none theImage)
 
@@ -112,13 +142,11 @@
     	(square-crop theImage)
     	()
     )
-
-    ;Finish the undo group for the process
+    ;Reset the background colour
+    (gimp-context-set-background myBackground)
     (gimp-image-undo-group-end theImage)
-
-    ;Ensure the updated image is displayed now
     (gimp-displays-flush)
-)
+))
 
 (script-fu-register "FU-amazing-circles"
 	"<Image>/Script-Fu/Distorts/Circle Maker"
@@ -126,10 +154,11 @@
 	"Harry Phillips"
 	"Harry Phillips"
 	"Mar. 23 2007"
-	"RGB* GRAY*"
-	SF-IMAGE		"Image"     0
-	SF-DRAWABLE		"Drawable"  0
-	SF-ADJUSTMENT	_"Circle depth"      '(100 0 100 1 10 1 0)
+	"*"
+	SF-IMAGE		"Image"     		0
+	SF-DRAWABLE		"Drawable"  		0
+	SF-ADJUSTMENT	"Circle depth"      '(100 0 100 1 10 1 0)
+	SF-COLOR		"Surround colour"   '(255 255 255)
 	SF-OPTION		"Crop image?"		'("Crop after" "Crop before" "Don't crop")
 )
 

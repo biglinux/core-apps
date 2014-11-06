@@ -1,27 +1,49 @@
 ; FU_edges_mats-and-frames.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/14/2014 on GIMP-2.8.10
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/14/2014 - convert to RGB if needed
+;==============================================================
 ;
-; The GIMP -- an image manipulation program
-; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
-; 
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-; 
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
 ;
 ; Copyright (C) 2003 Eric Jeschke (eric@redskiesatnight.com)
 ; Based on code by
@@ -29,8 +51,7 @@
 ; and
 ; Copyright (C) 1997 Andrew Donkin  (ard@cs.waikato.ac.nz)
 ;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
 
 ; gimp-scheme should add this...it's a scheme "standard"
 (define (cadddr l) (caddr (cdr l)))
@@ -87,16 +108,16 @@
 ; then each side will be colored so that it resembles a bevel (unless
 ; the fillchoice is a pattern).
 (define (draw-border drawable
-                     borderwidth
-                     lpad tpad rpad bpad   ; # pixels to pad on L, T, R, B
-                     fillchoice            ; type of fill
-                     fillcolor delta       ; fill parameters
-                     bumppattern           ; "texture" pattern
-                     leavebumpmap          ; flag: TRUE-->preserve bumpmap
-                     ibumpp                ; flag: TRUE-->bump interactively
-                     layername             ; border is drawn on a new layer
-                     leaveselectionp       ; if true, border becomes selection
-                     )
+		 borderwidth
+		 lpad tpad rpad bpad   ; # pixels to pad on L, T, R, B
+		 fillchoice            ; type of fill
+		 fillcolor delta       ; fill parameters
+		 bumppattern           ; "texture" pattern
+		 leavebumpmap          ; flag: TRUE-->preserve bumpmap
+		 ibumpp                ; flag: TRUE-->bump interactively
+		 layername             ; border is drawn on a new layer
+		 leaveselectionp       ; if true, border becomes selection
+		 )
   (let* ((img (car (gimp-item-get-image drawable)))
          (imgtype (car (gimp-drawable-type-with-alpha drawable)))
          (owidth (car (gimp-image-width img)))      ; current image w & h
@@ -295,12 +316,14 @@
          layersp              ; flag: TRUE-->preserve new layers
          leaveselectionp      ; flag: TRUE-->mat is selected on exit
          )
+		 
+    (gimp-image-undo-group-start image)
+	(if (not (= RGB (car (gimp-image-base-type image))))
+			 (gimp-image-convert-rgb image))	
+	
   (let* ((img (car (gimp-item-get-image drawable)))
          (pattern (if (= texturep TRUE) mattexture '()))
          )
-
-    ; checkpoint for undo
-    (gimp-image-undo-group-start img)
 
     ; draw bevel
     (if (> bevelwidth 0)
@@ -350,13 +373,15 @@
          leaveselectionp      ; flag: TRUE-->mat is selected on exit
          leavebevelbumpmapp   ; flag: TRUE-->preserve bevel bump map
          )
+		 
+    (gimp-image-undo-group-start image)
+	(if (not (= RGB (car (gimp-image-base-type image))))
+			 (gimp-image-convert-rgb image))	
+			 
   (let* ((img (car (gimp-item-get-image drawable)))
          (imgtype (car (gimp-drawable-type-with-alpha drawable)))
          (pattern (if (= texturep TRUE) frametexture '()))
          )
-
-    ; checkpoint for undo
-    (gimp-image-undo-group-start img)
 
     ; parameter sanity checks
     (if (<= framewidth 0)
@@ -463,27 +488,27 @@
 		    "Eric Jeschke <eric@redskiesatnight.com>"
 		    "Eric Jeschke"
 		    "5/27/03"
-		    "RGB* GRAY*"
-		    SF-IMAGE "Input Image" 0
-		    SF-DRAWABLE "Input Drawable" 0
-		    SF-ADJUSTMENT _"Bevel Width" '(5 0 250 1 10 0 1)
-            SF-OPTION _"Bevel Fill" '(_"Color" _"FG color" _"BG color" _"Pattern")
-            SF-COLOR _"Bevel Fill Color" '(221 221 221)
-		    SF-ADJUSTMENT _"Delta Value on Bevel Color" '(25 1 255 1 10 0 1)
-		    SF-ADJUSTMENT _"Mat Width" '(35 0 1000 1 10 0 1)
-            SF-OPTION _"Mat Fill" '(_"Color" _"FG color" _"BG color" _"Pattern")
-            SF-COLOR _"Mat Fill Color" '(128 128 128)
-            SF-TOGGLE  _"Texture Mat" FALSE
-            SF-PATTERN _"Texture Pattern" _"Wood"
-            SF-TOGGLE  _"Leave Texture Bump Map" FALSE
-            SF-TOGGLE  _"Bump Interactively" FALSE
-		    SF-ADJUSTMENT _"Left Pad" '(0 0 1000 1 10 0 1)
-		    SF-ADJUSTMENT _"Top Pad" '(0 0 1000 1 10 0 1)
-		    SF-ADJUSTMENT _"Right Pad" '(0 0 1000 1 10 0 1)
-		    SF-ADJUSTMENT _"Bottom Pad" '(0 0 1000 1 10 0 1)
-            SF-TOGGLE  _"Use Layers" FALSE
-            SF-TOGGLE  _"Leave Selection" FALSE
-		    )
+		    "*"
+		    SF-IMAGE 		"Input Image" 					0
+		    SF-DRAWABLE 	"Input Drawable" 				0
+		    SF-ADJUSTMENT 	"Bevel Width" 					'(5 0 250 1 10 0 1)
+            SF-OPTION 		"Bevel Fill" 					'("Color" "FG color" "BG color" "Pattern")
+            SF-COLOR 		"Bevel Fill Color" 				'(221 221 221)
+		    SF-ADJUSTMENT 	"Delta Value on Bevel Color" 	'(25 1 255 1 10 0 1)
+		    SF-ADJUSTMENT 	"Mat Width" 					'(35 0 1000 1 10 0 1)
+            SF-OPTION 		"Mat Fill" 						'(_"Color" "FG color" "BG color" "Pattern")
+            SF-COLOR 		"Mat Fill Color" 				'(128 128 128)
+            SF-TOGGLE  		"Texture Mat" 					FALSE
+            SF-PATTERN 		"Texture Pattern" 				"Wood"
+            SF-TOGGLE  		"Leave Texture Bump Map" 		FALSE
+            SF-TOGGLE  		"Bump Interactively" 			FALSE
+		    SF-ADJUSTMENT 	"Left Pad" 						'(0 0 1000 1 10 0 1)
+		    SF-ADJUSTMENT 	"Top Pad" 						'(0 0 1000 1 10 0 1)
+		    SF-ADJUSTMENT 	"Right Pad" 					'(0 0 1000 1 10 0 1)
+		    SF-ADJUSTMENT 	"Bottom Pad" 					'(0 0 1000 1 10 0 1)
+            SF-TOGGLE  		"Use Layers" 					FALSE
+            SF-TOGGLE  		"Leave Selection" 				FALSE
+		)
 
 (script-fu-register "FU-add-frame"
 		    "<Image>/Script-Fu/Edges/Frame with Bevel"
@@ -491,20 +516,20 @@
 		    "Eric Jeschke <eric@redskiesatnight.com>"
 		    "Eric Jeschke"
 		    "5/27/03"
-		    "RGB* GRAY*"
-		    SF-IMAGE "Input Image" 0
-		    SF-DRAWABLE "Input Drawable" 0
-		    SF-ADJUSTMENT _"Frame Width" '(35 0 1000 1 10 0 1)
-            SF-OPTION _"Frame Fill" '(_"Color" _"FG color" _"BG color" _"Pattern")
-            SF-COLOR _"Frame Fill Color" '(128 128 128)
-            SF-TOGGLE  _"Texture Frame" FALSE
-            SF-PATTERN _"Texture Pattern" _"Wood"
-            SF-TOGGLE  _"Leave Texture Bump Map" FALSE
-            SF-TOGGLE  _"Bump Interactively" FALSE
-		    SF-ADJUSTMENT _"Beveling Index" '(10 0 250 1 10 0 1)
-		    SF-ADJUSTMENT _"Inner Shadow Width" '(8 0 100 1 10 0 1)
-		    SF-ADJUSTMENT _"Inner Shadow Opacity" '(50 0 100 1 10 0 1)
-            SF-TOGGLE  _"Use Layers" FALSE
-            SF-TOGGLE  _"Leave Selection" FALSE
-            SF-TOGGLE  _"Leave Bevel Bump Map" FALSE
-		    )
+		    "*"
+		    SF-IMAGE 		"Input Image" 					0
+		    SF-DRAWABLE 	"Input Drawable" 				0
+		    SF-ADJUSTMENT 	"Frame Width" 					'(35 0 1000 1 10 0 1)
+            SF-OPTION 		"Frame Fill" 					'("Color" "FG color" "BG color" "Pattern")
+            SF-COLOR 		"Frame Fill Color" 				'(128 128 128)
+            SF-TOGGLE  		"Texture Frame" 				FALSE
+            SF-PATTERN 		"Texture Pattern" 				"Wood"
+            SF-TOGGLE  		"Leave Texture Bump Map" 		FALSE
+            SF-TOGGLE  		"Bump Interactively" 			FALSE
+		    SF-ADJUSTMENT 	"Beveling Index" 				'(10 0 250 1 10 0 1)
+		    SF-ADJUSTMENT 	"Inner Shadow Width" 			'(8 0 100 1 10 0 1)
+		    SF-ADJUSTMENT 	"Inner Shadow Opacity" 			'(50 0 100 1 10 0 1)
+            SF-TOGGLE  		"Use Layers" 					FALSE
+            SF-TOGGLE  		"Leave Selection" 				FALSE
+            SF-TOGGLE  		"Leave Bevel Bump Map" 			FALSE
+		)

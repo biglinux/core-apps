@@ -1,16 +1,9 @@
 Package: kaiana-icons
-<<<<<<< HEAD
-Version: 1.0.0-0kaiana4
-=======
+Version: 1.0.0-0kaiana5
 Version: 1.1.9-0kaiana1
->>>>>>> fa7509f32bff1c2795790dd595fd174f5cdb10ae
 Architecture: all
 Maintainer: Frank Souza <http://kde-look.org/content/show.php/Evolvere+Icon+theme?content=164181>
 Installed-Size: 72777
 Section: admin
 Priority: optional
-<<<<<<< HEAD
-Description: Install oxigen ionized icon package to Kaiana and Kfaenza icons
-=======
 Description: Install two icons theme Kfaenza and Kaiana Evolvere-Kaiana icon package to Kaiana
->>>>>>> fa7509f32bff1c2795790dd595fd174f5cdb10ae

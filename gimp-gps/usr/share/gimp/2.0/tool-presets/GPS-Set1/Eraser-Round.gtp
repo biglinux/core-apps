@@ -1,0 +1,19 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-eraser")
+(name "Eraser Round")
+(tool-options "GimpEraserOptions"
+    (tool "gimp-eraser-tool")
+    (brush "Round  middle soft 010")
+    (dynamics "Eraser Round")
+    (palette "Default")
+    (brush-size 80.000000))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

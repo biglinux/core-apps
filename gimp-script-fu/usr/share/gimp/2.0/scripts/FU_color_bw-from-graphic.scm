@@ -1,15 +1,56 @@
 ; FU_color_bw-from-graphic.scm
-; version 2.7 [gimphelp.org]
+; version 2.9 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/15/2014 on GIMP-2.8.10
 ;
-; by Paul Sherman
+; edited by Paul Sherman
 ; A derivative of BW Film Simulation,
 ; made for use specifically for rendering clip art
 ; in greyscale. High-Contrast setting will yield a 
 ; "sketchy" look instead of the usual "blockinesss" 
-; usually rendered from graphics when converting to 
-; grey. 
+; usually rendered from graphics when converting to grey. 
+;
+;==============================================================
+;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; Serge Mankovski B/W Film Simulation
 ;
 ; Modified by Paul Sherman 12/30/2007
 ; made to work with GIMP-2.4+
@@ -17,11 +58,6 @@
 ; modified (xtra steps) in High-Contrast for use with graphics
 ; (to compensate for the "blockiness" when rendering clip art,
 ; yielding a lighter "sketched" look.)
-;
-; BW Film Simulation author's info below:
-;---------------------------------------------------
-;
-; Serge Mankovski B/W Film Simulation
 ;
 ; Copyright Serge Mankovski (sevato@mankovski.com)
 ; Toronto, Ontario, 2007
@@ -38,23 +74,7 @@
 ;		- added color filters applied before b/w conversion
 ; 		- added saturation option
 ;		- Gimp 2.3.15+ support
-;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
-; 
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-; 
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.                 
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
  
 (define (create-new-layer img drawable) 
    (define layer (car (gimp-layer-copy drawable TRUE)))
@@ -62,9 +82,23 @@
    layer)
 
       
-(define (FU-bw-from-graphic  img drawable film filter rename new-layer increase-local-contrast auto-levels drop-gamma saturate )
+(define (FU-bw-from-graphic  
+		img 
+		drawable 
+		film 
+		filter 
+		rename 
+		new-layer 
+		increase-local-contrast 
+		auto-levels 
+		drop-gamma 
+		saturate 
+	)
     
-	(gimp-image-undo-group-start img) ; Start an undo group.  
+	(gimp-image-undo-group-start img)
+	(if (not (= RGB (car (gimp-image-base-type img))))
+			 (gimp-image-convert-rgb img))	
+	
 	(let* 
 		((bw-layer img)
 		 (chan-name ""))
@@ -126,12 +160,12 @@
 (script-fu-register "FU-bw-from-graphic"
 	"<Image>/Script-Fu/Color/BW from Graphic" 
 	"Black and White From a Color Graphic.  Made for use specifically for rendering clip art in greyscale. High-Contrast setting will yield a sketchy look instead of the blockinesss usually rendered from graphics when converting to grey.\n\nby Paul Sherman\ngimphelp.org"
-	"Modified version by Paul Sherman (psherma1@rochester.rr.com)
+	"Modified version by Paul Sherman <psherman201@gmail.com> 
 	Original by Serge Mankovski (sevato@mankvoski.com)
 	Original copyright info below:"
 	"2007, Serge Mankovski, Toronto, ON, Canada"
 	"05.01.2007"
-	"RGB*" 
+	"*" 
 	SF-IMAGE "Image" 0
 	SF-DRAWABLE "Current Layer" 0
 	SF-OPTION   "Film" '("High Contrast" "Normal Contrast")

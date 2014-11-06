@@ -1,0 +1,23 @@
+#! /bin/sh
+
+set -e
+
+package_name=kaiana-ramcache-base
+
+
+if [ -z "$package_name" ]; then
+    print >&2 "Internal Error. Please report a bug."
+    exit 1;
+fi
+
+case "$1" in
+  install)
+    ln -sf /etc/init.d/kaiana-ramcache /etc/rc0.d/K10kaiana-cache
+    ln -sf /etc/init.d/kaiana-ramcache /etc/rc6.d/K10kaiana-cache 
+    ;;
+  *) 
+     exit 0
+
+esac
+
+exit 0

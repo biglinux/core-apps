@@ -1,19 +1,32 @@
 ; FU_create-new_glass-text.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/03/2014 on GIMP-2.8.10
 ;
 ; Create Glass Effect Text
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+;==============================================================
 ;
-; V1.0 (11-2007) (c) Copyright by Scott Mosteller  
-; Comments directed to http://www.gimpscripts.com
+; Installation:
+; This script should be placed in the user or system-wide script folder.
 ;
-; Script generates text that looks like glass, with a drop shadow and 
-; background, each on seperate layers. Text, font, font size, translucency, 
-; shadow, background and other parameters can be set.
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
 ;
 ; LICENSE
 ;
@@ -30,8 +43,18 @@
 ;    You should have received a copy of the GNU General Public License
 ;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;==============================================================
+; Original information 
+; 
+; V1.0 (11-2007) (c) Copyright by Scott Mosteller  
+; Comments directed to http://www.gimpscripts.com
 ;
+; Script generates text that looks like glass, with a drop shadow and 
+; background, each on seperate layers. Text, font, font size, translucency, 
+; shadow, background and other parameters can be set.
+;==============================================================
+
+
 ; Define Function For Glass Translucency Values
 ;
 (define (get-glass-trans-curve parm)
@@ -50,6 +73,7 @@
 	size
 	font
 	text-color
+	bkg
 	lpat
 	glass-depth
 	glass-trans
@@ -58,8 +82,7 @@
 	shy
 	shb
 	sho
-	dsh
-	bkg)
+	dsh)
   (let* ((img (car (gimp-image-new 256 256 RGB)))
     (tmp (car (gimp-context-set-foreground '( 255 255 255))))
     (text-layer2 (car (gimp-text-fontname img -1 0 0 text 10 TRUE (+ size shx) PIXELS font)))
@@ -150,6 +173,7 @@
 	SF-ADJUSTMENT _"Font size (pixels)" '(150 2 1000 1 10 0 1)
 	SF-FONT       _"Font"               "Arial Black"
 	SF-COLOR      _"Text color"         '(123 149 176)
+	SF-TOGGLE     _"Include Background"  FALSE
 	SF-PATTERN    _"Background Pattern" "Dried mud"
 	SF-ADJUSTMENT _"Glass Depth"        '(3 1 10 1 1 0 1)
 	SF-ADJUSTMENT _"Glass Translucency" '(64 0 255 1 1 0 1)
@@ -159,5 +183,5 @@
 	SF-ADJUSTMENT _"Shadow Blur"        '(8 0 25 1 1 0 1)
 	SF-ADJUSTMENT _"Shadow Opacity"     '(60 0 100 1 1 0 1)
 	SF-TOGGLE     _"Include Shadow?"     TRUE
-	SF-TOGGLE     _"Include Background"  TRUE)
+)
 

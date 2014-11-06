@@ -1,0 +1,26 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-paintbrush")
+(name "Leafs")
+(tool-options "GimpPaintOptions"
+    (tool "gimp-paintbrush-tool")
+    (foreground (color-rgb 0.126275 0.199513 0.033939))
+    (brush "L_Leaf 2")
+    (dynamics "Leafs")
+    (gradient "GPS Nature Pure greens")
+    (palette "Firecode")
+    (brush-size 200.000000)
+    (application-mode incremental)
+    (jitter-amount 2.758621)
+    (fade-length 139.000000)
+    (fade-unit percent)
+    (gradient-view-size 38))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient yes)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

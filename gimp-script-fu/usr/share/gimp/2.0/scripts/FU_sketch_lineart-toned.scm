@@ -1,15 +1,50 @@
 ; FU_sketch_lineart-toned.scm
-; version 4.1 [gimphelp.org]
+; version 4.3 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/15/2014 on GIMP-2.8.10
 ;
 ; Modified to work with GIMP-2.4+ by Paul Sherman 11/22/2007
+; 02/15/2014 - accommodate indexed images, flatten option on bottom
+;==============================================================
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; Installation:
+; This script should be placed in the user or system-wide script folder.
 ;
-; The GIMP -- an image manipulation program
-; Copyright (C) 1995 Spencer Kimball and Peter Mattis
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
 ; 
 ; Advanced Line Art (Sobel) script  for GIMP 2.3.4
 ; Copyright (C) 2001-2005 Lasm <lasm@rocketmail.com>
@@ -47,7 +82,8 @@
 ;     and "Capuccino" coffee as they tend to produce very dark images.
 ; 2. Conversely, the post-processing Decaffienator produces darker final image. It is an
 ;     operation carried out after flattening all visible layers in the image. Use it if the final image
-;     is too light. This is particularly useful for the light, creamy Latte coffee, but all coffee   ;     types will benefit from it as well.
+;     is too light. This is particularly useful for the light, creamy Latte coffee, but all coffee   
+;     types will benefit from it as well.
 ; 3. Texture can be turned off for certain images, which is better off without it. Similarly for
 ;     polychromatic option. 
 ; 4. Polychromatic and line-art color are mutually exclusive options. To change line art color
@@ -63,9 +99,8 @@
 ;
 ; That's all folks. Have fun with this script !
 ; Another Grandmother Coffee House production.
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 	;; Set register common information
@@ -85,7 +120,27 @@
 ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(define (FU-lineart-toned img inLayer tempmode ppdecaf? flatten? texture? polychrome? art-color stmode opmode brightness contrast lightness saturation)
+(define (FU-lineart-toned 
+		img 
+		inLayer 
+		tempmode 
+		ppdecaf? 
+		texture? 
+		polychrome? 
+		art-color 
+		stmode 
+		opmode 
+		brightness 
+		contrast 
+		lightness 
+		saturation
+		flatten?
+	)
+
+  (gimp-image-undo-group-start img)		   
+  (if (not (= RGB (car (gimp-image-base-type img))))
+			 (gimp-image-convert-rgb img))
+			 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
 ;  Helper function to create names of Coffee Beans and blending options
@@ -196,6 +251,7 @@
                    0   0   0   0   0)) 	      
     (define channels                                                 ; prepare smooth boiling water
            (list   0   1   1   1   0))
+		   
   (let*
       (
        (width (car (gimp-drawable-width inLayer)))
@@ -210,7 +266,6 @@
        (old-bg (car (gimp-context-get-background)))       
        )
 
-  (gimp-image-undo-group-start img)
 
 ;; Real work goes in here
 
@@ -353,28 +408,24 @@
 			))
         )
    )
-
   (gimp-image-undo-group-end img)
   (gimp-displays-flush)
-
   (gimp-context-set-background old-bg)
   (gimp-context-set-foreground old-fg)
-
   )
 )
 
 (script-fu-register "FU-lineart-toned"
 	"<Image>/Script-Fu/Sketch/Toned Line Art"
-	"Lasm's famous Line Art effect for photographs. (Version 3.5) This works on any RGB image.\n\nThe technique may not be effective when used on images with large areas of high saturation.\n\nThe default values adjust for that. If the image is too dark, you may want to adjust brightness/contrast values only slightly before starting the script.\n\nTip: If you do not have a good Gimpressionist preset, simply hit cancel at the Gimpressionist dialog window, and you will still get a good greyscale line-art."
+	"Lasm's famous Line Art effect for photographs. (Also works with indexed...)\n\nThe technique may not be effective when used on images with large areas of high saturation.\n\nThe default values adjust for that. If the image is too dark, you may want to adjust brightness/contrast values only slightly before starting the script.\n\nTip: If you do not have a good Gimpressionist preset, simply hit cancel at the Gimpressionist dialog window, and you will still get a good greyscale line-art."
 	"lasm"
 	"Copyright 2001-2005, lasm"
 	"March 12, 2001"
-	"RGB*"
+	"*"
 	SF-IMAGE            "The Image"        		0
 	SF-DRAWABLE     	"The Layer"       		0
 	SF-OPTION           "Water Temperature" 	SCRIPT-FU-LINEART-CHOICE3
 	SF-TOGGLE           "Post Processing 		Decaffeinator"	FALSE
-	SF-TOGGLE           "Flatten Image"    		TRUE
 	SF-TOGGLE           "Texture"           	TRUE
 	SF-TOGGLE           "Polychromatic"			FALSE
 	SF-COLOR            "Line Art Color"  		'(220 219 219)  ;220 219 219
@@ -384,4 +435,5 @@
 	SF-ADJUSTMENT 		"Contrast"           	'(-9 -127 127 1 10 0 0)
 	SF-ADJUSTMENT 		"Lightness"          	'(100 -100 100 1 10 0 0)
 	SF-ADJUSTMENT 		"Saturation"         	'(-70 -100 100 1 10 0 0)
+	SF-TOGGLE           "Flatten Image"    		TRUE
 )

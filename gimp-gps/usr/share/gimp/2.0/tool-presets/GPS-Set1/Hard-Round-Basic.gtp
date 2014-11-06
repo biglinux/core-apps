@@ -1,0 +1,19 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-eraser")
+(name "Hard Round Basic")
+(tool-options "GimpEraserOptions"
+    (tool "gimp-eraser-tool")
+    (foreground (color-rgb 1.000000 0.000000 0.000000))
+    (brush "Normal Nib 1")
+    (dynamics "Dynamics Off")
+    (palette "Default"))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

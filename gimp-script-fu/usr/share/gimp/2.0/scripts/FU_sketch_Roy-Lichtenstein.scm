@@ -1,11 +1,50 @@
 ; FU_sketch_Roy-Lichtenstein.scm
-; version 2.0 
+; version 3.0
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/15/2014 on GIMP-2.8.10
 ;
-; ----------------------------------------------------------------------------------
-; Original information -------------------------------------------------------------
+; 02/15/2014 - accommodate indexed images
+;==============================================================
 ;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ; $Log: Roy-Lichtenstein.scm,v $
 ; Revision 1.2  2008-04-07 14:05:16+05:30  Cprogrammer
 ; combined to if statements into one if-else
@@ -20,30 +59,11 @@
 ;
 ; A script-fu script that adds the "Roy Lichtenstein" effect to an image
 ; Adapted from tutorial by Funadium at http://www.flickr.com/photos/funadium/2354849007/
-;
-; License:
-;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
-;
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-;
-; The GNU Public License is available at
-; http://www.gnu.org/copyleft/gpl.html
-;
-; "$Id: Roy-Lichtenstein.scm,v 1.2 2008-04-07 14:05:16+05:30 Cprogrammer Exp root $";
-;
-; End original information -------------------------------------------------------------
-;---------------------------------------------------------------------------------------
+;==============================================================
+
+
 (define (FU-RoyLichtenstein
-		inImage
-		inCopy
-		inFlatten
+		theImage
 		baseOpacity
 		BackGroundColour
 		contrast
@@ -59,16 +79,16 @@
 		yellowAng
 		posterizeLevel
 		NewsPrintOpacity
-		DeSpeckle)
+		DeSpeckle
+		inFlatten
+	)
 
 	; Initiate some variables
 	(let*
 	 	(
-			(theImage 0)
 			(base 0)
 			(NewsPrintLayer 0)
 			(BorderLayer 0)
-			(layerRGB 0)
 			(width 0)
 			(height 0)
 			(bottomlayer 0)
@@ -76,23 +96,12 @@
 			(old-fg 0)
 			(old-bg 0)
 		)
-		; Return the Image ID
-		(set! theImage (if (= inCopy TRUE)
-			(car (gimp-image-duplicate inImage))
-			inImage
-			) 
-		)
-		(if (= inCopy FALSE)
-			(begin
-			; Start an undo group so the process can be undone with one undo
-			(gimp-image-undo-group-start theImage)
-			)
-		)
-		(set! drawable (car (gimp-image-get-active-drawable theImage)))
-		; Detect if it is RGB. Change the image RGB if it isn't already
-		(set! layerRGB (car (gimp-drawable-is-rgb drawable)))
-		(if (= layerRGB 0) (gimp-image-convert-rgb theImage))
 
+		(gimp-image-undo-group-start theImage)
+		(if (not (= RGB (car (gimp-image-base-type theImage))))
+			 (gimp-image-convert-rgb theImage
+			 ))
+		(set! drawable (car (gimp-image-get-active-drawable theImage)))
 		; Read the image height and width so that we can create a new layer of the same
 		; dimensions of the current image
 		(set! old-fg (car (gimp-palette-get-foreground)))
@@ -154,18 +163,8 @@
 			(gimp-image-flatten theImage)
 			)
 		)
-		(if (= inCopy TRUE)
-			(begin
-			(gimp-image-clean-all theImage)
-			(gimp-display-new theImage)
-			) ; else
-			(begin
-			; Finish the undo group for the process
-			(gimp-image-undo-group-end theImage)
-			)
-		)
 
-		; Ensure the updated image is displayed now
+		(gimp-image-undo-group-end theImage)
 		(gimp-displays-flush)
 		(gimp-palette-set-foreground old-fg)
 		(gimp-palette-set-background old-bg)
@@ -178,17 +177,15 @@
 	"$Author: Cprogrammer $"
 	"$Author: Cprogrammer $"
 	"$Date: 2008-04-07 14:05:16+05:30 $"
-	"RGB*"
+	"*"
 	SF-IMAGE        "Image"                   0
-	SF-TOGGLE       "Work on copy"            TRUE
-	SF-TOGGLE       "Flatten image"           TRUE
 	SF-ADJUSTMENT   "Base Layer Opacity"      '(80 0 100 5 10 1 0)
 	SF-COLOR        "Background Colour"       '(255 255 255)
 	SF-ADJUSTMENT   "Contrast"                '(55 -127 127 1 5 0 0)
 	SF-OPTION       "Edge Detect Algorithm"   '("Sobel" "Prewitt Compass" "Gradient" "Roberts" "Differntial" "Laplace")
-	SF-ADJUSTMENT   "Edge Amount"             '(4 1 10 1 5 0 0)
+	SF-ADJUSTMENT   "Edge Amount"             '(3 1 10 1 5 0 0)
 	SF-TOGGLE       "Erode image"             FALSE
-	SF-TOGGLE       "News Print Effect"       FALSE
+	SF-TOGGLE       "News Print Effect"       TRUE
 	SF-ADJUSTMENT   "Newsprint Pixel Size"    '(3 1 20 1 10 1 1)
 	SF-OPTION       "Spot Function"           '("Round" "Line" "Diamond" "PS Square" "PS Diamond")
 	SF-ADJUSTMENT   "Black Angle"             '(45 -90 90 1 10 1 1)
@@ -198,4 +195,5 @@
 	SF-ADJUSTMENT   "Posterize Level"         '(7 1 255 1 10 1 1)
 	SF-ADJUSTMENT   "Newsprint Layer Opacity" '(50 0 100 5 10 1 1)
 	SF-TOGGLE       "Despeckle"               TRUE
+	SF-TOGGLE       "Flatten image"           TRUE
 )

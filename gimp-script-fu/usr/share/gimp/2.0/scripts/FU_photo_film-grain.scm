@@ -1,42 +1,67 @@
 ; FU_photo_film-grain.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/14/2014 on GIMP-2.8.10
 ;
 ; No editing except for menu entry involved - 
 ; this was a sorely needed replacement for older film-grain script.
 ; which was very ineffective.
 ;
 ; edited 10/15/2010 to eliminate errors from non-RGB images
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; edited 02/14/2014 - added "Make image Black and White" option
+; and convert to RGB if needed, leave more grain in colors option
+;==============================================================
 ;
-; The GIMP -- an image manipulation program
-; Copyright (C) 1995 Spencer Kimball and Peter Mattis
+; Installation:
+; This script should be placed in the user or system-wide script folder.
 ;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 3 of the License, or
-; (at your option) any later version.
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
 ; 
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-; 
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-; http://www.gnu.org/licenses/gpl-3.0.html
-;
 ; Copyright (C) 2008 Samuel Albrecht <samuel_albrecht@web.de>
 ;
 ; Version 0.1 - Adding Film Grain after: http://www.gimpguru.org/Tutorials/FilmGrain/
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
 
-(define (FU-film-grain aimg adraw holdness grainsize strength)
+
+(define (FU-film-grain aimg adraw holdness grainsize strength colorgrain blackwhite)
+	(gimp-image-undo-group-start aimg)
+	(if (not (= RGB (car (gimp-image-base-type aimg))))
+			 (gimp-image-convert-rgb aimg))
+
   (let* ((img (car (gimp-item-get-image adraw)))
          (owidth (car (gimp-image-width img)))
          (oheight (car (gimp-image-height img)))
@@ -49,6 +74,7 @@
                                           OVERLAY-MODE)))
          (grainlayermask (car (gimp-layer-create-mask grainlayer ADD-WHITE-MASK)))
          (floatingsel 0)
+		 (orig-layer 0)
          )
   		   
     ; init
@@ -66,15 +92,24 @@
         a
         )
       )
+	  
+    (set! orig-layer (car (gimp-image-get-active-layer aimg)))
+
     
-    (gimp-context-push)
-    (gimp-image-undo-group-start img)
     (if (= (car (gimp-drawable-is-gray adraw )) TRUE)
         (gimp-image-convert-rgb img)
         )
     (gimp-context-set-foreground '(0 0 0))
     (gimp-context-set-background '(255 255 255))
     
+	
+    ;optional b/w
+    (if(= blackwhite TRUE)
+       (begin
+         (gimp-desaturate-full orig-layer DESATURATE-LIGHTNESS)
+         )
+       )
+	
     ;fill new layer with neutral gray
     (gimp-image-insert-layer img grainlayer 0 -1)
     (gimp-drawable-fill grainlayer TRANSPARENT-FILL)
@@ -93,14 +128,14 @@
     (gimp-edit-copy adraw)
     (set! floatingsel (car (gimp-edit-paste grainlayermask TRUE)))
     (gimp-floating-sel-anchor floatingsel)
-    
+	;give the grain a little extra strength
+	(plug-in-unsharp-mask RUN-NONINTERACTIVE img grainlayer 5.0 1.0 0.0)
     ;set color curves of layer mask, so that only gray areas become grainy
-    (gimp-curves-spline grainlayermask  HISTOGRAM-VALUE  6 (splineValue))
+    (if (= colorgrain FALSE)(gimp-curves-spline grainlayermask  HISTOGRAM-VALUE  6 (splineValue)))
     
     ; tidy up
     (gimp-image-undo-group-end img)
     (gimp-displays-flush)
-    (gimp-context-pop)
     )
   )
 
@@ -110,10 +145,12 @@
 	"Samuel Albrecht <samuel_albrecht@web.de>"
 	"Samuel Albrecht"
 	"13/08/08"
-	"RGB*"
-	SF-IMAGE       "Input image"          0
-	SF-DRAWABLE    "Input drawable"       0
-	SF-ADJUSTMENT _"Holdness" '(2 1 8 1 2 0 0)
-	SF-ADJUSTMENT _"Value" '(100 0 255 1 10 0 0)
-	SF-ADJUSTMENT _"Strength" '(128 0 255 1 10 0 0)
+	"*"
+	SF-IMAGE       "Input image"          			0
+	SF-DRAWABLE    "Input drawable"       			0
+	SF-ADJUSTMENT  "Holdness" 						'(2 1 8 1 2 0 0)
+	SF-ADJUSTMENT  "Value" 							'(100 0 255 1 10 0 0)
+	SF-ADJUSTMENT  "Strength" 						'(128 0 255 1 10 0 0)
+	SF-TOGGLE      "Include more grain in colors" 	FALSE
+	SF-TOGGLE      "Make image all Black and White" FALSE
 )

@@ -1,32 +1,54 @@
 ; FU_effects_lomo.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/14/2014 on GIMP-2.8.10
 ;
 ; remove deprecated procedures Oct 1, 2008
 ; Tweaked again by Paul Sherman on 11/30/2008
 ; (hvignette define and menu location)
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/14/2014 - convert to RGB if needed, option to flatten image upon completion
+;==============================================================
 ;
-; The GIMP -- an image manipulation program
-; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
-; 
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-; 
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; Installation:
+; This script should be placed in the user or system-wide script folder.
 ;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ; Copyright (C) 2005 Francois Le Lay <mfworx@gmail.com>
 ;
 ; Version 0.3 - Changed terminology, settings made more user-friendly
@@ -50,11 +72,23 @@
 ; October 23, 2007
 ; Script made GIMP 2.4 compatible by Donncha O Caoimh, donncha@inphotos.org
 ; Download at http://inphotos.org/gimp-lomo-plugin/
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
 
-(define (FU-lomo aimg adraw avig asat acon adv)
+
+(define (FU-lomo 
+		aimg 
+		adraw 
+		avig 
+		asat 
+		acon 
+		adv
+		inFlatten
+	)
+
+    (gimp-image-undo-group-start aimg)
+	(if (not (= RGB (car (gimp-image-base-type aimg))))
+			 (gimp-image-convert-rgb aimg))
+			 
   (let* ((img (car (gimp-item-get-image adraw)))
          (owidth (car (gimp-image-width img)))
          (oheight (car (gimp-image-height img)))
@@ -75,14 +109,11 @@
                                       80 
                                       OVERLAY-MODE)))
     )
-    
-    (gimp-context-push)
-    (gimp-image-undo-group-start img)
+
     (gimp-context-set-foreground '(0 0 0))
     (gimp-context-set-background '(255 255 255))    
     
     ; adjust contrast and saturation
-    
     (gimp-brightness-contrast adraw 0 acon)
     (gimp-hue-saturation adraw ALL-HUES 0 0 asat)
     
@@ -126,9 +157,9 @@
     (gimp-edit-blend overexpo 2 0 2 100 0 REPEAT-NONE FALSE FALSE 0 0 TRUE halfwidth halfheight endingx endingy)
     
     ; tidy up
+	(if (= inFlatten TRUE)(gimp-image-flatten img))
     (gimp-image-undo-group-end img)
     (gimp-displays-flush)
-    (gimp-context-pop)
   )
 )
 
@@ -138,12 +169,13 @@
     "Francois Le Lay <mfworx@gmail.com>"
     "Francois Le Lay"
     "15/02/05"
-    "RGB* GRAY*"
-    SF-IMAGE       "Input image"          0
-    SF-DRAWABLE    "Input drawable"       0
-    SF-ADJUSTMENT _"Vignetting softness" '(1.5 1 2 0.1 0.5 1 0)
-    SF-ADJUSTMENT _"Saturation" '(20 0 40 1 5 1 0)
-    SF-ADJUSTMENT _"Contrast" '(20 0 40 1 5 1 0)
-    SF-TOGGLE     _"Double vignetting" FALSE
+    "*"
+    SF-IMAGE       "Input image"          			0
+    SF-DRAWABLE    "Input drawable"       			0
+    SF-ADJUSTMENT  "Vignetting softness" 			'(1.5 1 2 0.1 0.5 1 0)
+    SF-ADJUSTMENT  "Saturation" 					'(20 0 40 1 5 1 0)
+    SF-ADJUSTMENT  "Contrast" 						'(20 0 40 1 5 1 0)
+    SF-TOGGLE      "Double vignetting" 				FALSE
+	SF-TOGGLE      "Flatten image when complete?" 	FALSE
 )
 

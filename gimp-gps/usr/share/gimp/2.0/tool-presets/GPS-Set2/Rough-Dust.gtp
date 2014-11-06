@@ -1,0 +1,24 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-desaturate")
+(name "Dust Rough")
+(tool-options "GimpPaintOptions"
+    (tool "gimp-paintbrush-tool")
+    (brush "S_Splats 2")
+    (dynamics "Dust Rough")
+    (palette "Firecode")
+    (brush-size 250.000000)
+    (use-jitter yes)
+    (jitter-amount 0.500000)
+    (fade-length 138.000000)
+    (fade-unit percent)
+    (gradient-reverse yes))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

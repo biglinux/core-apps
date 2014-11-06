@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# Autor: Bruno Gonçalves Araujo.
+# Contato: bigbruno@gmail.com
+# Licença: GPL V3.
+# Data: 08/2014.
+# Sistema de cache na ram para navegadores utilizando aufs e tmpfs
+##################################################################
+
+
+mkdir -p /var/ramcache
+#Cria a ramcache com limite de metade da memoria
+mount -t tmpfs -o size=$[$(grep MemTotal /proc/meminfo | awk '{ print $2 }')/2]K tmpfs /var/ramcache
+

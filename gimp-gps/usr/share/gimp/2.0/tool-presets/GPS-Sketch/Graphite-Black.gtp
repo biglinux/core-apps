@@ -1,0 +1,25 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-paintbrush")
+(name "Graphite Black 01")
+(tool-options "GimpPaintOptions"
+    (tool "gimp-paintbrush-tool")
+    (opacity 0.800000)
+    (brush "F_Furr fast")
+    (dynamics "Graphite Black 01")
+    (palette "Default")
+    (brush-size 40.000000)
+    (application-mode incremental)
+    (use-jitter yes)
+    (jitter-amount 0.250000)
+    (fade-length 138.000000)
+    (fade-unit percent))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

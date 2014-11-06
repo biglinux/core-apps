@@ -1,0 +1,59 @@
+#!/bin/sh
+#
+# Autor: Bruno Gonçalves Araujo.
+# Contato: bigbruno@gmail.com
+# Licença: GPL V3.
+# Data: 08/2014.
+# Sistema de cache na ram para navegadores utilizando aufs e tmpfs
+##################################################################
+
+
+#Se um google-chrome-unstable ja estiver utilizando cache na ram, apenas inicia outra instancia sem executar o restante do script
+if [ "$(ps -f -u $USER| grep /usr/bin/google-chrome-unstable-ram$ | grep -v -c grep)" -ge "3" ]; then
+    google-chrome-unstable.distrib --user-data-dir="$HOME/.ramcache/google-chrome-unstable/config" "$@"
+    exit
+fi
+
+# se necessario gera pasta para cache no disco
+if [ ! -e "$HOME/.ramcache" ]; then
+    mkdir "$HOME/.ramcache"
+fi
+
+
+#Confere se a configuracao ja esta na ram
+if [ "$(grep "$HOME/.ramcache/google-chrome-unstable/config" /proc/mounts)" = "" ]; then
+
+    #Confere se a pasta para salvar a configuracao no hd existe, se nao existir deve cria-la
+    if [ ! -e "$HOME/.ramcache/google-chrome-unstable/config-save" ]; then
+
+	#Confere se existe uma configuracao atual do google-chrome-unstable para copiar, se nao existir cria uma pasta vazia
+	if [ -e "$HOME/.config/google-chrome-unstable" ]; then
+	    mkdir -p "$HOME/.ramcache/google-chrome-unstable/"
+	    cp -Rf "$HOME/.config/google-chrome-unstable" "$HOME/.ramcache/google-chrome-unstable/config-save"
+	else
+	    mkdir -p "$HOME/.ramcache/google-chrome-unstable/config-save"
+	fi
+
+    fi
+
+    mkdir -p "$HOME/.ramcache/google-chrome-unstable/config"
+    
+    #Monta particao na ram
+    sudo google-chrome-unstable-ramcache-mount --start-config "$HOME" "$USER"
+fi
+
+ 
+google-chrome-unstable.distrib --user-data-dir="$HOME/.ramcache/google-chrome-unstable/config" "$@"
+
+
+rsync -apxrgtXogA --delete "$HOME/.ramcache/google-chrome-unstable/config/" "$HOME/.ramcache/google-chrome-unstable/config-save"
+
+
+
+#Confere se todas as instancias foram fechadas, se estiverem, remove os arquivos e desmonta a particao
+if [ "$(ps -u $USER -o cmd,fname | grep chrome$ | grep -v /usr/bin/google-chrome-unstable)" = "" ]; then
+    sudo /usr/bin/google-chrome-unstable-ramcache-mount --stop-config "$HOME" "$USER"
+    rm -Rf "/var/ramcache/$USER/google-chrome-unstable/config/"
+    rm -Rf ~/.ramcache/google-chrome-unstable/config-save/*default/*cache*Trash*
+fi
+

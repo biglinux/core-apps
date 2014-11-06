@@ -1,11 +1,49 @@
 ; FU_create-new_scribbled-text.scm
-; version 2.7 [gimphelp.org]
+; version 3.0 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/15/2014 on GIMP-2.8.10
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+;==============================================================
 ;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ;;; i26-gunya2.scm -*-scheme-*-
 ;;; Time-stamp: <1997/05/11 18:46:26 narazaki@InetQ.or.jp>
 ;;; Author: Shuji Narazaki (narazaki@InetQ.or.jp)
@@ -16,11 +54,20 @@
 ; The corresponding parameters have been replaced by an SF-FONT parameter.
 ; ************************************************************************
 ;;;  This is the first font decoration of Imigre-26 (i26)
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
 
-(define (FU-scribbled-text text text-color frame-color font font-size frame-size)
+
+(define (FU-scribbled-text 
+		text 
+		text-color 
+		frame-color 
+		font 
+		font-size 
+		frame-size 
+		merge 
+		transparent
+	)
+	
   (let* (
         (img (car (gimp-image-new 256 256 RGB)))
         (border (/ font-size 10))
@@ -83,9 +130,22 @@
     (gimp-selection-all img)
     (gimp-context-set-background '(255 255 255))
     (gimp-edit-fill text-layer BACKGROUND-FILL)
+	
+    (if (= transparent 1)
+	(begin
+		(gimp-layer-add-alpha text-layer)
+		(gimp-drawable-fill text-layer TRANSPARENT-FILL)
+	  )
+	)		
     ;; post processing
     (gimp-image-set-active-layer img dist-text-layer)
     (gimp-selection-none img)
+	
+    (if (= merge TRUE)
+;        (gimp-image-flatten img)
+		(gimp-image-merge-visible-layers img CLIP-TO-IMAGE)
+    )	
+	
     (gimp-image-undo-enable img)
     (gimp-image-delete distortion-img)
     (gimp-display-new img)
@@ -101,10 +161,12 @@
 	"Shuji Narazaki"
 	"1997"
 	""
-	SF-STRING     _"Text"               "GIMP"
-	SF-COLOR      _"Text color"         "red"
-	SF-COLOR      _"Frame color"        '(0 34 255)
-	SF-FONT       _"Font"               "Becker"
-	SF-ADJUSTMENT _"Font size (pixels)" '(100 2 1000 1 10 0 1)
-	SF-ADJUSTMENT _"Frame size"         '(2 1 20 1 5 0 1)
+	SF-STRING     	"Text"               	"GIMP"
+	SF-COLOR      	"Text color"         	"red"
+	SF-COLOR      	"Frame color"        	'(0 34 255)
+	SF-FONT       	"Font"               	"Becker"
+	SF-ADJUSTMENT 	"Font size (pixels)" 	'(100 2 1000 1 10 0 1)
+	SF-ADJUSTMENT 	"Frame size"         	'(2 1 20 1 5 0 1)
+	SF-TOGGLE		"Merge Layers"			TRUE
+	SF-TOGGLE		"Transparent"			TRUE
 )

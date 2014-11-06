@@ -1,0 +1,19 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-blend")
+(name "Steel Bars")
+(tool-options "GimpBlendOptions"
+    (tool "gimp-blend-tool")
+    (foreground (color-rgb 0.686275 0.694118 0.772549))
+    (gradient "GPS Steel Bars")
+    (gradient-view-size 38)
+    (gradient-repeat sawtooth))
+(use-fg-bg yes)
+(use-brush no)
+(use-dynamics no)
+(use-gradient yes)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

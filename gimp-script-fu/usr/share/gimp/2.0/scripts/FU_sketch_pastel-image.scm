@@ -1,13 +1,49 @@
 ; FU_sketch_pastel-image.scm
-; version 2.7 [gimphelp.org]
+; version 2.9 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/15/2014 on GIMP-2.8.10
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/15/2014 - accommodated indexed images
+;==============================================================
 ;
-; The GIMP -- an image manipulation program
-; Copyright (C) 1995 Spencer Kimball and Peter Mattis
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
 ; 
 ; Pastel image script  for GIMP 2.4
 ; Copyright (C) 2001 Iccii <iccii@hotmail.com>
@@ -19,22 +55,8 @@
 ; Windows100% Magazine October, 2001
 ; Tamagorou's Photograph touching up class No.29
 ; theme 1 -- Create the Pastel image
-; --------------------------------------------------------------------
-; This program is free software: you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation, either version 3 of the License, or
-; (at your option) any later version.
-;
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-;
-; You should have received a copy of the GNU General Public License
-; along with this program.  If not, see <http://www.gnu.org/licenses/>.
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
+
 
 (define (FU-pastel-image
 			img
@@ -47,7 +69,9 @@
 	)
 
   (gimp-image-undo-group-start img)
-
+  (define indexed (car (gimp-drawable-is-indexed drawable)))
+		(if (= indexed TRUE)(gimp-image-convert-rgb img))
+		
   (let* (
 	 (old-selection (car (gimp-selection-save img)))
 	 (layer-copy0 (car (gimp-layer-copy drawable TRUE)))
@@ -97,12 +121,12 @@
 	"Iccii <iccii@hotmail.com>"
 	"Iccii"
 	"2001, Oct"
-	"RGB*"
-	SF-IMAGE      "Image"	         0
-	SF-DRAWABLE   "Drawable"       0
-	SF-ADJUSTMENT "Detail Level"   '(12.0 0 15.0 0.1 0.5 1 1)
-	SF-ADJUSTMENT "Sketch Length" '(10 0 32 1 1 0 1)
-	SF-ADJUSTMENT "Sketch Amount" '(1.0 0 5.0 0.1 0.5 1 1)
-	SF-ADJUSTMENT "Angle"          '(45 0 180 1 15 0 0)
-	SF-TOGGLE     "Add the canvas texture" FALSE
+	"*"
+	SF-IMAGE      "Image"	         		0
+	SF-DRAWABLE   "Drawable"       			0
+	SF-ADJUSTMENT "Detail Level"   			'(12.0 0 15.0 0.1 0.5 1 1)
+	SF-ADJUSTMENT "Sketch Length" 			'(10 0 32 1 1 0 1)
+	SF-ADJUSTMENT "Sketch Amount" 			'(1.0 0 5.0 0.1 0.5 1 1)
+	SF-ADJUSTMENT "Angle"          			'(45 0 180 1 15 0 0)
+	SF-TOGGLE     "Add the canvas texture" 	FALSE
  )

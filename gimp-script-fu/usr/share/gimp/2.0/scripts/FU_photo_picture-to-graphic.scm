@@ -1,11 +1,50 @@
 ; FU_photo_picture-to-graphic.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/14/2014 on GIMP-2.8.10
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/14/2014 - convert to RGB if needed
+;==============================================================
 ;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ; Picture to Graphic
 ; picture_to_graphic.scm
 ; version 1.2
@@ -25,29 +64,24 @@
 ;
 ; 9/29/2008 - Paul S. added "REALLY Punch It Up" 
 ; (extra curves manipulation)
-;
-; -------------------------------------------------------------------
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
-; 
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-; 
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
 
-(define (FU-picture_to_graphic inImage inLayer _presharp _smartblur _engraving _postsharp _canvas _strong _punchit)
+
+(define (FU-picture_to_graphic 
+		inImage 
+		inLayer 
+		_presharp 
+		_smartblur 
+		_engraving 
+		_postsharp 
+		_canvas 
+		_strong 
+		_punchit
+	)
 
   (gimp-image-undo-group-start inImage)			; Prepare any undo 
-  
+  (if (not (= RGB (car (gimp-image-base-type inImage))))
+			 (gimp-image-convert-rgb inImage))  
   (define old-bg (car (gimp-context-get-background)))
   (gimp-context-set-background '(255 255 255))		;set white background
 
@@ -161,10 +195,10 @@
 (script-fu-register "FU-picture_to_graphic"
 	"Picture to graphic"
 	"Takes a photo or muddy graphic and turns it into a simpler, more 'graphic' image.\n\nby Paul Sherman\ngimphelp.org"
-	"Paul Sherman - psherma1@rochester.r.com"
+	"Paul Sherman - psherman2001@gmail,com"
 	"Paul Sherman."
 	"12/26/2007"
-	"RGB*"
+	"*"
 	SF-IMAGE      "The Image"     0
 	SF-DRAWABLE   "The Layer"     0
 	SF-ADJUSTMENT _"Pre-sharp (0=No)"  '(70 0 99 0.05 0.5 2 0)

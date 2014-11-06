@@ -1,19 +1,57 @@
 ; FU_edges_photoframe.scm
-; version 3.1 [gimphelp.org]
+; version 3.2 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/03/2014 on GIMP-2.8.10
 ;
 ; --------------------------------------------------------------------
-; Distributed by Gimp FX Foundry project in Nov. 2007
-; but edited on 12/01/2007 by Paul Sherman to fix UNDO functionality 
+; Edited on 12/01/2007 by Paul Sherman to fix UNDO functionality 
 ; when NOT working on a copy. Menu location also changed.
 ; tested on GIMP-2.4.1
 ; udated again for gimp-2.6 by Paul - 11/20/2008
 ; 12/15/2008 - 
 ; pulled use with alpha layer until I get it to behave - PS
 ; 10/15/2010 - fixed undo glitch that left stray "select all" if undone.
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+;==============================================================
+;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+
+; Original information
 ;
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
@@ -32,21 +70,7 @@
 ; Border script (which was only used as a template, but there you go).
 ;
 ; --------------------------------------------------------------------
-; 
-;    This program is free software: you can redistribute it and/or modify
-;    it under the terms of the GNU General Public License as published by
-;    the Free Software Foundation, either version 3 of the License, or
-;    (at your option) any later version.
-;
-;    This program is distributed in the hope that it will be useful,
-;    but WITHOUT ANY WARRANTY; without even the implied warranty of
-;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;    GNU General Public License for more details.
-;
-;    You should have received a copy of the GNU General Public License
-;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;
 
 

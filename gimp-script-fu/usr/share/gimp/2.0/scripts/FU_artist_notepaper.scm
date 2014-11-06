@@ -1,15 +1,52 @@
 ; FU_artist_notepaper.scm
-; version 2.7 [gimphelp.org]
+; version 2.9 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/15/2014 on GIMP-2.8.10
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/13/2014 - work with non-rgb, merge option and install info added
+;==============================================================
 ;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
 ; Note paper image script  for GIMP 1.2
 ; Copyright (C) 2001 Iccii <iccii@hotmail.com>
 ; 
-; --------------------------------------------------------------------
 ; version 0.1  by Iccii 2001/07/22
 ;     - Initial relase
 ; version 0.1a by Iccii 2001/07/26
@@ -23,22 +60,23 @@
 ;     - Fixed bug in keeping transparent area
 ; version 0.2b by Iccii 2001/10/02 <iccii@hotmail.com>
 ;     - Fixed bug (get error when drawable doesn't have alpha channel)
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
 
 (define (FU-notepaper
-			img
-			drawable
-			threshold1
-			threshold2
-			base-color
-			bg-color
-			bg-type
+		img
+		drawable
+		threshold1
+		threshold2
+		base-color
+		bg-color
+		bg-type
+		inMerge
 	)
 
-  (gimp-image-undo-group-start img)
-
+    (gimp-image-undo-group-start img)
+	(if (not (= RGB (car (gimp-image-base-type img))))
+			 (gimp-image-convert-rgb img))
+			 
   (let* (
 	 (width (car (gimp-drawable-width drawable)))
 	 (height (car (gimp-drawable-height drawable)))
@@ -112,19 +150,8 @@
     (plug-in-bump-map 1 img final-layer final-layer 135 45 3 0 0 0 0 TRUE FALSE LINEAR) ; added ev
     (if (eqv? (car (gimp-drawable-has-alpha drawable)) TRUE)
         (gimp-image-select-item img CHANNEL-OP-REPLACE drawable))
-;    (if (eqv? (car (gimp-selection-is-empty img)) FALSE)
-;        (begin
-;          (gimp-selection-invert img)
-;          (gimp-edit-clear final-layer)))
-;    ((gimp-image-select-item img CHANNEL-OP-REPLACE old-selection))
-;    (gimp-edit-copy final-layer)
-;    (gimp-image-remove-layer img final-layer)
-;    (gimp-floating-sel-anchor (car (gimp-edit-paste drawable 0)))
-;    ((gimp-image-select-item img CHANNEL-OP-REPLACE old-selection))
-;    (gimp-image-remove-channel img old-selection)
-
-
-;    (gimp-context-set-foreground old-fg)
+		
+	(if (= inMerge TRUE)(gimp-image-merge-visible-layers img EXPAND-AS-NECESSARY))
     (gimp-image-undo-group-end img)
     (gimp-displays-flush)
   )
@@ -136,12 +163,13 @@
 	"Iccii <iccii@hotmail.com>"
 	"Iccii"
 	"2001, Oct"
-	"RGB*"
+	"*"
 	SF-IMAGE      "Image"	           0
 	SF-DRAWABLE   "Drawable"         0
 	SF-ADJUSTMENT "Threshold (Bigger 1<-->255 Smaller)" '(127 0 255 1 10 0 0)
 	SF-ADJUSTMENT "Threshold (Bigger 1<-->255 Smaller)" '(255 0 255 1 10 0 0)
-	SF-COLOR      "Base Color"       '(255 255 255)
-	SF-COLOR      "Background Color" '(223 223 223)
-	SF-OPTION     "Background Texture" '("Plane" "Sand" "Paper" "Cloud")
+	SF-COLOR      "Base Color"       					'(255 255 255)
+	SF-COLOR      "Background Color" 					'(223 223 223)
+	SF-OPTION     "Background Texture" 					'("Plane" "Sand" "Paper" "Cloud")
+	SF-TOGGLE     "Merge layers when complete?" 		FALSE
 )

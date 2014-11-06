@@ -1,27 +1,55 @@
 ; FU_edges_jagged-border.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/14/2014 on GIMP-2.8.10
 ;
-
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/14/2014 - convert to RGB if needed
+;==============================================================
+;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+;
 ; Jagged Border, V1.1
 ;
 ; AUTHOR: theilr (http://flickr.com/photos/theilr), (c) 2009
 ;
 ; This script was tested with GIMP 2.6.7
-;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License Version 3 as 
-; published by the Free Software Foundation.
-; 
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
-; GNU General Public License at  http://www.gnu.org/licenses for
-; more details.
-;
 ; DESCRIPTION: Creates a white (or black) border around an image that
 ; merges in with the image so that on a larger white (or black)
 ; background, the image appears to have a ragged border.  This is
@@ -87,22 +115,26 @@
 ; white frame.  After the new border layer is generated, it is inverted,
 ; and changed from ADDITION-MODE to MULTIPLY-MODE.
 ;
-;
-; 
 ; Version 1.0 (Oct 2009) -- 
 ; Version 1.1 (Nov 2009) -- added option for black borders
 ; =============================================================================
 
 
 
-(define (FU-jagged-border inImage inLayer 
-				 inBorderShape 
-				 inBlackBorder
-				 inBorderSize 
-				 inThresh 
-				 inFillIslands 
-				 inOnePixelBorder)
+(define (FU-jagged-border 
+		inImage 
+		inLayer 
+		inBorderShape 
+		inBlackBorder
+		inBorderSize 
+		inThresh 
+		inFillIslands 
+		inOnePixelBorder)
 
+    (gimp-image-undo-group-start inImage) 
+	(if (not (= RGB (car (gimp-image-base-type inImage))))
+			 (gimp-image-convert-rgb inImage))
+			 
   (let* ( ;define local variables
 	 (theWidth (car (gimp-image-width inImage)))
 	 (theHeight (car (gimp-image-height inImage)))
@@ -112,8 +144,6 @@
 	 (bdrLayer (car (gimp-layer-new inImage theWidth theHeight 
 					RGB-IMAGE "Border" 100 NORMAL-MODE)))
 	 )
-    (gimp-image-undo-group-start inImage) 
-
     ;; Make a black layer with a white border
     (gimp-image-insert-layer inImage tmpLayer 0 -1)
     (gimp-edit-fill tmpLayer WHITE-FILL)
@@ -205,25 +235,21 @@
   )
 
 (script-fu-register "FU-jagged-border"
-		    "Jagged Border"
-		    "Makes a white border that merges with the image"
-		    "theilr"
-		    "(c) theilr"
-		    "25 Oct 2009"
-		    "RGB*"
-		    SF-IMAGE "Image"  0
-		    SF-DRAWABLE "Drawable" 0
-		    SF-OPTION "Border shape" '("Rectangular" 
-					       "Horizontal only"
-					       "Vertical only"
-					       "Elliptical"
-					       )
-		    SF-OPTION "Border color" '("White" "Black")
-		    SF-ADJUSTMENT "Border width" '(50 0 1000 1 50 0 SF-SLIDER)
-		    SF-ADJUSTMENT "Threshold" '(1 0 255 1 10 0 SF-SLIDER)
-		    SF-TOGGLE "Fill in the islands" TRUE
-		    SF-TOGGLE "Enforce one-pixel border" TRUE
-		    )
+	"Jagged Border"
+	"Makes a white border that merges with the image"
+	"theilr"
+	"(c) theilr"
+	"25 Oct 2009"
+	"*"
+	SF-IMAGE 		"Image"  					0
+	SF-DRAWABLE 	"Drawable" 					0
+	SF-OPTION 		"Border shape" 				'("Rectangular" "Horizontal only" "Vertical only" "Elliptical")
+	SF-OPTION 		"Border color" 				'("White" "Black")
+	SF-ADJUSTMENT 	"Border width" 				'(50 0 1000 1 50 0 SF-SLIDER)
+	SF-ADJUSTMENT 	"Threshold" 				'(1 0 255 1 10 0 SF-SLIDER)
+	SF-TOGGLE 		"Fill in the islands" 		TRUE
+	SF-TOGGLE 		"Enforce one-pixel border" 	TRUE
+	)
 
 (script-fu-menu-register "FU-jagged-border" "<Image>/Script-Fu/Edges/")
 

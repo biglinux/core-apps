@@ -1,28 +1,68 @@
 ; FU_effects_cartoon-quick.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/14/2014 on GIMP-2.8.10
 ;
 ; first edit for gimp-2.4 by paul on 1/27/2008
 ; "peeled" from photoeffects.scm - an scm containing several scripts
 ; separated to more easily update and to place more easily in menus.
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/14/2014 - convert to RGB if needed, option to merge layer upon complegtion
+;==============================================================
 ;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ; Cartoon script  for GIMP 2.2
 ; Copyright (C) 2007 Eddy Verlinden <eddy_verlinden@hotmail.com>
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
+
 
 (define (FU-cartoon-quick
-			img
-			drawable
+		img
+		drawable
+		inMerge
 	)
 
   (gimp-image-undo-group-start img)
-
+  (if (not (= RGB (car (gimp-image-base-type img))))
+			 (gimp-image-convert-rgb img))
   (let* (
 	 (width (car (gimp-drawable-width drawable)))
 	 (height (car (gimp-drawable-height drawable)))
@@ -61,7 +101,7 @@
     (gimp-image-select-item img CHANNEL-OP-REPLACE old-selection)
     (gimp-image-remove-channel img old-selection)
 
-
+	(if (= inMerge TRUE)(gimp-image-merge-visible-layers img EXPAND-AS-NECESSARY))
     (gimp-image-undo-group-end img)
     (gimp-displays-flush)
   )
@@ -73,7 +113,8 @@
 	"Eddy Verlinden <eddy_verlinden@hotmail.com>"
 	"Eddy Verlinden"
 	"2007, juli"
-	"RGB* GRAY*"
-	SF-IMAGE      "Image"	            0
-	SF-DRAWABLE   "Drawable"          0
+	"*"
+	SF-IMAGE      "Image"	            			0
+	SF-DRAWABLE   "Drawable"          				0
+	SF-TOGGLE     "Merge layers when complete?" 	FALSE
 )

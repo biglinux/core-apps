@@ -1,33 +1,55 @@
 ; FU_effects-selection_add-bevel.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/13/2014 on GIMP-2.8.10
 ;
 ; Made to work just on selection (found it not useful otherwise,
 ; and confusing.) Put in "smooth" option and changed menu location.
 ; Stopped from use if no selectioni present.
+; Modified to allow non-rgb images... which will be converted autoatically.
+;==============================================================
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
-; GIMP - The GNU Image Manipulation Program
-; Copyright (C) 1995 Spencer Kimball and Peter Mattis
+; Installation:
+; This script should be placed in the user or system-wide script folder.
 ;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ; add-bevel.scm version 1.04
 ; Time-stamp: <2004-02-09 17:07:06 simon>
-;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
-;
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-;
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 ;
 ; Copyright (C) 1997 Andrew Donkin  (ard@cs.waikato.ac.nz)
 ; Contains code from add-shadow.scm by Sven Neumann
@@ -43,8 +65,8 @@
 ; The selection is set on exit, so Select->Invert then Edit->Clear will
 ; leave a cut-out.  Then use Sven's add-shadow for that
 ; floating-bumpmapped-texture cliche.
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
+
 
 (define (FU-selection-add-bevel img
                              drawable
@@ -87,6 +109,9 @@
     	  (gimp-image-undo-disable image)
     	  (gimp-image-undo-group-start image)
     	)
+
+	    (if (not (= RGB (car (gimp-image-base-type image))))
+		    	 (gimp-image-convert-rgb image))
 
     	(gimp-image-insert-layer image bump-layer 0 1)
 
@@ -190,12 +215,12 @@
 	"Andrew Donkin <ard@cs.waikato.ac.nz>"
 	"Andrew Donkin"
 	"1997/11/06"
-	"RGB* GRAY*"
-	SF-IMAGE       "Image"           0
-	SF-DRAWABLE    "Drawable"        0
-	SF-ADJUSTMENT _"Thickness"       '(5 0 30 1 2 0 0)
-	SF-TOGGLE     _"Work on copy"    TRUE
-	SF-TOGGLE     _"Keep bump layer" FALSE
-	SF-TOGGLE     _"Smooth Edges of bump" TRUE
+	"*"
+	SF-IMAGE       "Image"           		0
+	SF-DRAWABLE    "Drawable"        		0
+	SF-ADJUSTMENT  "Thickness"       		'(5 0 30 1 2 0 0)
+	SF-TOGGLE      "Work on copy"    		TRUE
+	SF-TOGGLE      "Keep bump layer" 		FALSE
+	SF-TOGGLE      "Smooth Edges of bump" 	TRUE
 )
 

@@ -1,0 +1,10 @@
+Package: gimp-gps
+Version: 2.0.0-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: gimp
+Section: admin
+Priority: optional
+Description: GPS is a collection of brushes and accompanying tool presets. Tool presets are a simply saved tool options, highly useful feature of the GIMP. www.ramonmiranda.com
+

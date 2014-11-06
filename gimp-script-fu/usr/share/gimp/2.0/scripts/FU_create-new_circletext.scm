@@ -1,10 +1,49 @@
 ; FU_create-new_circletext.scm
-; version 2.0 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/03/2014 on GIMP-2.8.10
 
-; ---------------------------------------------------------------------------------------------------------------------
-; Original information ----------------------------------------------------------------------------------------
+;==============================================================
+;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ;; text-circle.scm -- a script for The GIMP 1.1
 ;; Author: Shuji Narazaki <narazaki@gimp.org>
 ;; Time-stamp: <1998/11/25 13:26:51 narazaki@gimp.org>
@@ -28,7 +67,8 @@
 ;; Thus, as a dirty trick, by adding tall letters: "lA", and "gy" which have
 ;; large descent value to each letter temporally, most letters in most fonts
 ;; are aligned correctly. But don't expect completeness :-<
-;-----------------------------------------------------------------------------------------------------------------------
+;==============================================================
+
 
 (define (FU-circletext text radius start-angle fill-angle
 			       font-size antialias make-arc TRANS font-name)

@@ -1,10 +1,30 @@
 ; FU_effects-selection_glass-selection.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/13/2014 on GIMP-2.8.10
 ;
-; Create Glass Effect of Selection
-; based upon glass-text.scm by Scott Mosteller
+;==============================================================
+;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
 ;
 ; LICENSE
 ;
@@ -21,9 +41,13 @@
 ;    You should have received a copy of the GNU General Public License
 ;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;
-;
+;==============================================================
+; Original information 
+; 
+; Create Glass Effect of Selection
+; based upon glass-text.scm by Scott Mosteller
+;==============================================================
+
 ; Define Function For Glass Translucency Values
 ;
 (define (get-glass-trans-curve parm)
@@ -38,7 +62,6 @@
 
 (define (FU-glass-selection image
 			drawable
-
 			glass-color
 			glass-depth
 			glass-trans
@@ -56,7 +79,10 @@
 			)
 				(begin; START OF PROCESSING
 					   (gimp-image-undo-group-start image)
-
+					   
+						(if (not (= RGB (car (gimp-image-base-type image))))
+							(gimp-image-convert-rgb image))					   
+					   
 						(let* (
 							(theHeight (car (gimp-image-height image)))
 							(theWidth (car (gimp-image-width image))) 
@@ -137,7 +163,7 @@
 		"Paul Sherman"
 		"Paul Sherman"
 		"12/30/2009"
-		"RGB RGBA GRAY GRAYA"
+		"*"
 		SF-IMAGE "Image" 0
 		SF-DRAWABLE "Drawable" 0
 		SF-COLOR      _"Glass color"         '(119 171 234)

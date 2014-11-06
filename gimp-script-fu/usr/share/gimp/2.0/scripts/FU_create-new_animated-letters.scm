@@ -1,7 +1,7 @@
 ; FU_create-new_animated-letters.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/15/2014 on GIMP-2.8.10
 ;
 ; 10/01/2008 -
 ; Layers-to-image-size correction
@@ -10,40 +10,74 @@
 ; change script name to know what it does
 ; and menu accommodation for GIMP-2.6 by Paul Sherman
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/15/2014 - generic font specification, cleanup, save instructions in help
+;==============================================================
 ;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
+; 
 ; Letter Drop script for GIMP 2.4
 ; Original author: Saul Goode
 ; Tags: animation
 ; Author statement:
 ; Based on the PERL plug-in "Impact Letters" by Ky McPherson
 ;
-; The GIMP -- an image manipulation program
-; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
-; 
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-; 
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
-;
 ; 19.12.2007 - Added support for transparent background - Alexia Death
-;
+;==============================================================
 
-(define (FU-letter-drop text FGcolor BGcolor alpha_bg font letter-delay word-delay start-size
-  end-size frames-per-letter opacity geometric use-gradient gradient)
+
+(define (FU-letter-drop 
+		text 
+		FGcolor 
+		BGcolor 
+		alpha_bg 
+		font 
+		letter-delay 
+		word-delay 
+		start-size
+		end-size 
+		frames-per-letter 
+		opacity 
+		geometric 
+		use-gradient 
+		gradient
+	)
   ;; This function returns a list of floats evenly spaced in the range start to end
   (define (algebraic-prog start end elements)
     (let* (
@@ -64,8 +98,7 @@
       new-list
       )
     )
-  ;; 'geometric-prog' returns a list of floats with each element being the product of a radix and the
-  ;; preceding element
+  ;; 'geometric-prog' returns a list of floats with each element being the product of a radix and the preceding element
   (define (geometric-prog start end elements)
     (let* (
       (cnt 2)
@@ -146,11 +179,11 @@
       (y-offset 0)
       (layer 0)
       (tmp-layer 0)       ;; temporary layer
-      (float-layer 0)  ;; another temporary layer
-      (ref-layer 0) ;; Holds the bounds of the maximum char size for a given letter (at a point in time)
+      (float-layer 0)     ;; another temporary layer
+      (ref-layer 0)       ;; Holds the bounds of the maximum char size for a given letter (at a point in time)
       (background 0)
-      (src-layer 0) ;; Image of all the previous letters
-      (max-width 0)  ;; Used to determine if ref-layer is growing in size
+      (src-layer 0)       ;; Image of all the previous letters
+      (max-width 0)       ;; Used to determine if ref-layer is growing in size
       (image-bounds '(99999 99999 0 0))
       (disposal 0)
       )
@@ -342,37 +375,37 @@
 
 (script-fu-register "FU-letter-drop"
   "<Image>/Script-Fu/Create New/Letter Drop Animation"
-  "Given a text, generates an animated sequence where letters drop onto the background individually.\n\nSave as a GIF, when asked, export as an ANIMATION."
+  "Given a text, generates an animated sequence where letters drop onto the background individually.\n\nExport As a GIF, and when asked, export as an ANIMATION."
   "Saul Goode"
   "Saul Goode"
   "February 2006"
   ""
     SF-STRING _"Text"
         "The GIMP"
-    SF-COLOR _"Foreground"  ;;     "color to use for letter"
+    SF-COLOR _"Foreground"  			;;   color to use for letter
         '( 0 0 0 )
-    SF-COLOR _"Background"  ;;     "color to use for background"
+    SF-COLOR _"Background"  			;;  color to use for background
         '( 255 255 255 )
-    SF-TOGGLE _"Transparent background";; "Wether to use transparency in stead of bg color"
+    SF-TOGGLE _"Transparent background"	;; wether to use transparency in stead of bg color
         FALSE
-    SF-FONT  _"Font"        ;;      "font"
-        "-*-utopia-bold-r-normal-*-50-*-*-*-p-*-*-*"
-    SF-ADJUSTMENT _"Letter delay";; "time delay between letter in a word"
+    SF-FONT  _"Font"        			;;  font
+        "Sans Bold"
+    SF-ADJUSTMENT _"Letter delay"		;;  time delay between letter in a word
         '( 100 0 5000 1 100 0 0)
-    SF-ADJUSTMENT _"Word delay"  ;;  "additional time delay for the space between words"
+    SF-ADJUSTMENT _"Word delay"  		;;  additional time delay for the space between words
         '( 300 0 5000 1 100 0 0 )
-    SF-ADJUSTMENT _"Starting size" ;;"animated letter initial size"
+    SF-ADJUSTMENT _"Starting size" 		;;  animated letter initial size
         '( 48 6 240 1 12 0 0 )
-    SF-ADJUSTMENT _"Ending size";;   "animated letter final size"
+    SF-ADJUSTMENT _"Ending size"		;;  animated letter final size
         '( 12 6 240 1 12 0 0 )
-    SF-ADJUSTMENT _"Frames per letter";; "number of frames for each animated letter"
+    SF-ADJUSTMENT _"Frames per letter"	;;  number of frames for each animated letter
         '( 5 2 200 1 5 0 0 )
-    SF-ADJUSTMENT _"Opacity" ;; Opacity of "moving" letters
+    SF-ADJUSTMENT _"Opacity" 			;; Opacity of "moving" letters
         '( 100 0 100 1 5 0 0 )
-    SF-TOGGLE _"Geometric Progression";; "Letter size doubles each step"
-        FALSE  ;; Otherwise letter size increases linearly
-    SF-TOGGLE _"Use Color from Gradient";; "Sweep colors from gradient during animation"
+    SF-TOGGLE _"Geometric Progression"	;;  Letter size doubles each step
+        FALSE  							;;  Otherwise letter size increases linearly
+    SF-TOGGLE _"Use Color from Gradient";;  Sweep colors from gradient during animation
         FALSE
-    SF-GRADIENT _"Color Gradient" ;; "Gradient to use"
+    SF-GRADIENT _"Color Gradient"		;;  Gradient to use
         "Full saturation spectrum CW"
   )

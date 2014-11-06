@@ -1,0 +1,19 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-blend")
+(name "Haze (FG color)")
+(tool-options "GimpBlendOptions"
+    (tool "gimp-blend-tool")
+    (foreground (color-rgb 0.859796 0.941499 0.950569))
+    (opacity 0.466216)
+    (gradient "GPS Haze and Atmosphere")
+    (gradient-type bilinear))
+(use-fg-bg no)
+(use-brush no)
+(use-dynamics no)
+(use-gradient yes)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

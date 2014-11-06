@@ -1,0 +1,23 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-smudge")
+(name "Speed Blending")
+(tool-options "GimpSmudgeOptions"
+    (tool "gimp-smudge-tool")
+    (foreground (color-rgb 0.448926 0.133965 0.133965))
+    (opacity 0.487805)
+    (brush "A-3 Crackled #1")
+    (dynamics "Speed Blending")
+    (palette "Default")
+    (brush-size 200.000000)
+    (use-jitter yes)
+    (jitter-amount 0.410000))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

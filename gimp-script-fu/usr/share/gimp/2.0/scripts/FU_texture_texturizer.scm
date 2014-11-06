@@ -1,35 +1,78 @@
 ; FU_texture_texturizer.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/15/2014 on GIMP-2.8.10
 ;
 ; edited for gimp-2.6.1 - 11/27/2008 by Paul Sherman
+; 02/15/2014 - accommodate indexed images
+;==============================================================
 ;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;
+; I*****  IN ADDITION: *****************************************
+
+; Put the Gimpressionist presets (ev_angledstrokes.txt and 21 others...)  in :
+;
+;	Windows Vista/7/8
+;	C:\Program Files\GIMP 2\share\gimp\2.0\gimpressionist\preset
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\gimpressionist\presets
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\gimpressionist\preset
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\gimpressionist\presets  
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/gimpressionist/presets 
+;	
+;	Linux - system-wide
+;	/usr/share/gimp/2.0/gimpressionist/Presets 
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
 ; 
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-; 
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
-;
 ; Texturizer script  for GIMP 1.2
 ; Copyright (C) 2001 Iccii <iccii@hotmail.com>
 ; 
 ; I would appreciate any comments/suggestions that you have about this
 ; script. I need new texture, how to create it.
-;
-; End original information ------------------------------------------
-;-------------------------------------------------------------------- 
+;==============================================================
+
 
 (define (FU-texturizer
 			img
@@ -42,17 +85,19 @@
 			invert?
 			show?
 	)
+	
+	(gimp-image-undo-group-start img)
+	(define indexed (car (gimp-drawable-is-indexed drawable)))
+	(if (= indexed TRUE)(gimp-image-convert-rgb img))
+	
   (let* (
-	 (width (car (gimp-drawable-width drawable)))
-	 (height (car (gimp-drawable-height drawable)))
-	 (old-fg (car (gimp-context-get-foreground)))
-	 (old-pattern (car (gimp-context-get-pattern)))
-	 (tmp-image (car (gimp-image-new width height GRAY)))
-	 (tmp-layer (car (gimp-layer-new tmp-image width height
-                                         2 "Texture" 100 0)))  ; was 'GRAY-Image "Texture" 100 NORMAL'
-        )
-
-    (gimp-image-undo-group-start img)
+		 (width (car (gimp-drawable-width drawable)))
+		 (height (car (gimp-drawable-height drawable)))
+		 (old-fg (car (gimp-context-get-foreground)))
+		 (old-pattern (car (gimp-context-get-pattern)))
+		 (tmp-image (car (gimp-image-new width height GRAY)))
+		 (tmp-layer (car (gimp-layer-new tmp-image width height 2 "Texture" 100 0)))
+		)
     (gimp-image-undo-disable tmp-image)
     (gimp-drawable-fill tmp-layer WHITE-IMAGE-FILL)
     (gimp-image-insert-layer tmp-image tmp-layer 0 0)
@@ -92,18 +137,18 @@
 (script-fu-register
 	"FU-texturizer"
 	"<Image>/Script-Fu/Texture/Texturizer"
-	"Creates textured canvas image. Be sure presets are installed into teh gimpressionist/presets folder."
+	"Creates textured canvas image. Be sure presets are installed into the gimpressionist/presets folder."
 	"Iccii <iccii@hotmail.com>"
 	"Iccii"
 	"2001, Oct"
-	"RGB* GRAY*"
-	SF-IMAGE      "Image"	           0
-	SF-DRAWABLE   "Drawable"         0
-	SF-PATTERN    "Use Pattern"      "Pine?"
-	SF-OPTION     "Texture Type"     '("Pattern" "Sand" "Paper" "Cloud")
-	SF-ADJUSTMENT "Angle"            '(135 0 360 1 10 0 0)
-	SF-ADJUSTMENT "Depth"            '(0 -5 5 1 1 0 1)
-	SF-OPTION     "Stretch Direction" '("None" "Horizontal" "Vertical")
-	SF-TOGGLE     "Invert"           FALSE
-	SF-TOGGLE     "Show Texture"     FALSE
+	"*"
+	SF-IMAGE      "Image"	           	0
+	SF-DRAWABLE   "Drawable"         	0
+	SF-PATTERN    "Use Pattern"      	"Pine?"
+	SF-OPTION     "Texture Type"     	'("Pattern" "Sand" "Paper" "Cloud")
+	SF-ADJUSTMENT "Angle"            	'(135 0 360 1 10 0 0)
+	SF-ADJUSTMENT "Depth"            	'(0 -5 5 1 1 0 1)
+	SF-OPTION     "Stretch Direction" 	'("None" "Horizontal" "Vertical")
+	SF-TOGGLE     "Invert"           	FALSE
+	SF-TOGGLE     "Show Texture"     	FALSE
 )

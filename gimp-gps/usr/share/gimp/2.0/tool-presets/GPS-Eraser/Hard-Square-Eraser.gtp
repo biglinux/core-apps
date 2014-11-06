@@ -1,0 +1,21 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-eraser")
+(name "Hard Square Eraser")
+(tool-options "GimpEraserOptions"
+    (tool "gimp-eraser-tool")
+    (foreground (color-rgb 0.082069 0.052210 0.000000))
+    (background (color-rgb 0.000000 0.000000 0.000000))
+    (brush "Charcoal block")
+    (dynamics "Hard Square Eraser")
+    (palette "Default")
+    (brush-size 50.000000))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient no)
+(use-pattern no)
+(use-palette no)
+(use-font no)
+
+# end of GIMP tool preset file

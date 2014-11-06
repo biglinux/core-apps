@@ -1,7 +1,7 @@
 ; FU_sharpness-sharper_midtone-sharp.scm
-; version 3.1 [gimphelp.org]
+; version 3.3 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/15/2014 on GIMP-2.8.10
 ;
 ; --------------------------------------------------------------------
 ;   - Changelog -
@@ -21,21 +21,32 @@
 ; Possible user layer adjustment is on new layer - not the mask.
 ; Cleaned up code a bit...
 ; Initiated version number to track changes.
-; Last tested on GIMP-2.6.3
+; 02/15/2014 - accommodate indexed images
+;==============================================================
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; Installation:
+; This script should be placed in the user or system-wide script folder.
 ;
-; The GIMP -- an image manipulation program
-; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
-; version 2.0
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
 ;
-; Midtone Sharp script  for GIMP 2.4
-; Original author: Tim Jacobs <twjacobs@gmail.com>
-; Author statement: Sharpens the midtones of an image
+;==============================================================
 ;
-; --------------------------------------------------------------------
+; LICENSE
+;
 ;    This program is free software: you can redistribute it and/or modify
 ;    it under the terms of the GNU General Public License as published by
 ;    the Free Software Foundation, either version 3 of the License, or
@@ -49,91 +60,105 @@
 ;    You should have received a copy of the GNU General Public License
 ;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
+; Original information 
+; 
+; version 2.0
+;
+; Midtone Sharp script  for GIMP 2.4
+; Original author: Tim Jacobs <twjacobs@gmail.com>
+; Author statement: Sharpens the midtones of an image
+;==============================================================
 
-(define (FU-midtone-sharp image drawable inStrength merger)
 
-       (gimp-selection-all image)
-       (define (floor x)
-         (- x (fmod x 1))
-       )
+(define (FU-midtone-sharp 
+		image 
+		drawable 
+		inStrength 
+		merger
+	)
 
-       (define (interpolate run rise x)
-         (max (min (floor (* (/ rise run) x)) 255) 0)
-       )
+	(gimp-image-undo-group-start image)
+	(define indexed (car (gimp-drawable-is-indexed drawable)))
+	(if (= indexed TRUE)(gimp-image-convert-rgb image))		 
+		 
+	(gimp-selection-all image)
+	(define (floor x)
+	 (- x (fmod x 1))
+	)
 
-       ; Initialize variables
-       (let* 
-         (
-           (i 0)
-           (mask_opacity 50)
-           (num_bytes 256)
-           (thresh_1 85)
-           (thresh_2 116)
-           (thresh_3 140)
-           (thresh_4 171)
-           (thresh_5 256)
-           (value-curve (make-vector num_bytes 'byte))
-           (sharp-layer)
-           (sharp-mask)
-         )
+	(define (interpolate run rise x)
+	 (max (min (floor (* (/ rise run) x)) 255) 0)
+	)
 
-         (gimp-image-undo-group-start image)
+	; Initialize variables
+	(let* 
+	 (
+	   (i 0)
+	   (mask_opacity 50)
+	   (num_bytes 256)
+	   (thresh_1 85)
+	   (thresh_2 116)
+	   (thresh_3 140)
+	   (thresh_4 171)
+	   (thresh_5 256)
+	   (value-curve (make-vector num_bytes 'byte))
+	   (sharp-layer)
+	   (sharp-mask)
+	 )
 
-       ; create TRC for sharp layer mask
-         (while (< i thresh_1)
-           (aset value-curve i 0)
-           (set! i (+ i 1))
-         )
+	; create TRC for sharp layer mask
+	 (while (< i thresh_1)
+	   (aset value-curve i 0)
+	   (set! i (+ i 1))
+	 )
 
-         (while (< i thresh_2)
-           (aset value-curve i (interpolate (- thresh_2 thresh_1) 255 (- i thresh_1)))
-           (set! i (+ i 1))
-         )
+	 (while (< i thresh_2)
+	   (aset value-curve i (interpolate (- thresh_2 thresh_1) 255 (- i thresh_1)))
+	   (set! i (+ i 1))
+	 )
 
-         (while (< i thresh_3)
-           (aset value-curve i 255)
-           (set! i (+ i 1))
-         )
+	 (while (< i thresh_3)
+	   (aset value-curve i 255)
+	   (set! i (+ i 1))
+	 )
 
-         (while (< i thresh_4)
-           (aset value-curve i (interpolate (- thresh_4 thresh_3) -255 (- i thresh_3)))
-           (set! i (+ i 1))
-         )
+	 (while (< i thresh_4)
+	   (aset value-curve i (interpolate (- thresh_4 thresh_3) -255 (- i thresh_3)))
+	   (set! i (+ i 1))
+	 )
 
-         (while (< i thresh_5)
-           (aset value-curve i 0)
-           (set! i (+ i 1))
-         )
+	 (while (< i thresh_5)
+	   (aset value-curve i 0)
+	   (set! i (+ i 1))
+	 )
 
-       ; Create new layer and add to the image
-         (set! sharp-layer (car (gimp-layer-copy drawable 1)))
-         (gimp-image-insert-layer image sharp-layer 0 -1)
-         (gimp-item-set-name sharp-layer "Sharp Mask")
+	; Create new layer and add to the image
+	 (set! sharp-layer (car (gimp-layer-copy drawable 1)))
+	 (gimp-image-insert-layer image sharp-layer 0 -1)
+	 (gimp-item-set-name sharp-layer "Sharp Mask")
 
-       ; create mask layer
-         (set! sharp-mask (car (gimp-layer-create-mask sharp-layer ADD-COPY-MASK)))
-         (gimp-layer-add-mask sharp-layer sharp-mask)
-         (gimp-layer-set-opacity sharp-layer mask_opacity)
-         (gimp-layer-set-mode sharp-layer NORMAL-MODE)
+	; create mask layer
+	 (set! sharp-mask (car (gimp-layer-create-mask sharp-layer ADD-COPY-MASK)))
+	 (gimp-layer-add-mask sharp-layer sharp-mask)
+	 (gimp-layer-set-opacity sharp-layer mask_opacity)
+	 (gimp-layer-set-mode sharp-layer NORMAL-MODE)
 
-       ; apply TRC to mask layer
-         (gimp-curves-explicit sharp-mask HISTOGRAM-VALUE num_bytes value-curve)
+	; apply TRC to mask layer
+	 (gimp-curves-explicit sharp-mask HISTOGRAM-VALUE num_bytes value-curve)
 
-        (plug-in-unsharp-mask 1 image sharp-layer 5.5 1.50 0)
-		(gimp-layer-remove-mask sharp-layer 0)
-		
-		; Merge down with the drawable, if selection box was checked.
-		(if (= merger TRUE)
-			(gimp-image-merge-down image sharp-layer 1)
-			()
-		)
-		
-       ; Cleanup
-         (gimp-image-undo-group-end image)
-         (gimp-displays-flush)
-       )
+	(plug-in-unsharp-mask 1 image sharp-layer 5.5 1.50 0)
+	(gimp-layer-remove-mask sharp-layer 0)
+
+	; Merge down with the drawable, if selection box was checked.
+	(if (= merger TRUE)
+		(gimp-image-merge-down image sharp-layer 1)
+		()
+	)
+	; Cleanup
+	 (gimp-image-undo-group-end image)
+	 (gimp-displays-flush)
+	)
 )
 
 (script-fu-register "FU-midtone-sharp"
@@ -142,9 +167,9 @@
     "twjacobs@gmail.com"
     "Tim Jacobs"
     "March 19, 2005"
-    "RGB* GRAY*"
-    SF-IMAGE 		"Image" 0
-    SF-DRAWABLE 	"Drawable" 0
+    "*"
+    SF-IMAGE 		"Image" 					0
+    SF-DRAWABLE 	"Drawable" 					0
 	SF-ADJUSTMENT	"Strength of Sharpening"	'(1.0 0.5 10.0 0.1 0.1 2 0)
-	SF-TOGGLE "Merge Layers?"  FALSE
+	SF-TOGGLE 		"Merge Layers?"  			FALSE
 )

@@ -1,10 +1,49 @@
 ; FU_color_tone-mapping.scm
-; version 2.7 [gimphelp.org]
+; version 2.8 [gimphelp.org]
 ; last modified/tested by Paul Sherman
-; 05/05/2012 on GIMP-2.8
+; 02/15/2014 on GIMP-2.8.10
 ;
-; ------------------------------------------------------------------
-; Original information ---------------------------------------------
+; 02/15/2014 - convert to RGB if needed, merge option
+;==============================================================
+;
+; Installation:
+; This script should be placed in the user or system-wide script folder.
+;
+;	Windows Vista/7/8)
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Users\YOUR-NAME\.gimp-2.8\scripts
+;	
+;	Windows XP
+;	C:\Program Files\GIMP 2\share\gimp\2.0\scripts
+;	or
+;	C:\Documents and Settings\yourname\.gimp-2.8\scripts   
+;    
+;	Linux
+;	/home/yourname/.gimp-2.8/scripts  
+;	or
+;	Linux system-wide
+;	/usr/share/gimp/2.0/scripts
+;
+;==============================================================
+;
+; LICENSE
+;
+;    This program is free software: you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation, either version 3 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;
+;==============================================================
+; Original information 
 ;
 ; Tonemapping is a script for The GIMP
 ;
@@ -12,25 +51,7 @@
 ; and shadow/highlight detail.
 ;
 ; Copyright (C) 2007 Harry Phillips <script-fu@tux.com.au>
-;
-; This program is free software; you can redistribute it and/or modify
-; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 3 of the License, or
-; (at your option) any later version.  
-; 
-; This program is distributed in the hope that it will be useful,
-; but WITHOUT ANY WARRANTY; without even the implied warranty of
-; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-; GNU General Public License for more details.
-; 
-; You should have received a copy of the GNU General Public License
-; along with this program; if not, you can view the GNU General Public
-; License version 3 at the web site http://www.gnu.org/licenses/gpl-3.0.html
-; Alternatively you can write to the Free Software Foundation, Inc., 675 Mass
-; Ave, Cambridge, MA 02139, USA.
-;
-; End original information ------------------------------------------
-;--------------------------------------------------------------------
+;==============================================================
 
 
 (define (my-duplicate-layer image layer)
@@ -38,11 +59,19 @@
               (gimp-image-insert-layer image dup-layer 0 0)
 	      dup-layer))
 
-(define (FU-tone-mapping theImage theLayer blurAmount opacityAmount)
+(define (FU-tone-mapping 
+		theImage 
+		theLayer 
+		blurAmount 
+		opacityAmount 
+		inMerge
+	)
     
     ;Start an undo group so the process can be undone with one undo
     (gimp-image-undo-group-start theImage)
-    
+	; convert to RGB if neeeded
+	(if (not (= RGB (car (gimp-image-base-type theImage))))
+			 (gimp-image-convert-rgb theImage))
     (let
     (
 	(copy1 (my-duplicate-layer theImage theLayer))
@@ -68,6 +97,7 @@
     ;Change the merged layers opacity
     (gimp-layer-set-opacity merged opacityAmount))
 
+	(if (= inMerge TRUE)(gimp-image-merge-visible-layers theImage EXPAND-AS-NECESSARY))
     ;Finish the undo group for the process
     (gimp-image-undo-group-end theImage)
     
@@ -83,10 +113,11 @@
 	"David Meiklejohn, Harry Phillips (Process)"
 	"2006, David Meiklejohn, Harry Phillips (Process)"
 	"Feb. 02 2006"
-	"RGB*"
-	SF-IMAGE        "Image"     0
-	SF-DRAWABLE     "Drawable"  0
-	SF-ADJUSTMENT   _"Blur:"     '(100 100 500 10 10 1 0)
-	SF-ADJUSTMENT   _"Opacity"      '(90 0 100 1 10 1 0)
+	"*"
+	SF-IMAGE        "Image"     					0
+	SF-DRAWABLE     "Drawable"  					0
+	SF-ADJUSTMENT   "Blur:"     					'(100 100 500 10 10 1 0)
+	SF-ADJUSTMENT   "Opacity"   					'(90 0 100 1 10 1 0)
+	SF-TOGGLE     	"Merge layers when complete?" 	FALSE
 )            
 
