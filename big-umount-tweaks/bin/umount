@@ -7,7 +7,7 @@ IFS='\'
 #Check for removable
 #Checa se eh removivel
 ############
-if [ "$(cat /sys/block/$(df "$*" | cut -f1 -d" " | grep "/" | sed 's|/dev/||g;s|[1-9].*||g')/removable)" = "1" ];
+if [ "$(cat /sys/block/$(df "$*" 2> /dev/null | cut -f1 -d" " | grep "/" | sed 's|/dev/||g;s|[1-9].*||g')/removable 2> /dev/null)" = "1" ];
 then
     forcehup=y
 fi
@@ -17,7 +17,7 @@ fi
 #Checa se eh usb
 ############
 
-if [ "$(udisksctl info -b $(df "$*" | cut -f1 -d" " | grep "/" | sed 's|[1-9].*||g') | grep -e "-usb-")" != "" ];
+if [ "$(udisksctl info -b $(df "$*" 2> /dev/null | cut -f1 -d" " | grep "/" | sed 's|[1-9].*||g') 2> /dev/null | grep -e "-usb-")" != "" ];
 then
     forcehup=y
 fi

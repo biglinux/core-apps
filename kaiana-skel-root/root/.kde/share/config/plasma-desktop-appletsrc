@@ -119,10 +119,10 @@ zvalue=0
 [Containments][20][Wallpaper][image]
 slideTimer=10
 slidepaths=
-userswallpapers=
-wallpaper=/usr/share/wallpapers/Kaiana/content/images/2560x1600.jpg
+userswallpapers=/usr/share/wallpapers/Kaiana/content/images/1920x1080.jpg
+wallpaper=/usr/share/wallpapers/Kaiana/content/images/1920x1080.jpg
 wallpapercolor=0,0,0
-wallpaperposition=0
+wallpaperposition=2
 
 [Containments][21]
 activity=
@@ -296,6 +296,7 @@ zvalue=7
 
 [Containments][21][Applets][32][Configuration][General]
 buttonImage=file:///usr/share/icons/kaiana/kaiana-kmenu.png
+nameFormat=3
 useCustomButtonImage=true
 
 [Containments][21][Applets][32][PopupApplet]

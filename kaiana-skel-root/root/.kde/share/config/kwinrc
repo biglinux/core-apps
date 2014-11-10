@@ -6,14 +6,14 @@ AnimationSpeed=3
 Backend=OpenGL
 Enabled=true
 GLColorCorrection=false
-GLCore=true
+GLCore=false
 GLLegacy=false
 GLPreferBufferSwap=e
 GLTextureFilter=1
 GraphicsSystem=raster
-HiddenPreviews=5
+HiddenPreviews=4
 OpenGLIsUnsafe=false
-UnredirectFullscreen=false
+UnredirectFullscreen=true
 XRenderSmoothScale=false
 
 [Desktops]
@@ -83,7 +83,7 @@ BorderSize=1
 ButtonsOnLeft=MS
 ButtonsOnRight=HIAX
 CustomButtonPositions=false
-PluginLib=kwin3_oxygen
+PluginLib=kwin3_qtcurve
 ShowToolTips=true
 
 [TabBox]

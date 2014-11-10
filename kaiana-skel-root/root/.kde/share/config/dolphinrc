@@ -12,6 +12,7 @@ FontWeight=50
 FontWeight=50
 
 [General]
+GlobalViewProps=true
 ShowSpaceInfo=true
 ShowToolTips=true
 Version=200
@@ -20,23 +21,29 @@ ViewPropsTimestamp=2014,1,25,16,13,24
 [IconsMode]
 FontWeight=50
 IconSize=48
+PreviewSize=48
 
 [MainWindow]
+Height 1050=648
 Height 768=508
-State=AAAA/wAAAAD9AAAAAwAAAAAAAAC6AAAByfwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAgBAAAF+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAzAAAByQAAAFABAAAFAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAACAEAAAUAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAgBAAAFAAACxwAAAckAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAC6AAACU/wCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAgBAAAF+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAA1AAACUwAAAFABAAAFAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAACAEAAAUAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAgBAAAFAAAClAAAAlMAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
 ToolBarsMovable=Disabled
 Width 1024=750
 Width 1366=900
+Width 1680=849
 
-[MainWindow][Toolbar mainToolBar]
-ToolButtonStyle=IconOnly
+[Open-with settings]
+CompletionMode=5
+History=okular
 
 [PreviewSettings]
-Plugins=imagethumbnail,jpegthumbnail,directorythumbnail,kffmpegthumbnailer
+Plugins=gsthumbnail,rawthumbnail,comicbookthumbnail,words_rtf_thumbnail,words_msword_thumbnail,words_docx_thumbnail,windowsexethumbnail,imagethumbnail,exrthumbnail,jpegthumbnail,svgthumbnail,windowsimagethumbnail,openofficeorgthumbnail,words_odt_thumbnail,kffmpegthumbnailer
 
 [SettingsDialog]
+Height 1050=361
 Height 768=349
 Width 1366=603
+Width 1680=668
 
 [Toolbar mainToolBar]
 ToolButtonStyle=IconOnly

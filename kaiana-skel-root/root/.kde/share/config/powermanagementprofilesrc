@@ -22,7 +22,7 @@ lidAction=1
 powerButtonAction=16
 
 [Battery][SuspendSession]
-idleTime=900000
+idleTime=1200000
 suspendType=0
 
 [LowBattery]
@@ -34,3 +34,7 @@ idleTime=120
 [LowBattery][HandleButtonEvents]
 lidAction=1
 powerButtonAction=16
+
+[LowBattery][SuspendSession]
+idleTime=600000
+suspendType=0
