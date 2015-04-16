@@ -30,6 +30,7 @@ apply=$"Aplicar"
 close=$"Sair"
 tip_parted=$"Particionar e formatar dispositivos de armazenamento"
 tip_gdu=$"Efetuar testes nos dispositivos de armazenamento e descubrir se estao funcionando corretamente"
+tip_pendrive=$"Formate de forma simples e rápida"
 
 . /usr/share/bigcontrolcenter/default/theme.sh.htm
 
@@ -82,6 +83,11 @@ echo "<TABLE align=center><tr><td>"
     echo "<a href=\"/usr/share/bigbashview/run.run?bigsudo gparted\"" "$mouseover_open" $tip_parted "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=parted.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Particionar ou formatar" " </font></td></tr></table></a>"
 echo '</td><td width=100%></td><td>'
     echo "<a href=\"/usr/share/bigbashview/run.run?bigsudo gnome-disks\"" "$mouseover_open" $tip_gdu "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=gdu.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Analisar discos e particoes" " </font></td></tr></table></a>"
+echo '</table>'
+echo "<TABLE align=center><tr><td>"
+    echo "<a href=\"/usr/share/bigbashview/run.run?mintstick -m format\"" "$mouseover_open" $tip_pendrive "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=pendrive.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Formatar Pen Drive ou cartão de memória" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+echo "</td></tr></table></a>"
 echo '</table>'
 
 

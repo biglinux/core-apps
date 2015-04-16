@@ -1,9 +1,9 @@
 Package: bigcontrolcenter-internet-firewall
-Version: 1.0.0-1kaiana5
+Version: 1.0.0-1kaiana6
 Architecture: all
 Maintainer: Bruno Goncalves <www.biglinux.com.br>
 Installed-Size: 1
-Depends: bigcontrolcenter (>= 1.0.0-1kaiana16), gufw
+Depends: kcenter, gufw
 Section: admin
 Priority: optional
 Description: Configure firewall

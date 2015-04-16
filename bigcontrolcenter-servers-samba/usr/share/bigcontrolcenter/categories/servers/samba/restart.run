@@ -13,6 +13,6 @@
 export TEXTDOMAINDIR="/usr/share/locale-langpack"
 export TEXTDOMAIN=bigcontrolcenter-servers-samba
 
-/usr/share/bigcontrolcenter/categories/servers/samba/restart
+kdesudo /usr/share/bigcontrolcenter/categories/servers/samba/restart
 
   kdialog --msgbox $"Servidor reiniciado!" --title $"Servidor reiniciado!"

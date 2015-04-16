@@ -28,12 +28,18 @@ case "$1" in
 
     --enable)
       start smbd
+      start nmbd
+      /etc/init.d/smbd start
+      /etc/init.d/nmbd start
       exit 0
     ;;
 
 
     --disable)
       stop smbd
+      stop nmbd
+      /etc/init.d/smbd stop
+      /etc/init.d/nmbd stop
       exit 0
     ;;
 
@@ -67,6 +73,29 @@ case "$1" in
       exit 0
     ;;
 
+    
+    --netbios-hostname)
+      #Confere se já existe a entrada netbios
+      if [ "$(grep "netbios name =" /etc/samba/smb.conf)" != "" ]; then
+	  #Altera a linha netbios
+	  sed -i "s|.*netbios name =.*|netbios name = $(hostname | cut -c1-15)|g" /etc/samba/smb.conf
+      else
+	  #Inclui a linha netbios
+	  sed -i "\|\[global\]|{p;s|.*|netbios name = $(hostname | cut -c1-15)|;}" /etc/samba/smb.conf
+      fi
+      exit 0
+    ;;
+
+    --netbios)
+      if [ "$(grep "netbios name =" /etc/samba/smb.conf)" != "" ]; then
+	  #Altera a linha netbios
+	  sed -i "s|.*netbios name =.*|netbios name = $(echo "$2" | cut -c1-15)|g" /etc/samba/smb.conf
+      else
+	  #Inclui a linha netbios
+	  sed -i "\|\[global\]|{p;s|.*|netbios name = $(echo "$2" | cut -c1-15)|;}" /etc/samba/smb.conf
+      fi
+      exit 0
+    ;;
 
     --enable-autostart)
       dpkg-divert --package bigsamba --rename --remove /etc/init/smbd.conf
@@ -87,6 +116,8 @@ case "$1" in
         echo "Manage Samba
 
 --enable		Start Samba server
+--netbios-hostname	Change netbios name for hostname
+--netbios name		Change name for your favorite name limit is 15 caracters
 --disable		Stop Samba server
 --autostart		View autostart enabled
 --enable-autostart	Samba automatic start on boot

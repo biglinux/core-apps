@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Webcam
+Comment=Set up your webcam
+Comment[pt_BR]=Configure a imagem da sua webcam
+Exec=v4l2ucp
+Icon=v4l2ucp
+Categories=Hardware

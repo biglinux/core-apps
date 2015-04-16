@@ -27,6 +27,10 @@ CacheTexture=false
 TabBox=false
 TabBoxAlternative=false
 
+[Effect-CoverSwitch]
+TabBox=true
+TabBoxAlternative=false
+
 [Effect-Zoom]
 InitialZoom=1
 

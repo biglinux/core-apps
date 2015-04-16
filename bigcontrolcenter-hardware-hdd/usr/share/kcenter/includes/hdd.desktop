@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Partition, format and analyze disks
+Name[pt_BR]=Particionar, formatar e analisar discos
+Comment=Manage hard drives, flash drives and other media
+Comment[pt_BR]=Gerencie HDs, pen drives e outras mídias
+Exec=bigbashview /usr/share/bigcontrolcenter/categories/hardware/hdd/hdd.sh.htm -i /usr/share/bigcontrolcenter/categories/hardware/hdd/icon.png
+Icon=drive-harddisk
+Categories=Hardware

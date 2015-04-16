@@ -16,7 +16,7 @@ case "$1" in
     ln -sf /usr/bin/google-chrome-unstable-ram /usr/bin/google-chrome-unstable
     ;;
   upgrade)
-        if [ "$(dpkg-divert --list /etc/init.d/sendsigs)" = "" ]
+        if [ "$(dpkg-divert --list google-chrome-unstable)" = "" ]
         then
 	    dpkg-divert --package $package_name --divert /usr/bin/google-chrome-unstable.distrib --rename /usr/bin/google-chrome-unstable
 

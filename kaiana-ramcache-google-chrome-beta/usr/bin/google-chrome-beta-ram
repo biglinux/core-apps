@@ -8,6 +8,13 @@
 ##################################################################
 
 
+# se for livecd não utiliza a cache na ram
+if [ -e "/rofs" ]; then
+    google-chrome-beta.distrib "$@"
+    exit
+fi
+
+
 #Se um google-chrome-beta ja estiver utilizando cache na ram, apenas inicia outra instancia sem executar o restante do script
 if [ "$(ps -f -u $USER| grep /usr/bin/google-chrome-beta-ram$ | grep -v -c grep)" -ge "3" ]; then
     google-chrome-beta.distrib --user-data-dir="$HOME/.ramcache/google-chrome-beta/config" "$@"

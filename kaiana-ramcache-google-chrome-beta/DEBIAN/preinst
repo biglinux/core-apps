@@ -16,7 +16,7 @@ case "$1" in
     ln -sf /usr/bin/google-chrome-beta-ram /usr/bin/google-chrome-beta
     ;;
   upgrade)
-        if [ "$(dpkg-divert --list /etc/init.d/sendsigs)" = "" ]
+        if [ "$(dpkg-divert --list /usr/bin/google-chrome-beta)" = "" ]
         then
 	    dpkg-divert --package $package_name --divert /usr/bin/google-chrome-beta.distrib --rename /usr/bin/google-chrome-beta
 

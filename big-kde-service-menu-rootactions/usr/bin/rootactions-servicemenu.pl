@@ -919,7 +919,7 @@ sub open_with {
 		  $APPNAME = "kwrite"; }
 	}
 
-	exec "$SUCOMMAND \"\'$EXECNAME\' do_open_with \'$APPNAME\' \'$TARGET\'\"";
+	exec "$SUCOMMAND \"\'$EXECNAME\' do_open_with \'kdeinit4_wrapper $APPNAME\' \'$TARGET\'\"";
 	exit $?; 
 }
 

@@ -1,0 +1,19 @@
+[Desktop Entry]
+Type=Service
+Icon=hwinfo
+Exec=kcmshell4 kcm_driver_manager
+
+X-KDE-Library=kcm_driver_manager
+X-KDE-ServiceTypes=KCModule
+X-KDE-System-Settings-Parent-Category=system-administration
+X-KDE-System-Settings-Parent-Category-V2=system-administration
+X-KDE-ParentApp=kcontrol
+X-KDE-PluginKeyword=kcm-driver-manager
+X-KDE-Keywords=drivers
+Categories=Hardware
+
+Name=Driver Manager
+Name[pt_BR]=Drivers proprietários (Nvidia, AMD...)
+Comment=Driver management software
+Comment[pt_BR]=Instalação de drivers proprietários, principalmente para placas de vídeo Nvidia, AMD e alguns dispositivos wireless.
+X-Ubuntu-Gettext-Domain=desktop_kubuntu-driver-manager

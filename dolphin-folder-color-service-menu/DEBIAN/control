@@ -1,0 +1,10 @@
+Package: dolphin-folder-color-service-menu
+Version: 1.3.00-0kaiana0
+Architecture: all
+Maintainer: Bruno <bigbruno@gmail.com>
+Recommends: dolphin
+Section: kde
+Priority: extra
+Homepage: http://kde-apps.org/content/show.php/Dolphin+Folder+Color?content=164008
+Description: A contextual menu for coloring the folders so fast, also has the ability to color a selected set of folders.
+

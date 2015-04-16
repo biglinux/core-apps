@@ -6,7 +6,7 @@ GRUB_HIDDEN_TIMEOUT=0
 GRUB_HIDDEN_TIMEOUT_QUIET=true
 GRUB_TIMEOUT=8
 GRUB_DISTRIBUTOR=`lsb_release -d | cut -f2 2> /dev/null || echo Debian`
-GRUB_CMDLINE_LINUX_DEFAULT="nothreadirqs cgroup_disable=memory vga=791 quiet splash"
+GRUB_CMDLINE_LINUX_DEFAULT="nothreadirqs cgroup_disable=memory vga=792 quiet splash"
 GRUB_CMDLINE_LINUX=""
 
 # Uncomment to enable BadRAM filtering, modify to suit your needs

@@ -34,6 +34,9 @@ tip_dicas=$"Dicas para acessar seus arquivos na rede"
 tip_simples=$"Opcoes basicas para configuracao do servidor"
 tip_completo=$"Opcoes para praticamente qualquer tipo de uso do Samba<P>* Algumas configuracoes para entrar em acao necessitam que o servidor seja reiniciado"
 tip_restart=$"Reinicia de forma rapida o servidor Samba"
+tip_netbios=$"É o nome que esse computador será identificado na rede"
+tip_manual=$"Edite o arquivo de configuração do samba"
+tip_user=$"Defina o usuário padrão para acessar arquivos em outros computadores da rede"
 
 . /usr/share/bigcontrolcenter/default/theme.sh.htm
 
@@ -92,8 +95,16 @@ echo '</td><td width=100%></td><td>'
 echo '</td></tr><tr><td>'
     echo "<a href=\"/usr/share/bigbashview/run.run?bigbashview /usr/share/bigcontrolcenter/categories/servers/samba/dicas.sh.htm -i /usr/share/bigcontrolcenter/categories/servers/samba/icon.png\"" "$mouseover_open" $tip_dicas "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=dicas.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Dicas de uso" "
 </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?bigsudo bigbashview /usr/share/bigcontrolcenter/categories/servers/samba/netbios.sh.htm -i /usr/share/bigcontrolcenter/categories/servers/samba/icon.png\"" "$mouseover_open" $tip_netbios "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=netbios.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Escolher nome do netbios" "</font></td></tr></table></a>"
+echo '</td></tr><tr><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?bigsudo kate /etc/samba/smb.conf\"" "$mouseover_open" $tip_manual "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=manual.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Editar arquivo de configuração manualmente" " </font></td></tr></table></a>"
+echo '</td><td width=100%></td><td>'
+    echo "<a href=\"/usr/share/bigbashview/run.run?kcmshell4 smb\"" "$mouseover_open" $tip_user "$mouseover_close>""<table onmouseout=\"turn_off(this)\" onmouseover=\"turn_on(this)\" $bigbash_categories_background_config background=$bigbash_categories_background><tr><td width=30><img src=user.png></td>"'<td valign="middle">'"$bigbash_categories_font" $"Usuário padrão para acessar arquivos em rede no Samba" "</font></td></tr></table></a>"
 
 
+
+    
 echo '</table>'
 
 

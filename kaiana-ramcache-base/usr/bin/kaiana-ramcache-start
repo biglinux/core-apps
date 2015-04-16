@@ -10,5 +10,6 @@
 
 mkdir -p /var/ramcache
 #Cria a ramcache com limite de metade da memoria
+modprobe aufs
 mount -t tmpfs -o size=$[$(grep MemTotal /proc/meminfo | awk '{ print $2 }')/2]K tmpfs /var/ramcache
 

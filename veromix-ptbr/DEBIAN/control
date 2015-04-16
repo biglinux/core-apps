@@ -1,0 +1,9 @@
+Package: veromix-ptbr
+Version: 1.0.0-1kaiana1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Section: admin
+Depends: plasma-widget-veromix
+Priority: optional
+Description: Tradução para português brasileiro do Veromix. - Brazilian portuguese translation for Veromix.
+

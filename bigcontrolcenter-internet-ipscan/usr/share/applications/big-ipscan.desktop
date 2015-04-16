@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Find devices on the network
+Name[pt]=Procurar dispositivos na rede
+Name[pt_BR]=Procurar dispositivos na rede
+GenericName=Find devices on the network
+GenericName[pt]=Procurar dispositivos na rede
+GenericName[pt_BR]=Procurar dispositivos na rede
+Exec=bigbashview /usr/share/bigcontrolcenter/categories/internet/ipscan/ip_start.sh.htm -i /usr/share/bigcontrolcenter/categories/internet/ipscan/icon.png
+Icon=network-workgroup
+Terminal=false
+Type=Application
+Categories=Utility;

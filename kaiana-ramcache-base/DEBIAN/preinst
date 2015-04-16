@@ -12,8 +12,8 @@ fi
 
 case "$1" in
   install)
-    ln -sf /etc/init.d/kaiana-ramcache /etc/rc0.d/K10kaiana-cache
-    ln -sf /etc/init.d/kaiana-ramcache /etc/rc6.d/K10kaiana-cache 
+    ln -sf /etc/init.d/kaiana-ramcache /etc/rc0.d/K01kaiana-cache
+    ln -sf /etc/init.d/kaiana-ramcache /etc/rc6.d/K01kaiana-cache 
     ;;
   *) 
      exit 0

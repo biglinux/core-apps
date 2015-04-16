@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Temperature
+Name[pt_BR]=Temperatura
+Comment=Monitor the temperature of your computer
+Comment[pt_BR]=Monitore a temperatura do seu computador
+Icon=/usr/share/pixmaps/xsensors/default.xpm
+Exec=/usr/bin/xsensors
+Terminal=false
+Categories=Hardware;

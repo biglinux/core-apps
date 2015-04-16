@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Samba file share
+Name[pt_BR]=Compartilhador de arquivos Samba
+Comment=Configuring Samba
+Comment[pt_BR]=Configurar o Samba
+Exec=bigbashview /usr/share/bigcontrolcenter/categories/servers/samba/samba.sh.htm -i /usr/share/bigcontrolcenter/categories/servers/samba/icon.png
+Icon=network-workgroup
+Categories=Network and Connectivity

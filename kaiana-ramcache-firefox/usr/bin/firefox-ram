@@ -1,0 +1,92 @@
+#!/bin/sh
+#
+# Autor: Bruno Gonçalves Araujo.
+# Contato: bigbruno@gmail.com
+# Licença: GPL V3.
+# Data: 08/2014.
+# Sistema de cache na ram para navegadores utilizando aufs e tmpfs
+##################################################################
+
+# se for livecd não utiliza a cache na ram
+if [ -e "/rofs" ]; then
+    firefox.distrib "$@"
+    exit
+fi
+
+#Se um firefox ja estiver utilizando cache na ram, apenas inicia outra instancia sem executar o restante do script
+if [ "$(ps -f -u $USER| grep /usr/bin/firefox-ram$ | grep -v -c grep)" -ge "3" ]; then
+    firefox.distrib "$@"
+    exit
+fi
+
+# se necessario gera pasta para cache no disco
+if [ ! -e "$HOME/.ramcache" ]; then
+    mkdir "$HOME/.ramcache"
+fi
+
+
+
+#Confere se a configuracao ja esta na ram
+if [ "$(grep "$HOME/.ramcache/firefox/config" /proc/mounts)" = "" ]; then
+
+    #Confere se a pasta para salvar a configuracao no hd existe, se nao existir deve cria-la
+    if [ ! -d "$HOME/.ramcache/firefox/config-save" ]; then
+
+	#Confere se existe uma configuracao atual do firefox para copiar, se nao existir cria uma pasta vazia
+	if [ -d "$HOME/.mozilla/firefox" ]; then
+	    mkdir -p "$HOME/.ramcache/firefox/"
+	    cp -Rf "$HOME/.mozilla/firefox" "$HOME/.ramcache/firefox/config-save"
+	else
+	    mkdir -p "$HOME/.ramcache/firefox/config-save"
+	fi
+
+    fi
+
+    mkdir -p "$HOME/.ramcache/firefox/config"
+    mkdir -p "$HOME/.ramcache/firefox/cache"
+    mkdir -p "$HOME/.ramcache/firefox/cache-save"
+
+	#Confere se existe uma configuracao atual do firefox para mover, se nao existir cria uma pasta vazia
+	if [ -d "$HOME/.mozilla/firefox" ]; then
+	    mv -f "$HOME/.mozilla/firefox" "$HOME/.mozilla/firefox-bkp"
+	fi
+
+	if [ -d "$HOME/.cache/mozilla/firefox" ]; then
+	    rm -Rf "$HOME/.cache/mozilla/firefox"
+	fi
+
+	if [ ! -L "$HOME/.mozilla/firefox" ]; then
+	    ln -s "$HOME/.ramcache/firefox/config" "$HOME/.mozilla/firefox"
+	fi
+	
+	if [ ! -L "$HOME/.cache/mozilla/firefox" ]; then
+	    ln -s "$HOME/.ramcache/firefox/cache" "$HOME/.cache/mozilla/firefox"
+	fi
+
+
+    #Monta particao na ram
+    sudo firefox-ramcache-mount --start-config "$HOME" "$USER"
+    sudo firefox-ramcache-mount --start-cache "$HOME" "$USER"
+
+    
+fi
+
+ 
+firefox.distrib "$@"
+
+
+rsync -apxrgtXogA --delete "$HOME/.ramcache/firefox/config/" "$HOME/.ramcache/firefox/config-save"
+rsync -apxrgtXogA --delete "$HOME/.ramcache/firefox/cache/" "$HOME/.ramcache/firefox/cache-save"
+
+
+#Confere se todas as instancias foram fechadas, se estiverem, remove os arquivos e desmonta a particao
+if [ "$(ps -u $USER -o cmd,fname | grep firefox$ | grep -v /usr/bin/firefox)" = "" ]; then
+    sudo /usr/bin/firefox-ramcache-mount --stop-config "$HOME" "$USER"
+    sudo /usr/bin/firefox-ramcache-mount --stop-cache "$HOME" "$USER"
+    rm -Rf "/var/ramcache/$USER/firefox/config/"
+    rm -Rf "/var/ramcache/$USER/firefox/cache/"
+    rm -f "$HOME/.cache/mozilla/firefox"
+    rm "$HOME/.mozilla/firefox"
+    mv "$HOME/.mozilla/firefox-bkp" "$HOME/.mozilla/firefox"
+fi
+

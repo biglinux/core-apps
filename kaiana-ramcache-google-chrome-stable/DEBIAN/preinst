@@ -16,7 +16,7 @@ case "$1" in
     ln -sf /usr/bin/google-chrome-stable-ram /usr/bin/google-chrome-stable
     ;;
   upgrade)
-        if [ "$(dpkg-divert --list /etc/init.d/sendsigs)" = "" ]
+        if [ "$(dpkg-divert --list /usr/bin/google-chrome-stable)" = "" ]
         then
 	    dpkg-divert --package $package_name --divert /usr/bin/google-chrome-stable.distrib --rename /usr/bin/google-chrome-stable
 

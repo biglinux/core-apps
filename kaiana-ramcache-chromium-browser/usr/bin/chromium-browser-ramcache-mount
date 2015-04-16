@@ -21,7 +21,7 @@ case "$1" in
         
         
   --stop-config)
-        umount $2/.ramcache/chromium-browser/config
+        umount -l $2/.ramcache/chromium-browser/config
         ;;
 
   --start-cache)

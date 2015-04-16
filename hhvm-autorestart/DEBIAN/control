@@ -1,0 +1,10 @@
+Package: hhvm-autorestart
+Version: 1.0.0-0kaiana2
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Section: admin
+Priority: optional
+Depends: hhvm
+Description: Reinicia automaticamente o hhvm ao travar
+

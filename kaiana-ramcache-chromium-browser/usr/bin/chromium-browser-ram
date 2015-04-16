@@ -8,6 +8,14 @@
 ##################################################################
 
 
+# se for livecd não utiliza a cache na ram
+if [ -e "/rofs" ]; then
+    chromium-browser.distrib "$@"
+    exit
+fi
+
+
+
 #Se um chromium-browser ja estiver utilizando cache na ram, apenas inicia outra instancia sem executar o restante do script
 if [ "$(ps -f -u $USER| grep /usr/bin/chromium-browser-ram$ | grep -v -c grep)" -ge "3" ]; then
     chromium-browser.distrib --user-data-dir="$HOME/.ramcache/chromium-browser/config" "$@"
@@ -51,7 +59,7 @@ rsync -apxrgtXogA --delete "$HOME/.ramcache/chromium-browser/config/" "$HOME/.ra
 
 
 #Confere se todas as instancias foram fechadas, se estiverem, remove os arquivos e desmonta a particao
-if [ "$(ps -u $USER -o cmd,fname | grep chrome$ | grep -v /usr/bin/chromium-browser)" = "" ]; then
+if [ "$(ps -u $USER -o cmd,fname | grep chromium-browser$ | grep -v /usr/bin/chromium-browser)" = "" ]; then
     sudo /usr/bin/chromium-browser-ramcache-mount --stop-config "$HOME" "$USER"
     rm -Rf "/var/ramcache/$USER/chromium-browser/config/"
     rm -Rf ~/.ramcache/chromium-browser/config-save/*default/*cache*Trash*

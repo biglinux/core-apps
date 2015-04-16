@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Ndiswrapper configuration (Wireless)
+Name[pt_BR]=Configurar wireless com Ndiswrapper
+Comment=Install wireless device using the Windows driver
+Comment[pt_BR]=Instale o dispositivo wireless utilizando o driver do Windows
+Exec=bigbashview /usr/share/bigcontrolcenter/categories/internet/ndiswrapper/ndiswrapper.sh.htm -i /usr/share/bigcontrolcenter/categories/internet/ndiswrapper/icon.png
+Icon=network-wireless
+Categories=Hardware

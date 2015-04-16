@@ -1,0 +1,86 @@
+#!/bin/bash
+
+#Panel for BigLinux
+#
+#Authors:
+#  Bruno Goncalves Araujo <www.biglinux.com.br>
+#
+#License: GPLv2 or later
+#################################################
+
+
+. /usr/share/bigcontrolcenter/default/theme-categories.sh.htm
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=bigcontrolcenter-servers-samba
+
+
+echo '
+<script language="JavaScript">
+window.resizeTo(640,480);
+function NoResize(){
+  window.resizeTo(640,480);
+}
+</script>
+'
+
+title=$"Samba"
+apply=$"Aplicar"
+close=$"Sair"
+tip_autostart=$"Inicia automaticamente ao ligar o PC"
+tip_write=$"Com essa opcao ativa as pastas compartilhadas terao permissao para escrita.<br>Isso possibilita que usuarios na rede alterem, criem e apaguem arquivos dessa pasta<p>* Lembre que para isso e necessario que as permissoes da pasta estejam marcadas com permissao para modificar o conteudo por (Outros)"
+
+
+
+. /usr/share/bigcontrolcenter/default/theme.sh.htm
+
+
+if [ "$(bigsamba --checkenable)" = "yes" ]
+then
+  enable_checked="checked"
+fi
+
+
+
+
+if [ "$(bigsamba --autostart)" = "yes" ]
+then
+  autostart_checked="checked"
+fi
+
+
+
+echo "<title>$title</title><body onResize=\"NoResize();\">"
+
+#header
+open_header
+echo "$title" '</font><br>' $"Compartilhamento de arquivos e impressoras na rede."
+close_header
+
+echo '<center><table width=85%><tr><td>'
+echo $"O nome do netbios é o endereço que será utilizado para acessar os arquivos deste computador na rede, você pode escolher qualquer nome com até 15 caracteres e não pode ter espaço.
+<p>
+Por exemplo o nome kaiana será acessado na rede pelo endereço \\\\kaiana ou smb://kaiana
+<p>
+Uma forma prática de definir o nome do netbios é utilizar o mesmo nome do hostname."
+
+echo "<form action=netbios_submit.sh.htm method=get><p><br>"
+
+if [ "$p_hostname" = "yes" ]; then
+    netbiosname="$(hostname | cut -c1-15)"
+else
+    netbiosname="$(grep "netbios name =" /etc/samba/smb.conf | sed 's|.*= ||g')"
+fi
+
+
+
+echo $"Nome do netbios:" "<input type=\"text\" name=\"netbios\" maxlength=\"15\" size=\"12\" value=\"$netbiosname\" placeholder=\"" $"Nome do netbios" "\">"
+
+
+button_link $"Preencher com o hostname" "netbios.sh.htm?hostname=yes"
+
+
+
+echo "</div><div id=\"rodape\"><button type=submit value= $apply  >   <img src=\"/usr/share/bigcontrolcenter/default/images/ok.png\" style=\"vertical-align:top\" />  $apply   </button>  <button type=button value= $close onClick= parent.location='/usr/share/bigbashview/exemplo2.sh.htm?close=True'>   <img src=\"/usr/share/bigcontrolcenter/default/images/cancel.png\" style=\"vertical-align:top\"  />  $close     </button></div>"
+

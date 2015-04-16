@@ -21,7 +21,7 @@ case "$1" in
         
         
   --stop-config)
-        umount $2/.ramcache/google-chrome-stable/config
+        umount -l $2/.ramcache/google-chrome-stable/config
         ;;
 
   --start-cache)

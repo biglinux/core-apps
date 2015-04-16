@@ -135,7 +135,7 @@ fi
 ########################
 # constroe o pacote... # 
 ########################
-dpkg-deb -Z bzip2 -b $pacoteName $nomeRelease
+dpkg-deb -Z xz -b $pacoteName $nomeRelease
 
 ######################################
 # Atualiza o control automaticamente #

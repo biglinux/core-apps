@@ -8,6 +8,14 @@
 ##################################################################
 
 
+
+# se for livecd não utiliza a cache na ram
+if [ -e "/rofs" ]; then
+    google-chrome-stable.distrib "$@"
+    exit
+fi
+
+
 #Se um google-chrome-stable ja estiver utilizando cache na ram, apenas inicia outra instancia sem executar o restante do script
 if [ "$(ps -f -u $USER| grep /usr/bin/google-chrome-stable-ram$ | grep -v -c grep)" -ge "3" ]; then
     google-chrome-stable.distrib --user-data-dir="$HOME/.ramcache/google-chrome-stable/config" "$@"

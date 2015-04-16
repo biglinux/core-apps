@@ -1,0 +1,10 @@
+Package: kaiana-ramcache-firefox
+Version: 1.0.0-0kaiana2
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: kaiana-ramcache-base, firefox
+Section: admin
+Priority: optional
+Description: Use rsync, aufs and tmpfs to ram cache Firefox config and cache.
+

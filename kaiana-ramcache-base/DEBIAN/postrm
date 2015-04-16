@@ -11,8 +11,8 @@ fi
 
 case "$1" in
   remove)
-        rm -f /etc/rc0.d/K10kaiana-cache
-	rm -f /etc/rc6.d/K10kaiana-cache 
+        rm -f /etc/rc0.d/K01kaiana-cache
+	rm -f /etc/rc6.d/K01kaiana-cache 
     ;;
   purge)
     ;;
