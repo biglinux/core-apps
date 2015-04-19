@@ -919,7 +919,8 @@ sub open_with {
 		  $APPNAME = "kwrite"; }
 	}
 
-	exec "$SUCOMMAND \"\'$EXECNAME\' do_open_with \'kdeinit4_wrapper $APPNAME\' \'$TARGET\'\"";
+	exec "";
+	exec "if [ -z \"$(ps -aux | grep kdeinit4 | grep root)\" ]; then $SUCOMMAND kdeinit4; fi; $SUCOMMAND \"\'$EXECNAME\' do_open_with \'kdeinit4_wrapper $APPNAME\' \'$TARGET\'\"";
 	exit $?; 
 }
 
