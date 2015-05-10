@@ -1,0 +1,2 @@
+# Adiciona suporte ao gstreamer ffmpeg para dar suporte a 264 html5 no firefox
+sudo add-apt-repository ppa:mc3man/trusty-media -y

@@ -1,0 +1,3 @@
+# Adiciona repositorio União Livre
+echo 'deb http://repo.uniaolivre.com/packages trusty main' > /etc/apt/sources.list.d/kaiana.list
+wget http://repo.uniaolivre.com/uniaolivre.key -O- | sudo apt-key add -

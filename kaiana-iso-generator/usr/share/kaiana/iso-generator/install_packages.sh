@@ -42,3 +42,5 @@ apt-get install --yes --force-yes --no-install-recommends $(sed ':a;$!N;s/\n/ /g
 #Tenta resolver erros de pacotes
 apt-get -f install
 dpkg --configure -a
+
+rm -f install.txt

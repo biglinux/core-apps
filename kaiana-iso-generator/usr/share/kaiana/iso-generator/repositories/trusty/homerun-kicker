@@ -1,0 +1,2 @@
+# Adiciona o repositorio do Menu Homerun Kicker
+sudo add-apt-repository ppa:blue-shell/homerun -y

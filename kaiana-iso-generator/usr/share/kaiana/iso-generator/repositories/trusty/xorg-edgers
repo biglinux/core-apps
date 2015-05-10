@@ -1,0 +1,2 @@
+# Adiciona repositorio de drivers de video atualizados
+#sudo add-apt-repository ppa:xorg-edgers/ppa -y

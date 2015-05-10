@@ -1,0 +1,3 @@
+# Adiciona repositorio virtualbox
+echo 'deb http://download.virtualbox.org/virtualbox/debian trusty contrib' > /etc/apt/sources.list.d/kaiana.list
+wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -

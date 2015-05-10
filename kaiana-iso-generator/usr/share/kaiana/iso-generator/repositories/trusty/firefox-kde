@@ -1,0 +1,2 @@
+# Adiciona o repositorio do Firefox KDE
+sudo add-apt-repository ppa:blue-shell/firefox-kde -y

@@ -1,0 +1,2 @@
+# Adiciona o repositorio do java da oracle infelizmente o java livre nao funciona muito bem com 64 bits
+sudo add-apt-repository ppa:webupd8team/java -y 

@@ -63,31 +63,10 @@ then
 fi
 
 # Adiciona repositorios complementares
-cp -f sources.list.$2 remaster/chroot/etc/apt/sources.list
 cp -f repositories.sh.$2 remaster/chroot/repositories.sh
 chroot remaster/chroot /repositories.sh
 rm -f remaster/chroot/repositories.sh
 
-
-# Corrige alguns erros comuns
-mkdir -p remaster/chroot/etc/init.d/modemmanager
-> remaster/chroot/etc/init.d/modemmanager
-> remaster/chroot/etc/init.d/systemd-logind
-
-
-# Roda o install_packages.sh
-# cp -f install.txt remaster/chroot/install.txt
-# cp -f install_packages.sh remaster/chroot/install_packages.sh
-# chroot remaster/chroot /install_packages.sh
-# rm -f remaster/chroot/install_packages.sh
-# rm -f remaster/chroot/apt_errors2.txt
-# mv -f remaster/chroot/apt_errors.txt apt_errors_packages.txt
-# mv -f remaster/chroot/apt_errors1.txt apt_errors_complete.txt
-
-# Roda o execute.sh
-# cp -f execute.sh remaster/chroot/execute.sh
-# chroot remaster/chroot /execute.sh
-# rm -f remaster/chroot/execute.sh
 
 # Roda o chroot-off.sh
 ./chroot-off.sh

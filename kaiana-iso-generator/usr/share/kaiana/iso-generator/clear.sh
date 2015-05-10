@@ -27,6 +27,6 @@ rm -rf /tmp/*
 rm /etc/resolv.conf
 
 # Desmonta o sistema
-umount -lf /proc
-umount -lf /sys
-umount -lf /dev/pts
+umount /proc
+umount /sys
+umount /dev/pts

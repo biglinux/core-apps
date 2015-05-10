@@ -1,0 +1,2 @@
+#Repositório do fresh player, para rodar o plugin do flash do chrome no firefox
+sudo add-apt-repository ppa:nilarimogard/webupd8 -y

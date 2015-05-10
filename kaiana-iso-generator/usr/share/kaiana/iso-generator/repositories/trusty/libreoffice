@@ -1,0 +1,2 @@
+# Adiciona o repositorio de atualizações do libreoffice
+sudo add-apt-repository ppa:libreoffice/ppa -y

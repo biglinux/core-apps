@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=kaiana-iso-generator
+
+
+#ppa para o clipgrab
+repository_description=$""
+sudo add-apt-repository ppa:clipgrab-team/ppa -y

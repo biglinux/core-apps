@@ -1,0 +1,2 @@
+#ppa para o plugin do gimp gmic
+sudo add-apt-repository ppa:otto-kesselgulasch/gimp -y
