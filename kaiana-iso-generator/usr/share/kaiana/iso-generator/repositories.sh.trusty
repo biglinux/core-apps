@@ -25,9 +25,13 @@ sudo add-apt-repository ppa:clipgrab-team/ppa -y
 # Adiciona suporte ao gstreamer ffmpeg para dar suporte a 264 html5 no firefox
 sudo add-apt-repository ppa:mc3man/trusty-media -y
 
-# Adiciona repositorio do google
+# Adiciona repositorio do Google Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
+
+# Adiciona repositorio do Google Talk Plugin
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb http://dl.google.com/linux/talkplugin/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 
 # Adiciona repositorio do netflix
 #sudo apt-add-repository ppa:ehoover/compholio -y
@@ -65,7 +69,6 @@ sudo add-apt-repository ppa:blue-shell/homerun -y
 sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder -y
 
 apt-get update
-
 
 #Adiciona configuração para evitar falhas na instalação de pacotes
 echo 'Acquire::http::timeout "10";
