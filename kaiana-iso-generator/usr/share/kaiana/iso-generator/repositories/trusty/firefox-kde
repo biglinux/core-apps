@@ -1,2 +1,34 @@
-# Adiciona o repositorio do Firefox KDE
-sudo add-apt-repository ppa:blue-shell/firefox-kde -y
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=kaiana-iso-generator
+
+repository_description=$"Adiciona o repositório do Firefox com patchs que o integram melhor ao KDE"
+
+
+case "$1" in
+
+    --description)
+	    echo "$repository_description"
+	exit
+    ;;
+
+    --add)
+	    add-apt-repository ppa:moz-plasma/releases -y
+	exit
+    ;;
+
+    --remove)
+	    add-apt-repository ppa:moz-plasma/releases -r -y
+	exit
+    ;;
+
+    *)
+	echo $"--description            show details by repository"
+	echo $"--add		       add repository to system remastering"
+	echo $"--remove		       remove repository to system remastering"
+	exit
+    ;;
+
+esac

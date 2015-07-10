@@ -1,23 +1,41 @@
 #!/bin/bash
 
-# remaster.sh arquitetura versao
-# Exemplo: ./remaster.sh amd64 raring
-# Exemplo: ./remaster.sh i386 raring
+######################
+# Kaiana Iso Generator
+# by Bruno Gonçalves Araujo <bigbruno@gmail.com>
+# licensed under GPLv2 or greater.
+# released in 07/10/2015
+
+# remaster.sh arquitetura versao pasta de trabalho
+# Exemplo: /usr/share/kaiana/iso-generator/remaster.sh amd64 trusty "/home/user/remaster"
+# Exemplo: /usr/share/kaiana/iso-generator/remaster.sh i386 trusty "/home/user/remaster"
 
 # Cria as pastas e adiciona os arquivos basicos
 
-rm -Rf remaster/chroot
-mkdir -p remaster/chroot/var/cache/apt
-mv cache remaster/chroot/var/cache/apt/archives
+cd "/usr/share/kaiana/iso-generator/"
+
+rm -Rf "$3/remaster/chroot"
+mkdir -p "$3/remaster/chroot"
+cp -Rf "/usr/share/kaiana/iso-generator/image" "$3/image"
+mkdir -p "$3/remaster/chroot/var/cache/apt"
+mv "$3/cache" "$3/remaster/chroot/var/cache/apt/archives"
 
 
-mkdir -p remaster/chroot
-cd remaster
-debootstrap --arch=$1 $2 chroot
-cd ..
+#Adiciona configuração para evitar falhas na instalação de pacotes
+echo 'Acquire::http::timeout "10";
+APT::Immediate-Configure "false";
+DPkg::StopOnError "false"; 
+T::Cache-Limit 2200000000;
+APT { Get { Fix-Broken "true"; }; };
+DPkg { Options {"--force-all";}; };
+DPkg { Options {"--abort-after=9999999";}; };
+DPkg::Post-Invoke {"dpkg --abort-after=9999999 --configure -a";}' > "$3/remaster/chroot/etc/apt/apt.conf.d/18bigtweaks"
 
 
-mkdir -p remaster/image/.disk
+debootstrap --arch=$1 $2 "$3/remaster/chroot"
+
+
+mkdir -p "$3/image/.disk"
 
 echo "#define DISKNAME  Kaiana
 #define TYPE  binary
@@ -27,67 +45,50 @@ echo "#define DISKNAME  Kaiana
 #define DISKNUM  1
 #define DISKNUM1  1
 #define TOTALNUM  0
-#define TOTALNUM0  1" > remaster/image/README.diskdefines
+#define TOTALNUM0  1" > "$3/image/README.diskdefines"
 
 
 
 # Efetua configuracao inicial
-./chroot-on.sh
+/usr/share/kaiana/iso-generator/chroot-on.sh "$3"
 
 # Adiciona o sources.list indicado
-mkdir -p remaster/chroot/etc/apt/
-cp -f "/usr/share/kaiana/iso-generator/sources.list.$2" "remaster/chroot/etc/apt/sources.list"
+mkdir -p "$3/remaster/chroot/etc/apt/"
+cp -f "/usr/share/kaiana/iso-generator/sources.list.$2" "$3/remaster/chroot/etc/apt/sources.list"
+cp -f "/usr/share/kaiana/iso-generator/install-apps.txt.$2" "$3/install-apps.txt"
+cp -f "/usr/share/kaiana/iso-generator/install-drivers.txt.$2" "$3/install-drivers.txt"
 
 
 # Adiciona a chave do repositorio Ubuntu e instala o dbus
-chroot remaster/chroot apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 12345678
-chroot remaster/chroot apt-get update
-chroot remaster/chroot apt-get install --yes --force-yes dbus software-properties-common
+chroot "$3/remaster/chroot" apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 12345678
+chroot "$3/remaster/chroot" apt-get update
+chroot "$3/remaster/chroot" apt-get install --yes --force-yes dbus software-properties-common wget
 
 
 # Configuracao basica do dbus
-chroot remaster/chroot dbus-uuidgen | tee remaster/chroot/var/lib/dbus/machine-id
+chroot "$3/remaster/chroot" dbus-uuidgen | tee $3/chroot/var/lib/dbus/machine-id
 
 # Roda o fix_initctl.sh
-cp -f fix_initctl.sh remaster/chroot/fix_initctl.sh
-chroot remaster/chroot /fix_initctl.sh
-rm -f remaster/chroot/fix_initctl.sh
+cp -f "/usr/share/kaiana/iso-generator/fix_initctl.sh" "$3/remaster/chroot/fix_initctl.sh"
+chroot "$3/remaster/chroot" /fix_initctl.sh
+rm -f "$3/remaster/chroot/fix_initctl.sh"
 
 	
-if ! [ -e "remaster/chroot/etc/lib/modules" ]
+if ! [ -e "$3/remaster/chroot/etc/lib/modules" ]
 then
     # Roda o install_kernel.sh
-    cp -f install_kernel.sh remaster/chroot/install_kernel.sh
-    chroot remaster/chroot /install_kernel.sh
-    rm -f remaster/chroot/install_kernel.sh
+    cp -f "/usr/share/kaiana/iso-generator/install_kernel.sh" "$3/remaster/chroot/install_kernel.sh"
+    chroot "$3/remaster/chroot" /install_kernel.sh
+    rm -f "$3/remaster/chroot/install_kernel.sh"
 fi
-
-# Adiciona repositorios complementares
-cp -f sources.list.$2 remaster/chroot/etc/apt/sources.list
-cp -f repositories.sh.$2 remaster/chroot/repositories.sh
-chroot remaster/chroot /repositories.sh
-rm -f remaster/chroot/repositories.sh
 
 
 # Corrige alguns erros comuns
-mkdir -p remaster/chroot/etc/init.d/modemmanager
-> remaster/chroot/etc/init.d/modemmanager
-> remaster/chroot/etc/init.d/systemd-logind
+mkdir -p "$3/remaster/chroot/etc/init.d/modemmanager"
+> "$3/remaster/chroot/etc/init.d/modemmanager"
+> "$3/remaster/chroot/etc/init.d/systemd-logind"
 
 
-# Roda o install_packages.sh
-# cp -f install.txt remaster/chroot/install.txt
-# cp -f install_packages.sh remaster/chroot/install_packages.sh
-# chroot remaster/chroot /install_packages.sh
-# rm -f remaster/chroot/install_packages.sh
-# rm -f remaster/chroot/apt_errors2.txt
-# mv -f remaster/chroot/apt_errors.txt apt_errors_packages.txt
-# mv -f remaster/chroot/apt_errors1.txt apt_errors_complete.txt
-
-# Roda o execute.sh
-# cp -f execute.sh remaster/chroot/execute.sh
-# chroot remaster/chroot /execute.sh
-# rm -f remaster/chroot/execute.sh
 
 # Roda o chroot-off.sh
-./chroot-off.sh
+/usr/share/kaiana/iso-generator/chroot-off.sh "$3"

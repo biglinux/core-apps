@@ -1,46 +1,21 @@
 #!/bin/bash
 
-export DEBIAN_FRONTEND=noninteractive
-
-# Instala pacotes do arquivo install.txt e gera o arquivo apt_errors1.txt com o log de pacotes com erros
-apt-get install --yes --force-yes --no-install-recommends $(sed ':a;$!N;s/\n/ /g;ta' install.txt) 2> /apt_errors1.txt
-
-# Limpa lista de pacotes com erros para ficar apenas os nomes dos pacotes
-rev /apt_errors1.txt | cut -f1 -d" " | rev > /apt_errors.txt
-
-# Remove os pacotes da lista de pacotes a serem instalados na proxima tentativa
-for i in $(cat /apt_errors.txt)
-do
-    sed -i "s|^$i$||g;/^$/d" /install.txt
-done
-
-#Tenta resolver erros de pacotes
-apt-get -f install
-dpkg --configure -a
-
-apt-get update
-
-#Tenta novamente para tentar reparar possiveis falhas
-apt-get install --yes --force-yes --no-install-recommends $(sed ':a;$!N;s/\n/ /g;ta' install.txt) 2>> /apt_errors1.txt
-
-rev /apt_errors1.txt | cut -f1 -d" " | rev >> /apt_errors2.txt
-sort /apt_errors2.txt | uniq > /apt_errors.txt
+######################
+# Kaiana Iso Generator
+# by Bruno Gonçalves Araujo <bigbruno@gmail.com>
+# licensed under GPLv2 or greater.
+# released in 07/10/2015
 
 
-for i in $(cat /apt_errors.txt)
-do
-    sed -i "s|^$i$||g;/^$/d" /install.txt
-done
+/usr/share/kaiana/iso-generator/chroot-on.sh "$1"
 
-#Tenta resolver erros de pacotes
-apt-get -f install
-dpkg --configure -a
+cat "$1/install-apps.txt" > "$1/remaster/chroot/install.txt"
+cat "$1/install-drivers.txt" >> "$1/remaster/chroot/install.txt"
 
-#Mais uma tentativa 
-apt-get install --yes --force-yes --no-install-recommends $(sed ':a;$!N;s/\n/ /g;ta' install.txt)
+cp -f "/usr/share/kaiana/iso-generator/install_packages_chroot.sh" "$1/remaster/chroot/install_packages_chroot.sh"
+chroot "$1/remaster/chroot" /install_packages_chroot.sh
+rm -f "$1/remaster/chroot/install_packages_chroot.sh"
 
-#Tenta resolver erros de pacotes
-apt-get -f install
-dpkg --configure -a
+rm -f "$1/remaster/chroot/install.txt"
 
-rm -f install.txt
+/usr/share/kaiana/iso-generator/chroot-off.sh "$1"
