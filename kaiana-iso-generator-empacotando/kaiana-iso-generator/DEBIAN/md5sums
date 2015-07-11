@@ -1,5 +1,5 @@
-68afce7c0e9c555335fedb1562d2a2a5  kaiana-iso-generator/DEBIAN/control
-d9166efe84b53d5ed65e0fa8c44eb7df  kaiana-iso-generator/DEBIAN/md5sums
+8413f27163de320ef68251642529a319  kaiana-iso-generator/DEBIAN/control
+2f2d8a5599799af6d53050dba1cccbd3  kaiana-iso-generator/DEBIAN/md5sums
 b7087af94b942d5d1548972e25dda68e  kaiana-iso-generator/usr/bin/kaiana-iso-generator
 f5ece49a7934631c14f12be0e2db329b  kaiana-iso-generator/usr/share/kaiana/iso-generator/.empty
 1d7e25f433f74942b27079535ed82c52  kaiana-iso-generator/usr/share/kaiana/iso-generator/chroot-off.sh
