@@ -9,6 +9,8 @@
 
 export DEBIAN_FRONTEND=noninteractive
 
+apt-get update
+
 # Instala pacotes do arquivo install.txt e gera o arquivo apt_errors1.txt com o log de pacotes com erros
 apt-get install --yes --force-yes --no-install-recommends $(sed ':a;$!N;s/\n/ /g;ta' install.txt) 2> /apt_errors1.txt
 

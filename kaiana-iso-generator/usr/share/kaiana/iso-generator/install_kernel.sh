@@ -16,3 +16,4 @@ apt-get install --yes --force-yes discover laptop-detect os-prober
 apt-get install --yes --force-yes linux-generic linux-tools-generic
 # Adiciona chave do respositorio de extras do Ubuntu
 apt-key adv --keyserver keyserver.ubuntu.com --recv 3E5C1192
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4DF9B28CA252A784

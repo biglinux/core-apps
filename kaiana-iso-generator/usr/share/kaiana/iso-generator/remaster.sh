@@ -22,6 +22,7 @@ mv "$3/cache" "$3/remaster/chroot/var/cache/apt/archives"
 
 
 #Adiciona configuração para evitar falhas na instalação de pacotes
+mkdir -p "$3/remaster/chroot/etc/apt/apt.conf.d/"
 echo 'Acquire::http::timeout "10";
 APT::Immediate-Configure "false";
 DPkg::StopOnError "false"; 
