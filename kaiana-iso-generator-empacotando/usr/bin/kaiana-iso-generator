@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# kaiana-iso-generator pasta
+# Exemplo: kaiana-iso-generator /home/usuario/novoiso
+
+# Cria as pastas e adiciona os arquivos basicos
+mkdir -p "$1/remaster/chroot"
+mkdir -p "$1/remaster/image/casper"
+cp -R /usr/share/kaiana/iso-generator/* "$1/"
