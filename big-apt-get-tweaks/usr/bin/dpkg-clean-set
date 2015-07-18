@@ -1,0 +1,26 @@
+#!/bin/bash
+
+######################
+# Tweaks for dpkg
+# by Bruno Gonçalves Araujo <bigbruno@gmail.com>
+# licensed under GPLv2 or greater.
+# released in 7/17/2015
+
+
+
+for i  in  $(grep -l "set -e" /var/lib/dpkg/info/*.pre*); do
+    sed -i  's|set -e||g' $i
+done
+
+for i  in  $(grep -l "set -e" /var/lib/dpkg/info/*.post*); do
+    sed -i  's|set -e||g' $i
+done
+
+
+for i  in  $(grep -l 'exit $?' /var/lib/dpkg/info/*.pre*); do
+    sed -i  's|exit $?|exit 0|g' $i
+done
+
+for i  in  $(grep -l 'exit $?' /var/lib/dpkg/info/*.post*); do
+    sed -i  's|exit $?|exit 0|g' $i
+done
