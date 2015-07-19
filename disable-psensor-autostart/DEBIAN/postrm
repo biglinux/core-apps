@@ -2,7 +2,7 @@
 
 set -e
 
-package_name=disable-hpsystray-autostart
+package_name=disable-psensor-autostart
 
 if [ -z "$package_name" ]; then
     print >&2 "Internal Error. Please report a bug."
@@ -11,7 +11,7 @@ fi
 
 case "$1" in
   remove)
-    dpkg-divert --package $package_name --rename --remove /etc/xdg/autostart/hplip-systray.desktop
+    dpkg-divert --package $package_name --rename --remove /etc/xdg/autostart/psensor.desktop
     ;;
   purge)
     ;;
