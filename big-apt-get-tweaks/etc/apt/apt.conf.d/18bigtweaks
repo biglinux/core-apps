@@ -12,3 +12,4 @@ APT { Get { Fix-Broken "true"; }; };
 DPkg { Options {"--force-all";}; };
 DPkg { Options {"--abort-after=9999999";}; };
 DPkg::Post-Invoke {"dpkg --abort-after=9999999 --configure -a "; "apt-get -f install "; "dpkg --abort-after=9999999 --configure -a "};
+Acquire::http { Pipeline-Depth "8"; }

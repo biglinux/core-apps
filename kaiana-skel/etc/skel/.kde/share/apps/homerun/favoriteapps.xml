@@ -1,5 +1,5 @@
 <apps version="1">
-    <app serviceId="kde4-Centro de Controle Big.desktop"/>
+    <app serviceId="kcenter.desktop"/>
     <app serviceId="ubuntu-software-center.desktop"/>
     <app serviceId="libreoffice-writer.desktop"/>
     <app serviceId="clementine.desktop"/>
