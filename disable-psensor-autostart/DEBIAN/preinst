@@ -2,7 +2,7 @@
 
 set -e
 
-package_name=disable-hpsystray-autostart
+package_name=disable-psensor-autostart
 mkdir -p /usr/share/dpkgdivert/
 
 if [ -z "$package_name" ]; then
@@ -12,12 +12,12 @@ fi
 
 case "$1" in
   install)
-    dpkg-divert --package $package_name --divert /usr/share/dpkgdivert/hplip-systray.desktop --rename /etc/xdg/autostart/hplip-systray.desktop
+    dpkg-divert --package $package_name --divert /usr/share/dpkgdivert/psensor.desktop --rename /etc/xdg/autostart/psensor.desktop
     ;;
   upgrade)
-        if [ "$(dpkg-divert --list /etc/xdg/autostart/hplip-systray.desktop)" = "" ]
+        if [ "$(dpkg-divert --list /etc/xdg/autostart/psensor.desktop)" = "" ]
         then
-	    dpkg-divert --package $package_name --divert /usr/share/dpkgdivert/hplip-systray.desktop --rename /etc/xdg/autostart/hplip-systray.desktop
+	    dpkg-divert --package $package_name --divert /usr/share/dpkgdivert/psensor.desktop --rename /etc/xdg/autostart/psensor.desktop
 	fi
     ;;
   abort-upgrade)
