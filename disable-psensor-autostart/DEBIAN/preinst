@@ -1,0 +1,29 @@
+#! /bin/sh
+
+set -e
+
+package_name=disable-hpsystray-autostart
+mkdir -p /usr/share/dpkgdivert/
+
+if [ -z "$package_name" ]; then
+    print >&2 "Internal Error. Please report a bug."
+    exit 1;
+fi
+
+case "$1" in
+  install)
+    dpkg-divert --package $package_name --divert /usr/share/dpkgdivert/hplip-systray.desktop --rename /etc/xdg/autostart/hplip-systray.desktop
+    ;;
+  upgrade)
+        if [ "$(dpkg-divert --list /etc/xdg/autostart/hplip-systray.desktop)" = "" ]
+        then
+	    dpkg-divert --package $package_name --divert /usr/share/dpkgdivert/hplip-systray.desktop --rename /etc/xdg/autostart/hplip-systray.desktop
+	fi
+    ;;
+  abort-upgrade)
+    ;;
+  *) echo "$0: didn't understand being called with \`$1'" 1>&2
+     exit 0;;
+esac
+
+exit 0
