@@ -1,0 +1,15 @@
+######################
+# Tweaks for apt
+# by Bruno Gonçalves Araujo <bigbruno@gmail.com>
+# licensed under GPLv2 or greater.
+# released in 7/17/2015
+
+Acquire::http::timeout "10";
+APT::Immediate-Configure "false";
+DPkg::StopOnError "false"; 
+T::Cache-Limit 2200000000;
+APT { Get { Fix-Broken "true"; }; };
+DPkg { Options {"--force-all";}; };
+DPkg { Options {"--abort-after=9999999";}; };
+DPkg::Post-Invoke {"dpkg --abort-after=9999999 --configure -a "; "apt-get -f install "; "dpkg --abort-after=9999999 --configure -a "};
+Acquire::http { Pipeline-Depth "8"; }
