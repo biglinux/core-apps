@@ -1,0 +1,72 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=web-quest
+
+#Cria pasta para salvar configuração
+mkdir -p "$HOME/.config/web-quest"
+
+#captura "txt" selecinado pelo "xsel"
+txt=$(xsel -p)
+if [ -z "$txt" ]
+then
+  txt=$"digite aqui ou selecione texto"
+fi
+
+#captura "pid" pelo "id" do app
+pid0=$(ps -Af | grep -i "web-quest" | grep yad | awk '{print $2}')
+
+#captura "pid" pelo "id" do dialogo
+pid=$(ps -Af | grep -i "webquest-dialogo" | grep yad | awk '{print $2}' )
+
+#verificação de app aberto, abre ou avança para as opções
+if [ -e $pid0 ]; then
+yad --notification --name="web-quest" --image="network-online" --text $"web-quest pesquisa na web texto selecionado" --command "/bin/sh -c 'web-quest'"
+else
+#condição 1
+#click abre/fecha dialogo
+#Confere se existe dialogo aberto
+#existe= fecha dialogo , não existe= abre o dialogo de busca  
+   if [ -e $pid ]; then
+     buscar=$(yad --name="webquest-dialogo" --on-top --undecorated --mouse --skip-taskbar --form \
+         --text-align=center --text="Web-Quest" \
+         --field=$"Buscar" "$txt" \
+         --field="no":CB "google!tradutor!wikipedia!anotar" \
+         --button="gtk-info:2" \
+         --button="gtk-ok:0" \
+         --button="Sair:1" )
+#indentifica o botão clicado e exec  
+      ret=$?
+      if  [ $ret -eq 0 ]; then
+            texto=$( echo $buscar | cut -f1 -d'|')
+            buscar=$( echo $buscar | cut -f2 -d'|')
+               if [ "$buscar" == "google" ]; then
+                   xdg-open "https://www.google.com.br/webhp?ion=1&espv=2&ie=UTF-8#q=$texto"
+               elif [ "$buscar" == "tradutor" ]; then
+                   xdg-open "https://translate.google.pt/?hl=pt-PT&tab=wT#en/pt/$texto"
+               elif [ "$buscar" == "wikipedia" ]; then
+                   xdg-open "http://pt.wikipedia.org/wiki/$texto"
+               elif [ "$buscar" == "anotar" ]; then
+                   echo $texto > "$HOME/.config/web-quest/1.txt" && sleep 1 && xpad -f "$HOME/.config/web-quest/1.txt"
+               fi
+       elif  [ $ret -eq 2 ]; then
+             while   info=$(yad --mouse --text-info --title=$"Web-Quest Informações" \
+		                           --width=500 --height=500 \
+		                           --filename="$HOME/.config/web-quest/.web-quest-info.txt" \
+		                           --editable \
+		                           --fore="#0000FF" --back="#AAFFAA" --fontname="Ubuntu Mono" \
+		                           --justify="fill" --margins="20" \
+		                           --show-uri \
+		                           --button='Sair':1 --button='Salvar':0)
+                 do
+	            echo "$info" > "$HOME/.config/web-quest/.web-quest-info.txt"
+                    notify-send $"Texto salvo" -i gtk-dialog-info
+                 done
+                 exit 1
+      fi
+    else
+      kill $pid
+    fi
+fi
+
