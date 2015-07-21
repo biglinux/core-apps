@@ -1,9 +1,0 @@
-Package: direct-search
-Version: 1.0.0-1kaiana1
-Architecture: all
-Maintainer: lunimare / Bruno Goncalves <www.biglinux.com.br>
-Section: admin
-Priority: optional
-Depends: yad
-Description: Shortcuts for search in web, google, wikipedia and translate
-

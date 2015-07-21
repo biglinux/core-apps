@@ -1,0 +1,15 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=web-quest
+GenericName=direct web search selected text
+Comment[pt_BR]=Procura na web por texto selecionado
+GenericName[pt_BR]=Procura na web por texto selecionado
+Comment=web search selected text
+Exec=web-quest
+Terminal=false
+Type=Application
+Icon=network-online
+Categories=Network;
+StartupNotify=false
+
+Name[pt_BR]=web-quest

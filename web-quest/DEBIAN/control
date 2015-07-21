@@ -1,0 +1,9 @@
+Package: web-quest
+Version: 1.0.0-1kaiana2
+Architecture: all
+Maintainer: lunimare / Bruno Goncalves <www.biglinux.com.br>
+Section: admin
+Priority: optional
+Depends: yad, xsel
+Description: Direct web search selected text
+
