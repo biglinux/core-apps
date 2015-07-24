@@ -1,0 +1,10 @@
+Package: systemsettings-hide
+Version: 1.0.4-0kaiana2
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size: 1
+Depends: systemsettings
+Section: admin
+Priority: optional
+Description: Esconde o systemsettings do menu / Hide systemsettings
+
