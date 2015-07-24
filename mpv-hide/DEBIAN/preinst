@@ -2,7 +2,7 @@
 
 set -e
 
-package_name=systemsettings-hide
+package_name=mpv-hide
 mkdir -p /usr/share/dpkgdivert/
 
 if [ -z "$package_name" ]; then
@@ -12,20 +12,13 @@ fi
 
 case "$1" in
   install)
-    dpkg-divert --package $package_name --divert /usr/share/dpkgdivert/kdesystemsettings.desktop --rename /usr/share/applications/kde4/kdesystemsettings.desktop
-    dpkg-divert --package $package_name --divert /usr/share/dpkgdivert/systemsettings.desktop --rename /usr/share/applications/kde4/systemsettings.desktop
+    dpkg-divert --package $package_name --divert /usr/share/dpkgdivert/mpv.desktop --rename /usr/share/applications/mpv.desktop
     ;;
   upgrade)
-        if [ "$(dpkg-divert --list /usr/share/applications/kde4/kdesystemsettings.desktop)" = "" ]
+        if [ "$(dpkg-divert --list /usr/share/applications/mpv.desktop)" = "" ]
         then
-	    dpkg-divert --package $package_name --divert /usr/share/dpkgdivert/kdesystemsettings.desktop --rename /usr/share/applications/kde4/kdesystemsettings.desktop
+	    dpkg-divert --package $package_name --divert /usr/share/dpkgdivert/mpv.desktop --rename /usr/share/applications/mpv.desktop
 	fi
-
-        if [ "$(dpkg-divert --list /usr/share/applications/kde4/systemsettings.desktop)" = "" ]
-        then
-	    dpkg-divert --package $package_name --divert /usr/share/dpkgdivert/systemsettings.desktop --rename /usr/share/applications/kde4/systemsettings.desktop
-	fi
-
 
 ;;
   abort-upgrade)
