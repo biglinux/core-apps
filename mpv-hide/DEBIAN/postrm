@@ -2,7 +2,7 @@
 
 set -e
 
-package_name=systemsettings-hide
+package_name=mpv-hide
 
 if [ -z "$package_name" ]; then
     print >&2 "Internal Error. Please report a bug."
@@ -11,7 +11,7 @@ fi
 
 case "$1" in
   remove)
-    dpkg-divert --package $package_name --rename --remove /usr/share/applications/kde4/kdesystemsettings.desktop
+    dpkg-divert --package $package_name --rename --remove /usr/share/applications/mpv.desktop
     ;;
   purge)
     ;;
