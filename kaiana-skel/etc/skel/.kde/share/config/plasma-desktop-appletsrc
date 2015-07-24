@@ -95,7 +95,6 @@ drawShadows=true
 filter=0
 filterFiles=*
 formfactor=0
-geometry=1372,0,1366,768
 iconsLocked=false
 immutability=1
 labelType=0
@@ -129,7 +128,6 @@ activity=
 activityId=
 desktop=-1
 formfactor=2
-geometry=0,-45,1920,39
 immutability=1
 lastDesktop=-1
 lastScreen=0
@@ -370,9 +368,6 @@ zvalue=0
 [Containments][21][Applets][42][Configuration]
 Url=file:///usr/share/applications/kde4/bigshowdesktop.desktop
 
-[Containments][21][Configuration]
-maximumSize=1920,39
-minimumSize=1920,39
 
 [General]
 immutability=1
