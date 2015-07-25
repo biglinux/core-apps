@@ -12,6 +12,8 @@ export TEXTDOMAINDIR="/usr/share/locale-langpack"
 export TEXTDOMAIN=kaiana-iso-generator
 
 
+rm -f "$1/remaster/chroot/etc/xdg/autostart/psensor.desktop"
+
 
 #Corrige o netbios do samba
 if [ "$(grep "netbios name =" "$1/remaster/chroot/etc/samba/smb.conf")" != "" ]; then

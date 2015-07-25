@@ -31,3 +31,4 @@ rm -f "$1/remaster/chroot/etc/resolv.conf"
 # Termina de desmontar o remaster
 umount -l "$1/remaster/chroot/dev"
 umount -l "$1/remaster/chroot/proc"
+umount -l "$1/remaster/chroot/sys"

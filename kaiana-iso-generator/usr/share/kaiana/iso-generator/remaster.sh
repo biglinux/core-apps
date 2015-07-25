@@ -23,14 +23,12 @@ mv "$3/cache" "$3/remaster/chroot/var/cache/apt/archives"
 
 #Adiciona configuração para evitar falhas na instalação de pacotes
 mkdir -p "$3/remaster/chroot/etc/apt/apt.conf.d/"
-echo 'Acquire::http::timeout "10";
-APT::Immediate-Configure "false";
-DPkg::StopOnError "false"; 
-T::Cache-Limit 2200000000;
-APT { Get { Fix-Broken "true"; }; };
-DPkg { Options {"--force-all";}; };
-DPkg { Options {"--abort-after=9999999";}; };
-DPkg::Post-Invoke {"dpkg --abort-after=9999999 --configure -a";}' > "$3/remaster/chroot/etc/apt/apt.conf.d/18bigtweaks"
+cp -f "/usr/share/kaiana/iso-generator/18bigtweaks" "$3/remaster/chroot/etc/apt/apt.conf.d/18bigtweaks"
+cp -f "/usr/share/kaiana/iso-generator/19bigcleanset" "$3/remaster/chroot/etc/apt/apt.conf.d/19bigcleanset"
+
+mkdir -p "$3/remaster/chroot/usr/bin"
+cp -f "/usr/share/kaiana/iso-generator/dpkg-clean-set" "$3/remaster/chroot/usr/bin/dpkg-clean-set"
+
 
 
 debootstrap --arch=$1 $2 "$3/remaster/chroot"
@@ -82,12 +80,6 @@ then
     chroot "$3/remaster/chroot" /install_kernel.sh
     rm -f "$3/remaster/chroot/install_kernel.sh"
 fi
-
-
-# Corrige alguns erros comuns
-mkdir -p "$3/remaster/chroot/etc/init.d/modemmanager"
-> "$3/remaster/chroot/etc/init.d/modemmanager"
-> "$3/remaster/chroot/etc/init.d/systemd-logind"
 
 
 

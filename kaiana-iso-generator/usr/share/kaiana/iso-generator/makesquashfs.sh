@@ -45,7 +45,7 @@ fi
 if [ "$2" = "xz" ]; then
     rm -f remaster/chroot/apt_errors*.txt
     rm -f image/casper/filesystem.squashfs
-    mksquashfs remaster/chroot image/casper/filesystem.squashfs -comp xz -Xbcj x86 -no-xattrs -always-use-fragments -b 32768  -Xdict-size 100%
+    mksquashfs remaster/chroot image/casper/filesystem.squashfs -comp xz -Xbcj x86 -no-xattrs -always-use-fragments -b 16384  -Xdict-size 100%
 fi
 
 

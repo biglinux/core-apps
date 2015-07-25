@@ -2,6 +2,7 @@ akonadi-backend-sqlite
 app-install-data-partner
 appmenu-qt
 apturl-common
+apt-fast
 apt-xapian-index
 ark
 aspell
@@ -59,10 +60,10 @@ big-sourceslist-tweak
 big-stop-akonadi
 big-sysctl-tweak
 big-umount-tweaks
-big-umount-tweaks
 blacklist-kvm
 bluedevil
 build-essential
+mpv-hide
 calligrawords-common
 cdparanoia
 cdrdao
@@ -72,8 +73,8 @@ clipgrab
 cogroo-libreoffice
 converseen-service-menu
 disable-hpsystray-autostart
-disable-hpsystray-autostart
-disable-tty-autostart
+disable-psensor-autostart
+web-quest
 disable-tty-autostart
 dnsmasq
 dolphin
