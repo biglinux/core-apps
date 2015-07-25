@@ -1,0 +1,36 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale-langpack"
+export TEXTDOMAIN=kaiana-iso-generator
+
+repository_description=$"Adiciona o repositorio do virtualbox"
+
+
+case "$1" in
+
+    --description)
+	    echo "$repository_description"
+	exit
+    ;;
+
+    --add)
+	    echo 'deb http://download.virtualbox.org/virtualbox/debian trusty contrib' > /etc/apt/sources.list.d/virtualbox.list
+	    wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | apt-key add -
+	exit
+    ;;
+
+    --remove)
+	    rm -f /etc/apt/sources.list.d/virtualbox.list
+	exit
+    ;;
+
+    *)
+	echo $"--description            show details by repository"
+	echo $"--add		       add repository to system remastering"
+	echo $"--remove		       remove repository to system remastering"
+	exit
+    ;;
+
+esac
+
