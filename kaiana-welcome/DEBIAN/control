@@ -1,9 +1,0 @@
-Package: kaiana-welcome
-Version: 0.3.0-1kaiana0
-Architecture: all
-Maintainer: Paulo Giovanni <paulusiohannes@gmail.com>
-Installed-Size: 100
-Depends: bigcontrolcenter (>= 1.0.0-1kaiana16), bigbashview, firefox, software-center
-Section: admin
-Priority: optional
-Description: Kaiana System's Welcome aplication.

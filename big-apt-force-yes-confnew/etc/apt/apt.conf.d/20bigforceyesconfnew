@@ -1,7 +1,0 @@
-APT::Get::Assume-Yes "true";
-APT::Get::force-yes "true";
-APT::Quiet "true";
-Dpkg::Options {
-   "--force-confdef";
-   "--force-confnew";
-}

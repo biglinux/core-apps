@@ -1,1 +1,0 @@
-kdialog --msgbox 'hello world'

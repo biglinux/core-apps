@@ -1,7 +1,0 @@
-Package: kaiana-desktop
-Version: 14.04-0kaiana1
-Architecture: all
-Maintainer: Bruno Goncalves Araujo <www.unialivre.com>
-Section: admin
-Priority: optional
-Description: Metapackage to Kaiana

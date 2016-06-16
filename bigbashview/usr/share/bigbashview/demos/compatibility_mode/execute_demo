@@ -1,3 +1,0 @@
-#!/bin/bash
-python ../../bigbashview.py --compatibility-mode `pwd`'/compat.sh.html'
-

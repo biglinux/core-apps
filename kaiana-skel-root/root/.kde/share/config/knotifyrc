@@ -1,8 +1,0 @@
-[Phonon::AudioOutput]
-KNotify_Volume=1
-
-[Sounds]
-External player[$e]=mplayer
-No sound=false
-Use external player=true
-Volume=100

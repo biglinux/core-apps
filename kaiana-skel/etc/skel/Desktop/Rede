@@ -1,7 +1,0 @@
-[Desktop Entry]
-URL[$e]=remote:/
-Icon=network-workgroup.png
-Terminal=false
-Type=Link
-X-KDE-StartupNotify=false
-X-KDE-SubstituteUID=false

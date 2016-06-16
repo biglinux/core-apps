@@ -1,9 +1,0 @@
-Package: force-firefox-kde
-Version: 1.0.0-1kaiana2
-Architecture: all
-Maintainer: Bruno Goncalves <www.biglinux.com.br>
-Installed-Size: 100
-Section: admin
-Priority: optional
-Description: Force to use kde patched firefox and not ubuntu firefox
-
