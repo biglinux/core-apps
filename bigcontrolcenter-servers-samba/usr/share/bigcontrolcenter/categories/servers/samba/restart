@@ -1,4 +1,0 @@
-#!/bin/sh
-
-bigsamba --disable 2> /dev/null > /dev/null
-bigsamba --enable 2> /dev/null > /dev/null

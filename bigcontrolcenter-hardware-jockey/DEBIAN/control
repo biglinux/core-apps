@@ -1,9 +1,0 @@
-Package: bigcontrolcenter-hardware-jockey
-Version: 2.0.1-1kaiana2
-Architecture: all
-Maintainer: Bruno Goncalves <www.biglinux.com.br>
-Installed-Size: 1
-Depends: kubuntu-driver-manager
-Priority: optional
-Description: Proprietary drivers
-

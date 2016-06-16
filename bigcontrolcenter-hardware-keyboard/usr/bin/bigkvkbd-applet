@@ -1,6 +1,0 @@
-#!/bin/bash
-
-  if [ -e "$HOME/.bigkvkbd" ]
-  then
-      kvkbd
-  fi
